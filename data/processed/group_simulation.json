@@ -1,0 +1,698 @@
+[
+  {
+    "group": "A",
+    "simulationCount": 10000,
+    "teams": [
+      {
+        "displayTeam": "Mexico",
+        "team": "Mexico",
+        "group": "A",
+        "rank1Prob": 0.5754,
+        "rank2Prob": 0.2812,
+        "rank3Prob": 0.1084,
+        "rank4Prob": 0.035,
+        "directAdvanceProb": 0.8566,
+        "thirdPlaceAdvanceProb": 0.0885,
+        "roundOf32Prob": 0.9451,
+        "averageRank": 1.6
+      },
+      {
+        "displayTeam": "South Korea",
+        "team": "South Korea",
+        "group": "A",
+        "rank1Prob": 0.3019,
+        "rank2Prob": 0.3963,
+        "rank3Prob": 0.2178,
+        "rank4Prob": 0.084,
+        "directAdvanceProb": 0.6982,
+        "thirdPlaceAdvanceProb": 0.1641,
+        "roundOf32Prob": 0.8623,
+        "averageRank": 2.08
+      },
+      {
+        "displayTeam": "Czechia",
+        "team": "Czech Republic",
+        "group": "A",
+        "rank1Prob": 0.0824,
+        "rank2Prob": 0.2074,
+        "rank3Prob": 0.3991,
+        "rank4Prob": 0.3111,
+        "directAdvanceProb": 0.2898,
+        "thirdPlaceAdvanceProb": 0.2689,
+        "roundOf32Prob": 0.5587,
+        "averageRank": 2.94
+      },
+      {
+        "displayTeam": "South Africa",
+        "team": "South Africa",
+        "group": "A",
+        "rank1Prob": 0.0403,
+        "rank2Prob": 0.1151,
+        "rank3Prob": 0.2747,
+        "rank4Prob": 0.5699,
+        "directAdvanceProb": 0.1554,
+        "thirdPlaceAdvanceProb": 0.1808,
+        "roundOf32Prob": 0.3362,
+        "averageRank": 3.37
+      }
+    ]
+  },
+  {
+    "group": "B",
+    "simulationCount": 10000,
+    "teams": [
+      {
+        "displayTeam": "Canada",
+        "team": "Canada",
+        "group": "B",
+        "rank1Prob": 0.6356,
+        "rank2Prob": 0.3307,
+        "rank3Prob": 0.0299,
+        "rank4Prob": 0.0038,
+        "directAdvanceProb": 0.9663,
+        "thirdPlaceAdvanceProb": 0.0235,
+        "roundOf32Prob": 0.9898,
+        "averageRank": 1.4
+      },
+      {
+        "displayTeam": "Switzerland",
+        "team": "Switzerland",
+        "group": "B",
+        "rank1Prob": 0.3549,
+        "rank2Prob": 0.5835,
+        "rank3Prob": 0.0556,
+        "rank4Prob": 0.006,
+        "directAdvanceProb": 0.9384,
+        "thirdPlaceAdvanceProb": 0.0423,
+        "roundOf32Prob": 0.9807,
+        "averageRank": 1.71
+      },
+      {
+        "displayTeam": "Qatar",
+        "team": "Qatar",
+        "group": "B",
+        "rank1Prob": 0.0054,
+        "rank2Prob": 0.0514,
+        "rank3Prob": 0.5317,
+        "rank4Prob": 0.4115,
+        "directAdvanceProb": 0.0568,
+        "thirdPlaceAdvanceProb": 0.2299,
+        "roundOf32Prob": 0.2867,
+        "averageRank": 3.35
+      },
+      {
+        "displayTeam": "Bosnia and Herzegovina",
+        "team": "Bosnia and Herzegovina",
+        "group": "B",
+        "rank1Prob": 0.0041,
+        "rank2Prob": 0.0344,
+        "rank3Prob": 0.3828,
+        "rank4Prob": 0.5787,
+        "directAdvanceProb": 0.0385,
+        "thirdPlaceAdvanceProb": 0.1479,
+        "roundOf32Prob": 0.1864,
+        "averageRank": 3.54
+      }
+    ]
+  },
+  {
+    "group": "C",
+    "simulationCount": 10000,
+    "teams": [
+      {
+        "displayTeam": "Morocco",
+        "team": "Morocco",
+        "group": "C",
+        "rank1Prob": 0.9209,
+        "rank2Prob": 0.0742,
+        "rank3Prob": 0.0043,
+        "rank4Prob": 0.0006,
+        "directAdvanceProb": 0.9951,
+        "thirdPlaceAdvanceProb": 0.0039,
+        "roundOf32Prob": 0.999,
+        "averageRank": 1.08
+      },
+      {
+        "displayTeam": "Brazil",
+        "team": "Brazil",
+        "group": "C",
+        "rank1Prob": 0.0732,
+        "rank2Prob": 0.7679,
+        "rank3Prob": 0.1257,
+        "rank4Prob": 0.0332,
+        "directAdvanceProb": 0.8411,
+        "thirdPlaceAdvanceProb": 0.0767,
+        "roundOf32Prob": 0.9178,
+        "averageRank": 2.12
+      },
+      {
+        "displayTeam": "Haiti",
+        "team": "Haiti",
+        "group": "C",
+        "rank1Prob": 0.0026,
+        "rank2Prob": 0.0826,
+        "rank3Prob": 0.4923,
+        "rank4Prob": 0.4225,
+        "directAdvanceProb": 0.0852,
+        "thirdPlaceAdvanceProb": 0.1859,
+        "roundOf32Prob": 0.2711,
+        "averageRank": 3.33
+      },
+      {
+        "displayTeam": "Scotland",
+        "team": "Scotland",
+        "group": "C",
+        "rank1Prob": 0.0033,
+        "rank2Prob": 0.0753,
+        "rank3Prob": 0.3777,
+        "rank4Prob": 0.5437,
+        "directAdvanceProb": 0.0786,
+        "thirdPlaceAdvanceProb": 0.1478,
+        "roundOf32Prob": 0.2264,
+        "averageRank": 3.46
+      }
+    ]
+  },
+  {
+    "group": "D",
+    "simulationCount": 10000,
+    "teams": [
+      {
+        "displayTeam": "Türkiye",
+        "team": "Turkey",
+        "group": "D",
+        "rank1Prob": 0.4802,
+        "rank2Prob": 0.3252,
+        "rank3Prob": 0.1562,
+        "rank4Prob": 0.0384,
+        "directAdvanceProb": 0.8054,
+        "thirdPlaceAdvanceProb": 0.1281,
+        "roundOf32Prob": 0.9335,
+        "averageRank": 1.75
+      },
+      {
+        "displayTeam": "Australia",
+        "team": "Australia",
+        "group": "D",
+        "rank1Prob": 0.379,
+        "rank2Prob": 0.3649,
+        "rank3Prob": 0.201,
+        "rank4Prob": 0.0551,
+        "directAdvanceProb": 0.7439,
+        "thirdPlaceAdvanceProb": 0.1575,
+        "roundOf32Prob": 0.9014,
+        "averageRank": 1.93
+      },
+      {
+        "displayTeam": "USA",
+        "team": "United States",
+        "group": "D",
+        "rank1Prob": 0.1189,
+        "rank2Prob": 0.2469,
+        "rank3Prob": 0.4472,
+        "rank4Prob": 0.187,
+        "directAdvanceProb": 0.3658,
+        "thirdPlaceAdvanceProb": 0.3296,
+        "roundOf32Prob": 0.6954,
+        "averageRank": 2.7
+      },
+      {
+        "displayTeam": "Paraguay",
+        "team": "Paraguay",
+        "group": "D",
+        "rank1Prob": 0.0219,
+        "rank2Prob": 0.063,
+        "rank3Prob": 0.1956,
+        "rank4Prob": 0.7195,
+        "directAdvanceProb": 0.0849,
+        "thirdPlaceAdvanceProb": 0.1244,
+        "roundOf32Prob": 0.2093,
+        "averageRank": 3.61
+      }
+    ]
+  },
+  {
+    "group": "E",
+    "simulationCount": 10000,
+    "teams": [
+      {
+        "displayTeam": "Germany",
+        "team": "Germany",
+        "group": "E",
+        "rank1Prob": 0.4902,
+        "rank2Prob": 0.3328,
+        "rank3Prob": 0.1734,
+        "rank4Prob": 0.0036,
+        "directAdvanceProb": 0.823,
+        "thirdPlaceAdvanceProb": 0.162,
+        "roundOf32Prob": 0.985,
+        "averageRank": 1.69
+      },
+      {
+        "displayTeam": "Ivory Coast",
+        "team": "Ivory Coast",
+        "group": "E",
+        "rank1Prob": 0.3438,
+        "rank2Prob": 0.3583,
+        "rank3Prob": 0.2915,
+        "rank4Prob": 0.0064,
+        "directAdvanceProb": 0.7021,
+        "thirdPlaceAdvanceProb": 0.2732,
+        "roundOf32Prob": 0.9753,
+        "averageRank": 1.96
+      },
+      {
+        "displayTeam": "Ecuador",
+        "team": "Ecuador",
+        "group": "E",
+        "rank1Prob": 0.1655,
+        "rank2Prob": 0.3059,
+        "rank3Prob": 0.5064,
+        "rank4Prob": 0.0222,
+        "directAdvanceProb": 0.4714,
+        "thirdPlaceAdvanceProb": 0.4357,
+        "roundOf32Prob": 0.9071,
+        "averageRank": 2.39
+      },
+      {
+        "displayTeam": "Curacao",
+        "team": "Curaçao",
+        "group": "E",
+        "rank1Prob": 0.0005,
+        "rank2Prob": 0.003,
+        "rank3Prob": 0.0287,
+        "rank4Prob": 0.9678,
+        "directAdvanceProb": 0.0035,
+        "thirdPlaceAdvanceProb": 0.0154,
+        "roundOf32Prob": 0.0189,
+        "averageRank": 3.96
+      }
+    ]
+  },
+  {
+    "group": "F",
+    "simulationCount": 10000,
+    "teams": [
+      {
+        "displayTeam": "Japan",
+        "team": "Japan",
+        "group": "F",
+        "rank1Prob": 0.8598,
+        "rank2Prob": 0.1159,
+        "rank3Prob": 0.0204,
+        "rank4Prob": 0.0039,
+        "directAdvanceProb": 0.9757,
+        "thirdPlaceAdvanceProb": 0.017,
+        "roundOf32Prob": 0.9927,
+        "averageRank": 1.17
+      },
+      {
+        "displayTeam": "Netherlands",
+        "team": "Netherlands",
+        "group": "F",
+        "rank1Prob": 0.1193,
+        "rank2Prob": 0.6825,
+        "rank3Prob": 0.1606,
+        "rank4Prob": 0.0376,
+        "directAdvanceProb": 0.8018,
+        "thirdPlaceAdvanceProb": 0.1002,
+        "roundOf32Prob": 0.902,
+        "averageRank": 2.12
+      },
+      {
+        "displayTeam": "Tunisia",
+        "team": "Tunisia",
+        "group": "F",
+        "rank1Prob": 0.011,
+        "rank2Prob": 0.1127,
+        "rank3Prob": 0.4552,
+        "rank4Prob": 0.4211,
+        "directAdvanceProb": 0.1237,
+        "thirdPlaceAdvanceProb": 0.2317,
+        "roundOf32Prob": 0.3554,
+        "averageRank": 3.29
+      },
+      {
+        "displayTeam": "Sweden",
+        "team": "Sweden",
+        "group": "F",
+        "rank1Prob": 0.0099,
+        "rank2Prob": 0.0889,
+        "rank3Prob": 0.3638,
+        "rank4Prob": 0.5374,
+        "directAdvanceProb": 0.0988,
+        "thirdPlaceAdvanceProb": 0.1745,
+        "roundOf32Prob": 0.2733,
+        "averageRank": 3.43
+      }
+    ]
+  },
+  {
+    "group": "G",
+    "simulationCount": 10000,
+    "teams": [
+      {
+        "displayTeam": "Iran",
+        "team": "Iran",
+        "group": "G",
+        "rank1Prob": 0.6218,
+        "rank2Prob": 0.2672,
+        "rank3Prob": 0.1073,
+        "rank4Prob": 0.0037,
+        "directAdvanceProb": 0.889,
+        "thirdPlaceAdvanceProb": 0.0975,
+        "roundOf32Prob": 0.9865,
+        "averageRank": 1.49
+      },
+      {
+        "displayTeam": "Egypt",
+        "team": "Egypt",
+        "group": "G",
+        "rank1Prob": 0.2647,
+        "rank2Prob": 0.4335,
+        "rank3Prob": 0.2935,
+        "rank4Prob": 0.0083,
+        "directAdvanceProb": 0.6982,
+        "thirdPlaceAdvanceProb": 0.2632,
+        "roundOf32Prob": 0.9614,
+        "averageRank": 2.05
+      },
+      {
+        "displayTeam": "Belgium",
+        "team": "Belgium",
+        "group": "G",
+        "rank1Prob": 0.1127,
+        "rank2Prob": 0.2962,
+        "rank3Prob": 0.577,
+        "rank4Prob": 0.0141,
+        "directAdvanceProb": 0.4089,
+        "thirdPlaceAdvanceProb": 0.516,
+        "roundOf32Prob": 0.9249,
+        "averageRank": 2.49
+      },
+      {
+        "displayTeam": "New Zealand",
+        "team": "New Zealand",
+        "group": "G",
+        "rank1Prob": 0.0008,
+        "rank2Prob": 0.0031,
+        "rank3Prob": 0.0222,
+        "rank4Prob": 0.9739,
+        "directAdvanceProb": 0.0039,
+        "thirdPlaceAdvanceProb": 0.011,
+        "roundOf32Prob": 0.0149,
+        "averageRank": 3.97
+      }
+    ]
+  },
+  {
+    "group": "H",
+    "simulationCount": 10000,
+    "teams": [
+      {
+        "displayTeam": "Spain",
+        "team": "Spain",
+        "group": "H",
+        "rank1Prob": 0.9585,
+        "rank2Prob": 0.0369,
+        "rank3Prob": 0.004,
+        "rank4Prob": 0.0006,
+        "directAdvanceProb": 0.9954,
+        "thirdPlaceAdvanceProb": 0.0036,
+        "roundOf32Prob": 0.999,
+        "averageRank": 1.05
+      },
+      {
+        "displayTeam": "Uruguay",
+        "team": "Uruguay",
+        "group": "H",
+        "rank1Prob": 0.0288,
+        "rank2Prob": 0.6035,
+        "rank3Prob": 0.2593,
+        "rank4Prob": 0.1084,
+        "directAdvanceProb": 0.6323,
+        "thirdPlaceAdvanceProb": 0.1632,
+        "roundOf32Prob": 0.7955,
+        "averageRank": 2.45
+      },
+      {
+        "displayTeam": "Cape Verde",
+        "team": "Cape Verde",
+        "group": "H",
+        "rank1Prob": 0.0089,
+        "rank2Prob": 0.2472,
+        "rank3Prob": 0.447,
+        "rank4Prob": 0.2969,
+        "directAdvanceProb": 0.2561,
+        "thirdPlaceAdvanceProb": 0.2184,
+        "roundOf32Prob": 0.4745,
+        "averageRank": 3.03
+      },
+      {
+        "displayTeam": "Saudi Arabia",
+        "team": "Saudi Arabia",
+        "group": "H",
+        "rank1Prob": 0.0038,
+        "rank2Prob": 0.1124,
+        "rank3Prob": 0.2897,
+        "rank4Prob": 0.5941,
+        "directAdvanceProb": 0.1162,
+        "thirdPlaceAdvanceProb": 0.1234,
+        "roundOf32Prob": 0.2396,
+        "averageRank": 3.47
+      }
+    ]
+  },
+  {
+    "group": "I",
+    "simulationCount": 10000,
+    "teams": [
+      {
+        "displayTeam": "France",
+        "team": "France",
+        "group": "I",
+        "rank1Prob": 0.5336,
+        "rank2Prob": 0.3191,
+        "rank3Prob": 0.1074,
+        "rank4Prob": 0.0399,
+        "directAdvanceProb": 0.8527,
+        "thirdPlaceAdvanceProb": 0.087,
+        "roundOf32Prob": 0.9397,
+        "averageRank": 1.65
+      },
+      {
+        "displayTeam": "Senegal",
+        "team": "Senegal",
+        "group": "I",
+        "rank1Prob": 0.3809,
+        "rank2Prob": 0.4064,
+        "rank3Prob": 0.1557,
+        "rank4Prob": 0.057,
+        "directAdvanceProb": 0.7873,
+        "thirdPlaceAdvanceProb": 0.1162,
+        "roundOf32Prob": 0.9035,
+        "averageRank": 1.89
+      },
+      {
+        "displayTeam": "Norway",
+        "team": "Norway",
+        "group": "I",
+        "rank1Prob": 0.0387,
+        "rank2Prob": 0.1286,
+        "rank3Prob": 0.3862,
+        "rank4Prob": 0.4465,
+        "directAdvanceProb": 0.1673,
+        "thirdPlaceAdvanceProb": 0.2659,
+        "roundOf32Prob": 0.4332,
+        "averageRank": 3.24
+      },
+      {
+        "displayTeam": "Iraq",
+        "team": "Iraq",
+        "group": "I",
+        "rank1Prob": 0.0468,
+        "rank2Prob": 0.1459,
+        "rank3Prob": 0.3507,
+        "rank4Prob": 0.4566,
+        "directAdvanceProb": 0.1927,
+        "thirdPlaceAdvanceProb": 0.2062,
+        "roundOf32Prob": 0.3989,
+        "averageRank": 3.22
+      }
+    ]
+  },
+  {
+    "group": "J",
+    "simulationCount": 10000,
+    "teams": [
+      {
+        "displayTeam": "Argentina",
+        "team": "Argentina",
+        "group": "J",
+        "rank1Prob": 0.5427,
+        "rank2Prob": 0.3593,
+        "rank3Prob": 0.0892,
+        "rank4Prob": 0.0088,
+        "directAdvanceProb": 0.902,
+        "thirdPlaceAdvanceProb": 0.0752,
+        "roundOf32Prob": 0.9772,
+        "averageRank": 1.56
+      },
+      {
+        "displayTeam": "Algeria",
+        "team": "Algeria",
+        "group": "J",
+        "rank1Prob": 0.4002,
+        "rank2Prob": 0.4229,
+        "rank3Prob": 0.1617,
+        "rank4Prob": 0.0152,
+        "directAdvanceProb": 0.8231,
+        "thirdPlaceAdvanceProb": 0.1385,
+        "roundOf32Prob": 0.9616,
+        "averageRank": 1.79
+      },
+      {
+        "displayTeam": "Austria",
+        "team": "Austria",
+        "group": "J",
+        "rank1Prob": 0.0527,
+        "rank2Prob": 0.1949,
+        "rank3Prob": 0.5947,
+        "rank4Prob": 0.1577,
+        "directAdvanceProb": 0.2476,
+        "thirdPlaceAdvanceProb": 0.406,
+        "roundOf32Prob": 0.6536,
+        "averageRank": 2.86
+      },
+      {
+        "displayTeam": "Jordan",
+        "team": "Jordan",
+        "group": "J",
+        "rank1Prob": 0.0044,
+        "rank2Prob": 0.0229,
+        "rank3Prob": 0.1544,
+        "rank4Prob": 0.8183,
+        "directAdvanceProb": 0.0273,
+        "thirdPlaceAdvanceProb": 0.0826,
+        "roundOf32Prob": 0.1099,
+        "averageRank": 3.79
+      }
+    ]
+  },
+  {
+    "group": "K",
+    "simulationCount": 10000,
+    "teams": [
+      {
+        "displayTeam": "Portugal",
+        "team": "Portugal",
+        "group": "K",
+        "rank1Prob": 0.5217,
+        "rank2Prob": 0.2556,
+        "rank3Prob": 0.1478,
+        "rank4Prob": 0.0749,
+        "directAdvanceProb": 0.7773,
+        "thirdPlaceAdvanceProb": 0.1276,
+        "roundOf32Prob": 0.9049,
+        "averageRank": 1.78
+      },
+      {
+        "displayTeam": "Colombia",
+        "team": "Colombia",
+        "group": "K",
+        "rank1Prob": 0.1975,
+        "rank2Prob": 0.3135,
+        "rank3Prob": 0.2694,
+        "rank4Prob": 0.2196,
+        "directAdvanceProb": 0.511,
+        "thirdPlaceAdvanceProb": 0.2119,
+        "roundOf32Prob": 0.7229,
+        "averageRank": 2.51
+      },
+      {
+        "displayTeam": "Uzbekistan",
+        "team": "Uzbekistan",
+        "group": "K",
+        "rank1Prob": 0.1444,
+        "rank2Prob": 0.2236,
+        "rank3Prob": 0.306,
+        "rank4Prob": 0.326,
+        "directAdvanceProb": 0.368,
+        "thirdPlaceAdvanceProb": 0.2298,
+        "roundOf32Prob": 0.5978,
+        "averageRank": 2.81
+      },
+      {
+        "displayTeam": "Congo DR",
+        "team": "DR Congo",
+        "group": "K",
+        "rank1Prob": 0.1364,
+        "rank2Prob": 0.2073,
+        "rank3Prob": 0.2768,
+        "rank4Prob": 0.3795,
+        "directAdvanceProb": 0.3437,
+        "thirdPlaceAdvanceProb": 0.2007,
+        "roundOf32Prob": 0.5444,
+        "averageRank": 2.9
+      }
+    ]
+  },
+  {
+    "group": "L",
+    "simulationCount": 10000,
+    "teams": [
+      {
+        "displayTeam": "England",
+        "team": "England",
+        "group": "L",
+        "rank1Prob": 0.6914,
+        "rank2Prob": 0.2677,
+        "rank3Prob": 0.0384,
+        "rank4Prob": 0.0025,
+        "directAdvanceProb": 0.9591,
+        "thirdPlaceAdvanceProb": 0.0336,
+        "roundOf32Prob": 0.9927,
+        "averageRank": 1.35
+      },
+      {
+        "displayTeam": "Croatia",
+        "team": "Croatia",
+        "group": "L",
+        "rank1Prob": 0.2812,
+        "rank2Prob": 0.5916,
+        "rank3Prob": 0.114,
+        "rank4Prob": 0.0132,
+        "directAdvanceProb": 0.8728,
+        "thirdPlaceAdvanceProb": 0.0878,
+        "roundOf32Prob": 0.9606,
+        "averageRank": 1.86
+      },
+      {
+        "displayTeam": "Panama",
+        "team": "Panama",
+        "group": "L",
+        "rank1Prob": 0.0268,
+        "rank2Prob": 0.1314,
+        "rank3Prob": 0.7555,
+        "rank4Prob": 0.0863,
+        "directAdvanceProb": 0.1582,
+        "thirdPlaceAdvanceProb": 0.5884,
+        "roundOf32Prob": 0.7466,
+        "averageRank": 2.9
+      },
+      {
+        "displayTeam": "Ghana",
+        "team": "Ghana",
+        "group": "L",
+        "rank1Prob": 0.0006,
+        "rank2Prob": 0.0093,
+        "rank3Prob": 0.0921,
+        "rank4Prob": 0.898,
+        "directAdvanceProb": 0.0099,
+        "thirdPlaceAdvanceProb": 0.0368,
+        "roundOf32Prob": 0.0467,
+        "averageRank": 3.89
+      }
+    ]
+  }
+]
