@@ -32,10 +32,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ models/
+          git add data/ models/ frontend/public/data/
 
           if git diff --cached --quiet; then
-            echo "변경된 data/ 또는 models/ 파일이 없습니다."
+            echo "변경된 데이터, 모델 또는 프론트엔드 데이터 파일이 없습니다."
             exit 0
           fi
 

@@ -26,6 +26,7 @@ PIPELINE_SCRIPTS = [
     "08_simulate_group_stage.py",
     "09_simulate_tournament.py",
     "10_create_dashboard_summary.py",
+    "09_sync_frontend_data.py",
 ]
 
 

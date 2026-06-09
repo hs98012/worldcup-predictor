@@ -1,0 +1,2448 @@
+{
+  "projectTitle": "2026 World Cup Predictor",
+  "description": "국가대표 경기 데이터를 기반으로 경기별 승/무/패 확률과 월드컵 토너먼트 진출 확률을 시뮬레이션한 대시보드 데이터입니다.",
+  "simulationCount": 10000,
+  "modelSummary": {
+    "modelName": "scikit-learn LogisticRegression",
+    "task": "A_WIN / DRAW / B_WIN multiclass classification",
+    "accuracy": 56.25,
+    "logLoss": 0.9635,
+    "testStartDate": "2021-09-01",
+    "testEndDate": "2026-06-07",
+    "trainSize": 20248,
+    "testSize": 5063,
+    "drawRecall": 0.1458,
+    "note": "DRAW 예측 성능이 낮아 별도 무승부 보정 로직을 적용했습니다."
+  },
+  "winnerTop10": [
+    {
+      "rank": 1,
+      "displayTeam": "Argentina",
+      "team": "Argentina",
+      "group": "J",
+      "winnerProb": 24.1,
+      "finalProb": 34.43,
+      "semiFinalProb": 42.99,
+      "quarterFinalProb": 61.2,
+      "roundOf16Prob": 79.74,
+      "roundOf32Prob": 99.1
+    },
+    {
+      "rank": 2,
+      "displayTeam": "Spain",
+      "team": "Spain",
+      "group": "H",
+      "winnerProb": 13.44,
+      "finalProb": 25.56,
+      "semiFinalProb": 31.92,
+      "quarterFinalProb": 47.26,
+      "roundOf16Prob": 55.23,
+      "roundOf32Prob": 99.91
+    },
+    {
+      "rank": 3,
+      "displayTeam": "Morocco",
+      "team": "Morocco",
+      "group": "C",
+      "winnerProb": 9.67,
+      "finalProb": 14.19,
+      "semiFinalProb": 27.78,
+      "quarterFinalProb": 41.95,
+      "roundOf16Prob": 65.65,
+      "roundOf32Prob": 99.89
+    },
+    {
+      "rank": 4,
+      "displayTeam": "Portugal",
+      "team": "Portugal",
+      "group": "K",
+      "winnerProb": 8.09,
+      "finalProb": 15.31,
+      "semiFinalProb": 24.83,
+      "quarterFinalProb": 39.66,
+      "roundOf16Prob": 61.06,
+      "roundOf32Prob": 91.2
+    },
+    {
+      "rank": 5,
+      "displayTeam": "France",
+      "team": "France",
+      "group": "I",
+      "winnerProb": 5.36,
+      "finalProb": 10.16,
+      "semiFinalProb": 24.08,
+      "quarterFinalProb": 51.47,
+      "roundOf16Prob": 71.39,
+      "roundOf32Prob": 94.04
+    },
+    {
+      "rank": 6,
+      "displayTeam": "England",
+      "team": "England",
+      "group": "L",
+      "winnerProb": 4.59,
+      "finalProb": 8.85,
+      "semiFinalProb": 19.67,
+      "quarterFinalProb": 33.94,
+      "roundOf16Prob": 64.19,
+      "roundOf32Prob": 99.37
+    },
+    {
+      "rank": 7,
+      "displayTeam": "Japan",
+      "team": "Japan",
+      "group": "F",
+      "winnerProb": 4.41,
+      "finalProb": 10.08,
+      "semiFinalProb": 24.48,
+      "quarterFinalProb": 34.54,
+      "roundOf16Prob": 46.19,
+      "roundOf32Prob": 99.59
+    },
+    {
+      "rank": 8,
+      "displayTeam": "Iran",
+      "team": "Iran",
+      "group": "G",
+      "winnerProb": 4.08,
+      "finalProb": 11.14,
+      "semiFinalProb": 19.29,
+      "quarterFinalProb": 41.02,
+      "roundOf16Prob": 64.3,
+      "roundOf32Prob": 98.84
+    },
+    {
+      "rank": 9,
+      "displayTeam": "Algeria",
+      "team": "Algeria",
+      "group": "J",
+      "winnerProb": 4.05,
+      "finalProb": 10.1,
+      "semiFinalProb": 16.59,
+      "quarterFinalProb": 34.5,
+      "roundOf16Prob": 55.88,
+      "roundOf32Prob": 96.49
+    },
+    {
+      "rank": 10,
+      "displayTeam": "Brazil",
+      "team": "Brazil",
+      "group": "C",
+      "winnerProb": 3.66,
+      "finalProb": 9.41,
+      "semiFinalProb": 28.99,
+      "quarterFinalProb": 41.99,
+      "roundOf16Prob": 57.52,
+      "roundOf32Prob": 96.64
+    }
+  ],
+  "southKorea": {
+    "displayTeam": "South Korea",
+    "team": "South Korea",
+    "group": "A",
+    "roundOf32Prob": 90.54,
+    "roundOf16Prob": 44.67,
+    "quarterFinalProb": 13.77,
+    "semiFinalProb": 6.17,
+    "finalProb": 1.45,
+    "winnerProb": 0.51
+  },
+  "groupStandings": [
+    {
+      "group": "A",
+      "standings": [
+        {
+          "displayTeam": "South Korea",
+          "team": "South Korea",
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 2,
+          "goalDiff": 4,
+          "points": 7,
+          "rank": 1,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Mexico",
+          "team": "Mexico",
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 5,
+          "goalsAgainst": 1,
+          "goalDiff": 4,
+          "points": 7,
+          "rank": 2,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Czech Republic",
+          "team": "Czech Republic",
+          "played": 3,
+          "wins": 0,
+          "draws": 1,
+          "losses": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
+          "goalDiff": -3,
+          "points": 1,
+          "rank": 3,
+          "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+        },
+        {
+          "displayTeam": "South Africa",
+          "team": "South Africa",
+          "played": 3,
+          "wins": 0,
+          "draws": 1,
+          "losses": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 6,
+          "goalDiff": -5,
+          "points": 1,
+          "rank": 4,
+          "qualifiedStatus": "ELIMINATED"
+        }
+      ],
+      "matches": [
+        {
+          "matchId": 1,
+          "date": "2026-06-11",
+          "displayTeamA": "Mexico",
+          "displayTeamB": "South Africa",
+          "predictedScoreA": 2,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.6275,
+          "drawProb": 0.3121,
+          "teamBWinProb": 0.0604,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 2,
+          "date": "2026-06-11",
+          "displayTeamA": "South Korea",
+          "displayTeamB": "Czech Republic",
+          "predictedScoreA": 2,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.4154,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.2046,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 25,
+          "date": "2026-06-18",
+          "displayTeamA": "Czech Republic",
+          "displayTeamB": "South Africa",
+          "predictedScoreA": 1,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.2778,
+          "drawProb": 0.367,
+          "teamBWinProb": 0.3553,
+          "predictedResult": "DRAW"
+        },
+        {
+          "matchId": 26,
+          "date": "2026-06-18",
+          "displayTeamA": "Mexico",
+          "displayTeamB": "South Korea",
+          "predictedScoreA": 1,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.3362,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.2838,
+          "predictedResult": "DRAW"
+        },
+        {
+          "matchId": 49,
+          "date": "2026-06-24",
+          "displayTeamA": "Mexico",
+          "displayTeamB": "Czech Republic",
+          "predictedScoreA": 2,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.5558,
+          "drawProb": 0.3527,
+          "teamBWinProb": 0.0915,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 50,
+          "date": "2026-06-24",
+          "displayTeamA": "South Africa",
+          "displayTeamB": "South Korea",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.0421,
+          "drawProb": 0.2673,
+          "teamBWinProb": 0.6906,
+          "predictedResult": "B_WIN"
+        }
+      ]
+    },
+    {
+      "group": "B",
+      "standings": [
+        {
+          "displayTeam": "Canada",
+          "team": "Canada",
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 7,
+          "goalsAgainst": 1,
+          "goalDiff": 6,
+          "points": 7,
+          "rank": 1,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Switzerland",
+          "team": "Switzerland",
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 7,
+          "goalsAgainst": 1,
+          "goalDiff": 6,
+          "points": 7,
+          "rank": 2,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Qatar",
+          "team": "Qatar",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 7,
+          "goalDiff": -5,
+          "points": 3,
+          "rank": 3,
+          "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+        },
+        {
+          "displayTeam": "Bosnia and Herzegovina",
+          "team": "Bosnia and Herzegovina",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 8,
+          "goalDiff": -7,
+          "points": 0,
+          "rank": 4,
+          "qualifiedStatus": "ELIMINATED"
+        }
+      ],
+      "matches": [
+        {
+          "matchId": 3,
+          "date": "2026-06-12",
+          "displayTeamA": "Canada",
+          "displayTeamB": "Bosnia and Herzegovina",
+          "predictedScoreA": 3,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.7642,
+          "drawProb": 0.2092,
+          "teamBWinProb": 0.0266,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 5,
+          "date": "2026-06-13",
+          "displayTeamA": "Qatar",
+          "displayTeamB": "Switzerland",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.0183,
+          "drawProb": 0.1712,
+          "teamBWinProb": 0.8105,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 27,
+          "date": "2026-06-18",
+          "displayTeamA": "Switzerland",
+          "displayTeamB": "Bosnia and Herzegovina",
+          "predictedScoreA": 3,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.7183,
+          "drawProb": 0.2517,
+          "teamBWinProb": 0.03,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 28,
+          "date": "2026-06-18",
+          "displayTeamA": "Canada",
+          "displayTeamB": "Qatar",
+          "predictedScoreA": 3,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.7435,
+          "drawProb": 0.2232,
+          "teamBWinProb": 0.0333,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 51,
+          "date": "2026-06-24",
+          "displayTeamA": "Canada",
+          "displayTeamB": "Switzerland",
+          "predictedScoreA": 1,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.265,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.3549,
+          "predictedResult": "DRAW"
+        },
+        {
+          "matchId": 52,
+          "date": "2026-06-24",
+          "displayTeamA": "Bosnia and Herzegovina",
+          "displayTeamB": "Qatar",
+          "predictedScoreA": 1,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.2197,
+          "drawProb": 0.3793,
+          "teamBWinProb": 0.401,
+          "predictedResult": "B_WIN"
+        }
+      ]
+    },
+    {
+      "group": "C",
+      "standings": [
+        {
+          "displayTeam": "Morocco",
+          "team": "Morocco",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 9,
+          "goalsAgainst": 0,
+          "goalDiff": 9,
+          "points": 9,
+          "rank": 1,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Brazil",
+          "team": "Brazil",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 6,
+          "goalsAgainst": 3,
+          "goalDiff": 3,
+          "points": 6,
+          "rank": 2,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Scotland",
+          "team": "Scotland",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 7,
+          "goalDiff": -5,
+          "points": 3,
+          "rank": 3,
+          "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+        },
+        {
+          "displayTeam": "Haiti",
+          "team": "Haiti",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 8,
+          "goalDiff": -7,
+          "points": 0,
+          "rank": 4,
+          "qualifiedStatus": "ELIMINATED"
+        }
+      ],
+      "matches": [
+        {
+          "matchId": 6,
+          "date": "2026-06-13",
+          "displayTeamA": "Brazil",
+          "displayTeamB": "Morocco",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.0295,
+          "drawProb": 0.2902,
+          "teamBWinProb": 0.6803,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 7,
+          "date": "2026-06-13",
+          "displayTeamA": "Haiti",
+          "displayTeamB": "Scotland",
+          "predictedScoreA": 1,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.152,
+          "drawProb": 0.3614,
+          "teamBWinProb": 0.4866,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 29,
+          "date": "2026-06-19",
+          "displayTeamA": "Scotland",
+          "displayTeamB": "Morocco",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.0098,
+          "drawProb": 0.0974,
+          "teamBWinProb": 0.8928,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 30,
+          "date": "2026-06-19",
+          "displayTeamA": "Brazil",
+          "displayTeamB": "Haiti",
+          "predictedScoreA": 3,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.7445,
+          "drawProb": 0.223,
+          "teamBWinProb": 0.0325,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 53,
+          "date": "2026-06-24",
+          "displayTeamA": "Scotland",
+          "displayTeamB": "Brazil",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.0099,
+          "drawProb": 0.1747,
+          "teamBWinProb": 0.8154,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 54,
+          "date": "2026-06-24",
+          "displayTeamA": "Morocco",
+          "displayTeamB": "Haiti",
+          "predictedScoreA": 3,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.867,
+          "drawProb": 0.123,
+          "teamBWinProb": 0.01,
+          "predictedResult": "A_WIN"
+        }
+      ]
+    },
+    {
+      "group": "D",
+      "standings": [
+        {
+          "displayTeam": "Turkey",
+          "team": "Turkey",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 2,
+          "goalDiff": 4,
+          "points": 9,
+          "rank": 1,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Australia",
+          "team": "Australia",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 6,
+          "goalsAgainst": 3,
+          "goalDiff": 3,
+          "points": 6,
+          "rank": 2,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "United States",
+          "team": "United States",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 5,
+          "goalDiff": -2,
+          "points": 3,
+          "rank": 3,
+          "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+        },
+        {
+          "displayTeam": "Paraguay",
+          "team": "Paraguay",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "goalsFor": 2,
+          "goalsAgainst": 7,
+          "goalDiff": -5,
+          "points": 0,
+          "rank": 4,
+          "qualifiedStatus": "ELIMINATED"
+        }
+      ],
+      "matches": [
+        {
+          "matchId": 4,
+          "date": "2026-06-12",
+          "displayTeamA": "United States",
+          "displayTeamB": "Paraguay",
+          "predictedScoreA": 2,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.3914,
+          "drawProb": 0.357,
+          "teamBWinProb": 0.2516,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 8,
+          "date": "2026-06-13",
+          "displayTeamA": "Australia",
+          "displayTeamB": "Turkey",
+          "predictedScoreA": 1,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.1317,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.4883,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 31,
+          "date": "2026-06-19",
+          "displayTeamA": "United States",
+          "displayTeamB": "Australia",
+          "predictedScoreA": 1,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.1046,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.5154,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 32,
+          "date": "2026-06-19",
+          "displayTeamA": "Turkey",
+          "displayTeamB": "Paraguay",
+          "predictedScoreA": 2,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.4985,
+          "drawProb": 0.3739,
+          "teamBWinProb": 0.1276,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 55,
+          "date": "2026-06-25",
+          "displayTeamA": "United States",
+          "displayTeamB": "Turkey",
+          "predictedScoreA": 0,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.0795,
+          "drawProb": 0.3409,
+          "teamBWinProb": 0.5796,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 56,
+          "date": "2026-06-25",
+          "displayTeamA": "Paraguay",
+          "displayTeamB": "Australia",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.0455,
+          "drawProb": 0.292,
+          "teamBWinProb": 0.6625,
+          "predictedResult": "B_WIN"
+        }
+      ]
+    },
+    {
+      "group": "E",
+      "standings": [
+        {
+          "displayTeam": "Germany",
+          "team": "Germany",
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "goalDiff": 5,
+          "points": 7,
+          "rank": 1,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Ecuador",
+          "team": "Ecuador",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 5,
+          "goalsAgainst": 3,
+          "goalDiff": 2,
+          "points": 6,
+          "rank": 2,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Ivory Coast",
+          "team": "Ivory Coast",
+          "played": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 5,
+          "goalsAgainst": 3,
+          "goalDiff": 2,
+          "points": 4,
+          "rank": 3,
+          "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+        },
+        {
+          "displayTeam": "Curaçao",
+          "team": "Curaçao",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "goalsFor": 0,
+          "goalsAgainst": 9,
+          "goalDiff": -9,
+          "points": 0,
+          "rank": 4,
+          "qualifiedStatus": "ELIMINATED"
+        }
+      ],
+      "matches": [
+        {
+          "matchId": 9,
+          "date": "2026-06-14",
+          "displayTeamA": "Germany",
+          "displayTeamB": "Curaçao",
+          "predictedScoreA": 3,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.9058,
+          "drawProb": 0.0842,
+          "teamBWinProb": 0.01,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 10,
+          "date": "2026-06-14",
+          "displayTeamA": "Ivory Coast",
+          "displayTeamB": "Ecuador",
+          "predictedScoreA": 1,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.228,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.392,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 33,
+          "date": "2026-06-20",
+          "displayTeamA": "Germany",
+          "displayTeamB": "Ivory Coast",
+          "predictedScoreA": 1,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.2836,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.3364,
+          "predictedResult": "DRAW"
+        },
+        {
+          "matchId": 34,
+          "date": "2026-06-20",
+          "displayTeamA": "Ecuador",
+          "displayTeamB": "Curaçao",
+          "predictedScoreA": 3,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.8201,
+          "drawProb": 0.1577,
+          "teamBWinProb": 0.0222,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 57,
+          "date": "2026-06-25",
+          "displayTeamA": "Curaçao",
+          "displayTeamB": "Ivory Coast",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.0099,
+          "drawProb": 0.0795,
+          "teamBWinProb": 0.9105,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 58,
+          "date": "2026-06-25",
+          "displayTeamA": "Ecuador",
+          "displayTeamB": "Germany",
+          "predictedScoreA": 0,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.0466,
+          "drawProb": 0.3576,
+          "teamBWinProb": 0.5958,
+          "predictedResult": "B_WIN"
+        }
+      ]
+    },
+    {
+      "group": "F",
+      "standings": [
+        {
+          "displayTeam": "Japan",
+          "team": "Japan",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 8,
+          "goalsAgainst": 0,
+          "goalDiff": 8,
+          "points": 9,
+          "rank": 1,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Netherlands",
+          "team": "Netherlands",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 5,
+          "goalsAgainst": 2,
+          "goalDiff": 3,
+          "points": 6,
+          "rank": 2,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Tunisia",
+          "team": "Tunisia",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 7,
+          "goalDiff": -5,
+          "points": 3,
+          "rank": 3,
+          "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+        },
+        {
+          "displayTeam": "Sweden",
+          "team": "Sweden",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 7,
+          "goalDiff": -6,
+          "points": 0,
+          "rank": 4,
+          "qualifiedStatus": "ELIMINATED"
+        }
+      ],
+      "matches": [
+        {
+          "matchId": 11,
+          "date": "2026-06-14",
+          "displayTeamA": "Netherlands",
+          "displayTeamB": "Japan",
+          "predictedScoreA": 0,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.0373,
+          "drawProb": 0.3743,
+          "teamBWinProb": 0.5884,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 12,
+          "date": "2026-06-14",
+          "displayTeamA": "Sweden",
+          "displayTeamB": "Tunisia",
+          "predictedScoreA": 1,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.1381,
+          "drawProb": 0.3555,
+          "teamBWinProb": 0.5064,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 35,
+          "date": "2026-06-20",
+          "displayTeamA": "Netherlands",
+          "displayTeamB": "Sweden",
+          "predictedScoreA": 2,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.6199,
+          "drawProb": 0.3097,
+          "teamBWinProb": 0.0704,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 36,
+          "date": "2026-06-20",
+          "displayTeamA": "Tunisia",
+          "displayTeamB": "Japan",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.01,
+          "drawProb": 0.156,
+          "teamBWinProb": 0.834,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 59,
+          "date": "2026-06-25",
+          "displayTeamA": "Japan",
+          "displayTeamB": "Sweden",
+          "predictedScoreA": 3,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.7624,
+          "drawProb": 0.2127,
+          "teamBWinProb": 0.0249,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 60,
+          "date": "2026-06-25",
+          "displayTeamA": "Tunisia",
+          "displayTeamB": "Netherlands",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.0318,
+          "drawProb": 0.2457,
+          "teamBWinProb": 0.7225,
+          "predictedResult": "B_WIN"
+        }
+      ]
+    },
+    {
+      "group": "G",
+      "standings": [
+        {
+          "displayTeam": "Iran",
+          "team": "Iran",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 7,
+          "goalsAgainst": 2,
+          "goalDiff": 5,
+          "points": 9,
+          "rank": 1,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Belgium",
+          "team": "Belgium",
+          "played": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 5,
+          "goalsAgainst": 3,
+          "goalDiff": 2,
+          "points": 4,
+          "rank": 2,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Egypt",
+          "team": "Egypt",
+          "played": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 5,
+          "goalsAgainst": 3,
+          "goalDiff": 2,
+          "points": 4,
+          "rank": 3,
+          "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+        },
+        {
+          "displayTeam": "New Zealand",
+          "team": "New Zealand",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "goalsFor": 0,
+          "goalsAgainst": 9,
+          "goalDiff": -9,
+          "points": 0,
+          "rank": 4,
+          "qualifiedStatus": "ELIMINATED"
+        }
+      ],
+      "matches": [
+        {
+          "matchId": 13,
+          "date": "2026-06-15",
+          "displayTeamA": "Belgium",
+          "displayTeamB": "Egypt",
+          "predictedScoreA": 1,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.2497,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.3703,
+          "predictedResult": "DRAW"
+        },
+        {
+          "matchId": 14,
+          "date": "2026-06-15",
+          "displayTeamA": "Iran",
+          "displayTeamB": "New Zealand",
+          "predictedScoreA": 3,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.861,
+          "drawProb": 0.1258,
+          "teamBWinProb": 0.0132,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 37,
+          "date": "2026-06-21",
+          "displayTeamA": "Belgium",
+          "displayTeamB": "Iran",
+          "predictedScoreA": 1,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.1252,
+          "drawProb": 0.3669,
+          "teamBWinProb": 0.5079,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 38,
+          "date": "2026-06-21",
+          "displayTeamA": "New Zealand",
+          "displayTeamB": "Egypt",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.01,
+          "drawProb": 0.1223,
+          "teamBWinProb": 0.8677,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 61,
+          "date": "2026-06-26",
+          "displayTeamA": "Egypt",
+          "displayTeamB": "Iran",
+          "predictedScoreA": 1,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.0855,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.5345,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 62,
+          "date": "2026-06-26",
+          "displayTeamA": "New Zealand",
+          "displayTeamB": "Belgium",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.0099,
+          "drawProb": 0.0922,
+          "teamBWinProb": 0.8978,
+          "predictedResult": "B_WIN"
+        }
+      ]
+    },
+    {
+      "group": "H",
+      "standings": [
+        {
+          "displayTeam": "Spain",
+          "team": "Spain",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 9,
+          "goalsAgainst": 0,
+          "goalDiff": 9,
+          "points": 9,
+          "rank": 1,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Uruguay",
+          "team": "Uruguay",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 5,
+          "goalsAgainst": 4,
+          "goalDiff": 1,
+          "points": 6,
+          "rank": 2,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Saudi Arabia",
+          "team": "Saudi Arabia",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 7,
+          "goalDiff": -5,
+          "points": 3,
+          "rank": 3,
+          "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+        },
+        {
+          "displayTeam": "Cape Verde",
+          "team": "Cape Verde",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "goalsFor": 2,
+          "goalsAgainst": 7,
+          "goalDiff": -5,
+          "points": 0,
+          "rank": 4,
+          "qualifiedStatus": "ELIMINATED"
+        }
+      ],
+      "matches": [
+        {
+          "matchId": 15,
+          "date": "2026-06-15",
+          "displayTeamA": "Spain",
+          "displayTeamB": "Cape Verde",
+          "predictedScoreA": 3,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.884,
+          "drawProb": 0.106,
+          "teamBWinProb": 0.01,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 16,
+          "date": "2026-06-15",
+          "displayTeamA": "Saudi Arabia",
+          "displayTeamB": "Uruguay",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.072,
+          "drawProb": 0.2871,
+          "teamBWinProb": 0.6409,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 39,
+          "date": "2026-06-21",
+          "displayTeamA": "Spain",
+          "displayTeamB": "Saudi Arabia",
+          "predictedScoreA": 3,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.8641,
+          "drawProb": 0.1257,
+          "teamBWinProb": 0.0102,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 40,
+          "date": "2026-06-21",
+          "displayTeamA": "Uruguay",
+          "displayTeamB": "Cape Verde",
+          "predictedScoreA": 2,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.4709,
+          "drawProb": 0.3786,
+          "teamBWinProb": 0.1505,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 63,
+          "date": "2026-06-26",
+          "displayTeamA": "Cape Verde",
+          "displayTeamB": "Saudi Arabia",
+          "predictedScoreA": 1,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.1588,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.4612,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 64,
+          "date": "2026-06-26",
+          "displayTeamA": "Uruguay",
+          "displayTeamB": "Spain",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.01,
+          "drawProb": 0.1327,
+          "teamBWinProb": 0.8573,
+          "predictedResult": "B_WIN"
+        }
+      ]
+    },
+    {
+      "group": "I",
+      "standings": [
+        {
+          "displayTeam": "France",
+          "team": "France",
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "goalDiff": 5,
+          "points": 7,
+          "rank": 1,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Senegal",
+          "team": "Senegal",
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 5,
+          "goalsAgainst": 2,
+          "goalDiff": 3,
+          "points": 7,
+          "rank": 2,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Norway",
+          "team": "Norway",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 6,
+          "goalDiff": -4,
+          "points": 3,
+          "rank": 3,
+          "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+        },
+        {
+          "displayTeam": "Iraq",
+          "team": "Iraq",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "goalsFor": 2,
+          "goalsAgainst": 6,
+          "goalDiff": -4,
+          "points": 0,
+          "rank": 4,
+          "qualifiedStatus": "ELIMINATED"
+        }
+      ],
+      "matches": [
+        {
+          "matchId": 17,
+          "date": "2026-06-16",
+          "displayTeamA": "France",
+          "displayTeamB": "Senegal",
+          "predictedScoreA": 1,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.2704,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.3496,
+          "predictedResult": "DRAW"
+        },
+        {
+          "matchId": 18,
+          "date": "2026-06-16",
+          "displayTeamA": "Iraq",
+          "displayTeamB": "Norway",
+          "predictedScoreA": 1,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.1253,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.4947,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 41,
+          "date": "2026-06-22",
+          "displayTeamA": "France",
+          "displayTeamB": "Iraq",
+          "predictedScoreA": 2,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.5475,
+          "drawProb": 0.347,
+          "teamBWinProb": 0.1055,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 42,
+          "date": "2026-06-22",
+          "displayTeamA": "Norway",
+          "displayTeamB": "Senegal",
+          "predictedScoreA": 0,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.0628,
+          "drawProb": 0.3317,
+          "teamBWinProb": 0.6055,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 65,
+          "date": "2026-06-26",
+          "displayTeamA": "Norway",
+          "displayTeamB": "France",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.0348,
+          "drawProb": 0.2506,
+          "teamBWinProb": 0.7146,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 66,
+          "date": "2026-06-26",
+          "displayTeamA": "Senegal",
+          "displayTeamB": "Iraq",
+          "predictedScoreA": 2,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.4342,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.1858,
+          "predictedResult": "A_WIN"
+        }
+      ]
+    },
+    {
+      "group": "J",
+      "standings": [
+        {
+          "displayTeam": "Argentina",
+          "team": "Argentina",
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "goalDiff": 5,
+          "points": 7,
+          "rank": 1,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Algeria",
+          "team": "Algeria",
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 2,
+          "goalDiff": 4,
+          "points": 7,
+          "rank": 2,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Austria",
+          "team": "Austria",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 4,
+          "goalDiff": -1,
+          "points": 3,
+          "rank": 3,
+          "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+        },
+        {
+          "displayTeam": "Jordan",
+          "team": "Jordan",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "goalsFor": 0,
+          "goalsAgainst": 8,
+          "goalDiff": -8,
+          "points": 0,
+          "rank": 4,
+          "qualifiedStatus": "ELIMINATED"
+        }
+      ],
+      "matches": [
+        {
+          "matchId": 19,
+          "date": "2026-06-16",
+          "displayTeamA": "Argentina",
+          "displayTeamB": "Algeria",
+          "predictedScoreA": 1,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.374,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.246,
+          "predictedResult": "DRAW"
+        },
+        {
+          "matchId": 20,
+          "date": "2026-06-16",
+          "displayTeamA": "Austria",
+          "displayTeamB": "Jordan",
+          "predictedScoreA": 2,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.5425,
+          "drawProb": 0.3247,
+          "teamBWinProb": 0.1328,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 43,
+          "date": "2026-06-22",
+          "displayTeamA": "Argentina",
+          "displayTeamB": "Austria",
+          "predictedScoreA": 2,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.5902,
+          "drawProb": 0.3535,
+          "teamBWinProb": 0.0563,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 44,
+          "date": "2026-06-22",
+          "displayTeamA": "Jordan",
+          "displayTeamB": "Algeria",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.01,
+          "drawProb": 0.1116,
+          "teamBWinProb": 0.8784,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 67,
+          "date": "2026-06-27",
+          "displayTeamA": "Algeria",
+          "displayTeamB": "Austria",
+          "predictedScoreA": 2,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.4244,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.1956,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 68,
+          "date": "2026-06-27",
+          "displayTeamA": "Jordan",
+          "displayTeamB": "Argentina",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.0099,
+          "drawProb": 0.0562,
+          "teamBWinProb": 0.9339,
+          "predictedResult": "B_WIN"
+        }
+      ]
+    },
+    {
+      "group": "K",
+      "standings": [
+        {
+          "displayTeam": "Portugal",
+          "team": "Portugal",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 2,
+          "goalDiff": 4,
+          "points": 9,
+          "rank": 1,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Colombia",
+          "team": "Colombia",
+          "played": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 3,
+          "goalDiff": 0,
+          "points": 4,
+          "rank": 2,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Uzbekistan",
+          "team": "Uzbekistan",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 5,
+          "goalDiff": -2,
+          "points": 3,
+          "rank": 3,
+          "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+        },
+        {
+          "displayTeam": "DR Congo",
+          "team": "DR Congo",
+          "played": 3,
+          "wins": 0,
+          "draws": 1,
+          "losses": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 5,
+          "goalDiff": -2,
+          "points": 1,
+          "rank": 4,
+          "qualifiedStatus": "ELIMINATED"
+        }
+      ],
+      "matches": [
+        {
+          "matchId": 21,
+          "date": "2026-06-17",
+          "displayTeamA": "Portugal",
+          "displayTeamB": "DR Congo",
+          "predictedScoreA": 2,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.4738,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.1462,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 22,
+          "date": "2026-06-17",
+          "displayTeamA": "Uzbekistan",
+          "displayTeamB": "Colombia",
+          "predictedScoreA": 0,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.0629,
+          "drawProb": 0.3639,
+          "teamBWinProb": 0.5732,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 45,
+          "date": "2026-06-23",
+          "displayTeamA": "Portugal",
+          "displayTeamB": "Uzbekistan",
+          "predictedScoreA": 2,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.4607,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.1593,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 46,
+          "date": "2026-06-23",
+          "displayTeamA": "Colombia",
+          "displayTeamB": "DR Congo",
+          "predictedScoreA": 1,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.3667,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.2533,
+          "predictedResult": "DRAW"
+        },
+        {
+          "matchId": 69,
+          "date": "2026-06-27",
+          "displayTeamA": "Colombia",
+          "displayTeamB": "Portugal",
+          "predictedScoreA": 0,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.0877,
+          "drawProb": 0.3506,
+          "teamBWinProb": 0.5617,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 70,
+          "date": "2026-06-27",
+          "displayTeamA": "DR Congo",
+          "displayTeamB": "Uzbekistan",
+          "predictedScoreA": 1,
+          "predictedScoreB": 2,
+          "teamAWinProb": 0.1883,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.4317,
+          "predictedResult": "B_WIN"
+        }
+      ]
+    },
+    {
+      "group": "L",
+      "standings": [
+        {
+          "displayTeam": "England",
+          "team": "England",
+          "played": 3,
+          "wins": 3,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 8,
+          "goalsAgainst": 1,
+          "goalDiff": 7,
+          "points": 9,
+          "rank": 1,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Croatia",
+          "team": "Croatia",
+          "played": 3,
+          "wins": 2,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 7,
+          "goalsAgainst": 2,
+          "goalDiff": 5,
+          "points": 6,
+          "rank": 2,
+          "qualifiedStatus": "DIRECT_ADVANCE"
+        },
+        {
+          "displayTeam": "Panama",
+          "team": "Panama",
+          "played": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 6,
+          "goalDiff": -3,
+          "points": 3,
+          "rank": 3,
+          "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+        },
+        {
+          "displayTeam": "Ghana",
+          "team": "Ghana",
+          "played": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "goalsFor": 0,
+          "goalsAgainst": 9,
+          "goalDiff": -9,
+          "points": 0,
+          "rank": 4,
+          "qualifiedStatus": "ELIMINATED"
+        }
+      ],
+      "matches": [
+        {
+          "matchId": 23,
+          "date": "2026-06-17",
+          "displayTeamA": "England",
+          "displayTeamB": "Croatia",
+          "predictedScoreA": 2,
+          "predictedScoreB": 1,
+          "teamAWinProb": 0.3903,
+          "drawProb": 0.38,
+          "teamBWinProb": 0.2297,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 24,
+          "date": "2026-06-17",
+          "displayTeamA": "Ghana",
+          "displayTeamB": "Panama",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.0403,
+          "drawProb": 0.1822,
+          "teamBWinProb": 0.7775,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 47,
+          "date": "2026-06-23",
+          "displayTeamA": "England",
+          "displayTeamB": "Ghana",
+          "predictedScoreA": 3,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.8767,
+          "drawProb": 0.1133,
+          "teamBWinProb": 0.01,
+          "predictedResult": "A_WIN"
+        },
+        {
+          "matchId": 48,
+          "date": "2026-06-23",
+          "displayTeamA": "Panama",
+          "displayTeamB": "Croatia",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.0498,
+          "drawProb": 0.2704,
+          "teamBWinProb": 0.6798,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 71,
+          "date": "2026-06-27",
+          "displayTeamA": "Panama",
+          "displayTeamB": "England",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "teamAWinProb": 0.01,
+          "drawProb": 0.1871,
+          "teamBWinProb": 0.803,
+          "predictedResult": "B_WIN"
+        },
+        {
+          "matchId": 72,
+          "date": "2026-06-27",
+          "displayTeamA": "Croatia",
+          "displayTeamB": "Ghana",
+          "predictedScoreA": 3,
+          "predictedScoreB": 0,
+          "teamAWinProb": 0.7908,
+          "drawProb": 0.1737,
+          "teamBWinProb": 0.0355,
+          "predictedResult": "A_WIN"
+        }
+      ]
+    }
+  ],
+  "groupRound32Summary": [
+    {
+      "group": "A",
+      "teams": [
+        {
+          "displayTeam": "Mexico",
+          "team": "Mexico",
+          "roundOf32Prob": 93.47,
+          "directAdvanceProb": 82.24,
+          "rank1Prob": 46.21,
+          "rank2Prob": 36.03,
+          "rank3Prob": 13.59,
+          "averageRank": 1.76
+        },
+        {
+          "displayTeam": "South Korea",
+          "team": "South Korea",
+          "roundOf32Prob": 90.52,
+          "directAdvanceProb": 77.27,
+          "rank1Prob": 42.89,
+          "rank2Prob": 34.38,
+          "rank3Prob": 16.42,
+          "averageRank": 1.86
+        },
+        {
+          "displayTeam": "Czech Republic",
+          "team": "Czech Republic",
+          "roundOf32Prob": 51.88,
+          "directAdvanceProb": 26.15,
+          "rank1Prob": 7.46,
+          "rank2Prob": 18.69,
+          "rank3Prob": 39.34,
+          "averageRank": 3.01
+        },
+        {
+          "displayTeam": "South Africa",
+          "team": "South Africa",
+          "roundOf32Prob": 35.94,
+          "directAdvanceProb": 14.34,
+          "rank1Prob": 3.44,
+          "rank2Prob": 10.9,
+          "rank3Prob": 30.65,
+          "averageRank": 3.37
+        }
+      ]
+    },
+    {
+      "group": "B",
+      "teams": [
+        {
+          "displayTeam": "Switzerland",
+          "team": "Switzerland",
+          "roundOf32Prob": 98.49,
+          "directAdvanceProb": 95.24,
+          "rank1Prob": 54.8,
+          "rank2Prob": 40.44,
+          "rank3Prob": 4.23,
+          "averageRank": 1.5
+        },
+        {
+          "displayTeam": "Canada",
+          "team": "Canada",
+          "roundOf32Prob": 97.7,
+          "directAdvanceProb": 92.89,
+          "rank1Prob": 43.9,
+          "rank2Prob": 48.99,
+          "rank3Prob": 6.33,
+          "averageRank": 1.64
+        },
+        {
+          "displayTeam": "Qatar",
+          "team": "Qatar",
+          "roundOf32Prob": 30.93,
+          "directAdvanceProb": 6.85,
+          "rank1Prob": 0.81,
+          "rank2Prob": 6.04,
+          "rank3Prob": 51.35,
+          "averageRank": 3.34
+        },
+        {
+          "displayTeam": "Bosnia and Herzegovina",
+          "team": "Bosnia and Herzegovina",
+          "roundOf32Prob": 20.53,
+          "directAdvanceProb": 5.02,
+          "rank1Prob": 0.49,
+          "rank2Prob": 4.53,
+          "rank3Prob": 38.09,
+          "averageRank": 3.51
+        }
+      ]
+    },
+    {
+      "group": "C",
+      "teams": [
+        {
+          "displayTeam": "Morocco",
+          "team": "Morocco",
+          "roundOf32Prob": 99.89,
+          "directAdvanceProb": 99.39,
+          "rank1Prob": 84.14,
+          "rank2Prob": 15.25,
+          "rank3Prob": 0.57,
+          "averageRank": 1.17
+        },
+        {
+          "displayTeam": "Brazil",
+          "team": "Brazil",
+          "roundOf32Prob": 96.57,
+          "directAdvanceProb": 92.79,
+          "rank1Prob": 15.57,
+          "rank2Prob": 77.22,
+          "rank3Prob": 5.95,
+          "averageRank": 1.93
+        },
+        {
+          "displayTeam": "Scotland",
+          "team": "Scotland",
+          "roundOf32Prob": 30.01,
+          "directAdvanceProb": 4.59,
+          "rank1Prob": 0.16,
+          "rank2Prob": 4.43,
+          "rank3Prob": 60.19,
+          "averageRank": 3.3
+        },
+        {
+          "displayTeam": "Haiti",
+          "team": "Haiti",
+          "roundOf32Prob": 13.77,
+          "directAdvanceProb": 3.23,
+          "rank1Prob": 0.13,
+          "rank2Prob": 3.1,
+          "rank3Prob": 33.29,
+          "averageRank": 3.6
+        }
+      ]
+    },
+    {
+      "group": "D",
+      "teams": [
+        {
+          "displayTeam": "Turkey",
+          "team": "Turkey",
+          "roundOf32Prob": 94.14,
+          "directAdvanceProb": 83.95,
+          "rank1Prob": 52.1,
+          "rank2Prob": 31.85,
+          "rank3Prob": 12.15,
+          "averageRank": 1.68
+        },
+        {
+          "displayTeam": "Australia",
+          "team": "Australia",
+          "roundOf32Prob": 89.81,
+          "directAdvanceProb": 76.14,
+          "rank1Prob": 37.24,
+          "rank2Prob": 38.9,
+          "rank3Prob": 17.24,
+          "averageRank": 1.93
+        },
+        {
+          "displayTeam": "United States",
+          "team": "United States",
+          "roundOf32Prob": 52.81,
+          "directAdvanceProb": 23.99,
+          "rank1Prob": 6.27,
+          "rank2Prob": 17.72,
+          "rank3Prob": 41.54,
+          "averageRank": 3.04
+        },
+        {
+          "displayTeam": "Paraguay",
+          "team": "Paraguay",
+          "roundOf32Prob": 36.66,
+          "directAdvanceProb": 15.92,
+          "rank1Prob": 4.39,
+          "rank2Prob": 11.53,
+          "rank3Prob": 29.07,
+          "averageRank": 3.35
+        }
+      ]
+    },
+    {
+      "group": "E",
+      "teams": [
+        {
+          "displayTeam": "Germany",
+          "team": "Germany",
+          "roundOf32Prob": 98.76,
+          "directAdvanceProb": 82.78,
+          "rank1Prob": 51.6,
+          "rank2Prob": 31.18,
+          "rank3Prob": 16.94,
+          "averageRank": 1.66
+        },
+        {
+          "displayTeam": "Ivory Coast",
+          "team": "Ivory Coast",
+          "roundOf32Prob": 96.96,
+          "directAdvanceProb": 65.69,
+          "rank1Prob": 30.44,
+          "rank2Prob": 35.25,
+          "rank3Prob": 33.53,
+          "averageRank": 2.05
+        },
+        {
+          "displayTeam": "Ecuador",
+          "team": "Ecuador",
+          "roundOf32Prob": 92.04,
+          "directAdvanceProb": 51.15,
+          "rank1Prob": 17.91,
+          "rank2Prob": 33.24,
+          "rank3Prob": 46.89,
+          "averageRank": 2.33
+        },
+        {
+          "displayTeam": "Curaçao",
+          "team": "Curaçao",
+          "roundOf32Prob": 1.74,
+          "directAdvanceProb": 0.38,
+          "rank1Prob": 0.05,
+          "rank2Prob": 0.33,
+          "rank3Prob": 2.64,
+          "averageRank": 3.97
+        }
+      ]
+    },
+    {
+      "group": "F",
+      "teams": [
+        {
+          "displayTeam": "Japan",
+          "team": "Japan",
+          "roundOf32Prob": 99.63,
+          "directAdvanceProb": 98.17,
+          "rank1Prob": 84.35,
+          "rank2Prob": 13.82,
+          "rank3Prob": 1.69,
+          "averageRank": 1.18
+        },
+        {
+          "displayTeam": "Netherlands",
+          "team": "Netherlands",
+          "roundOf32Prob": 93.48,
+          "directAdvanceProb": 85.55,
+          "rank1Prob": 14.26,
+          "rank2Prob": 71.29,
+          "rank3Prob": 11.79,
+          "averageRank": 2.03
+        },
+        {
+          "displayTeam": "Tunisia",
+          "team": "Tunisia",
+          "roundOf32Prob": 35.94,
+          "directAdvanceProb": 9.93,
+          "rank1Prob": 0.83,
+          "rank2Prob": 9.1,
+          "rank3Prob": 49.88,
+          "averageRank": 3.29
+        },
+        {
+          "displayTeam": "Sweden",
+          "team": "Sweden",
+          "roundOf32Prob": 20.92,
+          "directAdvanceProb": 6.35,
+          "rank1Prob": 0.56,
+          "rank2Prob": 5.79,
+          "rank3Prob": 36.64,
+          "averageRank": 3.5
+        }
+      ]
+    },
+    {
+      "group": "G",
+      "teams": [
+        {
+          "displayTeam": "Iran",
+          "team": "Iran",
+          "roundOf32Prob": 98.69,
+          "directAdvanceProb": 87.87,
+          "rank1Prob": 60.24,
+          "rank2Prob": 27.63,
+          "rank3Prob": 11.75,
+          "averageRank": 1.52
+        },
+        {
+          "displayTeam": "Belgium",
+          "team": "Belgium",
+          "roundOf32Prob": 94.85,
+          "directAdvanceProb": 52.86,
+          "rank1Prob": 18.47,
+          "rank2Prob": 34.39,
+          "rank3Prob": 45.9,
+          "averageRank": 2.3
+        },
+        {
+          "displayTeam": "Egypt",
+          "team": "Egypt",
+          "roundOf32Prob": 94.64,
+          "directAdvanceProb": 59.04,
+          "rank1Prob": 21.26,
+          "rank2Prob": 37.78,
+          "rank3Prob": 39.79,
+          "averageRank": 2.21
+        },
+        {
+          "displayTeam": "New Zealand",
+          "team": "New Zealand",
+          "roundOf32Prob": 1.39,
+          "directAdvanceProb": 0.23,
+          "rank1Prob": 0.03,
+          "rank2Prob": 0.2,
+          "rank3Prob": 2.56,
+          "averageRank": 3.97
+        }
+      ]
+    },
+    {
+      "group": "H",
+      "teams": [
+        {
+          "displayTeam": "Spain",
+          "team": "Spain",
+          "roundOf32Prob": 99.95,
+          "directAdvanceProb": 99.73,
+          "rank1Prob": 96.08,
+          "rank2Prob": 3.65,
+          "rank3Prob": 0.23,
+          "averageRank": 1.04
+        },
+        {
+          "displayTeam": "Uruguay",
+          "team": "Uruguay",
+          "roundOf32Prob": 81.35,
+          "directAdvanceProb": 68.83,
+          "rank1Prob": 3.05,
+          "rank2Prob": 65.78,
+          "rank3Prob": 21.72,
+          "averageRank": 2.38
+        },
+        {
+          "displayTeam": "Saudi Arabia",
+          "team": "Saudi Arabia",
+          "roundOf32Prob": 37.32,
+          "directAdvanceProb": 18.53,
+          "rank1Prob": 0.55,
+          "rank2Prob": 17.98,
+          "rank3Prob": 39.57,
+          "averageRank": 3.23
+        },
+        {
+          "displayTeam": "Cape Verde",
+          "team": "Cape Verde",
+          "roundOf32Prob": 27.81,
+          "directAdvanceProb": 12.91,
+          "rank1Prob": 0.32,
+          "rank2Prob": 12.59,
+          "rank3Prob": 38.48,
+          "averageRank": 3.35
+        }
+      ]
+    },
+    {
+      "group": "I",
+      "teams": [
+        {
+          "displayTeam": "France",
+          "team": "France",
+          "roundOf32Prob": 93.59,
+          "directAdvanceProb": 84.68,
+          "rank1Prob": 53.06,
+          "rank2Prob": 31.62,
+          "rank3Prob": 11.0,
+          "averageRank": 1.67
+        },
+        {
+          "displayTeam": "Senegal",
+          "team": "Senegal",
+          "roundOf32Prob": 90.34,
+          "directAdvanceProb": 78.13,
+          "rank1Prob": 37.77,
+          "rank2Prob": 40.36,
+          "rank3Prob": 15.84,
+          "averageRank": 1.9
+        },
+        {
+          "displayTeam": "Norway",
+          "team": "Norway",
+          "roundOf32Prob": 46.37,
+          "directAdvanceProb": 18.03,
+          "rank1Prob": 4.54,
+          "rank2Prob": 13.49,
+          "rank3Prob": 38.56,
+          "averageRank": 3.21
+        },
+        {
+          "displayTeam": "Iraq",
+          "team": "Iraq",
+          "roundOf32Prob": 39.97,
+          "directAdvanceProb": 19.16,
+          "rank1Prob": 4.63,
+          "rank2Prob": 14.53,
+          "rank3Prob": 34.6,
+          "averageRank": 3.22
+        }
+      ]
+    },
+    {
+      "group": "J",
+      "teams": [
+        {
+          "displayTeam": "Argentina",
+          "team": "Argentina",
+          "roundOf32Prob": 98.99,
+          "directAdvanceProb": 92.2,
+          "rank1Prob": 59.93,
+          "rank2Prob": 32.27,
+          "rank3Prob": 7.42,
+          "averageRank": 1.48
+        },
+        {
+          "displayTeam": "Algeria",
+          "team": "Algeria",
+          "roundOf32Prob": 96.69,
+          "directAdvanceProb": 80.82,
+          "rank1Prob": 34.62,
+          "rank2Prob": 46.2,
+          "rank3Prob": 18.04,
+          "averageRank": 1.86
+        },
+        {
+          "displayTeam": "Austria",
+          "team": "Austria",
+          "roundOf32Prob": 69.8,
+          "directAdvanceProb": 25.56,
+          "rank1Prob": 5.28,
+          "rank2Prob": 20.28,
+          "rank3Prob": 62.85,
+          "averageRank": 2.81
+        },
+        {
+          "displayTeam": "Jordan",
+          "team": "Jordan",
+          "roundOf32Prob": 7.52,
+          "directAdvanceProb": 1.42,
+          "rank1Prob": 0.17,
+          "rank2Prob": 1.25,
+          "rank3Prob": 11.69,
+          "averageRank": 3.85
+        }
+      ]
+    },
+    {
+      "group": "K",
+      "teams": [
+        {
+          "displayTeam": "Portugal",
+          "team": "Portugal",
+          "roundOf32Prob": 91.78,
+          "directAdvanceProb": 80.7,
+          "rank1Prob": 54.93,
+          "rank2Prob": 25.77,
+          "rank3Prob": 13.07,
+          "averageRank": 1.71
+        },
+        {
+          "displayTeam": "Colombia",
+          "team": "Colombia",
+          "roundOf32Prob": 76.66,
+          "directAdvanceProb": 56.3,
+          "rank1Prob": 23.99,
+          "rank2Prob": 32.31,
+          "rank3Prob": 24.79,
+          "averageRank": 2.39
+        },
+        {
+          "displayTeam": "Uzbekistan",
+          "team": "Uzbekistan",
+          "roundOf32Prob": 56.67,
+          "directAdvanceProb": 31.73,
+          "rank1Prob": 10.54,
+          "rank2Prob": 21.19,
+          "rank3Prob": 32.66,
+          "averageRank": 2.93
+        },
+        {
+          "displayTeam": "DR Congo",
+          "team": "DR Congo",
+          "roundOf32Prob": 51.44,
+          "directAdvanceProb": 31.27,
+          "rank1Prob": 10.54,
+          "rank2Prob": 20.73,
+          "rank3Prob": 29.48,
+          "averageRank": 2.97
+        }
+      ]
+    },
+    {
+      "group": "L",
+      "teams": [
+        {
+          "displayTeam": "England",
+          "team": "England",
+          "roundOf32Prob": 99.27,
+          "directAdvanceProb": 96.51,
+          "rank1Prob": 61.45,
+          "rank2Prob": 35.06,
+          "rank3Prob": 3.25,
+          "averageRank": 1.42
+        },
+        {
+          "displayTeam": "Croatia",
+          "team": "Croatia",
+          "roundOf32Prob": 97.06,
+          "directAdvanceProb": 90.08,
+          "rank1Prob": 36.32,
+          "rank2Prob": 53.76,
+          "rank3Prob": 8.95,
+          "averageRank": 1.75
+        },
+        {
+          "displayTeam": "Panama",
+          "team": "Panama",
+          "roundOf32Prob": 70.35,
+          "directAdvanceProb": 12.52,
+          "rank1Prob": 2.16,
+          "rank2Prob": 10.36,
+          "rank3Prob": 75.39,
+          "averageRank": 2.97
+        },
+        {
+          "displayTeam": "Ghana",
+          "team": "Ghana",
+          "roundOf32Prob": 4.91,
+          "directAdvanceProb": 0.89,
+          "rank1Prob": 0.07,
+          "rank2Prob": 0.82,
+          "rank3Prob": 12.41,
+          "averageRank": 3.86
+        }
+      ]
+    }
+  ],
+  "upcomingMatchCards": [
+    {
+      "matchId": 1,
+      "group": "A",
+      "date": "2026-06-11",
+      "displayTeamA": "Mexico",
+      "displayTeamB": "South Africa",
+      "teamAWinProb": 62.75,
+      "drawProb": 31.21,
+      "teamBWinProb": 6.04,
+      "predictedResult": "A_WIN"
+    },
+    {
+      "matchId": 2,
+      "group": "A",
+      "date": "2026-06-11",
+      "displayTeamA": "South Korea",
+      "displayTeamB": "Czech Republic",
+      "teamAWinProb": 41.54,
+      "drawProb": 38.0,
+      "teamBWinProb": 20.46,
+      "predictedResult": "A_WIN"
+    },
+    {
+      "matchId": 3,
+      "group": "B",
+      "date": "2026-06-12",
+      "displayTeamA": "Canada",
+      "displayTeamB": "Bosnia and Herzegovina",
+      "teamAWinProb": 76.42,
+      "drawProb": 20.92,
+      "teamBWinProb": 2.66,
+      "predictedResult": "A_WIN"
+    },
+    {
+      "matchId": 4,
+      "group": "D",
+      "date": "2026-06-12",
+      "displayTeamA": "United States",
+      "displayTeamB": "Paraguay",
+      "teamAWinProb": 39.14,
+      "drawProb": 35.7,
+      "teamBWinProb": 25.16,
+      "predictedResult": "A_WIN"
+    },
+    {
+      "matchId": 5,
+      "group": "B",
+      "date": "2026-06-13",
+      "displayTeamA": "Qatar",
+      "displayTeamB": "Switzerland",
+      "teamAWinProb": 1.83,
+      "drawProb": 17.12,
+      "teamBWinProb": 81.05,
+      "predictedResult": "B_WIN"
+    },
+    {
+      "matchId": 6,
+      "group": "C",
+      "date": "2026-06-13",
+      "displayTeamA": "Brazil",
+      "displayTeamB": "Morocco",
+      "teamAWinProb": 2.95,
+      "drawProb": 29.02,
+      "teamBWinProb": 68.03,
+      "predictedResult": "B_WIN"
+    },
+    {
+      "matchId": 7,
+      "group": "C",
+      "date": "2026-06-13",
+      "displayTeamA": "Haiti",
+      "displayTeamB": "Scotland",
+      "teamAWinProb": 15.2,
+      "drawProb": 36.14,
+      "teamBWinProb": 48.66,
+      "predictedResult": "B_WIN"
+    },
+    {
+      "matchId": 8,
+      "group": "D",
+      "date": "2026-06-13",
+      "displayTeamA": "Australia",
+      "displayTeamB": "Turkey",
+      "teamAWinProb": 13.17,
+      "drawProb": 38.0,
+      "teamBWinProb": 48.83,
+      "predictedResult": "B_WIN"
+    },
+    {
+      "matchId": 9,
+      "group": "E",
+      "date": "2026-06-14",
+      "displayTeamA": "Germany",
+      "displayTeamB": "Curaçao",
+      "teamAWinProb": 90.58,
+      "drawProb": 8.42,
+      "teamBWinProb": 1.0,
+      "predictedResult": "A_WIN"
+    },
+    {
+      "matchId": 10,
+      "group": "E",
+      "date": "2026-06-14",
+      "displayTeamA": "Ivory Coast",
+      "displayTeamB": "Ecuador",
+      "teamAWinProb": 22.8,
+      "drawProb": 38.0,
+      "teamBWinProb": 39.2,
+      "predictedResult": "B_WIN"
+    },
+    {
+      "matchId": 11,
+      "group": "F",
+      "date": "2026-06-14",
+      "displayTeamA": "Netherlands",
+      "displayTeamB": "Japan",
+      "teamAWinProb": 3.73,
+      "drawProb": 37.43,
+      "teamBWinProb": 58.84,
+      "predictedResult": "B_WIN"
+    },
+    {
+      "matchId": 12,
+      "group": "F",
+      "date": "2026-06-14",
+      "displayTeamA": "Sweden",
+      "displayTeamB": "Tunisia",
+      "teamAWinProb": 13.81,
+      "drawProb": 35.55,
+      "teamBWinProb": 50.64,
+      "predictedResult": "B_WIN"
+    }
+  ]
+}
