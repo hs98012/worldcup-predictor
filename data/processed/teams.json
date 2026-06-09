@@ -1,13 +1,13 @@
 [
   {
     "team": "Spain",
-    "elo": 1847.6,
-    "matches": 782,
-    "recentForm": "W-D-W-D-D",
+    "elo": 1851.95,
+    "matches": 783,
+    "recentForm": "D-W-D-D-W",
     "recentPoints5": 9,
-    "recentGoalDiff5": 7,
-    "recentAvgGoalsFor5": 2.0,
-    "recentAvgGoalsAgainst5": 0.6
+    "recentGoalDiff5": 5,
+    "recentAvgGoalsFor5": 1.8,
+    "recentAvgGoalsAgainst5": 0.8
   },
   {
     "team": "Argentina",
@@ -31,13 +31,13 @@
   },
   {
     "team": "France",
-    "elo": 1796.07,
-    "matches": 934,
-    "recentForm": "W-W-W-W-L",
+    "elo": 1800.78,
+    "matches": 935,
+    "recentForm": "W-W-W-L-W",
     "recentPoints5": 12,
-    "recentGoalDiff5": 8,
-    "recentAvgGoalsFor5": 2.6,
-    "recentAvgGoalsAgainst5": 1.0
+    "recentGoalDiff5": 6,
+    "recentAvgGoalsFor5": 2.4,
+    "recentAvgGoalsAgainst5": 1.2
   },
   {
     "team": "Japan",
@@ -110,6 +110,16 @@
     "recentAvgGoalsAgainst5": 1.4
   },
   {
+    "team": "Netherlands",
+    "elo": 1749.78,
+    "matches": 879,
+    "recentForm": "W-W-D-L-W",
+    "recentPoints5": 10,
+    "recentGoalDiff5": 5,
+    "recentAvgGoalsFor5": 1.8,
+    "recentAvgGoalsAgainst5": 0.8
+  },
+  {
     "team": "Mexico",
     "elo": 1747.85,
     "matches": 1003,
@@ -138,16 +148,6 @@
     "recentGoalDiff5": 4,
     "recentAvgGoalsFor5": 2.0,
     "recentAvgGoalsAgainst5": 1.2
-  },
-  {
-    "team": "Netherlands",
-    "elo": 1737.43,
-    "matches": 878,
-    "recentForm": "D-W-W-D-L",
-    "recentPoints5": 8,
-    "recentGoalDiff5": 4,
-    "recentAvgGoalsFor5": 1.6,
-    "recentAvgGoalsAgainst5": 0.8
   },
   {
     "team": "Nigeria",
@@ -331,13 +331,13 @@
   },
   {
     "team": "Uzbekistan",
-    "elo": 1675.4,
-    "matches": 353,
-    "recentForm": "D-D-W-D-L",
-    "recentPoints5": 6,
-    "recentGoalDiff5": 0,
-    "recentAvgGoalsFor5": 1.0,
-    "recentAvgGoalsAgainst5": 1.0
+    "elo": 1663.05,
+    "matches": 354,
+    "recentForm": "D-W-D-L-L",
+    "recentPoints5": 5,
+    "recentGoalDiff5": -1,
+    "recentAvgGoalsFor5": 1.2,
+    "recentAvgGoalsAgainst5": 1.4
   },
   {
     "team": "Iraq",
@@ -351,7 +351,7 @@
   },
   {
     "team": "DR Congo",
-    "elo": 1651.94,
+    "elo": 1651.93,
     "matches": 523,
     "recentForm": "W-L-W-W-D",
     "recentPoints5": 10,
@@ -850,16 +850,6 @@
     "recentAvgGoalsAgainst5": 1.2
   },
   {
-    "team": "Peru",
-    "elo": 1539.3,
-    "matches": 713,
-    "recentForm": "D-L-L-D-W",
-    "recentPoints5": 5,
-    "recentGoalDiff5": -2,
-    "recentAvgGoalsFor5": 1.2,
-    "recentAvgGoalsAgainst5": 1.6
-  },
-  {
     "team": "Northern Cyprus",
     "elo": 1538.76,
     "matches": 34,
@@ -888,6 +878,16 @@
     "recentGoalDiff5": 1,
     "recentAvgGoalsFor5": 1.2,
     "recentAvgGoalsAgainst5": 1.0
+  },
+  {
+    "team": "Peru",
+    "elo": 1534.95,
+    "matches": 714,
+    "recentForm": "L-L-D-W-L",
+    "recentPoints5": 4,
+    "recentGoalDiff5": -4,
+    "recentAvgGoalsFor5": 1.2,
+    "recentAvgGoalsAgainst5": 2.0
   },
   {
     "team": "Ghana",
@@ -1091,7 +1091,7 @@
   },
   {
     "team": "Indonesia",
-    "elo": 1511.4,
+    "elo": 1511.37,
     "matches": 727,
     "recentForm": "L-L-W-L-W",
     "recentPoints5": 6,
@@ -1320,16 +1320,6 @@
     "recentAvgGoalsAgainst5": 3.67
   },
   {
-    "team": "Northern Ireland",
-    "elo": 1503.92,
-    "matches": 706,
-    "recentForm": "L-W-L-D-W",
-    "recentPoints5": 7,
-    "recentGoalDiff5": -1,
-    "recentAvgGoalsFor5": 0.6,
-    "recentAvgGoalsAgainst5": 0.8
-  },
-  {
     "team": "Guyana",
     "elo": 1503.83,
     "matches": 313,
@@ -1518,6 +1508,16 @@
     "recentGoalDiff5": -9,
     "recentAvgGoalsFor5": 0.6,
     "recentAvgGoalsAgainst5": 2.4
+  },
+  {
+    "team": "Northern Ireland",
+    "elo": 1499.21,
+    "matches": 707,
+    "recentForm": "W-L-D-W-L",
+    "recentPoints5": 7,
+    "recentGoalDiff5": -2,
+    "recentAvgGoalsFor5": 0.8,
+    "recentAvgGoalsAgainst5": 1.2
   },
   {
     "team": "Madrid",
@@ -1771,7 +1771,7 @@
   },
   {
     "team": "Dominican Republic",
-    "elo": 1493.38,
+    "elo": 1493.39,
     "matches": 159,
     "recentForm": "W-D-D-D-L",
     "recentPoints5": 6,
@@ -2201,7 +2201,7 @@
   },
   {
     "team": "Trinidad and Tobago",
-    "elo": 1475.39,
+    "elo": 1475.37,
     "matches": 752,
     "recentForm": "D-L-L-D-L",
     "recentPoints5": 2,
@@ -2241,7 +2241,7 @@
   },
   {
     "team": "Sint Maarten",
-    "elo": 1472.4,
+    "elo": 1472.37,
     "matches": 60,
     "recentForm": "W-D-W-W-D",
     "recentPoints5": 11,
@@ -2261,7 +2261,7 @@
   },
   {
     "team": "Saint Vincent and the Grenadines",
-    "elo": 1471.17,
+    "elo": 1471.42,
     "matches": 236,
     "recentForm": "W-L-W-L-W",
     "recentPoints5": 9,
@@ -2311,7 +2311,7 @@
   },
   {
     "team": "Puerto Rico",
-    "elo": 1467.15,
+    "elo": 1467.16,
     "matches": 163,
     "recentForm": "W-L-W-W-L",
     "recentPoints5": 9,
@@ -2341,7 +2341,7 @@
   },
   {
     "team": "El Salvador",
-    "elo": 1465.42,
+    "elo": 1465.43,
     "matches": 614,
     "recentForm": "L-D-W-L-D",
     "recentPoints5": 5,
@@ -2388,16 +2388,6 @@
     "recentGoalDiff5": -4,
     "recentAvgGoalsFor5": 1.0,
     "recentAvgGoalsAgainst5": 1.8
-  },
-  {
-    "team": "Niger",
-    "elo": 1458.47,
-    "matches": 259,
-    "recentForm": "L-D-D-L-D",
-    "recentPoints5": 3,
-    "recentGoalDiff5": -2,
-    "recentAvgGoalsFor5": 0.8,
-    "recentAvgGoalsAgainst5": 1.2
   },
   {
     "team": "Montenegro",
@@ -2481,13 +2471,23 @@
   },
   {
     "team": "Saint Martin",
-    "elo": 1453.41,
+    "elo": 1453.36,
     "matches": 68,
     "recentForm": "L-W-L-W-W",
     "recentPoints5": 9,
     "recentGoalDiff5": 4,
     "recentAvgGoalsFor5": 1.8,
     "recentAvgGoalsAgainst5": 1.0
+  },
+  {
+    "team": "Mauritania",
+    "elo": 1449.24,
+    "matches": 273,
+    "recentForm": "L-L-L-D-W",
+    "recentPoints5": 4,
+    "recentGoalDiff5": -3,
+    "recentAvgGoalsFor5": 0.6,
+    "recentAvgGoalsAgainst5": 1.2
   },
   {
     "team": "Nicaragua",
@@ -2570,6 +2570,16 @@
     "recentAvgGoalsAgainst5": 3.2
   },
   {
+    "team": "Niger",
+    "elo": 1442.38,
+    "matches": 260,
+    "recentForm": "D-D-L-D-L",
+    "recentPoints5": 3,
+    "recentGoalDiff5": -2,
+    "recentAvgGoalsFor5": 0.4,
+    "recentAvgGoalsAgainst5": 0.8
+  },
+  {
     "team": "Bulgaria",
     "elo": 1442.37,
     "matches": 736,
@@ -2591,7 +2601,7 @@
   },
   {
     "team": "Saint Kitts and Nevis",
-    "elo": 1441.35,
+    "elo": 1440.77,
     "matches": 226,
     "recentForm": "W-D-L-L-W",
     "recentPoints5": 7,
@@ -2601,23 +2611,13 @@
   },
   {
     "team": "Cuba",
-    "elo": 1437.59,
+    "elo": 1437.61,
     "matches": 397,
     "recentForm": "L-W-W-D-D",
     "recentPoints5": 8,
     "recentGoalDiff5": 3,
     "recentAvgGoalsFor5": 1.6,
     "recentAvgGoalsAgainst5": 1.0
-  },
-  {
-    "team": "Mauritania",
-    "elo": 1433.15,
-    "matches": 272,
-    "recentForm": "D-L-L-L-D",
-    "recentPoints5": 2,
-    "recentGoalDiff5": -4,
-    "recentAvgGoalsFor5": 0.6,
-    "recentAvgGoalsAgainst5": 1.4
   },
   {
     "team": "Tibet",
@@ -2670,16 +2670,6 @@
     "recentAvgGoalsAgainst5": 2.0
   },
   {
-    "team": "Solomon Islands",
-    "elo": 1422.09,
-    "matches": 214,
-    "recentForm": "L-L-L-L-L",
-    "recentPoints5": 0,
-    "recentGoalDiff5": -14,
-    "recentAvgGoalsFor5": 1.2,
-    "recentAvgGoalsAgainst5": 4.0
-  },
-  {
     "team": "Kazakhstan",
     "elo": 1422.08,
     "matches": 268,
@@ -2688,6 +2678,16 @@
     "recentGoalDiff5": 2,
     "recentAvgGoalsFor5": 1.0,
     "recentAvgGoalsAgainst5": 0.6
+  },
+  {
+    "team": "Solomon Islands",
+    "elo": 1422.06,
+    "matches": 214,
+    "recentForm": "L-L-L-L-L",
+    "recentPoints5": 0,
+    "recentGoalDiff5": -14,
+    "recentAvgGoalsFor5": 1.2,
+    "recentAvgGoalsAgainst5": 4.0
   },
   {
     "team": "Burundi",
@@ -2731,7 +2731,7 @@
   },
   {
     "team": "Belize",
-    "elo": 1412.08,
+    "elo": 1412.06,
     "matches": 121,
     "recentForm": "L-W-W-L-L",
     "recentPoints5": 6,
@@ -2781,7 +2781,7 @@
   },
   {
     "team": "Saint Lucia",
-    "elo": 1405.72,
+    "elo": 1405.73,
     "matches": 230,
     "recentForm": "L-W-L-L-L",
     "recentPoints5": 3,
@@ -2811,7 +2811,7 @@
   },
   {
     "team": "Grenada",
-    "elo": 1402.65,
+    "elo": 1402.64,
     "matches": 260,
     "recentForm": "W-L-L-L-L",
     "recentPoints5": 3,
@@ -2861,23 +2861,13 @@
   },
   {
     "team": "Bonaire",
-    "elo": 1384.75,
+    "elo": 1384.76,
     "matches": 44,
     "recentForm": "L-L-W-L-L",
     "recentPoints5": 3,
     "recentGoalDiff5": -5,
     "recentAvgGoalsFor5": 1.2,
     "recentAvgGoalsAgainst5": 2.2
-  },
-  {
-    "team": "Afghanistan",
-    "elo": 1381.43,
-    "matches": 145,
-    "recentForm": "L-L-D-D-W",
-    "recentPoints5": 5,
-    "recentGoalDiff5": -1,
-    "recentAvgGoalsFor5": 0.6,
-    "recentAvgGoalsAgainst5": 0.8
   },
   {
     "team": "Eswatini",
@@ -2980,6 +2970,16 @@
     "recentAvgGoalsAgainst5": 2.2
   },
   {
+    "team": "Afghanistan",
+    "elo": 1362.94,
+    "matches": 146,
+    "recentForm": "L-D-D-W-L",
+    "recentPoints5": 5,
+    "recentGoalDiff5": -2,
+    "recentAvgGoalsFor5": 0.4,
+    "recentAvgGoalsAgainst5": 0.8
+  },
+  {
     "team": "Luxembourg",
     "elo": 1362.32,
     "matches": 467,
@@ -3021,7 +3021,7 @@
   },
   {
     "team": "British Virgin Islands",
-    "elo": 1354.78,
+    "elo": 1354.8,
     "matches": 123,
     "recentForm": "W-D-W-L-W",
     "recentPoints5": 10,
@@ -3081,7 +3081,7 @@
   },
   {
     "team": "Cayman Islands",
-    "elo": 1345.23,
+    "elo": 1345.25,
     "matches": 120,
     "recentForm": "W-D-W-L-L",
     "recentPoints5": 7,
@@ -3091,7 +3091,7 @@
   },
   {
     "team": "Barbados",
-    "elo": 1345.1,
+    "elo": 1345.11,
     "matches": 302,
     "recentForm": "L-W-L-L-L",
     "recentPoints5": 3,
@@ -3170,6 +3170,16 @@
     "recentAvgGoalsAgainst5": 1.4
   },
   {
+    "team": "Pakistan",
+    "elo": 1332.68,
+    "matches": 250,
+    "recentForm": "D-D-L-W-W",
+    "recentPoints5": 8,
+    "recentGoalDiff5": 0,
+    "recentAvgGoalsFor5": 1.2,
+    "recentAvgGoalsAgainst5": 1.2
+  },
+  {
     "team": "Taiwan",
     "elo": 1325.84,
     "matches": 245,
@@ -3207,16 +3217,6 @@
     "recentPoints5": 5,
     "recentGoalDiff5": -4,
     "recentAvgGoalsFor5": 0.6,
-    "recentAvgGoalsAgainst5": 1.4
-  },
-  {
-    "team": "Pakistan",
-    "elo": 1314.31,
-    "matches": 249,
-    "recentForm": "L-D-D-L-W",
-    "recentPoints5": 5,
-    "recentGoalDiff5": -3,
-    "recentAvgGoalsFor5": 0.8,
     "recentAvgGoalsAgainst5": 1.4
   },
   {
@@ -3261,7 +3261,7 @@
   },
   {
     "team": "Anguilla",
-    "elo": 1294.72,
+    "elo": 1295.08,
     "matches": 91,
     "recentForm": "L-W-L-W-L",
     "recentPoints5": 6,
@@ -3271,7 +3271,7 @@
   },
   {
     "team": "Maldives",
-    "elo": 1293.01,
+    "elo": 1293.12,
     "matches": 233,
     "recentForm": "L-L-L-L-L",
     "recentPoints5": 0,
@@ -3281,7 +3281,7 @@
   },
   {
     "team": "Bahamas",
-    "elo": 1292.48,
+    "elo": 1292.51,
     "matches": 67,
     "recentForm": "L-L-L-L-L",
     "recentPoints5": 0,

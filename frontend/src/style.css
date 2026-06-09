@@ -393,6 +393,37 @@ h2 {
   border-radius: 10px;
 }
 
+.empty-results {
+  display: grid;
+  min-height: 180px;
+  place-items: center;
+  align-content: center;
+  gap: 14px;
+  border: 1px dashed #303834;
+  border-radius: 10px;
+  color: var(--muted);
+  background: #0d1210;
+}
+
+.empty-results p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.empty-results-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid #355a42;
+  border-radius: 50%;
+  color: var(--green);
+  background: rgba(110, 255, 157, 0.06);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
 table {
   width: 100%;
   min-width: 900px;
@@ -443,6 +474,147 @@ tbody tr:last-child td {
 .team-name {
   color: #eef2f0;
   font-weight: 600;
+}
+
+.completed-results-table {
+  min-width: 680px;
+}
+
+.final-score {
+  color: #f4f7f5;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+}
+
+.final-score span {
+  margin: 0 5px;
+  color: #58625d;
+}
+
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.group-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #0d1210;
+}
+
+.group-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 52px;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.group-card-header strong {
+  color: var(--green);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+}
+
+.group-card-header span {
+  color: #68726d;
+  font-size: 0.65rem;
+}
+
+.group-table {
+  display: grid;
+  grid-template-columns: 24px minmax(100px, 1fr) 34px 40px 34px;
+  align-items: center;
+  gap: 8px;
+  padding: 0 14px;
+}
+
+.group-table-header {
+  min-height: 34px;
+  color: #626b67;
+  font-size: 0.58rem;
+  text-transform: uppercase;
+}
+
+.group-team-row {
+  min-height: 45px;
+  border-top: 1px solid rgba(255, 255, 255, 0.045);
+  color: #8f9994;
+  font-size: 0.7rem;
+}
+
+.group-team-row strong {
+  overflow: hidden;
+  color: #e7ebe9;
+  font-size: 0.75rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.group-rank {
+  color: #606a65;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.korea-team {
+  background: rgba(110, 255, 157, 0.055);
+}
+
+.probability-team {
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) 70px 46px;
+  align-items: center;
+  gap: 10px;
+  min-height: 61px;
+  padding: 0 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.045);
+}
+
+.probability-team:first-of-type {
+  border-top: 0;
+}
+
+.probability-team-info {
+  display: grid;
+  min-width: 0;
+  gap: 4px;
+}
+
+.probability-team-info strong {
+  overflow: hidden;
+  font-size: 0.75rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.probability-team-info span {
+  color: #737d78;
+  font-size: 0.6rem;
+}
+
+.mini-probability {
+  height: 4px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #252d29;
+}
+
+.mini-probability span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--green);
+}
+
+.probability-value {
+  color: #dfe5e2;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  text-align: right;
 }
 
 .result-badge {
@@ -615,6 +787,10 @@ footer p {
     grid-template-columns: 1fr;
   }
 
+  .group-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .hero-mark {
     display: none;
   }
@@ -691,6 +867,10 @@ footer p {
 
   .count-badge {
     display: none;
+  }
+
+  .group-grid {
+    grid-template-columns: 1fr;
   }
 
   .ranking-row {

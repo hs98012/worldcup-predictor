@@ -6,8 +6,8 @@
     "normalizedHomeTeam": "Mexico",
     "normalizedAwayTeam": "South Africa",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.6275,
-    "drawProb": 0.3121,
+    "homeWinProb": 0.6271,
+    "drawProb": 0.3125,
     "awayWinProb": 0.0604,
     "predictedResult": "HOME_WIN"
   },
@@ -18,9 +18,9 @@
     "normalizedHomeTeam": "Korea Republic",
     "normalizedAwayTeam": "Czech Republic",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.3998,
-    "drawProb": 0.4033,
-    "awayWinProb": 0.1969,
+    "homeWinProb": 0.3995,
+    "drawProb": 0.4034,
+    "awayWinProb": 0.1971,
     "predictedResult": "DRAW"
   },
   {
@@ -30,8 +30,8 @@
     "normalizedHomeTeam": "Canada",
     "normalizedAwayTeam": "Bosnia and Herzegovina",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.7642,
-    "drawProb": 0.2092,
+    "homeWinProb": 0.7641,
+    "drawProb": 0.2094,
     "awayWinProb": 0.0266,
     "predictedResult": "HOME_WIN"
   },
@@ -42,9 +42,9 @@
     "normalizedHomeTeam": "United States",
     "normalizedAwayTeam": "Paraguay",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.3914,
-    "drawProb": 0.357,
-    "awayWinProb": 0.2516,
+    "homeWinProb": 0.3912,
+    "drawProb": 0.3573,
+    "awayWinProb": 0.2515,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -55,8 +55,8 @@
     "normalizedAwayTeam": "Switzerland",
     "tournament": "FIFA World Cup",
     "homeWinProb": 0.0183,
-    "drawProb": 0.1712,
-    "awayWinProb": 0.8105,
+    "drawProb": 0.1705,
+    "awayWinProb": 0.8112,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -66,9 +66,9 @@
     "normalizedHomeTeam": "Brazil",
     "normalizedAwayTeam": "Morocco",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0395,
-    "drawProb": 0.2702,
-    "awayWinProb": 0.6903,
+    "homeWinProb": 0.0394,
+    "drawProb": 0.2695,
+    "awayWinProb": 0.6912,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -78,9 +78,9 @@
     "normalizedHomeTeam": "Haiti",
     "normalizedAwayTeam": "Scotland",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.152,
-    "drawProb": 0.3614,
-    "awayWinProb": 0.4866,
+    "homeWinProb": 0.1521,
+    "drawProb": 0.3607,
+    "awayWinProb": 0.4872,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -90,9 +90,9 @@
     "normalizedHomeTeam": "Australia",
     "normalizedAwayTeam": "Turkey",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.1286,
-    "drawProb": 0.3945,
-    "awayWinProb": 0.4769,
+    "homeWinProb": 0.1283,
+    "drawProb": 0.3946,
+    "awayWinProb": 0.4772,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -102,8 +102,8 @@
     "normalizedHomeTeam": "Germany",
     "normalizedAwayTeam": "Curaçao",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.9078,
-    "drawProb": 0.0844,
+    "homeWinProb": 0.9077,
+    "drawProb": 0.0845,
     "awayWinProb": 0.0078,
     "predictedResult": "HOME_WIN"
   },
@@ -114,9 +114,9 @@
     "normalizedHomeTeam": "Ivory Coast",
     "normalizedAwayTeam": "Ecuador",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2076,
-    "drawProb": 0.4354,
-    "awayWinProb": 0.357,
+    "homeWinProb": 0.2072,
+    "drawProb": 0.4356,
+    "awayWinProb": 0.3572,
     "predictedResult": "DRAW"
   },
   {
@@ -126,9 +126,9 @@
     "normalizedHomeTeam": "Netherlands",
     "normalizedAwayTeam": "Japan",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0523,
-    "drawProb": 0.3443,
-    "awayWinProb": 0.6034,
+    "homeWinProb": 0.0631,
+    "drawProb": 0.37,
+    "awayWinProb": 0.567,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -138,9 +138,9 @@
     "normalizedHomeTeam": "Sweden",
     "normalizedAwayTeam": "Tunisia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.1531,
-    "drawProb": 0.3255,
-    "awayWinProb": 0.5214,
+    "homeWinProb": 0.1528,
+    "drawProb": 0.3257,
+    "awayWinProb": 0.5215,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -150,9 +150,9 @@
     "normalizedHomeTeam": "Belgium",
     "normalizedAwayTeam": "Egypt",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2358,
-    "drawProb": 0.4146,
-    "awayWinProb": 0.3496,
+    "homeWinProb": 0.2362,
+    "drawProb": 0.4139,
+    "awayWinProb": 0.3499,
     "predictedResult": "DRAW"
   },
   {
@@ -163,7 +163,7 @@
     "normalizedAwayTeam": "New Zealand",
     "tournament": "FIFA World Cup",
     "homeWinProb": 0.8609,
-    "drawProb": 0.1258,
+    "drawProb": 0.1259,
     "awayWinProb": 0.0132,
     "predictedResult": "HOME_WIN"
   },
@@ -174,9 +174,9 @@
     "normalizedHomeTeam": "Spain",
     "normalizedAwayTeam": "Cape Verde",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.8863,
-    "drawProb": 0.1063,
-    "awayWinProb": 0.0074,
+    "homeWinProb": 0.8844,
+    "drawProb": 0.108,
+    "awayWinProb": 0.0076,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -186,9 +186,9 @@
     "normalizedHomeTeam": "Saudi Arabia",
     "normalizedAwayTeam": "Uruguay",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.077,
-    "drawProb": 0.2771,
-    "awayWinProb": 0.6459,
+    "homeWinProb": 0.0768,
+    "drawProb": 0.2769,
+    "awayWinProb": 0.6463,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -198,9 +198,9 @@
     "normalizedHomeTeam": "France",
     "normalizedAwayTeam": "Senegal",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2518,
-    "drawProb": 0.4226,
-    "awayWinProb": 0.3255,
+    "homeWinProb": 0.2488,
+    "drawProb": 0.4231,
+    "awayWinProb": 0.3281,
     "predictedResult": "DRAW"
   },
   {
@@ -210,9 +210,9 @@
     "normalizedHomeTeam": "Iraq",
     "normalizedAwayTeam": "Norway",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.1236,
-    "drawProb": 0.3886,
-    "awayWinProb": 0.4878,
+    "homeWinProb": 0.1233,
+    "drawProb": 0.3883,
+    "awayWinProb": 0.4884,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -222,9 +222,9 @@
     "normalizedHomeTeam": "Argentina",
     "normalizedAwayTeam": "Algeria",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.3211,
+    "homeWinProb": 0.3209,
     "drawProb": 0.4676,
-    "awayWinProb": 0.2112,
+    "awayWinProb": 0.2115,
     "predictedResult": "DRAW"
   },
   {
@@ -234,9 +234,9 @@
     "normalizedHomeTeam": "Austria",
     "normalizedAwayTeam": "Jordan",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.5425,
-    "drawProb": 0.3247,
-    "awayWinProb": 0.1328,
+    "homeWinProb": 0.5422,
+    "drawProb": 0.3249,
+    "awayWinProb": 0.1329,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -246,9 +246,9 @@
     "normalizedHomeTeam": "Portugal",
     "normalizedAwayTeam": "DR Congo",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.4571,
-    "drawProb": 0.4019,
-    "awayWinProb": 0.141,
+    "homeWinProb": 0.4569,
+    "drawProb": 0.4021,
+    "awayWinProb": 0.1409,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -258,9 +258,9 @@
     "normalizedHomeTeam": "Uzbekistan",
     "normalizedAwayTeam": "Colombia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0779,
-    "drawProb": 0.3339,
-    "awayWinProb": 0.5882,
+    "homeWinProb": 0.0587,
+    "drawProb": 0.2833,
+    "awayWinProb": 0.6579,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -270,9 +270,9 @@
     "normalizedHomeTeam": "England",
     "normalizedAwayTeam": "Croatia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.3565,
-    "drawProb": 0.4338,
-    "awayWinProb": 0.2098,
+    "homeWinProb": 0.3555,
+    "drawProb": 0.4346,
+    "awayWinProb": 0.2099,
     "predictedResult": "DRAW"
   },
   {
@@ -282,9 +282,9 @@
     "normalizedHomeTeam": "Ghana",
     "normalizedAwayTeam": "Panama",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0403,
-    "drawProb": 0.1822,
-    "awayWinProb": 0.7775,
+    "homeWinProb": 0.0402,
+    "drawProb": 0.1819,
+    "awayWinProb": 0.7779,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -294,8 +294,8 @@
     "normalizedHomeTeam": "Czech Republic",
     "normalizedAwayTeam": "South Africa",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2778,
-    "drawProb": 0.367,
+    "homeWinProb": 0.2781,
+    "drawProb": 0.3666,
     "awayWinProb": 0.3553,
     "predictedResult": "DRAW"
   },
@@ -306,9 +306,9 @@
     "normalizedHomeTeam": "Mexico",
     "normalizedAwayTeam": "Korea Republic",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2901,
-    "drawProb": 0.4651,
-    "awayWinProb": 0.2449,
+    "homeWinProb": 0.2895,
+    "drawProb": 0.4655,
+    "awayWinProb": 0.245,
     "predictedResult": "DRAW"
   },
   {
@@ -318,9 +318,9 @@
     "normalizedHomeTeam": "Switzerland",
     "normalizedAwayTeam": "Bosnia and Herzegovina",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.7333,
-    "drawProb": 0.2217,
-    "awayWinProb": 0.045,
+    "homeWinProb": 0.7334,
+    "drawProb": 0.2216,
+    "awayWinProb": 0.0449,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -330,8 +330,8 @@
     "normalizedHomeTeam": "Canada",
     "normalizedAwayTeam": "Qatar",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.7435,
-    "drawProb": 0.2232,
+    "homeWinProb": 0.7433,
+    "drawProb": 0.2234,
     "awayWinProb": 0.0333,
     "predictedResult": "HOME_WIN"
   },
@@ -343,8 +343,8 @@
     "normalizedAwayTeam": "Morocco",
     "tournament": "FIFA World Cup",
     "homeWinProb": 0.0026,
-    "drawProb": 0.0791,
-    "awayWinProb": 0.9183,
+    "drawProb": 0.0785,
+    "awayWinProb": 0.9189,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -354,8 +354,8 @@
     "normalizedHomeTeam": "Brazil",
     "normalizedAwayTeam": "Haiti",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.7495,
-    "drawProb": 0.213,
+    "homeWinProb": 0.7494,
+    "drawProb": 0.2131,
     "awayWinProb": 0.0375,
     "predictedResult": "HOME_WIN"
   },
@@ -366,9 +366,9 @@
     "normalizedHomeTeam": "United States",
     "normalizedAwayTeam": "Australia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.134,
-    "drawProb": 0.3234,
-    "awayWinProb": 0.5426,
+    "homeWinProb": 0.1338,
+    "drawProb": 0.3233,
+    "awayWinProb": 0.5429,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -378,8 +378,8 @@
     "normalizedHomeTeam": "Turkey",
     "normalizedAwayTeam": "Paraguay",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.4985,
-    "drawProb": 0.3739,
+    "homeWinProb": 0.4978,
+    "drawProb": 0.3746,
     "awayWinProb": 0.1276,
     "predictedResult": "HOME_WIN"
   },
@@ -390,9 +390,9 @@
     "normalizedHomeTeam": "Germany",
     "normalizedAwayTeam": "Ivory Coast",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2661,
-    "drawProb": 0.4183,
-    "awayWinProb": 0.3156,
+    "homeWinProb": 0.2658,
+    "drawProb": 0.4184,
+    "awayWinProb": 0.3158,
     "predictedResult": "DRAW"
   },
   {
@@ -402,8 +402,8 @@
     "normalizedHomeTeam": "Ecuador",
     "normalizedAwayTeam": "Curaçao",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.8201,
-    "drawProb": 0.1577,
+    "homeWinProb": 0.8199,
+    "drawProb": 0.158,
     "awayWinProb": 0.0222,
     "predictedResult": "HOME_WIN"
   },
@@ -414,9 +414,9 @@
     "normalizedHomeTeam": "Netherlands",
     "normalizedAwayTeam": "Sweden",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.6299,
-    "drawProb": 0.2897,
-    "awayWinProb": 0.0804,
+    "homeWinProb": 0.6632,
+    "drawProb": 0.2711,
+    "awayWinProb": 0.0657,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -427,8 +427,8 @@
     "normalizedAwayTeam": "Japan",
     "tournament": "FIFA World Cup",
     "homeWinProb": 0.008,
-    "drawProb": 0.1563,
-    "awayWinProb": 0.8357,
+    "drawProb": 0.156,
+    "awayWinProb": 0.836,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -438,9 +438,9 @@
     "normalizedHomeTeam": "Belgium",
     "normalizedAwayTeam": "Iran",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.1252,
-    "drawProb": 0.3669,
-    "awayWinProb": 0.5079,
+    "homeWinProb": 0.1253,
+    "drawProb": 0.366,
+    "awayWinProb": 0.5086,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -451,8 +451,8 @@
     "normalizedAwayTeam": "Egypt",
     "tournament": "FIFA World Cup",
     "homeWinProb": 0.0084,
-    "drawProb": 0.1225,
-    "awayWinProb": 0.8691,
+    "drawProb": 0.1221,
+    "awayWinProb": 0.8696,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -462,9 +462,9 @@
     "normalizedHomeTeam": "Spain",
     "normalizedAwayTeam": "Saudi Arabia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.864,
-    "drawProb": 0.1257,
-    "awayWinProb": 0.0102,
+    "homeWinProb": 0.8618,
+    "drawProb": 0.1276,
+    "awayWinProb": 0.0105,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -474,8 +474,8 @@
     "normalizedHomeTeam": "Uruguay",
     "normalizedAwayTeam": "Cape Verde",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.4859,
-    "drawProb": 0.3486,
+    "homeWinProb": 0.4854,
+    "drawProb": 0.3491,
     "awayWinProb": 0.1655,
     "predictedResult": "HOME_WIN"
   },
@@ -486,9 +486,9 @@
     "normalizedHomeTeam": "France",
     "normalizedAwayTeam": "Iraq",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.5475,
-    "drawProb": 0.347,
-    "awayWinProb": 0.1055,
+    "homeWinProb": 0.5439,
+    "drawProb": 0.3494,
+    "awayWinProb": 0.1067,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -498,9 +498,9 @@
     "normalizedHomeTeam": "Norway",
     "normalizedAwayTeam": "Senegal",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0728,
-    "drawProb": 0.3117,
-    "awayWinProb": 0.6155,
+    "homeWinProb": 0.0727,
+    "drawProb": 0.3113,
+    "awayWinProb": 0.616,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -510,8 +510,8 @@
     "normalizedHomeTeam": "Argentina",
     "normalizedAwayTeam": "Austria",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.6002,
-    "drawProb": 0.3335,
+    "homeWinProb": 0.5998,
+    "drawProb": 0.3339,
     "awayWinProb": 0.0663,
     "predictedResult": "HOME_WIN"
   },
@@ -523,8 +523,8 @@
     "normalizedAwayTeam": "Algeria",
     "tournament": "FIFA World Cup",
     "homeWinProb": 0.0077,
-    "drawProb": 0.1119,
-    "awayWinProb": 0.8804,
+    "drawProb": 0.1115,
+    "awayWinProb": 0.8808,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -534,9 +534,9 @@
     "normalizedHomeTeam": "Portugal",
     "normalizedAwayTeam": "Uzbekistan",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.4559,
-    "drawProb": 0.3865,
-    "awayWinProb": 0.1576,
+    "homeWinProb": 0.5319,
+    "drawProb": 0.3449,
+    "awayWinProb": 0.1232,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -546,9 +546,9 @@
     "normalizedHomeTeam": "Colombia",
     "normalizedAwayTeam": "DR Congo",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.3333,
-    "drawProb": 0.4364,
-    "awayWinProb": 0.2303,
+    "homeWinProb": 0.3328,
+    "drawProb": 0.4368,
+    "awayWinProb": 0.2304,
     "predictedResult": "DRAW"
   },
   {
@@ -558,8 +558,8 @@
     "normalizedHomeTeam": "England",
     "normalizedAwayTeam": "Ghana",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.8777,
-    "drawProb": 0.1134,
+    "homeWinProb": 0.8775,
+    "drawProb": 0.1137,
     "awayWinProb": 0.0088,
     "predictedResult": "HOME_WIN"
   },
@@ -570,9 +570,9 @@
     "normalizedHomeTeam": "Panama",
     "normalizedAwayTeam": "Croatia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0648,
-    "drawProb": 0.2404,
-    "awayWinProb": 0.6948,
+    "homeWinProb": 0.0645,
+    "drawProb": 0.2405,
+    "awayWinProb": 0.695,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -582,8 +582,8 @@
     "normalizedHomeTeam": "Mexico",
     "normalizedAwayTeam": "Czech Republic",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.5558,
-    "drawProb": 0.3527,
+    "homeWinProb": 0.5556,
+    "drawProb": 0.3528,
     "awayWinProb": 0.0915,
     "predictedResult": "HOME_WIN"
   },
@@ -594,9 +594,9 @@
     "normalizedHomeTeam": "South Africa",
     "normalizedAwayTeam": "Korea Republic",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0421,
-    "drawProb": 0.2673,
-    "awayWinProb": 0.6906,
+    "homeWinProb": 0.042,
+    "drawProb": 0.2668,
+    "awayWinProb": 0.6912,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -606,9 +606,9 @@
     "normalizedHomeTeam": "Canada",
     "normalizedAwayTeam": "Switzerland",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2408,
-    "drawProb": 0.4366,
-    "awayWinProb": 0.3225,
+    "homeWinProb": 0.2406,
+    "drawProb": 0.4364,
+    "awayWinProb": 0.3229,
     "predictedResult": "DRAW"
   },
   {
@@ -618,9 +618,9 @@
     "normalizedHomeTeam": "Bosnia and Herzegovina",
     "normalizedAwayTeam": "Qatar",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2197,
-    "drawProb": 0.3793,
-    "awayWinProb": 0.401,
+    "homeWinProb": 0.2198,
+    "drawProb": 0.3789,
+    "awayWinProb": 0.4013,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -631,8 +631,8 @@
     "normalizedAwayTeam": "Brazil",
     "tournament": "FIFA World Cup",
     "homeWinProb": 0.0138,
-    "drawProb": 0.1467,
-    "awayWinProb": 0.8395,
+    "drawProb": 0.146,
+    "awayWinProb": 0.8402,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -654,9 +654,9 @@
     "normalizedHomeTeam": "United States",
     "normalizedAwayTeam": "Turkey",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0945,
-    "drawProb": 0.3109,
-    "awayWinProb": 0.5946,
+    "homeWinProb": 0.0943,
+    "drawProb": 0.311,
+    "awayWinProb": 0.5947,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -666,9 +666,9 @@
     "normalizedHomeTeam": "Paraguay",
     "normalizedAwayTeam": "Australia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0555,
-    "drawProb": 0.272,
-    "awayWinProb": 0.6725,
+    "homeWinProb": 0.0554,
+    "drawProb": 0.2715,
+    "awayWinProb": 0.6731,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -679,8 +679,8 @@
     "normalizedAwayTeam": "Ivory Coast",
     "tournament": "FIFA World Cup",
     "homeWinProb": 0.0041,
-    "drawProb": 0.08,
-    "awayWinProb": 0.9159,
+    "drawProb": 0.0796,
+    "awayWinProb": 0.9163,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -690,9 +690,9 @@
     "normalizedHomeTeam": "Ecuador",
     "normalizedAwayTeam": "Germany",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0616,
-    "drawProb": 0.3276,
-    "awayWinProb": 0.6108,
+    "homeWinProb": 0.0613,
+    "drawProb": 0.3271,
+    "awayWinProb": 0.6116,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -702,8 +702,8 @@
     "normalizedHomeTeam": "Japan",
     "normalizedAwayTeam": "Sweden",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.7624,
-    "drawProb": 0.2127,
+    "homeWinProb": 0.7615,
+    "drawProb": 0.2136,
     "awayWinProb": 0.0249,
     "predictedResult": "HOME_WIN"
   },
@@ -714,9 +714,9 @@
     "normalizedHomeTeam": "Tunisia",
     "normalizedAwayTeam": "Netherlands",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0318,
-    "drawProb": 0.2457,
-    "awayWinProb": 0.7225,
+    "homeWinProb": 0.0241,
+    "drawProb": 0.2214,
+    "awayWinProb": 0.7545,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -726,9 +726,9 @@
     "normalizedHomeTeam": "Egypt",
     "normalizedAwayTeam": "Iran",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0842,
-    "drawProb": 0.3892,
-    "awayWinProb": 0.5265,
+    "homeWinProb": 0.0841,
+    "drawProb": 0.3885,
+    "awayWinProb": 0.5274,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -739,8 +739,8 @@
     "normalizedAwayTeam": "Belgium",
     "tournament": "FIFA World Cup",
     "homeWinProb": 0.0049,
-    "drawProb": 0.0927,
-    "awayWinProb": 0.9024,
+    "drawProb": 0.0921,
+    "awayWinProb": 0.9031,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -750,9 +750,9 @@
     "normalizedHomeTeam": "Cape Verde",
     "normalizedAwayTeam": "Saudi Arabia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.1872,
-    "drawProb": 0.3262,
-    "awayWinProb": 0.4866,
+    "homeWinProb": 0.1871,
+    "drawProb": 0.3259,
+    "awayWinProb": 0.487,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -763,8 +763,8 @@
     "normalizedAwayTeam": "Spain",
     "tournament": "FIFA World Cup",
     "homeWinProb": 0.0063,
-    "drawProb": 0.1332,
-    "awayWinProb": 0.8605,
+    "drawProb": 0.1305,
+    "awayWinProb": 0.8632,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -774,9 +774,9 @@
     "normalizedHomeTeam": "Norway",
     "normalizedAwayTeam": "France",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0348,
-    "drawProb": 0.2506,
-    "awayWinProb": 0.7146,
+    "homeWinProb": 0.0346,
+    "drawProb": 0.2452,
+    "awayWinProb": 0.7202,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -786,9 +786,9 @@
     "normalizedHomeTeam": "Senegal",
     "normalizedAwayTeam": "Iraq",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.4192,
-    "drawProb": 0.4014,
-    "awayWinProb": 0.1794,
+    "homeWinProb": 0.4183,
+    "drawProb": 0.4023,
+    "awayWinProb": 0.1795,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -798,9 +798,9 @@
     "normalizedHomeTeam": "Algeria",
     "normalizedAwayTeam": "Austria",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.3755,
-    "drawProb": 0.4515,
-    "awayWinProb": 0.173,
+    "homeWinProb": 0.3749,
+    "drawProb": 0.452,
+    "awayWinProb": 0.1731,
     "predictedResult": "DRAW"
   },
   {
@@ -811,8 +811,8 @@
     "normalizedAwayTeam": "Argentina",
     "tournament": "FIFA World Cup",
     "homeWinProb": 0.0016,
-    "drawProb": 0.0567,
-    "awayWinProb": 0.9418,
+    "drawProb": 0.0563,
+    "awayWinProb": 0.9421,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -822,9 +822,9 @@
     "normalizedHomeTeam": "Colombia",
     "normalizedAwayTeam": "Portugal",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0877,
-    "drawProb": 0.3506,
-    "awayWinProb": 0.5616,
+    "homeWinProb": 0.0875,
+    "drawProb": 0.35,
+    "awayWinProb": 0.5625,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -834,9 +834,9 @@
     "normalizedHomeTeam": "DR Congo",
     "normalizedAwayTeam": "Uzbekistan",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.1709,
-    "drawProb": 0.4373,
-    "awayWinProb": 0.3918,
+    "homeWinProb": 0.2222,
+    "drawProb": 0.4355,
+    "awayWinProb": 0.3423,
     "predictedResult": "DRAW"
   },
   {
@@ -846,9 +846,9 @@
     "normalizedHomeTeam": "Panama",
     "normalizedAwayTeam": "England",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0168,
-    "drawProb": 0.1677,
-    "awayWinProb": 0.8156,
+    "homeWinProb": 0.0167,
+    "drawProb": 0.1674,
+    "awayWinProb": 0.8159,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -858,8 +858,8 @@
     "normalizedHomeTeam": "Croatia",
     "normalizedAwayTeam": "Ghana",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.7907,
-    "drawProb": 0.1737,
+    "homeWinProb": 0.7902,
+    "drawProb": 0.1742,
     "awayWinProb": 0.0355,
     "predictedResult": "HOME_WIN"
   }
