@@ -20,6 +20,7 @@ PIPELINE_SCRIPTS = [
     "04_create_worldcup_matches.py",
     "04_predict_matches.py",
     "05_train_sklearn_model.py",
+    "08_predict_upcoming_fixtures.py",
     "06_adjust_draw_probabilities.py",
     "07_calculate_group_standings.py",
     "08_simulate_group_stage.py",
