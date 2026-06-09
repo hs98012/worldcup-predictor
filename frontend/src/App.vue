@@ -6,6 +6,7 @@ const tournament = ref([])
 const fixtures = ref([])
 const isLoading = ref(true)
 const errorMessage = ref('')
+const baseUrl = import.meta.env.BASE_URL
 
 const percent = (value) => {
   if (value === null || value === undefined) return '-'
@@ -59,9 +60,9 @@ const resultClass = (result) =>
 onMounted(async () => {
   try {
     const responses = await Promise.all([
-      fetch('/data/dashboard_summary.json'),
-      fetch('/data/tournament_simulation.json'),
-      fetch('/data/fixture_predictions.json'),
+      fetch(`${baseUrl}data/dashboard_summary.json`),
+      fetch(`${baseUrl}data/tournament_simulation.json`),
+      fetch(`${baseUrl}data/fixture_predictions.json`),
     ])
 
     if (responses.some((response) => !response.ok)) {
