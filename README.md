@@ -106,14 +106,37 @@ worldcup-predictor/
 ### 스크립트 실행 예시
 
     python scripts/01_load_matches.py
-    python scripts/02_train_model.py
+    python scripts/05_train_sklearn_model.py
     python scripts/03_predict_match.py
+
+### 일일 데이터 업데이트 파이프라인
+
+GitHub 원본 `results.csv`를 로컬 파일과 비교하고, SHA-256 해시, 행 수,
+최신 경기 날짜 중 하나라도 변경된 경우에만 전체 예측 파이프라인을 실행합니다.
+
+    python scripts/00_update_results_csv.py
+    python scripts/99_run_daily_pipeline.py
+
+원본 데이터는 스코어 존재 여부에 따라 다음 두 파일로 분리됩니다.
+
+- `data/processed/completed_matches.csv`: 모델 학습, Elo 계산, 과거 경기 분석
+- `data/processed/upcoming_fixtures.csv`: 남은 월드컵 경기 예측 및 일정 표시
+
+분리 결과만 확인하려면 다음 명령을 실행합니다.
+
+    python scripts/01_load_matches.py
+
+실행 결과는 `data/processed/update_status.json`에서 확인할 수 있습니다.
+GitHub Actions는 매일 00:00 UTC(한국 시간 09:00)에 자동 실행되며,
+Actions 화면에서 수동 실행할 수도 있습니다.
 
 ## 9. 주요 산출물
 
 현재 생성된 주요 산출물은 다음과 같습니다.
 
 - data/processed/teams.json
+- data/processed/completed_matches.csv
+- data/processed/upcoming_fixtures.csv
 - data/processed/model_metrics.json
 - data/processed/predictions_sklearn.json
 - data/processed/predictions_adjusted.json

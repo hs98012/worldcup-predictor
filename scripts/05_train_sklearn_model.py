@@ -10,13 +10,13 @@ from sklearn.metrics import accuracy_score, classification_report, log_loss
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-BASE_PATH = Path("data/raw/results.csv")
-RECENT_PATH = Path("data/manual/recent_matches.csv")
-MATCHES_PATH = Path("data/processed/matches.json")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+COMPLETED_PATH = PROJECT_ROOT / "data/processed/completed_matches.csv"
+MATCHES_PATH = PROJECT_ROOT / "data/processed/matches.json"
 
-MODEL_PATH = Path("models/sklearn_match_result_model.joblib")
-PREDICTIONS_PATH = Path("data/processed/predictions_sklearn.json")
-METRICS_PATH = Path("data/processed/model_metrics.json")
+MODEL_PATH = PROJECT_ROOT / "models/sklearn_match_result_model.joblib"
+PREDICTIONS_PATH = PROJECT_ROOT / "data/processed/predictions_sklearn.json"
+METRICS_PATH = PROJECT_ROOT / "data/processed/model_metrics.json"
 
 INITIAL_ELO = 1500
 BASE_K = 30
@@ -43,30 +43,7 @@ HOST_TEAMS = {"Mexico", "Canada", "United States"}
 
 
 def load_matches():
-    base_df = pd.read_csv(BASE_PATH)
-
-    if RECENT_PATH.exists():
-        recent_df = pd.read_csv(RECENT_PATH)
-    else:
-        recent_df = pd.DataFrame(columns=base_df.columns)
-
-    required_columns = [
-        "date",
-        "home_team",
-        "away_team",
-        "home_score",
-        "away_score",
-        "tournament",
-        "city",
-        "country",
-        "neutral",
-    ]
-
-    base_df = base_df[required_columns]
-    recent_df = recent_df[required_columns]
-
-    df = pd.concat([base_df, recent_df], ignore_index=True)
-
+    df = pd.read_csv(COMPLETED_PATH)
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df = df.dropna(subset=["date", "home_score", "away_score"])
     df = df.sort_values("date").reset_index(drop=True)

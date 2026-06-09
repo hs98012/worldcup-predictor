@@ -1,0 +1,43 @@
+name: Daily data pipeline
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run daily pipeline
+        run: python scripts/99_run_daily_pipeline.py
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ models/
+
+          if git diff --cached --quiet; then
+            echo "변경된 data/ 또는 models/ 파일이 없습니다."
+            exit 0
+          fi
+
+          git commit -m "chore: update daily prediction data"
+          git push

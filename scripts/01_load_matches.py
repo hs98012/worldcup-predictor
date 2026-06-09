@@ -1,53 +1,74 @@
-import pandas as pd
 from pathlib import Path
 
-BASE_PATH = Path("data/raw/results.csv")
-RECENT_PATH = Path("data/manual/recent_matches.csv")
+import pandas as pd
+
+from utils.team_aliases import normalize_team_name
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+BASE_PATH = PROJECT_ROOT / "data/raw/results.csv"
+COMPLETED_PATH = PROJECT_ROOT / "data/processed/completed_matches.csv"
+UPCOMING_PATH = PROJECT_ROOT / "data/processed/upcoming_fixtures.csv"
 
 
 def load_matches():
-    base_df = pd.read_csv(BASE_PATH)
+    df = pd.read_csv(BASE_PATH)
 
-    if RECENT_PATH.exists():
-        recent_df = pd.read_csv(RECENT_PATH)
-    else:
-        recent_df = pd.DataFrame(columns=base_df.columns)
+    completed_matches = df.dropna(
+        subset=["home_score", "away_score"]
+    ).copy()
+    upcoming_fixtures = df[
+        df[["home_score", "away_score"]].isna().any(axis=1)
+    ].copy()
 
-    required_columns = [
-        "date",
-        "home_team",
-        "away_team",
-        "home_score",
-        "away_score",
-        "tournament",
-        "city",
-        "country",
-        "neutral",
-    ]
+    completed_matches["normalized_home_team"] = completed_matches[
+        "home_team"
+    ].apply(normalize_team_name)
+    completed_matches["normalized_away_team"] = completed_matches[
+        "away_team"
+    ].apply(normalize_team_name)
+    upcoming_fixtures["normalized_home_team"] = upcoming_fixtures[
+        "home_team"
+    ].apply(normalize_team_name)
+    upcoming_fixtures["normalized_away_team"] = upcoming_fixtures[
+        "away_team"
+    ].apply(normalize_team_name)
 
-    base_df = base_df[required_columns]
-    recent_df = recent_df[required_columns]
+    COMPLETED_PATH.parent.mkdir(parents=True, exist_ok=True)
+    completed_matches.to_csv(COMPLETED_PATH, index=False)
+    upcoming_fixtures.to_csv(UPCOMING_PATH, index=False)
 
-    df = pd.concat([base_df, recent_df], ignore_index=True)
-
-    df["date"] = pd.to_datetime(df["date"], errors="coerce")
-    df = df.dropna(subset=["date", "home_score", "away_score"])
-    df = df.sort_values("date").reset_index(drop=True)
-
-    return df
+    return df, completed_matches, upcoming_fixtures
 
 
 def main():
-    df = load_matches()
+    df, completed_matches, upcoming_fixtures = load_matches()
 
-    teams = sorted(set(df["home_team"]) | set(df["away_team"]))
+    teams = sorted(
+        set(completed_matches["home_team"])
+        | set(completed_matches["away_team"])
+    )
 
     print("전체 경기 수:", len(df))
-    print("기간:", df["date"].min().date(), "~", df["date"].max().date())
+    print("완료 경기 수:", len(completed_matches))
+    print("예정 경기 수:", len(upcoming_fixtures))
+    print("completed_matches 저장 경로:", COMPLETED_PATH)
+    print("upcoming_fixtures 저장 경로:", UPCOMING_PATH)
     print("팀 수:", len(teams))
     print()
-    print("최근 5경기:")
-    print(df.tail(5)[["date", "home_team", "away_team", "home_score", "away_score", "tournament"]])
+    print("최근 완료 경기 5개:")
+    print(
+        completed_matches.tail(5)[
+            [
+                "date",
+                "home_team",
+                "away_team",
+                "home_score",
+                "away_score",
+                "tournament",
+            ]
+        ]
+    )
 
 
 if __name__ == "__main__":
