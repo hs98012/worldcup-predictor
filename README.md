@@ -1,233 +1,222 @@
-# World Cup Predictor
+# 2026 World Cup Predictor
 
-2026 월드컵 승부 예측 및 조별리그/토너먼트 시뮬레이터 프로젝트입니다.
+국제 축구 경기 결과 데이터를 기반으로 2026 월드컵 경기 결과와 대회 진행
+확률을 예측하는 프로젝트입니다.
 
-## 1. 프로젝트 개요
+머신러닝 모델로 경기별 승·무·패 확률을 계산하고, 반복 시뮬레이션을 통해
+조별리그 통과 확률과 토너먼트 진출·우승 확률을 산출합니다. 생성된 결과는
+Vue 대시보드에서 시각화하며, GitHub Actions를 통해 데이터 갱신 과정을
+매일 자동 실행합니다.
 
-이 프로젝트는 국가대표 경기 데이터를 기반으로 각 팀의 전력을 수치화하고, 머신러닝 모델을 활용해 경기 결과를 예측한 뒤 조별리그와 토너먼트 진행 확률을 시뮬레이션하는 프로젝트입니다.
+- Dashboard: https://hs98012.github.io/worldcup-predictor/
+- Prediction task: `HOME_WIN / DRAW / AWAY_WIN` 다중 분류
+- Simulation: 조별리그 및 토너먼트 10,000회 반복
 
-단순히 특정 경기의 승패만 예측하는 것이 아니라, 조별리그 순위와 토너먼트 진출 확률까지 계산하여 월드컵 전체 흐름을 예측하는 것을 목표로 합니다.
+## 프로젝트 개요
 
-## 2. 개발 목적
+이 프로젝트는 단일 모델 학습에 그치지 않고 다음 과정을 하나의 흐름으로
+연결하는 것을 목표로 했습니다.
 
-- 국가대표 경기 데이터를 활용한 데이터 분석 경험 정리
-- scikit-learn 기반 머신러닝 분류 모델 학습
-- 경기 결과 예측 로직 구현
-- 조별리그 및 토너먼트 시뮬레이션 구현
-- Vue 기반 대시보드 시각화로 확장 예정
+1. 국제 축구 원본 데이터 변경 감지
+2. 완료 경기와 예정 경기 분리 및 전처리
+3. 머신러닝 모델 학습과 남은 경기 확률 예측
+4. 실제 월드컵 결과 기반 조별 순위 계산
+5. 조별리그와 토너먼트 시뮬레이션
+6. Vue 대시보드용 JSON 생성 및 동기화
+7. GitHub Actions를 통한 일일 자동 갱신
 
-## 3. 사용 기술
-
-### Data Analysis / Machine Learning
-
-- Python
-- pandas
-- numpy
-- scikit-learn
-- LogisticRegression
-
-### Frontend
-
-- Vue.js
-
-### Output
-
-- JSON 기반 예측 결과 저장
-- Vue 대시보드용 JSON 데이터 자동 동기화
-
-## 4. 프로젝트 구조
-
-worldcup-predictor/
-├── data/
-│   ├── raw/             # 원본 경기 데이터
-│   └── processed/       # 전처리 데이터 및 예측 결과
-├── models/              # 학습 모델 저장
-├── scripts/             # 데이터 로딩, 학습, 예측, 시뮬레이션 스크립트
-├── frontend/            # Vue 기반 대시보드 및 public/data 정적 데이터
-├── requirements.txt
-└── README.md
-
-## 5. 현재 구현 내용
+## 주요 기능
 
 ### 데이터 처리
 
-- 국제 경기 데이터 로딩
-- 전체 경기 수 및 기간 확인
-- 참가 국가 목록 생성
-- 분석 및 예측에 필요한 데이터 전처리
+- 원본 `results.csv`의 SHA-256 해시, 행 수, 최신 경기 날짜 변경 감지
+- 스코어 존재 여부에 따른 완료 경기와 예정 경기 분리
+- 팀 이름 표기 차이를 정규화해 모델과 시뮬레이션에서 일관되게 사용
 
-### 머신러닝 예측
+### 예측 및 시뮬레이션
 
-- 승/무/패 다중분류 모델 학습
-- scikit-learn LogisticRegression 기반 베이스라인 모델 구현
-- 단일 경기 결과 예측
-- 예측 확률 보정 로직 적용
+- scikit-learn `LogisticRegression` 기반 승·무·패 다중 분류
+- Elo와 최근 경기력을 활용한 피처 생성
+- 예정된 월드컵 경기의 홈 승·무승부·원정 승 확률 생성
+- 무승부 예측 보정 로직 적용
+- 조별리그 통과 확률 및 토너먼트 단계별 진출 확률 계산
+- 10,000회 시뮬레이션 기반 우승 확률 산출
 
-### 시뮬레이션
+### 실제 경기 반영
 
-- 조별리그 경기 결과 예측
-- 조별 순위 계산
-- 토너먼트 진출 확률 계산
-- 10,000회 반복 시뮬레이션 수행
+- 완료된 2026 월드컵 경기의 날짜, 팀, 스코어, 결과 저장
+- 실제 결과를 반영한 조별리그 현재 순위 계산
+- 승점, 골득실, 다득점, 팀명 순으로 순위 정렬
+- 아직 완료된 경기가 없어도 12개 조와 48개 팀의 초기 순위 생성
 
-## 6. 모델 성능
+### 대시보드
 
-현재 베이스라인 모델 성능은 다음과 같습니다.
+- 완료된 월드컵 경기 결과
+- 조별리그 현재 순위
+- 남은 경기 승·무·패 예측
+- 조별리그 통과 확률
+- 토너먼트 진출 및 우승 확률 Top 10
+- 대한민국 진출 확률 강조 표시
+- 데스크톱과 모바일 반응형 UI
 
-| Metric | Score |
-| --- | ---: |
-| Accuracy | 0.5633 |
-| Log Loss | 0.9624 |
+## 기술 스택
 
-## 7. 주요 결과 예시
+| 영역 | 기술 |
+| --- | --- |
+| Data / ML | Python, pandas, NumPy, scikit-learn, joblib |
+| Model | LogisticRegression, Elo rating |
+| Frontend | Vue.js, Vite |
+| Automation | GitHub Actions |
+| Deployment | GitHub Pages |
 
-대한민국의 토너먼트 시뮬레이션 결과는 다음과 같습니다.
+## 데이터 파이프라인
 
-| Stage | Probability |
-| --- | ---: |
-| 32강 진출 | 85.85% |
-| 16강 진출 | 42.14% |
-| 8강 진출 | 12.77% |
-| 4강 진출 | 5.56% |
-| 결승 진출 | 1.32% |
-| 우승 | 0.40% |
+```text
+외부 국제 경기 results.csv
+          |
+          v
+원본 변경 감지
+(해시 / 행 수 / 최신 날짜)
+          |
+          v
+완료 경기와 예정 경기 분리
+          |
+          +-------------------------------+
+          |                               |
+          v                               v
+completed_matches.csv             upcoming_fixtures.csv
+          |                               |
+          v                               v
+Elo 및 최근 경기력 계산             남은 경기 승/무/패 예측
+          |                               |
+          +---------------+---------------+
+                          |
+                          v
+                 모델 학습 및 확률 보정
+                          |
+          +---------------+----------------+
+          |                                |
+          v                                v
+실제 경기 결과 및 현재 순위         조별리그 / 토너먼트 시뮬레이션
+          |                                |
+          +---------------+----------------+
+                          |
+                          v
+               대시보드용 JSON 산출물 생성
+                          |
+                          v
+ data/processed/*.json -> frontend/public/data/*.json
+                          |
+                          v
+               Vue + Vite 대시보드
+                          |
+                          v
+                    GitHub Pages
+```
 
-## 8. 실행 방법
+## 프로젝트 구조
 
-### Python 가상환경 생성
+```text
+worldcup-predictor/
+├── data/
+│   ├── raw/                    # 원본 국제 경기 데이터
+│   └── processed/              # 전처리, 예측, 시뮬레이션 산출물
+├── frontend/
+│   ├── public/data/            # Vue에서 fetch하는 JSON
+│   └── src/                    # Vue 대시보드
+├── models/                     # 학습된 모델
+├── scripts/
+│   ├── utils/                  # 팀명 정규화, 월드컵 조 편성
+│   └── 99_run_daily_pipeline.py
+├── .github/workflows/
+│   ├── daily-pipeline.yml      # 일일 데이터 갱신
+│   └── deploy-frontend.yml     # GitHub Pages 배포
+└── requirements.txt
+```
 
-    python -m venv .venv
-    source .venv/bin/activate
+## 주요 산출물
 
-### 패키지 설치
+| 파일 | 설명 |
+| --- | --- |
+| `completed_matches.csv` | 스코어가 입력된 완료 경기 |
+| `upcoming_fixtures.csv` | 아직 스코어가 없는 예정 경기 |
+| `fixture_predictions.json` | 남은 경기의 승·무·패 확률 |
+| `worldcup_completed_results.json` | 완료된 2026 월드컵 실제 결과 |
+| `worldcup_group_standings.json` | 실제 결과 기반 현재 조별 순위 |
+| `group_simulation.json` | 팀별 조 순위 및 32강 진출 확률 |
+| `tournament_simulation.json` | 토너먼트 단계별 진출 및 우승 확률 |
+| `dashboard_summary.json` | 모델과 주요 예측 결과 요약 |
 
-    pip install -r requirements.txt
+산출물은 `data/processed/`에 생성됩니다. Vue에서 사용하는 JSON은
+`scripts/09_sync_frontend_data.py`를 통해 `frontend/public/data/`로
+복사됩니다.
 
-### 스크립트 실행 예시
+## 로컬 실행
 
-    python scripts/01_load_matches.py
-    python scripts/05_train_sklearn_model.py
-    python scripts/03_predict_match.py
+### Python 파이프라인
 
-### 일일 데이터 업데이트 파이프라인
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python scripts/99_run_daily_pipeline.py
+```
 
-GitHub 원본 `results.csv`를 로컬 파일과 비교하고, SHA-256 해시, 행 수,
-최신 경기 날짜 중 하나라도 변경된 경우에만 전체 예측 파이프라인을 실행합니다.
+실제 결과와 조별 순위 JSON만 개별 생성할 수도 있습니다.
 
-    python scripts/00_update_results_csv.py
-    python scripts/99_run_daily_pipeline.py
+```bash
+python scripts/10_create_worldcup_completed_results.py
+python scripts/11_create_group_standings.py
+python scripts/09_sync_frontend_data.py
+```
 
-원본 데이터는 스코어 존재 여부에 따라 다음 두 파일로 분리됩니다.
+### Vue 개발 서버
 
-- `data/processed/completed_matches.csv`: 모델 학습, Elo 계산, 과거 경기 분석
-- `data/processed/upcoming_fixtures.csv`: 남은 월드컵 경기 예측 및 일정 표시
+```bash
+cd frontend
+npm ci
+npm run dev
+```
 
-분리 결과만 확인하려면 다음 명령을 실행합니다.
+기본 개발 서버 주소는 `http://localhost:5173/worldcup-predictor/`입니다.
 
-    python scripts/01_load_matches.py
+### Vue 프로덕션 빌드
 
-예정된 월드컵 72경기의 승/무/패 확률만 다시 생성하려면 다음 명령을 실행합니다.
+```bash
+cd frontend
+npm run build
+```
 
-    python scripts/08_predict_upcoming_fixtures.py
+빌드 결과는 `frontend/dist/`에 생성됩니다.
 
-실행 결과는 `data/processed/update_status.json`에서 확인할 수 있습니다.
-GitHub Actions는 매일 00:00 UTC(한국 시간 09:00)에 자동 실행되며,
-Actions 화면에서 수동 실행할 수도 있습니다.
+## 자동 업데이트
 
-### 프론트엔드 데이터 동기화
+`.github/workflows/daily-pipeline.yml`은 매일 `00:00 UTC`
+(한국 시간 `09:00`)에 실행되며 수동 실행도 지원합니다.
 
-예측 파이프라인의 원본 JSON은 `data/processed/`에 생성됩니다. 파이프라인
-마지막 단계의 `scripts/09_sync_frontend_data.py`가 Vue 앱에서 사용하는
-파일을 `frontend/public/data/`로 복사합니다.
+1. 원본 국제 경기 CSV 다운로드
+2. 해시, 행 수, 최신 날짜를 기존 데이터와 비교
+3. 변경된 경우 전처리 데이터 갱신
+4. Elo 및 머신러닝 모델 재학습
+5. 남은 경기 예측과 시뮬레이션 재실행
+6. 실제 결과와 현재 조별 순위 JSON 생성
+7. `frontend/public/data/`로 대시보드 데이터 동기화
+8. 변경된 데이터, 모델, 프론트엔드 JSON 자동 commit/push
 
-동기화 대상은 `dashboard_summary.json`, `tournament_simulation.json`,
-`fixture_predictions.json`, `model_metrics.json`, `group_simulation.json`,
-`worldcup_completed_results.json`입니다.
-Vite 개발 서버는 이 복사본을 `/data/<파일명>` 경로로 제공합니다.
+`main` 브랜치에 push된 프론트엔드 변경은
+`.github/workflows/deploy-frontend.yml`에서 빌드한 뒤 GitHub Pages에
+배포됩니다.
 
-GitHub Actions는 두 디렉터리의 변경 사항을 함께 커밋하므로, 매일 예측 결과가
-갱신되면 Vue 대시보드 데이터도 같은 커밋에서 갱신됩니다. 동기화만 다시
-실행하려면 다음 명령을 사용합니다.
+## 포트폴리오 관점의 특징
 
-    python scripts/09_sync_frontend_data.py
+이 프로젝트는 데이터 분석 결과를 노트북이나 단일 스크립트에 머물게 하지
+않고, 실제 서비스 형태로 연결한 프로젝트입니다.
 
-### 실제 월드컵 경기 결과 반영
+- 원본 데이터 변경을 감지하는 재실행 가능한 데이터 파이프라인
+- 전처리, 피처 생성, 모델 학습, 확률 보정으로 구성된 예측 과정
+- 실제 경기 결과와 확률 시뮬레이션을 함께 제공하는 데이터 구조
+- 정적 JSON을 활용한 단순하고 배포 가능한 Vue 대시보드
+- 데이터 갱신, 산출물 동기화, 커밋, Pages 배포를 분리한 자동화 구성
 
-원본 `results.csv`에 2026 월드컵 경기 스코어가 추가되면 일일 파이프라인이
-해당 경기를 `data/processed/completed_matches.csv`로 분류합니다.
-`scripts/10_create_worldcup_completed_results.py`는 이 파일에서 2026년
-`FIFA World Cup` 완료 경기만 추출해
-`data/processed/worldcup_completed_results.json`을 생성합니다.
-
-이 결과와 공용 2026 월드컵 조 편성 정보를 사용해
-`scripts/11_create_group_standings.py`가 승점, 골득실, 다득점, 팀명 순으로
-`data/processed/worldcup_group_standings.json`을 계산합니다. 완료 경기가
-없을 때도 12개 조와 48개 팀을 모두 0경기, 0점 상태로 생성합니다.
-
-생성된 JSON은 `scripts/09_sync_frontend_data.py`를 통해
-`frontend/public/data/`로 복사되며, Vue 대시보드의
-`완료된 월드컵 경기 결과` 섹션에 날짜, 팀, 스코어와 실제 결과가 표시됩니다.
-대회 시작 전처럼 완료 경기가 없을 때는 빈 배열로 저장됩니다.
-
-대시보드는 실제 완료 경기와 현재 조별 순위, 남은 경기 승부 예측,
-`group_simulation.json` 기반 조별리그 통과 확률,
-`tournament_simulation.json` 기반 토너먼트 진출 및 우승 확률을 한 화면에
-표시합니다. 대한민국 데이터는 별도 요약 카드와 각 조 카드에서 강조됩니다.
-
-### Vue 프론트엔드 실행
-
-프론트엔드 개발 서버는 다음 명령으로 실행합니다.
-
-    cd frontend
-    npm ci
-    npm run dev
-
-프로덕션 빌드는 다음 명령으로 확인할 수 있습니다.
-
-    cd frontend
-    npm run build
-
-Vite의 base 경로는 `/worldcup-predictor/`로 설정되어 있으며, JSON 데이터도
-`import.meta.env.BASE_URL`을 기준으로 불러옵니다. 따라서 로컬 개발 환경과
-GitHub Pages의 저장소 하위 경로에서 동일하게 동작합니다.
-
-### GitHub Pages 배포
-
-`main` 브랜치에 변경 사항이 push되면
-`.github/workflows/deploy-frontend.yml`이 Vue 앱을 빌드하고 GitHub Pages에
-배포합니다.
-
-배포 주소:
-https://hs98012.github.io/worldcup-predictor/
-
-## 9. 주요 산출물
-
-현재 생성된 주요 산출물은 다음과 같습니다.
-
-- data/processed/teams.json
-- data/processed/completed_matches.csv
-- data/processed/upcoming_fixtures.csv
-- data/processed/fixture_predictions.json
-- data/processed/model_metrics.json
-- data/processed/predictions_sklearn.json
-- data/processed/predictions_adjusted.json
-- data/processed/group_predictions.json
-- data/processed/group_simulation.json
-- data/processed/tournament_simulation.json
-- data/processed/worldcup_completed_results.json
-- data/processed/worldcup_group_standings.json
-
-## 10. 향후 개발 계획
-
-- 대시보드용 summary JSON 생성
-- Vue 기반 메인 화면 구현
-- 국가별 예측 결과 카드 구현
-- 조별리그 순위표 시각화
-- 토너먼트 브래킷 시각화
-- 모델 성능 개선 및 피처 추가
-
-## 11. 프로젝트 진행 단계
-
-현재 프로젝트는 데이터 분석, 모델 학습, 경기 예측, 조별리그 및 토너먼트 시뮬레이션까지 구현된 상태입니다.
-
-이후 단계에서는 생성된 JSON 결과를 Vue 프론트엔드와 연결하여 사용자가 국가별 예측 결과와 토너먼트 진행 확률을 확인할 수 있는 대시보드를 구현할 예정입니다.
+이를 통해 데이터 처리, 머신러닝, 프론트엔드 시각화, CI/CD 자동화를 하나의
+저장소 안에서 설계하고 운영하는 과정을 구현했습니다.
