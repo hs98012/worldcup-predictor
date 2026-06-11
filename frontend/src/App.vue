@@ -34,7 +34,19 @@ const displayTeam = (team) => {
 }
 
 const topTeams = computed(() =>
-  [...tournament.value].sort((a, b) => b.winnerProb - a.winnerProb).slice(0, 10),
+  {
+    const diagnostics = new Map(
+      (summary.value?.winnerTop10 ?? []).map((team) => [team.team, team]),
+    )
+
+    return [...tournament.value]
+      .sort((a, b) => b.winnerProb - a.winnerProb)
+      .slice(0, 10)
+      .map((team) => ({
+        ...team,
+        ...diagnostics.get(team.team),
+      }))
+  },
 )
 
 const korea = computed(
@@ -428,6 +440,10 @@ onMounted(async () => {
               <div class="ranking-team">
                 <strong>{{ displayTeam(team.displayTeam || team.team) }}</strong>
                 <span>GROUP {{ team.group }}</span>
+                <small class="strength-meta">
+                  전력 {{ team.simulationStrength?.toFixed(1) }} · 전력 순위
+                  {{ team.strengthRank }}위 · 우승 순위 {{ team.winnerProbRank }}위
+                </small>
               </div>
               <div class="ranking-bar">
                 <span

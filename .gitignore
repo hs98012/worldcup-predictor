@@ -21,3 +21,4 @@ frontend/dist/
 # Cache
 .cache/
 models/*.joblib
+.idea/

@@ -6,6 +6,7 @@ GROUP_PREDICTIONS_PATH = Path("data/processed/group_predictions.json")
 GROUP_SIMULATION_PATH = Path("data/processed/group_simulation.json")
 PREDICTIONS_PATH = Path("data/processed/predictions_adjusted.json")
 METRICS_PATH = Path("data/processed/model_metrics.json")
+DIAGNOSTICS_PATH = Path("data/processed/team_strength_diagnostics.json")
 OUTPUT_PATH = Path("data/processed/dashboard_summary.json")
 
 
@@ -24,6 +25,10 @@ def main():
     group_simulation = load_json(GROUP_SIMULATION_PATH)
     predictions = load_json(PREDICTIONS_PATH)
     metrics = load_json(METRICS_PATH)
+    diagnostics = load_json(DIAGNOSTICS_PATH)
+    diagnostics_by_team = {
+        item["team"]: item for item in diagnostics
+    }
 
     winner_top10 = [
         {
@@ -37,6 +42,26 @@ def main():
             "quarterFinalProb": percent(team["quarterFinalProb"]),
             "roundOf16Prob": percent(team["roundOf16Prob"]),
             "roundOf32Prob": percent(team["roundOf32Prob"]),
+            "strengthNote": diagnostics_by_team.get(
+                team["team"],
+                {},
+            ).get("note", ""),
+            "simulationStrength": diagnostics_by_team.get(
+                team["team"],
+                {},
+            ).get("simulationStrength"),
+            "strengthRank": diagnostics_by_team.get(
+                team["team"],
+                {},
+            ).get("strengthRank"),
+            "winnerProbRank": diagnostics_by_team.get(
+                team["team"],
+                {},
+            ).get("winnerProbRank"),
+            "pathDifficultyScore": diagnostics_by_team.get(
+                team["team"],
+                {},
+            ).get("pathDifficultyScore"),
         }
         for idx, team in enumerate(tournament[:10])
     ]
@@ -137,6 +162,7 @@ def main():
         "groupStandings": group_predictions,
         "groupRound32Summary": group_round32_summary,
         "upcomingMatchCards": upcoming_match_cards,
+        "teamStrengthDiagnostics": diagnostics[:10],
     }
 
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:

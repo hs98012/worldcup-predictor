@@ -25,5 +25,17 @@
   "recent_goal_diff_gap10",
   "is_neutral",
   "team_a_home_advantage",
-  "tournament_importance"
+  "tournament_importance",
+  "team_a_adj_points5",
+  "team_b_adj_points5",
+  "adj_points_diff5",
+  "team_a_adj_goal_diff5",
+  "team_b_adj_goal_diff5",
+  "adj_goal_diff_gap5",
+  "team_a_avg_opponent_elo5",
+  "team_b_avg_opponent_elo5",
+  "avg_opponent_elo_diff5",
+  "team_a_adj_points10",
+  "team_b_adj_points10",
+  "adj_points_diff10"
 ]

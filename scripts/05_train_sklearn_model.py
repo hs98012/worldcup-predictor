@@ -28,6 +28,9 @@ from sklearn.preprocessing import StandardScaler
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 COMPLETED_PATH = PROJECT_ROOT / "data/processed/completed_matches.csv"
 MATCHES_PATH = PROJECT_ROOT / "data/processed/matches.json"
+TEAM_STRENGTH_PATH = (
+    PROJECT_ROOT / "data/external/team_strength_2026.csv"
+)
 
 MODEL_PATH = PROJECT_ROOT / "models/sklearn_match_result_model.joblib"
 PREDICTIONS_PATH = PROJECT_ROOT / "data/processed/predictions_sklearn.json"
@@ -44,8 +47,10 @@ BASE_K = 30
 TRAIN_RATIO = 0.8
 RANDOM_STATE = 42
 CLASS_LABELS = ["A_WIN", "B_WIN", "DRAW"]
+# SQUAD_ADJUSTMENT_ALPHA = 0.35
+SQUAD_ADJUSTMENT_ALPHA = 0.55
 
-FEATURE_COLUMNS = [
+BASE_FEATURE_COLUMNS = [
     "team_a_elo",
     "team_b_elo",
     "elo_diff",
@@ -75,7 +80,29 @@ FEATURE_COLUMNS = [
     "tournament_importance",
 ]
 
+OPPONENT_ADJUSTED_FEATURE_COLUMNS = [
+    "team_a_adj_points5",
+    "team_b_adj_points5",
+    "adj_points_diff5",
+    "team_a_adj_goal_diff5",
+    "team_b_adj_goal_diff5",
+    "adj_goal_diff_gap5",
+    "team_a_avg_opponent_elo5",
+    "team_b_avg_opponent_elo5",
+    "avg_opponent_elo_diff5",
+    "team_a_adj_points10",
+    "team_b_adj_points10",
+    "adj_points_diff10",
+]
+
+FEATURE_COLUMNS = BASE_FEATURE_COLUMNS + OPPONENT_ADJUSTED_FEATURE_COLUMNS
+
 HOST_TEAMS = {"Mexico", "Canada", "United States"}
+OPPONENT_STRENGTH_MIN = 0.75
+OPPONENT_STRENGTH_MAX = 1.25
+ADJ_POINTS_DIFF5_CAP = 8.0
+ADJ_GOAL_DIFF5_CAP = 10.0
+ADJ_POINTS_DIFF10_CAP = 12.0
 
 
 def load_matches():
@@ -115,6 +142,58 @@ def get_actual_score(score_a, score_b):
     if score_a == score_b:
         return 0.5
     return 0.0
+
+
+def load_team_strength():
+    if not TEAM_STRENGTH_PATH.exists():
+        print(f"선수단 전력 CSV 없음: {TEAM_STRENGTH_PATH}")
+        return {}
+
+    df = pd.read_csv(TEAM_STRENGTH_PATH)
+    required_columns = {"team", "team_strength_score"}
+    missing_columns = required_columns - set(df.columns)
+
+    if missing_columns:
+        raise ValueError(
+            "team_strength_2026.csv에 필요한 컬럼이 없습니다: "
+            f"{missing_columns}"
+        )
+
+    valid_rows = df.dropna(subset=["team", "team_strength_score"])
+    return {
+        str(row["team"]): float(row["team_strength_score"])
+        for _, row in valid_rows.iterrows()
+    }
+
+
+def apply_squad_strength_adjustment(
+    team_a_win,
+    draw,
+    team_b_win,
+    team_a,
+    team_b,
+    team_strength,
+):
+    strength_a = team_strength.get(team_a)
+    strength_b = team_strength.get(team_b)
+
+    if strength_a is None or strength_b is None:
+        return team_a_win, draw, team_b_win, 0.0
+
+    strength_diff = strength_a - strength_b
+    team_a_win *= np.exp(SQUAD_ADJUSTMENT_ALPHA * strength_diff)
+    team_b_win *= np.exp(-SQUAD_ADJUSTMENT_ALPHA * strength_diff)
+    total = team_a_win + draw + team_b_win
+
+    if total == 0:
+        return 1 / 3, 1 / 3, 1 / 3, strength_diff
+
+    return (
+        team_a_win / total,
+        draw / total,
+        team_b_win / total,
+        strength_diff,
+    )
 
 
 def get_expected_score(team_elo, opponent_elo):
@@ -158,6 +237,26 @@ def get_tournament_importance(tournament):
     return 0.5
 
 
+def get_tournament_k_factor(tournament):
+    importance = get_tournament_importance(tournament)
+    if importance >= 1.0:
+        return 1.15
+    if importance >= 0.85:
+        return 0.9
+    if importance >= 0.65:
+        return 0.7
+    if importance <= 0.25:
+        return 0.35
+    return 0.55
+
+
+def get_goal_difference_multiplier(score_a, score_b):
+    goal_difference = abs(score_a - score_b)
+    if goal_difference <= 1:
+        return 1.0
+    return min(1.5, 1.0 + 0.15 * (goal_difference - 1))
+
+
 def summarize_recent_form(history, window):
     recent = list(history)[-window:]
     if not recent:
@@ -167,6 +266,9 @@ def summarize_recent_form(history, window):
             "goal_diff": 0,
             "avg_goals_for": 0,
             "avg_goals_against": 0,
+            "adjusted_points": 0,
+            "adjusted_goal_diff": 0,
+            "avg_opponent_elo": INITIAL_ELO,
         }
 
     match_count = len(recent)
@@ -174,12 +276,22 @@ def summarize_recent_form(history, window):
     wins = sum(item["points"] == 3 for item in recent)
     goals_for = sum(item["goals_for"] for item in recent)
     goals_against = sum(item["goals_against"] for item in recent)
+    adjusted_points = sum(item["adjusted_points"] for item in recent)
+    adjusted_goal_diff = sum(
+        item["adjusted_goal_diff"] for item in recent
+    )
+    avg_opponent_elo = sum(
+        item["opponent_elo"] for item in recent
+    ) / match_count
     return {
         "points": points,
         "win_rate": wins / match_count,
         "goal_diff": goals_for - goals_against,
         "avg_goals_for": goals_for / match_count,
         "avg_goals_against": goals_against / match_count,
+        "adjusted_points": adjusted_points,
+        "adjusted_goal_diff": adjusted_goal_diff,
+        "avg_opponent_elo": avg_opponent_elo,
     }
 
 
@@ -232,23 +344,80 @@ def build_feature_row(
         "recent_goal_diff_gap10": (
             form_a10["goal_diff"] - form_b10["goal_diff"]
         ),
+        "team_a_adj_points5": form_a5["adjusted_points"],
+        "team_b_adj_points5": form_b5["adjusted_points"],
+        "adj_points_diff5": float(
+            np.clip(
+                form_a5["adjusted_points"]
+                - form_b5["adjusted_points"],
+                -ADJ_POINTS_DIFF5_CAP,
+                ADJ_POINTS_DIFF5_CAP,
+            )
+        ),
+        "team_a_adj_goal_diff5": form_a5["adjusted_goal_diff"],
+        "team_b_adj_goal_diff5": form_b5["adjusted_goal_diff"],
+        "adj_goal_diff_gap5": float(
+            np.clip(
+                form_a5["adjusted_goal_diff"]
+                - form_b5["adjusted_goal_diff"],
+                -ADJ_GOAL_DIFF5_CAP,
+                ADJ_GOAL_DIFF5_CAP,
+            )
+        ),
+        "team_a_avg_opponent_elo5": form_a5["avg_opponent_elo"],
+        "team_b_avg_opponent_elo5": form_b5["avg_opponent_elo"],
+        "avg_opponent_elo_diff5": (
+            form_a5["avg_opponent_elo"]
+            - form_b5["avg_opponent_elo"]
+        ),
+        "team_a_adj_points10": form_a10["adjusted_points"],
+        "team_b_adj_points10": form_b10["adjusted_points"],
+        "adj_points_diff10": float(
+            np.clip(
+                form_a10["adjusted_points"]
+                - form_b10["adjusted_points"],
+                -ADJ_POINTS_DIFF10_CAP,
+                ADJ_POINTS_DIFF10_CAP,
+            )
+        ),
         "is_neutral": int(is_neutral),
         "team_a_home_advantage": int(team_a_home_advantage),
         "tournament_importance": get_tournament_importance(tournament),
     }
 
 
-def update_elo(elo, team_a, team_b, score_a, score_b, match_date):
+def update_elo(
+    elo,
+    team_a,
+    team_b,
+    score_a,
+    score_b,
+    match_date,
+    tournament,
+):
     team_a_elo = elo[team_a]
     team_b_elo = elo[team_b]
     expected_a = get_expected_score(team_a_elo, team_b_elo)
     actual_a = get_actual_score(score_a, score_b)
-    k = BASE_K * get_time_weight(match_date)
+    k = (
+        BASE_K
+        * get_time_weight(match_date)
+        * get_tournament_k_factor(tournament)
+        * get_goal_difference_multiplier(score_a, score_b)
+    )
     elo[team_a] = team_a_elo + k * (actual_a - expected_a)
     elo[team_b] = team_b_elo + k * ((1 - actual_a) - (1 - expected_a))
 
 
-def update_recent_history(recent_history, team_a, team_b, score_a, score_b):
+def update_recent_history(
+    recent_history,
+    team_a,
+    team_b,
+    score_a,
+    score_b,
+    team_a_elo,
+    team_b_elo,
+):
     if score_a > score_b:
         points_a, points_b = 3, 0
     elif score_a == score_b:
@@ -256,11 +425,28 @@ def update_recent_history(recent_history, team_a, team_b, score_a, score_b):
     else:
         points_a, points_b = 0, 3
 
+    strength_a = float(
+        np.clip(
+            team_b_elo / team_a_elo,
+            OPPONENT_STRENGTH_MIN,
+            OPPONENT_STRENGTH_MAX,
+        )
+    )
+    strength_b = float(
+        np.clip(
+            team_a_elo / team_b_elo,
+            OPPONENT_STRENGTH_MIN,
+            OPPONENT_STRENGTH_MAX,
+        )
+    )
     recent_history[team_a].append(
         {
             "points": points_a,
             "goals_for": score_a,
             "goals_against": score_b,
+            "opponent_elo": team_b_elo,
+            "adjusted_points": points_a * strength_a,
+            "adjusted_goal_diff": (score_a - score_b) * strength_a,
         }
     )
     recent_history[team_b].append(
@@ -268,6 +454,9 @@ def update_recent_history(recent_history, team_a, team_b, score_a, score_b):
             "points": points_b,
             "goals_for": score_b,
             "goals_against": score_a,
+            "opponent_elo": team_a_elo,
+            "adjusted_points": points_b * strength_b,
+            "adjusted_goal_diff": (score_b - score_a) * strength_b,
         }
     )
 
@@ -301,8 +490,26 @@ def build_training_dataset(df):
         labels.append(get_actual_label(score_a, score_b))
         dates.append(match_date)
 
-        update_elo(elo, team_a, team_b, score_a, score_b, match_date)
-        update_recent_history(recent_history, team_a, team_b, score_a, score_b)
+        team_a_elo = elo[team_a]
+        team_b_elo = elo[team_b]
+        update_elo(
+            elo,
+            team_a,
+            team_b,
+            score_a,
+            score_b,
+            match_date,
+            row["tournament"],
+        )
+        update_recent_history(
+            recent_history,
+            team_a,
+            team_b,
+            score_a,
+            score_b,
+            team_a_elo,
+            team_b_elo,
+        )
 
     return (
         pd.DataFrame(rows, columns=FEATURE_COLUMNS),
@@ -648,27 +855,21 @@ def select_model(model_metrics, baseline_metrics):
     return selected["model"], reason
 
 
-def train_model(X, y, dates):
-    split_index = int(len(X) * TRAIN_RATIO)
-    X_train = X.iloc[:split_index]
-    X_test = X.iloc[split_index:]
-    y_train = y[:split_index]
-    y_test = y[split_index:]
-
-    baseline_metrics = evaluate_baselines(
-        X_train,
-        y_train,
-        X_test,
-        y_test,
-    )
+def compare_model_candidates(
+    X_train,
+    y_train,
+    X_test,
+    y_test,
+    training_distribution,
+    experiment_label,
+):
     factories = build_model_factories()
     model_comparisons = []
     test_predictions = {}
     test_probabilities = {}
-    training_distribution = class_distribution(y_train)
 
     for name, estimator in factories.items():
-        print(f"- {name} 학습 및 평가")
+        print(f"- {experiment_label} / {name} 학습 및 평가")
         candidate = clone(estimator)
         candidate.fit(X_train, y_train)
         y_pred = candidate.predict(X_test)
@@ -688,15 +889,114 @@ def train_model(X, y, dates):
         )
         model_comparisons.append(comparison)
 
-    selected_name, selection_reason = select_model(
+    return (
+        factories,
         model_comparisons,
+        test_predictions,
+        test_probabilities,
+    )
+
+
+def train_model(X, y, dates):
+    split_index = int(len(X) * TRAIN_RATIO)
+    X_train = X.iloc[:split_index]
+    X_test = X.iloc[split_index:]
+    y_train = y[:split_index]
+    y_test = y[split_index:]
+
+    baseline_metrics = evaluate_baselines(
+        X_train,
+        y_train,
+        X_test,
+        y_test,
+    )
+    training_distribution = class_distribution(y_train)
+
+    (
+        base_factories,
+        base_comparisons,
+        base_predictions,
+        base_probabilities,
+    ) = compare_model_candidates(
+        X_train[BASE_FEATURE_COLUMNS],
+        y_train,
+        X_test[BASE_FEATURE_COLUMNS],
+        y_test,
+        training_distribution,
+        "기존 피처",
+    )
+    base_selected_name, base_selection_reason = select_model(
+        base_comparisons,
         baseline_metrics,
     )
-    selected_metrics = next(
-        item for item in model_comparisons if item["model"] == selected_name
+    base_selected_metrics = next(
+        item
+        for item in base_comparisons
+        if item["model"] == base_selected_name
     )
+
+    (
+        adjusted_factories,
+        adjusted_comparisons,
+        adjusted_predictions,
+        adjusted_probabilities,
+    ) = compare_model_candidates(
+        X_train[FEATURE_COLUMNS],
+        y_train,
+        X_test[FEATURE_COLUMNS],
+        y_test,
+        training_distribution,
+        "상대 강도 보정 피처",
+    )
+    adjusted_selected_name, adjusted_selection_reason = select_model(
+        adjusted_comparisons,
+        baseline_metrics,
+    )
+    adjusted_selected_metrics = next(
+        item
+        for item in adjusted_comparisons
+        if item["model"] == adjusted_selected_name
+    )
+
+    accuracy_drop = (
+        base_selected_metrics["accuracy"]
+        - adjusted_selected_metrics["accuracy"]
+    )
+    log_loss_increase = (
+        adjusted_selected_metrics["logLoss"]
+        - base_selected_metrics["logLoss"]
+    )
+    adjusted_features_enabled = (
+        accuracy_drop < 0.01 and log_loss_increase < 0.02
+    )
+
+    if adjusted_features_enabled:
+        selected_name = adjusted_selected_name
+        selected_metrics = adjusted_selected_metrics
+        selected_columns = FEATURE_COLUMNS
+        factories = adjusted_factories
+        test_predictions = adjusted_predictions
+        test_probabilities = adjusted_probabilities
+        selection_reason = (
+            f"{adjusted_selection_reason}. 상대 강도 보정 피처가 기존 대비 "
+            f"Accuracy 변화 {-accuracy_drop:+.4f}, Log Loss 변화 "
+            f"{log_loss_increase:+.4f}로 보호 기준 이내여서 사용"
+        )
+    else:
+        selected_name = base_selected_name
+        selected_metrics = base_selected_metrics
+        selected_columns = BASE_FEATURE_COLUMNS
+        factories = base_factories
+        test_predictions = base_predictions
+        test_probabilities = base_probabilities
+        selection_reason = (
+            f"{base_selection_reason}. 상대 강도 보정 피처의 Accuracy 하락 "
+            f"{accuracy_drop:.4f} 또는 Log Loss 상승 "
+            f"{log_loss_increase:.4f}이 보호 기준을 넘어 기존 피처 유지"
+        )
+
     draw_calibration = run_draw_calibration_experiment(
-        X_test,
+        X_test[selected_columns],
         y_test,
         test_probabilities[selected_name],
     )
@@ -704,7 +1004,7 @@ def train_model(X, y, dates):
     # Evaluation uses the held-out future block; production model then learns
     # from every completed match before predicting the 2026 fixtures.
     selected_model = clone(factories[selected_name])
-    selected_model.fit(X, y)
+    selected_model.fit(X[selected_columns], y)
 
     metrics = {
         "selectedModel": selected_name,
@@ -715,12 +1015,44 @@ def train_model(X, y, dates):
         "testEndDate": str(dates.iloc[-1].date()),
         "classDistribution": training_distribution,
         "baselineMetrics": baseline_metrics,
-        "modelComparisons": model_comparisons,
+        "modelComparisons": (
+            adjusted_comparisons
+            if adjusted_features_enabled
+            else base_comparisons
+        ),
         "accuracy": selected_metrics["accuracy"],
         "logLoss": selected_metrics["logLoss"],
         "confusionMatrix": selected_metrics["confusionMatrix"],
         "classes": CLASS_LABELS,
-        "featureColumns": FEATURE_COLUMNS,
+        "featureColumns": selected_columns,
+        "opponentAdjustedFeaturesEnabled": adjusted_features_enabled,
+        "featureExperiment": {
+            "guardrails": {
+                "maxAccuracyDrop": 0.01,
+                "maxLogLossIncrease": 0.02,
+            },
+            "base": {
+                "selectedModel": base_selected_name,
+                "selectionReason": base_selection_reason,
+                "accuracy": base_selected_metrics["accuracy"],
+                "logLoss": base_selected_metrics["logLoss"],
+                "featureColumns": BASE_FEATURE_COLUMNS,
+                "modelComparisons": base_comparisons,
+            },
+            "opponentAdjusted": {
+                "selectedModel": adjusted_selected_name,
+                "selectionReason": adjusted_selection_reason,
+                "accuracy": adjusted_selected_metrics["accuracy"],
+                "logLoss": adjusted_selected_metrics["logLoss"],
+                "accuracyDropVsBase": round(accuracy_drop, 4),
+                "logLossIncreaseVsBase": round(
+                    log_loss_increase,
+                    4,
+                ),
+                "featureColumns": FEATURE_COLUMNS,
+                "modelComparisons": adjusted_comparisons,
+            },
+        },
         "classificationReport": classification_report(
             y_test,
             test_predictions[selected_name],
@@ -746,6 +1078,7 @@ def predict_worldcup_matches(model, elo, recent_history):
         matches = json.load(file)
 
     predictions = []
+    team_strength = load_team_strength()
     feature_columns = list(
         getattr(model, "feature_names_in_", FEATURE_COLUMNS)
     )
@@ -767,6 +1100,19 @@ def predict_worldcup_matches(model, elo, recent_history):
         team_a_win = float(class_to_prob.get("A_WIN", 0))
         draw = float(class_to_prob.get("DRAW", 0))
         team_b_win = float(class_to_prob.get("B_WIN", 0))
+        (
+            team_a_win,
+            draw,
+            team_b_win,
+            squad_strength_diff,
+        ) = apply_squad_strength_adjustment(
+            team_a_win,
+            draw,
+            team_b_win,
+            team_a,
+            team_b,
+            team_strength,
+        )
         predictions.append(
             {
                 "matchId": match["matchId"],
@@ -780,6 +1126,7 @@ def predict_worldcup_matches(model, elo, recent_history):
                 "teamAWinProb": round(team_a_win, 4),
                 "drawProb": round(draw, 4),
                 "teamBWinProb": round(team_b_win, 4),
+                "squadStrengthDiff": round(squad_strength_diff, 4),
                 "predictedResult": max(
                     [
                         ("A_WIN", team_a_win),
@@ -815,7 +1162,12 @@ def main():
         json.dump(metrics, file, ensure_ascii=False, indent=2)
         file.write("\n")
     with FEATURE_COLUMNS_PATH.open("w", encoding="utf-8") as file:
-        json.dump(FEATURE_COLUMNS, file, ensure_ascii=False, indent=2)
+        json.dump(
+            metrics["featureColumns"],
+            file,
+            ensure_ascii=False,
+            indent=2,
+        )
         file.write("\n")
     with DRAW_CALIBRATION_PATH.open("w", encoding="utf-8") as file:
         json.dump(draw_calibration, file, ensure_ascii=False, indent=2)

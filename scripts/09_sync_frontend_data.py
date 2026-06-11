@@ -8,6 +8,8 @@ FRONTEND_DATA_DIR = PROJECT_ROOT / "frontend/public/data"
 SYNC_FILES = [
     "dashboard_summary.json",
     "tournament_simulation.json",
+    "team_strength_diagnostics.json",
+    "simulation_diagnostics.json",
     "fixture_predictions.json",
     "model_metrics.json",
     "draw_calibration.json",

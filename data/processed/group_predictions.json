@@ -10,8 +10,8 @@
         "draws": 0,
         "losses": 0,
         "goalsFor": 7,
-        "goalsAgainst": 0,
-        "goalDiff": 7,
+        "goalsAgainst": 1,
+        "goalDiff": 6,
         "points": 9,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
@@ -23,9 +23,9 @@
         "wins": 2,
         "draws": 0,
         "losses": 1,
-        "goalsFor": 4,
-        "goalsAgainst": 4,
-        "goalDiff": 0,
+        "goalsFor": 5,
+        "goalsAgainst": 3,
+        "goalDiff": 2,
         "points": 6,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
@@ -37,9 +37,9 @@
         "wins": 1,
         "draws": 0,
         "losses": 2,
-        "goalsFor": 3,
-        "goalsAgainst": 4,
-        "goalDiff": -1,
+        "goalsFor": 2,
+        "goalsAgainst": 5,
+        "goalDiff": -3,
         "points": 3,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
@@ -51,9 +51,9 @@
         "wins": 0,
         "draws": 0,
         "losses": 3,
-        "goalsFor": 1,
+        "goalsFor": 2,
         "goalsAgainst": 7,
-        "goalDiff": -6,
+        "goalDiff": -5,
         "points": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
@@ -67,9 +67,9 @@
         "displayTeamB": "South Africa",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.62,
-        "drawProb": 0.236,
-        "teamBWinProb": 0.144,
+        "teamAWinProb": 0.6352,
+        "drawProb": 0.2417,
+        "teamBWinProb": 0.1231,
         "predictedResult": "A_WIN"
       },
       {
@@ -78,10 +78,10 @@
         "displayTeamA": "South Korea",
         "displayTeamB": "Czech Republic",
         "predictedScoreA": 2,
-        "predictedScoreB": 1,
-        "teamAWinProb": 0.4521,
-        "drawProb": 0.2729,
-        "teamBWinProb": 0.275,
+        "predictedScoreB": 0,
+        "teamAWinProb": 0.5923,
+        "drawProb": 0.2553,
+        "teamBWinProb": 0.1524,
         "predictedResult": "A_WIN"
       },
       {
@@ -90,10 +90,10 @@
         "displayTeamA": "Czech Republic",
         "displayTeamB": "South Africa",
         "predictedScoreA": 2,
-        "predictedScoreB": 0,
-        "teamAWinProb": 0.5652,
-        "drawProb": 0.259,
-        "teamBWinProb": 0.1758,
+        "predictedScoreB": 1,
+        "teamAWinProb": 0.3786,
+        "drawProb": 0.2854,
+        "teamBWinProb": 0.336,
         "predictedResult": "A_WIN"
       },
       {
@@ -102,10 +102,10 @@
         "displayTeamA": "Mexico",
         "displayTeamB": "South Korea",
         "predictedScoreA": 2,
-        "predictedScoreB": 0,
-        "teamAWinProb": 0.5562,
-        "drawProb": 0.2965,
-        "teamBWinProb": 0.1473,
+        "predictedScoreB": 1,
+        "teamAWinProb": 0.4952,
+        "drawProb": 0.3081,
+        "teamBWinProb": 0.1967,
         "predictedResult": "A_WIN"
       },
       {
@@ -115,9 +115,9 @@
         "displayTeamB": "Czech Republic",
         "predictedScoreA": 2,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.5239,
-        "drawProb": 0.2745,
-        "teamBWinProb": 0.2016,
+        "teamAWinProb": 0.5992,
+        "drawProb": 0.269,
+        "teamBWinProb": 0.1318,
         "predictedResult": "A_WIN"
       },
       {
@@ -127,9 +127,9 @@
         "displayTeamB": "South Korea",
         "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2907,
-        "drawProb": 0.2347,
-        "teamBWinProb": 0.4746,
+        "teamAWinProb": 0.3356,
+        "drawProb": 0.252,
+        "teamBWinProb": 0.4125,
         "predictedResult": "B_WIN"
       }
     ]
@@ -158,9 +158,9 @@
         "wins": 2,
         "draws": 0,
         "losses": 1,
-        "goalsFor": 5,
+        "goalsFor": 6,
         "goalsAgainst": 2,
-        "goalDiff": 3,
+        "goalDiff": 4,
         "points": 6,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
@@ -173,8 +173,8 @@
         "draws": 0,
         "losses": 2,
         "goalsFor": 2,
-        "goalsAgainst": 5,
-        "goalDiff": -3,
+        "goalsAgainst": 6,
+        "goalDiff": -4,
         "points": 3,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
@@ -202,9 +202,9 @@
         "displayTeamB": "Bosnia and Herzegovina",
         "predictedScoreA": 2,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6043,
-        "drawProb": 0.2682,
-        "teamBWinProb": 0.1275,
+        "teamAWinProb": 0.5405,
+        "drawProb": 0.2416,
+        "teamBWinProb": 0.2179,
         "predictedResult": "A_WIN"
       },
       {
@@ -214,9 +214,9 @@
         "displayTeamB": "Switzerland",
         "predictedScoreA": 0,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2205,
-        "drawProb": 0.2425,
-        "teamBWinProb": 0.537,
+        "teamAWinProb": 0.2311,
+        "drawProb": 0.2251,
+        "teamBWinProb": 0.5438,
         "predictedResult": "B_WIN"
       },
       {
@@ -224,11 +224,11 @@
         "date": "2026-06-18",
         "displayTeamA": "Switzerland",
         "displayTeamB": "Bosnia and Herzegovina",
-        "predictedScoreA": 2,
+        "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.5921,
-        "drawProb": 0.2914,
-        "teamBWinProb": 0.1165,
+        "teamAWinProb": 0.6376,
+        "drawProb": 0.2458,
+        "teamBWinProb": 0.1166,
         "predictedResult": "A_WIN"
       },
       {
@@ -238,9 +238,9 @@
         "displayTeamB": "Qatar",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.661,
-        "drawProb": 0.2277,
-        "teamBWinProb": 0.1113,
+        "teamAWinProb": 0.701,
+        "drawProb": 0.194,
+        "teamBWinProb": 0.105,
         "predictedResult": "A_WIN"
       },
       {
@@ -250,9 +250,9 @@
         "displayTeamB": "Switzerland",
         "predictedScoreA": 2,
         "predictedScoreB": 1,
-        "teamAWinProb": 0.4085,
-        "drawProb": 0.3381,
-        "teamBWinProb": 0.2533,
+        "teamAWinProb": 0.3675,
+        "drawProb": 0.3054,
+        "teamBWinProb": 0.3271,
         "predictedResult": "A_WIN"
       },
       {
@@ -262,9 +262,9 @@
         "displayTeamB": "Qatar",
         "predictedScoreA": 2,
         "predictedScoreB": 1,
-        "teamAWinProb": 0.4324,
-        "drawProb": 0.3405,
-        "teamBWinProb": 0.2271,
+        "teamAWinProb": 0.4357,
+        "drawProb": 0.2207,
+        "teamBWinProb": 0.3437,
         "predictedResult": "A_WIN"
       }
     ]
@@ -280,8 +280,8 @@
         "draws": 0,
         "losses": 0,
         "goalsFor": 7,
-        "goalsAgainst": 1,
-        "goalDiff": 6,
+        "goalsAgainst": 2,
+        "goalDiff": 5,
         "points": 9,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
@@ -294,8 +294,8 @@
         "draws": 0,
         "losses": 1,
         "goalsFor": 6,
-        "goalsAgainst": 2,
-        "goalDiff": 4,
+        "goalsAgainst": 3,
+        "goalDiff": 3,
         "points": 6,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
@@ -307,9 +307,9 @@
         "wins": 1,
         "draws": 0,
         "losses": 2,
-        "goalsFor": 2,
+        "goalsFor": 4,
         "goalsAgainst": 5,
-        "goalDiff": -3,
+        "goalDiff": -1,
         "points": 3,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
@@ -337,9 +337,9 @@
         "displayTeamB": "Morocco",
         "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2814,
-        "drawProb": 0.258,
-        "teamBWinProb": 0.4606,
+        "teamAWinProb": 0.2971,
+        "drawProb": 0.2489,
+        "teamBWinProb": 0.4541,
         "predictedResult": "B_WIN"
       },
       {
@@ -349,9 +349,9 @@
         "displayTeamB": "Scotland",
         "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.3089,
-        "drawProb": 0.3116,
-        "teamBWinProb": 0.3796,
+        "teamAWinProb": 0.3034,
+        "drawProb": 0.2617,
+        "teamBWinProb": 0.4349,
         "predictedResult": "B_WIN"
       },
       {
@@ -359,11 +359,11 @@
         "date": "2026-06-19",
         "displayTeamA": "Scotland",
         "displayTeamB": "Morocco",
-        "predictedScoreA": 0,
+        "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2483,
-        "drawProb": 0.2387,
-        "teamBWinProb": 0.513,
+        "teamAWinProb": 0.2901,
+        "drawProb": 0.2635,
+        "teamBWinProb": 0.4464,
         "predictedResult": "B_WIN"
       },
       {
@@ -373,9 +373,9 @@
         "displayTeamB": "Haiti",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6102,
-        "drawProb": 0.2381,
-        "teamBWinProb": 0.1517,
+        "teamAWinProb": 0.6531,
+        "drawProb": 0.2452,
+        "teamBWinProb": 0.1017,
         "predictedResult": "A_WIN"
       },
       {
@@ -383,11 +383,11 @@
         "date": "2026-06-24",
         "displayTeamA": "Scotland",
         "displayTeamB": "Brazil",
-        "predictedScoreA": 0,
+        "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2497,
-        "drawProb": 0.2695,
-        "teamBWinProb": 0.4808,
+        "teamAWinProb": 0.2705,
+        "drawProb": 0.2665,
+        "teamBWinProb": 0.463,
         "predictedResult": "B_WIN"
       },
       {
@@ -397,9 +397,9 @@
         "displayTeamB": "Haiti",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6482,
-        "drawProb": 0.2244,
-        "teamBWinProb": 0.1274,
+        "teamAWinProb": 0.7028,
+        "drawProb": 0.1962,
+        "teamBWinProb": 0.101,
         "predictedResult": "A_WIN"
       }
     ]
@@ -408,29 +408,29 @@
     "group": "D",
     "standings": [
       {
-        "displayTeam": "Turkey",
-        "team": "Turkey",
+        "displayTeam": "Australia",
+        "team": "Australia",
         "played": 3,
         "wins": 3,
         "draws": 0,
         "losses": 0,
-        "goalsFor": 7,
-        "goalsAgainst": 1,
-        "goalDiff": 6,
+        "goalsFor": 6,
+        "goalsAgainst": 3,
+        "goalDiff": 3,
         "points": 9,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
       {
-        "displayTeam": "Australia",
-        "team": "Australia",
+        "displayTeam": "Turkey",
+        "team": "Turkey",
         "played": 3,
         "wins": 2,
         "draws": 0,
         "losses": 1,
         "goalsFor": 5,
-        "goalsAgainst": 4,
-        "goalDiff": 1,
+        "goalsAgainst": 3,
+        "goalDiff": 2,
         "points": 6,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
@@ -442,9 +442,9 @@
         "wins": 1,
         "draws": 0,
         "losses": 2,
-        "goalsFor": 3,
+        "goalsFor": 4,
         "goalsAgainst": 4,
-        "goalDiff": -1,
+        "goalDiff": 0,
         "points": 3,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
@@ -457,8 +457,8 @@
         "draws": 0,
         "losses": 3,
         "goalsFor": 1,
-        "goalsAgainst": 7,
-        "goalDiff": -6,
+        "goalsAgainst": 6,
+        "goalDiff": -5,
         "points": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
@@ -472,9 +472,9 @@
         "displayTeamB": "Paraguay",
         "predictedScoreA": 2,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.5285,
-        "drawProb": 0.2274,
-        "teamBWinProb": 0.2441,
+        "teamAWinProb": 0.5742,
+        "drawProb": 0.2382,
+        "teamBWinProb": 0.1876,
         "predictedResult": "A_WIN"
       },
       {
@@ -482,12 +482,12 @@
         "date": "2026-06-13",
         "displayTeamA": "Australia",
         "displayTeamB": "Turkey",
-        "predictedScoreA": 1,
-        "predictedScoreB": 2,
-        "teamAWinProb": 0.2929,
-        "drawProb": 0.263,
-        "teamBWinProb": 0.4441,
-        "predictedResult": "B_WIN"
+        "predictedScoreA": 2,
+        "predictedScoreB": 1,
+        "teamAWinProb": 0.4845,
+        "drawProb": 0.2225,
+        "teamBWinProb": 0.293,
+        "predictedResult": "A_WIN"
       },
       {
         "matchId": 31,
@@ -496,9 +496,9 @@
         "displayTeamB": "Australia",
         "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2535,
-        "drawProb": 0.2897,
-        "teamBWinProb": 0.4569,
+        "teamAWinProb": 0.3298,
+        "drawProb": 0.2987,
+        "teamBWinProb": 0.3716,
         "predictedResult": "B_WIN"
       },
       {
@@ -506,11 +506,11 @@
         "date": "2026-06-19",
         "displayTeamA": "Turkey",
         "displayTeamB": "Paraguay",
-        "predictedScoreA": 3,
+        "predictedScoreA": 2,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6029,
-        "drawProb": 0.239,
-        "teamBWinProb": 0.1581,
+        "teamAWinProb": 0.5795,
+        "drawProb": 0.2545,
+        "teamBWinProb": 0.166,
         "predictedResult": "A_WIN"
       },
       {
@@ -518,11 +518,11 @@
         "date": "2026-06-25",
         "displayTeamA": "United States",
         "displayTeamB": "Turkey",
-        "predictedScoreA": 0,
+        "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2197,
-        "drawProb": 0.283,
-        "teamBWinProb": 0.4973,
+        "teamAWinProb": 0.3374,
+        "drawProb": 0.2416,
+        "teamBWinProb": 0.421,
         "predictedResult": "B_WIN"
       },
       {
@@ -532,9 +532,9 @@
         "displayTeamB": "Australia",
         "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.299,
-        "drawProb": 0.2674,
-        "teamBWinProb": 0.4336,
+        "teamAWinProb": 0.32,
+        "drawProb": 0.2691,
+        "teamBWinProb": 0.4109,
         "predictedResult": "B_WIN"
       }
     ]
@@ -550,8 +550,8 @@
         "draws": 0,
         "losses": 0,
         "goalsFor": 7,
-        "goalsAgainst": 0,
-        "goalDiff": 7,
+        "goalsAgainst": 1,
+        "goalDiff": 6,
         "points": 9,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
@@ -563,9 +563,9 @@
         "wins": 2,
         "draws": 0,
         "losses": 1,
-        "goalsFor": 4,
-        "goalsAgainst": 3,
-        "goalDiff": 1,
+        "goalsFor": 5,
+        "goalsAgainst": 2,
+        "goalDiff": 3,
         "points": 6,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
@@ -592,8 +592,8 @@
         "draws": 0,
         "losses": 3,
         "goalsFor": 0,
-        "goalsAgainst": 8,
-        "goalDiff": -8,
+        "goalsAgainst": 9,
+        "goalDiff": -9,
         "points": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
@@ -607,9 +607,9 @@
         "displayTeamB": "Curaçao",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.7077,
-        "drawProb": 0.1657,
-        "teamBWinProb": 0.1266,
+        "teamAWinProb": 0.7047,
+        "drawProb": 0.1895,
+        "teamBWinProb": 0.1058,
         "predictedResult": "A_WIN"
       },
       {
@@ -618,10 +618,10 @@
         "displayTeamA": "Ivory Coast",
         "displayTeamB": "Ecuador",
         "predictedScoreA": 2,
-        "predictedScoreB": 1,
-        "teamAWinProb": 0.4383,
-        "drawProb": 0.3381,
-        "teamBWinProb": 0.2236,
+        "predictedScoreB": 0,
+        "teamAWinProb": 0.5308,
+        "drawProb": 0.265,
+        "teamBWinProb": 0.2042,
         "predictedResult": "A_WIN"
       },
       {
@@ -631,9 +631,9 @@
         "displayTeamB": "Ivory Coast",
         "predictedScoreA": 2,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.5663,
-        "drawProb": 0.2749,
-        "teamBWinProb": 0.1588,
+        "teamAWinProb": 0.5071,
+        "drawProb": 0.2479,
+        "teamBWinProb": 0.245,
         "predictedResult": "A_WIN"
       },
       {
@@ -643,9 +643,9 @@
         "displayTeamB": "Curaçao",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6116,
-        "drawProb": 0.2594,
-        "teamBWinProb": 0.129,
+        "teamAWinProb": 0.6137,
+        "drawProb": 0.2429,
+        "teamBWinProb": 0.1434,
         "predictedResult": "A_WIN"
       },
       {
@@ -654,10 +654,10 @@
         "displayTeamA": "Curaçao",
         "displayTeamB": "Ivory Coast",
         "predictedScoreA": 0,
-        "predictedScoreB": 2,
-        "teamAWinProb": 0.2067,
-        "drawProb": 0.2364,
-        "teamBWinProb": 0.5569,
+        "predictedScoreB": 3,
+        "teamAWinProb": 0.176,
+        "drawProb": 0.2265,
+        "teamBWinProb": 0.5975,
         "predictedResult": "B_WIN"
       },
       {
@@ -665,11 +665,11 @@
         "date": "2026-06-25",
         "displayTeamA": "Ecuador",
         "displayTeamB": "Germany",
-        "predictedScoreA": 0,
+        "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2442,
-        "drawProb": 0.2469,
-        "teamBWinProb": 0.5089,
+        "teamAWinProb": 0.2811,
+        "drawProb": 0.2477,
+        "teamBWinProb": 0.4713,
         "predictedResult": "B_WIN"
       }
     ]
@@ -681,13 +681,13 @@
         "displayTeam": "Japan",
         "team": "Japan",
         "played": 3,
-        "wins": 2,
-        "draws": 1,
+        "wins": 3,
+        "draws": 0,
         "losses": 0,
-        "goalsFor": 6,
-        "goalsAgainst": 0,
+        "goalsFor": 7,
+        "goalsAgainst": 1,
         "goalDiff": 6,
-        "points": 7,
+        "points": 9,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -696,12 +696,12 @@
         "team": "Netherlands",
         "played": 3,
         "wins": 2,
-        "draws": 1,
-        "losses": 0,
-        "goalsFor": 5,
-        "goalsAgainst": 0,
-        "goalDiff": 5,
-        "points": 7,
+        "draws": 0,
+        "losses": 1,
+        "goalsFor": 6,
+        "goalsAgainst": 2,
+        "goalDiff": 4,
+        "points": 6,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -713,8 +713,8 @@
         "draws": 0,
         "losses": 2,
         "goalsFor": 2,
-        "goalsAgainst": 6,
-        "goalDiff": -4,
+        "goalsAgainst": 5,
+        "goalDiff": -3,
         "points": 3,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
@@ -740,12 +740,12 @@
         "date": "2026-06-14",
         "displayTeamA": "Netherlands",
         "displayTeamB": "Japan",
-        "predictedScoreA": 0,
-        "predictedScoreB": 0,
-        "teamAWinProb": 0.2894,
-        "drawProb": 0.3556,
-        "teamBWinProb": 0.355,
-        "predictedResult": "DRAW"
+        "predictedScoreA": 1,
+        "predictedScoreB": 2,
+        "teamAWinProb": 0.3267,
+        "drawProb": 0.2817,
+        "teamBWinProb": 0.3915,
+        "predictedResult": "B_WIN"
       },
       {
         "matchId": 12,
@@ -754,9 +754,9 @@
         "displayTeamB": "Tunisia",
         "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.3368,
-        "drawProb": 0.3046,
-        "teamBWinProb": 0.3586,
+        "teamAWinProb": 0.296,
+        "drawProb": 0.2455,
+        "teamBWinProb": 0.4585,
         "predictedResult": "B_WIN"
       },
       {
@@ -766,9 +766,9 @@
         "displayTeamB": "Sweden",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6137,
-        "drawProb": 0.2511,
-        "teamBWinProb": 0.1352,
+        "teamAWinProb": 0.6113,
+        "drawProb": 0.2349,
+        "teamBWinProb": 0.1538,
         "predictedResult": "A_WIN"
       },
       {
@@ -777,10 +777,10 @@
         "displayTeamA": "Tunisia",
         "displayTeamB": "Japan",
         "predictedScoreA": 0,
-        "predictedScoreB": 3,
-        "teamAWinProb": 0.1826,
-        "drawProb": 0.21,
-        "teamBWinProb": 0.6074,
+        "predictedScoreB": 2,
+        "teamAWinProb": 0.1922,
+        "drawProb": 0.2565,
+        "teamBWinProb": 0.5513,
         "predictedResult": "B_WIN"
       },
       {
@@ -790,9 +790,9 @@
         "displayTeamB": "Sweden",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6368,
-        "drawProb": 0.2336,
-        "teamBWinProb": 0.1296,
+        "teamAWinProb": 0.6106,
+        "drawProb": 0.2428,
+        "teamBWinProb": 0.1466,
         "predictedResult": "A_WIN"
       },
       {
@@ -802,9 +802,9 @@
         "displayTeamB": "Netherlands",
         "predictedScoreA": 0,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2278,
-        "drawProb": 0.2192,
-        "teamBWinProb": 0.553,
+        "teamAWinProb": 0.263,
+        "drawProb": 0.2622,
+        "teamBWinProb": 0.4748,
         "predictedResult": "B_WIN"
       }
     ]
@@ -820,8 +820,8 @@
         "draws": 0,
         "losses": 0,
         "goalsFor": 7,
-        "goalsAgainst": 1,
-        "goalDiff": 6,
+        "goalsAgainst": 2,
+        "goalDiff": 5,
         "points": 9,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
@@ -847,9 +847,9 @@
         "wins": 1,
         "draws": 0,
         "losses": 2,
-        "goalsFor": 4,
+        "goalsFor": 5,
         "goalsAgainst": 4,
-        "goalDiff": 0,
+        "goalDiff": 1,
         "points": 3,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
@@ -876,10 +876,10 @@
         "displayTeamA": "Belgium",
         "displayTeamB": "Egypt",
         "predictedScoreA": 2,
-        "predictedScoreB": 0,
-        "teamAWinProb": 0.5348,
-        "drawProb": 0.2924,
-        "teamBWinProb": 0.1728,
+        "predictedScoreB": 1,
+        "teamAWinProb": 0.3629,
+        "drawProb": 0.2811,
+        "teamBWinProb": 0.3559,
         "predictedResult": "A_WIN"
       },
       {
@@ -889,9 +889,9 @@
         "displayTeamB": "New Zealand",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6837,
-        "drawProb": 0.2016,
-        "teamBWinProb": 0.1147,
+        "teamAWinProb": 0.7075,
+        "drawProb": 0.1766,
+        "teamBWinProb": 0.1159,
         "predictedResult": "A_WIN"
       },
       {
@@ -901,9 +901,9 @@
         "displayTeamB": "Iran",
         "predictedScoreA": 2,
         "predictedScoreB": 1,
-        "teamAWinProb": 0.3524,
-        "drawProb": 0.3347,
-        "teamBWinProb": 0.3129,
+        "teamAWinProb": 0.3505,
+        "drawProb": 0.308,
+        "teamBWinProb": 0.3415,
         "predictedResult": "A_WIN"
       },
       {
@@ -913,9 +913,9 @@
         "displayTeamB": "Egypt",
         "predictedScoreA": 0,
         "predictedScoreB": 3,
-        "teamAWinProb": 0.1917,
-        "drawProb": 0.1943,
-        "teamBWinProb": 0.614,
+        "teamAWinProb": 0.186,
+        "drawProb": 0.2022,
+        "teamBWinProb": 0.6118,
         "predictedResult": "B_WIN"
       },
       {
@@ -925,9 +925,9 @@
         "displayTeamB": "Iran",
         "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2618,
-        "drawProb": 0.3435,
-        "teamBWinProb": 0.3947,
+        "teamAWinProb": 0.3068,
+        "drawProb": 0.3303,
+        "teamBWinProb": 0.363,
         "predictedResult": "B_WIN"
       },
       {
@@ -937,9 +937,9 @@
         "displayTeamB": "Belgium",
         "predictedScoreA": 0,
         "predictedScoreB": 3,
-        "teamAWinProb": 0.1697,
-        "drawProb": 0.2096,
-        "teamBWinProb": 0.6207,
+        "teamAWinProb": 0.1742,
+        "drawProb": 0.2218,
+        "teamBWinProb": 0.604,
         "predictedResult": "B_WIN"
       }
     ]
@@ -954,9 +954,9 @@
         "wins": 3,
         "draws": 0,
         "losses": 0,
-        "goalsFor": 9,
+        "goalsFor": 8,
         "goalsAgainst": 0,
-        "goalDiff": 9,
+        "goalDiff": 8,
         "points": 9,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
@@ -969,36 +969,36 @@
         "draws": 0,
         "losses": 1,
         "goalsFor": 4,
-        "goalsAgainst": 4,
-        "goalDiff": 0,
+        "goalsAgainst": 3,
+        "goalDiff": 1,
         "points": 6,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
       {
-        "displayTeam": "Cape Verde",
-        "team": "Cape Verde",
+        "displayTeam": "Saudi Arabia",
+        "team": "Saudi Arabia",
         "played": 3,
         "wins": 1,
         "draws": 0,
         "losses": 2,
-        "goalsFor": 2,
+        "goalsFor": 3,
         "goalsAgainst": 6,
-        "goalDiff": -4,
+        "goalDiff": -3,
         "points": 3,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
       },
       {
-        "displayTeam": "Saudi Arabia",
-        "team": "Saudi Arabia",
+        "displayTeam": "Cape Verde",
+        "team": "Cape Verde",
         "played": 3,
         "wins": 0,
         "draws": 0,
         "losses": 3,
-        "goalsFor": 2,
+        "goalsFor": 1,
         "goalsAgainst": 7,
-        "goalDiff": -5,
+        "goalDiff": -6,
         "points": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
@@ -1012,9 +1012,9 @@
         "displayTeamB": "Cape Verde",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6484,
-        "drawProb": 0.2288,
-        "teamBWinProb": 0.1228,
+        "teamAWinProb": 0.7153,
+        "drawProb": 0.1907,
+        "teamBWinProb": 0.094,
         "predictedResult": "A_WIN"
       },
       {
@@ -1024,9 +1024,9 @@
         "displayTeamB": "Uruguay",
         "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2709,
-        "drawProb": 0.3145,
-        "teamBWinProb": 0.4146,
+        "teamAWinProb": 0.3203,
+        "drawProb": 0.2793,
+        "teamBWinProb": 0.4003,
         "predictedResult": "B_WIN"
       },
       {
@@ -1036,9 +1036,9 @@
         "displayTeamB": "Saudi Arabia",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6528,
-        "drawProb": 0.2146,
-        "teamBWinProb": 0.1326,
+        "teamAWinProb": 0.6418,
+        "drawProb": 0.1828,
+        "teamBWinProb": 0.1754,
         "predictedResult": "A_WIN"
       },
       {
@@ -1048,9 +1048,9 @@
         "displayTeamB": "Cape Verde",
         "predictedScoreA": 2,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.5193,
-        "drawProb": 0.2877,
-        "teamBWinProb": 0.193,
+        "teamAWinProb": 0.5839,
+        "drawProb": 0.2898,
+        "teamBWinProb": 0.1263,
         "predictedResult": "A_WIN"
       },
       {
@@ -1058,12 +1058,12 @@
         "date": "2026-06-26",
         "displayTeamA": "Cape Verde",
         "displayTeamB": "Saudi Arabia",
-        "predictedScoreA": 2,
-        "predictedScoreB": 1,
-        "teamAWinProb": 0.3389,
-        "drawProb": 0.3345,
-        "teamBWinProb": 0.3266,
-        "predictedResult": "A_WIN"
+        "predictedScoreA": 1,
+        "predictedScoreB": 2,
+        "teamAWinProb": 0.3339,
+        "drawProb": 0.2988,
+        "teamBWinProb": 0.3674,
+        "predictedResult": "B_WIN"
       },
       {
         "matchId": 64,
@@ -1071,10 +1071,10 @@
         "displayTeamA": "Uruguay",
         "displayTeamB": "Spain",
         "predictedScoreA": 0,
-        "predictedScoreB": 3,
-        "teamAWinProb": 0.2072,
-        "drawProb": 0.217,
-        "teamBWinProb": 0.5758,
+        "predictedScoreB": 2,
+        "teamAWinProb": 0.2285,
+        "drawProb": 0.2813,
+        "teamBWinProb": 0.4903,
         "predictedResult": "B_WIN"
       }
     ]
@@ -1117,9 +1117,9 @@
         "wins": 1,
         "draws": 0,
         "losses": 2,
-        "goalsFor": 3,
+        "goalsFor": 4,
         "goalsAgainst": 4,
-        "goalDiff": -1,
+        "goalDiff": 0,
         "points": 3,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
@@ -1132,8 +1132,8 @@
         "draws": 0,
         "losses": 3,
         "goalsFor": 1,
-        "goalsAgainst": 7,
-        "goalDiff": -6,
+        "goalsAgainst": 8,
+        "goalDiff": -7,
         "points": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
@@ -1147,9 +1147,9 @@
         "displayTeamB": "Senegal",
         "predictedScoreA": 2,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.5617,
-        "drawProb": 0.2549,
-        "teamBWinProb": 0.1834,
+        "teamAWinProb": 0.5054,
+        "drawProb": 0.2519,
+        "teamBWinProb": 0.2427,
         "predictedResult": "A_WIN"
       },
       {
@@ -1159,9 +1159,9 @@
         "displayTeamB": "Norway",
         "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2244,
-        "drawProb": 0.3425,
-        "teamBWinProb": 0.4331,
+        "teamAWinProb": 0.2347,
+        "drawProb": 0.2877,
+        "teamBWinProb": 0.4776,
         "predictedResult": "B_WIN"
       },
       {
@@ -1171,9 +1171,9 @@
         "displayTeamB": "Iraq",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6127,
-        "drawProb": 0.2305,
-        "teamBWinProb": 0.1568,
+        "teamAWinProb": 0.6529,
+        "drawProb": 0.2117,
+        "teamBWinProb": 0.1354,
         "predictedResult": "A_WIN"
       },
       {
@@ -1183,9 +1183,9 @@
         "displayTeamB": "Senegal",
         "predictedScoreA": 2,
         "predictedScoreB": 1,
-        "teamAWinProb": 0.3639,
-        "drawProb": 0.2806,
-        "teamBWinProb": 0.3555,
+        "teamAWinProb": 0.3879,
+        "drawProb": 0.2972,
+        "teamBWinProb": 0.3148,
         "predictedResult": "A_WIN"
       },
       {
@@ -1195,9 +1195,9 @@
         "displayTeamB": "France",
         "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.3108,
-        "drawProb": 0.2539,
-        "teamBWinProb": 0.4353,
+        "teamAWinProb": 0.333,
+        "drawProb": 0.2606,
+        "teamBWinProb": 0.4063,
         "predictedResult": "B_WIN"
       },
       {
@@ -1205,11 +1205,11 @@
         "date": "2026-06-26",
         "displayTeamA": "Senegal",
         "displayTeamB": "Iraq",
-        "predictedScoreA": 2,
+        "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.5314,
-        "drawProb": 0.2973,
-        "teamBWinProb": 0.1713,
+        "teamAWinProb": 0.6274,
+        "drawProb": 0.2704,
+        "teamBWinProb": 0.1022,
         "predictedResult": "A_WIN"
       }
     ]
@@ -1224,9 +1224,9 @@
         "wins": 3,
         "draws": 0,
         "losses": 0,
-        "goalsFor": 7,
+        "goalsFor": 6,
         "goalsAgainst": 0,
-        "goalDiff": 7,
+        "goalDiff": 6,
         "points": 9,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
@@ -1238,8 +1238,8 @@
         "wins": 2,
         "draws": 0,
         "losses": 1,
-        "goalsFor": 5,
-        "goalsAgainst": 3,
+        "goalsFor": 4,
+        "goalsAgainst": 2,
         "goalDiff": 2,
         "points": 6,
         "rank": 2,
@@ -1252,9 +1252,9 @@
         "wins": 1,
         "draws": 0,
         "losses": 2,
-        "goalsFor": 4,
+        "goalsFor": 2,
         "goalsAgainst": 4,
-        "goalDiff": 0,
+        "goalDiff": -2,
         "points": 3,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
@@ -1267,8 +1267,8 @@
         "draws": 0,
         "losses": 3,
         "goalsFor": 0,
-        "goalsAgainst": 9,
-        "goalDiff": -9,
+        "goalsAgainst": 6,
+        "goalDiff": -6,
         "points": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
@@ -1282,9 +1282,9 @@
         "displayTeamB": "Algeria",
         "predictedScoreA": 2,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.5549,
-        "drawProb": 0.2664,
-        "teamBWinProb": 0.1787,
+        "teamAWinProb": 0.5135,
+        "drawProb": 0.2625,
+        "teamBWinProb": 0.224,
         "predictedResult": "A_WIN"
       },
       {
@@ -1292,11 +1292,11 @@
         "date": "2026-06-16",
         "displayTeamA": "Austria",
         "displayTeamB": "Jordan",
-        "predictedScoreA": 3,
+        "predictedScoreA": 2,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6879,
-        "drawProb": 0.1896,
-        "teamBWinProb": 0.1225,
+        "teamAWinProb": 0.4894,
+        "drawProb": 0.2249,
+        "teamBWinProb": 0.2857,
         "predictedResult": "A_WIN"
       },
       {
@@ -1306,9 +1306,9 @@
         "displayTeamB": "Austria",
         "predictedScoreA": 2,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.5181,
-        "drawProb": 0.2808,
-        "teamBWinProb": 0.2011,
+        "teamAWinProb": 0.5316,
+        "drawProb": 0.2202,
+        "teamBWinProb": 0.2482,
         "predictedResult": "A_WIN"
       },
       {
@@ -1317,10 +1317,10 @@
         "displayTeamA": "Jordan",
         "displayTeamB": "Algeria",
         "predictedScoreA": 0,
-        "predictedScoreB": 3,
-        "teamAWinProb": 0.1869,
-        "drawProb": 0.2154,
-        "teamBWinProb": 0.5977,
+        "predictedScoreB": 2,
+        "teamAWinProb": 0.2263,
+        "drawProb": 0.2565,
+        "teamBWinProb": 0.5172,
         "predictedResult": "B_WIN"
       },
       {
@@ -1329,10 +1329,10 @@
         "displayTeamA": "Algeria",
         "displayTeamB": "Austria",
         "predictedScoreA": 2,
-        "predictedScoreB": 1,
-        "teamAWinProb": 0.4554,
-        "drawProb": 0.2775,
-        "teamBWinProb": 0.2671,
+        "predictedScoreB": 0,
+        "teamAWinProb": 0.5181,
+        "drawProb": 0.2247,
+        "teamBWinProb": 0.2572,
         "predictedResult": "A_WIN"
       },
       {
@@ -1341,10 +1341,10 @@
         "displayTeamA": "Jordan",
         "displayTeamB": "Argentina",
         "predictedScoreA": 0,
-        "predictedScoreB": 3,
-        "teamAWinProb": 0.1692,
-        "drawProb": 0.2016,
-        "teamBWinProb": 0.6292,
+        "predictedScoreB": 2,
+        "teamAWinProb": 0.2191,
+        "drawProb": 0.2615,
+        "teamBWinProb": 0.5194,
         "predictedResult": "B_WIN"
       }
     ]
@@ -1417,9 +1417,9 @@
         "displayTeamB": "DR Congo",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.613,
-        "drawProb": 0.2425,
-        "teamBWinProb": 0.1445,
+        "teamAWinProb": 0.6321,
+        "drawProb": 0.226,
+        "teamBWinProb": 0.1419,
         "predictedResult": "A_WIN"
       },
       {
@@ -1429,9 +1429,9 @@
         "displayTeamB": "Colombia",
         "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2846,
-        "drawProb": 0.2636,
-        "teamBWinProb": 0.4519,
+        "teamAWinProb": 0.3551,
+        "drawProb": 0.2738,
+        "teamBWinProb": 0.3711,
         "predictedResult": "B_WIN"
       },
       {
@@ -1441,9 +1441,9 @@
         "displayTeamB": "Uzbekistan",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.663,
-        "drawProb": 0.2132,
-        "teamBWinProb": 0.1238,
+        "teamAWinProb": 0.691,
+        "drawProb": 0.19,
+        "teamBWinProb": 0.119,
         "predictedResult": "A_WIN"
       },
       {
@@ -1453,9 +1453,9 @@
         "displayTeamB": "DR Congo",
         "predictedScoreA": 2,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.5813,
-        "drawProb": 0.2562,
-        "teamBWinProb": 0.1625,
+        "teamAWinProb": 0.5768,
+        "drawProb": 0.2854,
+        "teamBWinProb": 0.1378,
         "predictedResult": "A_WIN"
       },
       {
@@ -1465,9 +1465,9 @@
         "displayTeamB": "Portugal",
         "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.3077,
-        "drawProb": 0.3053,
-        "teamBWinProb": 0.387,
+        "teamAWinProb": 0.2778,
+        "drawProb": 0.2912,
+        "teamBWinProb": 0.431,
         "predictedResult": "B_WIN"
       },
       {
@@ -1477,9 +1477,9 @@
         "displayTeamB": "Uzbekistan",
         "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.3027,
-        "drawProb": 0.3351,
-        "teamBWinProb": 0.3623,
+        "teamAWinProb": 0.3321,
+        "drawProb": 0.3301,
+        "teamBWinProb": 0.3378,
         "predictedResult": "B_WIN"
       }
     ]
@@ -1494,9 +1494,9 @@
         "wins": 3,
         "draws": 0,
         "losses": 0,
-        "goalsFor": 8,
+        "goalsFor": 9,
         "goalsAgainst": 0,
-        "goalDiff": 8,
+        "goalDiff": 9,
         "points": 9,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
@@ -1509,8 +1509,8 @@
         "draws": 0,
         "losses": 1,
         "goalsFor": 5,
-        "goalsAgainst": 2,
-        "goalDiff": 3,
+        "goalsAgainst": 4,
+        "goalDiff": 1,
         "points": 6,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
@@ -1522,8 +1522,8 @@
         "wins": 1,
         "draws": 0,
         "losses": 2,
-        "goalsFor": 2,
-        "goalsAgainst": 5,
+        "goalsFor": 3,
+        "goalsAgainst": 6,
         "goalDiff": -3,
         "points": 3,
         "rank": 3,
@@ -1536,9 +1536,9 @@
         "wins": 0,
         "draws": 0,
         "losses": 3,
-        "goalsFor": 0,
+        "goalsFor": 1,
         "goalsAgainst": 8,
-        "goalDiff": -8,
+        "goalDiff": -7,
         "points": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
@@ -1550,11 +1550,11 @@
         "date": "2026-06-17",
         "displayTeamA": "England",
         "displayTeamB": "Croatia",
-        "predictedScoreA": 2,
+        "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.5901,
-        "drawProb": 0.2796,
-        "teamBWinProb": 0.1303,
+        "teamAWinProb": 0.6339,
+        "drawProb": 0.2282,
+        "teamBWinProb": 0.1379,
         "predictedResult": "A_WIN"
       },
       {
@@ -1562,11 +1562,11 @@
         "date": "2026-06-17",
         "displayTeamA": "Ghana",
         "displayTeamB": "Panama",
-        "predictedScoreA": 0,
+        "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2697,
-        "drawProb": 0.2099,
-        "teamBWinProb": 0.5204,
+        "teamAWinProb": 0.3544,
+        "drawProb": 0.2097,
+        "teamBWinProb": 0.4359,
         "predictedResult": "B_WIN"
       },
       {
@@ -1576,9 +1576,9 @@
         "displayTeamB": "Ghana",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6969,
-        "drawProb": 0.191,
-        "teamBWinProb": 0.1121,
+        "teamAWinProb": 0.649,
+        "drawProb": 0.1844,
+        "teamBWinProb": 0.1666,
         "predictedResult": "A_WIN"
       },
       {
@@ -1586,11 +1586,11 @@
         "date": "2026-06-23",
         "displayTeamA": "Panama",
         "displayTeamB": "Croatia",
-        "predictedScoreA": 0,
+        "predictedScoreA": 1,
         "predictedScoreB": 2,
-        "teamAWinProb": 0.2458,
-        "drawProb": 0.2376,
-        "teamBWinProb": 0.5166,
+        "teamAWinProb": 0.2452,
+        "drawProb": 0.2837,
+        "teamBWinProb": 0.4711,
         "predictedResult": "B_WIN"
       },
       {
@@ -1600,9 +1600,9 @@
         "displayTeamB": "England",
         "predictedScoreA": 0,
         "predictedScoreB": 3,
-        "teamAWinProb": 0.1859,
-        "drawProb": 0.2083,
-        "teamBWinProb": 0.6058,
+        "teamAWinProb": 0.1375,
+        "drawProb": 0.2299,
+        "teamBWinProb": 0.6326,
         "predictedResult": "B_WIN"
       },
       {
@@ -1612,9 +1612,9 @@
         "displayTeamB": "Ghana",
         "predictedScoreA": 3,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6301,
-        "drawProb": 0.214,
-        "teamBWinProb": 0.1559,
+        "teamAWinProb": 0.6351,
+        "drawProb": 0.1994,
+        "teamBWinProb": 0.1655,
         "predictedResult": "A_WIN"
       }
     ]

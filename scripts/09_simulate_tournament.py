@@ -4,15 +4,28 @@ from collections import defaultdict
 from pathlib import Path
 
 import joblib
+import numpy as np
 import pandas as pd
 
 PREDICTIONS_PATH = Path("data/processed/predictions_adjusted.json")
 TEAMS_PATH = Path("data/processed/teams.json")
+TEAM_STRENGTH_PATH = Path("data/external/team_strength_2026.csv")
 MODEL_PATH = Path("models/sklearn_match_result_model.joblib")
 OUTPUT_PATH = Path("data/processed/tournament_simulation.json")
+DIAGNOSTICS_PATH = Path("data/processed/team_strength_diagnostics.json")
+SIMULATION_DIAGNOSTICS_PATH = Path(
+    "data/processed/simulation_diagnostics.json"
+)
 
 SIMULATION_COUNT = 10000
 RANDOM_SEED = 42
+MODEL_PROBABILITY_WEIGHT = 0.55
+STRENGTH_PROBABILITY_WEIGHT = 0.45
+STRENGTH_PROBABILITY_SCALE = 500
+MIN_ADVANCE_PROBABILITY = 0.15
+MAX_ADVANCE_PROBABILITY = 0.85
+# SQUAD_ADJUSTMENT_ALPHA = 0.35
+SQUAD_ADJUSTMENT_ALPHA = 0.55
 
 HOST_TEAMS = {"Mexico", "Canada", "United States"}
 ADVANCE_PROBABILITY_CACHE = {}
@@ -45,6 +58,18 @@ FEATURE_COLUMNS = [
     "is_neutral",
     "team_a_home_advantage",
     "tournament_importance",
+    "team_a_adj_points5",
+    "team_b_adj_points5",
+    "adj_points_diff5",
+    "team_a_adj_goal_diff5",
+    "team_b_adj_goal_diff5",
+    "adj_goal_diff_gap5",
+    "team_a_avg_opponent_elo5",
+    "team_b_avg_opponent_elo5",
+    "avg_opponent_elo_diff5",
+    "team_a_adj_points10",
+    "team_b_adj_points10",
+    "adj_points_diff10",
 ]
 
 
@@ -103,6 +128,58 @@ def load_json(path):
 def load_teams_map():
     teams = load_json(TEAMS_PATH)
     return {team["team"]: team for team in teams}
+
+
+def load_team_strength():
+    if not TEAM_STRENGTH_PATH.exists():
+        print(f"선수단 전력 CSV 없음: {TEAM_STRENGTH_PATH}")
+        return {}
+
+    df = pd.read_csv(TEAM_STRENGTH_PATH)
+    required_columns = {"team", "team_strength_score"}
+    missing_columns = required_columns - set(df.columns)
+
+    if missing_columns:
+        raise ValueError(
+            "team_strength_2026.csv에 필요한 컬럼이 없습니다: "
+            f"{missing_columns}"
+        )
+
+    valid_rows = df.dropna(subset=["team", "team_strength_score"])
+    return {
+        str(row["team"]): float(row["team_strength_score"])
+        for _, row in valid_rows.iterrows()
+    }
+
+
+def apply_squad_strength_adjustment(
+    team_a_win,
+    draw,
+    team_b_win,
+    team_a,
+    team_b,
+    team_strength,
+):
+    strength_a = team_strength.get(team_a)
+    strength_b = team_strength.get(team_b)
+
+    if strength_a is None or strength_b is None:
+        return team_a_win, draw, team_b_win, 0.0
+
+    strength_diff = strength_a - strength_b
+    team_a_win *= np.exp(SQUAD_ADJUSTMENT_ALPHA * strength_diff)
+    team_b_win *= np.exp(-SQUAD_ADJUSTMENT_ALPHA * strength_diff)
+    total = team_a_win + draw + team_b_win
+
+    if total == 0:
+        return 1 / 3, 1 / 3, 1 / 3, strength_diff
+
+    return (
+        team_a_win / total,
+        draw / total,
+        team_b_win / total,
+        strength_diff,
+    )
 
 
 def init_team(display_name, team_name):
@@ -318,13 +395,14 @@ def assign_third_place_slots(best_third_place_teams):
 
         match_no, side, candidates = third_slots[index]
 
-        for group in candidates:
-            if group not in available_groups:
-                continue
+        eligible_groups = [
+            group
+            for group in candidates
+            if group in available_groups and group not in used_groups
+        ]
+        random.shuffle(eligible_groups)
 
-            if group in used_groups:
-                continue
-
+        for group in eligible_groups:
             assignment[match_no] = third_by_group[group]
 
             if backtrack(index + 1, used_groups | {group}):
@@ -397,17 +475,54 @@ def build_feature_row(team_a, team_b, teams_map):
         "recent_goal_diff_gap10": (
             a["recentGoalDiff10"] - b["recentGoalDiff10"]
         ),
+        "team_a_adj_points5": a["adjustedPoints5"],
+        "team_b_adj_points5": b["adjustedPoints5"],
+        "adj_points_diff5": max(
+            -8,
+            min(8, a["adjustedPoints5"] - b["adjustedPoints5"]),
+        ),
+        "team_a_adj_goal_diff5": a["adjustedGoalDiff5"],
+        "team_b_adj_goal_diff5": b["adjustedGoalDiff5"],
+        "adj_goal_diff_gap5": max(
+            -10,
+            min(
+                10,
+                a["adjustedGoalDiff5"] - b["adjustedGoalDiff5"],
+            ),
+        ),
+        "team_a_avg_opponent_elo5": a["avgOpponentElo5"],
+        "team_b_avg_opponent_elo5": b["avgOpponentElo5"],
+        "avg_opponent_elo_diff5": (
+            a["avgOpponentElo5"] - b["avgOpponentElo5"]
+        ),
+        "team_a_adj_points10": a["adjustedPoints10"],
+        "team_b_adj_points10": b["adjustedPoints10"],
+        "adj_points_diff10": max(
+            -12,
+            min(
+                12,
+                a["adjustedPoints10"] - b["adjustedPoints10"],
+            ),
+        ),
         "is_neutral": 1,
         "team_a_home_advantage": int(team_a["team"] in HOST_TEAMS),
         "tournament_importance": 1.0,
     }
 
 
-def get_knockout_advance_prob(model, team_a, team_b, teams_map):
+def get_knockout_advance_prob(
+    model,
+    team_a,
+    team_b,
+    teams_map,
+    team_strength,
+):
     cache_key = (team_a["team"], team_b["team"])
     if cache_key in ADVANCE_PROBABILITY_CACHE:
         return ADVANCE_PROBABILITY_CACHE[cache_key]
 
+    a = teams_map[team_a["team"]]
+    b = teams_map[team_b["team"]]
     feature_row = build_feature_row(team_a, team_b, teams_map)
     feature_columns = list(
         getattr(model, "feature_names_in_", FEATURE_COLUMNS)
@@ -420,6 +535,14 @@ def get_knockout_advance_prob(model, team_a, team_b, teams_map):
     a_win = float(class_to_prob.get("A_WIN", 0))
     draw = float(class_to_prob.get("DRAW", 0))
     b_win = float(class_to_prob.get("B_WIN", 0))
+    a_win, draw, b_win, _ = apply_squad_strength_adjustment(
+        a_win,
+        draw,
+        b_win,
+        team_a["team"],
+        team_b["team"],
+        team_strength,
+    )
 
     # 토너먼트는 무승부가 없으므로 무승부 확률을 양 팀에 절반씩 배분
     a_advance = a_win + draw * 0.5
@@ -430,17 +553,218 @@ def get_knockout_advance_prob(model, team_a, team_b, teams_map):
     if total == 0:
         return 0.5
 
-    advance_probability = a_advance / total
+    model_probability = a_advance / total
+    strength_a = a["simulationStrength"]
+    strength_b = b["simulationStrength"]
+    strength_probability = 1 / (
+        1 + 10 ** (
+            (strength_b - strength_a) / STRENGTH_PROBABILITY_SCALE
+        )
+    )
+    advance_probability = (
+        MODEL_PROBABILITY_WEIGHT * model_probability
+        + STRENGTH_PROBABILITY_WEIGHT * strength_probability
+    )
+    advance_probability = max(
+        MIN_ADVANCE_PROBABILITY,
+        min(MAX_ADVANCE_PROBABILITY, advance_probability),
+    )
     ADVANCE_PROBABILITY_CACHE[cache_key] = advance_probability
     return advance_probability
 
 
-def play_knockout_match(model, team_a, team_b, teams_map):
+def build_strength_note(team, diagnostic):
+    notes = []
+    raw_points = team["recentPoints5"]
+    adjusted_points = team["adjustedPoints5"]
+    avg_opponent_elo = team["avgOpponentElo5"]
+
+    if raw_points >= 12 and avg_opponent_elo < 1600:
+        notes.append("최근 승점은 높지만 최근 상대 평균 Elo가 낮음")
+    if team["scheduleStrengthPenalty"] < 0:
+        notes.append("상대 강도 기준으로 최근 폼 boost가 제한됨")
+    if (
+        diagnostic["rankGap"] >= 4
+        and diagnostic["pathDifficultyScore"]
+        < diagnostic["medianPathDifficulty"]
+    ):
+        notes.append("전력 순위 대비 유리한 대진 경로 가능성")
+    if diagnostic["rankGap"] >= 5:
+        notes.append("우승 확률 순위가 전력 순위보다 크게 높음")
+    if diagnostic["winnerProb"] >= 0.04 and abs(diagnostic["rankGap"]) >= 4:
+        notes.append("높은 우승 확률과 simulationStrength 순위 간 괴리")
+
+    return "; ".join(notes) if notes else "전력 및 경로 진단 범위 내"
+
+
+def calculate_group_difficulty(predictions_by_group, teams_map):
+    group_teams = {}
+    for group, predictions in predictions_by_group.items():
+        teams = set()
+        for prediction in predictions:
+            teams.add(prediction["teamA"])
+            teams.add(prediction["teamB"])
+        group_teams[group] = teams
+
+    difficulty = {}
+    for group, teams in group_teams.items():
+        for team_name in teams:
+            opponents = [
+                teams_map[opponent]["simulationStrength"]
+                for opponent in teams
+                if opponent != team_name
+            ]
+            difficulty[team_name] = (
+                sum(opponents) / len(opponents) if opponents else 1500
+            )
+    return difficulty
+
+
+def create_strength_diagnostics(
+    output,
+    teams_map,
+    group_difficulty,
+    knockout_path_stats,
+):
+    output_by_team = {item["team"]: item for item in output}
+    strength_order = sorted(
+        output_by_team,
+        key=lambda team_name: teams_map[team_name]["simulationStrength"],
+        reverse=True,
+    )
+    strength_ranks = {
+        team_name: rank
+        for rank, team_name in enumerate(strength_order, start=1)
+    }
+    winner_ranks = {
+        item["team"]: rank
+        for rank, item in enumerate(output, start=1)
+    }
+    path_difficulties = []
+
+    for team_name in output_by_team:
+        path = knockout_path_stats[team_name]
+        knockout_difficulty = (
+            path["strengthSum"] / path["encounters"]
+            if path["encounters"]
+            else group_difficulty[team_name]
+        )
+        path_difficulties.append(
+            0.35 * group_difficulty[team_name]
+            + 0.65 * knockout_difficulty
+        )
+
+    median_path_difficulty = float(pd.Series(path_difficulties).median())
+    diagnostics = []
+
+    for team_name, tournament_result in output_by_team.items():
+        team = teams_map[team_name]
+        path = knockout_path_stats[team_name]
+        knockout_difficulty = (
+            path["strengthSum"] / path["encounters"]
+            if path["encounters"]
+            else group_difficulty[team_name]
+        )
+        path_difficulty = (
+            0.35 * group_difficulty[team_name]
+            + 0.65 * knockout_difficulty
+        )
+        diagnostic = {
+            "team": team_name,
+            "group": tournament_result["group"],
+            "elo": team["elo"],
+            "simulationStrength": team["simulationStrength"],
+            "strengthScore": team["simulationStrength"],
+            "strengthRank": strength_ranks[team_name],
+            "winnerProb": tournament_result["winnerProb"],
+            "winnerProbRank": winner_ranks[team_name],
+            "rankGap": strength_ranks[team_name] - winner_ranks[team_name],
+            "recent_points5": team["recentPoints5"],
+            "adjusted_points5": team["adjustedPoints5"],
+            "avg_opponent_elo5": team["avgOpponentElo5"],
+            "recent_goal_diff5": team["recentGoalDiff5"],
+            "adjusted_goal_diff5": team["adjustedGoalDiff5"],
+            "recentFormContribution": team["recentFormContribution"],
+            "cappedRecentFormContribution": team[
+                "cappedRecentFormContribution"
+            ],
+            "scheduleStrengthPenalty": team["scheduleStrengthPenalty"],
+            "groupStageDifficulty": round(group_difficulty[team_name], 2),
+            "expectedKnockoutPathDifficulty": round(
+                knockout_difficulty,
+                2,
+            ),
+            "pathDifficultyScore": round(path_difficulty, 2),
+            "medianPathDifficulty": round(median_path_difficulty, 2),
+        }
+        diagnostic["note"] = build_strength_note(team, diagnostic)
+        diagnostics.append(diagnostic)
+
+    return sorted(
+        diagnostics,
+        key=lambda item: item["winnerProb"],
+        reverse=True,
+    )
+
+
+def create_simulation_diagnostics(diagnostics):
+    strength_ranked = sorted(
+        diagnostics,
+        key=lambda item: item["strengthRank"],
+    )
+    winner_ranked = sorted(
+        diagnostics,
+        key=lambda item: item["winnerProbRank"],
+    )
+    large_rank_gaps = [
+        {
+            key: item[key]
+            for key in (
+                "team",
+                "group",
+                "strengthRank",
+                "winnerProbRank",
+                "rankGap",
+                "simulationStrength",
+                "winnerProb",
+                "groupStageDifficulty",
+                "expectedKnockoutPathDifficulty",
+                "pathDifficultyScore",
+                "note",
+            )
+        }
+        for item in diagnostics
+        if abs(item["rankGap"]) >= 5
+    ]
+    large_rank_gaps.sort(key=lambda item: abs(item["rankGap"]), reverse=True)
+    return {
+        "top10WinnerProb": winner_ranked[:10],
+        "strengthRankTop10": strength_ranked[:10],
+        "winnerProbRankTop10": winner_ranked[:10],
+        "teamsWithLargeRankGap": large_rank_gaps,
+        "notes": [
+            "rankGap은 strengthRank - winnerProbRank이며 양수일수록 전력 순위보다 우승 확률 순위가 높습니다.",
+            "expectedKnockoutPathDifficulty는 10,000회 시뮬레이션에서 실제로 만난 knockout 상대의 평균 simulationStrength입니다.",
+            "우승 확률은 직접 보정하지 않으며 공통 전력 규칙과 대진 시뮬레이션 결과만 사용합니다.",
+        ],
+    }
+
+
+def play_knockout_match(
+    model,
+    team_a,
+    team_b,
+    teams_map,
+    team_strength,
+    knockout_encounters,
+):
+    knockout_encounters.append((team_a["team"], team_b["team"]))
     a_advance_prob = get_knockout_advance_prob(
         model,
         team_a,
         team_b,
         teams_map,
+        team_strength,
     )
 
     if random.random() < a_advance_prob:
@@ -458,18 +782,31 @@ def add_count(stats, team, key):
     stats[team_key][key] += 1
 
 
-def run_tournament_once(predictions_by_group, model, teams_map):
+def run_tournament_once(
+    predictions_by_group,
+    model,
+    teams_map,
+    team_strength,
+):
     group_results, best_third_place_teams = run_group_stage(predictions_by_group)
     third_assignment = assign_third_place_slots(best_third_place_teams)
 
     winners = {}
+    knockout_encounters = []
 
     # Round of 32
     for match_no, (left_slot, right_slot) in ROUND_OF_32_MATCHES.items():
         team_a = resolve_slot(left_slot, group_results, third_assignment, match_no)
         team_b = resolve_slot(right_slot, group_results, third_assignment, match_no)
 
-        winners[match_no] = play_knockout_match(model, team_a, team_b, teams_map)
+        winners[match_no] = play_knockout_match(
+            model,
+            team_a,
+            team_b,
+            teams_map,
+            team_strength,
+            knockout_encounters,
+        )
 
     # Round of 16
     for match_no, (left_match, right_match) in ROUND_OF_16_MATCHES.items():
@@ -478,6 +815,8 @@ def run_tournament_once(predictions_by_group, model, teams_map):
             winners[left_match],
             winners[right_match],
             teams_map,
+            team_strength,
+            knockout_encounters,
         )
 
     # Quarterfinals
@@ -487,6 +826,8 @@ def run_tournament_once(predictions_by_group, model, teams_map):
             winners[left_match],
             winners[right_match],
             teams_map,
+            team_strength,
+            knockout_encounters,
         )
 
     # Semifinals
@@ -496,6 +837,8 @@ def run_tournament_once(predictions_by_group, model, teams_map):
             winners[left_match],
             winners[right_match],
             teams_map,
+            team_strength,
+            knockout_encounters,
         )
 
     # Final
@@ -507,6 +850,8 @@ def run_tournament_once(predictions_by_group, model, teams_map):
         finalist_a,
         finalist_b,
         teams_map,
+        team_strength,
+        knockout_encounters,
     )
 
     return {
@@ -517,6 +862,7 @@ def run_tournament_once(predictions_by_group, model, teams_map):
         "semiFinalWinners": [winners[i] for i in range(101, 103)],
         "finalists": [finalist_a, finalist_b],
         "champion": champion,
+        "knockoutEncounters": knockout_encounters,
     }
 
 
@@ -526,6 +872,7 @@ def main():
 
     predictions = load_json(PREDICTIONS_PATH)
     teams_map = load_teams_map()
+    team_strength = load_team_strength()
     model = joblib.load(MODEL_PATH)
 
     predictions_by_group = defaultdict(list)
@@ -533,6 +880,13 @@ def main():
     for prediction in predictions:
         predictions_by_group[prediction["group"]].append(prediction)
 
+    group_difficulty = calculate_group_difficulty(
+        predictions_by_group,
+        teams_map,
+    )
+    knockout_path_stats = defaultdict(
+        lambda: {"strengthSum": 0.0, "encounters": 0}
+    )
     stats = defaultdict(
         lambda: {
             "displayTeam": "",
@@ -548,7 +902,22 @@ def main():
     )
 
     for i in range(SIMULATION_COUNT):
-        result = run_tournament_once(predictions_by_group, model, teams_map)
+        result = run_tournament_once(
+            predictions_by_group,
+            model,
+            teams_map,
+            team_strength,
+        )
+
+        for team_a, team_b in result["knockoutEncounters"]:
+            knockout_path_stats[team_a]["strengthSum"] += teams_map[team_b][
+                "simulationStrength"
+            ]
+            knockout_path_stats[team_a]["encounters"] += 1
+            knockout_path_stats[team_b]["strengthSum"] += teams_map[team_a][
+                "simulationStrength"
+            ]
+            knockout_path_stats[team_b]["encounters"] += 1
 
         # 조별리그 통과 팀
         for group, standings in result["groupResults"].items():
@@ -617,9 +986,35 @@ def main():
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
+    diagnostics = create_strength_diagnostics(
+        output,
+        teams_map,
+        group_difficulty,
+        knockout_path_stats,
+    )
+    with open(DIAGNOSTICS_PATH, "w", encoding="utf-8") as f:
+        json.dump(diagnostics, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+    simulation_diagnostics = create_simulation_diagnostics(diagnostics)
+    with open(
+        SIMULATION_DIAGNOSTICS_PATH,
+        "w",
+        encoding="utf-8",
+    ) as f:
+        json.dump(
+            simulation_diagnostics,
+            f,
+            ensure_ascii=False,
+            indent=2,
+        )
+        f.write("\n")
+
     print()
     print(f"토너먼트 시뮬레이션 완료: {OUTPUT_PATH}")
     print(f"반복 횟수: {SIMULATION_COUNT}")
+    print(f"전력 진단 저장: {DIAGNOSTICS_PATH}")
+    print(f"시뮬레이션 진단 저장: {SIMULATION_DIAGNOSTICS_PATH}")
     print()
     print("우승 확률 상위 20팀")
 

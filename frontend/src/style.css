@@ -727,6 +727,13 @@ tbody tr:last-child td {
   font-size: 0.88rem;
 }
 
+.strength-meta {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.62rem;
+  line-height: 1.35;
+}
+
 .ranking-bar {
   height: 4px;
   overflow: hidden;
