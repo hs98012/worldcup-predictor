@@ -74,6 +74,13 @@ def main():
             metrics["classificationReport"]["DRAW"]["recall"],
             4,
         ),
+        "drawCalibrationEnabled": metrics["drawCalibrationEnabled"],
+        "drawCalibrationLabel": (
+            "무승부 보정 적용"
+            if metrics["drawCalibrationEnabled"]
+            else "무승부 보정 미적용"
+        ),
+        "drawCalibrationSummary": metrics["drawCalibrationSummary"],
         "note": metrics["selectionReason"],
     }
 

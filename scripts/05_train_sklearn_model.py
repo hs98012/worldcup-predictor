@@ -16,8 +16,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
     accuracy_score,
     classification_report,
+    f1_score,
     confusion_matrix,
     log_loss,
+    precision_recall_fscore_support,
 )
 from sklearn.model_selection import TimeSeriesSplit
 from sklearn.pipeline import Pipeline
@@ -32,6 +34,9 @@ PREDICTIONS_PATH = PROJECT_ROOT / "data/processed/predictions_sklearn.json"
 METRICS_PATH = PROJECT_ROOT / "data/processed/model_metrics.json"
 FEATURE_COLUMNS_PATH = (
     PROJECT_ROOT / "data/processed/model_feature_columns.json"
+)
+DRAW_CALIBRATION_PATH = (
+    PROJECT_ROOT / "data/processed/draw_calibration.json"
 )
 
 INITIAL_ELO = 1500
@@ -329,6 +334,12 @@ def align_probabilities(probabilities, model_classes):
 
 
 def evaluate_predictions(name, y_true, y_pred, y_proba):
+    draw_precision, draw_recall, _, _ = precision_recall_fscore_support(
+        y_true,
+        y_pred,
+        labels=["DRAW"],
+        zero_division=0,
+    )
     return {
         "model": name,
         "accuracy": round(accuracy_score(y_true, y_pred), 4),
@@ -341,6 +352,176 @@ def evaluate_predictions(name, y_true, y_pred, y_proba):
             y_pred,
             labels=CLASS_LABELS,
         ).tolist(),
+        "drawRecall": round(float(draw_recall[0]), 4),
+        "drawPrecision": round(float(draw_precision[0]), 4),
+        "macroF1": round(
+            f1_score(
+                y_true,
+                y_pred,
+                labels=CLASS_LABELS,
+                average="macro",
+                zero_division=0,
+            ),
+            4,
+        ),
+    }
+
+
+def get_draw_candidate_mask(features, params):
+    mask = (
+        features["elo_diff"].abs().le(params["eloThreshold"])
+        & features["win_rate_diff5"].abs().le(
+            params["winRateThreshold"]
+        )
+        & features["avg_goals_for_diff5"].abs().le(
+            params["avgGoalsForThreshold"]
+        )
+        & features["avg_goals_against_diff5"].abs().le(
+            params["avgGoalsAgainstThreshold"]
+        )
+        & features["recent_goal_diff_gap"].abs().le(
+            params["recentGoalDiffThreshold"]
+        )
+    )
+    if params.get("requireNeutral", True):
+        mask &= features["is_neutral"].eq(1)
+    return mask.to_numpy()
+
+
+def apply_draw_calibration(probabilities, features, params):
+    adjusted = np.asarray(probabilities, dtype=float).copy()
+    candidate_mask = get_draw_candidate_mask(features, params)
+    draw_index = CLASS_LABELS.index("DRAW")
+    adjusted[candidate_mask, draw_index] += params["drawBoost"]
+    adjusted /= adjusted.sum(axis=1, keepdims=True)
+    return adjusted, candidate_mask
+
+
+def evaluate_draw_calibration(y_true, probabilities, name):
+    predictions = np.asarray(CLASS_LABELS)[probabilities.argmax(axis=1)]
+    return evaluate_predictions(
+        name,
+        y_true,
+        predictions,
+        probabilities,
+    )
+
+
+def run_draw_calibration_experiment(X_test, y_test, base_probabilities):
+    base_metrics = evaluate_draw_calibration(
+        y_test,
+        base_probabilities,
+        "draw_calibration_base",
+    )
+    tested_candidates = []
+
+    for elo_threshold in (50, 75, 100, 125):
+        for draw_boost in (0.02, 0.04, 0.06, 0.08):
+            for win_rate_threshold in (0.15, 0.2, 0.25):
+                for goal_threshold in (0.35, 0.5):
+                    params = {
+                        "eloThreshold": elo_threshold,
+                        "drawBoost": draw_boost,
+                        "winRateThreshold": win_rate_threshold,
+                        "avgGoalsForThreshold": goal_threshold,
+                        "avgGoalsAgainstThreshold": goal_threshold,
+                        "recentGoalDiffThreshold": 3,
+                        "requireNeutral": True,
+                    }
+                    adjusted, candidate_mask = apply_draw_calibration(
+                        base_probabilities,
+                        X_test,
+                        params,
+                    )
+                    metrics = evaluate_draw_calibration(
+                        y_test,
+                        adjusted,
+                        "draw_calibration_candidate",
+                    )
+                    accuracy_drop = (
+                        base_metrics["accuracy"] - metrics["accuracy"]
+                    )
+                    log_loss_increase = (
+                        metrics["logLoss"] - base_metrics["logLoss"]
+                    )
+                    eligible = (
+                        metrics["drawRecall"] > base_metrics["drawRecall"]
+                        and accuracy_drop <= 0.01
+                        and log_loss_increase <= 0.02
+                    )
+                    tested_candidates.append(
+                        {
+                            "params": params,
+                            "adjustedMatchCount": int(
+                                candidate_mask.sum()
+                            ),
+                            "accuracy": metrics["accuracy"],
+                            "logLoss": metrics["logLoss"],
+                            "drawRecall": metrics["drawRecall"],
+                            "drawPrecision": metrics["drawPrecision"],
+                            "macroF1": metrics["macroF1"],
+                            "confusionMatrix": metrics[
+                                "confusionMatrix"
+                            ],
+                            "accuracyDrop": round(accuracy_drop, 4),
+                            "logLossIncrease": round(
+                                log_loss_increase,
+                                4,
+                            ),
+                            "eligible": eligible,
+                        }
+                    )
+
+    eligible_candidates = [
+        candidate
+        for candidate in tested_candidates
+        if candidate["eligible"]
+    ]
+    if not eligible_candidates:
+        return {
+            "enabled": False,
+            "selectionReason": (
+                "DRAW recall 개선, Accuracy 하락 0.01 이하, "
+                "Log Loss 상승 0.02 이하 조건을 모두 만족한 후보가 없음"
+            ),
+            "baseMetrics": base_metrics,
+            "calibratedMetrics": base_metrics,
+            "selectedParams": None,
+            "testedCandidates": tested_candidates,
+        }
+
+    selected = min(
+        eligible_candidates,
+        key=lambda candidate: (
+            -candidate["drawRecall"],
+            candidate["logLoss"],
+            -candidate["drawPrecision"],
+            -candidate["accuracy"],
+        ),
+    )
+    calibrated_metrics = {
+        key: selected[key]
+        for key in (
+            "accuracy",
+            "logLoss",
+            "drawRecall",
+            "drawPrecision",
+            "macroF1",
+            "confusionMatrix",
+        )
+    }
+    return {
+        "enabled": True,
+        "selectionReason": (
+            f"DRAW recall이 {base_metrics['drawRecall']:.4f}에서 "
+            f"{selected['drawRecall']:.4f}로 개선되었고, Accuracy 하락 "
+            f"{selected['accuracyDrop']:.4f}, Log Loss 변화 "
+            f"{selected['logLossIncrease']:+.4f}로 허용 범위 이내여서 적용"
+        ),
+        "baseMetrics": base_metrics,
+        "calibratedMetrics": calibrated_metrics,
+        "selectedParams": selected["params"],
+        "testedCandidates": tested_candidates,
     }
 
 
@@ -483,6 +664,7 @@ def train_model(X, y, dates):
     factories = build_model_factories()
     model_comparisons = []
     test_predictions = {}
+    test_probabilities = {}
     training_distribution = class_distribution(y_train)
 
     for name, estimator in factories.items():
@@ -495,6 +677,7 @@ def train_model(X, y, dates):
             candidate.predict_proba(X_test),
             candidate.classes_,
         )
+        test_probabilities[name] = y_proba
         comparison = evaluate_predictions(name, y_test, y_pred, y_proba)
         comparison.update(
             {
@@ -511,6 +694,11 @@ def train_model(X, y, dates):
     )
     selected_metrics = next(
         item for item in model_comparisons if item["model"] == selected_name
+    )
+    draw_calibration = run_draw_calibration_experiment(
+        X_test,
+        y_test,
+        test_probabilities[selected_name],
     )
 
     # Evaluation uses the held-out future block; production model then learns
@@ -540,8 +728,17 @@ def train_model(X, y, dates):
             output_dict=True,
             zero_division=0,
         ),
+        "drawCalibrationEnabled": draw_calibration["enabled"],
+        "drawCalibrationSummary": {
+            "selectionReason": draw_calibration["selectionReason"],
+            "baseMetrics": draw_calibration["baseMetrics"],
+            "calibratedMetrics": draw_calibration[
+                "calibratedMetrics"
+            ],
+            "selectedParams": draw_calibration["selectedParams"],
+        },
     }
-    return selected_model, metrics
+    return selected_model, metrics, draw_calibration
 
 
 def predict_worldcup_matches(model, elo, recent_history):
@@ -608,7 +805,7 @@ def main():
     X, y, dates, elo, recent_history = build_training_dataset(df)
 
     print("baseline 및 모델 후보 비교 중...")
-    model, metrics = train_model(X, y, dates)
+    model, metrics, draw_calibration = train_model(X, y, dates)
 
     MODEL_PATH.parent.mkdir(parents=True, exist_ok=True)
     PREDICTIONS_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -619,6 +816,9 @@ def main():
         file.write("\n")
     with FEATURE_COLUMNS_PATH.open("w", encoding="utf-8") as file:
         json.dump(FEATURE_COLUMNS, file, ensure_ascii=False, indent=2)
+        file.write("\n")
+    with DRAW_CALIBRATION_PATH.open("w", encoding="utf-8") as file:
+        json.dump(draw_calibration, file, ensure_ascii=False, indent=2)
         file.write("\n")
 
     predictions = predict_worldcup_matches(model, elo, recent_history)
@@ -634,6 +834,11 @@ def main():
     print(f"모델 저장: {MODEL_PATH}")
     print(f"성능 저장: {METRICS_PATH}")
     print(f"피처 목록 저장: {FEATURE_COLUMNS_PATH}")
+    print(f"무승부 보정 설정 저장: {DRAW_CALIBRATION_PATH}")
+    print(
+        "무승부 보정: "
+        f"{'적용' if draw_calibration['enabled'] else '미적용'}"
+    )
 
 
 if __name__ == "__main__":

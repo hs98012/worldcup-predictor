@@ -31,7 +31,10 @@
           0,
           0
         ]
-      ]
+      ],
+      "drawRecall": 0.0,
+      "drawPrecision": 0.0,
+      "macroF1": 0.2148
     },
     {
       "model": "elo_rule_baseline",
@@ -53,7 +56,10 @@
           327,
           472
         ]
-      ]
+      ],
+      "drawRecall": 0.4072,
+      "drawPrecision": 0.2535,
+      "macroF1": 0.4893
     }
   ],
   "modelComparisons": [
@@ -78,6 +84,9 @@
           165
         ]
       ],
+      "drawRecall": 0.1424,
+      "drawPrecision": 0.2792,
+      "macroF1": 0.4857,
       "trainSize": 20274,
       "testSize": 5069,
       "classDistribution": {
@@ -107,6 +116,9 @@
           105
         ]
       ],
+      "drawRecall": 0.0906,
+      "drawPrecision": 0.2949,
+      "macroF1": 0.4739,
       "trainSize": 20274,
       "testSize": 5069,
       "classDistribution": {
@@ -136,6 +148,9 @@
           79
         ]
       ],
+      "drawRecall": 0.0682,
+      "drawPrecision": 0.2423,
+      "macroF1": 0.4602,
       "trainSize": 20274,
       "testSize": 5069,
       "classDistribution": {
@@ -165,6 +180,9 @@
           56
         ]
       ],
+      "drawRecall": 0.0483,
+      "drawPrecision": 0.2605,
+      "macroF1": 0.4587,
       "trainSize": 20274,
       "testSize": 5069,
       "classDistribution": {
@@ -194,6 +212,9 @@
           10
         ]
       ],
+      "drawRecall": 0.0086,
+      "drawPrecision": 0.3846,
+      "macroF1": 0.4324,
       "trainSize": 20274,
       "testSize": 5069,
       "classDistribution": {
@@ -223,6 +244,9 @@
           1
         ]
       ],
+      "drawRecall": 0.0009,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4287,
       "trainSize": 20274,
       "testSize": 5069,
       "classDistribution": {
@@ -252,6 +276,9 @@
           4
         ]
       ],
+      "drawRecall": 0.0035,
+      "drawPrecision": 0.1905,
+      "macroF1": 0.4339,
       "trainSize": 20274,
       "testSize": 5069,
       "classDistribution": {
@@ -345,6 +372,68 @@
       "recall": 0.5823633852830933,
       "f1-score": 0.5093443785618984,
       "support": 5069.0
+    }
+  },
+  "drawCalibrationEnabled": true,
+  "drawCalibrationSummary": {
+    "selectionReason": "DRAW recall이 0.0086에서 0.0104로 개선되었고, Accuracy 하락 0.0002, Log Loss 변화 -0.0001로 허용 범위 이내여서 적용",
+    "baseMetrics": {
+      "model": "draw_calibration_base",
+      "accuracy": 0.5824,
+      "logLoss": 0.923,
+      "confusionMatrix": [
+        [
+          1991,
+          411,
+          7
+        ],
+        [
+          541,
+          951,
+          9
+        ],
+        [
+          705,
+          444,
+          10
+        ]
+      ],
+      "drawRecall": 0.0086,
+      "drawPrecision": 0.3846,
+      "macroF1": 0.4324
+    },
+    "calibratedMetrics": {
+      "accuracy": 0.5822,
+      "logLoss": 0.9229,
+      "drawRecall": 0.0104,
+      "drawPrecision": 0.3871,
+      "macroF1": 0.4333,
+      "confusionMatrix": [
+        [
+          1990,
+          411,
+          8
+        ],
+        [
+          541,
+          949,
+          11
+        ],
+        [
+          704,
+          443,
+          12
+        ]
+      ]
+    },
+    "selectedParams": {
+      "eloThreshold": 50,
+      "drawBoost": 0.08,
+      "winRateThreshold": 0.25,
+      "avgGoalsForThreshold": 0.5,
+      "avgGoalsAgainstThreshold": 0.5,
+      "recentGoalDiffThreshold": 3,
+      "requireNeutral": true
     }
   }
 }

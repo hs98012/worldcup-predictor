@@ -10,6 +10,7 @@ SYNC_FILES = [
     "tournament_simulation.json",
     "fixture_predictions.json",
     "model_metrics.json",
+    "draw_calibration.json",
     "group_simulation.json",
     "worldcup_completed_results.json",
     "worldcup_group_standings.json",

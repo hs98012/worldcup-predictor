@@ -9,6 +9,10 @@
     "homeWinProb": 0.62,
     "drawProb": 0.236,
     "awayWinProb": 0.144,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.62,
+    "originalDrawProb": 0.236,
+    "originalAwayWinProb": 0.144,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -21,6 +25,10 @@
     "homeWinProb": 0.4621,
     "drawProb": 0.2529,
     "awayWinProb": 0.285,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.4621,
+    "originalDrawProb": 0.2529,
+    "originalAwayWinProb": 0.285,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -33,6 +41,10 @@
     "homeWinProb": 0.6043,
     "drawProb": 0.2682,
     "awayWinProb": 0.1275,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6043,
+    "originalDrawProb": 0.2682,
+    "originalAwayWinProb": 0.1275,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -45,6 +57,10 @@
     "homeWinProb": 0.5286,
     "drawProb": 0.2274,
     "awayWinProb": 0.2441,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.5286,
+    "originalDrawProb": 0.2274,
+    "originalAwayWinProb": 0.2441,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -57,6 +73,10 @@
     "homeWinProb": 0.2205,
     "drawProb": 0.2425,
     "awayWinProb": 0.537,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2205,
+    "originalDrawProb": 0.2425,
+    "originalAwayWinProb": 0.537,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -69,6 +89,10 @@
     "homeWinProb": 0.2914,
     "drawProb": 0.238,
     "awayWinProb": 0.4706,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2914,
+    "originalDrawProb": 0.238,
+    "originalAwayWinProb": 0.4706,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -81,6 +105,10 @@
     "homeWinProb": 0.3389,
     "drawProb": 0.2516,
     "awayWinProb": 0.4096,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.3389,
+    "originalDrawProb": 0.2516,
+    "originalAwayWinProb": 0.4096,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -93,6 +121,10 @@
     "homeWinProb": 0.3079,
     "drawProb": 0.233,
     "awayWinProb": 0.4591,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.3079,
+    "originalDrawProb": 0.233,
+    "originalAwayWinProb": 0.4591,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -105,6 +137,10 @@
     "homeWinProb": 0.7077,
     "drawProb": 0.1657,
     "awayWinProb": 0.1266,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.7077,
+    "originalDrawProb": 0.1657,
+    "originalAwayWinProb": 0.1266,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -117,6 +153,10 @@
     "homeWinProb": 0.4683,
     "drawProb": 0.2781,
     "awayWinProb": 0.2536,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.4683,
+    "originalDrawProb": 0.2781,
+    "originalAwayWinProb": 0.2536,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -129,6 +169,10 @@
     "homeWinProb": 0.3144,
     "drawProb": 0.3056,
     "awayWinProb": 0.38,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.3144,
+    "originalDrawProb": 0.3056,
+    "originalAwayWinProb": 0.38,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -141,6 +185,10 @@
     "homeWinProb": 0.3618,
     "drawProb": 0.2546,
     "awayWinProb": 0.3836,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.3618,
+    "originalDrawProb": 0.2546,
+    "originalAwayWinProb": 0.3836,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -153,6 +201,10 @@
     "homeWinProb": 0.5497,
     "drawProb": 0.2624,
     "awayWinProb": 0.1878,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.5497,
+    "originalDrawProb": 0.2624,
+    "originalAwayWinProb": 0.1878,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -165,6 +217,10 @@
     "homeWinProb": 0.6837,
     "drawProb": 0.2016,
     "awayWinProb": 0.1147,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6837,
+    "originalDrawProb": 0.2016,
+    "originalAwayWinProb": 0.1147,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -177,6 +233,10 @@
     "homeWinProb": 0.6484,
     "drawProb": 0.2288,
     "awayWinProb": 0.1228,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6484,
+    "originalDrawProb": 0.2288,
+    "originalAwayWinProb": 0.1228,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -189,6 +249,10 @@
     "homeWinProb": 0.3009,
     "drawProb": 0.2545,
     "awayWinProb": 0.4446,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.3009,
+    "originalDrawProb": 0.2545,
+    "originalAwayWinProb": 0.4446,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -201,6 +265,10 @@
     "homeWinProb": 0.5767,
     "drawProb": 0.2249,
     "awayWinProb": 0.1984,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.5767,
+    "originalDrawProb": 0.2249,
+    "originalAwayWinProb": 0.1984,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -213,6 +281,10 @@
     "homeWinProb": 0.2494,
     "drawProb": 0.2925,
     "awayWinProb": 0.4581,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2494,
+    "originalDrawProb": 0.2925,
+    "originalAwayWinProb": 0.4581,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -225,6 +297,10 @@
     "homeWinProb": 0.5699,
     "drawProb": 0.2364,
     "awayWinProb": 0.1937,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.5699,
+    "originalDrawProb": 0.2364,
+    "originalAwayWinProb": 0.1937,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -237,6 +313,10 @@
     "homeWinProb": 0.6879,
     "drawProb": 0.1896,
     "awayWinProb": 0.1225,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6879,
+    "originalDrawProb": 0.1896,
+    "originalAwayWinProb": 0.1225,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -249,6 +329,10 @@
     "homeWinProb": 0.613,
     "drawProb": 0.2425,
     "awayWinProb": 0.1445,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.613,
+    "originalDrawProb": 0.2425,
+    "originalAwayWinProb": 0.1445,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -261,6 +345,10 @@
     "homeWinProb": 0.2846,
     "drawProb": 0.2636,
     "awayWinProb": 0.4519,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2846,
+    "originalDrawProb": 0.2636,
+    "originalAwayWinProb": 0.4519,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -273,6 +361,10 @@
     "homeWinProb": 0.615,
     "drawProb": 0.2296,
     "awayWinProb": 0.1553,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.615,
+    "originalDrawProb": 0.2296,
+    "originalAwayWinProb": 0.1553,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -285,6 +377,10 @@
     "homeWinProb": 0.2697,
     "drawProb": 0.2099,
     "awayWinProb": 0.5204,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2697,
+    "originalDrawProb": 0.2099,
+    "originalAwayWinProb": 0.5204,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -297,6 +393,10 @@
     "homeWinProb": 0.5802,
     "drawProb": 0.229,
     "awayWinProb": 0.1908,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.5802,
+    "originalDrawProb": 0.229,
+    "originalAwayWinProb": 0.1908,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -309,6 +409,10 @@
     "homeWinProb": 0.5812,
     "drawProb": 0.2465,
     "awayWinProb": 0.1723,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.5812,
+    "originalDrawProb": 0.2465,
+    "originalAwayWinProb": 0.1723,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -321,6 +425,10 @@
     "homeWinProb": 0.6071,
     "drawProb": 0.2614,
     "awayWinProb": 0.1315,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6071,
+    "originalDrawProb": 0.2614,
+    "originalAwayWinProb": 0.1315,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -333,6 +441,10 @@
     "homeWinProb": 0.6609,
     "drawProb": 0.2277,
     "awayWinProb": 0.1113,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6609,
+    "originalDrawProb": 0.2277,
+    "originalAwayWinProb": 0.1113,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -345,6 +457,10 @@
     "homeWinProb": 0.2583,
     "drawProb": 0.2187,
     "awayWinProb": 0.523,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2583,
+    "originalDrawProb": 0.2187,
+    "originalAwayWinProb": 0.523,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -357,6 +473,10 @@
     "homeWinProb": 0.6152,
     "drawProb": 0.2281,
     "awayWinProb": 0.1567,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6152,
+    "originalDrawProb": 0.2281,
+    "originalAwayWinProb": 0.1567,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -369,6 +489,10 @@
     "homeWinProb": 0.2835,
     "drawProb": 0.2297,
     "awayWinProb": 0.4869,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2835,
+    "originalDrawProb": 0.2297,
+    "originalAwayWinProb": 0.4869,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -381,6 +505,10 @@
     "homeWinProb": 0.6029,
     "drawProb": 0.239,
     "awayWinProb": 0.1581,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6029,
+    "originalDrawProb": 0.239,
+    "originalAwayWinProb": 0.1581,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -393,6 +521,10 @@
     "homeWinProb": 0.5813,
     "drawProb": 0.2449,
     "awayWinProb": 0.1738,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.5813,
+    "originalDrawProb": 0.2449,
+    "originalAwayWinProb": 0.1738,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -405,6 +537,10 @@
     "homeWinProb": 0.6116,
     "drawProb": 0.2594,
     "awayWinProb": 0.129,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6116,
+    "originalDrawProb": 0.2594,
+    "originalAwayWinProb": 0.129,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -417,6 +553,10 @@
     "homeWinProb": 0.6237,
     "drawProb": 0.2311,
     "awayWinProb": 0.1452,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6237,
+    "originalDrawProb": 0.2311,
+    "originalAwayWinProb": 0.1452,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -429,6 +569,10 @@
     "homeWinProb": 0.1826,
     "drawProb": 0.21,
     "awayWinProb": 0.6074,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.1826,
+    "originalDrawProb": 0.21,
+    "originalAwayWinProb": 0.6074,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -441,6 +585,10 @@
     "homeWinProb": 0.3774,
     "drawProb": 0.2847,
     "awayWinProb": 0.3379,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.3774,
+    "originalDrawProb": 0.2847,
+    "originalAwayWinProb": 0.3379,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -453,6 +601,10 @@
     "homeWinProb": 0.1917,
     "drawProb": 0.1943,
     "awayWinProb": 0.614,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.1917,
+    "originalDrawProb": 0.1943,
+    "originalAwayWinProb": 0.614,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -465,6 +617,10 @@
     "homeWinProb": 0.6528,
     "drawProb": 0.2146,
     "awayWinProb": 0.1326,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6528,
+    "originalDrawProb": 0.2146,
+    "originalAwayWinProb": 0.1326,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -477,6 +633,10 @@
     "homeWinProb": 0.5343,
     "drawProb": 0.2577,
     "awayWinProb": 0.208,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.5343,
+    "originalDrawProb": 0.2577,
+    "originalAwayWinProb": 0.208,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -489,6 +649,10 @@
     "homeWinProb": 0.6126,
     "drawProb": 0.2305,
     "awayWinProb": 0.1568,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6126,
+    "originalDrawProb": 0.2305,
+    "originalAwayWinProb": 0.1568,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -501,6 +665,10 @@
     "homeWinProb": 0.3839,
     "drawProb": 0.2406,
     "awayWinProb": 0.3755,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.3839,
+    "originalDrawProb": 0.2406,
+    "originalAwayWinProb": 0.3755,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -513,6 +681,10 @@
     "homeWinProb": 0.5281,
     "drawProb": 0.2608,
     "awayWinProb": 0.2111,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.5281,
+    "originalDrawProb": 0.2608,
+    "originalAwayWinProb": 0.2111,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -525,6 +697,10 @@
     "homeWinProb": 0.1869,
     "drawProb": 0.2154,
     "awayWinProb": 0.5977,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.1869,
+    "originalDrawProb": 0.2154,
+    "originalAwayWinProb": 0.5977,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -537,6 +713,10 @@
     "homeWinProb": 0.663,
     "drawProb": 0.2132,
     "awayWinProb": 0.1238,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.663,
+    "originalDrawProb": 0.2132,
+    "originalAwayWinProb": 0.1238,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -549,6 +729,10 @@
     "homeWinProb": 0.5913,
     "drawProb": 0.2362,
     "awayWinProb": 0.1725,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.5913,
+    "originalDrawProb": 0.2362,
+    "originalAwayWinProb": 0.1725,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -561,6 +745,10 @@
     "homeWinProb": 0.6969,
     "drawProb": 0.191,
     "awayWinProb": 0.1121,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6969,
+    "originalDrawProb": 0.191,
+    "originalAwayWinProb": 0.1121,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -573,6 +761,10 @@
     "homeWinProb": 0.2608,
     "drawProb": 0.2076,
     "awayWinProb": 0.5316,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2608,
+    "originalDrawProb": 0.2076,
+    "originalAwayWinProb": 0.5316,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -585,6 +777,10 @@
     "homeWinProb": 0.5339,
     "drawProb": 0.2545,
     "awayWinProb": 0.2116,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.5339,
+    "originalDrawProb": 0.2545,
+    "originalAwayWinProb": 0.2116,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -597,6 +793,10 @@
     "homeWinProb": 0.2907,
     "drawProb": 0.2347,
     "awayWinProb": 0.4746,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2907,
+    "originalDrawProb": 0.2347,
+    "originalAwayWinProb": 0.4746,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -609,6 +809,10 @@
     "homeWinProb": 0.4285,
     "drawProb": 0.2981,
     "awayWinProb": 0.2733,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.4285,
+    "originalDrawProb": 0.2981,
+    "originalAwayWinProb": 0.2733,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -621,6 +825,10 @@
     "homeWinProb": 0.4474,
     "drawProb": 0.3105,
     "awayWinProb": 0.2421,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.4474,
+    "originalDrawProb": 0.3105,
+    "originalAwayWinProb": 0.2421,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -633,6 +841,10 @@
     "homeWinProb": 0.2647,
     "drawProb": 0.2395,
     "awayWinProb": 0.4958,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2647,
+    "originalDrawProb": 0.2395,
+    "originalAwayWinProb": 0.4958,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -645,6 +857,10 @@
     "homeWinProb": 0.6482,
     "drawProb": 0.2244,
     "awayWinProb": 0.1274,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6482,
+    "originalDrawProb": 0.2244,
+    "originalAwayWinProb": 0.1274,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -657,6 +873,10 @@
     "homeWinProb": 0.2347,
     "drawProb": 0.253,
     "awayWinProb": 0.5123,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2347,
+    "originalDrawProb": 0.253,
+    "originalAwayWinProb": 0.5123,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -669,6 +889,10 @@
     "homeWinProb": 0.309,
     "drawProb": 0.2474,
     "awayWinProb": 0.4436,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.309,
+    "originalDrawProb": 0.2474,
+    "originalAwayWinProb": 0.4436,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -681,6 +905,10 @@
     "homeWinProb": 0.2067,
     "drawProb": 0.2364,
     "awayWinProb": 0.5569,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2067,
+    "originalDrawProb": 0.2364,
+    "originalAwayWinProb": 0.5569,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -693,6 +921,10 @@
     "homeWinProb": 0.2592,
     "drawProb": 0.2169,
     "awayWinProb": 0.5239,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2592,
+    "originalDrawProb": 0.2169,
+    "originalAwayWinProb": 0.5239,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -705,6 +937,10 @@
     "homeWinProb": 0.6368,
     "drawProb": 0.2336,
     "awayWinProb": 0.1296,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6368,
+    "originalDrawProb": 0.2336,
+    "originalAwayWinProb": 0.1296,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -717,6 +953,10 @@
     "homeWinProb": 0.2278,
     "drawProb": 0.2192,
     "awayWinProb": 0.553,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2278,
+    "originalDrawProb": 0.2192,
+    "originalAwayWinProb": 0.553,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -729,6 +969,10 @@
     "homeWinProb": 0.2868,
     "drawProb": 0.2935,
     "awayWinProb": 0.4197,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2868,
+    "originalDrawProb": 0.2935,
+    "originalAwayWinProb": 0.4197,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -741,6 +985,10 @@
     "homeWinProb": 0.1697,
     "drawProb": 0.2096,
     "awayWinProb": 0.6207,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.1697,
+    "originalDrawProb": 0.2096,
+    "originalAwayWinProb": 0.6207,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -750,9 +998,13 @@
     "normalizedHomeTeam": "Cape Verde",
     "normalizedAwayTeam": "Saudi Arabia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.3689,
-    "drawProb": 0.2745,
-    "awayWinProb": 0.3566,
+    "homeWinProb": 0.3416,
+    "drawProb": 0.3283,
+    "awayWinProb": 0.3302,
+    "drawAdjusted": true,
+    "originalHomeWinProb": 0.3689,
+    "originalDrawProb": 0.2745,
+    "originalAwayWinProb": 0.3566,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -765,6 +1017,10 @@
     "homeWinProb": 0.2072,
     "drawProb": 0.217,
     "awayWinProb": 0.5759,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.2072,
+    "originalDrawProb": 0.217,
+    "originalAwayWinProb": 0.5759,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -777,6 +1033,10 @@
     "homeWinProb": 0.3158,
     "drawProb": 0.2439,
     "awayWinProb": 0.4403,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.3158,
+    "originalDrawProb": 0.2439,
+    "originalAwayWinProb": 0.4403,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -789,6 +1049,10 @@
     "homeWinProb": 0.5463,
     "drawProb": 0.2673,
     "awayWinProb": 0.1863,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.5463,
+    "originalDrawProb": 0.2673,
+    "originalAwayWinProb": 0.1863,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -801,6 +1065,10 @@
     "homeWinProb": 0.4604,
     "drawProb": 0.2675,
     "awayWinProb": 0.2721,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.4604,
+    "originalDrawProb": 0.2675,
+    "originalAwayWinProb": 0.2721,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -813,6 +1081,10 @@
     "homeWinProb": 0.1692,
     "drawProb": 0.2016,
     "awayWinProb": 0.6292,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.1692,
+    "originalDrawProb": 0.2016,
+    "originalAwayWinProb": 0.6292,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -825,6 +1097,10 @@
     "homeWinProb": 0.3327,
     "drawProb": 0.2553,
     "awayWinProb": 0.412,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.3327,
+    "originalDrawProb": 0.2553,
+    "originalAwayWinProb": 0.412,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -837,6 +1113,10 @@
     "homeWinProb": 0.3327,
     "drawProb": 0.2751,
     "awayWinProb": 0.3923,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.3327,
+    "originalDrawProb": 0.2751,
+    "originalAwayWinProb": 0.3923,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -849,6 +1129,10 @@
     "homeWinProb": 0.1959,
     "drawProb": 0.1883,
     "awayWinProb": 0.6158,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.1959,
+    "originalDrawProb": 0.1883,
+    "originalAwayWinProb": 0.6158,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -861,6 +1145,10 @@
     "homeWinProb": 0.6301,
     "drawProb": 0.214,
     "awayWinProb": 0.1559,
+    "drawAdjusted": false,
+    "originalHomeWinProb": 0.6301,
+    "originalDrawProb": 0.214,
+    "originalAwayWinProb": 0.1559,
     "predictedResult": "HOME_WIN"
   }
 ]

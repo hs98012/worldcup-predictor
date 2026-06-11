@@ -7,6 +7,7 @@ const fixtures = ref([])
 const completedResults = ref([])
 const groupStandings = ref([])
 const groupSimulation = ref([])
+const drawCalibration = ref({ enabled: false })
 const isLoading = ref(true)
 const errorMessage = ref('')
 const baseUrl = import.meta.env.BASE_URL
@@ -80,6 +81,7 @@ onMounted(async () => {
       fetch(`${baseUrl}data/worldcup_completed_results.json`),
       fetch(`${baseUrl}data/worldcup_group_standings.json`),
       fetch(`${baseUrl}data/group_simulation.json`),
+      fetch(`${baseUrl}data/draw_calibration.json`),
     ])
 
     if (responses.some((response) => !response.ok)) {
@@ -93,6 +95,7 @@ onMounted(async () => {
       completedResults.value,
       groupStandings.value,
       groupSimulation.value,
+      drawCalibration.value,
     ] = await Promise.all(responses.map((response) => response.json()))
   } catch (error) {
     errorMessage.value = error.message
@@ -171,6 +174,12 @@ onMounted(async () => {
             </div>
 
             <p class="model-note">{{ summary.modelSummary.note }}</p>
+            <div
+              class="draw-calibration-status"
+              :class="{ enabled: drawCalibration.enabled }"
+            >
+              {{ drawCalibration.enabled ? '무승부 보정 적용' : '무승부 보정 미적용' }}
+            </div>
           </article>
 
           <article class="panel korea-card">
@@ -349,6 +358,9 @@ onMounted(async () => {
                   <td>
                     <span class="result-badge" :class="resultClass(fixture.predictedResult)">
                       {{ resultLabel(fixture.predictedResult) }}
+                    </span>
+                    <span v-if="fixture.drawAdjusted" class="draw-adjusted-badge">
+                      무승부 보정
                     </span>
                   </td>
                 </tr>

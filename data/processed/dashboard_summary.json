@@ -12,6 +12,69 @@
     "trainSize": 20274,
     "testSize": 5069,
     "drawRecall": 0.0086,
+    "drawCalibrationEnabled": true,
+    "drawCalibrationLabel": "무승부 보정 적용",
+    "drawCalibrationSummary": {
+      "selectionReason": "DRAW recall이 0.0086에서 0.0104로 개선되었고, Accuracy 하락 0.0002, Log Loss 변화 -0.0001로 허용 범위 이내여서 적용",
+      "baseMetrics": {
+        "model": "draw_calibration_base",
+        "accuracy": 0.5824,
+        "logLoss": 0.923,
+        "confusionMatrix": [
+          [
+            1991,
+            411,
+            7
+          ],
+          [
+            541,
+            951,
+            9
+          ],
+          [
+            705,
+            444,
+            10
+          ]
+        ],
+        "drawRecall": 0.0086,
+        "drawPrecision": 0.3846,
+        "macroF1": 0.4324
+      },
+      "calibratedMetrics": {
+        "accuracy": 0.5822,
+        "logLoss": 0.9229,
+        "drawRecall": 0.0104,
+        "drawPrecision": 0.3871,
+        "macroF1": 0.4333,
+        "confusionMatrix": [
+          [
+            1990,
+            411,
+            8
+          ],
+          [
+            541,
+            949,
+            11
+          ],
+          [
+            704,
+            443,
+            12
+          ]
+        ]
+      },
+      "selectedParams": {
+        "eloThreshold": 50,
+        "drawBoost": 0.08,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      }
+    },
     "note": "최고 모델 accuracy 0.5843와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.5035 이상이어서 선택"
   },
   "winnerTop10": [

@@ -280,6 +280,24 @@ h2 {
   font-size: 0.78rem;
 }
 
+.draw-calibration-status {
+  display: inline-flex;
+  margin-top: 14px;
+  padding: 6px 9px;
+  border: 1px solid #4b3f2c;
+  border-radius: 999px;
+  color: #d7b87a;
+  background: rgba(215, 184, 122, 0.08);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.draw-calibration-status.enabled {
+  border-color: #2d4937;
+  color: var(--green);
+  background: rgba(110, 255, 157, 0.06);
+}
+
 .korea-card {
   position: relative;
   overflow: hidden;
@@ -625,6 +643,19 @@ tbody tr:last-child td {
   border-radius: 5px;
   font-size: 0.68rem;
   font-weight: 700;
+}
+
+.draw-adjusted-badge {
+  display: inline-flex;
+  margin-left: 6px;
+  padding: 4px 7px;
+  border: 1px solid rgba(215, 184, 122, 0.35);
+  border-radius: 999px;
+  color: #d7b87a;
+  background: rgba(215, 184, 122, 0.08);
+  font-size: 0.58rem;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .result-home {
