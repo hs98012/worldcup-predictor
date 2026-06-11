@@ -10,6 +10,7 @@ const groupSimulation = ref([])
 const isLoading = ref(true)
 const errorMessage = ref('')
 const baseUrl = import.meta.env.BASE_URL
+const worldCupYear = 2026
 
 const percent = (value) => {
   if (value === null || value === undefined) return '-'
@@ -45,6 +46,16 @@ const korea = computed(
 )
 
 const maxWinnerProbability = computed(() => topTeams.value[0]?.winnerProb ?? 0)
+
+const is2026WorldCupMatch = (match) =>
+  match.tournament === 'FIFA World Cup' &&
+  new Date(`${match.date}T00:00:00`).getFullYear() === worldCupYear
+
+const worldCupCompletedResults = computed(() =>
+  completedResults.value.filter(is2026WorldCupMatch),
+)
+
+const worldCupFixtures = computed(() => fixtures.value.filter(is2026WorldCupMatch))
 
 const resultLabel = (result) =>
   ({
@@ -212,10 +223,10 @@ onMounted(async () => {
               <p class="section-kicker">OFFICIAL RESULTS</p>
               <h2>완료된 월드컵 경기 결과</h2>
             </div>
-            <span class="count-badge">{{ completedResults.length }} COMPLETED</span>
+            <span class="count-badge">{{ worldCupCompletedResults.length }} COMPLETED</span>
           </div>
 
-          <div v-if="completedResults.length === 0" class="empty-results">
+          <div v-if="worldCupCompletedResults.length === 0" class="empty-results">
             <span class="empty-results-icon">FT</span>
             <p>아직 완료된 월드컵 경기가 없습니다.</p>
           </div>
@@ -233,7 +244,7 @@ onMounted(async () => {
               </thead>
               <tbody>
                 <tr
-                  v-for="match in completedResults"
+                  v-for="match in worldCupCompletedResults"
                   :key="`${match.date}-${match.homeTeam}-${match.awayTeam}`"
                   :class="{ 'korea-row': [match.normalizedHomeTeam, match.normalizedAwayTeam].includes('Korea Republic') }"
                 >
@@ -304,7 +315,7 @@ onMounted(async () => {
               <p class="section-kicker">FIXTURE FORECAST</p>
               <h2>남은 경기 예측</h2>
             </div>
-            <span class="count-badge">{{ fixtures.length }} MATCHES</span>
+            <span class="count-badge">{{ worldCupFixtures.length }} MATCHES</span>
           </div>
 
           <div class="table-wrap">
@@ -322,7 +333,7 @@ onMounted(async () => {
               </thead>
               <tbody>
                 <tr
-                  v-for="(fixture, index) in fixtures"
+                  v-for="(fixture, index) in worldCupFixtures"
                   :key="`${fixture.date}-${fixture.homeTeam}-${fixture.awayTeam}`"
                   :class="{ 'korea-row': [fixture.normalizedHomeTeam, fixture.normalizedAwayTeam].includes('Korea Republic') }"
                 >
