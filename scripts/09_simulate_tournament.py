@@ -15,6 +15,7 @@ SIMULATION_COUNT = 10000
 RANDOM_SEED = 42
 
 HOST_TEAMS = {"Mexico", "Canada", "United States"}
+ADVANCE_PROBABILITY_CACHE = {}
 
 FEATURE_COLUMNS = [
     "team_a_elo",
@@ -23,15 +24,27 @@ FEATURE_COLUMNS = [
     "team_a_recent_points5",
     "team_b_recent_points5",
     "recent_points_diff",
+    "team_a_win_rate5",
+    "team_b_win_rate5",
+    "win_rate_diff5",
+    "team_a_avg_goals_for5",
+    "team_b_avg_goals_for5",
+    "avg_goals_for_diff5",
+    "team_a_avg_goals_against5",
+    "team_b_avg_goals_against5",
+    "avg_goals_against_diff5",
     "team_a_recent_goal_diff5",
     "team_b_recent_goal_diff5",
     "recent_goal_diff_gap",
-    "team_a_avg_goals_for5",
-    "team_b_avg_goals_for5",
-    "team_a_avg_goals_against5",
-    "team_b_avg_goals_against5",
+    "team_a_win_rate10",
+    "team_b_win_rate10",
+    "win_rate_diff10",
+    "team_a_recent_goal_diff10",
+    "team_b_recent_goal_diff10",
+    "recent_goal_diff_gap10",
     "is_neutral",
     "team_a_home_advantage",
+    "tournament_importance",
 ]
 
 
@@ -360,21 +373,46 @@ def build_feature_row(team_a, team_b, teams_map):
         "team_a_recent_points5": a["recentPoints5"],
         "team_b_recent_points5": b["recentPoints5"],
         "recent_points_diff": a["recentPoints5"] - b["recentPoints5"],
+        "team_a_win_rate5": a["recentWinRate5"],
+        "team_b_win_rate5": b["recentWinRate5"],
+        "win_rate_diff5": a["recentWinRate5"] - b["recentWinRate5"],
+        "team_a_avg_goals_for5": a["recentAvgGoalsFor5"],
+        "team_b_avg_goals_for5": b["recentAvgGoalsFor5"],
+        "avg_goals_for_diff5": (
+            a["recentAvgGoalsFor5"] - b["recentAvgGoalsFor5"]
+        ),
+        "team_a_avg_goals_against5": a["recentAvgGoalsAgainst5"],
+        "team_b_avg_goals_against5": b["recentAvgGoalsAgainst5"],
+        "avg_goals_against_diff5": (
+            a["recentAvgGoalsAgainst5"] - b["recentAvgGoalsAgainst5"]
+        ),
         "team_a_recent_goal_diff5": a["recentGoalDiff5"],
         "team_b_recent_goal_diff5": b["recentGoalDiff5"],
         "recent_goal_diff_gap": a["recentGoalDiff5"] - b["recentGoalDiff5"],
-        "team_a_avg_goals_for5": a["recentAvgGoalsFor5"],
-        "team_b_avg_goals_for5": b["recentAvgGoalsFor5"],
-        "team_a_avg_goals_against5": a["recentAvgGoalsAgainst5"],
-        "team_b_avg_goals_against5": b["recentAvgGoalsAgainst5"],
+        "team_a_win_rate10": a["recentWinRate10"],
+        "team_b_win_rate10": b["recentWinRate10"],
+        "win_rate_diff10": a["recentWinRate10"] - b["recentWinRate10"],
+        "team_a_recent_goal_diff10": a["recentGoalDiff10"],
+        "team_b_recent_goal_diff10": b["recentGoalDiff10"],
+        "recent_goal_diff_gap10": (
+            a["recentGoalDiff10"] - b["recentGoalDiff10"]
+        ),
         "is_neutral": 1,
         "team_a_home_advantage": int(team_a["team"] in HOST_TEAMS),
+        "tournament_importance": 1.0,
     }
 
 
 def get_knockout_advance_prob(model, team_a, team_b, teams_map):
+    cache_key = (team_a["team"], team_b["team"])
+    if cache_key in ADVANCE_PROBABILITY_CACHE:
+        return ADVANCE_PROBABILITY_CACHE[cache_key]
+
     feature_row = build_feature_row(team_a, team_b, teams_map)
-    X = pd.DataFrame([feature_row])[FEATURE_COLUMNS]
+    feature_columns = list(
+        getattr(model, "feature_names_in_", FEATURE_COLUMNS)
+    )
+    X = pd.DataFrame([feature_row], columns=feature_columns)
 
     proba = model.predict_proba(X)[0]
     class_to_prob = dict(zip(model.classes_, proba))
@@ -392,7 +430,9 @@ def get_knockout_advance_prob(model, team_a, team_b, teams_map):
     if total == 0:
         return 0.5
 
-    return a_advance / total
+    advance_probability = a_advance / total
+    ADVANCE_PROBABILITY_CACHE[cache_key] = advance_probability
+    return advance_probability
 
 
 def play_knockout_match(model, team_a, team_b, teams_map):
@@ -482,6 +522,7 @@ def run_tournament_once(predictions_by_group, model, teams_map):
 
 def main():
     random.seed(RANDOM_SEED)
+    ADVANCE_PROBABILITY_CACHE.clear()
 
     predictions = load_json(PREDICTIONS_PATH)
     teams_map = load_teams_map()

@@ -51,6 +51,7 @@ def create_completed_results(matches):
         results.append(
             {
                 "date": match["date"].date().isoformat(),
+                "tournament": match["tournament"],
                 "homeTeam": home_team,
                 "awayTeam": away_team,
                 "normalizedHomeTeam": normalize_team_name(home_team),

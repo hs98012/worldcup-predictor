@@ -85,21 +85,22 @@ def calculate_recent_form(team_matches, team_name, n=5):
 
     match_count = len(recent)
 
-    if match_count == 0:
-        return {
-            "recentForm": "",
-            "recentPoints5": 0,
-            "recentGoalDiff5": 0,
-            "recentAvgGoalsFor5": 0,
-            "recentAvgGoalsAgainst5": 0,
-        }
-
     return {
-        "recentForm": "-".join(form),
-        "recentPoints5": points,
-        "recentGoalDiff5": int(goals_for - goals_against),
-        "recentAvgGoalsFor5": round(goals_for / match_count, 2),
-        "recentAvgGoalsAgainst5": round(goals_against / match_count, 2),
+        f"recentForm{n}": "-".join(form),
+        f"recentPoints{n}": points,
+        f"recentWinRate{n}": round(
+            form.count("W") / match_count if match_count else 0,
+            4,
+        ),
+        f"recentGoalDiff{n}": int(goals_for - goals_against),
+        f"recentAvgGoalsFor{n}": round(
+            goals_for / match_count if match_count else 0,
+            2,
+        ),
+        f"recentAvgGoalsAgainst{n}": round(
+            goals_against / match_count if match_count else 0,
+            2,
+        ),
     }
 
 
@@ -143,14 +144,17 @@ def main():
             (df["home_team"] == team_name) | (df["away_team"] == team_name)
         ]
 
-        recent_form = calculate_recent_form(team_matches, team_name, n=5)
+        recent_form5 = calculate_recent_form(team_matches, team_name, n=5)
+        recent_form10 = calculate_recent_form(team_matches, team_name, n=10)
 
         teams.append(
             {
                 "team": team_name,
                 "elo": round(team_elo, 2),
                 "matches": match_counts[team_name],
-                **recent_form,
+                "recentForm": recent_form5["recentForm5"],
+                **recent_form5,
+                **recent_form10,
             }
         )
 

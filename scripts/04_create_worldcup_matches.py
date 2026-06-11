@@ -10,6 +10,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 TEAMS_PATH = PROJECT_ROOT / "data/processed/teams.json"
 UPCOMING_PATH = PROJECT_ROOT / "data/processed/upcoming_fixtures.csv"
 OUTPUT_PATH = PROJECT_ROOT / "data/processed/matches.json"
+WORLD_CUP_YEAR = 2026
 
 
 def load_team_names():
@@ -50,7 +51,18 @@ def resolve_team_name(display_name, normalized_name, team_names):
 
 def main():
     team_names = load_team_names()
-    upcoming_fixtures = pd.read_csv(UPCOMING_PATH, dtype={"date": str})
+    upcoming_fixtures = pd.read_csv(UPCOMING_PATH)
+    upcoming_fixtures["date"] = pd.to_datetime(
+        upcoming_fixtures["date"],
+        errors="coerce",
+    )
+    upcoming_fixtures = upcoming_fixtures[
+        upcoming_fixtures["tournament"].eq("FIFA World Cup")
+        & upcoming_fixtures["date"].dt.year.eq(WORLD_CUP_YEAR)
+    ].copy()
+    upcoming_fixtures["date"] = upcoming_fixtures["date"].dt.strftime(
+        "%Y-%m-%d"
+    )
     group_map = build_group_map()
 
     matches = []

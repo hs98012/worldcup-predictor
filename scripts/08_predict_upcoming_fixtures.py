@@ -14,6 +14,7 @@ UPCOMING_PATH = PROJECT_ROOT / "data/processed/upcoming_fixtures.csv"
 MODEL_PATH = PROJECT_ROOT / "models/sklearn_match_result_model.joblib"
 OUTPUT_PATH = PROJECT_ROOT / "data/processed/fixture_predictions.json"
 TRAINING_SCRIPT_PATH = PROJECT_ROOT / "scripts/05_train_sklearn_model.py"
+WORLD_CUP_YEAR = 2026
 
 
 def load_training_module():
@@ -64,8 +65,17 @@ def get_predicted_result(home_win, draw, away_win):
 
 def main():
     training = load_training_module()
-    fixtures = pd.read_csv(UPCOMING_PATH, dtype={"date": str})
+    fixtures = pd.read_csv(UPCOMING_PATH)
+    fixtures["date"] = pd.to_datetime(fixtures["date"], errors="coerce")
+    fixtures = fixtures[
+        fixtures["tournament"].eq("FIFA World Cup")
+        & fixtures["date"].dt.year.eq(WORLD_CUP_YEAR)
+    ].copy()
+    fixtures["date"] = fixtures["date"].dt.strftime("%Y-%m-%d")
     model = joblib.load(MODEL_PATH)
+    feature_columns = list(
+        getattr(model, "feature_names_in_", training.FEATURE_COLUMNS)
+    )
 
     completed_matches = training.load_matches()
     _, _, _, elo, recent_history = training.build_training_dataset(
@@ -102,10 +112,11 @@ def main():
             recent_history=recent_history,
             is_neutral=True,
             team_a_home_advantage=model_home in training.HOST_TEAMS,
+            tournament=fixture["tournament"],
         )
         feature_frame = pd.DataFrame(
             [feature_row],
-            columns=training.FEATURE_COLUMNS,
+            columns=feature_columns,
         )
 
         probabilities = model.predict_proba(feature_frame)[0]

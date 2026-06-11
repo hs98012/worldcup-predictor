@@ -6,9 +6,9 @@
     "normalizedHomeTeam": "Mexico",
     "normalizedAwayTeam": "South Africa",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.6248,
-    "drawProb": 0.3149,
-    "awayWinProb": 0.0603,
+    "homeWinProb": 0.62,
+    "drawProb": 0.236,
+    "awayWinProb": 0.144,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -18,10 +18,10 @@
     "normalizedHomeTeam": "Korea Republic",
     "normalizedAwayTeam": "Czech Republic",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.3984,
-    "drawProb": 0.405,
-    "awayWinProb": 0.1966,
-    "predictedResult": "DRAW"
+    "homeWinProb": 0.4621,
+    "drawProb": 0.2529,
+    "awayWinProb": 0.285,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-12",
@@ -30,9 +30,9 @@
     "normalizedHomeTeam": "Canada",
     "normalizedAwayTeam": "Bosnia and Herzegovina",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.7624,
-    "drawProb": 0.2109,
-    "awayWinProb": 0.0267,
+    "homeWinProb": 0.6043,
+    "drawProb": 0.2682,
+    "awayWinProb": 0.1275,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -42,9 +42,9 @@
     "normalizedHomeTeam": "United States",
     "normalizedAwayTeam": "Paraguay",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.3902,
-    "drawProb": 0.3595,
-    "awayWinProb": 0.2503,
+    "homeWinProb": 0.5286,
+    "drawProb": 0.2274,
+    "awayWinProb": 0.2441,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -54,9 +54,9 @@
     "normalizedHomeTeam": "Qatar",
     "normalizedAwayTeam": "Switzerland",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0185,
-    "drawProb": 0.1719,
-    "awayWinProb": 0.8096,
+    "homeWinProb": 0.2205,
+    "drawProb": 0.2425,
+    "awayWinProb": 0.537,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -66,9 +66,9 @@
     "normalizedHomeTeam": "Brazil",
     "normalizedAwayTeam": "Morocco",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0397,
-    "drawProb": 0.274,
-    "awayWinProb": 0.6863,
+    "homeWinProb": 0.2914,
+    "drawProb": 0.238,
+    "awayWinProb": 0.4706,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -78,9 +78,9 @@
     "normalizedHomeTeam": "Haiti",
     "normalizedAwayTeam": "Scotland",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.1525,
-    "drawProb": 0.3615,
-    "awayWinProb": 0.4859,
+    "homeWinProb": 0.3389,
+    "drawProb": 0.2516,
+    "awayWinProb": 0.4096,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -90,9 +90,9 @@
     "normalizedHomeTeam": "Australia",
     "normalizedAwayTeam": "Turkey",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.1286,
-    "drawProb": 0.3977,
-    "awayWinProb": 0.4737,
+    "homeWinProb": 0.3079,
+    "drawProb": 0.233,
+    "awayWinProb": 0.4591,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -102,9 +102,9 @@
     "normalizedHomeTeam": "Germany",
     "normalizedAwayTeam": "Curaçao",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.9067,
-    "drawProb": 0.0855,
-    "awayWinProb": 0.0078,
+    "homeWinProb": 0.7077,
+    "drawProb": 0.1657,
+    "awayWinProb": 0.1266,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -114,10 +114,10 @@
     "normalizedHomeTeam": "Ivory Coast",
     "normalizedAwayTeam": "Ecuador",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2072,
-    "drawProb": 0.4385,
-    "awayWinProb": 0.3543,
-    "predictedResult": "DRAW"
+    "homeWinProb": 0.4683,
+    "drawProb": 0.2781,
+    "awayWinProb": 0.2536,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-14",
@@ -126,9 +126,9 @@
     "normalizedHomeTeam": "Netherlands",
     "normalizedAwayTeam": "Japan",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0634,
-    "drawProb": 0.3746,
-    "awayWinProb": 0.562,
+    "homeWinProb": 0.3144,
+    "drawProb": 0.3056,
+    "awayWinProb": 0.38,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -138,9 +138,9 @@
     "normalizedHomeTeam": "Sweden",
     "normalizedAwayTeam": "Tunisia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.1533,
-    "drawProb": 0.3276,
-    "awayWinProb": 0.5191,
+    "homeWinProb": 0.3618,
+    "drawProb": 0.2546,
+    "awayWinProb": 0.3836,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -150,10 +150,10 @@
     "normalizedHomeTeam": "Belgium",
     "normalizedAwayTeam": "Egypt",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2363,
-    "drawProb": 0.417,
-    "awayWinProb": 0.3467,
-    "predictedResult": "DRAW"
+    "homeWinProb": 0.5497,
+    "drawProb": 0.2624,
+    "awayWinProb": 0.1878,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-15",
@@ -162,9 +162,9 @@
     "normalizedHomeTeam": "Iran",
     "normalizedAwayTeam": "New Zealand",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.8596,
-    "drawProb": 0.1271,
-    "awayWinProb": 0.0133,
+    "homeWinProb": 0.6837,
+    "drawProb": 0.2016,
+    "awayWinProb": 0.1147,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -174,9 +174,9 @@
     "normalizedHomeTeam": "Spain",
     "normalizedAwayTeam": "Cape Verde",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.8828,
-    "drawProb": 0.1096,
-    "awayWinProb": 0.0076,
+    "homeWinProb": 0.6484,
+    "drawProb": 0.2288,
+    "awayWinProb": 0.1228,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -186,9 +186,9 @@
     "normalizedHomeTeam": "Saudi Arabia",
     "normalizedAwayTeam": "Uruguay",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.089,
-    "drawProb": 0.3016,
-    "awayWinProb": 0.6094,
+    "homeWinProb": 0.3009,
+    "drawProb": 0.2545,
+    "awayWinProb": 0.4446,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -198,10 +198,10 @@
     "normalizedHomeTeam": "France",
     "normalizedAwayTeam": "Senegal",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2714,
-    "drawProb": 0.4271,
-    "awayWinProb": 0.3015,
-    "predictedResult": "DRAW"
+    "homeWinProb": 0.5767,
+    "drawProb": 0.2249,
+    "awayWinProb": 0.1984,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-16",
@@ -210,9 +210,9 @@
     "normalizedHomeTeam": "Iraq",
     "normalizedAwayTeam": "Norway",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0944,
-    "drawProb": 0.359,
-    "awayWinProb": 0.5466,
+    "homeWinProb": 0.2494,
+    "drawProb": 0.2925,
+    "awayWinProb": 0.4581,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -222,10 +222,10 @@
     "normalizedHomeTeam": "Argentina",
     "normalizedAwayTeam": "Algeria",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.3084,
-    "drawProb": 0.487,
-    "awayWinProb": 0.2045,
-    "predictedResult": "DRAW"
+    "homeWinProb": 0.5699,
+    "drawProb": 0.2364,
+    "awayWinProb": 0.1937,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-16",
@@ -234,9 +234,9 @@
     "normalizedHomeTeam": "Austria",
     "normalizedAwayTeam": "Jordan",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.5412,
-    "drawProb": 0.3262,
-    "awayWinProb": 0.1327,
+    "homeWinProb": 0.6879,
+    "drawProb": 0.1896,
+    "awayWinProb": 0.1225,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -246,9 +246,9 @@
     "normalizedHomeTeam": "Portugal",
     "normalizedAwayTeam": "DR Congo",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.566,
-    "drawProb": 0.3414,
-    "awayWinProb": 0.0926,
+    "homeWinProb": 0.613,
+    "drawProb": 0.2425,
+    "awayWinProb": 0.1445,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -258,9 +258,9 @@
     "normalizedHomeTeam": "Uzbekistan",
     "normalizedAwayTeam": "Colombia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0591,
-    "drawProb": 0.2864,
-    "awayWinProb": 0.6545,
+    "homeWinProb": 0.2846,
+    "drawProb": 0.2636,
+    "awayWinProb": 0.4519,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -270,10 +270,10 @@
     "normalizedHomeTeam": "England",
     "normalizedAwayTeam": "Croatia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.3546,
-    "drawProb": 0.4372,
-    "awayWinProb": 0.2082,
-    "predictedResult": "DRAW"
+    "homeWinProb": 0.615,
+    "drawProb": 0.2296,
+    "awayWinProb": 0.1553,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-17",
@@ -282,9 +282,9 @@
     "normalizedHomeTeam": "Ghana",
     "normalizedAwayTeam": "Panama",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0406,
-    "drawProb": 0.1831,
-    "awayWinProb": 0.7763,
+    "homeWinProb": 0.2697,
+    "drawProb": 0.2099,
+    "awayWinProb": 0.5204,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -294,10 +294,10 @@
     "normalizedHomeTeam": "Czech Republic",
     "normalizedAwayTeam": "South Africa",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2783,
-    "drawProb": 0.3683,
-    "awayWinProb": 0.3534,
-    "predictedResult": "DRAW"
+    "homeWinProb": 0.5802,
+    "drawProb": 0.229,
+    "awayWinProb": 0.1908,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-18",
@@ -306,10 +306,10 @@
     "normalizedHomeTeam": "Mexico",
     "normalizedAwayTeam": "Korea Republic",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2887,
-    "drawProb": 0.4686,
-    "awayWinProb": 0.2427,
-    "predictedResult": "DRAW"
+    "homeWinProb": 0.5812,
+    "drawProb": 0.2465,
+    "awayWinProb": 0.1723,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-18",
@@ -318,9 +318,9 @@
     "normalizedHomeTeam": "Switzerland",
     "normalizedAwayTeam": "Bosnia and Herzegovina",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.7318,
-    "drawProb": 0.2231,
-    "awayWinProb": 0.0451,
+    "homeWinProb": 0.6071,
+    "drawProb": 0.2614,
+    "awayWinProb": 0.1315,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -330,9 +330,9 @@
     "normalizedHomeTeam": "Canada",
     "normalizedAwayTeam": "Qatar",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.7415,
-    "drawProb": 0.2251,
-    "awayWinProb": 0.0334,
+    "homeWinProb": 0.6609,
+    "drawProb": 0.2277,
+    "awayWinProb": 0.1113,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -342,9 +342,9 @@
     "normalizedHomeTeam": "Scotland",
     "normalizedAwayTeam": "Morocco",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0027,
-    "drawProb": 0.0801,
-    "awayWinProb": 0.9173,
+    "homeWinProb": 0.2583,
+    "drawProb": 0.2187,
+    "awayWinProb": 0.523,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -354,9 +354,9 @@
     "normalizedHomeTeam": "Brazil",
     "normalizedAwayTeam": "Haiti",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.7474,
-    "drawProb": 0.2151,
-    "awayWinProb": 0.0376,
+    "homeWinProb": 0.6152,
+    "drawProb": 0.2281,
+    "awayWinProb": 0.1567,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -366,9 +366,9 @@
     "normalizedHomeTeam": "United States",
     "normalizedAwayTeam": "Australia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.1341,
-    "drawProb": 0.3266,
-    "awayWinProb": 0.5393,
+    "homeWinProb": 0.2835,
+    "drawProb": 0.2297,
+    "awayWinProb": 0.4869,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -378,9 +378,9 @@
     "normalizedHomeTeam": "Turkey",
     "normalizedAwayTeam": "Paraguay",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.4966,
-    "drawProb": 0.3761,
-    "awayWinProb": 0.1273,
+    "homeWinProb": 0.6029,
+    "drawProb": 0.239,
+    "awayWinProb": 0.1581,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -390,10 +390,10 @@
     "normalizedHomeTeam": "Germany",
     "normalizedAwayTeam": "Ivory Coast",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2656,
-    "drawProb": 0.4215,
-    "awayWinProb": 0.3129,
-    "predictedResult": "DRAW"
+    "homeWinProb": 0.5813,
+    "drawProb": 0.2449,
+    "awayWinProb": 0.1738,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-20",
@@ -402,9 +402,9 @@
     "normalizedHomeTeam": "Ecuador",
     "normalizedAwayTeam": "Curaçao",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.8187,
-    "drawProb": 0.159,
-    "awayWinProb": 0.0223,
+    "homeWinProb": 0.6116,
+    "drawProb": 0.2594,
+    "awayWinProb": 0.129,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -414,9 +414,9 @@
     "normalizedHomeTeam": "Netherlands",
     "normalizedAwayTeam": "Sweden",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.6616,
-    "drawProb": 0.2728,
-    "awayWinProb": 0.0656,
+    "homeWinProb": 0.6237,
+    "drawProb": 0.2311,
+    "awayWinProb": 0.1452,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -426,9 +426,9 @@
     "normalizedHomeTeam": "Tunisia",
     "normalizedAwayTeam": "Japan",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0081,
-    "drawProb": 0.1586,
-    "awayWinProb": 0.8333,
+    "homeWinProb": 0.1826,
+    "drawProb": 0.21,
+    "awayWinProb": 0.6074,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -438,10 +438,10 @@
     "normalizedHomeTeam": "Belgium",
     "normalizedAwayTeam": "Iran",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.1259,
-    "drawProb": 0.3697,
-    "awayWinProb": 0.5044,
-    "predictedResult": "AWAY_WIN"
+    "homeWinProb": 0.3774,
+    "drawProb": 0.2847,
+    "awayWinProb": 0.3379,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-21",
@@ -450,9 +450,9 @@
     "normalizedHomeTeam": "New Zealand",
     "normalizedAwayTeam": "Egypt",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0085,
-    "drawProb": 0.1235,
-    "awayWinProb": 0.868,
+    "homeWinProb": 0.1917,
+    "drawProb": 0.1943,
+    "awayWinProb": 0.614,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -462,9 +462,9 @@
     "normalizedHomeTeam": "Spain",
     "normalizedAwayTeam": "Saudi Arabia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.8419,
-    "drawProb": 0.1454,
-    "awayWinProb": 0.0127,
+    "homeWinProb": 0.6528,
+    "drawProb": 0.2146,
+    "awayWinProb": 0.1326,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -474,9 +474,9 @@
     "normalizedHomeTeam": "Uruguay",
     "normalizedAwayTeam": "Cape Verde",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.4842,
-    "drawProb": 0.3505,
-    "awayWinProb": 0.1653,
+    "homeWinProb": 0.5343,
+    "drawProb": 0.2577,
+    "awayWinProb": 0.208,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -486,9 +486,9 @@
     "normalizedHomeTeam": "France",
     "normalizedAwayTeam": "Iraq",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.61,
-    "drawProb": 0.3129,
-    "awayWinProb": 0.0771,
+    "homeWinProb": 0.6126,
+    "drawProb": 0.2305,
+    "awayWinProb": 0.1568,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -498,10 +498,10 @@
     "normalizedHomeTeam": "Norway",
     "normalizedAwayTeam": "Senegal",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.083,
-    "drawProb": 0.3271,
-    "awayWinProb": 0.59,
-    "predictedResult": "AWAY_WIN"
+    "homeWinProb": 0.3839,
+    "drawProb": 0.2406,
+    "awayWinProb": 0.3755,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-22",
@@ -510,9 +510,9 @@
     "normalizedHomeTeam": "Argentina",
     "normalizedAwayTeam": "Austria",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.583,
-    "drawProb": 0.3518,
-    "awayWinProb": 0.0652,
+    "homeWinProb": 0.5281,
+    "drawProb": 0.2608,
+    "awayWinProb": 0.2111,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -522,9 +522,9 @@
     "normalizedHomeTeam": "Jordan",
     "normalizedAwayTeam": "Algeria",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0078,
-    "drawProb": 0.1135,
-    "awayWinProb": 0.8788,
+    "homeWinProb": 0.1869,
+    "drawProb": 0.2154,
+    "awayWinProb": 0.5977,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -534,9 +534,9 @@
     "normalizedHomeTeam": "Portugal",
     "normalizedAwayTeam": "Uzbekistan",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.5301,
-    "drawProb": 0.3475,
-    "awayWinProb": 0.1224,
+    "homeWinProb": 0.663,
+    "drawProb": 0.2132,
+    "awayWinProb": 0.1238,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -546,9 +546,9 @@
     "normalizedHomeTeam": "Colombia",
     "normalizedAwayTeam": "DR Congo",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.4414,
-    "drawProb": 0.3966,
-    "awayWinProb": 0.162,
+    "homeWinProb": 0.5913,
+    "drawProb": 0.2362,
+    "awayWinProb": 0.1725,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -558,9 +558,9 @@
     "normalizedHomeTeam": "England",
     "normalizedAwayTeam": "Ghana",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.8762,
-    "drawProb": 0.1149,
-    "awayWinProb": 0.0089,
+    "homeWinProb": 0.6969,
+    "drawProb": 0.191,
+    "awayWinProb": 0.1121,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -570,9 +570,9 @@
     "normalizedHomeTeam": "Panama",
     "normalizedAwayTeam": "Croatia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.065,
-    "drawProb": 0.2431,
-    "awayWinProb": 0.6919,
+    "homeWinProb": 0.2608,
+    "drawProb": 0.2076,
+    "awayWinProb": 0.5316,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -582,9 +582,9 @@
     "normalizedHomeTeam": "Mexico",
     "normalizedAwayTeam": "Czech Republic",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.5538,
-    "drawProb": 0.3549,
-    "awayWinProb": 0.0914,
+    "homeWinProb": 0.5339,
+    "drawProb": 0.2545,
+    "awayWinProb": 0.2116,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -594,9 +594,9 @@
     "normalizedHomeTeam": "South Africa",
     "normalizedAwayTeam": "Korea Republic",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0423,
-    "drawProb": 0.2695,
-    "awayWinProb": 0.6881,
+    "homeWinProb": 0.2907,
+    "drawProb": 0.2347,
+    "awayWinProb": 0.4746,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -606,10 +606,10 @@
     "normalizedHomeTeam": "Canada",
     "normalizedAwayTeam": "Switzerland",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2403,
-    "drawProb": 0.439,
-    "awayWinProb": 0.3208,
-    "predictedResult": "DRAW"
+    "homeWinProb": 0.4285,
+    "drawProb": 0.2981,
+    "awayWinProb": 0.2733,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-24",
@@ -618,10 +618,10 @@
     "normalizedHomeTeam": "Bosnia and Herzegovina",
     "normalizedAwayTeam": "Qatar",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.2202,
-    "drawProb": 0.379,
-    "awayWinProb": 0.4008,
-    "predictedResult": "AWAY_WIN"
+    "homeWinProb": 0.4474,
+    "drawProb": 0.3105,
+    "awayWinProb": 0.2421,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-24",
@@ -630,9 +630,9 @@
     "normalizedHomeTeam": "Scotland",
     "normalizedAwayTeam": "Brazil",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.014,
-    "drawProb": 0.148,
-    "awayWinProb": 0.8379,
+    "homeWinProb": 0.2647,
+    "drawProb": 0.2395,
+    "awayWinProb": 0.4958,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -642,9 +642,9 @@
     "normalizedHomeTeam": "Morocco",
     "normalizedAwayTeam": "Haiti",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.8666,
-    "drawProb": 0.1248,
-    "awayWinProb": 0.0085,
+    "homeWinProb": 0.6482,
+    "drawProb": 0.2244,
+    "awayWinProb": 0.1274,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -654,9 +654,9 @@
     "normalizedHomeTeam": "United States",
     "normalizedAwayTeam": "Turkey",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0947,
-    "drawProb": 0.3145,
-    "awayWinProb": 0.5908,
+    "homeWinProb": 0.2347,
+    "drawProb": 0.253,
+    "awayWinProb": 0.5123,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -666,9 +666,9 @@
     "normalizedHomeTeam": "Paraguay",
     "normalizedAwayTeam": "Australia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0558,
-    "drawProb": 0.2739,
-    "awayWinProb": 0.6703,
+    "homeWinProb": 0.309,
+    "drawProb": 0.2474,
+    "awayWinProb": 0.4436,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -678,9 +678,9 @@
     "normalizedHomeTeam": "Curaçao",
     "normalizedAwayTeam": "Ivory Coast",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0042,
-    "drawProb": 0.0807,
-    "awayWinProb": 0.9151,
+    "homeWinProb": 0.2067,
+    "drawProb": 0.2364,
+    "awayWinProb": 0.5569,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -690,9 +690,9 @@
     "normalizedHomeTeam": "Ecuador",
     "normalizedAwayTeam": "Germany",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0617,
-    "drawProb": 0.3303,
-    "awayWinProb": 0.608,
+    "homeWinProb": 0.2592,
+    "drawProb": 0.2169,
+    "awayWinProb": 0.5239,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -702,9 +702,9 @@
     "normalizedHomeTeam": "Japan",
     "normalizedAwayTeam": "Sweden",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.7597,
-    "drawProb": 0.2153,
-    "awayWinProb": 0.025,
+    "homeWinProb": 0.6368,
+    "drawProb": 0.2336,
+    "awayWinProb": 0.1296,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -714,9 +714,9 @@
     "normalizedHomeTeam": "Tunisia",
     "normalizedAwayTeam": "Netherlands",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0244,
-    "drawProb": 0.2239,
-    "awayWinProb": 0.7517,
+    "homeWinProb": 0.2278,
+    "drawProb": 0.2192,
+    "awayWinProb": 0.553,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -726,9 +726,9 @@
     "normalizedHomeTeam": "Egypt",
     "normalizedAwayTeam": "Iran",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0844,
-    "drawProb": 0.3919,
-    "awayWinProb": 0.5237,
+    "homeWinProb": 0.2868,
+    "drawProb": 0.2935,
+    "awayWinProb": 0.4197,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -738,9 +738,9 @@
     "normalizedHomeTeam": "New Zealand",
     "normalizedAwayTeam": "Belgium",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0049,
-    "drawProb": 0.093,
-    "awayWinProb": 0.9021,
+    "homeWinProb": 0.1697,
+    "drawProb": 0.2096,
+    "awayWinProb": 0.6207,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -750,10 +750,10 @@
     "normalizedHomeTeam": "Cape Verde",
     "normalizedAwayTeam": "Saudi Arabia",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.1616,
-    "drawProb": 0.3236,
-    "awayWinProb": 0.5148,
-    "predictedResult": "AWAY_WIN"
+    "homeWinProb": 0.3689,
+    "drawProb": 0.2745,
+    "awayWinProb": 0.3566,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-26",
@@ -762,9 +762,9 @@
     "normalizedHomeTeam": "Uruguay",
     "normalizedAwayTeam": "Spain",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0064,
-    "drawProb": 0.1331,
-    "awayWinProb": 0.8605,
+    "homeWinProb": 0.2072,
+    "drawProb": 0.217,
+    "awayWinProb": 0.5759,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -774,9 +774,9 @@
     "normalizedHomeTeam": "Norway",
     "normalizedAwayTeam": "France",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.035,
-    "drawProb": 0.2487,
-    "awayWinProb": 0.7163,
+    "homeWinProb": 0.3158,
+    "drawProb": 0.2439,
+    "awayWinProb": 0.4403,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -786,9 +786,9 @@
     "normalizedHomeTeam": "Senegal",
     "normalizedAwayTeam": "Iraq",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.4712,
-    "drawProb": 0.382,
-    "awayWinProb": 0.1468,
+    "homeWinProb": 0.5463,
+    "drawProb": 0.2673,
+    "awayWinProb": 0.1863,
     "predictedResult": "HOME_WIN"
   },
   {
@@ -798,10 +798,10 @@
     "normalizedHomeTeam": "Algeria",
     "normalizedAwayTeam": "Austria",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.3738,
-    "drawProb": 0.4545,
-    "awayWinProb": 0.1718,
-    "predictedResult": "DRAW"
+    "homeWinProb": 0.4604,
+    "drawProb": 0.2675,
+    "awayWinProb": 0.2721,
+    "predictedResult": "HOME_WIN"
   },
   {
     "date": "2026-06-27",
@@ -810,9 +810,9 @@
     "normalizedHomeTeam": "Jordan",
     "normalizedAwayTeam": "Argentina",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0016,
-    "drawProb": 0.0583,
-    "awayWinProb": 0.9401,
+    "homeWinProb": 0.1692,
+    "drawProb": 0.2016,
+    "awayWinProb": 0.6292,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -822,9 +822,9 @@
     "normalizedHomeTeam": "Colombia",
     "normalizedAwayTeam": "Portugal",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0878,
-    "drawProb": 0.3537,
-    "awayWinProb": 0.5585,
+    "homeWinProb": 0.3327,
+    "drawProb": 0.2553,
+    "awayWinProb": 0.412,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -834,9 +834,9 @@
     "normalizedHomeTeam": "DR Congo",
     "normalizedAwayTeam": "Uzbekistan",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.1607,
-    "drawProb": 0.4032,
-    "awayWinProb": 0.4361,
+    "homeWinProb": 0.3327,
+    "drawProb": 0.2751,
+    "awayWinProb": 0.3923,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -846,9 +846,9 @@
     "normalizedHomeTeam": "Panama",
     "normalizedAwayTeam": "England",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.0169,
-    "drawProb": 0.1701,
-    "awayWinProb": 0.813,
+    "homeWinProb": 0.1959,
+    "drawProb": 0.1883,
+    "awayWinProb": 0.6158,
     "predictedResult": "AWAY_WIN"
   },
   {
@@ -858,9 +858,9 @@
     "normalizedHomeTeam": "Croatia",
     "normalizedAwayTeam": "Ghana",
     "tournament": "FIFA World Cup",
-    "homeWinProb": 0.7886,
-    "drawProb": 0.1757,
-    "awayWinProb": 0.0357,
+    "homeWinProb": 0.6301,
+    "drawProb": 0.214,
+    "awayWinProb": 0.1559,
     "predictedResult": "HOME_WIN"
   }
 ]

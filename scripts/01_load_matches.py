@@ -9,16 +9,20 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 BASE_PATH = PROJECT_ROOT / "data/raw/results.csv"
 COMPLETED_PATH = PROJECT_ROOT / "data/processed/completed_matches.csv"
 UPCOMING_PATH = PROJECT_ROOT / "data/processed/upcoming_fixtures.csv"
+WORLD_CUP_YEAR = 2026
 
 
 def load_matches():
     df = pd.read_csv(BASE_PATH)
+    match_dates = pd.to_datetime(df["date"], errors="coerce")
 
     completed_matches = df.dropna(
         subset=["home_score", "away_score"]
     ).copy()
     upcoming_fixtures = df[
         df[["home_score", "away_score"]].isna().any(axis=1)
+        & df["tournament"].eq("FIFA World Cup")
+        & match_dates.dt.year.eq(WORLD_CUP_YEAR)
     ].copy()
 
     completed_matches["normalized_home_team"] = completed_matches[

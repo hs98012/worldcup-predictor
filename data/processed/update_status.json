@@ -2,12 +2,12 @@
   "changed": false,
   "changed_fields": [],
   "source_url": "https://raw.githubusercontent.com/martj42/international_results/refs/heads/master/results.csv",
-  "row_count": 49450,
+  "row_count": 49477,
   "latest_date": "2026-06-27",
-  "hash": "208834ed9039fbe6ab61612894d58b467925eb11c65655c307148d92b00423c2",
+  "hash": "50f17eb331a3d8367184f3314cf41616782f842ebb39e42191260b414b56bc78",
   "previous": {
-    "hash": "208834ed9039fbe6ab61612894d58b467925eb11c65655c307148d92b00423c2",
-    "row_count": 49450,
+    "hash": "50f17eb331a3d8367184f3314cf41616782f842ebb39e42191260b414b56bc78",
+    "row_count": 49477,
     "latest_date": "2026-06-27"
   }
 }

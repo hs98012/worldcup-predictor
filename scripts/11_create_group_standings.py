@@ -1,4 +1,5 @@
 import json
+from datetime import date
 from pathlib import Path
 
 from utils.team_aliases import normalize_team_name
@@ -8,6 +9,7 @@ from utils.worldcup_groups import WORLD_CUP_FIXTURES, WORLD_CUP_GROUPS
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 RESULTS_PATH = PROJECT_ROOT / "data/processed/worldcup_completed_results.json"
 OUTPUT_PATH = PROJECT_ROOT / "data/processed/worldcup_group_standings.json"
+WORLD_CUP_YEAR = 2026
 
 
 def init_team(display_name):
@@ -51,6 +53,18 @@ def apply_result(home, away, home_score, away_score):
     away["goalDifference"] = away["goalsFor"] - away["goalsAgainst"]
 
 
+def is_2026_world_cup_result(match):
+    try:
+        match_year = date.fromisoformat(match["date"]).year
+    except (KeyError, TypeError, ValueError):
+        return False
+
+    return (
+        match.get("tournament") == "FIFA World Cup"
+        and match_year == WORLD_CUP_YEAR
+    )
+
+
 def create_group_standings(completed_results):
     groups = {}
     fixture_groups = {
@@ -75,7 +89,7 @@ def create_group_standings(completed_results):
 
         groups[group] = group_teams
 
-    for match in completed_results:
+    for match in filter(is_2026_world_cup_result, completed_results):
         home_name = match["normalizedHomeTeam"]
         away_name = match["normalizedAwayTeam"]
         fixture_key = (

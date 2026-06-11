@@ -62,7 +62,7 @@ def main():
         }
 
     model_summary = {
-        "modelName": "scikit-learn LogisticRegression",
+        "modelName": f"scikit-learn {metrics['selectedModel']}",
         "task": "A_WIN / DRAW / B_WIN multiclass classification",
         "accuracy": percent(metrics["accuracy"]),
         "logLoss": metrics["logLoss"],
@@ -74,7 +74,7 @@ def main():
             metrics["classificationReport"]["DRAW"]["recall"],
             4,
         ),
-        "note": "DRAW 예측 성능이 낮아 별도 무승부 보정 로직을 적용했습니다.",
+        "note": metrics["selectionReason"],
     }
 
     group_round32_summary = []
