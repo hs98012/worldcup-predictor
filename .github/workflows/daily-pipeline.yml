@@ -32,12 +32,16 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- \
-            data/raw/results.csv \
-            data/processed/ \
-            models/ \
-            frontend/public/data/ \
-            ':(exclude)data/processed/update_status.json'
+
+          git add data/raw/results.csv
+          git add data/processed/
+          git add frontend/public/data/
+
+          if [ -d models ]; then
+            git add models/
+          fi
+
+          git reset -- data/processed/update_status.json || true
 
           if git diff --cached --quiet; then
             echo "커밋할 실제 예측 데이터, 모델 또는 프론트엔드 데이터 변경이 없습니다."
