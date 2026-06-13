@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "date": "2026-06-11",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Mexico",
+    "awayTeam": "South Africa",
+    "normalizedHomeTeam": "Mexico",
+    "normalizedAwayTeam": "South Africa",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-11",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "South Korea",
+    "awayTeam": "Czech Republic",
+    "normalizedHomeTeam": "Korea Republic",
+    "normalizedAwayTeam": "Czech Republic",
+    "homeScore": 2,
+    "awayScore": 1,
+    "result": "HOME_WIN"
+  }
+]

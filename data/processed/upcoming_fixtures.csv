@@ -1,6 +1,4 @@
 date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,normalized_home_team,normalized_away_team
-2026-06-11,Mexico,South Africa,,,FIFA World Cup,Mexico City,Mexico,False,Mexico,South Africa
-2026-06-11,South Korea,Czech Republic,,,FIFA World Cup,Zapopan,Mexico,True,Korea Republic,Czech Republic
 2026-06-12,Canada,Bosnia and Herzegovina,,,FIFA World Cup,Toronto,Canada,False,Canada,Bosnia and Herzegovina
 2026-06-12,United States,Paraguay,,,FIFA World Cup,Inglewood,United States,False,United States,Paraguay
 2026-06-13,Qatar,Switzerland,,,FIFA World Cup,Santa Clara,United States,True,Qatar,Switzerland
