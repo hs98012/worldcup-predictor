@@ -20,5 +20,27 @@
     "homeScore": 2,
     "awayScore": 1,
     "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-12",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Canada",
+    "awayTeam": "Bosnia and Herzegovina",
+    "normalizedHomeTeam": "Canada",
+    "normalizedAwayTeam": "Bosnia and Herzegovina",
+    "homeScore": 1,
+    "awayScore": 1,
+    "result": "DRAW"
+  },
+  {
+    "date": "2026-06-12",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "United States",
+    "awayTeam": "Paraguay",
+    "normalizedHomeTeam": "United States",
+    "normalizedAwayTeam": "Paraguay",
+    "homeScore": 4,
+    "awayScore": 1,
+    "result": "HOME_WIN"
   }
 ]

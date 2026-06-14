@@ -58,26 +58,26 @@
       {
         "rank": 1,
         "team": "Bosnia and Herzegovina",
-        "played": 0,
+        "played": 1,
         "wins": 0,
-        "draws": 0,
+        "draws": 1,
         "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
+        "goalsFor": 1,
+        "goalsAgainst": 1,
         "goalDifference": 0,
-        "points": 0
+        "points": 1
       },
       {
         "rank": 2,
         "team": "Canada",
-        "played": 0,
+        "played": 1,
         "wins": 0,
-        "draws": 0,
+        "draws": 1,
         "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
+        "goalsFor": 1,
+        "goalsAgainst": 1,
         "goalDifference": 0,
-        "points": 0
+        "points": 1
       },
       {
         "rank": 3,
@@ -163,19 +163,19 @@
     "teams": [
       {
         "rank": 1,
-        "team": "Australia",
-        "played": 0,
-        "wins": 0,
+        "team": "United States",
+        "played": 1,
+        "wins": 1,
         "draws": 0,
         "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0,
-        "points": 0
+        "goalsFor": 4,
+        "goalsAgainst": 1,
+        "goalDifference": 3,
+        "points": 3
       },
       {
         "rank": 2,
-        "team": "Paraguay",
+        "team": "Australia",
         "played": 0,
         "wins": 0,
         "draws": 0,
@@ -199,14 +199,14 @@
       },
       {
         "rank": 4,
-        "team": "United States",
-        "played": 0,
+        "team": "Paraguay",
+        "played": 1,
         "wins": 0,
         "draws": 0,
-        "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0,
+        "losses": 1,
+        "goalsFor": 1,
+        "goalsAgainst": 4,
+        "goalDifference": -3,
         "points": 0
       }
     ]
