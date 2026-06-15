@@ -2,102 +2,6 @@
   {
     "matchId": 1,
     "stage": "GROUP",
-    "group": "B",
-    "date": "2026-06-13",
-    "teamA": "Qatar",
-    "teamB": "Switzerland",
-    "teamAElo": 1572.9,
-    "teamBElo": 1662.12,
-    "teamARecentForm": "L-D-L-L-D",
-    "teamBRecentForm": "D-L-D-W-D",
-    "teamAWinProb": 0.244,
-    "drawProb": 0.2413,
-    "teamBWinProb": 0.5147,
-    "expectedGoalsA": 1.05,
-    "expectedGoalsB": 1.45,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Switzerland의 Elo 점수가 더 높음",
-      "Switzerland의 최근 5경기 승점이 더 높음",
-      "Qatar 최근 5경기: L-D-L-L-D",
-      "Switzerland 최근 5경기: D-L-D-W-D"
-    ]
-  },
-  {
-    "matchId": 2,
-    "stage": "GROUP",
-    "group": "C",
-    "date": "2026-06-13",
-    "teamA": "Brazil",
-    "teamB": "Morocco",
-    "teamAElo": 1740.35,
-    "teamBElo": 1795.6,
-    "teamARecentForm": "D-L-W-W-W",
-    "teamBRecentForm": "D-W-W-W-D",
-    "teamAWinProb": 0.3036,
-    "drawProb": 0.2554,
-    "teamBWinProb": 0.441,
-    "expectedGoalsA": 1.17,
-    "expectedGoalsB": 1.33,
-    "confidence": "LOW",
-    "reasons": [
-      "Morocco의 Elo 점수가 더 높음",
-      "Morocco의 최근 5경기 승점이 더 높음",
-      "Brazil 최근 5경기: D-L-W-W-W",
-      "Morocco 최근 5경기: D-W-W-W-D"
-    ]
-  },
-  {
-    "matchId": 3,
-    "stage": "GROUP",
-    "group": "C",
-    "date": "2026-06-13",
-    "teamA": "Haiti",
-    "teamB": "Scotland",
-    "teamAElo": 1581.26,
-    "teamBElo": 1591.1,
-    "teamARecentForm": "W-L-D-W-L",
-    "teamBRecentForm": "W-L-L-W-W",
-    "teamAWinProb": 0.332,
-    "drawProb": 0.2754,
-    "teamBWinProb": 0.3925,
-    "expectedGoalsA": 1.18,
-    "expectedGoalsB": 1.32,
-    "confidence": "LOW",
-    "reasons": [
-      "Scotland의 Elo 점수가 더 높음",
-      "Scotland의 최근 5경기 승점이 더 높음",
-      "Haiti 최근 5경기: W-L-D-W-L",
-      "Scotland 최근 5경기: W-L-L-W-W"
-    ]
-  },
-  {
-    "matchId": 4,
-    "stage": "GROUP",
-    "group": "D",
-    "date": "2026-06-13",
-    "teamA": "Australia",
-    "teamB": "Turkey",
-    "teamAElo": 1704.74,
-    "teamBElo": 1658.22,
-    "teamARecentForm": "L-W-W-L-D",
-    "teamBRecentForm": "D-W-W-W-W",
-    "teamAWinProb": 0.3598,
-    "drawProb": 0.2591,
-    "teamBWinProb": 0.3811,
-    "expectedGoalsA": 1.11,
-    "expectedGoalsB": 1.39,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Australia의 Elo 점수가 더 높음",
-      "Turkey의 최근 5경기 승점이 더 높음",
-      "Australia 최근 5경기: L-W-W-L-D",
-      "Turkey 최근 5경기: D-W-W-W-W"
-    ]
-  },
-  {
-    "matchId": 5,
-    "stage": "GROUP",
     "group": "E",
     "date": "2026-06-14",
     "teamA": "Germany",
@@ -120,7 +24,7 @@
     ]
   },
   {
-    "matchId": 6,
+    "matchId": 2,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-14",
@@ -144,7 +48,7 @@
     ]
   },
   {
-    "matchId": 7,
+    "matchId": 3,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-14",
@@ -168,7 +72,7 @@
     ]
   },
   {
-    "matchId": 8,
+    "matchId": 4,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-14",
@@ -192,7 +96,7 @@
     ]
   },
   {
-    "matchId": 9,
+    "matchId": 5,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-15",
@@ -216,7 +120,7 @@
     ]
   },
   {
-    "matchId": 10,
+    "matchId": 6,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-15",
@@ -240,7 +144,7 @@
     ]
   },
   {
-    "matchId": 11,
+    "matchId": 7,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-15",
@@ -264,7 +168,7 @@
     ]
   },
   {
-    "matchId": 12,
+    "matchId": 8,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-15",
@@ -288,7 +192,7 @@
     ]
   },
   {
-    "matchId": 13,
+    "matchId": 9,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-16",
@@ -312,7 +216,7 @@
     ]
   },
   {
-    "matchId": 14,
+    "matchId": 10,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-16",
@@ -336,7 +240,7 @@
     ]
   },
   {
-    "matchId": 15,
+    "matchId": 11,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-16",
@@ -360,7 +264,7 @@
     ]
   },
   {
-    "matchId": 16,
+    "matchId": 12,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-16",
@@ -384,7 +288,7 @@
     ]
   },
   {
-    "matchId": 17,
+    "matchId": 13,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-17",
@@ -408,7 +312,7 @@
     ]
   },
   {
-    "matchId": 18,
+    "matchId": 14,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-17",
@@ -432,7 +336,7 @@
     ]
   },
   {
-    "matchId": 19,
+    "matchId": 15,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-17",
@@ -456,7 +360,7 @@
     ]
   },
   {
-    "matchId": 20,
+    "matchId": 16,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-17",
@@ -480,7 +384,7 @@
     ]
   },
   {
-    "matchId": 21,
+    "matchId": 17,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-18",
@@ -504,7 +408,7 @@
     ]
   },
   {
-    "matchId": 22,
+    "matchId": 18,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-18",
@@ -528,151 +432,151 @@
     ]
   },
   {
-    "matchId": 23,
+    "matchId": 19,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-18",
     "teamA": "Switzerland",
     "teamB": "Bosnia and Herzegovina",
-    "teamAElo": 1662.12,
+    "teamAElo": 1657.78,
     "teamBElo": 1510.62,
-    "teamARecentForm": "D-L-D-W-D",
+    "teamARecentForm": "L-D-W-D-D",
     "teamBRecentForm": "D-D-D-D-D",
-    "teamAWinProb": 0.5618,
-    "drawProb": 0.2175,
-    "teamBWinProb": 0.2207,
+    "teamAWinProb": 0.5566,
+    "drawProb": 0.2191,
+    "teamBWinProb": 0.2243,
     "expectedGoalsA": 1.41,
     "expectedGoalsB": 1.09,
     "confidence": "MEDIUM",
     "reasons": [
       "Switzerland의 Elo 점수가 더 높음",
       "Switzerland의 최근 5경기 승점이 더 높음",
-      "Switzerland 최근 5경기: D-L-D-W-D",
+      "Switzerland 최근 5경기: L-D-W-D-D",
       "Bosnia and Herzegovina 최근 5경기: D-D-D-D-D"
     ]
   },
   {
-    "matchId": 24,
+    "matchId": 20,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-18",
     "teamA": "Canada",
     "teamB": "Qatar",
     "teamAElo": 1649.7,
-    "teamBElo": 1572.9,
+    "teamBElo": 1577.23,
     "teamARecentForm": "D-D-W-D-D",
-    "teamBRecentForm": "L-D-L-L-D",
-    "teamAWinProb": 0.5088,
-    "drawProb": 0.2464,
-    "teamBWinProb": 0.2449,
-    "expectedGoalsA": 1.47,
-    "expectedGoalsB": 1.03,
+    "teamBRecentForm": "D-L-L-D-D",
+    "teamAWinProb": 0.4932,
+    "drawProb": 0.2481,
+    "teamBWinProb": 0.2586,
+    "expectedGoalsA": 1.43,
+    "expectedGoalsB": 1.07,
     "confidence": "MEDIUM",
     "reasons": [
       "Canada의 Elo 점수가 더 높음",
       "Canada의 최근 5경기 승점이 더 높음",
       "Canada 최근 5경기: D-D-W-D-D",
-      "Qatar 최근 5경기: L-D-L-L-D"
+      "Qatar 최근 5경기: D-L-L-D-D"
     ]
   },
   {
-    "matchId": 25,
+    "matchId": 21,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-19",
     "teamA": "Scotland",
     "teamB": "Morocco",
-    "teamAElo": 1591.1,
-    "teamBElo": 1795.6,
-    "teamARecentForm": "W-L-L-W-W",
-    "teamBRecentForm": "D-W-W-W-D",
-    "teamAWinProb": 0.1687,
-    "drawProb": 0.1991,
-    "teamBWinProb": 0.6322,
-    "expectedGoalsA": 1.01,
-    "expectedGoalsB": 1.49,
+    "teamAElo": 1607.86,
+    "teamBElo": 1792.88,
+    "teamARecentForm": "L-L-W-W-W",
+    "teamBRecentForm": "W-W-W-D-D",
+    "teamAWinProb": 0.1836,
+    "drawProb": 0.2057,
+    "teamBWinProb": 0.6107,
+    "expectedGoalsA": 1.03,
+    "expectedGoalsB": 1.47,
     "confidence": "HIGH",
     "reasons": [
       "Morocco의 Elo 점수가 더 높음",
       "Morocco의 최근 5경기 승점이 더 높음",
-      "Scotland 최근 5경기: W-L-L-W-W",
-      "Morocco 최근 5경기: D-W-W-W-D"
+      "Scotland 최근 5경기: L-L-W-W-W",
+      "Morocco 최근 5경기: W-W-W-D-D"
     ]
   },
   {
-    "matchId": 26,
+    "matchId": 22,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-19",
     "teamA": "Brazil",
     "teamB": "Haiti",
-    "teamAElo": 1740.35,
-    "teamBElo": 1581.26,
-    "teamARecentForm": "D-L-W-W-W",
-    "teamBRecentForm": "W-L-D-W-L",
-    "teamAWinProb": 0.5908,
-    "drawProb": 0.2148,
-    "teamBWinProb": 0.1944,
-    "expectedGoalsA": 1.48,
-    "expectedGoalsB": 1.02,
+    "teamAElo": 1743.07,
+    "teamBElo": 1564.5,
+    "teamARecentForm": "L-W-W-W-D",
+    "teamBRecentForm": "L-D-W-L-L",
+    "teamAWinProb": 0.6434,
+    "drawProb": 0.2079,
+    "teamBWinProb": 0.1487,
+    "expectedGoalsA": 1.59,
+    "expectedGoalsB": 0.91,
     "confidence": "MEDIUM",
     "reasons": [
       "Brazil의 Elo 점수가 더 높음",
       "Brazil의 최근 5경기 승점이 더 높음",
-      "Brazil 최근 5경기: D-L-W-W-W",
-      "Haiti 최근 5경기: W-L-D-W-L"
+      "Brazil 최근 5경기: L-W-W-W-D",
+      "Haiti 최근 5경기: L-D-W-L-L"
     ]
   },
   {
-    "matchId": 27,
+    "matchId": 23,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-19",
     "teamA": "United States",
     "teamB": "Australia",
     "teamAElo": 1694.14,
-    "teamBElo": 1704.74,
+    "teamBElo": 1721.94,
     "teamARecentForm": "L-L-W-L-W",
-    "teamBRecentForm": "L-W-W-L-D",
-    "teamAWinProb": 0.3414,
-    "drawProb": 0.2751,
-    "teamBWinProb": 0.3835,
-    "expectedGoalsA": 1.21,
-    "expectedGoalsB": 1.29,
-    "confidence": "LOW",
+    "teamBRecentForm": "W-W-L-D-W",
+    "teamAWinProb": 0.2971,
+    "drawProb": 0.2673,
+    "teamBWinProb": 0.4356,
+    "expectedGoalsA": 1.11,
+    "expectedGoalsB": 1.39,
+    "confidence": "MEDIUM",
     "reasons": [
       "Australia의 Elo 점수가 더 높음",
       "Australia의 최근 5경기 승점이 더 높음",
       "United States 최근 5경기: L-L-W-L-W",
-      "Australia 최근 5경기: L-W-W-L-D"
+      "Australia 최근 5경기: W-W-L-D-W"
     ]
   },
   {
-    "matchId": 28,
+    "matchId": 24,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-19",
     "teamA": "Turkey",
     "teamB": "Paraguay",
-    "teamAElo": 1658.22,
+    "teamAElo": 1641.02,
     "teamBElo": 1539.61,
-    "teamARecentForm": "D-W-W-W-W",
+    "teamARecentForm": "W-W-W-W-L",
     "teamBRecentForm": "W-W-L-W-L",
-    "teamAWinProb": 0.5517,
-    "drawProb": 0.2298,
-    "teamBWinProb": 0.2185,
-    "expectedGoalsA": 1.47,
-    "expectedGoalsB": 1.03,
+    "teamAWinProb": 0.5201,
+    "drawProb": 0.2365,
+    "teamBWinProb": 0.2434,
+    "expectedGoalsA": 1.43,
+    "expectedGoalsB": 1.07,
     "confidence": "MEDIUM",
     "reasons": [
       "Turkey의 Elo 점수가 더 높음",
       "Turkey의 최근 5경기 승점이 더 높음",
-      "Turkey 최근 5경기: D-W-W-W-W",
+      "Turkey 최근 5경기: W-W-W-W-L",
       "Paraguay 최근 5경기: W-W-L-W-L"
     ]
   },
   {
-    "matchId": 29,
+    "matchId": 25,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-20",
@@ -696,7 +600,7 @@
     ]
   },
   {
-    "matchId": 30,
+    "matchId": 26,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-20",
@@ -720,7 +624,7 @@
     ]
   },
   {
-    "matchId": 31,
+    "matchId": 27,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-20",
@@ -744,7 +648,7 @@
     ]
   },
   {
-    "matchId": 32,
+    "matchId": 28,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-20",
@@ -768,7 +672,7 @@
     ]
   },
   {
-    "matchId": 33,
+    "matchId": 29,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-21",
@@ -792,7 +696,7 @@
     ]
   },
   {
-    "matchId": 34,
+    "matchId": 30,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-21",
@@ -816,7 +720,7 @@
     ]
   },
   {
-    "matchId": 35,
+    "matchId": 31,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-21",
@@ -840,7 +744,7 @@
     ]
   },
   {
-    "matchId": 36,
+    "matchId": 32,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-21",
@@ -864,7 +768,7 @@
     ]
   },
   {
-    "matchId": 37,
+    "matchId": 33,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-22",
@@ -888,7 +792,7 @@
     ]
   },
   {
-    "matchId": 38,
+    "matchId": 34,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-22",
@@ -912,7 +816,7 @@
     ]
   },
   {
-    "matchId": 39,
+    "matchId": 35,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-22",
@@ -936,7 +840,7 @@
     ]
   },
   {
-    "matchId": 40,
+    "matchId": 36,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-22",
@@ -960,7 +864,7 @@
     ]
   },
   {
-    "matchId": 41,
+    "matchId": 37,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-23",
@@ -984,7 +888,7 @@
     ]
   },
   {
-    "matchId": 42,
+    "matchId": 38,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-23",
@@ -1008,7 +912,7 @@
     ]
   },
   {
-    "matchId": 43,
+    "matchId": 39,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-23",
@@ -1032,7 +936,7 @@
     ]
   },
   {
-    "matchId": 44,
+    "matchId": 40,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-23",
@@ -1056,7 +960,7 @@
     ]
   },
   {
-    "matchId": 45,
+    "matchId": 41,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-24",
@@ -1080,7 +984,7 @@
     ]
   },
   {
-    "matchId": 46,
+    "matchId": 42,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-24",
@@ -1104,19 +1008,19 @@
     ]
   },
   {
-    "matchId": 47,
+    "matchId": 43,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-24",
     "teamA": "Canada",
     "teamB": "Switzerland",
     "teamAElo": 1649.7,
-    "teamBElo": 1662.12,
+    "teamBElo": 1657.78,
     "teamARecentForm": "D-D-W-D-D",
-    "teamBRecentForm": "D-L-D-W-D",
-    "teamAWinProb": 0.3599,
-    "drawProb": 0.2743,
-    "teamBWinProb": 0.3658,
+    "teamBRecentForm": "L-D-W-D-D",
+    "teamAWinProb": 0.3635,
+    "drawProb": 0.2763,
+    "teamBWinProb": 0.3603,
     "expectedGoalsA": 1.27,
     "expectedGoalsB": 1.23,
     "confidence": "LOW",
@@ -1124,131 +1028,131 @@
       "Switzerland의 Elo 점수가 더 높음",
       "Canada의 최근 5경기 승점이 더 높음",
       "Canada 최근 5경기: D-D-W-D-D",
-      "Switzerland 최근 5경기: D-L-D-W-D"
+      "Switzerland 최근 5경기: L-D-W-D-D"
     ]
   },
   {
-    "matchId": 48,
+    "matchId": 44,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-24",
     "teamA": "Bosnia and Herzegovina",
     "teamB": "Qatar",
     "teamAElo": 1510.62,
-    "teamBElo": 1572.9,
+    "teamBElo": 1577.23,
     "teamARecentForm": "D-D-D-D-D",
-    "teamBRecentForm": "L-D-L-L-D",
-    "teamAWinProb": 0.3375,
-    "drawProb": 0.2524,
-    "teamBWinProb": 0.4101,
-    "expectedGoalsA": 1.29,
-    "expectedGoalsB": 1.21,
+    "teamBRecentForm": "D-L-L-D-D",
+    "teamAWinProb": 0.3237,
+    "drawProb": 0.2506,
+    "teamBWinProb": 0.4257,
+    "expectedGoalsA": 1.25,
+    "expectedGoalsB": 1.25,
     "confidence": "LOW",
     "reasons": [
       "Qatar의 Elo 점수가 더 높음",
       "Bosnia and Herzegovina의 최근 5경기 승점이 더 높음",
       "Bosnia and Herzegovina 최근 5경기: D-D-D-D-D",
-      "Qatar 최근 5경기: L-D-L-L-D"
+      "Qatar 최근 5경기: D-L-L-D-D"
     ]
   },
   {
-    "matchId": 49,
+    "matchId": 45,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-24",
     "teamA": "Scotland",
     "teamB": "Brazil",
-    "teamAElo": 1591.1,
-    "teamBElo": 1740.35,
-    "teamARecentForm": "W-L-L-W-W",
-    "teamBRecentForm": "D-L-W-W-W",
-    "teamAWinProb": 0.2226,
-    "drawProb": 0.2183,
-    "teamBWinProb": 0.5591,
-    "expectedGoalsA": 1.09,
-    "expectedGoalsB": 1.41,
+    "teamAElo": 1607.86,
+    "teamBElo": 1743.07,
+    "teamARecentForm": "L-L-W-W-W",
+    "teamBRecentForm": "L-W-W-W-D",
+    "teamAWinProb": 0.2343,
+    "drawProb": 0.2235,
+    "teamBWinProb": 0.5421,
+    "expectedGoalsA": 1.1,
+    "expectedGoalsB": 1.4,
     "confidence": "MEDIUM",
     "reasons": [
       "Brazil의 Elo 점수가 더 높음",
       "Brazil의 최근 5경기 승점이 더 높음",
-      "Scotland 최근 5경기: W-L-L-W-W",
-      "Brazil 최근 5경기: D-L-W-W-W"
+      "Scotland 최근 5경기: L-L-W-W-W",
+      "Brazil 최근 5경기: L-W-W-W-D"
     ]
   },
   {
-    "matchId": 50,
+    "matchId": 46,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-24",
     "teamA": "Morocco",
     "teamB": "Haiti",
-    "teamAElo": 1795.6,
-    "teamBElo": 1581.26,
-    "teamARecentForm": "D-W-W-W-D",
-    "teamBRecentForm": "W-L-D-W-L",
-    "teamAWinProb": 0.6628,
-    "drawProb": 0.1959,
-    "teamBWinProb": 0.1413,
-    "expectedGoalsA": 1.56,
-    "expectedGoalsB": 0.94,
+    "teamAElo": 1792.88,
+    "teamBElo": 1564.5,
+    "teamARecentForm": "W-W-W-D-D",
+    "teamBRecentForm": "L-D-W-L-L",
+    "teamAWinProb": 0.7074,
+    "drawProb": 0.1914,
+    "teamBWinProb": 0.1012,
+    "expectedGoalsA": 1.66,
+    "expectedGoalsB": 0.84,
     "confidence": "HIGH",
     "reasons": [
       "Morocco의 Elo 점수가 더 높음",
       "Morocco의 최근 5경기 승점이 더 높음",
-      "Morocco 최근 5경기: D-W-W-W-D",
-      "Haiti 최근 5경기: W-L-D-W-L"
+      "Morocco 최근 5경기: W-W-W-D-D",
+      "Haiti 최근 5경기: L-D-W-L-L"
     ]
   },
   {
-    "matchId": 51,
+    "matchId": 47,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-25",
     "teamA": "United States",
     "teamB": "Turkey",
     "teamAElo": 1694.14,
-    "teamBElo": 1658.22,
+    "teamBElo": 1641.02,
     "teamARecentForm": "L-L-W-L-W",
-    "teamBRecentForm": "D-W-W-W-W",
-    "teamAWinProb": 0.3361,
-    "drawProb": 0.2637,
-    "teamBWinProb": 0.4002,
-    "expectedGoalsA": 1.07,
-    "expectedGoalsB": 1.43,
+    "teamBRecentForm": "W-W-W-W-L",
+    "teamAWinProb": 0.3683,
+    "drawProb": 0.2563,
+    "teamBWinProb": 0.3754,
+    "expectedGoalsA": 1.12,
+    "expectedGoalsB": 1.38,
     "confidence": "MEDIUM",
     "reasons": [
       "United States의 Elo 점수가 더 높음",
       "Turkey의 최근 5경기 승점이 더 높음",
       "United States 최근 5경기: L-L-W-L-W",
-      "Turkey 최근 5경기: D-W-W-W-W"
+      "Turkey 최근 5경기: W-W-W-W-L"
     ]
   },
   {
-    "matchId": 52,
+    "matchId": 48,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-25",
     "teamA": "Paraguay",
     "teamB": "Australia",
     "teamAElo": 1539.61,
-    "teamBElo": 1704.74,
+    "teamBElo": 1721.94,
     "teamARecentForm": "W-W-L-W-L",
-    "teamBRecentForm": "L-W-W-L-D",
-    "teamAWinProb": 0.2395,
-    "drawProb": 0.2126,
-    "teamBWinProb": 0.5479,
-    "expectedGoalsA": 1.17,
-    "expectedGoalsB": 1.33,
-    "confidence": "MEDIUM",
+    "teamBRecentForm": "W-W-L-D-W",
+    "teamAWinProb": 0.1957,
+    "drawProb": 0.2066,
+    "teamBWinProb": 0.5976,
+    "expectedGoalsA": 1.06,
+    "expectedGoalsB": 1.44,
+    "confidence": "HIGH",
     "reasons": [
       "Australia의 Elo 점수가 더 높음",
-      "Paraguay의 최근 5경기 승점이 더 높음",
+      "Australia의 최근 5경기 승점이 더 높음",
       "Paraguay 최근 5경기: W-W-L-W-L",
-      "Australia 최근 5경기: L-W-W-L-D"
+      "Australia 최근 5경기: W-W-L-D-W"
     ]
   },
   {
-    "matchId": 53,
+    "matchId": 49,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-25",
@@ -1272,7 +1176,7 @@
     ]
   },
   {
-    "matchId": 54,
+    "matchId": 50,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-25",
@@ -1296,7 +1200,7 @@
     ]
   },
   {
-    "matchId": 55,
+    "matchId": 51,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-25",
@@ -1320,7 +1224,7 @@
     ]
   },
   {
-    "matchId": 56,
+    "matchId": 52,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-25",
@@ -1344,7 +1248,7 @@
     ]
   },
   {
-    "matchId": 57,
+    "matchId": 53,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-26",
@@ -1368,7 +1272,7 @@
     ]
   },
   {
-    "matchId": 58,
+    "matchId": 54,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-26",
@@ -1392,7 +1296,7 @@
     ]
   },
   {
-    "matchId": 59,
+    "matchId": 55,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-26",
@@ -1416,7 +1320,7 @@
     ]
   },
   {
-    "matchId": 60,
+    "matchId": 56,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-26",
@@ -1440,7 +1344,7 @@
     ]
   },
   {
-    "matchId": 61,
+    "matchId": 57,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-26",
@@ -1464,7 +1368,7 @@
     ]
   },
   {
-    "matchId": 62,
+    "matchId": 58,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-26",
@@ -1488,7 +1392,7 @@
     ]
   },
   {
-    "matchId": 63,
+    "matchId": 59,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-27",
@@ -1512,7 +1416,7 @@
     ]
   },
   {
-    "matchId": 64,
+    "matchId": 60,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-27",
@@ -1536,7 +1440,7 @@
     ]
   },
   {
-    "matchId": 65,
+    "matchId": 61,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-27",
@@ -1560,7 +1464,7 @@
     ]
   },
   {
-    "matchId": 66,
+    "matchId": 62,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-27",
@@ -1584,7 +1488,7 @@
     ]
   },
   {
-    "matchId": 67,
+    "matchId": 63,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-27",
@@ -1608,7 +1512,7 @@
     ]
   },
   {
-    "matchId": 68,
+    "matchId": 64,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-27",

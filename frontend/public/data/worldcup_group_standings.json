@@ -82,26 +82,26 @@
       {
         "rank": 3,
         "team": "Qatar",
-        "played": 0,
+        "played": 1,
         "wins": 0,
-        "draws": 0,
+        "draws": 1,
         "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
+        "goalsFor": 1,
+        "goalsAgainst": 1,
         "goalDifference": 0,
-        "points": 0
+        "points": 1
       },
       {
         "rank": 4,
         "team": "Switzerland",
-        "played": 0,
+        "played": 1,
         "wins": 0,
-        "draws": 0,
+        "draws": 1,
         "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
+        "goalsFor": 1,
+        "goalsAgainst": 1,
         "goalDifference": 0,
-        "points": 0
+        "points": 1
       }
     ]
   },
@@ -110,50 +110,50 @@
     "teams": [
       {
         "rank": 1,
-        "team": "Brazil",
-        "played": 0,
-        "wins": 0,
+        "team": "Scotland",
+        "played": 1,
+        "wins": 1,
         "draws": 0,
         "losses": 0,
-        "goalsFor": 0,
+        "goalsFor": 1,
         "goalsAgainst": 0,
-        "goalDifference": 0,
-        "points": 0
+        "goalDifference": 1,
+        "points": 3
       },
       {
         "rank": 2,
-        "team": "Haiti",
-        "played": 0,
+        "team": "Brazil",
+        "played": 1,
         "wins": 0,
-        "draws": 0,
+        "draws": 1,
         "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
+        "goalsFor": 1,
+        "goalsAgainst": 1,
         "goalDifference": 0,
-        "points": 0
+        "points": 1
       },
       {
         "rank": 3,
         "team": "Morocco",
-        "played": 0,
+        "played": 1,
         "wins": 0,
-        "draws": 0,
+        "draws": 1,
         "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
+        "goalsFor": 1,
+        "goalsAgainst": 1,
         "goalDifference": 0,
-        "points": 0
+        "points": 1
       },
       {
         "rank": 4,
-        "team": "Scotland",
-        "played": 0,
+        "team": "Haiti",
+        "played": 1,
         "wins": 0,
         "draws": 0,
-        "losses": 0,
+        "losses": 1,
         "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0,
+        "goalsAgainst": 1,
+        "goalDifference": -1,
         "points": 0
       }
     ]
@@ -176,25 +176,25 @@
       {
         "rank": 2,
         "team": "Australia",
-        "played": 0,
-        "wins": 0,
+        "played": 1,
+        "wins": 1,
         "draws": 0,
         "losses": 0,
-        "goalsFor": 0,
+        "goalsFor": 2,
         "goalsAgainst": 0,
-        "goalDifference": 0,
-        "points": 0
+        "goalDifference": 2,
+        "points": 3
       },
       {
         "rank": 3,
         "team": "Turkey",
-        "played": 0,
+        "played": 1,
         "wins": 0,
         "draws": 0,
-        "losses": 0,
+        "losses": 1,
         "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0,
+        "goalsAgainst": 2,
+        "goalDifference": -2,
         "points": 0
       },
       {

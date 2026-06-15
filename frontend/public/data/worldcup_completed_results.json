@@ -42,5 +42,49 @@
     "homeScore": 4,
     "awayScore": 1,
     "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-13",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Qatar",
+    "awayTeam": "Switzerland",
+    "normalizedHomeTeam": "Qatar",
+    "normalizedAwayTeam": "Switzerland",
+    "homeScore": 1,
+    "awayScore": 1,
+    "result": "DRAW"
+  },
+  {
+    "date": "2026-06-13",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Brazil",
+    "awayTeam": "Morocco",
+    "normalizedHomeTeam": "Brazil",
+    "normalizedAwayTeam": "Morocco",
+    "homeScore": 1,
+    "awayScore": 1,
+    "result": "DRAW"
+  },
+  {
+    "date": "2026-06-13",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Haiti",
+    "awayTeam": "Scotland",
+    "normalizedHomeTeam": "Haiti",
+    "normalizedAwayTeam": "Scotland",
+    "homeScore": 0,
+    "awayScore": 1,
+    "result": "AWAY_WIN"
+  },
+  {
+    "date": "2026-06-13",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Australia",
+    "awayTeam": "Turkey",
+    "normalizedHomeTeam": "Australia",
+    "normalizedAwayTeam": "Turkey",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "HOME_WIN"
   }
 ]
