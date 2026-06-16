@@ -86,5 +86,49 @@
     "homeScore": 2,
     "awayScore": 0,
     "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-14",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Germany",
+    "awayTeam": "Curaçao",
+    "normalizedHomeTeam": "Germany",
+    "normalizedAwayTeam": "Curaçao",
+    "homeScore": 7,
+    "awayScore": 1,
+    "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-14",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Ivory Coast",
+    "awayTeam": "Ecuador",
+    "normalizedHomeTeam": "Ivory Coast",
+    "normalizedAwayTeam": "Ecuador",
+    "homeScore": 1,
+    "awayScore": 0,
+    "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-14",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Netherlands",
+    "awayTeam": "Japan",
+    "normalizedHomeTeam": "Netherlands",
+    "normalizedAwayTeam": "Japan",
+    "homeScore": 2,
+    "awayScore": 2,
+    "result": "DRAW"
+  },
+  {
+    "date": "2026-06-14",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Sweden",
+    "awayTeam": "Tunisia",
+    "normalizedHomeTeam": "Sweden",
+    "normalizedAwayTeam": "Tunisia",
+    "homeScore": 5,
+    "awayScore": 1,
+    "result": "HOME_WIN"
   }
 ]
