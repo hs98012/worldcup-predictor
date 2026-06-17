@@ -1,8 +1,4 @@
 date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,normalized_home_team,normalized_away_team
-2026-06-15,Belgium,Egypt,,,FIFA World Cup,Seattle,United States,True,Belgium,Egypt
-2026-06-15,Iran,New Zealand,,,FIFA World Cup,Inglewood,United States,True,Iran,New Zealand
-2026-06-15,Spain,Cape Verde,,,FIFA World Cup,Atlanta,United States,True,Spain,Cape Verde
-2026-06-15,Saudi Arabia,Uruguay,,,FIFA World Cup,Miami Gardens,United States,True,Saudi Arabia,Uruguay
 2026-06-16,France,Senegal,,,FIFA World Cup,East Rutherford,United States,True,France,Senegal
 2026-06-16,Iraq,Norway,,,FIFA World Cup,Foxborough,United States,True,Iraq,Norway
 2026-06-16,Argentina,Algeria,,,FIFA World Cup,Kansas City,United States,True,Argentina,Algeria
