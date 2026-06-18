@@ -1,52 +1,52 @@
 {
   "enabled": true,
-  "selectionReason": "DRAW recall이 0.0034에서 0.0043로 개선되었고, Accuracy 하락 0.0000, Log Loss 변화 -0.0003로 허용 범위 이내여서 적용",
+  "selectionReason": "DRAW recall이 0.0026에서 0.0034로 개선되었고, Accuracy 하락 0.0000, Log Loss 변화 -0.0003로 허용 범위 이내여서 적용",
   "baseMetrics": {
     "model": "draw_calibration_base",
-    "accuracy": 0.5885,
-    "logLoss": 0.9169,
+    "accuracy": 0.5902,
+    "logLoss": 0.9167,
     "confusionMatrix": [
       [
         1965,
-        445,
-        4
-      ],
-      [
-        480,
-        1016,
+        449,
         1
       ],
       [
-        682,
-        475,
-        4
-      ]
-    ],
-    "drawRecall": 0.0034,
-    "drawPrecision": 0.4444,
-    "macroF1": 0.436
-  },
-  "calibratedMetrics": {
-    "accuracy": 0.5885,
-    "logLoss": 0.9166,
-    "drawRecall": 0.0043,
-    "drawPrecision": 0.4545,
-    "macroF1": 0.4365,
-    "confusionMatrix": [
-      [
-        1965,
-        445,
-        4
-      ],
-      [
-        480,
-        1015,
+        470,
+        1026,
         2
       ],
       [
-        681,
-        475,
-        5
+        683,
+        474,
+        3
+      ]
+    ],
+    "drawRecall": 0.0026,
+    "drawPrecision": 0.5,
+    "macroF1": 0.4369
+  },
+  "calibratedMetrics": {
+    "accuracy": 0.5902,
+    "logLoss": 0.9164,
+    "drawRecall": 0.0034,
+    "drawPrecision": 0.5,
+    "macroF1": 0.4374,
+    "confusionMatrix": [
+      [
+        1965,
+        449,
+        1
+      ],
+      [
+        470,
+        1025,
+        3
+      ],
+      [
+        682,
+        474,
+        4
       ]
     ]
   },
@@ -71,26 +71,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 25,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -108,26 +108,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 63,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -145,26 +145,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 49,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -182,2320 +182,2320 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 132,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 55,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 142,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 25,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": 0.0,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 63,
-      "accuracy": 0.5883,
-      "logLoss": 0.917,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0002,
-      "logLossIncrease": 0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 49,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 132,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 55,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 142,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 25,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": 0.0,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 63,
-      "accuracy": 0.5883,
-      "logLoss": 0.917,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0002,
-      "logLossIncrease": 0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 49,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 132,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 55,
-      "accuracy": 0.5885,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0002,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 142,
-      "accuracy": 0.5885,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0002,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.08,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 25,
-      "accuracy": 0.5883,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
-      "confusionMatrix": [
-        [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0002,
-      "logLossIncrease": 0.0,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.08,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 63,
-      "accuracy": 0.5881,
-      "logLoss": 0.9171,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.3636,
-      "macroF1": 0.4358,
-      "confusionMatrix": [
-        [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0004,
-      "logLossIncrease": 0.0002,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.08,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 49,
-      "accuracy": 0.5883,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
-      "confusionMatrix": [
-        [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0002,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.08,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 132,
-      "accuracy": 0.5881,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.3571,
-      "macroF1": 0.4363,
-      "confusionMatrix": [
-        [
-          1964,
-          444,
-          6
-        ],
-        [
-          480,
-          1014,
-          3
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0004,
-      "logLossIncrease": -0.0001,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.08,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 55,
-      "accuracy": 0.5883,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
-      "confusionMatrix": [
-        [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0002,
-      "logLossIncrease": -0.0002,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 50,
-        "drawBoost": 0.08,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 142,
-      "accuracy": 0.5881,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.3571,
-      "macroF1": 0.4363,
-      "confusionMatrix": [
-        [
-          1964,
-          444,
-          6
-        ],
-        [
-          480,
-          1014,
-          3
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0004,
-      "logLossIncrease": -0.0001,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 30,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": 0.0,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 78,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": 0.0,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 64,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": 0.0,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 165,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 71,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 177,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 30,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": 0.0,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 78,
-      "accuracy": 0.5883,
-      "logLoss": 0.917,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0002,
-      "logLossIncrease": 0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 64,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 165,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 71,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 177,
-      "accuracy": 0.5885,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0002,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 30,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": 0.0,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 78,
-      "accuracy": 0.5883,
-      "logLoss": 0.917,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0002,
-      "logLossIncrease": 0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 64,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 165,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 71,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 177,
-      "accuracy": 0.5885,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0002,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.08,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 30,
-      "accuracy": 0.5883,
-      "logLoss": 0.917,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
-      "confusionMatrix": [
-        [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0002,
-      "logLossIncrease": 0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.08,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 78,
-      "accuracy": 0.5881,
-      "logLoss": 0.9171,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.3636,
-      "macroF1": 0.4358,
-      "confusionMatrix": [
-        [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0004,
-      "logLossIncrease": 0.0002,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.08,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 64,
-      "accuracy": 0.5883,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
-      "confusionMatrix": [
-        [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0002,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.08,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 165,
-      "accuracy": 0.5881,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.3571,
-      "macroF1": 0.4363,
-      "confusionMatrix": [
-        [
-          1964,
-          444,
-          6
-        ],
-        [
-          480,
-          1014,
-          3
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0004,
-      "logLossIncrease": -0.0001,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.08,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 71,
-      "accuracy": 0.5883,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
-      "confusionMatrix": [
-        [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0002,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 75,
-        "drawBoost": 0.08,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 177,
-      "accuracy": 0.5881,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.3571,
-      "macroF1": 0.4363,
-      "confusionMatrix": [
-        [
-          1964,
-          444,
-          6
-        ],
-        [
-          480,
-          1014,
-          3
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0004,
-      "logLossIncrease": -0.0002,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 38,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": 0.0,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 89,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": 0.0,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 75,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 188,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 82,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.02,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 200,
-      "accuracy": 0.5885,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0002,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 38,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": 0.0,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 89,
-      "accuracy": 0.5883,
-      "logLoss": 0.917,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0002,
-      "logLossIncrease": 0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 75,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 188,
-      "accuracy": 0.5885,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0002,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 82,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 200,
-      "accuracy": 0.5885,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0002,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 38,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": 0.0,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.15,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 89,
-      "accuracy": 0.5883,
-      "logLoss": 0.917,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0002,
-      "logLossIncrease": 0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 75,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.2,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 188,
-      "accuracy": 0.5885,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          681,
-          475,
-          5
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0002,
-      "eligible": true
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 82,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
-      "confusionMatrix": [
-        [
-          1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
-          1
-        ],
-        [
-          682,
-          475,
-          4
-        ]
-      ],
-      "accuracyDrop": 0.0,
-      "logLossIncrease": -0.0001,
-      "eligible": false
-    },
-    {
-      "params": {
-        "eloThreshold": 100,
-        "drawBoost": 0.06,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      },
-      "adjustedMatchCount": 200,
-      "accuracy": 0.5885,
+      "accuracy": 0.5902,
       "logLoss": 0.9166,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
+          449,
+          1
         ],
         [
-          480,
-          1015,
+          470,
+          1026,
           2
         ],
         [
-          681,
-          475,
-          5
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 55,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 142,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 25,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 63,
+      "accuracy": 0.5902,
+      "logLoss": 0.9168,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 49,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 132,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 55,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 142,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 25,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 63,
+      "accuracy": 0.59,
+      "logLoss": 0.9168,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.4286,
+      "macroF1": 0.4368,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0002,
+      "logLossIncrease": 0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 49,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 132,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          682,
+          474,
+          4
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": true
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 55,
+      "accuracy": 0.5902,
+      "logLoss": 0.9165,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0002,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 142,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          682,
+          474,
+          4
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": true
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.08,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 25,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.08,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 63,
+      "accuracy": 0.59,
+      "logLoss": 0.9169,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.4286,
+      "macroF1": 0.4368,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0002,
+      "logLossIncrease": 0.0002,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.08,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 49,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.08,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 132,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          682,
+          474,
+          4
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": true
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.08,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 55,
+      "accuracy": 0.5902,
+      "logLoss": 0.9165,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0002,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 50,
+        "drawBoost": 0.08,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 142,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          682,
+          474,
+          4
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": true
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 30,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 78,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 64,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 165,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 71,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 177,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 30,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 78,
+      "accuracy": 0.5902,
+      "logLoss": 0.9168,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 64,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 165,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 71,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 177,
+      "accuracy": 0.5902,
+      "logLoss": 0.9165,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0002,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 30,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 78,
+      "accuracy": 0.59,
+      "logLoss": 0.9169,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.4286,
+      "macroF1": 0.4368,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0002,
+      "logLossIncrease": 0.0002,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 64,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 165,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          682,
+          474,
+          4
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": true
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 71,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 177,
+      "accuracy": 0.5902,
+      "logLoss": 0.9165,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          682,
+          474,
+          4
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0002,
+      "eligible": true
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.08,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 30,
+      "accuracy": 0.5902,
+      "logLoss": 0.9168,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.08,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 78,
+      "accuracy": 0.59,
+      "logLoss": 0.9169,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.4286,
+      "macroF1": 0.4368,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0002,
+      "logLossIncrease": 0.0002,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.08,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 64,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.08,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 165,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          682,
+          474,
+          4
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": true
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.08,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 71,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 75,
+        "drawBoost": 0.08,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 177,
+      "accuracy": 0.5902,
+      "logLoss": 0.9165,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          682,
+          474,
+          4
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0002,
+      "eligible": true
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 38,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 89,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 75,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 188,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 82,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.02,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 200,
+      "accuracy": 0.5902,
+      "logLoss": 0.9165,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0002,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 38,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 89,
+      "accuracy": 0.5902,
+      "logLoss": 0.9168,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 75,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 188,
+      "accuracy": 0.5902,
+      "logLoss": 0.9165,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0002,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 82,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.04,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 200,
+      "accuracy": 0.5902,
+      "logLoss": 0.9164,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0003,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 38,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": 0.0,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.15,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 89,
+      "accuracy": 0.59,
+      "logLoss": 0.9168,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.4286,
+      "macroF1": 0.4368,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0002,
+      "logLossIncrease": 0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 75,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.2,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 188,
+      "accuracy": 0.5902,
+      "logLoss": 0.9165,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          682,
+          474,
+          4
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0002,
+      "eligible": true
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.35,
+        "avgGoalsAgainstThreshold": 0.35,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 82,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
+        ]
+      ],
+      "accuracyDrop": 0.0,
+      "logLossIncrease": -0.0001,
+      "eligible": false
+    },
+    {
+      "params": {
+        "eloThreshold": 100,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      },
+      "adjustedMatchCount": 200,
+      "accuracy": 0.5902,
+      "logLoss": 0.9164,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
+      "confusionMatrix": [
+        [
+          1965,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          682,
+          474,
+          4
         ]
       ],
       "accuracyDrop": 0.0,
@@ -2513,29 +2513,29 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 38,
-      "accuracy": 0.5883,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1016,
+          1965,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
-      "accuracyDrop": 0.0002,
+      "accuracyDrop": 0.0,
       "logLossIncrease": 0.0,
       "eligible": false
     },
@@ -2550,29 +2550,29 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 89,
-      "accuracy": 0.5881,
-      "logLoss": 0.9171,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.3636,
-      "macroF1": 0.4358,
+      "accuracy": 0.59,
+      "logLoss": 0.9169,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.4286,
+      "macroF1": 0.4368,
       "confusionMatrix": [
         [
-          1964,
-          445,
-          5
+          1965,
+          449,
+          1
         ],
         [
-          480,
-          1015,
-          2
+          470,
+          1025,
+          3
         ],
         [
-          682,
-          475,
-          4
+          683,
+          474,
+          3
         ]
       ],
-      "accuracyDrop": 0.0004,
+      "accuracyDrop": 0.0002,
       "logLossIncrease": 0.0002,
       "eligible": false
     },
@@ -2587,29 +2587,29 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 75,
-      "accuracy": 0.5883,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1016,
+          1965,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
-      "accuracyDrop": 0.0002,
+      "accuracyDrop": 0.0,
       "logLossIncrease": -0.0001,
       "eligible": false
     },
@@ -2624,29 +2624,29 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 188,
-      "accuracy": 0.5881,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.3571,
-      "macroF1": 0.4363,
+      "accuracy": 0.5902,
+      "logLoss": 0.9165,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
       "confusionMatrix": [
         [
-          1964,
-          444,
-          6
+          1965,
+          449,
+          1
         ],
         [
-          480,
-          1014,
+          470,
+          1025,
           3
         ],
         [
-          681,
-          475,
-          5
+          682,
+          474,
+          4
         ]
       ],
-      "accuracyDrop": 0.0004,
+      "accuracyDrop": 0.0,
       "logLossIncrease": -0.0002,
       "eligible": true
     },
@@ -2661,29 +2661,29 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 82,
-      "accuracy": 0.5883,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
+      "accuracy": 0.5902,
+      "logLoss": 0.9165,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1016,
+          1965,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
-      "accuracyDrop": 0.0002,
+      "accuracyDrop": 0.0,
       "logLossIncrease": -0.0002,
       "eligible": false
     },
@@ -2698,29 +2698,29 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 200,
-      "accuracy": 0.5881,
-      "logLoss": 0.9166,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.3571,
-      "macroF1": 0.4363,
+      "accuracy": 0.5902,
+      "logLoss": 0.9164,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
       "confusionMatrix": [
         [
-          1964,
-          444,
-          6
+          1965,
+          449,
+          1
         ],
         [
-          480,
-          1014,
+          470,
+          1025,
           3
         ],
         [
-          681,
-          475,
-          5
+          682,
+          474,
+          4
         ]
       ],
-      "accuracyDrop": 0.0004,
+      "accuracyDrop": 0.0,
       "logLossIncrease": -0.0003,
       "eligible": true
     },
@@ -2735,26 +2735,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 39,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -2772,26 +2772,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 92,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -2809,26 +2809,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 81,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -2846,26 +2846,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 202,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -2883,26 +2883,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 88,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -2920,26 +2920,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 215,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -2957,26 +2957,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 39,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -2994,29 +2994,29 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 92,
-      "accuracy": 0.5883,
-      "logLoss": 0.917,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
+      "accuracy": 0.5902,
+      "logLoss": 0.9168,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
+          449,
+          1
         ],
         [
-          480,
-          1015,
+          470,
+          1026,
           2
         ],
         [
-          682,
-          475,
-          4
+          683,
+          474,
+          3
         ]
       ],
-      "accuracyDrop": 0.0002,
+      "accuracyDrop": 0.0,
       "logLossIncrease": 0.0001,
       "eligible": false
     },
@@ -3031,26 +3031,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 81,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -3068,31 +3068,31 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 202,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
+          449,
+          1
         ],
         [
-          480,
-          1015,
+          470,
+          1026,
           2
         ],
         [
-          681,
-          475,
-          5
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
       "logLossIncrease": -0.0001,
-      "eligible": true
+      "eligible": false
     },
     {
       "params": {
@@ -3105,26 +3105,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 88,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -3142,31 +3142,31 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 215,
-      "accuracy": 0.5885,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
+      "accuracy": 0.5902,
+      "logLoss": 0.9165,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
+          449,
+          1
         ],
         [
-          480,
-          1015,
+          470,
+          1026,
           2
         ],
         [
-          681,
-          475,
-          5
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
       "logLossIncrease": -0.0002,
-      "eligible": true
+      "eligible": false
     },
     {
       "params": {
@@ -3179,26 +3179,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 39,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -3216,26 +3216,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 92,
-      "accuracy": 0.5883,
-      "logLoss": 0.9171,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
+      "accuracy": 0.59,
+      "logLoss": 0.9169,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.4286,
+      "macroF1": 0.4368,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
+          449,
+          1
         ],
         [
-          480,
-          1015,
-          2
+          470,
+          1025,
+          3
         ],
         [
-          682,
-          475,
-          4
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0002,
@@ -3253,26 +3253,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 81,
-      "accuracy": 0.5885,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -3290,26 +3290,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 202,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
       "confusionMatrix": [
         [
           1965,
-          445,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          682,
+          474,
           4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          681,
-          475,
-          5
         ]
       ],
       "accuracyDrop": 0.0,
@@ -3327,26 +3327,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 88,
-      "accuracy": 0.5885,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4444,
-      "macroF1": 0.436,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
           1965,
-          445,
-          4
-        ],
-        [
-          480,
-          1016,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
       "accuracyDrop": 0.0,
@@ -3364,26 +3364,26 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 215,
-      "accuracy": 0.5885,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.4545,
-      "macroF1": 0.4365,
+      "accuracy": 0.5902,
+      "logLoss": 0.9165,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
       "confusionMatrix": [
         [
           1965,
-          445,
+          449,
+          1
+        ],
+        [
+          470,
+          1025,
+          3
+        ],
+        [
+          682,
+          474,
           4
-        ],
-        [
-          480,
-          1015,
-          2
-        ],
-        [
-          681,
-          475,
-          5
         ]
       ],
       "accuracyDrop": 0.0,
@@ -3401,29 +3401,29 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 39,
-      "accuracy": 0.5883,
-      "logLoss": 0.917,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
+      "accuracy": 0.5902,
+      "logLoss": 0.9168,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1016,
+          1965,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
-      "accuracyDrop": 0.0002,
+      "accuracyDrop": 0.0,
       "logLossIncrease": 0.0001,
       "eligible": false
     },
@@ -3438,29 +3438,29 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 92,
-      "accuracy": 0.5881,
-      "logLoss": 0.9171,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.3636,
-      "macroF1": 0.4358,
+      "accuracy": 0.59,
+      "logLoss": 0.9169,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.4286,
+      "macroF1": 0.4368,
       "confusionMatrix": [
         [
-          1964,
-          445,
-          5
+          1965,
+          449,
+          1
         ],
         [
-          480,
-          1015,
-          2
+          470,
+          1025,
+          3
         ],
         [
-          682,
-          475,
-          4
+          683,
+          474,
+          3
         ]
       ],
-      "accuracyDrop": 0.0004,
+      "accuracyDrop": 0.0002,
       "logLossIncrease": 0.0002,
       "eligible": false
     },
@@ -3475,29 +3475,29 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 81,
-      "accuracy": 0.5883,
-      "logLoss": 0.9169,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
+      "accuracy": 0.5902,
+      "logLoss": 0.9167,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1016,
+          1965,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
-      "accuracyDrop": 0.0002,
+      "accuracyDrop": 0.0,
       "logLossIncrease": 0.0,
       "eligible": false
     },
@@ -3512,29 +3512,29 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 202,
-      "accuracy": 0.5881,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.3571,
-      "macroF1": 0.4363,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
       "confusionMatrix": [
         [
-          1964,
-          444,
-          6
+          1965,
+          449,
+          1
         ],
         [
-          480,
-          1014,
+          470,
+          1025,
           3
         ],
         [
-          681,
-          475,
-          5
+          682,
+          474,
+          4
         ]
       ],
-      "accuracyDrop": 0.0004,
+      "accuracyDrop": 0.0,
       "logLossIncrease": -0.0001,
       "eligible": true
     },
@@ -3549,29 +3549,29 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 88,
-      "accuracy": 0.5883,
-      "logLoss": 0.9168,
-      "drawRecall": 0.0034,
-      "drawPrecision": 0.4,
-      "macroF1": 0.4359,
+      "accuracy": 0.5902,
+      "logLoss": 0.9166,
+      "drawRecall": 0.0026,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4369,
       "confusionMatrix": [
         [
-          1964,
-          445,
-          5
-        ],
-        [
-          480,
-          1016,
+          1965,
+          449,
           1
         ],
         [
-          682,
-          475,
-          4
+          470,
+          1026,
+          2
+        ],
+        [
+          683,
+          474,
+          3
         ]
       ],
-      "accuracyDrop": 0.0002,
+      "accuracyDrop": 0.0,
       "logLossIncrease": -0.0001,
       "eligible": false
     },
@@ -3586,29 +3586,29 @@
         "requireNeutral": true
       },
       "adjustedMatchCount": 215,
-      "accuracy": 0.5881,
-      "logLoss": 0.9167,
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.3571,
-      "macroF1": 0.4363,
+      "accuracy": 0.5902,
+      "logLoss": 0.9165,
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4374,
       "confusionMatrix": [
         [
-          1964,
-          444,
-          6
+          1965,
+          449,
+          1
         ],
         [
-          480,
-          1014,
+          470,
+          1025,
           3
         ],
         [
-          681,
-          475,
-          5
+          682,
+          474,
+          4
         ]
       ],
-      "accuracyDrop": 0.0004,
+      "accuracyDrop": 0.0,
       "logLossIncrease": -0.0002,
       "eligible": true
     }

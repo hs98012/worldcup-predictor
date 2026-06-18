@@ -2,102 +2,6 @@
   {
     "matchId": 1,
     "stage": "GROUP",
-    "group": "I",
-    "date": "2026-06-16",
-    "teamA": "France",
-    "teamB": "Senegal",
-    "teamAElo": 1775.83,
-    "teamBElo": 1732.49,
-    "teamARecentForm": "W-W-W-L-W",
-    "teamBRecentForm": "L-W-W-L-D",
-    "teamAWinProb": 0.4656,
-    "drawProb": 0.2605,
-    "teamBWinProb": 0.2739,
-    "expectedGoalsA": 1.44,
-    "expectedGoalsB": 1.06,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "France의 Elo 점수가 더 높음",
-      "France의 최근 5경기 승점이 더 높음",
-      "France 최근 5경기: W-W-W-L-W",
-      "Senegal 최근 5경기: L-W-W-L-D"
-    ]
-  },
-  {
-    "matchId": 2,
-    "stage": "GROUP",
-    "group": "I",
-    "date": "2026-06-16",
-    "teamA": "Iraq",
-    "teamB": "Norway",
-    "teamAElo": 1633.27,
-    "teamBElo": 1654.91,
-    "teamARecentForm": "L-W-W-D-L",
-    "teamBRecentForm": "W-L-D-W-D",
-    "teamAWinProb": 0.3323,
-    "drawProb": 0.2701,
-    "teamBWinProb": 0.3977,
-    "expectedGoalsA": 1.2,
-    "expectedGoalsB": 1.3,
-    "confidence": "LOW",
-    "reasons": [
-      "Norway의 Elo 점수가 더 높음",
-      "Norway의 최근 5경기 승점이 더 높음",
-      "Iraq 최근 5경기: L-W-W-D-L",
-      "Norway 최근 5경기: W-L-D-W-D"
-    ]
-  },
-  {
-    "matchId": 3,
-    "stage": "GROUP",
-    "group": "J",
-    "date": "2026-06-16",
-    "teamA": "Argentina",
-    "teamB": "Algeria",
-    "teamAElo": 1788.32,
-    "teamBElo": 1718.95,
-    "teamARecentForm": "W-W-W-W-W",
-    "teamBRecentForm": "L-W-D-W-W",
-    "teamAWinProb": 0.4992,
-    "drawProb": 0.2494,
-    "teamBWinProb": 0.2513,
-    "expectedGoalsA": 1.46,
-    "expectedGoalsB": 1.04,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Argentina의 Elo 점수가 더 높음",
-      "Argentina의 최근 5경기 승점이 더 높음",
-      "Argentina 최근 5경기: W-W-W-W-W",
-      "Algeria 최근 5경기: L-W-D-W-W"
-    ]
-  },
-  {
-    "matchId": 4,
-    "stage": "GROUP",
-    "group": "J",
-    "date": "2026-06-16",
-    "teamA": "Austria",
-    "teamB": "Jordan",
-    "teamAElo": 1628.52,
-    "teamBElo": 1626.89,
-    "teamARecentForm": "W-D-W-W-W",
-    "teamBRecentForm": "L-D-D-L-L",
-    "teamAWinProb": 0.4721,
-    "drawProb": 0.2792,
-    "teamBWinProb": 0.2487,
-    "expectedGoalsA": 1.58,
-    "expectedGoalsB": 0.92,
-    "confidence": "HIGH",
-    "reasons": [
-      "Austria의 Elo 점수가 더 높음",
-      "Austria의 최근 5경기 승점이 더 높음",
-      "Austria 최근 5경기: W-D-W-W-W",
-      "Jordan 최근 5경기: L-D-D-L-L"
-    ]
-  },
-  {
-    "matchId": 5,
-    "stage": "GROUP",
     "group": "K",
     "date": "2026-06-17",
     "teamA": "Portugal",
@@ -120,7 +24,7 @@
     ]
   },
   {
-    "matchId": 6,
+    "matchId": 2,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-17",
@@ -144,7 +48,7 @@
     ]
   },
   {
-    "matchId": 7,
+    "matchId": 3,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-17",
@@ -168,7 +72,7 @@
     ]
   },
   {
-    "matchId": 8,
+    "matchId": 4,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-17",
@@ -192,7 +96,7 @@
     ]
   },
   {
-    "matchId": 9,
+    "matchId": 5,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-18",
@@ -216,7 +120,7 @@
     ]
   },
   {
-    "matchId": 10,
+    "matchId": 6,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-18",
@@ -240,7 +144,7 @@
     ]
   },
   {
-    "matchId": 11,
+    "matchId": 7,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-18",
@@ -264,7 +168,7 @@
     ]
   },
   {
-    "matchId": 12,
+    "matchId": 8,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-18",
@@ -288,7 +192,7 @@
     ]
   },
   {
-    "matchId": 13,
+    "matchId": 9,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-19",
@@ -312,7 +216,7 @@
     ]
   },
   {
-    "matchId": 14,
+    "matchId": 10,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-19",
@@ -336,7 +240,7 @@
     ]
   },
   {
-    "matchId": 15,
+    "matchId": 11,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-19",
@@ -360,7 +264,7 @@
     ]
   },
   {
-    "matchId": 16,
+    "matchId": 12,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-19",
@@ -384,7 +288,7 @@
     ]
   },
   {
-    "matchId": 17,
+    "matchId": 13,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-20",
@@ -408,7 +312,7 @@
     ]
   },
   {
-    "matchId": 18,
+    "matchId": 14,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-20",
@@ -432,7 +336,7 @@
     ]
   },
   {
-    "matchId": 19,
+    "matchId": 15,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-20",
@@ -456,7 +360,7 @@
     ]
   },
   {
-    "matchId": 20,
+    "matchId": 16,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-20",
@@ -480,7 +384,7 @@
     ]
   },
   {
-    "matchId": 21,
+    "matchId": 17,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-21",
@@ -504,7 +408,7 @@
     ]
   },
   {
-    "matchId": 22,
+    "matchId": 18,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-21",
@@ -528,7 +432,7 @@
     ]
   },
   {
-    "matchId": 23,
+    "matchId": 19,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-21",
@@ -552,7 +456,7 @@
     ]
   },
   {
-    "matchId": 24,
+    "matchId": 20,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-21",
@@ -576,67 +480,67 @@
     ]
   },
   {
-    "matchId": 25,
+    "matchId": 21,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-22",
     "teamA": "France",
     "teamB": "Iraq",
-    "teamAElo": 1775.83,
-    "teamBElo": 1633.27,
-    "teamARecentForm": "W-W-W-L-W",
-    "teamBRecentForm": "L-W-W-D-L",
-    "teamAWinProb": 0.5911,
-    "drawProb": 0.2208,
-    "teamBWinProb": 0.1881,
-    "expectedGoalsA": 1.52,
-    "expectedGoalsB": 0.98,
-    "confidence": "MEDIUM",
+    "teamAElo": 1793.21,
+    "teamBElo": 1612.24,
+    "teamARecentForm": "W-W-L-W-W",
+    "teamBRecentForm": "W-W-D-L-L",
+    "teamAWinProb": 0.6361,
+    "drawProb": 0.2071,
+    "teamBWinProb": 0.1568,
+    "expectedGoalsA": 1.56,
+    "expectedGoalsB": 0.94,
+    "confidence": "HIGH",
     "reasons": [
       "France의 Elo 점수가 더 높음",
       "France의 최근 5경기 승점이 더 높음",
-      "France 최근 5경기: W-W-W-L-W",
-      "Iraq 최근 5경기: L-W-W-D-L"
+      "France 최근 5경기: W-W-L-W-W",
+      "Iraq 최근 5경기: W-W-D-L-L"
     ]
   },
   {
-    "matchId": 26,
+    "matchId": 22,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-22",
     "teamA": "Norway",
     "teamB": "Senegal",
-    "teamAElo": 1654.91,
-    "teamBElo": 1732.49,
-    "teamARecentForm": "W-L-D-W-D",
-    "teamBRecentForm": "L-W-W-L-D",
-    "teamAWinProb": 0.3042,
-    "drawProb": 0.246,
-    "teamBWinProb": 0.4498,
-    "expectedGoalsA": 1.21,
-    "expectedGoalsB": 1.29,
+    "teamAElo": 1675.94,
+    "teamBElo": 1715.11,
+    "teamARecentForm": "L-D-W-D-W",
+    "teamBRecentForm": "W-W-L-D-L",
+    "teamAWinProb": 0.3374,
+    "drawProb": 0.2623,
+    "teamBWinProb": 0.4003,
+    "expectedGoalsA": 1.25,
+    "expectedGoalsB": 1.25,
     "confidence": "LOW",
     "reasons": [
       "Senegal의 Elo 점수가 더 높음",
       "Norway의 최근 5경기 승점이 더 높음",
-      "Norway 최근 5경기: W-L-D-W-D",
-      "Senegal 최근 5경기: L-W-W-L-D"
+      "Norway 최근 5경기: L-D-W-D-W",
+      "Senegal 최근 5경기: W-W-L-D-L"
     ]
   },
   {
-    "matchId": 27,
+    "matchId": 23,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-22",
     "teamA": "Argentina",
     "teamB": "Austria",
-    "teamAElo": 1788.32,
-    "teamBElo": 1628.52,
+    "teamAElo": 1806.32,
+    "teamBElo": 1648.27,
     "teamARecentForm": "W-W-W-W-W",
-    "teamBRecentForm": "W-D-W-W-W",
-    "teamAWinProb": 0.5816,
-    "drawProb": 0.2145,
-    "teamBWinProb": 0.2038,
+    "teamBRecentForm": "D-W-W-W-W",
+    "teamAWinProb": 0.5796,
+    "drawProb": 0.2152,
+    "teamBWinProb": 0.2053,
     "expectedGoalsA": 1.45,
     "expectedGoalsB": 1.05,
     "confidence": "MEDIUM",
@@ -644,35 +548,35 @@
       "Argentina의 Elo 점수가 더 높음",
       "Argentina의 최근 5경기 승점이 더 높음",
       "Argentina 최근 5경기: W-W-W-W-W",
-      "Austria 최근 5경기: W-D-W-W-W"
+      "Austria 최근 5경기: D-W-W-W-W"
     ]
   },
   {
-    "matchId": 28,
+    "matchId": 24,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-22",
     "teamA": "Jordan",
     "teamB": "Algeria",
-    "teamAElo": 1626.89,
-    "teamBElo": 1718.95,
-    "teamARecentForm": "L-D-D-L-L",
-    "teamBRecentForm": "L-W-D-W-W",
-    "teamAWinProb": 0.2015,
-    "drawProb": 0.2402,
-    "teamBWinProb": 0.5583,
+    "teamAElo": 1607.15,
+    "teamBElo": 1700.94,
+    "teamARecentForm": "D-D-L-L-L",
+    "teamBRecentForm": "W-D-W-W-L",
+    "teamAWinProb": 0.2,
+    "drawProb": 0.2395,
+    "teamBWinProb": 0.5605,
     "expectedGoalsA": 0.93,
     "expectedGoalsB": 1.57,
     "confidence": "HIGH",
     "reasons": [
       "Algeria의 Elo 점수가 더 높음",
       "Algeria의 최근 5경기 승점이 더 높음",
-      "Jordan 최근 5경기: L-D-D-L-L",
-      "Algeria 최근 5경기: L-W-D-W-W"
+      "Jordan 최근 5경기: D-D-L-L-L",
+      "Algeria 최근 5경기: W-D-W-W-L"
     ]
   },
   {
-    "matchId": 29,
+    "matchId": 25,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-23",
@@ -696,7 +600,7 @@
     ]
   },
   {
-    "matchId": 30,
+    "matchId": 26,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-23",
@@ -720,7 +624,7 @@
     ]
   },
   {
-    "matchId": 31,
+    "matchId": 27,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-23",
@@ -744,7 +648,7 @@
     ]
   },
   {
-    "matchId": 32,
+    "matchId": 28,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-23",
@@ -768,7 +672,7 @@
     ]
   },
   {
-    "matchId": 33,
+    "matchId": 29,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-24",
@@ -792,7 +696,7 @@
     ]
   },
   {
-    "matchId": 34,
+    "matchId": 30,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-24",
@@ -816,7 +720,7 @@
     ]
   },
   {
-    "matchId": 35,
+    "matchId": 31,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-24",
@@ -840,7 +744,7 @@
     ]
   },
   {
-    "matchId": 36,
+    "matchId": 32,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-24",
@@ -864,7 +768,7 @@
     ]
   },
   {
-    "matchId": 37,
+    "matchId": 33,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-24",
@@ -888,7 +792,7 @@
     ]
   },
   {
-    "matchId": 38,
+    "matchId": 34,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-24",
@@ -912,7 +816,7 @@
     ]
   },
   {
-    "matchId": 39,
+    "matchId": 35,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-25",
@@ -936,7 +840,7 @@
     ]
   },
   {
-    "matchId": 40,
+    "matchId": 36,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-25",
@@ -960,7 +864,7 @@
     ]
   },
   {
-    "matchId": 41,
+    "matchId": 37,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-25",
@@ -984,7 +888,7 @@
     ]
   },
   {
-    "matchId": 42,
+    "matchId": 38,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-25",
@@ -1008,7 +912,7 @@
     ]
   },
   {
-    "matchId": 43,
+    "matchId": 39,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-25",
@@ -1032,7 +936,7 @@
     ]
   },
   {
-    "matchId": 44,
+    "matchId": 40,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-25",
@@ -1056,7 +960,7 @@
     ]
   },
   {
-    "matchId": 45,
+    "matchId": 41,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-26",
@@ -1080,7 +984,7 @@
     ]
   },
   {
-    "matchId": 46,
+    "matchId": 42,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-26",
@@ -1104,7 +1008,7 @@
     ]
   },
   {
-    "matchId": 47,
+    "matchId": 43,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-26",
@@ -1128,7 +1032,7 @@
     ]
   },
   {
-    "matchId": 48,
+    "matchId": 44,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-26",
@@ -1152,103 +1056,103 @@
     ]
   },
   {
-    "matchId": 49,
+    "matchId": 45,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-26",
     "teamA": "Norway",
     "teamB": "France",
-    "teamAElo": 1654.91,
-    "teamBElo": 1775.83,
-    "teamARecentForm": "W-L-D-W-D",
-    "teamBRecentForm": "W-W-W-L-W",
-    "teamAWinProb": 0.2165,
-    "drawProb": 0.2289,
-    "teamBWinProb": 0.5546,
-    "expectedGoalsA": 1.02,
-    "expectedGoalsB": 1.48,
+    "teamAElo": 1675.94,
+    "teamBElo": 1793.21,
+    "teamARecentForm": "L-D-W-D-W",
+    "teamBRecentForm": "W-W-L-W-W",
+    "teamAWinProb": 0.2197,
+    "drawProb": 0.2303,
+    "teamBWinProb": 0.55,
+    "expectedGoalsA": 1.03,
+    "expectedGoalsB": 1.47,
     "confidence": "MEDIUM",
     "reasons": [
       "France의 Elo 점수가 더 높음",
       "France의 최근 5경기 승점이 더 높음",
-      "Norway 최근 5경기: W-L-D-W-D",
-      "France 최근 5경기: W-W-W-L-W"
+      "Norway 최근 5경기: L-D-W-D-W",
+      "France 최근 5경기: W-W-L-W-W"
     ]
   },
   {
-    "matchId": 50,
+    "matchId": 46,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-26",
     "teamA": "Senegal",
     "teamB": "Iraq",
-    "teamAElo": 1732.49,
-    "teamBElo": 1633.27,
-    "teamARecentForm": "L-W-W-L-D",
-    "teamBRecentForm": "L-W-W-D-L",
-    "teamAWinProb": 0.4874,
-    "drawProb": 0.2373,
-    "teamBWinProb": 0.2753,
+    "teamAElo": 1715.11,
+    "teamBElo": 1612.24,
+    "teamARecentForm": "W-W-L-D-L",
+    "teamBRecentForm": "W-W-D-L-L",
+    "teamAWinProb": 0.492,
+    "drawProb": 0.2359,
+    "teamBWinProb": 0.2721,
     "expectedGoalsA": 1.34,
     "expectedGoalsB": 1.16,
     "confidence": "MEDIUM",
     "reasons": [
       "Senegal의 Elo 점수가 더 높음",
       "두 팀의 최근 5경기 승점이 동일함",
-      "Senegal 최근 5경기: L-W-W-L-D",
-      "Iraq 최근 5경기: L-W-W-D-L"
+      "Senegal 최근 5경기: W-W-L-D-L",
+      "Iraq 최근 5경기: W-W-D-L-L"
     ]
   },
   {
-    "matchId": 51,
+    "matchId": 47,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-27",
     "teamA": "Algeria",
     "teamB": "Austria",
-    "teamAElo": 1718.95,
-    "teamBElo": 1628.52,
-    "teamARecentForm": "L-W-D-W-W",
-    "teamBRecentForm": "W-D-W-W-W",
-    "teamAWinProb": 0.4462,
-    "drawProb": 0.2408,
-    "teamBWinProb": 0.313,
-    "expectedGoalsA": 1.24,
-    "expectedGoalsB": 1.26,
-    "confidence": "MEDIUM",
+    "teamAElo": 1700.94,
+    "teamBElo": 1648.27,
+    "teamARecentForm": "W-D-W-W-L",
+    "teamBRecentForm": "D-W-W-W-W",
+    "teamAWinProb": 0.3977,
+    "drawProb": 0.2565,
+    "teamBWinProb": 0.3458,
+    "expectedGoalsA": 1.21,
+    "expectedGoalsB": 1.29,
+    "confidence": "LOW",
     "reasons": [
       "Algeria의 Elo 점수가 더 높음",
       "Austria의 최근 5경기 승점이 더 높음",
-      "Algeria 최근 5경기: L-W-D-W-W",
-      "Austria 최근 5경기: W-D-W-W-W"
+      "Algeria 최근 5경기: W-D-W-W-L",
+      "Austria 최근 5경기: D-W-W-W-W"
     ]
   },
   {
-    "matchId": 52,
+    "matchId": 48,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-27",
     "teamA": "Jordan",
     "teamB": "Argentina",
-    "teamAElo": 1626.89,
-    "teamBElo": 1788.32,
-    "teamARecentForm": "L-D-D-L-L",
+    "teamAElo": 1607.15,
+    "teamBElo": 1806.32,
+    "teamARecentForm": "D-D-L-L-L",
     "teamBRecentForm": "W-W-W-W-W",
-    "teamAWinProb": 0.0925,
-    "drawProb": 0.2139,
-    "teamBWinProb": 0.6935,
-    "expectedGoalsA": 0.72,
-    "expectedGoalsB": 1.78,
+    "teamAWinProb": 0.0627,
+    "drawProb": 0.2009,
+    "teamBWinProb": 0.7364,
+    "expectedGoalsA": 0.69,
+    "expectedGoalsB": 1.81,
     "confidence": "HIGH",
     "reasons": [
       "Argentina의 Elo 점수가 더 높음",
       "Argentina의 최근 5경기 승점이 더 높음",
-      "Jordan 최근 5경기: L-D-D-L-L",
+      "Jordan 최근 5경기: D-D-L-L-L",
       "Argentina 최근 5경기: W-W-W-W-W"
     ]
   },
   {
-    "matchId": 53,
+    "matchId": 49,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-27",
@@ -1272,7 +1176,7 @@
     ]
   },
   {
-    "matchId": 54,
+    "matchId": 50,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-27",
@@ -1296,7 +1200,7 @@
     ]
   },
   {
-    "matchId": 55,
+    "matchId": 51,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-27",
@@ -1320,7 +1224,7 @@
     ]
   },
   {
-    "matchId": 56,
+    "matchId": 52,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-27",
