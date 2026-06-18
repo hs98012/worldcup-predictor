@@ -17,6 +17,8 @@ REQUIRED_DERIVED_FILES = [
 UPDATE_SCRIPT = "00_update_results_csv.py"
 PIPELINE_SCRIPTS = [
     "01_load_matches.py",
+    "10_create_worldcup_completed_results.py",
+    "11_create_group_standings.py",
     "02_calculate_elo.py",
     "03_predict_match.py",
     "04_create_worldcup_matches.py",
@@ -28,8 +30,6 @@ PIPELINE_SCRIPTS = [
     "08_simulate_group_stage.py",
     "09_simulate_tournament.py",
     "10_create_dashboard_summary.py",
-    "10_create_worldcup_completed_results.py",
-    "11_create_group_standings.py",
     "09_sync_frontend_data.py",
 ]
 
@@ -59,6 +59,25 @@ def load_update_status():
         return json.load(file)
 
 
+def get_stale_derived_files():
+    script_paths = [
+        SCRIPTS_DIR / UPDATE_SCRIPT,
+        *(SCRIPTS_DIR / script_name for script_name in PIPELINE_SCRIPTS),
+        *(SCRIPTS_DIR / "utils").glob("*.py"),
+    ]
+    latest_script_mtime = max(
+        path.stat().st_mtime
+        for path in script_paths
+        if path.exists()
+    )
+
+    return [
+        path
+        for path in REQUIRED_DERIVED_FILES
+        if path.exists() and path.stat().st_mtime < latest_script_mtime
+    ]
+
+
 def main():
     run_script(UPDATE_SCRIPT)
     status = load_update_status()
@@ -68,15 +87,22 @@ def main():
         for path in REQUIRED_DERIVED_FILES
         if not path.exists()
     ]
+    stale_derived_files = get_stale_derived_files()
 
-    if not status.get("changed", False) and not missing_derived_files:
+    if (
+        not status.get("changed", False)
+        and not missing_derived_files
+        and not stale_derived_files
+    ):
         print("\n원본 데이터 변경 없음. 이후 파이프라인을 실행하지 않습니다.")
         return
 
     if status.get("changed", False):
         print("\n원본 데이터 변경 감지. 전체 파이프라인을 실행합니다.")
-    else:
+    elif missing_derived_files:
         print("\n필수 처리 파일 없음. 전체 파이프라인을 실행합니다.")
+    else:
+        print("\n처리 스크립트 변경 감지. 전체 파이프라인을 실행합니다.")
 
     for script_name in PIPELINE_SCRIPTS:
         run_script(script_name)

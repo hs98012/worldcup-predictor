@@ -2,6 +2,14 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
+from utils.worldcup_simulation import (
+    build_initial_group_state,
+    completed_fixture_keys,
+    fixture_group_map,
+    is_completed_prediction,
+    load_completed_results,
+)
+
 INPUT_PATH = Path("data/processed/predictions_adjusted.json")
 OUTPUT_PATH = Path("data/processed/group_predictions.json")
 
@@ -92,22 +100,59 @@ def main():
     with open(INPUT_PATH, "r", encoding="utf-8") as f:
         predictions = json.load(f)
 
-    groups = defaultdict(dict)
+    completed_results = load_completed_results()
+    completed_keys = completed_fixture_keys(completed_results)
+    team_names = {
+        prediction["teamA"]
+        for prediction in predictions
+    } | {
+        prediction["teamB"]
+        for prediction in predictions
+    }
+    groups, applied_completed_count = build_initial_group_state(
+        completed_results,
+        team_names,
+    )
+    groups_by_fixture = fixture_group_map()
     match_results_by_group = defaultdict(list)
 
+    for match in completed_results:
+        group = groups_by_fixture.get(
+            (
+                match["date"],
+                frozenset(
+                    (
+                        match["normalizedHomeTeam"],
+                        match["normalizedAwayTeam"],
+                    )
+                ),
+            )
+        )
+        if group is None:
+            continue
+
+        match_results_by_group[group].append(
+            {
+                "date": match["date"],
+                "displayTeamA": match["homeTeam"],
+                "displayTeamB": match["awayTeam"],
+                "predictedScoreA": match["homeScore"],
+                "predictedScoreB": match["awayScore"],
+                "predictedResult": match["result"],
+                "isCompleted": True,
+            }
+        )
+
     for prediction in predictions:
+        if is_completed_prediction(prediction, completed_keys):
+            continue
+
         group = prediction["group"]
 
         display_a = prediction["displayTeamA"]
         display_b = prediction["displayTeamB"]
         team_a = prediction["teamA"]
         team_b = prediction["teamB"]
-
-        if team_a not in groups[group]:
-            groups[group][team_a] = init_team(display_a, team_a)
-
-        if team_b not in groups[group]:
-            groups[group][team_b] = init_team(display_b, team_b)
 
         score_a, score_b = predict_score(prediction)
 
@@ -130,6 +175,7 @@ def main():
                 "drawProb": prediction["drawProb"],
                 "teamBWinProb": prediction["teamBWinProb"],
                 "predictedResult": prediction["predictedResult"],
+                "isCompleted": False,
             }
         )
 
@@ -165,6 +211,7 @@ def main():
         json.dump(output, f, ensure_ascii=False, indent=2)
 
     print(f"조별리그 예상 순위 생성 완료: {OUTPUT_PATH}")
+    print(f"초기 standings에 반영한 완료 경기 수: {applied_completed_count}")
     print()
 
     for group_data in output:

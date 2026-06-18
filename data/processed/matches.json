@@ -2,46 +2,6 @@
   {
     "matchId": 1,
     "stage": "GROUP",
-    "group": "K",
-    "date": "2026-06-17",
-    "displayTeamA": "Portugal",
-    "displayTeamB": "DR Congo",
-    "teamA": "Portugal",
-    "teamB": "DR Congo"
-  },
-  {
-    "matchId": 2,
-    "stage": "GROUP",
-    "group": "K",
-    "date": "2026-06-17",
-    "displayTeamA": "Uzbekistan",
-    "displayTeamB": "Colombia",
-    "teamA": "Uzbekistan",
-    "teamB": "Colombia"
-  },
-  {
-    "matchId": 3,
-    "stage": "GROUP",
-    "group": "L",
-    "date": "2026-06-17",
-    "displayTeamA": "England",
-    "displayTeamB": "Croatia",
-    "teamA": "England",
-    "teamB": "Croatia"
-  },
-  {
-    "matchId": 4,
-    "stage": "GROUP",
-    "group": "L",
-    "date": "2026-06-17",
-    "displayTeamA": "Ghana",
-    "displayTeamB": "Panama",
-    "teamA": "Ghana",
-    "teamB": "Panama"
-  },
-  {
-    "matchId": 5,
-    "stage": "GROUP",
     "group": "A",
     "date": "2026-06-18",
     "displayTeamA": "Czech Republic",
@@ -50,7 +10,7 @@
     "teamB": "South Africa"
   },
   {
-    "matchId": 6,
+    "matchId": 2,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-18",
@@ -60,7 +20,7 @@
     "teamB": "South Korea"
   },
   {
-    "matchId": 7,
+    "matchId": 3,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-18",
@@ -70,7 +30,7 @@
     "teamB": "Bosnia and Herzegovina"
   },
   {
-    "matchId": 8,
+    "matchId": 4,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-18",
@@ -80,7 +40,7 @@
     "teamB": "Qatar"
   },
   {
-    "matchId": 9,
+    "matchId": 5,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-19",
@@ -90,7 +50,7 @@
     "teamB": "Morocco"
   },
   {
-    "matchId": 10,
+    "matchId": 6,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-19",
@@ -100,7 +60,7 @@
     "teamB": "Haiti"
   },
   {
-    "matchId": 11,
+    "matchId": 7,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-19",
@@ -110,7 +70,7 @@
     "teamB": "Australia"
   },
   {
-    "matchId": 12,
+    "matchId": 8,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-19",
@@ -120,7 +80,7 @@
     "teamB": "Paraguay"
   },
   {
-    "matchId": 13,
+    "matchId": 9,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-20",
@@ -130,7 +90,7 @@
     "teamB": "Ivory Coast"
   },
   {
-    "matchId": 14,
+    "matchId": 10,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-20",
@@ -140,7 +100,7 @@
     "teamB": "Curaçao"
   },
   {
-    "matchId": 15,
+    "matchId": 11,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-20",
@@ -150,7 +110,7 @@
     "teamB": "Sweden"
   },
   {
-    "matchId": 16,
+    "matchId": 12,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-20",
@@ -160,7 +120,7 @@
     "teamB": "Japan"
   },
   {
-    "matchId": 17,
+    "matchId": 13,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-21",
@@ -170,7 +130,7 @@
     "teamB": "Iran"
   },
   {
-    "matchId": 18,
+    "matchId": 14,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-21",
@@ -180,7 +140,7 @@
     "teamB": "Egypt"
   },
   {
-    "matchId": 19,
+    "matchId": 15,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-21",
@@ -190,7 +150,7 @@
     "teamB": "Saudi Arabia"
   },
   {
-    "matchId": 20,
+    "matchId": 16,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-21",
@@ -200,7 +160,7 @@
     "teamB": "Cape Verde"
   },
   {
-    "matchId": 21,
+    "matchId": 17,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-22",
@@ -210,7 +170,7 @@
     "teamB": "Iraq"
   },
   {
-    "matchId": 22,
+    "matchId": 18,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-22",
@@ -220,7 +180,7 @@
     "teamB": "Senegal"
   },
   {
-    "matchId": 23,
+    "matchId": 19,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-22",
@@ -230,7 +190,7 @@
     "teamB": "Austria"
   },
   {
-    "matchId": 24,
+    "matchId": 20,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-22",
@@ -240,7 +200,7 @@
     "teamB": "Algeria"
   },
   {
-    "matchId": 25,
+    "matchId": 21,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-23",
@@ -250,7 +210,7 @@
     "teamB": "Uzbekistan"
   },
   {
-    "matchId": 26,
+    "matchId": 22,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-23",
@@ -260,7 +220,7 @@
     "teamB": "DR Congo"
   },
   {
-    "matchId": 27,
+    "matchId": 23,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-23",
@@ -270,7 +230,7 @@
     "teamB": "Ghana"
   },
   {
-    "matchId": 28,
+    "matchId": 24,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-23",
@@ -280,7 +240,7 @@
     "teamB": "Croatia"
   },
   {
-    "matchId": 29,
+    "matchId": 25,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-24",
@@ -290,7 +250,7 @@
     "teamB": "Czech Republic"
   },
   {
-    "matchId": 30,
+    "matchId": 26,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-24",
@@ -300,7 +260,7 @@
     "teamB": "South Korea"
   },
   {
-    "matchId": 31,
+    "matchId": 27,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-24",
@@ -310,7 +270,7 @@
     "teamB": "Switzerland"
   },
   {
-    "matchId": 32,
+    "matchId": 28,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-24",
@@ -320,7 +280,7 @@
     "teamB": "Qatar"
   },
   {
-    "matchId": 33,
+    "matchId": 29,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-24",
@@ -330,7 +290,7 @@
     "teamB": "Brazil"
   },
   {
-    "matchId": 34,
+    "matchId": 30,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-24",
@@ -340,7 +300,7 @@
     "teamB": "Haiti"
   },
   {
-    "matchId": 35,
+    "matchId": 31,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-25",
@@ -350,7 +310,7 @@
     "teamB": "Turkey"
   },
   {
-    "matchId": 36,
+    "matchId": 32,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-25",
@@ -360,7 +320,7 @@
     "teamB": "Australia"
   },
   {
-    "matchId": 37,
+    "matchId": 33,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-25",
@@ -370,7 +330,7 @@
     "teamB": "Ivory Coast"
   },
   {
-    "matchId": 38,
+    "matchId": 34,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-25",
@@ -380,7 +340,7 @@
     "teamB": "Germany"
   },
   {
-    "matchId": 39,
+    "matchId": 35,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-25",
@@ -390,7 +350,7 @@
     "teamB": "Sweden"
   },
   {
-    "matchId": 40,
+    "matchId": 36,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-25",
@@ -400,7 +360,7 @@
     "teamB": "Netherlands"
   },
   {
-    "matchId": 41,
+    "matchId": 37,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-26",
@@ -410,7 +370,7 @@
     "teamB": "Iran"
   },
   {
-    "matchId": 42,
+    "matchId": 38,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-26",
@@ -420,7 +380,7 @@
     "teamB": "Belgium"
   },
   {
-    "matchId": 43,
+    "matchId": 39,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-26",
@@ -430,7 +390,7 @@
     "teamB": "Saudi Arabia"
   },
   {
-    "matchId": 44,
+    "matchId": 40,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-26",
@@ -440,7 +400,7 @@
     "teamB": "Spain"
   },
   {
-    "matchId": 45,
+    "matchId": 41,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-26",
@@ -450,7 +410,7 @@
     "teamB": "France"
   },
   {
-    "matchId": 46,
+    "matchId": 42,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-26",
@@ -460,7 +420,7 @@
     "teamB": "Iraq"
   },
   {
-    "matchId": 47,
+    "matchId": 43,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-27",
@@ -470,7 +430,7 @@
     "teamB": "Austria"
   },
   {
-    "matchId": 48,
+    "matchId": 44,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-27",
@@ -480,7 +440,7 @@
     "teamB": "Argentina"
   },
   {
-    "matchId": 49,
+    "matchId": 45,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-27",
@@ -490,7 +450,7 @@
     "teamB": "Portugal"
   },
   {
-    "matchId": 50,
+    "matchId": 46,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-27",
@@ -500,7 +460,7 @@
     "teamB": "Uzbekistan"
   },
   {
-    "matchId": 51,
+    "matchId": 47,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-27",
@@ -510,7 +470,7 @@
     "teamB": "England"
   },
   {
-    "matchId": 52,
+    "matchId": 48,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-27",

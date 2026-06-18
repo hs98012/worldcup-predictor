@@ -1,29 +1,22 @@
 import json
 import random
+from copy import deepcopy
 from collections import defaultdict
 from pathlib import Path
+
+from utils.worldcup_simulation import (
+    apply_match_result,
+    build_initial_group_state,
+    completed_fixture_keys,
+    is_completed_prediction,
+    load_completed_results,
+)
 
 INPUT_PATH = Path("data/processed/predictions_adjusted.json")
 OUTPUT_PATH = Path("data/processed/group_simulation.json")
 
 SIMULATION_COUNT = 10000
 RANDOM_SEED = 42
-
-
-def init_team(display_name, team_name):
-    return {
-        "displayTeam": display_name,
-        "team": team_name,
-        "played": 0,
-        "wins": 0,
-        "draws": 0,
-        "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "tieBreaker": random.random(),
-    }
 
 
 def sample_result(prediction):
@@ -103,34 +96,6 @@ def weighted_choice(items, weights):
     return items[-1]
 
 
-def apply_match_result(team_a_stats, team_b_stats, score_a, score_b):
-    team_a_stats["played"] += 1
-    team_b_stats["played"] += 1
-
-    team_a_stats["goalsFor"] += score_a
-    team_a_stats["goalsAgainst"] += score_b
-
-    team_b_stats["goalsFor"] += score_b
-    team_b_stats["goalsAgainst"] += score_a
-
-    if score_a > score_b:
-        team_a_stats["wins"] += 1
-        team_b_stats["losses"] += 1
-        team_a_stats["points"] += 3
-    elif score_a < score_b:
-        team_b_stats["wins"] += 1
-        team_a_stats["losses"] += 1
-        team_b_stats["points"] += 3
-    else:
-        team_a_stats["draws"] += 1
-        team_b_stats["draws"] += 1
-        team_a_stats["points"] += 1
-        team_b_stats["points"] += 1
-
-    team_a_stats["goalDiff"] = team_a_stats["goalsFor"] - team_a_stats["goalsAgainst"]
-    team_b_stats["goalDiff"] = team_b_stats["goalsFor"] - team_b_stats["goalsAgainst"]
-
-
 def sort_standings(standings):
     """
     FIFA 실제 타이브레이커 전체를 모두 구현하지는 않고,
@@ -149,24 +114,19 @@ def sort_standings(standings):
     )
 
 
-def run_one_simulation(predictions_by_group):
+def run_one_simulation(predictions_by_group, initial_groups):
     group_results = {}
     third_place_teams = []
+    simulated_groups = deepcopy(initial_groups)
 
-    for group, predictions in predictions_by_group.items():
-        teams = {}
+    for group, teams in simulated_groups.items():
+        for team in teams.values():
+            team["tieBreaker"] = random.random()
 
+        predictions = predictions_by_group.get(group, [])
         for prediction in predictions:
             team_a = prediction["teamA"]
             team_b = prediction["teamB"]
-            display_a = prediction["displayTeamA"]
-            display_b = prediction["displayTeamB"]
-
-            if team_a not in teams:
-                teams[team_a] = init_team(display_a, team_a)
-
-            if team_b not in teams:
-                teams[team_b] = init_team(display_b, team_b)
 
             sampled_result = sample_result(prediction)
             score_a, score_b = sample_score(sampled_result, prediction)
@@ -200,9 +160,25 @@ def main():
     with open(INPUT_PATH, "r", encoding="utf-8") as f:
         predictions = json.load(f)
 
+    completed_results = load_completed_results()
+    completed_keys = completed_fixture_keys(completed_results)
+    team_names = {
+        prediction["teamA"]
+        for prediction in predictions
+    } | {
+        prediction["teamB"]
+        for prediction in predictions
+    }
+    initial_groups, applied_completed_count = build_initial_group_state(
+        completed_results,
+        team_names,
+    )
+
     predictions_by_group = defaultdict(list)
 
     for prediction in predictions:
+        if is_completed_prediction(prediction, completed_keys):
+            continue
         predictions_by_group[prediction["group"]].append(prediction)
 
     stats = defaultdict(
@@ -222,7 +198,10 @@ def main():
     )
 
     for _ in range(SIMULATION_COUNT):
-        group_results, best_third_team_keys = run_one_simulation(predictions_by_group)
+        group_results, best_third_team_keys = run_one_simulation(
+            predictions_by_group,
+            initial_groups,
+        )
 
         for group, standings in group_results.items():
             for team in standings:
@@ -299,6 +278,11 @@ def main():
 
     print(f"조별리그 시뮬레이션 완료: {OUTPUT_PATH}")
     print(f"반복 횟수: {SIMULATION_COUNT}")
+    print(f"초기 standings에 반영한 완료 경기 수: {applied_completed_count}")
+    print(
+        "시뮬레이션 대상 남은 경기 수: "
+        f"{sum(len(items) for items in predictions_by_group.values())}"
+    )
     print()
 
     for group_data in final_output:

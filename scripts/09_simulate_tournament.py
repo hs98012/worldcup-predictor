@@ -1,11 +1,19 @@
 import json
 import random
+from copy import deepcopy
 from collections import defaultdict
 from pathlib import Path
 
 import joblib
 import numpy as np
 import pandas as pd
+
+from utils.worldcup_simulation import (
+    build_initial_group_state,
+    completed_fixture_keys,
+    is_completed_prediction,
+    load_completed_results,
+)
 
 PREDICTIONS_PATH = Path("data/processed/predictions_adjusted.json")
 TEAMS_PATH = Path("data/processed/teams.json")
@@ -318,24 +326,20 @@ def sort_standings(standings):
     )
 
 
-def run_group_stage(predictions_by_group):
+def run_group_stage(predictions_by_group, initial_groups):
     group_results = {}
     third_place_teams = []
 
-    for group, predictions in predictions_by_group.items():
-        teams = {}
+    simulated_groups = deepcopy(initial_groups)
 
+    for group, teams in simulated_groups.items():
+        for team in teams.values():
+            team["tieBreaker"] = random.random()
+
+        predictions = predictions_by_group.get(group, [])
         for prediction in predictions:
             team_a = prediction["teamA"]
             team_b = prediction["teamB"]
-            display_a = prediction["displayTeamA"]
-            display_b = prediction["displayTeamB"]
-
-            if team_a not in teams:
-                teams[team_a] = init_team(display_a, team_a)
-
-            if team_b not in teams:
-                teams[team_b] = init_team(display_b, team_b)
 
             result = sample_group_result(prediction)
             score_a, score_b = sample_group_score(result, prediction)
@@ -597,14 +601,10 @@ def build_strength_note(team, diagnostic):
     return "; ".join(notes) if notes else "전력 및 경로 진단 범위 내"
 
 
-def calculate_group_difficulty(predictions_by_group, teams_map):
+def calculate_group_difficulty(initial_groups, teams_map):
     group_teams = {}
-    for group, predictions in predictions_by_group.items():
-        teams = set()
-        for prediction in predictions:
-            teams.add(prediction["teamA"])
-            teams.add(prediction["teamB"])
-        group_teams[group] = teams
+    for group, teams in initial_groups.items():
+        group_teams[group] = set(teams)
 
     difficulty = {}
     for group, teams in group_teams.items():
@@ -784,11 +784,15 @@ def add_count(stats, team, key):
 
 def run_tournament_once(
     predictions_by_group,
+    initial_groups,
     model,
     teams_map,
     team_strength,
 ):
-    group_results, best_third_place_teams = run_group_stage(predictions_by_group)
+    group_results, best_third_place_teams = run_group_stage(
+        predictions_by_group,
+        initial_groups,
+    )
     third_assignment = assign_third_place_slots(best_third_place_teams)
 
     winners = {}
@@ -874,16 +878,21 @@ def main():
     teams_map = load_teams_map()
     team_strength = load_team_strength()
     model = joblib.load(MODEL_PATH)
+    completed_results = load_completed_results()
+    completed_keys = completed_fixture_keys(completed_results)
+    initial_groups, applied_completed_count = build_initial_group_state(
+        completed_results,
+        set(teams_map.keys()),
+    )
 
     predictions_by_group = defaultdict(list)
 
     for prediction in predictions:
+        if is_completed_prediction(prediction, completed_keys):
+            continue
         predictions_by_group[prediction["group"]].append(prediction)
 
-    group_difficulty = calculate_group_difficulty(
-        predictions_by_group,
-        teams_map,
-    )
+    group_difficulty = calculate_group_difficulty(initial_groups, teams_map)
     knockout_path_stats = defaultdict(
         lambda: {"strengthSum": 0.0, "encounters": 0}
     )
@@ -904,6 +913,7 @@ def main():
     for i in range(SIMULATION_COUNT):
         result = run_tournament_once(
             predictions_by_group,
+            initial_groups,
             model,
             teams_map,
             team_strength,
@@ -1013,6 +1023,11 @@ def main():
     print()
     print(f"토너먼트 시뮬레이션 완료: {OUTPUT_PATH}")
     print(f"반복 횟수: {SIMULATION_COUNT}")
+    print(f"초기 standings에 반영한 완료 경기 수: {applied_completed_count}")
+    print(
+        "시뮬레이션 대상 남은 경기 수: "
+        f"{sum(len(items) for items in predictions_by_group.values())}"
+    )
     print(f"전력 진단 저장: {DIAGNOSTICS_PATH}")
     print(f"시뮬레이션 진단 저장: {SIMULATION_DIAGNOSTICS_PATH}")
     print()

@@ -2,102 +2,6 @@
   {
     "matchId": 1,
     "stage": "GROUP",
-    "group": "K",
-    "date": "2026-06-17",
-    "teamA": "Portugal",
-    "teamB": "DR Congo",
-    "teamAElo": 1741.07,
-    "teamBElo": 1619.2,
-    "teamARecentForm": "W-D-W-W-W",
-    "teamBRecentForm": "L-W-W-D-L",
-    "teamAWinProb": 0.5757,
-    "drawProb": 0.2285,
-    "teamBWinProb": 0.1957,
-    "expectedGoalsA": 1.54,
-    "expectedGoalsB": 0.96,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Portugal의 Elo 점수가 더 높음",
-      "Portugal의 최근 5경기 승점이 더 높음",
-      "Portugal 최근 5경기: W-D-W-W-W",
-      "DR Congo 최근 5경기: L-W-W-D-L"
-    ]
-  },
-  {
-    "matchId": 2,
-    "stage": "GROUP",
-    "group": "K",
-    "date": "2026-06-17",
-    "teamA": "Uzbekistan",
-    "teamB": "Colombia",
-    "teamAElo": 1663.68,
-    "teamBElo": 1678.54,
-    "teamARecentForm": "D-W-D-L-L",
-    "teamBRecentForm": "W-L-L-W-W",
-    "teamAWinProb": 0.3079,
-    "drawProb": 0.2732,
-    "teamBWinProb": 0.419,
-    "expectedGoalsA": 1.12,
-    "expectedGoalsB": 1.38,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Colombia의 Elo 점수가 더 높음",
-      "Colombia의 최근 5경기 승점이 더 높음",
-      "Uzbekistan 최근 5경기: D-W-D-L-L",
-      "Colombia 최근 5경기: W-L-L-W-W"
-    ]
-  },
-  {
-    "matchId": 3,
-    "stage": "GROUP",
-    "group": "L",
-    "date": "2026-06-17",
-    "teamA": "England",
-    "teamB": "Croatia",
-    "teamAElo": 1771.29,
-    "teamBElo": 1686.25,
-    "teamARecentForm": "W-D-L-W-W",
-    "teamBRecentForm": "W-W-L-L-W",
-    "teamAWinProb": 0.4793,
-    "drawProb": 0.243,
-    "teamBWinProb": 0.2777,
-    "expectedGoalsA": 1.35,
-    "expectedGoalsB": 1.15,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "England의 Elo 점수가 더 높음",
-      "England의 최근 5경기 승점이 더 높음",
-      "England 최근 5경기: W-D-L-W-W",
-      "Croatia 최근 5경기: W-W-L-L-W"
-    ]
-  },
-  {
-    "matchId": 4,
-    "stage": "GROUP",
-    "group": "L",
-    "date": "2026-06-17",
-    "teamA": "Ghana",
-    "teamB": "Panama",
-    "teamAElo": 1561.76,
-    "teamBElo": 1640.33,
-    "teamARecentForm": "L-L-L-L-D",
-    "teamBRecentForm": "D-W-L-W-D",
-    "teamAWinProb": 0.2233,
-    "drawProb": 0.2456,
-    "teamBWinProb": 0.5311,
-    "expectedGoalsA": 0.97,
-    "expectedGoalsB": 1.53,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Panama의 Elo 점수가 더 높음",
-      "Panama의 최근 5경기 승점이 더 높음",
-      "Ghana 최근 5경기: L-L-L-L-D",
-      "Panama 최근 5경기: D-W-L-W-D"
-    ]
-  },
-  {
-    "matchId": 5,
-    "stage": "GROUP",
     "group": "A",
     "date": "2026-06-18",
     "teamA": "Czech Republic",
@@ -120,7 +24,7 @@
     ]
   },
   {
-    "matchId": 6,
+    "matchId": 2,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-18",
@@ -144,7 +48,7 @@
     ]
   },
   {
-    "matchId": 7,
+    "matchId": 3,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-18",
@@ -168,7 +72,7 @@
     ]
   },
   {
-    "matchId": 8,
+    "matchId": 4,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-18",
@@ -192,7 +96,7 @@
     ]
   },
   {
-    "matchId": 9,
+    "matchId": 5,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-19",
@@ -216,7 +120,7 @@
     ]
   },
   {
-    "matchId": 10,
+    "matchId": 6,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-19",
@@ -240,7 +144,7 @@
     ]
   },
   {
-    "matchId": 11,
+    "matchId": 7,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-19",
@@ -264,7 +168,7 @@
     ]
   },
   {
-    "matchId": 12,
+    "matchId": 8,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-19",
@@ -288,7 +192,7 @@
     ]
   },
   {
-    "matchId": 13,
+    "matchId": 9,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-20",
@@ -312,7 +216,7 @@
     ]
   },
   {
-    "matchId": 14,
+    "matchId": 10,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-20",
@@ -336,7 +240,7 @@
     ]
   },
   {
-    "matchId": 15,
+    "matchId": 11,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-20",
@@ -360,7 +264,7 @@
     ]
   },
   {
-    "matchId": 16,
+    "matchId": 12,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-20",
@@ -384,7 +288,7 @@
     ]
   },
   {
-    "matchId": 17,
+    "matchId": 13,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-21",
@@ -408,7 +312,7 @@
     ]
   },
   {
-    "matchId": 18,
+    "matchId": 14,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-21",
@@ -432,7 +336,7 @@
     ]
   },
   {
-    "matchId": 19,
+    "matchId": 15,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-21",
@@ -456,7 +360,7 @@
     ]
   },
   {
-    "matchId": 20,
+    "matchId": 16,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-21",
@@ -480,7 +384,7 @@
     ]
   },
   {
-    "matchId": 21,
+    "matchId": 17,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-22",
@@ -504,7 +408,7 @@
     ]
   },
   {
-    "matchId": 22,
+    "matchId": 18,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-22",
@@ -528,7 +432,7 @@
     ]
   },
   {
-    "matchId": 23,
+    "matchId": 19,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-22",
@@ -552,7 +456,7 @@
     ]
   },
   {
-    "matchId": 24,
+    "matchId": 20,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-22",
@@ -576,103 +480,103 @@
     ]
   },
   {
-    "matchId": 25,
+    "matchId": 21,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-23",
     "teamA": "Portugal",
     "teamB": "Uzbekistan",
-    "teamAElo": 1741.07,
-    "teamBElo": 1663.68,
-    "teamARecentForm": "W-D-W-W-W",
-    "teamBRecentForm": "D-W-D-L-L",
-    "teamAWinProb": 0.5395,
-    "drawProb": 0.2461,
-    "teamBWinProb": 0.2143,
-    "expectedGoalsA": 1.56,
-    "expectedGoalsB": 0.94,
-    "confidence": "HIGH",
+    "teamAElo": 1735.26,
+    "teamBElo": 1644.69,
+    "teamARecentForm": "D-W-W-W-D",
+    "teamBRecentForm": "W-D-L-L-L",
+    "teamAWinProb": 0.5464,
+    "drawProb": 0.2408,
+    "teamBWinProb": 0.2128,
+    "expectedGoalsA": 1.54,
+    "expectedGoalsB": 0.96,
+    "confidence": "MEDIUM",
     "reasons": [
       "Portugal의 Elo 점수가 더 높음",
       "Portugal의 최근 5경기 승점이 더 높음",
-      "Portugal 최근 5경기: W-D-W-W-W",
-      "Uzbekistan 최근 5경기: D-W-D-L-L"
+      "Portugal 최근 5경기: D-W-W-W-D",
+      "Uzbekistan 최근 5경기: W-D-L-L-L"
     ]
   },
   {
-    "matchId": 26,
+    "matchId": 22,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-23",
     "teamA": "Colombia",
     "teamB": "DR Congo",
-    "teamAElo": 1678.54,
-    "teamBElo": 1619.2,
-    "teamARecentForm": "W-L-L-W-W",
-    "teamBRecentForm": "L-W-W-D-L",
-    "teamAWinProb": 0.4563,
-    "drawProb": 0.2536,
-    "teamBWinProb": 0.2901,
-    "expectedGoalsA": 1.36,
-    "expectedGoalsB": 1.14,
+    "teamAElo": 1697.53,
+    "teamBElo": 1625.01,
+    "teamARecentForm": "L-L-W-W-W",
+    "teamBRecentForm": "W-W-D-L-D",
+    "teamAWinProb": 0.4633,
+    "drawProb": 0.2481,
+    "teamBWinProb": 0.2886,
+    "expectedGoalsA": 1.34,
+    "expectedGoalsB": 1.16,
     "confidence": "LOW",
     "reasons": [
       "Colombia의 Elo 점수가 더 높음",
       "Colombia의 최근 5경기 승점이 더 높음",
-      "Colombia 최근 5경기: W-L-L-W-W",
-      "DR Congo 최근 5경기: L-W-W-D-L"
+      "Colombia 최근 5경기: L-L-W-W-W",
+      "DR Congo 최근 5경기: W-W-D-L-D"
     ]
   },
   {
-    "matchId": 27,
+    "matchId": 23,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-23",
     "teamA": "England",
     "teamB": "Ghana",
-    "teamAElo": 1771.29,
-    "teamBElo": 1561.76,
-    "teamARecentForm": "W-D-L-W-W",
-    "teamBRecentForm": "L-L-L-L-D",
-    "teamAWinProb": 0.7076,
-    "drawProb": 0.1975,
-    "teamBWinProb": 0.0949,
-    "expectedGoalsA": 1.7,
-    "expectedGoalsB": 0.8,
+    "teamAElo": 1786.37,
+    "teamBElo": 1582.85,
+    "teamARecentForm": "D-L-W-W-W",
+    "teamBRecentForm": "L-L-L-D-W",
+    "teamAWinProb": 0.6712,
+    "drawProb": 0.1995,
+    "teamBWinProb": 0.1294,
+    "expectedGoalsA": 1.61,
+    "expectedGoalsB": 0.89,
     "confidence": "HIGH",
     "reasons": [
       "England의 Elo 점수가 더 높음",
       "England의 최근 5경기 승점이 더 높음",
-      "England 최근 5경기: W-D-L-W-W",
-      "Ghana 최근 5경기: L-L-L-L-D"
+      "England 최근 5경기: D-L-W-W-W",
+      "Ghana 최근 5경기: L-L-L-D-W"
     ]
   },
   {
-    "matchId": 28,
+    "matchId": 24,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-23",
     "teamA": "Panama",
     "teamB": "Croatia",
-    "teamAElo": 1640.33,
-    "teamBElo": 1686.25,
-    "teamARecentForm": "D-W-L-W-D",
-    "teamBRecentForm": "W-W-L-L-W",
-    "teamAWinProb": 0.3117,
-    "drawProb": 0.2594,
-    "teamBWinProb": 0.429,
-    "expectedGoalsA": 1.18,
-    "expectedGoalsB": 1.32,
+    "teamAElo": 1619.24,
+    "teamBElo": 1671.17,
+    "teamARecentForm": "W-L-W-D-L",
+    "teamBRecentForm": "W-L-L-W-L",
+    "teamAWinProb": 0.3265,
+    "drawProb": 0.2568,
+    "teamBWinProb": 0.4167,
+    "expectedGoalsA": 1.23,
+    "expectedGoalsB": 1.27,
     "confidence": "LOW",
     "reasons": [
       "Croatia의 Elo 점수가 더 높음",
-      "Croatia의 최근 5경기 승점이 더 높음",
-      "Panama 최근 5경기: D-W-L-W-D",
-      "Croatia 최근 5경기: W-W-L-L-W"
+      "Panama의 최근 5경기 승점이 더 높음",
+      "Panama 최근 5경기: W-L-W-D-L",
+      "Croatia 최근 5경기: W-L-L-W-L"
     ]
   },
   {
-    "matchId": 29,
+    "matchId": 25,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-24",
@@ -696,7 +600,7 @@
     ]
   },
   {
-    "matchId": 30,
+    "matchId": 26,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-24",
@@ -720,7 +624,7 @@
     ]
   },
   {
-    "matchId": 31,
+    "matchId": 27,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-24",
@@ -744,7 +648,7 @@
     ]
   },
   {
-    "matchId": 32,
+    "matchId": 28,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-24",
@@ -768,7 +672,7 @@
     ]
   },
   {
-    "matchId": 33,
+    "matchId": 29,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-24",
@@ -792,7 +696,7 @@
     ]
   },
   {
-    "matchId": 34,
+    "matchId": 30,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-24",
@@ -816,7 +720,7 @@
     ]
   },
   {
-    "matchId": 35,
+    "matchId": 31,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-25",
@@ -840,7 +744,7 @@
     ]
   },
   {
-    "matchId": 36,
+    "matchId": 32,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-25",
@@ -864,7 +768,7 @@
     ]
   },
   {
-    "matchId": 37,
+    "matchId": 33,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-25",
@@ -888,7 +792,7 @@
     ]
   },
   {
-    "matchId": 38,
+    "matchId": 34,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-25",
@@ -912,7 +816,7 @@
     ]
   },
   {
-    "matchId": 39,
+    "matchId": 35,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-25",
@@ -936,7 +840,7 @@
     ]
   },
   {
-    "matchId": 40,
+    "matchId": 36,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-25",
@@ -960,7 +864,7 @@
     ]
   },
   {
-    "matchId": 41,
+    "matchId": 37,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-26",
@@ -984,7 +888,7 @@
     ]
   },
   {
-    "matchId": 42,
+    "matchId": 38,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-26",
@@ -1008,7 +912,7 @@
     ]
   },
   {
-    "matchId": 43,
+    "matchId": 39,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-26",
@@ -1032,7 +936,7 @@
     ]
   },
   {
-    "matchId": 44,
+    "matchId": 40,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-26",
@@ -1056,7 +960,7 @@
     ]
   },
   {
-    "matchId": 45,
+    "matchId": 41,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-26",
@@ -1080,7 +984,7 @@
     ]
   },
   {
-    "matchId": 46,
+    "matchId": 42,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-26",
@@ -1104,7 +1008,7 @@
     ]
   },
   {
-    "matchId": 47,
+    "matchId": 43,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-27",
@@ -1128,7 +1032,7 @@
     ]
   },
   {
-    "matchId": 48,
+    "matchId": 44,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-27",
@@ -1152,99 +1056,99 @@
     ]
   },
   {
-    "matchId": 49,
+    "matchId": 45,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-27",
     "teamA": "Colombia",
     "teamB": "Portugal",
-    "teamAElo": 1678.54,
-    "teamBElo": 1741.07,
-    "teamARecentForm": "W-L-L-W-W",
-    "teamBRecentForm": "W-D-W-W-W",
-    "teamAWinProb": 0.2673,
-    "drawProb": 0.2523,
-    "teamBWinProb": 0.4804,
-    "expectedGoalsA": 1.08,
-    "expectedGoalsB": 1.42,
-    "confidence": "MEDIUM",
+    "teamAElo": 1697.53,
+    "teamBElo": 1735.26,
+    "teamARecentForm": "L-L-W-W-W",
+    "teamBRecentForm": "D-W-W-W-D",
+    "teamAWinProb": 0.3087,
+    "drawProb": 0.2629,
+    "teamBWinProb": 0.4284,
+    "expectedGoalsA": 1.16,
+    "expectedGoalsB": 1.34,
+    "confidence": "LOW",
     "reasons": [
       "Portugal의 Elo 점수가 더 높음",
       "Portugal의 최근 5경기 승점이 더 높음",
-      "Colombia 최근 5경기: W-L-L-W-W",
-      "Portugal 최근 5경기: W-D-W-W-W"
+      "Colombia 최근 5경기: L-L-W-W-W",
+      "Portugal 최근 5경기: D-W-W-W-D"
     ]
   },
   {
-    "matchId": 50,
+    "matchId": 46,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-27",
     "teamA": "DR Congo",
     "teamB": "Uzbekistan",
-    "teamAElo": 1619.2,
-    "teamBElo": 1663.68,
-    "teamARecentForm": "L-W-W-D-L",
-    "teamBRecentForm": "D-W-D-L-L",
-    "teamAWinProb": 0.3429,
-    "drawProb": 0.26,
-    "teamBWinProb": 0.3971,
-    "expectedGoalsA": 1.27,
-    "expectedGoalsB": 1.23,
-    "confidence": "LOW",
+    "teamAElo": 1625.01,
+    "teamBElo": 1644.69,
+    "teamARecentForm": "W-W-D-L-D",
+    "teamBRecentForm": "W-D-L-L-L",
+    "teamAWinProb": 0.3839,
+    "drawProb": 0.271,
+    "teamBWinProb": 0.3451,
+    "expectedGoalsA": 1.35,
+    "expectedGoalsB": 1.15,
+    "confidence": "MEDIUM",
     "reasons": [
       "Uzbekistan의 Elo 점수가 더 높음",
       "DR Congo의 최근 5경기 승점이 더 높음",
-      "DR Congo 최근 5경기: L-W-W-D-L",
-      "Uzbekistan 최근 5경기: D-W-D-L-L"
+      "DR Congo 최근 5경기: W-W-D-L-D",
+      "Uzbekistan 최근 5경기: W-D-L-L-L"
     ]
   },
   {
-    "matchId": 51,
+    "matchId": 47,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-27",
     "teamA": "Panama",
     "teamB": "England",
-    "teamAElo": 1640.33,
-    "teamBElo": 1771.29,
-    "teamARecentForm": "D-W-L-W-D",
-    "teamBRecentForm": "W-D-L-W-W",
-    "teamAWinProb": 0.228,
-    "drawProb": 0.2251,
-    "teamBWinProb": 0.547,
-    "expectedGoalsA": 1.08,
-    "expectedGoalsB": 1.42,
+    "teamAElo": 1619.24,
+    "teamBElo": 1786.37,
+    "teamARecentForm": "W-L-W-D-L",
+    "teamBRecentForm": "D-L-W-W-W",
+    "teamAWinProb": 0.1879,
+    "drawProb": 0.2119,
+    "teamBWinProb": 0.6002,
+    "expectedGoalsA": 1.01,
+    "expectedGoalsB": 1.49,
     "confidence": "MEDIUM",
     "reasons": [
       "England의 Elo 점수가 더 높음",
       "England의 최근 5경기 승점이 더 높음",
-      "Panama 최근 5경기: D-W-L-W-D",
-      "England 최근 5경기: W-D-L-W-W"
+      "Panama 최근 5경기: W-L-W-D-L",
+      "England 최근 5경기: D-L-W-W-W"
     ]
   },
   {
-    "matchId": 52,
+    "matchId": 48,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-27",
     "teamA": "Croatia",
     "teamB": "Ghana",
-    "teamAElo": 1686.25,
-    "teamBElo": 1561.76,
-    "teamARecentForm": "W-W-L-L-W",
-    "teamBRecentForm": "L-L-L-L-D",
-    "teamAWinProb": 0.599,
-    "drawProb": 0.2275,
-    "teamBWinProb": 0.1735,
-    "expectedGoalsA": 1.6,
-    "expectedGoalsB": 0.9,
-    "confidence": "HIGH",
+    "teamAElo": 1671.17,
+    "teamBElo": 1582.85,
+    "teamARecentForm": "W-L-L-W-L",
+    "teamBRecentForm": "L-L-L-D-W",
+    "teamAWinProb": 0.4935,
+    "drawProb": 0.2417,
+    "teamBWinProb": 0.2648,
+    "expectedGoalsA": 1.39,
+    "expectedGoalsB": 1.11,
+    "confidence": "MEDIUM",
     "reasons": [
       "Croatia의 Elo 점수가 더 높음",
       "Croatia의 최근 5경기 승점이 더 높음",
-      "Croatia 최근 5경기: W-W-L-L-W",
-      "Ghana 최근 5경기: L-L-L-L-D"
+      "Croatia 최근 5경기: W-L-L-W-L",
+      "Ghana 최근 5경기: L-L-L-D-W"
     ]
   }
 ]
