@@ -2,102 +2,6 @@
   {
     "matchId": 1,
     "stage": "GROUP",
-    "group": "A",
-    "date": "2026-06-18",
-    "teamA": "Czech Republic",
-    "teamB": "South Africa",
-    "teamAElo": 1579.88,
-    "teamBElo": 1600.53,
-    "teamARecentForm": "D-D-W-W-L",
-    "teamBRecentForm": "D-L-D-W-L",
-    "teamAWinProb": 0.3731,
-    "drawProb": 0.2705,
-    "teamBWinProb": 0.3564,
-    "expectedGoalsA": 1.32,
-    "expectedGoalsB": 1.18,
-    "confidence": "LOW",
-    "reasons": [
-      "South Africa의 Elo 점수가 더 높음",
-      "Czech Republic의 최근 5경기 승점이 더 높음",
-      "Czech Republic 최근 5경기: D-D-W-W-L",
-      "South Africa 최근 5경기: D-L-D-W-L"
-    ]
-  },
-  {
-    "matchId": 2,
-    "stage": "GROUP",
-    "group": "A",
-    "date": "2026-06-18",
-    "teamA": "Mexico",
-    "teamB": "South Korea",
-    "teamAElo": 1737.89,
-    "teamBElo": 1717.56,
-    "teamARecentForm": "D-W-W-W-W",
-    "teamBRecentForm": "L-L-W-W-W",
-    "teamAWinProb": 0.426,
-    "drawProb": 0.2707,
-    "teamBWinProb": 0.3034,
-    "expectedGoalsA": 1.39,
-    "expectedGoalsB": 1.11,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Mexico의 Elo 점수가 더 높음",
-      "Mexico의 최근 5경기 승점이 더 높음",
-      "Mexico 최근 5경기: D-W-W-W-W",
-      "South Korea 최근 5경기: L-L-W-W-W"
-    ]
-  },
-  {
-    "matchId": 3,
-    "stage": "GROUP",
-    "group": "B",
-    "date": "2026-06-18",
-    "teamA": "Switzerland",
-    "teamB": "Bosnia and Herzegovina",
-    "teamAElo": 1657.78,
-    "teamBElo": 1510.62,
-    "teamARecentForm": "L-D-W-D-D",
-    "teamBRecentForm": "D-D-D-D-D",
-    "teamAWinProb": 0.5566,
-    "drawProb": 0.2191,
-    "teamBWinProb": 0.2243,
-    "expectedGoalsA": 1.41,
-    "expectedGoalsB": 1.09,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Switzerland의 Elo 점수가 더 높음",
-      "Switzerland의 최근 5경기 승점이 더 높음",
-      "Switzerland 최근 5경기: L-D-W-D-D",
-      "Bosnia and Herzegovina 최근 5경기: D-D-D-D-D"
-    ]
-  },
-  {
-    "matchId": 4,
-    "stage": "GROUP",
-    "group": "B",
-    "date": "2026-06-18",
-    "teamA": "Canada",
-    "teamB": "Qatar",
-    "teamAElo": 1649.7,
-    "teamBElo": 1577.23,
-    "teamARecentForm": "D-D-W-D-D",
-    "teamBRecentForm": "D-L-L-D-D",
-    "teamAWinProb": 0.4932,
-    "drawProb": 0.2481,
-    "teamBWinProb": 0.2586,
-    "expectedGoalsA": 1.43,
-    "expectedGoalsB": 1.07,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Canada의 Elo 점수가 더 높음",
-      "Canada의 최근 5경기 승점이 더 높음",
-      "Canada 최근 5경기: D-D-W-D-D",
-      "Qatar 최근 5경기: D-L-L-D-D"
-    ]
-  },
-  {
-    "matchId": 5,
-    "stage": "GROUP",
     "group": "C",
     "date": "2026-06-19",
     "teamA": "Scotland",
@@ -120,7 +24,7 @@
     ]
   },
   {
-    "matchId": 6,
+    "matchId": 2,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-19",
@@ -144,7 +48,7 @@
     ]
   },
   {
-    "matchId": 7,
+    "matchId": 3,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-19",
@@ -168,7 +72,7 @@
     ]
   },
   {
-    "matchId": 8,
+    "matchId": 4,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-19",
@@ -192,7 +96,7 @@
     ]
   },
   {
-    "matchId": 9,
+    "matchId": 5,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-20",
@@ -216,7 +120,7 @@
     ]
   },
   {
-    "matchId": 10,
+    "matchId": 6,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-20",
@@ -240,7 +144,7 @@
     ]
   },
   {
-    "matchId": 11,
+    "matchId": 7,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-20",
@@ -264,7 +168,7 @@
     ]
   },
   {
-    "matchId": 12,
+    "matchId": 8,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-20",
@@ -288,7 +192,7 @@
     ]
   },
   {
-    "matchId": 13,
+    "matchId": 9,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-21",
@@ -312,7 +216,7 @@
     ]
   },
   {
-    "matchId": 14,
+    "matchId": 10,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-21",
@@ -336,7 +240,7 @@
     ]
   },
   {
-    "matchId": 15,
+    "matchId": 11,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-21",
@@ -360,7 +264,7 @@
     ]
   },
   {
-    "matchId": 16,
+    "matchId": 12,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-21",
@@ -384,7 +288,7 @@
     ]
   },
   {
-    "matchId": 17,
+    "matchId": 13,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-22",
@@ -408,7 +312,7 @@
     ]
   },
   {
-    "matchId": 18,
+    "matchId": 14,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-22",
@@ -432,7 +336,7 @@
     ]
   },
   {
-    "matchId": 19,
+    "matchId": 15,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-22",
@@ -456,7 +360,7 @@
     ]
   },
   {
-    "matchId": 20,
+    "matchId": 16,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-22",
@@ -480,7 +384,7 @@
     ]
   },
   {
-    "matchId": 21,
+    "matchId": 17,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-23",
@@ -504,7 +408,7 @@
     ]
   },
   {
-    "matchId": 22,
+    "matchId": 18,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-23",
@@ -528,7 +432,7 @@
     ]
   },
   {
-    "matchId": 23,
+    "matchId": 19,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-23",
@@ -552,7 +456,7 @@
     ]
   },
   {
-    "matchId": 24,
+    "matchId": 20,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-23",
@@ -576,103 +480,103 @@
     ]
   },
   {
-    "matchId": 25,
+    "matchId": 21,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-24",
     "teamA": "Mexico",
     "teamB": "Czech Republic",
-    "teamAElo": 1737.89,
-    "teamBElo": 1579.88,
-    "teamARecentForm": "D-W-W-W-W",
-    "teamBRecentForm": "D-D-W-W-L",
-    "teamAWinProb": 0.6095,
-    "drawProb": 0.2152,
-    "teamBWinProb": 0.1753,
-    "expectedGoalsA": 1.54,
-    "expectedGoalsB": 0.96,
+    "teamAElo": 1754.14,
+    "teamBElo": 1580.91,
+    "teamARecentForm": "W-W-W-W-W",
+    "teamBRecentForm": "D-W-W-L-D",
+    "teamAWinProb": 0.6473,
+    "drawProb": 0.2098,
+    "teamBWinProb": 0.143,
+    "expectedGoalsA": 1.61,
+    "expectedGoalsB": 0.89,
     "confidence": "MEDIUM",
     "reasons": [
       "Mexico의 Elo 점수가 더 높음",
       "Mexico의 최근 5경기 승점이 더 높음",
-      "Mexico 최근 5경기: D-W-W-W-W",
-      "Czech Republic 최근 5경기: D-D-W-W-L"
+      "Mexico 최근 5경기: W-W-W-W-W",
+      "Czech Republic 최근 5경기: D-W-W-L-D"
     ]
   },
   {
-    "matchId": 26,
+    "matchId": 22,
     "stage": "GROUP",
     "group": "A",
     "date": "2026-06-24",
     "teamA": "South Africa",
     "teamB": "South Korea",
-    "teamAElo": 1600.53,
-    "teamBElo": 1717.56,
-    "teamARecentForm": "D-L-D-W-L",
-    "teamBRecentForm": "L-L-W-W-W",
-    "teamAWinProb": 0.2199,
-    "drawProb": 0.2304,
-    "teamBWinProb": 0.5497,
-    "expectedGoalsA": 1.03,
-    "expectedGoalsB": 1.47,
+    "teamAElo": 1599.5,
+    "teamBElo": 1701.32,
+    "teamARecentForm": "L-D-W-L-D",
+    "teamBRecentForm": "L-W-W-W-L",
+    "teamAWinProb": 0.233,
+    "drawProb": 0.2363,
+    "teamBWinProb": 0.5307,
+    "expectedGoalsA": 1.04,
+    "expectedGoalsB": 1.46,
     "confidence": "MEDIUM",
     "reasons": [
       "South Korea의 Elo 점수가 더 높음",
       "South Korea의 최근 5경기 승점이 더 높음",
-      "South Africa 최근 5경기: D-L-D-W-L",
-      "South Korea 최근 5경기: L-L-W-W-W"
+      "South Africa 최근 5경기: L-D-W-L-D",
+      "South Korea 최근 5경기: L-W-W-W-L"
     ]
   },
   {
-    "matchId": 27,
+    "matchId": 23,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-24",
     "teamA": "Canada",
     "teamB": "Switzerland",
-    "teamAElo": 1649.7,
-    "teamBElo": 1657.78,
-    "teamARecentForm": "D-D-W-D-D",
-    "teamBRecentForm": "L-D-W-D-D",
-    "teamAWinProb": 0.3635,
-    "drawProb": 0.2763,
-    "teamBWinProb": 0.3603,
-    "expectedGoalsA": 1.27,
-    "expectedGoalsB": 1.23,
+    "teamAElo": 1670.26,
+    "teamBElo": 1671.24,
+    "teamARecentForm": "D-W-D-D-W",
+    "teamBRecentForm": "D-W-D-D-W",
+    "teamAWinProb": 0.3592,
+    "drawProb": 0.2795,
+    "teamBWinProb": 0.3612,
+    "expectedGoalsA": 1.25,
+    "expectedGoalsB": 1.25,
     "confidence": "LOW",
     "reasons": [
       "Switzerland의 Elo 점수가 더 높음",
-      "Canada의 최근 5경기 승점이 더 높음",
-      "Canada 최근 5경기: D-D-W-D-D",
-      "Switzerland 최근 5경기: L-D-W-D-D"
+      "두 팀의 최근 5경기 승점이 동일함",
+      "Canada 최근 5경기: D-W-D-D-W",
+      "Switzerland 최근 5경기: D-W-D-D-W"
     ]
   },
   {
-    "matchId": 28,
+    "matchId": 24,
     "stage": "GROUP",
     "group": "B",
     "date": "2026-06-24",
     "teamA": "Bosnia and Herzegovina",
     "teamB": "Qatar",
-    "teamAElo": 1510.62,
-    "teamBElo": 1577.23,
-    "teamARecentForm": "D-D-D-D-D",
-    "teamBRecentForm": "D-L-L-D-D",
-    "teamAWinProb": 0.3237,
-    "drawProb": 0.2506,
-    "teamBWinProb": 0.4257,
-    "expectedGoalsA": 1.25,
-    "expectedGoalsB": 1.25,
+    "teamAElo": 1497.16,
+    "teamBElo": 1556.68,
+    "teamARecentForm": "D-D-D-D-L",
+    "teamBRecentForm": "L-L-D-D-L",
+    "teamAWinProb": 0.3299,
+    "drawProb": 0.2536,
+    "teamBWinProb": 0.4165,
+    "expectedGoalsA": 1.26,
+    "expectedGoalsB": 1.24,
     "confidence": "LOW",
     "reasons": [
       "Qatar의 Elo 점수가 더 높음",
       "Bosnia and Herzegovina의 최근 5경기 승점이 더 높음",
-      "Bosnia and Herzegovina 최근 5경기: D-D-D-D-D",
-      "Qatar 최근 5경기: D-L-L-D-D"
+      "Bosnia and Herzegovina 최근 5경기: D-D-D-D-L",
+      "Qatar 최근 5경기: L-L-D-D-L"
     ]
   },
   {
-    "matchId": 29,
+    "matchId": 25,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-24",
@@ -696,7 +600,7 @@
     ]
   },
   {
-    "matchId": 30,
+    "matchId": 26,
     "stage": "GROUP",
     "group": "C",
     "date": "2026-06-24",
@@ -720,7 +624,7 @@
     ]
   },
   {
-    "matchId": 31,
+    "matchId": 27,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-25",
@@ -744,7 +648,7 @@
     ]
   },
   {
-    "matchId": 32,
+    "matchId": 28,
     "stage": "GROUP",
     "group": "D",
     "date": "2026-06-25",
@@ -768,7 +672,7 @@
     ]
   },
   {
-    "matchId": 33,
+    "matchId": 29,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-25",
@@ -792,7 +696,7 @@
     ]
   },
   {
-    "matchId": 34,
+    "matchId": 30,
     "stage": "GROUP",
     "group": "E",
     "date": "2026-06-25",
@@ -816,7 +720,7 @@
     ]
   },
   {
-    "matchId": 35,
+    "matchId": 31,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-25",
@@ -840,7 +744,7 @@
     ]
   },
   {
-    "matchId": 36,
+    "matchId": 32,
     "stage": "GROUP",
     "group": "F",
     "date": "2026-06-25",
@@ -864,7 +768,7 @@
     ]
   },
   {
-    "matchId": 37,
+    "matchId": 33,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-26",
@@ -888,7 +792,7 @@
     ]
   },
   {
-    "matchId": 38,
+    "matchId": 34,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-26",
@@ -912,7 +816,7 @@
     ]
   },
   {
-    "matchId": 39,
+    "matchId": 35,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-26",
@@ -936,7 +840,7 @@
     ]
   },
   {
-    "matchId": 40,
+    "matchId": 36,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-26",
@@ -960,7 +864,7 @@
     ]
   },
   {
-    "matchId": 41,
+    "matchId": 37,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-26",
@@ -984,7 +888,7 @@
     ]
   },
   {
-    "matchId": 42,
+    "matchId": 38,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-26",
@@ -1008,7 +912,7 @@
     ]
   },
   {
-    "matchId": 43,
+    "matchId": 39,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-27",
@@ -1032,7 +936,7 @@
     ]
   },
   {
-    "matchId": 44,
+    "matchId": 40,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-27",
@@ -1056,7 +960,7 @@
     ]
   },
   {
-    "matchId": 45,
+    "matchId": 41,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-27",
@@ -1080,7 +984,7 @@
     ]
   },
   {
-    "matchId": 46,
+    "matchId": 42,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-27",
@@ -1104,7 +1008,7 @@
     ]
   },
   {
-    "matchId": 47,
+    "matchId": 43,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-27",
@@ -1128,7 +1032,7 @@
     ]
   },
   {
-    "matchId": 48,
+    "matchId": 44,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-27",
