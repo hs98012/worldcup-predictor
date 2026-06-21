@@ -134,17 +134,6 @@
   {
     "date": "2026-06-15",
     "tournament": "FIFA World Cup",
-    "homeTeam": "Saudi Arabia",
-    "awayTeam": "Uruguay",
-    "normalizedHomeTeam": "Saudi Arabia",
-    "normalizedAwayTeam": "Uruguay",
-    "homeScore": 1,
-    "awayScore": 1,
-    "result": "DRAW"
-  },
-  {
-    "date": "2026-06-15",
-    "tournament": "FIFA World Cup",
     "homeTeam": "Spain",
     "awayTeam": "Cape Verde",
     "normalizedHomeTeam": "Spain",
@@ -156,12 +145,12 @@
   {
     "date": "2026-06-15",
     "tournament": "FIFA World Cup",
-    "homeTeam": "Iran",
-    "awayTeam": "New Zealand",
-    "normalizedHomeTeam": "Iran",
-    "normalizedAwayTeam": "New Zealand",
-    "homeScore": 2,
-    "awayScore": 2,
+    "homeTeam": "Saudi Arabia",
+    "awayTeam": "Uruguay",
+    "normalizedHomeTeam": "Saudi Arabia",
+    "normalizedAwayTeam": "Uruguay",
+    "homeScore": 1,
+    "awayScore": 1,
     "result": "DRAW"
   },
   {
@@ -173,6 +162,17 @@
     "normalizedAwayTeam": "Egypt",
     "homeScore": 1,
     "awayScore": 1,
+    "result": "DRAW"
+  },
+  {
+    "date": "2026-06-15",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Iran",
+    "awayTeam": "New Zealand",
+    "normalizedHomeTeam": "Iran",
+    "normalizedAwayTeam": "New Zealand",
+    "homeScore": 2,
+    "awayScore": 2,
     "result": "DRAW"
   },
   {
@@ -222,6 +222,28 @@
   {
     "date": "2026-06-17",
     "tournament": "FIFA World Cup",
+    "homeTeam": "Ghana",
+    "awayTeam": "Panama",
+    "normalizedHomeTeam": "Ghana",
+    "normalizedAwayTeam": "Panama",
+    "homeScore": 1,
+    "awayScore": 0,
+    "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-17",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "England",
+    "awayTeam": "Croatia",
+    "normalizedHomeTeam": "England",
+    "normalizedAwayTeam": "Croatia",
+    "homeScore": 4,
+    "awayScore": 2,
+    "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-17",
+    "tournament": "FIFA World Cup",
     "homeTeam": "Portugal",
     "awayTeam": "DR Congo",
     "normalizedHomeTeam": "Portugal",
@@ -240,28 +262,6 @@
     "homeScore": 1,
     "awayScore": 3,
     "result": "AWAY_WIN"
-  },
-  {
-    "date": "2026-06-17",
-    "tournament": "FIFA World Cup",
-    "homeTeam": "England",
-    "awayTeam": "Croatia",
-    "normalizedHomeTeam": "England",
-    "normalizedAwayTeam": "Croatia",
-    "homeScore": 4,
-    "awayScore": 2,
-    "result": "HOME_WIN"
-  },
-  {
-    "date": "2026-06-17",
-    "tournament": "FIFA World Cup",
-    "homeTeam": "Ghana",
-    "awayTeam": "Panama",
-    "normalizedHomeTeam": "Ghana",
-    "normalizedAwayTeam": "Panama",
-    "homeScore": 1,
-    "awayScore": 0,
-    "result": "HOME_WIN"
   },
   {
     "date": "2026-06-18",
@@ -306,5 +306,49 @@
     "homeScore": 6,
     "awayScore": 0,
     "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-19",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "United States",
+    "awayTeam": "Australia",
+    "normalizedHomeTeam": "United States",
+    "normalizedAwayTeam": "Australia",
+    "homeScore": 2,
+    "awayScore": 0,
+    "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-19",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Scotland",
+    "awayTeam": "Morocco",
+    "normalizedHomeTeam": "Scotland",
+    "normalizedAwayTeam": "Morocco",
+    "homeScore": 0,
+    "awayScore": 1,
+    "result": "AWAY_WIN"
+  },
+  {
+    "date": "2026-06-19",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Brazil",
+    "awayTeam": "Haiti",
+    "normalizedHomeTeam": "Brazil",
+    "normalizedAwayTeam": "Haiti",
+    "homeScore": 3,
+    "awayScore": 0,
+    "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-19",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Turkey",
+    "awayTeam": "Paraguay",
+    "normalizedHomeTeam": "Turkey",
+    "normalizedAwayTeam": "Paraguay",
+    "homeScore": 0,
+    "awayScore": 1,
+    "result": "AWAY_WIN"
   }
 ]
