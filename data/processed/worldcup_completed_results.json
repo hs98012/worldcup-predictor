@@ -134,6 +134,17 @@
   {
     "date": "2026-06-15",
     "tournament": "FIFA World Cup",
+    "homeTeam": "Saudi Arabia",
+    "awayTeam": "Uruguay",
+    "normalizedHomeTeam": "Saudi Arabia",
+    "normalizedAwayTeam": "Uruguay",
+    "homeScore": 1,
+    "awayScore": 1,
+    "result": "DRAW"
+  },
+  {
+    "date": "2026-06-15",
+    "tournament": "FIFA World Cup",
     "homeTeam": "Belgium",
     "awayTeam": "Egypt",
     "normalizedHomeTeam": "Belgium",
@@ -165,15 +176,15 @@
     "result": "DRAW"
   },
   {
-    "date": "2026-06-15",
+    "date": "2026-06-16",
     "tournament": "FIFA World Cup",
-    "homeTeam": "Saudi Arabia",
-    "awayTeam": "Uruguay",
-    "normalizedHomeTeam": "Saudi Arabia",
-    "normalizedAwayTeam": "Uruguay",
-    "homeScore": 1,
-    "awayScore": 1,
-    "result": "DRAW"
+    "homeTeam": "Argentina",
+    "awayTeam": "Algeria",
+    "normalizedHomeTeam": "Argentina",
+    "normalizedAwayTeam": "Algeria",
+    "homeScore": 3,
+    "awayScore": 0,
+    "result": "HOME_WIN"
   },
   {
     "date": "2026-06-16",
@@ -189,12 +200,12 @@
   {
     "date": "2026-06-16",
     "tournament": "FIFA World Cup",
-    "homeTeam": "Argentina",
-    "awayTeam": "Algeria",
-    "normalizedHomeTeam": "Argentina",
-    "normalizedAwayTeam": "Algeria",
+    "homeTeam": "France",
+    "awayTeam": "Senegal",
+    "normalizedHomeTeam": "France",
+    "normalizedAwayTeam": "Senegal",
     "homeScore": 3,
-    "awayScore": 0,
+    "awayScore": 1,
     "result": "HOME_WIN"
   },
   {
@@ -207,17 +218,6 @@
     "homeScore": 1,
     "awayScore": 4,
     "result": "AWAY_WIN"
-  },
-  {
-    "date": "2026-06-16",
-    "tournament": "FIFA World Cup",
-    "homeTeam": "France",
-    "awayTeam": "Senegal",
-    "normalizedHomeTeam": "France",
-    "normalizedAwayTeam": "Senegal",
-    "homeScore": 3,
-    "awayScore": 1,
-    "result": "HOME_WIN"
   },
   {
     "date": "2026-06-17",
@@ -266,6 +266,28 @@
   {
     "date": "2026-06-18",
     "tournament": "FIFA World Cup",
+    "homeTeam": "Czech Republic",
+    "awayTeam": "South Africa",
+    "normalizedHomeTeam": "Czech Republic",
+    "normalizedAwayTeam": "South Africa",
+    "homeScore": 1,
+    "awayScore": 1,
+    "result": "DRAW"
+  },
+  {
+    "date": "2026-06-18",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Mexico",
+    "awayTeam": "South Korea",
+    "normalizedHomeTeam": "Mexico",
+    "normalizedAwayTeam": "Korea Republic",
+    "homeScore": 1,
+    "awayScore": 0,
+    "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-18",
+    "tournament": "FIFA World Cup",
     "homeTeam": "Switzerland",
     "awayTeam": "Bosnia and Herzegovina",
     "normalizedHomeTeam": "Switzerland",
@@ -286,24 +308,24 @@
     "result": "HOME_WIN"
   },
   {
-    "date": "2026-06-18",
+    "date": "2026-06-19",
     "tournament": "FIFA World Cup",
-    "homeTeam": "Czech Republic",
-    "awayTeam": "South Africa",
-    "normalizedHomeTeam": "Czech Republic",
-    "normalizedAwayTeam": "South Africa",
-    "homeScore": 1,
+    "homeTeam": "Turkey",
+    "awayTeam": "Paraguay",
+    "normalizedHomeTeam": "Turkey",
+    "normalizedAwayTeam": "Paraguay",
+    "homeScore": 0,
     "awayScore": 1,
-    "result": "DRAW"
+    "result": "AWAY_WIN"
   },
   {
-    "date": "2026-06-18",
+    "date": "2026-06-19",
     "tournament": "FIFA World Cup",
-    "homeTeam": "Mexico",
-    "awayTeam": "South Korea",
-    "normalizedHomeTeam": "Mexico",
-    "normalizedAwayTeam": "Korea Republic",
-    "homeScore": 1,
+    "homeTeam": "United States",
+    "awayTeam": "Australia",
+    "normalizedHomeTeam": "United States",
+    "normalizedAwayTeam": "Australia",
+    "homeScore": 2,
     "awayScore": 0,
     "result": "HOME_WIN"
   },
@@ -327,39 +349,6 @@
     "normalizedAwayTeam": "Haiti",
     "homeScore": 3,
     "awayScore": 0,
-    "result": "HOME_WIN"
-  },
-  {
-    "date": "2026-06-19",
-    "tournament": "FIFA World Cup",
-    "homeTeam": "United States",
-    "awayTeam": "Australia",
-    "normalizedHomeTeam": "United States",
-    "normalizedAwayTeam": "Australia",
-    "homeScore": 2,
-    "awayScore": 0,
-    "result": "HOME_WIN"
-  },
-  {
-    "date": "2026-06-19",
-    "tournament": "FIFA World Cup",
-    "homeTeam": "Turkey",
-    "awayTeam": "Paraguay",
-    "normalizedHomeTeam": "Turkey",
-    "normalizedAwayTeam": "Paraguay",
-    "homeScore": 0,
-    "awayScore": 1,
-    "result": "AWAY_WIN"
-  },
-  {
-    "date": "2026-06-20",
-    "tournament": "FIFA World Cup",
-    "homeTeam": "Netherlands",
-    "awayTeam": "Sweden",
-    "normalizedHomeTeam": "Netherlands",
-    "normalizedAwayTeam": "Sweden",
-    "homeScore": 5,
-    "awayScore": 1,
     "result": "HOME_WIN"
   },
   {
@@ -387,6 +376,17 @@
   {
     "date": "2026-06-20",
     "tournament": "FIFA World Cup",
+    "homeTeam": "Netherlands",
+    "awayTeam": "Sweden",
+    "normalizedHomeTeam": "Netherlands",
+    "normalizedAwayTeam": "Sweden",
+    "homeScore": 5,
+    "awayScore": 1,
+    "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-20",
+    "tournament": "FIFA World Cup",
     "homeTeam": "Tunisia",
     "awayTeam": "Japan",
     "normalizedHomeTeam": "Tunisia",
@@ -394,5 +394,49 @@
     "homeScore": 0,
     "awayScore": 4,
     "result": "AWAY_WIN"
+  },
+  {
+    "date": "2026-06-21",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Spain",
+    "awayTeam": "Saudi Arabia",
+    "normalizedHomeTeam": "Spain",
+    "normalizedAwayTeam": "Saudi Arabia",
+    "homeScore": 4,
+    "awayScore": 0,
+    "result": "HOME_WIN"
+  },
+  {
+    "date": "2026-06-21",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Belgium",
+    "awayTeam": "Iran",
+    "normalizedHomeTeam": "Belgium",
+    "normalizedAwayTeam": "Iran",
+    "homeScore": 0,
+    "awayScore": 0,
+    "result": "DRAW"
+  },
+  {
+    "date": "2026-06-21",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "New Zealand",
+    "awayTeam": "Egypt",
+    "normalizedHomeTeam": "New Zealand",
+    "normalizedAwayTeam": "Egypt",
+    "homeScore": 1,
+    "awayScore": 3,
+    "result": "AWAY_WIN"
+  },
+  {
+    "date": "2026-06-21",
+    "tournament": "FIFA World Cup",
+    "homeTeam": "Uruguay",
+    "awayTeam": "Cape Verde",
+    "normalizedHomeTeam": "Uruguay",
+    "normalizedAwayTeam": "Cape Verde",
+    "homeScore": 2,
+    "awayScore": 2,
+    "result": "DRAW"
   }
 ]

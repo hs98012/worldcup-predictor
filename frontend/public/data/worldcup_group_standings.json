@@ -322,50 +322,50 @@
     "teams": [
       {
         "rank": 1,
-        "team": "Iran",
-        "played": 1,
-        "wins": 0,
+        "team": "Egypt",
+        "played": 2,
+        "wins": 1,
         "draws": 1,
         "losses": 0,
-        "goalsFor": 2,
+        "goalsFor": 4,
         "goalsAgainst": 2,
-        "goalDifference": 0,
-        "points": 1
+        "goalDifference": 2,
+        "points": 4
       },
       {
         "rank": 2,
-        "team": "New Zealand",
-        "played": 1,
+        "team": "Iran",
+        "played": 2,
         "wins": 0,
-        "draws": 1,
+        "draws": 2,
         "losses": 0,
         "goalsFor": 2,
         "goalsAgainst": 2,
         "goalDifference": 0,
-        "points": 1
+        "points": 2
       },
       {
         "rank": 3,
         "team": "Belgium",
-        "played": 1,
+        "played": 2,
         "wins": 0,
-        "draws": 1,
+        "draws": 2,
         "losses": 0,
         "goalsFor": 1,
         "goalsAgainst": 1,
         "goalDifference": 0,
-        "points": 1
+        "points": 2
       },
       {
         "rank": 4,
-        "team": "Egypt",
-        "played": 1,
+        "team": "New Zealand",
+        "played": 2,
         "wins": 0,
         "draws": 1,
-        "losses": 0,
-        "goalsFor": 1,
-        "goalsAgainst": 1,
-        "goalDifference": 0,
+        "losses": 1,
+        "goalsFor": 3,
+        "goalsAgainst": 5,
+        "goalDifference": -2,
         "points": 1
       }
     ]
@@ -375,50 +375,50 @@
     "teams": [
       {
         "rank": 1,
-        "team": "Saudi Arabia",
-        "played": 1,
-        "wins": 0,
+        "team": "Spain",
+        "played": 2,
+        "wins": 1,
         "draws": 1,
         "losses": 0,
-        "goalsFor": 1,
-        "goalsAgainst": 1,
-        "goalDifference": 0,
-        "points": 1
+        "goalsFor": 4,
+        "goalsAgainst": 0,
+        "goalDifference": 4,
+        "points": 4
       },
       {
         "rank": 2,
         "team": "Uruguay",
-        "played": 1,
+        "played": 2,
         "wins": 0,
-        "draws": 1,
+        "draws": 2,
         "losses": 0,
-        "goalsFor": 1,
-        "goalsAgainst": 1,
+        "goalsFor": 3,
+        "goalsAgainst": 3,
         "goalDifference": 0,
-        "points": 1
+        "points": 2
       },
       {
         "rank": 3,
         "team": "Cape Verde",
-        "played": 1,
+        "played": 2,
         "wins": 0,
-        "draws": 1,
+        "draws": 2,
         "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
         "goalDifference": 0,
-        "points": 1
+        "points": 2
       },
       {
         "rank": 4,
-        "team": "Spain",
-        "played": 1,
+        "team": "Saudi Arabia",
+        "played": 2,
         "wins": 0,
         "draws": 1,
-        "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0,
+        "losses": 1,
+        "goalsFor": 1,
+        "goalsAgainst": 5,
+        "goalDifference": -4,
         "points": 1
       }
     ]
