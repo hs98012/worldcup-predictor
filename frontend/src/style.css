@@ -405,6 +405,31 @@ h2 {
   margin-bottom: 26px;
 }
 
+.section-description {
+  max-width: 640px;
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.evaluation-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 20px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #0d1210;
+}
+
+.evaluation-metrics .metric {
+  padding: 18px;
+}
+
+.evaluation-metrics .metric strong {
+  font-size: 1.45rem;
+}
+
 .table-wrap {
   overflow-x: auto;
   border: 1px solid var(--line);
@@ -496,6 +521,30 @@ tbody tr:last-child td {
 
 .completed-results-table {
   min-width: 680px;
+}
+
+.evaluation-table {
+  min-width: 760px;
+}
+
+.verdict-badge {
+  display: inline-flex;
+  min-width: 44px;
+  justify-content: center;
+  padding: 6px 9px;
+  border-radius: 5px;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.verdict-correct {
+  color: #07100a;
+  background: var(--green);
+}
+
+.verdict-wrong {
+  color: #ffb3b3;
+  background: rgba(255, 113, 113, 0.12);
 }
 
 .final-score {
@@ -875,6 +924,18 @@ footer p {
   .metric-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 0;
+  }
+
+  .evaluation-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .evaluation-metrics .metric:nth-child(2) {
+    border-right: 0;
+  }
+
+  .evaluation-metrics .metric:nth-child(3) {
+    padding-left: 18px;
   }
 
   .metric:nth-child(2) {

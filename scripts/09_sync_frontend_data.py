@@ -11,6 +11,7 @@ SYNC_FILES = [
     "team_strength_diagnostics.json",
     "simulation_diagnostics.json",
     "fixture_predictions.json",
+    "prediction_evaluation_summary.json",
     "model_metrics.json",
     "draw_calibration.json",
     "group_simulation.json",

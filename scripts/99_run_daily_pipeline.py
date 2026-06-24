@@ -12,6 +12,9 @@ REQUIRED_DERIVED_FILES = [
     PROJECT_ROOT / "data/processed/upcoming_fixtures.csv",
     PROJECT_ROOT / "data/processed/worldcup_completed_results.json",
     PROJECT_ROOT / "data/processed/worldcup_group_standings.json",
+    PROJECT_ROOT / "data/processed/prediction_history.json",
+    PROJECT_ROOT / "data/processed/prediction_evaluation.json",
+    PROJECT_ROOT / "data/processed/prediction_evaluation_summary.json",
 ]
 
 UPDATE_SCRIPT = "00_update_results_csv.py"
@@ -25,6 +28,8 @@ PIPELINE_SCRIPTS = [
     "04_predict_matches.py",
     "05_train_sklearn_model.py",
     "08_predict_upcoming_fixtures.py",
+    "09_archive_fixture_predictions.py",
+    "10_evaluate_predictions.py",
     "06_adjust_draw_probabilities.py",
     "07_calculate_group_standings.py",
     "08_simulate_group_stage.py",

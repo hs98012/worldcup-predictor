@@ -8,6 +8,13 @@ const completedResults = ref([])
 const groupStandings = ref([])
 const groupSimulation = ref([])
 const drawCalibration = ref({ enabled: false })
+const predictionEvaluation = ref({
+  evaluated_matches: 0,
+  correct_predictions: 0,
+  accuracy: 0,
+  wrong_predictions: 0,
+  latest_evaluated_matches: [],
+})
 const isLoading = ref(true)
 const errorMessage = ref('')
 const baseUrl = import.meta.env.BASE_URL
@@ -70,11 +77,18 @@ const worldCupCompletedResults = computed(() =>
 
 const worldCupFixtures = computed(() => fixtures.value.filter(is2026WorldCupMatch))
 
+const latestEvaluationMatches = computed(() =>
+  (predictionEvaluation.value?.latest_evaluated_matches ?? []).slice(0, 5),
+)
+
 const resultLabel = (result) =>
   ({
     HOME_WIN: '홈 승',
     DRAW: '무승부',
     AWAY_WIN: '원정 승',
+    home_win: '홈 승',
+    draw: '무승부',
+    away_win: '원정 승',
   })[result] ?? result
 
 const resultClass = (result) =>
@@ -82,6 +96,9 @@ const resultClass = (result) =>
     HOME_WIN: 'result-home',
     DRAW: 'result-draw',
     AWAY_WIN: 'result-away',
+    home_win: 'result-home',
+    draw: 'result-draw',
+    away_win: 'result-away',
   })[result] ?? ''
 
 onMounted(async () => {
@@ -94,6 +111,7 @@ onMounted(async () => {
       fetch(`${baseUrl}data/worldcup_group_standings.json`),
       fetch(`${baseUrl}data/group_simulation.json`),
       fetch(`${baseUrl}data/draw_calibration.json`),
+      fetch(`${baseUrl}data/prediction_evaluation_summary.json`),
     ])
 
     if (responses.some((response) => !response.ok)) {
@@ -108,6 +126,7 @@ onMounted(async () => {
       groupStandings.value,
       groupSimulation.value,
       drawCalibration.value,
+      predictionEvaluation.value,
     ] = await Promise.all(responses.map((response) => response.json()))
   } catch (error) {
     errorMessage.value = error.message
@@ -280,6 +299,94 @@ onMounted(async () => {
                   <td>
                     <span class="result-badge" :class="resultClass(match.result)">
                       {{ resultLabel(match.result) }}
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel section-panel">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker">PREDICTION AUDIT</p>
+              <h2>예측 검증 현황</h2>
+              <p class="section-description">
+                실제 결과가 반영된 경기 기준으로 모델 예측의 적중 여부를 추적합니다.
+              </p>
+            </div>
+            <span class="count-badge">
+              {{ predictionEvaluation.evaluated_matches }} EVALUATED
+            </span>
+          </div>
+
+          <div class="evaluation-metrics">
+            <div class="metric">
+              <span>검증 완료 경기</span>
+              <strong>{{ formatNumber(predictionEvaluation.evaluated_matches) }}</strong>
+            </div>
+            <div class="metric">
+              <span>맞힌 경기</span>
+              <strong>{{ formatNumber(predictionEvaluation.correct_predictions) }}</strong>
+            </div>
+            <div class="metric">
+              <span>누적 정확도</span>
+              <strong>{{ percent(predictionEvaluation.accuracy) }}</strong>
+            </div>
+            <div class="metric">
+              <span>틀린 경기</span>
+              <strong>{{ formatNumber(predictionEvaluation.wrong_predictions) }}</strong>
+            </div>
+          </div>
+
+          <div v-if="latestEvaluationMatches.length === 0" class="empty-results">
+            <span class="empty-results-icon">EV</span>
+            <p>아직 실제 결과와 매칭된 예측 이력이 없습니다.</p>
+          </div>
+
+          <div v-else class="table-wrap evaluation-table-wrap">
+            <table class="evaluation-table">
+              <thead>
+                <tr>
+                  <th>날짜</th>
+                  <th>경기</th>
+                  <th>스코어</th>
+                  <th>예측 결과</th>
+                  <th>실제 결과</th>
+                  <th>판정</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  v-for="match in latestEvaluationMatches"
+                  :key="`${match.date}-${match.home_team}-${match.away_team}`"
+                >
+                  <td>{{ formatDate(match.date) }}</td>
+                  <td class="team-name">
+                    {{ displayTeam(match.home_team) }} vs {{ displayTeam(match.away_team) }}
+                  </td>
+                  <td>
+                    <strong class="final-score">
+                      {{ match.home_score }} <span>:</span> {{ match.away_score }}
+                    </strong>
+                  </td>
+                  <td>
+                    <span class="result-badge" :class="resultClass(match.predicted_result)">
+                      {{ resultLabel(match.predicted_result) }}
+                    </span>
+                  </td>
+                  <td>
+                    <span class="result-badge" :class="resultClass(match.actual_result)">
+                      {{ resultLabel(match.actual_result) }}
+                    </span>
+                  </td>
+                  <td>
+                    <span
+                      class="verdict-badge"
+                      :class="match.correct ? 'verdict-correct' : 'verdict-wrong'"
+                    >
+                      {{ match.correct ? '정답' : '오답' }}
                     </span>
                   </td>
                 </tr>

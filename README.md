@@ -21,9 +21,10 @@ Vue 대시보드에서 시각화하며, GitHub Actions를 통해 데이터 갱�
 2. 완료 경기와 예정 경기 분리 및 전처리
 3. 머신러닝 모델 학습과 남은 경기 확률 예측
 4. 실제 월드컵 결과 기반 조별 순위 계산
-5. 조별리그와 토너먼트 시뮬레이션
-6. Vue 대시보드용 JSON 생성 및 동기화
-7. GitHub Actions를 통한 일일 자동 갱신
+5. 예측 이력 보존 및 실제 결과 기반 사후 검증
+6. 조별리그와 토너먼트 시뮬레이션
+7. Vue 대시보드용 JSON 생성 및 동기화
+8. GitHub Actions를 통한 일일 자동 갱신
 
 ## 주요 기능
 
@@ -46,6 +47,7 @@ Vue 대시보드에서 시각화하며, GitHub Actions를 통해 데이터 갱�
 - 정확도 차이가 작으면 Log Loss가 낮은 모델을 최종 모델로 선택
 - 무승부 recall 개선을 위해 전력이 비슷한 경기의 draw probability 보정 실험
 - 예정된 월드컵 경기의 홈 승·무승부·원정 승 확률 생성
+- 예정 경기 예측 당시의 확률 스냅샷을 `prediction_history.json`에 누적 보존
 - 무승부 예측 보정 로직 적용
 - 조별리그 통과 확률 및 토너먼트 단계별 진출 확률 계산
 - 10,000회 시뮬레이션 기반 우승 확률 산출
@@ -101,6 +103,7 @@ draw boost 값을 비교합니다. 보정은 DRAW recall이 개선되고 Accurac
 
 - 실제 결과와 조별 순위는 2026 FIFA World Cup 경기만 기준으로 계산
 - 완료된 2026 월드컵 경기의 날짜, 팀, 스코어, 결과 저장
+- 완료 경기 결과와 예측 이력을 비교해 예측 적중 여부, 누적 정확도, 최근 검증 결과 저장
 - 실제 결과를 반영한 조별리그 현재 순위 계산
 - 승점, 골득실, 다득점, 팀명 순으로 순위 정렬
 - 아직 완료된 경기가 없어도 12개 조와 48개 팀의 초기 순위 생성
@@ -108,6 +111,7 @@ draw boost 값을 비교합니다. 보정은 DRAW recall이 개선되고 Accurac
 ### 대시보드
 
 - 완료된 월드컵 경기 결과
+- 예측 검증 현황, 누적 정확도, 최근 검증 경기
 - 조별리그 현재 순위
 - 남은 경기 승·무·패 예측
 - 조별리그 통과 확률
@@ -197,6 +201,9 @@ worldcup-predictor/
 | `completed_matches.csv` | 스코어가 입력된 완료 경기 |
 | `upcoming_fixtures.csv` | 아직 스코어가 없는 예정 경기 |
 | `fixture_predictions.json` | 남은 경기의 승·무·패 확률 |
+| `prediction_history.json` | 예측 당시 확률과 예측 결과를 누적 보존한 스냅샷 |
+| `prediction_evaluation.json` | 실제 결과와 예측 결과를 비교한 상세 검증 로그 |
+| `prediction_evaluation_summary.json` | 누적 정확도와 최근 검증 결과 요약 |
 | `model_metrics.json` | baseline, 모델 후보, 확률 보정 및 최종 선택 결과 |
 | `model_feature_columns.json` | 학습 및 예측에 사용하는 피처 순서 |
 | `draw_calibration.json` | 무승부 보정 후보 비교와 선택 설정 |
