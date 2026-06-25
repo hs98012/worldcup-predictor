@@ -8,9 +8,9 @@
     "displayTeamB": "Czech Republic",
     "teamA": "Mexico",
     "teamB": "Czech Republic",
-    "teamAWinProb": 0.5904,
-    "drawProb": 0.247,
-    "teamBWinProb": 0.1626,
+    "teamAWinProb": 0.5887,
+    "drawProb": 0.2429,
+    "teamBWinProb": 0.1684,
     "squadStrengthDiff": 0.0117,
     "predictedResult": "A_WIN",
     "features": {
@@ -54,9 +54,9 @@
       "team_a_home_advantage": 1,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.5904,
-    "drawProbBeforeAdjust": 0.247,
-    "teamBWinProbBeforeAdjust": 0.1626,
+    "teamAWinProbBeforeAdjust": 0.5888,
+    "drawProbBeforeAdjust": 0.2429,
+    "teamBWinProbBeforeAdjust": 0.1684,
     "drawAdjustment": 0.0,
     "drawAdjustmentReasons": []
   },
@@ -69,9 +69,9 @@
     "displayTeamB": "South Korea",
     "teamA": "South Africa",
     "teamB": "South Korea",
-    "teamAWinProb": 0.2361,
-    "drawProb": 0.2538,
-    "teamBWinProb": 0.5101,
+    "teamAWinProb": 0.2397,
+    "drawProb": 0.2582,
+    "teamBWinProb": 0.5021,
     "squadStrengthDiff": -0.1907,
     "predictedResult": "B_WIN",
     "features": {
@@ -115,9 +115,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.2361,
-    "drawProbBeforeAdjust": 0.2538,
-    "teamBWinProbBeforeAdjust": 0.5101,
+    "teamAWinProbBeforeAdjust": 0.2397,
+    "drawProbBeforeAdjust": 0.2582,
+    "teamBWinProbBeforeAdjust": 0.5021,
     "drawAdjustment": 0.0,
     "drawAdjustmentReasons": []
   },
@@ -130,9 +130,9 @@
     "displayTeamB": "Switzerland",
     "teamA": "Canada",
     "teamB": "Switzerland",
-    "teamAWinProb": 0.2446,
-    "drawProb": 0.3389,
-    "teamBWinProb": 0.4165,
+    "teamAWinProb": 0.2411,
+    "drawProb": 0.3312,
+    "teamBWinProb": 0.4277,
     "squadStrengthDiff": -0.1266,
     "predictedResult": "B_WIN",
     "features": {
@@ -176,9 +176,9 @@
       "team_a_home_advantage": 1,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.2746,
-    "drawProbBeforeAdjust": 0.2789,
-    "teamBWinProbBeforeAdjust": 0.4465,
+    "teamAWinProbBeforeAdjust": 0.2711,
+    "drawProbBeforeAdjust": 0.2712,
+    "teamBWinProbBeforeAdjust": 0.4577,
     "drawAdjustment": 0.06,
     "drawAdjustmentReasons": [
       "Elo 차이가 작아 박빙 경기로 판단",
@@ -195,9 +195,9 @@
     "displayTeamB": "Qatar",
     "teamA": "Bosnia and Herzegovina",
     "teamB": "Qatar",
-    "teamAWinProb": 0.4032,
-    "drawProb": 0.3441,
-    "teamBWinProb": 0.2527,
+    "teamAWinProb": 0.3996,
+    "drawProb": 0.3445,
+    "teamBWinProb": 0.2559,
     "squadStrengthDiff": 0.0642,
     "predictedResult": "A_WIN",
     "features": {
@@ -241,9 +241,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.4282,
-    "drawProbBeforeAdjust": 0.2941,
-    "teamBWinProbBeforeAdjust": 0.2777,
+    "teamAWinProbBeforeAdjust": 0.4246,
+    "drawProbBeforeAdjust": 0.2945,
+    "teamBWinProbBeforeAdjust": 0.2809,
     "drawAdjustment": 0.05,
     "drawAdjustmentReasons": [
       "Elo 차이가 작아 박빙 경기로 판단",
@@ -259,9 +259,9 @@
     "displayTeamB": "Brazil",
     "teamA": "Scotland",
     "teamB": "Brazil",
-    "teamAWinProb": 0.2044,
-    "drawProb": 0.2093,
-    "teamBWinProb": 0.5863,
+    "teamAWinProb": 0.2072,
+    "drawProb": 0.2058,
+    "teamBWinProb": 0.587,
     "squadStrengthDiff": -0.3877,
     "predictedResult": "B_WIN",
     "features": {
@@ -305,9 +305,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.2044,
-    "drawProbBeforeAdjust": 0.2093,
-    "teamBWinProbBeforeAdjust": 0.5863,
+    "teamAWinProbBeforeAdjust": 0.2072,
+    "drawProbBeforeAdjust": 0.2058,
+    "teamBWinProbBeforeAdjust": 0.587,
     "drawAdjustment": 0.0,
     "drawAdjustmentReasons": []
   },
@@ -320,9 +320,9 @@
     "displayTeamB": "Haiti",
     "teamA": "Morocco",
     "teamB": "Haiti",
-    "teamAWinProb": 0.7328,
-    "drawProb": 0.18,
-    "teamBWinProb": 0.0872,
+    "teamAWinProb": 0.7336,
+    "drawProb": 0.1846,
+    "teamBWinProb": 0.0818,
     "squadStrengthDiff": 0.3791,
     "predictedResult": "A_WIN",
     "features": {
@@ -366,9 +366,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.7328,
-    "drawProbBeforeAdjust": 0.18,
-    "teamBWinProbBeforeAdjust": 0.0872,
+    "teamAWinProbBeforeAdjust": 0.7336,
+    "drawProbBeforeAdjust": 0.1846,
+    "teamBWinProbBeforeAdjust": 0.0818,
     "drawAdjustment": 0.0,
     "drawAdjustmentReasons": []
   },
@@ -381,9 +381,9 @@
     "displayTeamB": "Turkey",
     "teamA": "United States",
     "teamB": "Turkey",
-    "teamAWinProb": 0.5085,
-    "drawProb": 0.2725,
-    "teamBWinProb": 0.219,
+    "teamAWinProb": 0.5121,
+    "drawProb": 0.2632,
+    "teamBWinProb": 0.2247,
     "squadStrengthDiff": -0.0321,
     "predictedResult": "A_WIN",
     "features": {
@@ -427,9 +427,9 @@
       "team_a_home_advantage": 1,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.5235,
-    "drawProbBeforeAdjust": 0.2425,
-    "teamBWinProbBeforeAdjust": 0.234,
+    "teamAWinProbBeforeAdjust": 0.5271,
+    "drawProbBeforeAdjust": 0.2332,
+    "teamBWinProbBeforeAdjust": 0.2397,
     "drawAdjustment": 0.03,
     "drawAdjustmentReasons": [
       "최근 5경기 승점 차이가 작음",
@@ -445,9 +445,9 @@
     "displayTeamB": "Australia",
     "teamA": "Paraguay",
     "teamB": "Australia",
-    "teamAWinProb": 0.287,
-    "drawProb": 0.2641,
-    "teamBWinProb": 0.449,
+    "teamAWinProb": 0.28,
+    "drawProb": 0.2618,
+    "teamBWinProb": 0.4582,
     "squadStrengthDiff": 0.0538,
     "predictedResult": "B_WIN",
     "features": {
@@ -491,9 +491,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.302,
-    "drawProbBeforeAdjust": 0.2341,
-    "teamBWinProbBeforeAdjust": 0.464,
+    "teamAWinProbBeforeAdjust": 0.295,
+    "drawProbBeforeAdjust": 0.2318,
+    "teamBWinProbBeforeAdjust": 0.4732,
     "drawAdjustment": 0.03,
     "drawAdjustmentReasons": [
       "최근 5경기 승점 차이가 작음",
@@ -509,9 +509,9 @@
     "displayTeamB": "Ivory Coast",
     "teamA": "Curaçao",
     "teamB": "Ivory Coast",
-    "teamAWinProb": 0.133,
-    "drawProb": 0.1962,
-    "teamBWinProb": 0.6708,
+    "teamAWinProb": 0.1342,
+    "drawProb": 0.1952,
+    "teamBWinProb": 0.6706,
     "squadStrengthDiff": -0.2755,
     "predictedResult": "B_WIN",
     "features": {
@@ -555,9 +555,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.133,
-    "drawProbBeforeAdjust": 0.1962,
-    "teamBWinProbBeforeAdjust": 0.6708,
+    "teamAWinProbBeforeAdjust": 0.1342,
+    "drawProbBeforeAdjust": 0.1952,
+    "teamBWinProbBeforeAdjust": 0.6706,
     "drawAdjustment": 0.0,
     "drawAdjustmentReasons": []
   },
@@ -570,9 +570,9 @@
     "displayTeamB": "Germany",
     "teamA": "Ecuador",
     "teamB": "Germany",
-    "teamAWinProb": 0.143,
-    "drawProb": 0.1972,
-    "teamBWinProb": 0.6598,
+    "teamAWinProb": 0.145,
+    "drawProb": 0.2017,
+    "teamBWinProb": 0.6533,
     "squadStrengthDiff": -0.4554,
     "predictedResult": "B_WIN",
     "features": {
@@ -616,9 +616,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.143,
-    "drawProbBeforeAdjust": 0.1972,
-    "teamBWinProbBeforeAdjust": 0.6598,
+    "teamAWinProbBeforeAdjust": 0.145,
+    "drawProbBeforeAdjust": 0.2017,
+    "teamBWinProbBeforeAdjust": 0.6533,
     "drawAdjustment": 0.0,
     "drawAdjustmentReasons": []
   },
@@ -631,9 +631,9 @@
     "displayTeamB": "Sweden",
     "teamA": "Japan",
     "teamB": "Sweden",
-    "teamAWinProb": 0.5818,
-    "drawProb": 0.2628,
-    "teamBWinProb": 0.1554,
+    "teamAWinProb": 0.5823,
+    "drawProb": 0.2574,
+    "teamBWinProb": 0.1603,
     "squadStrengthDiff": -0.0733,
     "predictedResult": "A_WIN",
     "features": {
@@ -677,9 +677,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.5818,
-    "drawProbBeforeAdjust": 0.2628,
-    "teamBWinProbBeforeAdjust": 0.1554,
+    "teamAWinProbBeforeAdjust": 0.5823,
+    "drawProbBeforeAdjust": 0.2574,
+    "teamBWinProbBeforeAdjust": 0.1603,
     "drawAdjustment": 0.0,
     "drawAdjustmentReasons": []
   },
@@ -692,9 +692,9 @@
     "displayTeamB": "Netherlands",
     "teamA": "Tunisia",
     "teamB": "Netherlands",
-    "teamAWinProb": 0.0954,
-    "drawProb": 0.1522,
-    "teamBWinProb": 0.7524,
+    "teamAWinProb": 0.0955,
+    "drawProb": 0.153,
+    "teamBWinProb": 0.7515,
     "squadStrengthDiff": -0.569,
     "predictedResult": "B_WIN",
     "features": {
@@ -738,9 +738,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.0954,
-    "drawProbBeforeAdjust": 0.1522,
-    "teamBWinProbBeforeAdjust": 0.7524,
+    "teamAWinProbBeforeAdjust": 0.0955,
+    "drawProbBeforeAdjust": 0.153,
+    "teamBWinProbBeforeAdjust": 0.7515,
     "drawAdjustment": 0.0,
     "drawAdjustmentReasons": []
   },
@@ -753,9 +753,9 @@
     "displayTeamB": "Iran",
     "teamA": "Egypt",
     "teamB": "Iran",
-    "teamAWinProb": 0.2834,
-    "drawProb": 0.3558,
-    "teamBWinProb": 0.3607,
+    "teamAWinProb": 0.2909,
+    "drawProb": 0.3379,
+    "teamBWinProb": 0.3712,
     "squadStrengthDiff": 0.0603,
     "predictedResult": "B_WIN",
     "features": {
@@ -799,13 +799,12 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.3084,
-    "drawProbBeforeAdjust": 0.3058,
-    "teamBWinProbBeforeAdjust": 0.3857,
-    "drawAdjustment": 0.05,
+    "teamAWinProbBeforeAdjust": 0.3059,
+    "drawProbBeforeAdjust": 0.3079,
+    "teamBWinProbBeforeAdjust": 0.3862,
+    "drawAdjustment": 0.03,
     "drawAdjustmentReasons": [
-      "Elo 차이가 작아 박빙 경기로 판단",
-      "양 팀 승률 차이가 작아 무승부 가능성 보정"
+      "Elo 차이가 작아 박빙 경기로 판단"
     ]
   },
   {
@@ -817,9 +816,9 @@
     "displayTeamB": "Belgium",
     "teamA": "New Zealand",
     "teamB": "Belgium",
-    "teamAWinProb": 0.1127,
-    "drawProb": 0.1898,
-    "teamBWinProb": 0.6975,
+    "teamAWinProb": 0.1144,
+    "drawProb": 0.19,
+    "teamBWinProb": 0.6956,
     "squadStrengthDiff": -0.5066,
     "predictedResult": "B_WIN",
     "features": {
@@ -863,9 +862,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.1127,
-    "drawProbBeforeAdjust": 0.1898,
-    "teamBWinProbBeforeAdjust": 0.6975,
+    "teamAWinProbBeforeAdjust": 0.1144,
+    "drawProbBeforeAdjust": 0.19,
+    "teamBWinProbBeforeAdjust": 0.6956,
     "drawAdjustment": 0.0,
     "drawAdjustmentReasons": []
   },
@@ -878,9 +877,9 @@
     "displayTeamB": "Saudi Arabia",
     "teamA": "Cape Verde",
     "teamB": "Saudi Arabia",
-    "teamAWinProb": 0.3164,
-    "drawProb": 0.3551,
-    "teamBWinProb": 0.3285,
+    "teamAWinProb": 0.3146,
+    "drawProb": 0.3552,
+    "teamBWinProb": 0.3302,
     "squadStrengthDiff": 0.0041,
     "predictedResult": "DRAW",
     "features": {
@@ -924,9 +923,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.3464,
-    "drawProbBeforeAdjust": 0.2951,
-    "teamBWinProbBeforeAdjust": 0.3585,
+    "teamAWinProbBeforeAdjust": 0.3446,
+    "drawProbBeforeAdjust": 0.2952,
+    "teamBWinProbBeforeAdjust": 0.3602,
     "drawAdjustment": 0.06,
     "drawAdjustmentReasons": [
       "Elo 차이가 작아 박빙 경기로 판단",
@@ -944,9 +943,9 @@
     "displayTeamB": "Spain",
     "teamA": "Uruguay",
     "teamB": "Spain",
-    "teamAWinProb": 0.1563,
-    "drawProb": 0.2159,
-    "teamBWinProb": 0.6278,
+    "teamAWinProb": 0.1581,
+    "drawProb": 0.2185,
+    "teamBWinProb": 0.6234,
     "squadStrengthDiff": -0.4559,
     "predictedResult": "B_WIN",
     "features": {
@@ -990,9 +989,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.1563,
-    "drawProbBeforeAdjust": 0.2159,
-    "teamBWinProbBeforeAdjust": 0.6279,
+    "teamAWinProbBeforeAdjust": 0.1581,
+    "drawProbBeforeAdjust": 0.2185,
+    "teamBWinProbBeforeAdjust": 0.6234,
     "drawAdjustment": 0.0,
     "drawAdjustmentReasons": []
   },
@@ -1005,9 +1004,9 @@
     "displayTeamB": "France",
     "teamA": "Norway",
     "teamB": "France",
-    "teamAWinProb": 0.2009,
-    "drawProb": 0.2825,
-    "teamBWinProb": 0.5166,
+    "teamAWinProb": 0.2052,
+    "drawProb": 0.2822,
+    "teamBWinProb": 0.5126,
     "squadStrengthDiff": -0.5154,
     "predictedResult": "B_WIN",
     "features": {
@@ -1051,9 +1050,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.2159,
-    "drawProbBeforeAdjust": 0.2525,
-    "teamBWinProbBeforeAdjust": 0.5316,
+    "teamAWinProbBeforeAdjust": 0.2202,
+    "drawProbBeforeAdjust": 0.2522,
+    "teamBWinProbBeforeAdjust": 0.5276,
     "drawAdjustment": 0.03,
     "drawAdjustmentReasons": [
       "최근 5경기 승점 차이가 작음",
@@ -1069,9 +1068,9 @@
     "displayTeamB": "Iraq",
     "teamA": "Senegal",
     "teamB": "Iraq",
-    "teamAWinProb": 0.6903,
-    "drawProb": 0.2239,
-    "teamBWinProb": 0.0858,
+    "teamAWinProb": 0.6815,
+    "drawProb": 0.2275,
+    "teamBWinProb": 0.091,
     "squadStrengthDiff": 0.2857,
     "predictedResult": "A_WIN",
     "features": {
@@ -1115,9 +1114,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.7003,
-    "drawProbBeforeAdjust": 0.2039,
-    "teamBWinProbBeforeAdjust": 0.0958,
+    "teamAWinProbBeforeAdjust": 0.6915,
+    "drawProbBeforeAdjust": 0.2075,
+    "teamBWinProbBeforeAdjust": 0.101,
     "drawAdjustment": 0.02,
     "drawAdjustmentReasons": [
       "최근 5경기 승점 차이가 작음"
@@ -1132,9 +1131,9 @@
     "displayTeamB": "Austria",
     "teamA": "Algeria",
     "teamB": "Austria",
-    "teamAWinProb": 0.3442,
-    "drawProb": 0.2626,
-    "teamBWinProb": 0.3932,
+    "teamAWinProb": 0.3465,
+    "drawProb": 0.2547,
+    "teamBWinProb": 0.3987,
     "squadStrengthDiff": -0.1329,
     "predictedResult": "B_WIN",
     "features": {
@@ -1178,9 +1177,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.3642,
-    "drawProbBeforeAdjust": 0.2226,
-    "teamBWinProbBeforeAdjust": 0.4132,
+    "teamAWinProbBeforeAdjust": 0.3665,
+    "drawProbBeforeAdjust": 0.2147,
+    "teamBWinProbBeforeAdjust": 0.4187,
     "drawAdjustment": 0.04,
     "drawAdjustmentReasons": [
       "최근 5경기 승점 차이가 작음",
@@ -1196,9 +1195,9 @@
     "displayTeamB": "Argentina",
     "teamA": "Jordan",
     "teamB": "Argentina",
-    "teamAWinProb": 0.1059,
-    "drawProb": 0.2041,
-    "teamBWinProb": 0.69,
+    "teamAWinProb": 0.1079,
+    "drawProb": 0.2053,
+    "teamBWinProb": 0.6868,
     "squadStrengthDiff": -0.6147,
     "predictedResult": "B_WIN",
     "features": {
@@ -1242,9 +1241,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.1059,
-    "drawProbBeforeAdjust": 0.2041,
-    "teamBWinProbBeforeAdjust": 0.69,
+    "teamAWinProbBeforeAdjust": 0.1079,
+    "drawProbBeforeAdjust": 0.2053,
+    "teamBWinProbBeforeAdjust": 0.6868,
     "drawAdjustment": 0.0,
     "drawAdjustmentReasons": []
   },
@@ -1257,9 +1256,9 @@
     "displayTeamB": "Portugal",
     "teamA": "Colombia",
     "teamB": "Portugal",
-    "teamAWinProb": 0.1973,
-    "drawProb": 0.3268,
-    "teamBWinProb": 0.4759,
+    "teamAWinProb": 0.2042,
+    "drawProb": 0.3363,
+    "teamBWinProb": 0.4594,
     "squadStrengthDiff": -0.3854,
     "predictedResult": "B_WIN",
     "features": {
@@ -1303,9 +1302,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.2223,
-    "drawProbBeforeAdjust": 0.2768,
-    "teamBWinProbBeforeAdjust": 0.5009,
+    "teamAWinProbBeforeAdjust": 0.2292,
+    "drawProbBeforeAdjust": 0.2863,
+    "teamBWinProbBeforeAdjust": 0.4844,
     "drawAdjustment": 0.05,
     "drawAdjustmentReasons": [
       "Elo 차이가 작아 박빙 경기로 판단",
@@ -1321,9 +1320,9 @@
     "displayTeamB": "Uzbekistan",
     "teamA": "DR Congo",
     "teamB": "Uzbekistan",
-    "teamAWinProb": 0.4591,
-    "drawProb": 0.2684,
-    "teamBWinProb": 0.2725,
+    "teamAWinProb": 0.4574,
+    "drawProb": 0.2716,
+    "teamBWinProb": 0.271,
     "squadStrengthDiff": 0.0601,
     "predictedResult": "A_WIN",
     "features": {
@@ -1367,9 +1366,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.4741,
-    "drawProbBeforeAdjust": 0.2384,
-    "teamBWinProbBeforeAdjust": 0.2875,
+    "teamAWinProbBeforeAdjust": 0.4724,
+    "drawProbBeforeAdjust": 0.2416,
+    "teamBWinProbBeforeAdjust": 0.286,
     "drawAdjustment": 0.03,
     "drawAdjustmentReasons": [
       "Elo 차이가 작아 박빙 경기로 판단"
@@ -1384,9 +1383,9 @@
     "displayTeamB": "England",
     "teamA": "Panama",
     "teamB": "England",
-    "teamAWinProb": 0.0883,
-    "drawProb": 0.1411,
-    "teamBWinProb": 0.7706,
+    "teamAWinProb": 0.0898,
+    "drawProb": 0.1404,
+    "teamBWinProb": 0.7698,
     "squadStrengthDiff": -0.8042,
     "predictedResult": "B_WIN",
     "features": {
@@ -1430,9 +1429,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.0883,
-    "drawProbBeforeAdjust": 0.1411,
-    "teamBWinProbBeforeAdjust": 0.7706,
+    "teamAWinProbBeforeAdjust": 0.0898,
+    "drawProbBeforeAdjust": 0.1404,
+    "teamBWinProbBeforeAdjust": 0.7698,
     "drawAdjustment": 0.0,
     "drawAdjustmentReasons": []
   },
@@ -1445,9 +1444,9 @@
     "displayTeamB": "Ghana",
     "teamA": "Croatia",
     "teamB": "Ghana",
-    "teamAWinProb": 0.5472,
-    "drawProb": 0.2793,
-    "teamBWinProb": 0.1735,
+    "teamAWinProb": 0.5445,
+    "drawProb": 0.2844,
+    "teamBWinProb": 0.1711,
     "squadStrengthDiff": 0.2807,
     "predictedResult": "A_WIN",
     "features": {
@@ -1491,9 +1490,9 @@
       "team_a_home_advantage": 0,
       "tournament_importance": 1.0
     },
-    "teamAWinProbBeforeAdjust": 0.5622,
-    "drawProbBeforeAdjust": 0.2493,
-    "teamBWinProbBeforeAdjust": 0.1885,
+    "teamAWinProbBeforeAdjust": 0.5595,
+    "drawProbBeforeAdjust": 0.2544,
+    "teamBWinProbBeforeAdjust": 0.1861,
     "drawAdjustment": 0.03,
     "drawAdjustmentReasons": [
       "최근 5경기 승점 차이가 작음",

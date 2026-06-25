@@ -5,63 +5,63 @@
   "modelSummary": {
     "modelName": "scikit-learn RandomForestClassifier_calibrated",
     "task": "A_WIN / DRAW / B_WIN multiclass classification",
-    "accuracy": 58.63,
-    "logLoss": 0.9179,
+    "accuracy": 58.81,
+    "logLoss": 0.9181,
     "testStartDate": "2021-09-05",
     "testEndDate": "2026-06-23",
     "trainSize": 20312,
     "testSize": 5079,
-    "drawRecall": 0.0069,
+    "drawRecall": 0.0077,
     "drawCalibrationEnabled": true,
     "drawCalibrationLabel": "무승부 보정 적용",
     "drawCalibrationSummary": {
-      "selectionReason": "DRAW recall이 0.0069에서 0.0095로 개선되었고, Accuracy 하락 0.0000, Log Loss 변화 -0.0001로 허용 범위 이내여서 적용",
+      "selectionReason": "DRAW recall이 0.0077에서 0.0103로 개선되었고, Accuracy 하락 0.0000, Log Loss 변화 -0.0001로 허용 범위 이내여서 적용",
       "baseMetrics": {
         "model": "draw_calibration_base",
-        "accuracy": 0.5863,
-        "logLoss": 0.9179,
+        "accuracy": 0.5881,
+        "logLoss": 0.9181,
         "confusionMatrix": [
           [
-            2004,
-            409,
+            2011,
+            402,
             6
           ],
           [
-            527,
-            966,
-            4
+            525,
+            967,
+            5
           ],
           [
-            710,
-            445,
-            8
+            712,
+            442,
+            9
           ]
         ],
-        "drawRecall": 0.0069,
-        "drawPrecision": 0.4444,
-        "macroF1": 0.4347
+        "drawRecall": 0.0077,
+        "drawPrecision": 0.45,
+        "macroF1": 0.4365
       },
       "calibratedMetrics": {
-        "accuracy": 0.5863,
-        "logLoss": 0.9178,
-        "drawRecall": 0.0095,
-        "drawPrecision": 0.4583,
-        "macroF1": 0.4362,
+        "accuracy": 0.5881,
+        "logLoss": 0.918,
+        "drawRecall": 0.0103,
+        "drawPrecision": 0.4615,
+        "macroF1": 0.438,
         "confusionMatrix": [
           [
-            2003,
-            409,
+            2010,
+            402,
             7
           ],
           [
-            527,
-            964,
-            6
+            525,
+            965,
+            7
           ],
           [
-            710,
-            442,
-            11
+            712,
+            439,
+            12
           ]
         ]
       },
@@ -75,7 +75,7 @@
         "requireNeutral": true
       }
     },
-    "note": "최고 모델 accuracy 0.5905와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4922 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 +0.0031, Log Loss 변화 -0.0059로 보호 기준 이내여서 사용"
+    "note": "최고 모델 accuracy 0.5905와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4922 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 +0.0049, Log Loss 변화 -0.0057로 보호 기준 이내여서 사용"
   },
   "winnerTop10": [
     {
@@ -83,182 +83,182 @@
       "displayTeam": "Argentina",
       "team": "Argentina",
       "group": "J",
-      "winnerProb": 12.62,
-      "finalProb": 22.37,
-      "semiFinalProb": 38.2,
-      "quarterFinalProb": 55.46,
-      "roundOf16Prob": 77.35,
+      "winnerProb": 12.78,
+      "finalProb": 22.83,
+      "semiFinalProb": 38.97,
+      "quarterFinalProb": 56.12,
+      "roundOf16Prob": 78.05,
       "roundOf32Prob": 100.0,
       "strengthNote": "최근 승점은 높지만 최근 상대 평균 Elo가 낮음; 상대 강도 기준으로 최근 폼 boost가 제한됨",
       "simulationStrength": 1827.71,
       "strengthRank": 2,
       "winnerProbRank": 1,
-      "pathDifficultyScore": 1671.08
+      "pathDifficultyScore": 1671.44
     },
     {
       "rank": 2,
       "displayTeam": "France",
       "team": "France",
       "group": "I",
-      "winnerProb": 12.53,
-      "finalProb": 19.92,
-      "semiFinalProb": 30.78,
-      "quarterFinalProb": 45.55,
-      "roundOf16Prob": 75.74,
+      "winnerProb": 11.6,
+      "finalProb": 19.38,
+      "semiFinalProb": 29.81,
+      "quarterFinalProb": 44.08,
+      "roundOf16Prob": 74.87,
       "roundOf32Prob": 100.0,
       "strengthNote": "전력 및 경로 진단 범위 내",
       "simulationStrength": 1824.91,
       "strengthRank": 3,
       "winnerProbRank": 2,
-      "pathDifficultyScore": 1693.43
+      "pathDifficultyScore": 1693.29
     },
     {
       "rank": 3,
       "displayTeam": "Spain",
       "team": "Spain",
       "group": "H",
-      "winnerProb": 9.54,
-      "finalProb": 16.25,
-      "semiFinalProb": 28.56,
-      "quarterFinalProb": 41.91,
-      "roundOf16Prob": 65.58,
+      "winnerProb": 9.91,
+      "finalProb": 16.91,
+      "semiFinalProb": 28.55,
+      "quarterFinalProb": 41.45,
+      "roundOf16Prob": 64.96,
       "roundOf32Prob": 100.0,
       "strengthNote": "상대 강도 기준으로 최근 폼 boost가 제한됨",
       "simulationStrength": 1833.36,
       "strengthRank": 1,
       "winnerProbRank": 3,
-      "pathDifficultyScore": 1674.09
+      "pathDifficultyScore": 1674.11
     },
     {
       "rank": 4,
       "displayTeam": "Germany",
       "team": "Germany",
       "group": "E",
-      "winnerProb": 8.52,
-      "finalProb": 15.36,
-      "semiFinalProb": 25.5,
-      "quarterFinalProb": 40.9,
-      "roundOf16Prob": 74.45,
+      "winnerProb": 9.17,
+      "finalProb": 15.98,
+      "semiFinalProb": 25.32,
+      "quarterFinalProb": 40.89,
+      "roundOf16Prob": 74.42,
       "roundOf32Prob": 100.0,
       "strengthNote": "최근 승점은 높지만 최근 상대 평균 Elo가 낮음; 상대 강도 기준으로 최근 폼 boost가 제한됨",
       "simulationStrength": 1779.42,
       "strengthRank": 7,
       "winnerProbRank": 4,
-      "pathDifficultyScore": 1669.15
+      "pathDifficultyScore": 1669.18
     },
     {
       "rank": 5,
       "displayTeam": "England",
       "team": "England",
       "group": "L",
-      "winnerProb": 8.43,
-      "finalProb": 15.32,
-      "semiFinalProb": 26.41,
-      "quarterFinalProb": 45.24,
-      "roundOf16Prob": 72.92,
+      "winnerProb": 8.12,
+      "finalProb": 14.96,
+      "semiFinalProb": 25.87,
+      "quarterFinalProb": 44.59,
+      "roundOf16Prob": 72.7,
       "roundOf32Prob": 100.0,
       "strengthNote": "전력 및 경로 진단 범위 내",
       "simulationStrength": 1790.8,
       "strengthRank": 5,
       "winnerProbRank": 5,
-      "pathDifficultyScore": 1677.63
+      "pathDifficultyScore": 1677.32
     },
     {
       "rank": 6,
       "displayTeam": "Portugal",
       "team": "Portugal",
       "group": "K",
-      "winnerProb": 6.18,
-      "finalProb": 12.14,
-      "semiFinalProb": 24.57,
-      "quarterFinalProb": 42.49,
-      "roundOf16Prob": 70.89,
+      "winnerProb": 5.71,
+      "finalProb": 11.49,
+      "semiFinalProb": 24.42,
+      "quarterFinalProb": 41.88,
+      "roundOf16Prob": 72.1,
       "roundOf32Prob": 100.0,
       "strengthNote": "전력 및 경로 진단 범위 내",
       "simulationStrength": 1774.54,
       "strengthRank": 9,
       "winnerProbRank": 6,
-      "pathDifficultyScore": 1681.15
+      "pathDifficultyScore": 1681.37
     },
     {
       "rank": 7,
       "displayTeam": "Morocco",
       "team": "Morocco",
       "group": "C",
-      "winnerProb": 5.71,
-      "finalProb": 10.85,
-      "semiFinalProb": 17.75,
-      "quarterFinalProb": 33.94,
-      "roundOf16Prob": 54.6,
+      "winnerProb": 5.38,
+      "finalProb": 9.77,
+      "semiFinalProb": 17.85,
+      "quarterFinalProb": 34.55,
+      "roundOf16Prob": 56.17,
       "roundOf32Prob": 100.0,
       "strengthNote": "상대 강도 기준으로 최근 폼 boost가 제한됨",
       "simulationStrength": 1811.63,
       "strengthRank": 4,
       "winnerProbRank": 7,
-      "pathDifficultyScore": 1707.92
+      "pathDifficultyScore": 1707.44
     },
     {
       "rank": 8,
       "displayTeam": "Brazil",
       "team": "Brazil",
       "group": "C",
-      "winnerProb": 5.12,
-      "finalProb": 10.29,
-      "semiFinalProb": 18.28,
-      "quarterFinalProb": 33.25,
-      "roundOf16Prob": 53.36,
+      "winnerProb": 5.28,
+      "finalProb": 10.34,
+      "semiFinalProb": 18.29,
+      "quarterFinalProb": 32.81,
+      "roundOf16Prob": 53.6,
       "roundOf32Prob": 100.0,
       "strengthNote": "전력 및 경로 진단 범위 내",
       "simulationStrength": 1774.89,
       "strengthRank": 8,
       "winnerProbRank": 8,
-      "pathDifficultyScore": 1716.63
+      "pathDifficultyScore": 1716.6
     },
     {
       "rank": 9,
-      "displayTeam": "Netherlands",
-      "team": "Netherlands",
-      "group": "F",
-      "winnerProb": 3.92,
-      "finalProb": 7.77,
-      "semiFinalProb": 13.69,
-      "quarterFinalProb": 31.28,
-      "roundOf16Prob": 49.94,
-      "roundOf32Prob": 100.0,
-      "strengthNote": "전력 및 경로 진단 범위 내",
-      "simulationStrength": 1757.12,
-      "strengthRank": 11,
-      "winnerProbRank": 9,
-      "pathDifficultyScore": 1716.12
-    },
-    {
-      "rank": 10,
       "displayTeam": "Mexico",
       "team": "Mexico",
       "group": "A",
-      "winnerProb": 3.78,
-      "finalProb": 8.49,
-      "semiFinalProb": 16.71,
-      "quarterFinalProb": 34.08,
-      "roundOf16Prob": 66.82,
+      "winnerProb": 4.1,
+      "finalProb": 9.01,
+      "semiFinalProb": 17.06,
+      "quarterFinalProb": 34.74,
+      "roundOf16Prob": 66.78,
       "roundOf32Prob": 100.0,
       "strengthNote": "전력 및 경로 진단 범위 내",
       "simulationStrength": 1774.14,
       "strengthRank": 10,
+      "winnerProbRank": 9,
+      "pathDifficultyScore": 1676.47
+    },
+    {
+      "rank": 10,
+      "displayTeam": "Netherlands",
+      "team": "Netherlands",
+      "group": "F",
+      "winnerProb": 3.86,
+      "finalProb": 7.87,
+      "semiFinalProb": 14.05,
+      "quarterFinalProb": 30.96,
+      "roundOf16Prob": 48.88,
+      "roundOf32Prob": 100.0,
+      "strengthNote": "전력 및 경로 진단 범위 내",
+      "simulationStrength": 1757.12,
+      "strengthRank": 11,
       "winnerProbRank": 10,
-      "pathDifficultyScore": 1675.99
+      "pathDifficultyScore": 1716.12
     }
   ],
   "southKorea": {
     "displayTeam": "South Korea",
     "team": "South Korea",
     "group": "A",
-    "roundOf32Prob": 92.61,
-    "roundOf16Prob": 47.02,
-    "quarterFinalProb": 18.58,
-    "semiFinalProb": 5.88,
-    "finalProb": 2.49,
-    "winnerProb": 0.83
+    "roundOf32Prob": 92.74,
+    "roundOf16Prob": 47.57,
+    "quarterFinalProb": 18.97,
+    "semiFinalProb": 6.51,
+    "finalProb": 2.5,
+    "winnerProb": 0.98
   },
   "groupStandings": [
     {
@@ -369,9 +369,9 @@
           "displayTeamB": "Czech Republic",
           "predictedScoreA": 2,
           "predictedScoreB": 0,
-          "teamAWinProb": 0.5904,
-          "drawProb": 0.247,
-          "teamBWinProb": 0.1626,
+          "teamAWinProb": 0.5887,
+          "drawProb": 0.2429,
+          "teamBWinProb": 0.1684,
           "predictedResult": "A_WIN",
           "isCompleted": false
         },
@@ -382,9 +382,9 @@
           "displayTeamB": "South Korea",
           "predictedScoreA": 0,
           "predictedScoreB": 2,
-          "teamAWinProb": 0.2361,
-          "drawProb": 0.2538,
-          "teamBWinProb": 0.5101,
+          "teamAWinProb": 0.2397,
+          "drawProb": 0.2582,
+          "teamBWinProb": 0.5021,
           "predictedResult": "B_WIN",
           "isCompleted": false
         }
@@ -498,9 +498,9 @@
           "displayTeamB": "Switzerland",
           "predictedScoreA": 1,
           "predictedScoreB": 2,
-          "teamAWinProb": 0.2446,
-          "drawProb": 0.3389,
-          "teamBWinProb": 0.4165,
+          "teamAWinProb": 0.2411,
+          "drawProb": 0.3312,
+          "teamBWinProb": 0.4277,
           "predictedResult": "B_WIN",
           "isCompleted": false
         },
@@ -511,9 +511,9 @@
           "displayTeamB": "Qatar",
           "predictedScoreA": 2,
           "predictedScoreB": 1,
-          "teamAWinProb": 0.4032,
-          "drawProb": 0.3441,
-          "teamBWinProb": 0.2527,
+          "teamAWinProb": 0.3996,
+          "drawProb": 0.3445,
+          "teamBWinProb": 0.2559,
           "predictedResult": "A_WIN",
           "isCompleted": false
         }
@@ -627,9 +627,9 @@
           "displayTeamB": "Brazil",
           "predictedScoreA": 0,
           "predictedScoreB": 3,
-          "teamAWinProb": 0.2044,
-          "drawProb": 0.2093,
-          "teamBWinProb": 0.5863,
+          "teamAWinProb": 0.2072,
+          "drawProb": 0.2058,
+          "teamBWinProb": 0.587,
           "predictedResult": "B_WIN",
           "isCompleted": false
         },
@@ -640,9 +640,9 @@
           "displayTeamB": "Haiti",
           "predictedScoreA": 3,
           "predictedScoreB": 0,
-          "teamAWinProb": 0.7328,
-          "drawProb": 0.18,
-          "teamBWinProb": 0.0872,
+          "teamAWinProb": 0.7336,
+          "drawProb": 0.1846,
+          "teamBWinProb": 0.0818,
           "predictedResult": "A_WIN",
           "isCompleted": false
         }
@@ -756,9 +756,9 @@
           "displayTeamB": "Turkey",
           "predictedScoreA": 2,
           "predictedScoreB": 0,
-          "teamAWinProb": 0.5085,
-          "drawProb": 0.2725,
-          "teamBWinProb": 0.219,
+          "teamAWinProb": 0.5121,
+          "drawProb": 0.2632,
+          "teamBWinProb": 0.2247,
           "predictedResult": "A_WIN",
           "isCompleted": false
         },
@@ -769,9 +769,9 @@
           "displayTeamB": "Australia",
           "predictedScoreA": 1,
           "predictedScoreB": 2,
-          "teamAWinProb": 0.287,
-          "drawProb": 0.2641,
-          "teamBWinProb": 0.449,
+          "teamAWinProb": 0.28,
+          "drawProb": 0.2618,
+          "teamBWinProb": 0.4582,
           "predictedResult": "B_WIN",
           "isCompleted": false
         }
@@ -885,9 +885,9 @@
           "displayTeamB": "Ivory Coast",
           "predictedScoreA": 0,
           "predictedScoreB": 3,
-          "teamAWinProb": 0.133,
-          "drawProb": 0.1962,
-          "teamBWinProb": 0.6708,
+          "teamAWinProb": 0.1342,
+          "drawProb": 0.1952,
+          "teamBWinProb": 0.6706,
           "predictedResult": "B_WIN",
           "isCompleted": false
         },
@@ -898,9 +898,9 @@
           "displayTeamB": "Germany",
           "predictedScoreA": 0,
           "predictedScoreB": 3,
-          "teamAWinProb": 0.143,
-          "drawProb": 0.1972,
-          "teamBWinProb": 0.6598,
+          "teamAWinProb": 0.145,
+          "drawProb": 0.2017,
+          "teamBWinProb": 0.6533,
           "predictedResult": "B_WIN",
           "isCompleted": false
         }
@@ -1014,9 +1014,9 @@
           "displayTeamB": "Sweden",
           "predictedScoreA": 2,
           "predictedScoreB": 0,
-          "teamAWinProb": 0.5818,
-          "drawProb": 0.2628,
-          "teamBWinProb": 0.1554,
+          "teamAWinProb": 0.5823,
+          "drawProb": 0.2574,
+          "teamBWinProb": 0.1603,
           "predictedResult": "A_WIN",
           "isCompleted": false
         },
@@ -1027,9 +1027,9 @@
           "displayTeamB": "Netherlands",
           "predictedScoreA": 0,
           "predictedScoreB": 3,
-          "teamAWinProb": 0.0954,
-          "drawProb": 0.1522,
-          "teamBWinProb": 0.7524,
+          "teamAWinProb": 0.0955,
+          "drawProb": 0.153,
+          "teamBWinProb": 0.7515,
           "predictedResult": "B_WIN",
           "isCompleted": false
         }
@@ -1143,9 +1143,9 @@
           "displayTeamB": "Iran",
           "predictedScoreA": 1,
           "predictedScoreB": 2,
-          "teamAWinProb": 0.2834,
-          "drawProb": 0.3558,
-          "teamBWinProb": 0.3607,
+          "teamAWinProb": 0.2909,
+          "drawProb": 0.3379,
+          "teamBWinProb": 0.3712,
           "predictedResult": "B_WIN",
           "isCompleted": false
         },
@@ -1156,9 +1156,9 @@
           "displayTeamB": "Belgium",
           "predictedScoreA": 0,
           "predictedScoreB": 3,
-          "teamAWinProb": 0.1127,
-          "drawProb": 0.1898,
-          "teamBWinProb": 0.6975,
+          "teamAWinProb": 0.1144,
+          "drawProb": 0.19,
+          "teamBWinProb": 0.6956,
           "predictedResult": "B_WIN",
           "isCompleted": false
         }
@@ -1272,9 +1272,9 @@
           "displayTeamB": "Saudi Arabia",
           "predictedScoreA": 0,
           "predictedScoreB": 0,
-          "teamAWinProb": 0.3164,
-          "drawProb": 0.3551,
-          "teamBWinProb": 0.3285,
+          "teamAWinProb": 0.3146,
+          "drawProb": 0.3552,
+          "teamBWinProb": 0.3302,
           "predictedResult": "DRAW",
           "isCompleted": false
         },
@@ -1285,9 +1285,9 @@
           "displayTeamB": "Spain",
           "predictedScoreA": 0,
           "predictedScoreB": 3,
-          "teamAWinProb": 0.1563,
-          "drawProb": 0.2159,
-          "teamBWinProb": 0.6278,
+          "teamAWinProb": 0.1581,
+          "drawProb": 0.2185,
+          "teamBWinProb": 0.6234,
           "predictedResult": "B_WIN",
           "isCompleted": false
         }
@@ -1401,9 +1401,9 @@
           "displayTeamB": "France",
           "predictedScoreA": 0,
           "predictedScoreB": 2,
-          "teamAWinProb": 0.2009,
-          "drawProb": 0.2825,
-          "teamBWinProb": 0.5166,
+          "teamAWinProb": 0.2052,
+          "drawProb": 0.2822,
+          "teamBWinProb": 0.5126,
           "predictedResult": "B_WIN",
           "isCompleted": false
         },
@@ -1414,9 +1414,9 @@
           "displayTeamB": "Iraq",
           "predictedScoreA": 3,
           "predictedScoreB": 0,
-          "teamAWinProb": 0.6903,
-          "drawProb": 0.2239,
-          "teamBWinProb": 0.0858,
+          "teamAWinProb": 0.6815,
+          "drawProb": 0.2275,
+          "teamBWinProb": 0.091,
           "predictedResult": "A_WIN",
           "isCompleted": false
         }
@@ -1530,9 +1530,9 @@
           "displayTeamB": "Austria",
           "predictedScoreA": 1,
           "predictedScoreB": 2,
-          "teamAWinProb": 0.3442,
-          "drawProb": 0.2626,
-          "teamBWinProb": 0.3932,
+          "teamAWinProb": 0.3465,
+          "drawProb": 0.2547,
+          "teamBWinProb": 0.3987,
           "predictedResult": "B_WIN",
           "isCompleted": false
         },
@@ -1543,9 +1543,9 @@
           "displayTeamB": "Argentina",
           "predictedScoreA": 0,
           "predictedScoreB": 3,
-          "teamAWinProb": 0.1059,
-          "drawProb": 0.2041,
-          "teamBWinProb": 0.69,
+          "teamAWinProb": 0.1079,
+          "drawProb": 0.2053,
+          "teamBWinProb": 0.6868,
           "predictedResult": "B_WIN",
           "isCompleted": false
         }
@@ -1659,9 +1659,9 @@
           "displayTeamB": "Portugal",
           "predictedScoreA": 1,
           "predictedScoreB": 2,
-          "teamAWinProb": 0.1973,
-          "drawProb": 0.3268,
-          "teamBWinProb": 0.4759,
+          "teamAWinProb": 0.2042,
+          "drawProb": 0.3363,
+          "teamBWinProb": 0.4594,
           "predictedResult": "B_WIN",
           "isCompleted": false
         },
@@ -1672,9 +1672,9 @@
           "displayTeamB": "Uzbekistan",
           "predictedScoreA": 2,
           "predictedScoreB": 1,
-          "teamAWinProb": 0.4591,
-          "drawProb": 0.2684,
-          "teamBWinProb": 0.2725,
+          "teamAWinProb": 0.4574,
+          "drawProb": 0.2716,
+          "teamBWinProb": 0.271,
           "predictedResult": "A_WIN",
           "isCompleted": false
         }
@@ -1788,9 +1788,9 @@
           "displayTeamB": "England",
           "predictedScoreA": 0,
           "predictedScoreB": 3,
-          "teamAWinProb": 0.0883,
-          "drawProb": 0.1411,
-          "teamBWinProb": 0.7706,
+          "teamAWinProb": 0.0898,
+          "drawProb": 0.1404,
+          "teamBWinProb": 0.7698,
           "predictedResult": "B_WIN",
           "isCompleted": false
         },
@@ -1801,9 +1801,9 @@
           "displayTeamB": "Ghana",
           "predictedScoreA": 2,
           "predictedScoreB": 0,
-          "teamAWinProb": 0.5472,
-          "drawProb": 0.2793,
-          "teamBWinProb": 0.1735,
+          "teamAWinProb": 0.5445,
+          "drawProb": 0.2844,
+          "teamBWinProb": 0.1711,
           "predictedResult": "A_WIN",
           "isCompleted": false
         }
@@ -1819,39 +1819,39 @@
           "team": "Mexico",
           "roundOf32Prob": 100.0,
           "directAdvanceProb": 100.0,
-          "rank1Prob": 97.61,
-          "rank2Prob": 2.39,
+          "rank1Prob": 97.57,
+          "rank2Prob": 2.43,
           "rank3Prob": 0.0,
           "averageRank": 1.02
         },
         {
           "displayTeam": "South Korea",
           "team": "South Korea",
-          "roundOf32Prob": 92.78,
-          "directAdvanceProb": 73.24,
-          "rank1Prob": 2.39,
-          "rank2Prob": 70.85,
-          "rank3Prob": 23.07,
-          "averageRank": 2.28
+          "roundOf32Prob": 92.6,
+          "directAdvanceProb": 72.6,
+          "rank1Prob": 2.43,
+          "rank2Prob": 70.17,
+          "rank3Prob": 23.54,
+          "averageRank": 2.29
         },
         {
           "displayTeam": "South Africa",
           "team": "South Africa",
-          "roundOf32Prob": 23.95,
-          "directAdvanceProb": 20.08,
+          "roundOf32Prob": 24.32,
+          "directAdvanceProb": 20.29,
           "rank1Prob": 0.0,
-          "rank2Prob": 20.08,
-          "rank3Prob": 20.35,
+          "rank2Prob": 20.29,
+          "rank3Prob": 20.68,
           "averageRank": 3.39
         },
         {
           "displayTeam": "Czech Republic",
           "team": "Czech Republic",
-          "roundOf32Prob": 18.01,
-          "directAdvanceProb": 6.68,
+          "roundOf32Prob": 18.52,
+          "directAdvanceProb": 7.11,
           "rank1Prob": 0.0,
-          "rank2Prob": 6.68,
-          "rank3Prob": 56.58,
+          "rank2Prob": 7.11,
+          "rank3Prob": 55.78,
           "averageRank": 3.3
         }
       ]
@@ -1864,39 +1864,39 @@
           "team": "Canada",
           "roundOf32Prob": 100.0,
           "directAdvanceProb": 100.0,
-          "rank1Prob": 58.41,
-          "rank2Prob": 41.59,
+          "rank1Prob": 57.21,
+          "rank2Prob": 42.79,
           "rank3Prob": 0.0,
-          "averageRank": 1.42
+          "averageRank": 1.43
         },
         {
           "displayTeam": "Switzerland",
           "team": "Switzerland",
           "roundOf32Prob": 100.0,
           "directAdvanceProb": 100.0,
-          "rank1Prob": 41.59,
-          "rank2Prob": 58.41,
+          "rank1Prob": 42.79,
+          "rank2Prob": 57.21,
           "rank3Prob": 0.0,
-          "averageRank": 1.58
+          "averageRank": 1.57
         },
         {
           "displayTeam": "Bosnia and Herzegovina",
           "team": "Bosnia and Herzegovina",
-          "roundOf32Prob": 40.15,
+          "roundOf32Prob": 39.73,
           "directAdvanceProb": 0.0,
           "rank1Prob": 0.0,
           "rank2Prob": 0.0,
-          "rank3Prob": 75.2,
+          "rank3Prob": 74.83,
           "averageRank": 3.25
         },
         {
           "displayTeam": "Qatar",
           "team": "Qatar",
-          "roundOf32Prob": 24.75,
+          "roundOf32Prob": 25.12,
           "directAdvanceProb": 0.0,
           "rank1Prob": 0.0,
           "rank2Prob": 0.0,
-          "rank3Prob": 24.8,
+          "rank3Prob": 25.17,
           "averageRank": 3.75
         }
       ]
@@ -1908,40 +1908,40 @@
           "displayTeam": "Morocco",
           "team": "Morocco",
           "roundOf32Prob": 100.0,
-          "directAdvanceProb": 97.83,
-          "rank1Prob": 30.44,
-          "rank2Prob": 67.39,
-          "rank3Prob": 2.17,
+          "directAdvanceProb": 97.9,
+          "rank1Prob": 30.4,
+          "rank2Prob": 67.5,
+          "rank3Prob": 2.1,
           "averageRank": 1.72
         },
         {
           "displayTeam": "Brazil",
           "team": "Brazil",
           "roundOf32Prob": 100.0,
-          "directAdvanceProb": 80.71,
-          "rank1Prob": 63.78,
-          "rank2Prob": 16.93,
-          "rank3Prob": 19.29,
+          "directAdvanceProb": 80.42,
+          "rank1Prob": 63.8,
+          "rank2Prob": 16.62,
+          "rank3Prob": 19.58,
           "averageRank": 1.56
         },
         {
           "displayTeam": "Scotland",
           "team": "Scotland",
-          "roundOf32Prob": 76.69,
-          "directAdvanceProb": 21.46,
-          "rank1Prob": 5.78,
-          "rank2Prob": 15.68,
-          "rank3Prob": 76.96,
+          "roundOf32Prob": 76.65,
+          "directAdvanceProb": 21.68,
+          "rank1Prob": 5.8,
+          "rank2Prob": 15.88,
+          "rank3Prob": 76.8,
           "averageRank": 2.74
         },
         {
           "displayTeam": "Haiti",
           "team": "Haiti",
-          "roundOf32Prob": 0.84,
+          "roundOf32Prob": 0.82,
           "directAdvanceProb": 0.0,
           "rank1Prob": 0.0,
           "rank2Prob": 0.0,
-          "rank3Prob": 1.58,
+          "rank3Prob": 1.52,
           "averageRank": 3.98
         }
       ]
@@ -1962,31 +1962,31 @@
         {
           "displayTeam": "Australia",
           "team": "Australia",
-          "roundOf32Prob": 95.81,
-          "directAdvanceProb": 71.39,
+          "roundOf32Prob": 95.95,
+          "directAdvanceProb": 71.98,
           "rank1Prob": 0.0,
-          "rank2Prob": 71.39,
-          "rank3Prob": 28.61,
-          "averageRank": 2.29
+          "rank2Prob": 71.98,
+          "rank3Prob": 28.02,
+          "averageRank": 2.28
         },
         {
           "displayTeam": "Paraguay",
           "team": "Paraguay",
-          "roundOf32Prob": 76.1,
-          "directAdvanceProb": 28.61,
+          "roundOf32Prob": 75.41,
+          "directAdvanceProb": 28.02,
           "rank1Prob": 0.0,
-          "rank2Prob": 28.61,
-          "rank3Prob": 61.72,
-          "averageRank": 2.81
+          "rank2Prob": 28.02,
+          "rank3Prob": 61.78,
+          "averageRank": 2.82
         },
         {
           "displayTeam": "Turkey",
           "team": "Turkey",
-          "roundOf32Prob": 6.6,
+          "roundOf32Prob": 7.11,
           "directAdvanceProb": 0.0,
           "rank1Prob": 0.0,
           "rank2Prob": 0.0,
-          "rank3Prob": 9.67,
+          "rank3Prob": 10.2,
           "averageRank": 3.9
         }
       ]
@@ -2007,31 +2007,31 @@
         {
           "displayTeam": "Ivory Coast",
           "team": "Ivory Coast",
-          "roundOf32Prob": 96.13,
-          "directAdvanceProb": 86.23,
+          "roundOf32Prob": 96.15,
+          "directAdvanceProb": 86.11,
           "rank1Prob": 0.0,
-          "rank2Prob": 86.23,
-          "rank3Prob": 12.03,
+          "rank2Prob": 86.11,
+          "rank3Prob": 12.1,
           "averageRank": 2.16
         },
         {
           "displayTeam": "Ecuador",
           "team": "Ecuador",
-          "roundOf32Prob": 14.65,
-          "directAdvanceProb": 2.2,
+          "roundOf32Prob": 14.83,
+          "directAdvanceProb": 2.26,
           "rank1Prob": 0.0,
-          "rank2Prob": 2.2,
-          "rank3Prob": 73.55,
+          "rank2Prob": 2.26,
+          "rank3Prob": 73.57,
           "averageRank": 3.22
         },
         {
           "displayTeam": "Curaçao",
           "team": "Curaçao",
-          "roundOf32Prob": 13.31,
-          "directAdvanceProb": 11.57,
+          "roundOf32Prob": 13.42,
+          "directAdvanceProb": 11.63,
           "rank1Prob": 0.0,
-          "rank2Prob": 11.57,
-          "rank3Prob": 14.42,
+          "rank2Prob": 11.63,
+          "rank3Prob": 14.33,
           "averageRank": 3.62
         }
       ]
@@ -2043,31 +2043,31 @@
           "displayTeam": "Netherlands",
           "team": "Netherlands",
           "roundOf32Prob": 100.0,
-          "directAdvanceProb": 99.74,
-          "rank1Prob": 77.04,
-          "rank2Prob": 22.7,
-          "rank3Prob": 0.26,
+          "directAdvanceProb": 99.73,
+          "rank1Prob": 76.89,
+          "rank2Prob": 22.84,
+          "rank3Prob": 0.27,
           "averageRank": 1.23
         },
         {
           "displayTeam": "Japan",
           "team": "Japan",
           "roundOf32Prob": 100.0,
-          "directAdvanceProb": 85.3,
-          "rank1Prob": 19.06,
-          "rank2Prob": 66.24,
-          "rank3Prob": 14.7,
+          "directAdvanceProb": 84.79,
+          "rank1Prob": 19.05,
+          "rank2Prob": 65.74,
+          "rank3Prob": 15.21,
           "averageRank": 1.96
         },
         {
           "displayTeam": "Sweden",
           "team": "Sweden",
-          "roundOf32Prob": 95.38,
-          "directAdvanceProb": 14.96,
-          "rank1Prob": 3.9,
-          "rank2Prob": 11.06,
-          "rank3Prob": 85.04,
-          "averageRank": 2.81
+          "roundOf32Prob": 95.43,
+          "directAdvanceProb": 15.48,
+          "rank1Prob": 4.06,
+          "rank2Prob": 11.42,
+          "rank3Prob": 84.52,
+          "averageRank": 2.8
         },
         {
           "displayTeam": "Tunisia",
@@ -2088,40 +2088,40 @@
           "displayTeam": "Egypt",
           "team": "Egypt",
           "roundOf32Prob": 100.0,
-          "directAdvanceProb": 74.54,
-          "rank1Prob": 52.64,
-          "rank2Prob": 21.9,
-          "rank3Prob": 25.46,
-          "averageRank": 1.73
+          "directAdvanceProb": 73.97,
+          "rank1Prob": 52.32,
+          "rank2Prob": 21.65,
+          "rank3Prob": 26.03,
+          "averageRank": 1.74
         },
         {
           "displayTeam": "Belgium",
           "team": "Belgium",
-          "roundOf32Prob": 88.89,
-          "directAdvanceProb": 76.0,
-          "rank1Prob": 36.29,
-          "rank2Prob": 39.71,
-          "rank3Prob": 13.39,
-          "averageRank": 1.98
+          "roundOf32Prob": 88.69,
+          "directAdvanceProb": 75.86,
+          "rank1Prob": 36.19,
+          "rank2Prob": 39.67,
+          "rank3Prob": 13.37,
+          "averageRank": 1.99
         },
         {
           "displayTeam": "Iran",
           "team": "Iran",
-          "roundOf32Prob": 78.12,
-          "directAdvanceProb": 42.46,
-          "rank1Prob": 11.07,
-          "rank2Prob": 31.39,
-          "rank3Prob": 57.09,
-          "averageRank": 2.47
+          "roundOf32Prob": 77.5,
+          "directAdvanceProb": 43.23,
+          "rank1Prob": 11.49,
+          "rank2Prob": 31.74,
+          "rank3Prob": 56.3,
+          "averageRank": 2.46
         },
         {
           "displayTeam": "New Zealand",
           "team": "New Zealand",
-          "roundOf32Prob": 11.06,
-          "directAdvanceProb": 7.0,
+          "roundOf32Prob": 11.24,
+          "directAdvanceProb": 6.94,
           "rank1Prob": 0.0,
-          "rank2Prob": 7.0,
-          "rank3Prob": 4.06,
+          "rank2Prob": 6.94,
+          "rank3Prob": 4.3,
           "averageRank": 3.82
         }
       ]
@@ -2133,41 +2133,41 @@
           "displayTeam": "Spain",
           "team": "Spain",
           "roundOf32Prob": 100.0,
-          "directAdvanceProb": 94.95,
-          "rank1Prob": 84.47,
-          "rank2Prob": 10.48,
-          "rank3Prob": 5.05,
+          "directAdvanceProb": 94.9,
+          "rank1Prob": 84.28,
+          "rank2Prob": 10.62,
+          "rank3Prob": 5.1,
           "averageRank": 1.21
         },
         {
           "displayTeam": "Cape Verde",
           "team": "Cape Verde",
-          "roundOf32Prob": 69.18,
-          "directAdvanceProb": 55.25,
-          "rank1Prob": 0.96,
-          "rank2Prob": 54.29,
-          "rank3Prob": 32.34,
-          "averageRank": 2.56
+          "roundOf32Prob": 69.05,
+          "directAdvanceProb": 54.94,
+          "rank1Prob": 0.98,
+          "rank2Prob": 53.96,
+          "rank3Prob": 32.37,
+          "averageRank": 2.57
         },
         {
           "displayTeam": "Uruguay",
           "team": "Uruguay",
-          "roundOf32Prob": 37.99,
-          "directAdvanceProb": 21.82,
-          "rank1Prob": 14.57,
-          "rank2Prob": 7.25,
-          "rank3Prob": 57.37,
+          "roundOf32Prob": 38.4,
+          "directAdvanceProb": 22.07,
+          "rank1Prob": 14.74,
+          "rank2Prob": 7.33,
+          "rank3Prob": 57.2,
           "averageRank": 2.84
         },
         {
           "displayTeam": "Saudi Arabia",
           "team": "Saudi Arabia",
-          "roundOf32Prob": 33.19,
-          "directAdvanceProb": 27.98,
+          "roundOf32Prob": 33.39,
+          "directAdvanceProb": 28.09,
           "rank1Prob": 0.0,
-          "rank2Prob": 27.98,
-          "rank3Prob": 5.24,
-          "averageRank": 3.39
+          "rank2Prob": 28.09,
+          "rank3Prob": 5.33,
+          "averageRank": 3.38
         }
       ]
     },
@@ -2179,8 +2179,8 @@
           "team": "France",
           "roundOf32Prob": 100.0,
           "directAdvanceProb": 100.0,
-          "rank1Prob": 80.13,
-          "rank2Prob": 19.87,
+          "rank1Prob": 79.75,
+          "rank2Prob": 20.25,
           "rank3Prob": 0.0,
           "averageRank": 1.2
         },
@@ -2189,30 +2189,30 @@
           "team": "Norway",
           "roundOf32Prob": 100.0,
           "directAdvanceProb": 100.0,
-          "rank1Prob": 19.87,
-          "rank2Prob": 80.13,
+          "rank1Prob": 20.25,
+          "rank2Prob": 79.75,
           "rank3Prob": 0.0,
           "averageRank": 1.8
         },
         {
           "displayTeam": "Senegal",
           "team": "Senegal",
-          "roundOf32Prob": 67.05,
+          "roundOf32Prob": 66.3,
           "directAdvanceProb": 0.0,
           "rank1Prob": 0.0,
           "rank2Prob": 0.0,
-          "rank3Prob": 91.89,
-          "averageRank": 3.08
+          "rank3Prob": 91.36,
+          "averageRank": 3.09
         },
         {
           "displayTeam": "Iraq",
           "team": "Iraq",
-          "roundOf32Prob": 2.97,
+          "roundOf32Prob": 3.07,
           "directAdvanceProb": 0.0,
           "rank1Prob": 0.0,
           "rank2Prob": 0.0,
-          "rank3Prob": 8.11,
-          "averageRank": 3.92
+          "rank3Prob": 8.64,
+          "averageRank": 3.91
         }
       ]
     },
@@ -2232,31 +2232,31 @@
         {
           "displayTeam": "Austria",
           "team": "Austria",
-          "roundOf32Prob": 96.87,
-          "directAdvanceProb": 65.02,
+          "roundOf32Prob": 96.79,
+          "directAdvanceProb": 64.75,
           "rank1Prob": 0.0,
-          "rank2Prob": 65.02,
-          "rank3Prob": 34.98,
+          "rank2Prob": 64.75,
+          "rank3Prob": 35.25,
           "averageRank": 2.35
         },
         {
           "displayTeam": "Algeria",
           "team": "Algeria",
-          "roundOf32Prob": 81.93,
-          "directAdvanceProb": 34.98,
+          "roundOf32Prob": 81.81,
+          "directAdvanceProb": 35.25,
           "rank1Prob": 0.0,
-          "rank2Prob": 34.98,
-          "rank3Prob": 61.04,
+          "rank2Prob": 35.25,
+          "rank3Prob": 60.65,
           "averageRank": 2.69
         },
         {
           "displayTeam": "Jordan",
           "team": "Jordan",
-          "roundOf32Prob": 2.97,
+          "roundOf32Prob": 3.06,
           "directAdvanceProb": 0.0,
           "rank1Prob": 0.0,
           "rank2Prob": 0.0,
-          "rank3Prob": 3.98,
+          "rank3Prob": 4.1,
           "averageRank": 3.96
         }
       ]
@@ -2269,39 +2269,39 @@
           "team": "Colombia",
           "roundOf32Prob": 100.0,
           "directAdvanceProb": 100.0,
-          "rank1Prob": 52.78,
-          "rank2Prob": 47.22,
+          "rank1Prob": 54.41,
+          "rank2Prob": 45.59,
           "rank3Prob": 0.0,
-          "averageRank": 1.47
+          "averageRank": 1.46
         },
         {
           "displayTeam": "Portugal",
           "team": "Portugal",
           "roundOf32Prob": 100.0,
           "directAdvanceProb": 100.0,
-          "rank1Prob": 47.22,
-          "rank2Prob": 52.78,
+          "rank1Prob": 45.59,
+          "rank2Prob": 54.41,
           "rank3Prob": 0.0,
-          "averageRank": 1.53
+          "averageRank": 1.54
         },
         {
           "displayTeam": "DR Congo",
           "team": "DR Congo",
-          "roundOf32Prob": 49.78,
+          "roundOf32Prob": 49.73,
           "directAdvanceProb": 0.0,
           "rank1Prob": 0.0,
           "rank2Prob": 0.0,
-          "rank3Prob": 73.0,
+          "rank3Prob": 73.16,
           "averageRank": 3.27
         },
         {
           "displayTeam": "Uzbekistan",
           "team": "Uzbekistan",
-          "roundOf32Prob": 7.87,
+          "roundOf32Prob": 7.85,
           "directAdvanceProb": 0.0,
           "rank1Prob": 0.0,
           "rank2Prob": 0.0,
-          "rank3Prob": 27.0,
+          "rank3Prob": 26.84,
           "averageRank": 3.73
         }
       ]
@@ -2314,8 +2314,8 @@
           "team": "England",
           "roundOf32Prob": 100.0,
           "directAdvanceProb": 100.0,
-          "rank1Prob": 81.76,
-          "rank2Prob": 18.24,
+          "rank1Prob": 81.69,
+          "rank2Prob": 18.31,
           "rank3Prob": 0.0,
           "averageRank": 1.18
         },
@@ -2323,30 +2323,30 @@
           "displayTeam": "Ghana",
           "team": "Ghana",
           "roundOf32Prob": 100.0,
-          "directAdvanceProb": 44.98,
-          "rank1Prob": 6.12,
-          "rank2Prob": 38.86,
-          "rank3Prob": 55.02,
+          "directAdvanceProb": 45.31,
+          "rank1Prob": 6.18,
+          "rank2Prob": 39.13,
+          "rank3Prob": 54.69,
           "averageRank": 2.49
         },
         {
           "displayTeam": "Croatia",
           "team": "Croatia",
-          "roundOf32Prob": 95.67,
-          "directAdvanceProb": 55.02,
-          "rank1Prob": 12.12,
-          "rank2Prob": 42.9,
-          "rank3Prob": 43.46,
-          "averageRank": 2.34
+          "roundOf32Prob": 95.71,
+          "directAdvanceProb": 54.69,
+          "rank1Prob": 12.13,
+          "rank2Prob": 42.56,
+          "rank3Prob": 43.75,
+          "averageRank": 2.35
         },
         {
           "displayTeam": "Panama",
           "team": "Panama",
-          "roundOf32Prob": 1.31,
+          "roundOf32Prob": 1.35,
           "directAdvanceProb": 0.0,
           "rank1Prob": 0.0,
           "rank2Prob": 0.0,
-          "rank3Prob": 1.52,
+          "rank3Prob": 1.56,
           "averageRank": 3.98
         }
       ]
@@ -2359,9 +2359,9 @@
       "date": "2026-06-24",
       "displayTeamA": "Mexico",
       "displayTeamB": "Czech Republic",
-      "teamAWinProb": 59.04,
-      "drawProb": 24.7,
-      "teamBWinProb": 16.26,
+      "teamAWinProb": 58.87,
+      "drawProb": 24.29,
+      "teamBWinProb": 16.84,
       "predictedResult": "A_WIN"
     },
     {
@@ -2370,9 +2370,9 @@
       "date": "2026-06-24",
       "displayTeamA": "South Africa",
       "displayTeamB": "South Korea",
-      "teamAWinProb": 23.61,
-      "drawProb": 25.38,
-      "teamBWinProb": 51.01,
+      "teamAWinProb": 23.97,
+      "drawProb": 25.82,
+      "teamBWinProb": 50.21,
       "predictedResult": "B_WIN"
     },
     {
@@ -2381,9 +2381,9 @@
       "date": "2026-06-24",
       "displayTeamA": "Canada",
       "displayTeamB": "Switzerland",
-      "teamAWinProb": 24.46,
-      "drawProb": 33.89,
-      "teamBWinProb": 41.65,
+      "teamAWinProb": 24.11,
+      "drawProb": 33.12,
+      "teamBWinProb": 42.77,
       "predictedResult": "B_WIN"
     },
     {
@@ -2392,9 +2392,9 @@
       "date": "2026-06-24",
       "displayTeamA": "Bosnia and Herzegovina",
       "displayTeamB": "Qatar",
-      "teamAWinProb": 40.32,
-      "drawProb": 34.41,
-      "teamBWinProb": 25.27,
+      "teamAWinProb": 39.96,
+      "drawProb": 34.45,
+      "teamBWinProb": 25.59,
       "predictedResult": "A_WIN"
     },
     {
@@ -2403,9 +2403,9 @@
       "date": "2026-06-24",
       "displayTeamA": "Scotland",
       "displayTeamB": "Brazil",
-      "teamAWinProb": 20.44,
-      "drawProb": 20.93,
-      "teamBWinProb": 58.63,
+      "teamAWinProb": 20.72,
+      "drawProb": 20.58,
+      "teamBWinProb": 58.7,
       "predictedResult": "B_WIN"
     },
     {
@@ -2414,9 +2414,9 @@
       "date": "2026-06-24",
       "displayTeamA": "Morocco",
       "displayTeamB": "Haiti",
-      "teamAWinProb": 73.28,
-      "drawProb": 18.0,
-      "teamBWinProb": 8.72,
+      "teamAWinProb": 73.36,
+      "drawProb": 18.46,
+      "teamBWinProb": 8.18,
       "predictedResult": "A_WIN"
     },
     {
@@ -2425,9 +2425,9 @@
       "date": "2026-06-25",
       "displayTeamA": "United States",
       "displayTeamB": "Turkey",
-      "teamAWinProb": 50.85,
-      "drawProb": 27.25,
-      "teamBWinProb": 21.9,
+      "teamAWinProb": 51.21,
+      "drawProb": 26.32,
+      "teamBWinProb": 22.47,
       "predictedResult": "A_WIN"
     },
     {
@@ -2436,9 +2436,9 @@
       "date": "2026-06-25",
       "displayTeamA": "Paraguay",
       "displayTeamB": "Australia",
-      "teamAWinProb": 28.7,
-      "drawProb": 26.41,
-      "teamBWinProb": 44.9,
+      "teamAWinProb": 28.0,
+      "drawProb": 26.18,
+      "teamBWinProb": 45.82,
       "predictedResult": "B_WIN"
     },
     {
@@ -2447,9 +2447,9 @@
       "date": "2026-06-25",
       "displayTeamA": "Curaçao",
       "displayTeamB": "Ivory Coast",
-      "teamAWinProb": 13.3,
-      "drawProb": 19.62,
-      "teamBWinProb": 67.08,
+      "teamAWinProb": 13.42,
+      "drawProb": 19.52,
+      "teamBWinProb": 67.06,
       "predictedResult": "B_WIN"
     },
     {
@@ -2458,9 +2458,9 @@
       "date": "2026-06-25",
       "displayTeamA": "Ecuador",
       "displayTeamB": "Germany",
-      "teamAWinProb": 14.3,
-      "drawProb": 19.72,
-      "teamBWinProb": 65.98,
+      "teamAWinProb": 14.5,
+      "drawProb": 20.17,
+      "teamBWinProb": 65.33,
       "predictedResult": "B_WIN"
     },
     {
@@ -2469,9 +2469,9 @@
       "date": "2026-06-25",
       "displayTeamA": "Japan",
       "displayTeamB": "Sweden",
-      "teamAWinProb": 58.18,
-      "drawProb": 26.28,
-      "teamBWinProb": 15.54,
+      "teamAWinProb": 58.23,
+      "drawProb": 25.74,
+      "teamBWinProb": 16.03,
       "predictedResult": "A_WIN"
     },
     {
@@ -2480,9 +2480,9 @@
       "date": "2026-06-25",
       "displayTeamA": "Tunisia",
       "displayTeamB": "Netherlands",
-      "teamAWinProb": 9.54,
-      "drawProb": 15.22,
-      "teamBWinProb": 75.24,
+      "teamAWinProb": 9.55,
+      "drawProb": 15.3,
+      "teamBWinProb": 75.15,
       "predictedResult": "B_WIN"
     }
   ],
@@ -2494,7 +2494,7 @@
       "simulationStrength": 1827.71,
       "strengthScore": 1827.71,
       "strengthRank": 2,
-      "winnerProb": 0.1262,
+      "winnerProb": 0.1278,
       "winnerProbRank": 1,
       "rankGap": 1,
       "recent_points5": 15,
@@ -2506,9 +2506,9 @@
       "cappedRecentFormContribution": 10.0,
       "scheduleStrengthPenalty": -10.0,
       "groupStageDifficulty": 1651.87,
-      "expectedKnockoutPathDifficulty": 1681.43,
-      "pathDifficultyScore": 1671.08,
-      "medianPathDifficulty": 1709.78,
+      "expectedKnockoutPathDifficulty": 1681.97,
+      "pathDifficultyScore": 1671.44,
+      "medianPathDifficulty": 1708.6,
       "note": "최근 승점은 높지만 최근 상대 평균 Elo가 낮음; 상대 강도 기준으로 최근 폼 boost가 제한됨"
     },
     {
@@ -2518,7 +2518,7 @@
       "simulationStrength": 1824.91,
       "strengthScore": 1824.91,
       "strengthRank": 3,
-      "winnerProb": 0.1253,
+      "winnerProb": 0.116,
       "winnerProbRank": 2,
       "rankGap": 1,
       "recent_points5": 12,
@@ -2530,9 +2530,9 @@
       "cappedRecentFormContribution": 20.0,
       "scheduleStrengthPenalty": 0.0,
       "groupStageDifficulty": 1657.4,
-      "expectedKnockoutPathDifficulty": 1712.83,
-      "pathDifficultyScore": 1693.43,
-      "medianPathDifficulty": 1709.78,
+      "expectedKnockoutPathDifficulty": 1712.61,
+      "pathDifficultyScore": 1693.29,
+      "medianPathDifficulty": 1708.6,
       "note": "전력 및 경로 진단 범위 내"
     },
     {
@@ -2542,7 +2542,7 @@
       "simulationStrength": 1833.36,
       "strengthScore": 1833.36,
       "strengthRank": 1,
-      "winnerProb": 0.0954,
+      "winnerProb": 0.0991,
       "winnerProbRank": 3,
       "rankGap": -2,
       "recent_points5": 9,
@@ -2554,9 +2554,9 @@
       "cappedRecentFormContribution": 4.4541,
       "scheduleStrengthPenalty": -4.4541,
       "groupStageDifficulty": 1588.68,
-      "expectedKnockoutPathDifficulty": 1720.09,
-      "pathDifficultyScore": 1674.09,
-      "medianPathDifficulty": 1709.78,
+      "expectedKnockoutPathDifficulty": 1720.11,
+      "pathDifficultyScore": 1674.11,
+      "medianPathDifficulty": 1708.6,
       "note": "상대 강도 기준으로 최근 폼 boost가 제한됨"
     },
     {
@@ -2566,7 +2566,7 @@
       "simulationStrength": 1779.42,
       "strengthScore": 1779.42,
       "strengthRank": 7,
-      "winnerProb": 0.0852,
+      "winnerProb": 0.0917,
       "winnerProbRank": 4,
       "rankGap": 3,
       "recent_points5": 15,
@@ -2578,9 +2578,9 @@
       "cappedRecentFormContribution": 10.0,
       "scheduleStrengthPenalty": -10.0,
       "groupStageDifficulty": 1611.96,
-      "expectedKnockoutPathDifficulty": 1699.94,
-      "pathDifficultyScore": 1669.15,
-      "medianPathDifficulty": 1709.78,
+      "expectedKnockoutPathDifficulty": 1699.99,
+      "pathDifficultyScore": 1669.18,
+      "medianPathDifficulty": 1708.6,
       "note": "최근 승점은 높지만 최근 상대 평균 Elo가 낮음; 상대 강도 기준으로 최근 폼 boost가 제한됨"
     },
     {
@@ -2590,7 +2590,7 @@
       "simulationStrength": 1790.8,
       "strengthScore": 1790.8,
       "strengthRank": 5,
-      "winnerProb": 0.0843,
+      "winnerProb": 0.0812,
       "winnerProbRank": 5,
       "rankGap": 0,
       "recent_points5": 10,
@@ -2602,9 +2602,9 @@
       "cappedRecentFormContribution": 13.5177,
       "scheduleStrengthPenalty": 0.0,
       "groupStageDifficulty": 1612.13,
-      "expectedKnockoutPathDifficulty": 1712.89,
-      "pathDifficultyScore": 1677.63,
-      "medianPathDifficulty": 1709.78,
+      "expectedKnockoutPathDifficulty": 1712.43,
+      "pathDifficultyScore": 1677.32,
+      "medianPathDifficulty": 1708.6,
       "note": "전력 및 경로 진단 범위 내"
     },
     {
@@ -2614,7 +2614,7 @@
       "simulationStrength": 1774.54,
       "strengthScore": 1774.54,
       "strengthRank": 9,
-      "winnerProb": 0.0618,
+      "winnerProb": 0.0571,
       "winnerProbRank": 6,
       "rankGap": 3,
       "recent_points5": 13,
@@ -2626,9 +2626,9 @@
       "cappedRecentFormContribution": 20.0,
       "scheduleStrengthPenalty": 0.0,
       "groupStageDifficulty": 1645.55,
-      "expectedKnockoutPathDifficulty": 1700.32,
-      "pathDifficultyScore": 1681.15,
-      "medianPathDifficulty": 1709.78,
+      "expectedKnockoutPathDifficulty": 1700.66,
+      "pathDifficultyScore": 1681.37,
+      "medianPathDifficulty": 1708.6,
       "note": "전력 및 경로 진단 범위 내"
     },
     {
@@ -2638,7 +2638,7 @@
       "simulationStrength": 1811.63,
       "strengthScore": 1811.63,
       "strengthRank": 4,
-      "winnerProb": 0.0571,
+      "winnerProb": 0.0538,
       "winnerProbRank": 7,
       "rankGap": -3,
       "recent_points5": 11,
@@ -2650,9 +2650,9 @@
       "cappedRecentFormContribution": 9.9076,
       "scheduleStrengthPenalty": -9.9076,
       "groupStageDifficulty": 1641.02,
-      "expectedKnockoutPathDifficulty": 1743.95,
-      "pathDifficultyScore": 1707.92,
-      "medianPathDifficulty": 1709.78,
+      "expectedKnockoutPathDifficulty": 1743.2,
+      "pathDifficultyScore": 1707.44,
+      "medianPathDifficulty": 1708.6,
       "note": "상대 강도 기준으로 최근 폼 boost가 제한됨"
     },
     {
@@ -2662,7 +2662,7 @@
       "simulationStrength": 1774.89,
       "strengthScore": 1774.89,
       "strengthRank": 8,
-      "winnerProb": 0.0512,
+      "winnerProb": 0.0528,
       "winnerProbRank": 8,
       "rankGap": 0,
       "recent_points5": 13,
@@ -2674,33 +2674,9 @@
       "cappedRecentFormContribution": 20.0,
       "scheduleStrengthPenalty": 0.0,
       "groupStageDifficulty": 1653.26,
-      "expectedKnockoutPathDifficulty": 1750.76,
-      "pathDifficultyScore": 1716.63,
-      "medianPathDifficulty": 1709.78,
-      "note": "전력 및 경로 진단 범위 내"
-    },
-    {
-      "team": "Netherlands",
-      "group": "F",
-      "elo": 1751.04,
-      "simulationStrength": 1757.12,
-      "strengthScore": 1757.12,
-      "strengthRank": 11,
-      "winnerProb": 0.0392,
-      "winnerProbRank": 9,
-      "rankGap": 2,
-      "recent_points5": 8,
-      "adjusted_points5": 7.6294,
-      "avg_opponent_elo5": 1672.21,
-      "recent_goal_diff5": 4,
-      "adjusted_goal_diff5": 3.7033,
-      "recentFormContribution": 6.0726,
-      "cappedRecentFormContribution": 6.0726,
-      "scheduleStrengthPenalty": 0.0,
-      "groupStageDifficulty": 1649.89,
-      "expectedKnockoutPathDifficulty": 1751.77,
-      "pathDifficultyScore": 1716.12,
-      "medianPathDifficulty": 1709.78,
+      "expectedKnockoutPathDifficulty": 1750.71,
+      "pathDifficultyScore": 1716.6,
+      "medianPathDifficulty": 1708.6,
       "note": "전력 및 경로 진단 범위 내"
     },
     {
@@ -2710,9 +2686,9 @@
       "simulationStrength": 1774.14,
       "strengthScore": 1774.14,
       "strengthRank": 10,
-      "winnerProb": 0.0378,
-      "winnerProbRank": 10,
-      "rankGap": 0,
+      "winnerProb": 0.041,
+      "winnerProbRank": 9,
+      "rankGap": 1,
       "recent_points5": 15,
       "adjusted_points5": 14.2814,
       "avg_opponent_elo5": 1638.85,
@@ -2722,9 +2698,33 @@
       "cappedRecentFormContribution": 20.0,
       "scheduleStrengthPenalty": 0.0,
       "groupStageDifficulty": 1626.55,
-      "expectedKnockoutPathDifficulty": 1702.61,
-      "pathDifficultyScore": 1675.99,
-      "medianPathDifficulty": 1709.78,
+      "expectedKnockoutPathDifficulty": 1703.36,
+      "pathDifficultyScore": 1676.47,
+      "medianPathDifficulty": 1708.6,
+      "note": "전력 및 경로 진단 범위 내"
+    },
+    {
+      "team": "Netherlands",
+      "group": "F",
+      "elo": 1751.04,
+      "simulationStrength": 1757.12,
+      "strengthScore": 1757.12,
+      "strengthRank": 11,
+      "winnerProb": 0.0386,
+      "winnerProbRank": 10,
+      "rankGap": 1,
+      "recent_points5": 8,
+      "adjusted_points5": 7.6294,
+      "avg_opponent_elo5": 1672.21,
+      "recent_goal_diff5": 4,
+      "adjusted_goal_diff5": 3.7033,
+      "recentFormContribution": 6.0726,
+      "cappedRecentFormContribution": 6.0726,
+      "scheduleStrengthPenalty": 0.0,
+      "groupStageDifficulty": 1649.89,
+      "expectedKnockoutPathDifficulty": 1751.78,
+      "pathDifficultyScore": 1716.12,
+      "medianPathDifficulty": 1708.6,
       "note": "전력 및 경로 진단 범위 내"
     }
   ]
