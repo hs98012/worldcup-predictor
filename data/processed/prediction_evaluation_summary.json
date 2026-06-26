@@ -1,9 +1,99 @@
 {
-  "evaluated_matches": 4,
-  "correct_predictions": 3,
-  "accuracy": 0.75,
-  "wrong_predictions": 1,
+  "evaluated_matches": 10,
+  "correct_predictions": 7,
+  "accuracy": 0.7,
+  "wrong_predictions": 3,
   "latest_evaluated_matches": [
+    {
+      "date": "2026-06-24",
+      "tournament": "FIFA World Cup",
+      "home_team": "South Africa",
+      "away_team": "South Korea",
+      "home_score": 1,
+      "away_score": 0,
+      "predicted_result": "away_win",
+      "actual_result": "home_win",
+      "correct": false,
+      "predicted_probability": 0.46,
+      "home_win_probability": 0.3123,
+      "draw_probability": 0.2277,
+      "away_win_probability": 0.46
+    },
+    {
+      "date": "2026-06-24",
+      "tournament": "FIFA World Cup",
+      "home_team": "Scotland",
+      "away_team": "Brazil",
+      "home_score": 0,
+      "away_score": 3,
+      "predicted_result": "away_win",
+      "actual_result": "away_win",
+      "correct": true,
+      "predicted_probability": 0.5187,
+      "home_win_probability": 0.2777,
+      "draw_probability": 0.2036,
+      "away_win_probability": 0.5187
+    },
+    {
+      "date": "2026-06-24",
+      "tournament": "FIFA World Cup",
+      "home_team": "Morocco",
+      "away_team": "Haiti",
+      "home_score": 4,
+      "away_score": 2,
+      "predicted_result": "home_win",
+      "actual_result": "home_win",
+      "correct": true,
+      "predicted_probability": 0.7036,
+      "home_win_probability": 0.7036,
+      "draw_probability": 0.1722,
+      "away_win_probability": 0.1242
+    },
+    {
+      "date": "2026-06-24",
+      "tournament": "FIFA World Cup",
+      "home_team": "Mexico",
+      "away_team": "Czech Republic",
+      "home_score": 3,
+      "away_score": 0,
+      "predicted_result": "home_win",
+      "actual_result": "home_win",
+      "correct": true,
+      "predicted_probability": 0.5996,
+      "home_win_probability": 0.5996,
+      "draw_probability": 0.233,
+      "away_win_probability": 0.1674
+    },
+    {
+      "date": "2026-06-24",
+      "tournament": "FIFA World Cup",
+      "home_team": "Canada",
+      "away_team": "Switzerland",
+      "home_score": 1,
+      "away_score": 2,
+      "predicted_result": "home_win",
+      "actual_result": "away_win",
+      "correct": false,
+      "predicted_probability": 0.3938,
+      "home_win_probability": 0.3938,
+      "draw_probability": 0.2368,
+      "away_win_probability": 0.3694
+    },
+    {
+      "date": "2026-06-24",
+      "tournament": "FIFA World Cup",
+      "home_team": "Bosnia and Herzegovina",
+      "away_team": "Qatar",
+      "home_score": 3,
+      "away_score": 1,
+      "predicted_result": "home_win",
+      "actual_result": "home_win",
+      "correct": true,
+      "predicted_probability": 0.4097,
+      "home_win_probability": 0.4097,
+      "draw_probability": 0.2598,
+      "away_win_probability": 0.3306
+    },
     {
       "date": "2026-06-23",
       "tournament": "FIFA World Cup",
@@ -67,9 +157,9 @@
   ],
   "result_breakdown": {
     "home_win": {
-      "predictions": 3,
-      "correct_predictions": 2,
-      "accuracy": 0.6667
+      "predictions": 7,
+      "correct_predictions": 5,
+      "accuracy": 0.7143
     },
     "draw": {
       "predictions": 0,
@@ -77,10 +167,10 @@
       "accuracy": 0.0
     },
     "away_win": {
-      "predictions": 1,
-      "correct_predictions": 1,
-      "accuracy": 1.0
+      "predictions": 3,
+      "correct_predictions": 2,
+      "accuracy": 0.6667
     }
   },
-  "last_updated": "2026-06-25T03:43:51.493160Z"
+  "last_updated": "2026-06-26T03:51:00.284180Z"
 }

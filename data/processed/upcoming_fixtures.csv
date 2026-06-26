@@ -1,10 +1,4 @@
 date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,normalized_home_team,normalized_away_team
-2026-06-24,Mexico,Czech Republic,,,FIFA World Cup,Mexico City,Mexico,False,Mexico,Czech Republic
-2026-06-24,South Africa,South Korea,,,FIFA World Cup,Guadalupe,Mexico,True,South Africa,Korea Republic
-2026-06-24,Canada,Switzerland,,,FIFA World Cup,Vancouver,Canada,False,Canada,Switzerland
-2026-06-24,Bosnia and Herzegovina,Qatar,,,FIFA World Cup,Seattle,United States,True,Bosnia and Herzegovina,Qatar
-2026-06-24,Scotland,Brazil,,,FIFA World Cup,Miami Gardens,United States,True,Scotland,Brazil
-2026-06-24,Morocco,Haiti,,,FIFA World Cup,Atlanta,United States,True,Morocco,Haiti
 2026-06-25,United States,Turkey,,,FIFA World Cup,Inglewood,United States,False,United States,Turkey
 2026-06-25,Paraguay,Australia,,,FIFA World Cup,Santa Clara,United States,True,Paraguay,Australia
 2026-06-25,Curaçao,Ivory Coast,,,FIFA World Cup,Philadelphia,United States,True,Curaçao,Ivory Coast
