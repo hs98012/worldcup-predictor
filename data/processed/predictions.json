@@ -2,150 +2,6 @@
   {
     "matchId": 1,
     "stage": "GROUP",
-    "group": "D",
-    "date": "2026-06-25",
-    "teamA": "United States",
-    "teamB": "Turkey",
-    "teamAElo": 1715.56,
-    "teamBElo": 1618.88,
-    "teamARecentForm": "L-W-L-W-W",
-    "teamBRecentForm": "W-W-W-L-L",
-    "teamAWinProb": 0.4842,
-    "drawProb": 0.2383,
-    "teamBWinProb": 0.2775,
-    "expectedGoalsA": 1.33,
-    "expectedGoalsB": 1.17,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "United States의 Elo 점수가 더 높음",
-      "두 팀의 최근 5경기 승점이 동일함",
-      "United States 최근 5경기: L-W-L-W-W",
-      "Turkey 최근 5경기: W-W-W-L-L"
-    ]
-  },
-  {
-    "matchId": 2,
-    "stage": "GROUP",
-    "group": "D",
-    "date": "2026-06-25",
-    "teamA": "Paraguay",
-    "teamB": "Australia",
-    "teamAElo": 1561.76,
-    "teamBElo": 1700.52,
-    "teamARecentForm": "W-L-W-L-W",
-    "teamBRecentForm": "W-L-D-W-L",
-    "teamAWinProb": 0.2613,
-    "drawProb": 0.2222,
-    "teamBWinProb": 0.5165,
-    "expectedGoalsA": 1.19,
-    "expectedGoalsB": 1.31,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Australia의 Elo 점수가 더 높음",
-      "Paraguay의 최근 5경기 승점이 더 높음",
-      "Paraguay 최근 5경기: W-L-W-L-W",
-      "Australia 최근 5경기: W-L-D-W-L"
-    ]
-  },
-  {
-    "matchId": 3,
-    "stage": "GROUP",
-    "group": "E",
-    "date": "2026-06-25",
-    "teamA": "Curaçao",
-    "teamB": "Ivory Coast",
-    "teamAElo": 1534.31,
-    "teamBElo": 1690.73,
-    "teamARecentForm": "L-L-W-L-D",
-    "teamBRecentForm": "W-W-W-W-L",
-    "teamAWinProb": 0.1466,
-    "drawProb": 0.2157,
-    "teamBWinProb": 0.6376,
-    "expectedGoalsA": 0.87,
-    "expectedGoalsB": 1.63,
-    "confidence": "HIGH",
-    "reasons": [
-      "Ivory Coast의 Elo 점수가 더 높음",
-      "Ivory Coast의 최근 5경기 승점이 더 높음",
-      "Curaçao 최근 5경기: L-L-W-L-D",
-      "Ivory Coast 최근 5경기: W-W-W-W-L"
-    ]
-  },
-  {
-    "matchId": 4,
-    "stage": "GROUP",
-    "group": "E",
-    "date": "2026-06-25",
-    "teamA": "Ecuador",
-    "teamB": "Germany",
-    "teamAElo": 1605.07,
-    "teamBElo": 1769.42,
-    "teamARecentForm": "D-W-W-L-D",
-    "teamBRecentForm": "W-W-W-W-W",
-    "teamAWinProb": 0.1501,
-    "drawProb": 0.2129,
-    "teamBWinProb": 0.637,
-    "expectedGoalsA": 0.9,
-    "expectedGoalsB": 1.6,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Germany의 Elo 점수가 더 높음",
-      "Germany의 최근 5경기 승점이 더 높음",
-      "Ecuador 최근 5경기: D-W-W-L-D",
-      "Germany 최근 5경기: W-W-W-W-W"
-    ]
-  },
-  {
-    "matchId": 5,
-    "stage": "GROUP",
-    "group": "F",
-    "date": "2026-06-25",
-    "teamA": "Japan",
-    "teamB": "Sweden",
-    "teamAElo": 1770.12,
-    "teamBElo": 1598.26,
-    "teamARecentForm": "W-W-W-D-W",
-    "teamBRecentForm": "W-L-D-W-L",
-    "teamAWinProb": 0.6357,
-    "drawProb": 0.2103,
-    "teamBWinProb": 0.1541,
-    "expectedGoalsA": 1.58,
-    "expectedGoalsB": 0.92,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Japan의 Elo 점수가 더 높음",
-      "Japan의 최근 5경기 승점이 더 높음",
-      "Japan 최근 5경기: W-W-W-D-W",
-      "Sweden 최근 5경기: W-L-D-W-L"
-    ]
-  },
-  {
-    "matchId": 6,
-    "stage": "GROUP",
-    "group": "F",
-    "date": "2026-06-25",
-    "teamA": "Tunisia",
-    "teamB": "Netherlands",
-    "teamAElo": 1584.79,
-    "teamBElo": 1751.04,
-    "teamARecentForm": "D-L-L-L-L",
-    "teamBRecentForm": "D-L-W-D-W",
-    "teamAWinProb": 0.1486,
-    "drawProb": 0.2122,
-    "teamBWinProb": 0.6392,
-    "expectedGoalsA": 0.89,
-    "expectedGoalsB": 1.61,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Netherlands의 Elo 점수가 더 높음",
-      "Netherlands의 최근 5경기 승점이 더 높음",
-      "Tunisia 최근 5경기: D-L-L-L-L",
-      "Netherlands 최근 5경기: D-L-W-D-W"
-    ]
-  },
-  {
-    "matchId": 7,
-    "stage": "GROUP",
     "group": "G",
     "date": "2026-06-26",
     "teamA": "Egypt",
@@ -168,7 +24,7 @@
     ]
   },
   {
-    "matchId": 8,
+    "matchId": 2,
     "stage": "GROUP",
     "group": "G",
     "date": "2026-06-26",
@@ -192,7 +48,7 @@
     ]
   },
   {
-    "matchId": 9,
+    "matchId": 3,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-26",
@@ -216,7 +72,7 @@
     ]
   },
   {
-    "matchId": 10,
+    "matchId": 4,
     "stage": "GROUP",
     "group": "H",
     "date": "2026-06-26",
@@ -240,7 +96,7 @@
     ]
   },
   {
-    "matchId": 11,
+    "matchId": 5,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-26",
@@ -264,7 +120,7 @@
     ]
   },
   {
-    "matchId": 12,
+    "matchId": 6,
     "stage": "GROUP",
     "group": "I",
     "date": "2026-06-26",
@@ -288,7 +144,7 @@
     ]
   },
   {
-    "matchId": 13,
+    "matchId": 7,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-27",
@@ -312,7 +168,7 @@
     ]
   },
   {
-    "matchId": 14,
+    "matchId": 8,
     "stage": "GROUP",
     "group": "J",
     "date": "2026-06-27",
@@ -336,7 +192,7 @@
     ]
   },
   {
-    "matchId": 15,
+    "matchId": 9,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-27",
@@ -360,7 +216,7 @@
     ]
   },
   {
-    "matchId": 16,
+    "matchId": 10,
     "stage": "GROUP",
     "group": "K",
     "date": "2026-06-27",
@@ -384,7 +240,7 @@
     ]
   },
   {
-    "matchId": 17,
+    "matchId": 11,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-27",
@@ -408,7 +264,7 @@
     ]
   },
   {
-    "matchId": 18,
+    "matchId": 12,
     "stage": "GROUP",
     "group": "L",
     "date": "2026-06-27",

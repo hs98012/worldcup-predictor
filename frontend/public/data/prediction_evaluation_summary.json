@@ -1,9 +1,99 @@
 {
-  "evaluated_matches": 10,
-  "correct_predictions": 7,
-  "accuracy": 0.7,
-  "wrong_predictions": 3,
+  "evaluated_matches": 16,
+  "correct_predictions": 9,
+  "accuracy": 0.5625,
+  "wrong_predictions": 7,
   "latest_evaluated_matches": [
+    {
+      "date": "2026-06-25",
+      "tournament": "FIFA World Cup",
+      "home_team": "United States",
+      "away_team": "Turkey",
+      "home_score": 2,
+      "away_score": 3,
+      "predicted_result": "home_win",
+      "actual_result": "away_win",
+      "correct": false,
+      "predicted_probability": 0.5757,
+      "home_win_probability": 0.5757,
+      "draw_probability": 0.2185,
+      "away_win_probability": 0.2058
+    },
+    {
+      "date": "2026-06-25",
+      "tournament": "FIFA World Cup",
+      "home_team": "Tunisia",
+      "away_team": "Netherlands",
+      "home_score": 1,
+      "away_score": 3,
+      "predicted_result": "away_win",
+      "actual_result": "away_win",
+      "correct": true,
+      "predicted_probability": 0.584,
+      "home_win_probability": 0.2185,
+      "draw_probability": 0.1976,
+      "away_win_probability": 0.584
+    },
+    {
+      "date": "2026-06-25",
+      "tournament": "FIFA World Cup",
+      "home_team": "Paraguay",
+      "away_team": "Australia",
+      "home_score": 0,
+      "away_score": 0,
+      "predicted_result": "away_win",
+      "actual_result": "draw",
+      "correct": false,
+      "predicted_probability": 0.5047,
+      "home_win_probability": 0.2758,
+      "draw_probability": 0.2195,
+      "away_win_probability": 0.5047
+    },
+    {
+      "date": "2026-06-25",
+      "tournament": "FIFA World Cup",
+      "home_team": "Japan",
+      "away_team": "Sweden",
+      "home_score": 1,
+      "away_score": 1,
+      "predicted_result": "home_win",
+      "actual_result": "draw",
+      "correct": false,
+      "predicted_probability": 0.6185,
+      "home_win_probability": 0.6185,
+      "draw_probability": 0.2264,
+      "away_win_probability": 0.1551
+    },
+    {
+      "date": "2026-06-25",
+      "tournament": "FIFA World Cup",
+      "home_team": "Ecuador",
+      "away_team": "Germany",
+      "home_score": 2,
+      "away_score": 1,
+      "predicted_result": "away_win",
+      "actual_result": "home_win",
+      "correct": false,
+      "predicted_probability": 0.5218,
+      "home_win_probability": 0.2383,
+      "draw_probability": 0.2398,
+      "away_win_probability": 0.5218
+    },
+    {
+      "date": "2026-06-25",
+      "tournament": "FIFA World Cup",
+      "home_team": "Curaçao",
+      "away_team": "Ivory Coast",
+      "home_score": 0,
+      "away_score": 2,
+      "predicted_result": "away_win",
+      "actual_result": "away_win",
+      "correct": true,
+      "predicted_probability": 0.6096,
+      "home_win_probability": 0.1948,
+      "draw_probability": 0.1956,
+      "away_win_probability": 0.6096
+    },
     {
       "date": "2026-06-24",
       "tournament": "FIFA World Cup",
@@ -63,103 +153,13 @@
       "home_win_probability": 0.5996,
       "draw_probability": 0.233,
       "away_win_probability": 0.1674
-    },
-    {
-      "date": "2026-06-24",
-      "tournament": "FIFA World Cup",
-      "home_team": "Canada",
-      "away_team": "Switzerland",
-      "home_score": 1,
-      "away_score": 2,
-      "predicted_result": "home_win",
-      "actual_result": "away_win",
-      "correct": false,
-      "predicted_probability": 0.3938,
-      "home_win_probability": 0.3938,
-      "draw_probability": 0.2368,
-      "away_win_probability": 0.3694
-    },
-    {
-      "date": "2026-06-24",
-      "tournament": "FIFA World Cup",
-      "home_team": "Bosnia and Herzegovina",
-      "away_team": "Qatar",
-      "home_score": 3,
-      "away_score": 1,
-      "predicted_result": "home_win",
-      "actual_result": "home_win",
-      "correct": true,
-      "predicted_probability": 0.4097,
-      "home_win_probability": 0.4097,
-      "draw_probability": 0.2598,
-      "away_win_probability": 0.3306
-    },
-    {
-      "date": "2026-06-23",
-      "tournament": "FIFA World Cup",
-      "home_team": "Portugal",
-      "away_team": "Uzbekistan",
-      "home_score": 5,
-      "away_score": 0,
-      "predicted_result": "home_win",
-      "actual_result": "home_win",
-      "correct": true,
-      "predicted_probability": 0.6632,
-      "home_win_probability": 0.6632,
-      "draw_probability": 0.1926,
-      "away_win_probability": 0.1442
-    },
-    {
-      "date": "2026-06-23",
-      "tournament": "FIFA World Cup",
-      "home_team": "Panama",
-      "away_team": "Croatia",
-      "home_score": 0,
-      "away_score": 1,
-      "predicted_result": "away_win",
-      "actual_result": "away_win",
-      "correct": true,
-      "predicted_probability": 0.4507,
-      "home_win_probability": 0.3427,
-      "draw_probability": 0.2066,
-      "away_win_probability": 0.4507
-    },
-    {
-      "date": "2026-06-23",
-      "tournament": "FIFA World Cup",
-      "home_team": "England",
-      "away_team": "Ghana",
-      "home_score": 0,
-      "away_score": 0,
-      "predicted_result": "home_win",
-      "actual_result": "draw",
-      "correct": false,
-      "predicted_probability": 0.7301,
-      "home_win_probability": 0.7301,
-      "draw_probability": 0.1625,
-      "away_win_probability": 0.1074
-    },
-    {
-      "date": "2026-06-23",
-      "tournament": "FIFA World Cup",
-      "home_team": "Colombia",
-      "away_team": "DR Congo",
-      "home_score": 1,
-      "away_score": 0,
-      "predicted_result": "home_win",
-      "actual_result": "home_win",
-      "correct": true,
-      "predicted_probability": 0.5882,
-      "home_win_probability": 0.5882,
-      "draw_probability": 0.2055,
-      "away_win_probability": 0.2062
     }
   ],
   "result_breakdown": {
     "home_win": {
-      "predictions": 7,
+      "predictions": 9,
       "correct_predictions": 5,
-      "accuracy": 0.7143
+      "accuracy": 0.5556
     },
     "draw": {
       "predictions": 0,
@@ -167,10 +167,10 @@
       "accuracy": 0.0
     },
     "away_win": {
-      "predictions": 3,
-      "correct_predictions": 2,
-      "accuracy": 0.6667
+      "predictions": 7,
+      "correct_predictions": 4,
+      "accuracy": 0.5714
     }
   },
-  "last_updated": "2026-06-26T03:51:00.284180Z"
+  "last_updated": "2026-06-27T03:36:40.635940Z"
 }
