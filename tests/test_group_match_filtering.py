@@ -172,12 +172,12 @@ class GroupMatchFilteringTest(unittest.TestCase):
         }
 
         self.assertEqual(
-            worldcup_matches.determine_stage(group_fixture, "A"),
+            worldcup_matches.determine_stage(group_fixture, "A", None),
             "GROUP",
         )
         self.assertEqual(
-            worldcup_matches.determine_stage(knockout_fixture, None),
-            "KNOCKOUT",
+            worldcup_matches.determine_stage(knockout_fixture, None, 24),
+            "QUARTER_FINAL",
         )
 
     def test_final_group_simulation_marks_zero_remaining_matches(self):

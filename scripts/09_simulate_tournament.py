@@ -1,8 +1,11 @@
 import json
+import os
 import random
 from copy import deepcopy
 from collections import defaultdict
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import joblib
 import numpy as np
@@ -12,16 +15,21 @@ from utils.worldcup_simulation import (
     build_initial_group_state,
     completed_fixture_keys,
     excluded_group_match_label,
+    fixture_key,
+    fixture_group_map,
     is_valid_group_match,
     is_completed_prediction,
     load_completed_results,
 )
+from utils.team_aliases import normalize_team_name
 
 PREDICTIONS_PATH = Path("data/processed/predictions_adjusted.json")
 TEAMS_PATH = Path("data/processed/teams.json")
 TEAM_STRENGTH_PATH = Path("data/external/team_strength_2026.csv")
 MODEL_PATH = Path("models/sklearn_match_result_model.joblib")
 OUTPUT_PATH = Path("data/processed/tournament_simulation.json")
+GROUP_STANDINGS_PATH = Path("data/processed/worldcup_group_standings.json")
+KNOCKOUT_OVERRIDES_PATH = Path("data/config/worldcup_knockout_overrides.json")
 DIAGNOSTICS_PATH = Path("data/processed/team_strength_diagnostics.json")
 SIMULATION_DIAGNOSTICS_PATH = Path(
     "data/processed/simulation_diagnostics.json"
@@ -29,6 +37,7 @@ SIMULATION_DIAGNOSTICS_PATH = Path(
 
 SIMULATION_COUNT = 10000
 RANDOM_SEED = 42
+PROJECT_TIMEZONE = "Asia/Seoul"
 MODEL_PROBABILITY_WEIGHT = 0.55
 STRENGTH_PROBABILITY_WEIGHT = 0.45
 STRENGTH_PROBABILITY_SCALE = 500
@@ -129,10 +138,49 @@ SEMI_FINAL_MATCHES = {
 
 FINAL_MATCH = (101, 102)
 
+ROUND_MATCHES = {
+    "ROUND_OF_32": list(range(73, 89)),
+    "ROUND_OF_16": list(range(89, 97)),
+    "QUARTER_FINAL": list(range(97, 101)),
+    "SEMI_FINAL": list(range(101, 103)),
+    "FINAL": [103],
+}
+ROUND_SEQUENCE = list(ROUND_MATCHES)
+ROUND_BY_MATCH = {
+    match_no: stage
+    for stage, match_numbers in ROUND_MATCHES.items()
+    for match_no in match_numbers
+}
+MATCH_CHILDREN = {
+    **ROUND_OF_16_MATCHES,
+    **QUARTER_FINAL_MATCHES,
+    **SEMI_FINAL_MATCHES,
+    103: FINAL_MATCH,
+}
+MATCH_PARENTS = {
+    child: parent
+    for parent, children in MATCH_CHILDREN.items()
+    for child in children
+}
+REACHED_COUNT_FIELD = {
+    "ROUND_OF_32": "roundOf32Count",
+    "ROUND_OF_16": "roundOf16Count",
+    "QUARTER_FINAL": "quarterFinalCount",
+    "SEMI_FINAL": "semiFinalCount",
+    "FINAL": "finalCount",
+}
+
 
 def load_json(path):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def pipeline_run_date():
+    override = os.environ.get("DATA_AS_OF") or os.environ.get("PIPELINE_DATE")
+    if override:
+        return override
+    return datetime.now(ZoneInfo(PROJECT_TIMEZONE)).date().isoformat()
 
 
 def load_teams_map():
@@ -160,6 +208,821 @@ def load_team_strength():
         str(row["team"]): float(row["team_strength_score"])
         for _, row in valid_rows.iterrows()
     }
+
+
+def team_lookup_by_normalized_name(teams_map):
+    lookup = {}
+    for team_name in teams_map:
+        lookup[normalize_team_name(team_name)] = team_name
+    return lookup
+
+
+def resolve_tournament_team_name(team_name, teams_map):
+    if team_name in teams_map:
+        return team_name
+    normalized = normalize_team_name(team_name)
+    return team_lookup_by_normalized_name(teams_map).get(normalized, normalized)
+
+
+def team_identity(team_name):
+    return normalize_team_name(team_name)
+
+
+def teams_match(team_a, team_b):
+    return team_identity(team_a) == team_identity(team_b)
+
+
+def make_team_entry(team_name, teams_map, group_by_team):
+    resolved_name = resolve_tournament_team_name(team_name, teams_map)
+    return {
+        "displayTeam": resolved_name,
+        "team": resolved_name,
+        "group": group_by_team.get(resolved_name, ""),
+    }
+
+
+def load_actual_group_results(teams_map):
+    standings = load_json(GROUP_STANDINGS_PATH)
+    group_results = {}
+    group_by_team = {}
+
+    for group_data in standings:
+        group = group_data["group"]
+        teams = []
+        for team in group_data["teams"]:
+            resolved_name = resolve_tournament_team_name(team["team"], teams_map)
+            item = {
+                "displayTeam": resolved_name,
+                "team": resolved_name,
+                "group": group,
+                "rank": team["rank"],
+                "points": team["points"],
+                "goalDiff": team["goalDifference"],
+                "goalsFor": team["goalsFor"],
+                "wins": team["wins"],
+            }
+            teams.append(item)
+            group_by_team[resolved_name] = group
+        group_results[group] = sorted(teams, key=lambda item: item["rank"])
+
+    return group_results, group_by_team
+
+
+def best_third_place_groups(group_results):
+    thirds = [
+        standings[2]
+        for standings in group_results.values()
+        if len(standings) >= 3
+    ]
+    best = sorted(
+        thirds,
+        key=lambda team: (
+            team["points"],
+            team["goalDiff"],
+            team["goalsFor"],
+            team["wins"],
+        ),
+        reverse=True,
+    )[:8]
+    return {team["group"]: team for team in best}
+
+
+def resolve_slot_candidates(slot, group_results, best_thirds):
+    if slot.startswith("1"):
+        return [group_results[slot[1]][0]]
+    if slot.startswith("2"):
+        return [group_results[slot[1]][1]]
+    if slot.startswith("3"):
+        return [
+            best_thirds[group]
+            for group in slot[1:]
+            if group in best_thirds
+        ]
+    raise ValueError(f"알 수 없는 슬롯: {slot}")
+
+
+def is_group_stage_completed_match(match, group_map):
+    key = fixture_key(
+        match["date"],
+        match["normalizedHomeTeam"],
+        match["normalizedAwayTeam"],
+    )
+    return key in group_map
+
+
+def completed_knockout_records(completed_results, teams_map, group_by_team):
+    group_map = fixture_group_map()
+    records = []
+    for match in completed_results:
+        if is_group_stage_completed_match(match, group_map):
+            continue
+        records.append(
+            {
+                "date": match["date"],
+                "teamA": resolve_tournament_team_name(
+                    match["homeTeam"],
+                    teams_map,
+                ),
+                "teamB": resolve_tournament_team_name(
+                    match["awayTeam"],
+                    teams_map,
+                ),
+                "displayTeamA": match["homeTeam"],
+                "displayTeamB": match["awayTeam"],
+                "scoreA": int(match["homeScore"]),
+                "scoreB": int(match["awayScore"]),
+                "result": match["result"],
+                "isCompleted": True,
+                "source": "completed_results",
+            }
+        )
+    return sorted(records, key=lambda item: item["date"])
+
+
+def pending_knockout_records(predictions, teams_map):
+    records = []
+    for prediction in predictions:
+        if prediction.get("group"):
+            continue
+        if prediction.get("stage") == "GROUP":
+            continue
+        records.append(
+            {
+                **prediction,
+                "teamA": resolve_tournament_team_name(
+                    prediction["teamA"],
+                    teams_map,
+                ),
+                "teamB": resolve_tournament_team_name(
+                    prediction["teamB"],
+                    teams_map,
+                ),
+                "isCompleted": False,
+                "source": "predictions_adjusted",
+            }
+        )
+    return sorted(records, key=lambda item: (item["date"], item["matchId"]))
+
+
+def stage_for_knockout_index(index):
+    if index < 16:
+        return "ROUND_OF_32"
+    if index < 24:
+        return "ROUND_OF_16"
+    if index < 28:
+        return "QUARTER_FINAL"
+    if index < 30:
+        return "SEMI_FINAL"
+    if index == 30:
+        return "FINAL"
+    return "COMPLETED"
+
+
+def infer_current_tournament_stage(completed_count, pending_count):
+    if completed_count >= 31 and pending_count == 0:
+        return "COMPLETED"
+    return stage_for_knockout_index(completed_count)
+
+
+def record_team_set(record):
+    return {
+        team_identity(record["teamA"]),
+        team_identity(record["teamB"]),
+    }
+
+
+def candidate_team_sets_for_match(match_no, assigned_records, group_results, best_thirds):
+    if match_no in ROUND_OF_32_MATCHES:
+        left, right = ROUND_OF_32_MATCHES[match_no]
+        left_candidates = resolve_slot_candidates(left, group_results, best_thirds)
+        right_candidates = resolve_slot_candidates(right, group_results, best_thirds)
+        return (
+            {team_identity(team["team"]) for team in left_candidates},
+            {team_identity(team["team"]) for team in right_candidates},
+        )
+
+    left_match, right_match = MATCH_CHILDREN[match_no]
+    left_record = assigned_records.get(left_match)
+    right_record = assigned_records.get(right_match)
+
+    if not left_record or not right_record:
+        return set(), set()
+
+    return record_team_set(left_record), record_team_set(right_record)
+
+
+def record_matches_bracket_node(
+    record,
+    match_no,
+    assigned_records,
+    group_results,
+    best_thirds,
+):
+    left_candidates, right_candidates = candidate_team_sets_for_match(
+        match_no,
+        assigned_records,
+        group_results,
+        best_thirds,
+    )
+    record_teams = record_team_set(record)
+
+    return (
+        len(record_teams) == 2
+        and bool(record_teams & left_candidates)
+        and bool(record_teams & right_candidates)
+        and record_teams <= (left_candidates | right_candidates)
+    )
+
+
+def assign_stage_records(
+    records,
+    stage,
+    assigned_records,
+    group_results,
+    best_thirds,
+    warnings,
+):
+    available_match_numbers = [
+        match_no
+        for match_no in ROUND_MATCHES[stage]
+        if match_no not in assigned_records
+    ]
+
+    for record in records:
+        candidates = [
+            match_no
+            for match_no in available_match_numbers
+            if record_matches_bracket_node(
+                record,
+                match_no,
+                assigned_records,
+                group_results,
+                best_thirds,
+            )
+        ]
+
+        if len(candidates) != 1:
+            warnings.append(
+                "브래킷 노드 매칭 실패: "
+                f"{record['date']} {record['teamA']} vs {record['teamB']} "
+                f"stage={stage} candidates={candidates}"
+            )
+            continue
+
+        match_no = candidates[0]
+        assigned_records[match_no] = {
+            **record,
+            "matchNo": match_no,
+            "stage": stage,
+        }
+        available_match_numbers.remove(match_no)
+
+
+def assign_knockout_records_to_bracket(
+    completed_records,
+    pending_records,
+    group_results,
+):
+    best_thirds = best_third_place_groups(group_results)
+    assigned_records = {}
+    warnings = []
+
+    records_by_stage = defaultdict(list)
+    combined_records = [
+        *completed_records,
+        *pending_records,
+    ]
+
+    for index, record in enumerate(combined_records):
+        stage = record.get("stage")
+        if stage not in ROUND_MATCHES:
+            stage = stage_for_knockout_index(index)
+        if stage in ROUND_MATCHES:
+            records_by_stage[stage].append(record)
+
+    for stage in ROUND_SEQUENCE:
+        assign_stage_records(
+            records_by_stage[stage],
+            stage,
+            assigned_records,
+            group_results,
+            best_thirds,
+            warnings,
+        )
+
+    return assigned_records, warnings
+
+
+def override_key(date_value, team_a, team_b):
+    return (
+        str(date_value),
+        frozenset((team_identity(team_a), team_identity(team_b))),
+    )
+
+
+def load_knockout_overrides(teams_map):
+    if not KNOCKOUT_OVERRIDES_PATH.exists():
+        return {}, 0
+
+    overrides = load_json(KNOCKOUT_OVERRIDES_PATH)
+    output = {}
+    for item in overrides:
+        team_a = resolve_tournament_team_name(item["teamA"], teams_map)
+        team_b = resolve_tournament_team_name(item["teamB"], teams_map)
+        winner = resolve_tournament_team_name(item["winner"], teams_map)
+        if winner not in {team_a, team_b}:
+            raise ValueError(
+                "승부차기 오버라이드 winner가 경기 팀과 일치하지 않습니다: "
+                f"{item}"
+            )
+        output[override_key(item["date"], team_a, team_b)] = {
+            "winner": winner,
+            "decision": item.get("decision", "OVERRIDE"),
+        }
+    return output, len(output)
+
+
+def parent_record_for(match_no, assigned_records):
+    parent = MATCH_PARENTS.get(match_no)
+    if parent is None:
+        return None
+    return assigned_records.get(parent)
+
+
+def infer_draw_winner_from_next_round(record, match_no, assigned_records):
+    parent = parent_record_for(match_no, assigned_records)
+    if not parent:
+        return None
+
+    if teams_match(record["teamA"], parent["teamA"]) or teams_match(
+        record["teamA"],
+        parent["teamB"],
+    ):
+        return record["teamA"]
+    if teams_match(record["teamB"], parent["teamA"]) or teams_match(
+        record["teamB"],
+        parent["teamB"],
+    ):
+        return record["teamB"]
+    return None
+
+
+def completed_record_winner(record, match_no, assigned_records, overrides, warnings):
+    key = override_key(record["date"], record["teamA"], record["teamB"])
+    if key in overrides:
+        return overrides[key]["winner"], "OVERRIDE"
+
+    if record["scoreA"] > record["scoreB"]:
+        return record["teamA"], "SCORE"
+    if record["scoreB"] > record["scoreA"]:
+        return record["teamB"], "SCORE"
+
+    inferred = infer_draw_winner_from_next_round(
+        record,
+        match_no,
+        assigned_records,
+    )
+    if inferred:
+        return inferred, "NEXT_ROUND_INFERENCE"
+
+    warnings.append(
+        "승자를 판단할 수 없는 토너먼트 무승부: "
+        f"{record['date']} {record['teamA']} vs {record['teamB']}"
+    )
+    return None, "UNRESOLVED_DRAW"
+
+
+def determine_fixed_winners(assigned_records, overrides):
+    fixed_winners = {}
+    fixed_decisions = {}
+    eliminated = {}
+    warnings = []
+
+    for stage in ROUND_SEQUENCE:
+        for match_no in ROUND_MATCHES[stage]:
+            record = assigned_records.get(match_no)
+            if not record or not record.get("isCompleted"):
+                continue
+
+            winner, decision = completed_record_winner(
+                record,
+                match_no,
+                assigned_records,
+                overrides,
+                warnings,
+            )
+            if not winner:
+                continue
+
+            loser = record["teamB"] if teams_match(winner, record["teamA"]) else record["teamA"]
+            fixed_winners[match_no] = winner
+            fixed_decisions[match_no] = decision
+            eliminated[loser] = stage
+
+    return fixed_winners, fixed_decisions, eliminated, warnings
+
+
+def strength_advance_probability(team_a, team_b, teams_map):
+    strength_a = teams_map[team_a["team"]]["simulationStrength"]
+    strength_b = teams_map[team_b["team"]]["simulationStrength"]
+    return 1 / (
+        1 + 10 ** (
+            (strength_b - strength_a) / STRENGTH_PROBABILITY_SCALE
+        )
+    )
+
+
+def prediction_key(team_a, team_b):
+    return frozenset((team_identity(team_a), team_identity(team_b)))
+
+
+def build_prediction_lookup(predictions):
+    return {
+        prediction_key(prediction["teamA"], prediction["teamB"]): prediction
+        for prediction in predictions
+        if prediction.get("group") is None and prediction.get("stage") != "GROUP"
+    }
+
+
+def prediction_advance_probability(prediction, team_a, team_b, teams_map):
+    if teams_match(team_a["team"], prediction["teamA"]):
+        a_win = prediction["teamAWinProb"]
+        draw = prediction["drawProb"]
+        b_win = prediction["teamBWinProb"]
+    else:
+        a_win = prediction["teamBWinProb"]
+        draw = prediction["drawProb"]
+        b_win = prediction["teamAWinProb"]
+
+    penalty_a = strength_advance_probability(team_a, team_b, teams_map)
+    a_advance = a_win + draw * penalty_a
+    b_advance = b_win + draw * (1 - penalty_a)
+    total = a_advance + b_advance
+    if total == 0:
+        return 0.5
+    return a_advance / total
+
+
+def get_remaining_match_advance_probability(
+    record,
+    team_a,
+    team_b,
+    model,
+    teams_map,
+    team_strength,
+    prediction_lookup,
+):
+    prediction = prediction_lookup.get(
+        prediction_key(team_a["team"], team_b["team"])
+    )
+    if prediction:
+        return prediction_advance_probability(
+            prediction,
+            team_a,
+            team_b,
+            teams_map,
+        )
+
+    return get_knockout_advance_prob(
+        model,
+        team_a,
+        team_b,
+        teams_map,
+        team_strength,
+    )
+
+
+def team_from_name(team_name, teams_map, group_by_team):
+    return make_team_entry(team_name, teams_map, group_by_team)
+
+
+def match_participants(
+    match_no,
+    assigned_records,
+    winners,
+    group_results,
+    best_thirds,
+    teams_map,
+    group_by_team,
+):
+    record = assigned_records.get(match_no)
+    if record:
+        return (
+            team_from_name(record["teamA"], teams_map, group_by_team),
+            team_from_name(record["teamB"], teams_map, group_by_team),
+        )
+
+    if match_no in ROUND_OF_32_MATCHES:
+        left, right = ROUND_OF_32_MATCHES[match_no]
+        left_candidates = resolve_slot_candidates(left, group_results, best_thirds)
+        right_candidates = resolve_slot_candidates(right, group_results, best_thirds)
+        if len(left_candidates) != 1 or len(right_candidates) != 1:
+            raise ValueError(
+                "실제 대진 없이 3위 슬롯을 확정할 수 없습니다: "
+                f"match_no={match_no}"
+            )
+        return left_candidates[0], right_candidates[0]
+
+    left_match, right_match = MATCH_CHILDREN[match_no]
+    return winners[left_match], winners[right_match]
+
+
+def increment_team_count(stats, team, key):
+    team_key = team["team"]
+    stats[team_key]["displayTeam"] = team["displayTeam"]
+    stats[team_key]["team"] = team["team"]
+    stats[team_key]["group"] = team.get("group", "")
+    stats[team_key][key] += 1
+
+
+def play_progressive_match(
+    match_no,
+    record,
+    team_a,
+    team_b,
+    fixed_winners,
+    model,
+    teams_map,
+    team_strength,
+    prediction_lookup,
+    knockout_encounters,
+):
+    knockout_encounters.append((team_a["team"], team_b["team"]))
+
+    if match_no in fixed_winners:
+        winner_name = fixed_winners[match_no]
+        return team_a if teams_match(winner_name, team_a["team"]) else team_b
+
+    a_advance_prob = get_remaining_match_advance_probability(
+        record,
+        team_a,
+        team_b,
+        model,
+        teams_map,
+        team_strength,
+        prediction_lookup,
+    )
+    return team_a if random.random() < a_advance_prob else team_b
+
+
+def run_progressive_tournament_once(
+    assigned_records,
+    fixed_winners,
+    group_results,
+    best_thirds,
+    model,
+    teams_map,
+    team_strength,
+    prediction_lookup,
+    group_by_team,
+):
+    winners = {}
+    knockout_encounters = []
+    reached_by_stage = defaultdict(list)
+
+    for stage in ROUND_SEQUENCE:
+        count_field = REACHED_COUNT_FIELD[stage]
+        for match_no in ROUND_MATCHES[stage]:
+            team_a, team_b = match_participants(
+                match_no,
+                assigned_records,
+                winners,
+                group_results,
+                best_thirds,
+                teams_map,
+                group_by_team,
+            )
+            reached_by_stage[count_field].extend([team_a, team_b])
+            winners[match_no] = play_progressive_match(
+                match_no,
+                assigned_records.get(match_no),
+                team_a,
+                team_b,
+                fixed_winners,
+                model,
+                teams_map,
+                team_strength,
+                prediction_lookup,
+                knockout_encounters,
+            )
+
+    return winners[103], reached_by_stage, knockout_encounters
+
+
+def count_completed_fixed_matches(fixed_winners):
+    return len(fixed_winners)
+
+
+def active_teams_for_stage(current_stage, assigned_records, fixed_winners, group_by_team, teams_map):
+    if current_stage == "COMPLETED":
+        return set()
+
+    teams = set()
+    for match_no in ROUND_MATCHES[current_stage]:
+        record = assigned_records.get(match_no)
+        if record and match_no not in fixed_winners:
+            teams.add(resolve_tournament_team_name(record["teamA"], teams_map))
+            teams.add(resolve_tournament_team_name(record["teamB"], teams_map))
+    return teams
+
+
+def create_progressive_output(
+    stats,
+    divisor,
+    current_stage,
+    remaining_matches,
+    active_teams,
+    eliminated,
+    simulation_count,
+    data_as_of=None,
+    last_completed_match_date=None,
+    latest_scheduled_match_date=None,
+):
+    output = []
+    for team_key, item in stats.items():
+        is_eliminated = team_key in eliminated
+        output.append(
+            {
+                "displayTeam": item["displayTeam"],
+                "team": item["team"],
+                "group": item["group"],
+                "roundOf32Prob": round(item["roundOf32Count"] / divisor, 4),
+                "roundOf16Prob": round(item["roundOf16Count"] / divisor, 4),
+                "quarterFinalProb": round(item["quarterFinalCount"] / divisor, 4),
+                "semiFinalProb": round(item["semiFinalCount"] / divisor, 4),
+                "finalProb": round(item["finalCount"] / divisor, 4),
+                "winnerProb": round(item["winnerCount"] / divisor, 4),
+                "currentTournamentStage": current_stage,
+                "isEliminated": is_eliminated,
+                "isActive": team_key in active_teams,
+                "eliminatedAt": eliminated.get(team_key),
+                "remainingTournamentMatches": remaining_matches,
+                "remainingChampionshipMatches": remaining_matches,
+                "remainingMatchesScope": "CHAMPIONSHIP_PATH",
+                "simulationCount": simulation_count,
+                "dataAsOf": data_as_of,
+                "lastCompletedMatchDate": last_completed_match_date,
+                "latestScheduledMatchDate": latest_scheduled_match_date,
+            }
+        )
+
+    return sorted(
+        output,
+        key=lambda x: (
+            x["winnerProb"],
+            x["finalProb"],
+            x["semiFinalProb"],
+            x["quarterFinalProb"],
+            not x["isEliminated"],
+        ),
+        reverse=True,
+    )
+
+
+def run_progressive_tournament_simulation(
+    predictions,
+    completed_results,
+    model,
+    teams_map,
+    team_strength,
+    group_difficulty,
+):
+    group_results, group_by_team = load_actual_group_results(teams_map)
+    completed_records = completed_knockout_records(
+        completed_results,
+        teams_map,
+        group_by_team,
+    )
+    pending_records = pending_knockout_records(predictions, teams_map)
+    completed_dates = [
+        record["date"]
+        for record in completed_records
+        if record.get("date")
+    ]
+    scheduled_dates = [
+        record["date"]
+        for record in pending_records
+        if record.get("date")
+    ]
+    data_as_of = pipeline_run_date()
+    last_completed_match_date = max(completed_dates) if completed_dates else None
+    latest_scheduled_match_date = max(scheduled_dates) if scheduled_dates else None
+    assigned_records, assignment_warnings = assign_knockout_records_to_bracket(
+        completed_records,
+        pending_records,
+        group_results,
+    )
+    overrides, override_count = load_knockout_overrides(teams_map)
+    fixed_winners, fixed_decisions, eliminated, winner_warnings = (
+        determine_fixed_winners(assigned_records, overrides)
+    )
+    warnings = [*assignment_warnings, *winner_warnings]
+
+    current_stage = infer_current_tournament_stage(
+        len(fixed_winners),
+        len(pending_records),
+    )
+    remaining_matches = max(0, 31 - len(fixed_winners))
+    simulation_count = 0 if current_stage == "COMPLETED" else SIMULATION_COUNT
+    divisor = simulation_count if simulation_count else 1
+    active_teams = active_teams_for_stage(
+        current_stage,
+        assigned_records,
+        fixed_winners,
+        group_by_team,
+        teams_map,
+    )
+    best_thirds = best_third_place_groups(group_results)
+    prediction_lookup = build_prediction_lookup(predictions)
+    knockout_path_stats = defaultdict(
+        lambda: {"strengthSum": 0.0, "encounters": 0}
+    )
+    stats = defaultdict(
+        lambda: {
+            "displayTeam": "",
+            "team": "",
+            "group": "",
+            "roundOf32Count": 0,
+            "roundOf16Count": 0,
+            "quarterFinalCount": 0,
+            "semiFinalCount": 0,
+            "finalCount": 0,
+            "winnerCount": 0,
+        }
+    )
+
+    iterations = simulation_count if simulation_count else 1
+    for i in range(iterations):
+        champion, reached_by_stage, knockout_encounters = (
+            run_progressive_tournament_once(
+                assigned_records,
+                fixed_winners,
+                group_results,
+                best_thirds,
+                model,
+                teams_map,
+                team_strength,
+                prediction_lookup,
+                group_by_team,
+            )
+        )
+
+        for count_field, teams in reached_by_stage.items():
+            for team in teams:
+                increment_team_count(stats, team, count_field)
+
+        increment_team_count(stats, champion, "winnerCount")
+
+        for team_a, team_b in knockout_encounters:
+            knockout_path_stats[team_a]["strengthSum"] += teams_map[team_b][
+                "simulationStrength"
+            ]
+            knockout_path_stats[team_a]["encounters"] += 1
+            knockout_path_stats[team_b]["strengthSum"] += teams_map[team_a][
+                "simulationStrength"
+            ]
+            knockout_path_stats[team_b]["encounters"] += 1
+
+        if simulation_count and (i + 1) % 1000 == 0:
+            print(f"{i + 1}회 시뮬레이션 완료")
+
+    output = create_progressive_output(
+        stats,
+        divisor,
+        current_stage,
+        remaining_matches,
+        active_teams,
+        eliminated,
+        simulation_count,
+        data_as_of,
+        last_completed_match_date,
+        latest_scheduled_match_date,
+    )
+
+    metadata = {
+        "completedTournamentMatches": len(fixed_winners),
+        "remainingTournamentMatches": remaining_matches,
+        "remainingChampionshipMatches": remaining_matches,
+        "remainingMatchesScope": "CHAMPIONSHIP_PATH",
+        "currentTournamentStage": current_stage,
+        "activeTeams": sorted(active_teams),
+        "activeTeamCount": len(active_teams),
+        "fixedCompletedMatches": len(fixed_winners),
+        "simulationTargetMatches": remaining_matches,
+        "overrideCount": override_count,
+        "fixedDecisionCounts": {
+            key: int(value)
+            for key, value in (
+                pd.Series(list(fixed_decisions.values())).value_counts().items()
+            )
+        } if fixed_decisions else {},
+        "dataAsOf": data_as_of,
+        "lastCompletedMatchDate": last_completed_match_date,
+        "latestScheduledMatchDate": latest_scheduled_match_date,
+        "warnings": warnings,
+    }
+
+    return output, knockout_path_stats, metadata
 
 
 def apply_squad_strength_adjustment(
@@ -910,6 +1773,80 @@ def main():
     log_excluded_group_matches(excluded_predictions)
 
     group_difficulty = calculate_group_difficulty(initial_groups, teams_map)
+
+    if (
+        completed_knockout_records(completed_results, teams_map, {})
+        or pending_knockout_records(predictions, teams_map)
+    ):
+        output, knockout_path_stats, metadata = (
+            run_progressive_tournament_simulation(
+                predictions,
+                completed_results,
+                model,
+                teams_map,
+                team_strength,
+                group_difficulty,
+            )
+        )
+
+        with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+            json.dump(output, f, ensure_ascii=False, indent=2)
+
+        diagnostics = create_strength_diagnostics(
+            output,
+            teams_map,
+            group_difficulty,
+            knockout_path_stats,
+        )
+        with open(DIAGNOSTICS_PATH, "w", encoding="utf-8") as f:
+            json.dump(diagnostics, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+
+        simulation_diagnostics = create_simulation_diagnostics(diagnostics)
+        simulation_diagnostics["tournamentProgress"] = metadata
+        with open(
+            SIMULATION_DIAGNOSTICS_PATH,
+            "w",
+            encoding="utf-8",
+        ) as f:
+            json.dump(
+                simulation_diagnostics,
+                f,
+                ensure_ascii=False,
+                indent=2,
+            )
+            f.write("\n")
+
+        print()
+        print(f"토너먼트 시뮬레이션 완료: {OUTPUT_PATH}")
+        print(f"반복 횟수: {metadata['simulationTargetMatches'] and SIMULATION_COUNT or 0}")
+        print(f"초기 standings에 반영한 완료 경기 수: {applied_completed_count}")
+        print(f"완료된 토너먼트 경기 수: {metadata['completedTournamentMatches']}")
+        print(f"남은 토너먼트 경기 수: {metadata['remainingTournamentMatches']}")
+        print(f"현재 토너먼트 단계: {metadata['currentTournamentStage']}")
+        print(f"현재 생존 팀 수: {metadata['activeTeamCount']}")
+        print(f"고정 반영한 완료 경기: {metadata['fixedCompletedMatches']}")
+        print(f"시뮬레이션 대상 경기: {metadata['simulationTargetMatches']}")
+        print(f"승부차기 오버라이드 적용 경기: {metadata['overrideCount']}")
+        for warning in metadata["warnings"]:
+            print(f"경고: {warning}")
+        print(f"전력 진단 저장: {DIAGNOSTICS_PATH}")
+        print(f"시뮬레이션 진단 저장: {SIMULATION_DIAGNOSTICS_PATH}")
+        print()
+        print("우승 확률 상위 20팀")
+
+        for idx, team in enumerate(output[:20], start=1):
+            print(
+                f"{idx}. {team['displayTeam']} | "
+                f"우승 {team['winnerProb'] * 100:.2f}% | "
+                f"결승 {team['finalProb'] * 100:.2f}% | "
+                f"4강 {team['semiFinalProb'] * 100:.2f}% | "
+                f"8강 {team['quarterFinalProb'] * 100:.2f}% | "
+                f"16강 {team['roundOf16Prob'] * 100:.2f}% | "
+                f"32강 {team['roundOf32Prob'] * 100:.2f}%"
+            )
+        return
+
     knockout_path_stats = defaultdict(
         lambda: {"strengthSum": 0.0, "encounters": 0}
     )

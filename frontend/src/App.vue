@@ -47,6 +47,7 @@ const topTeams = computed(() =>
     )
 
     return [...tournament.value]
+      .filter((team) => !team.isEliminated && team.winnerProb > 0)
       .sort((a, b) => b.winnerProb - a.winnerProb)
       .slice(0, 10)
       .map((team) => ({
@@ -66,6 +67,29 @@ const korea = computed(
 )
 
 const maxWinnerProbability = computed(() => topTeams.value[0]?.winnerProb ?? 0)
+
+const tournamentSimulationLabel = computed(() => {
+  const firstTeam = tournament.value[0]
+  const stage = firstTeam?.currentTournamentStage ?? summary.value?.currentTournamentStage
+  const simulationCount = firstTeam?.simulationCount ?? summary.value?.simulationCount
+
+  if (stage === 'COMPLETED') return 'FINAL TOURNAMENT RESULT'
+  if (stage && simulationCount) {
+    return `${formatNumber(simulationCount)} SIMULATIONS FROM ${stage.replaceAll('_', '-')}`
+  }
+  return 'SIMULATION RANKING'
+})
+
+const tournamentDataStatus = computed(() => {
+  const firstTeam = tournament.value[0]
+  const dataAsOf = firstTeam?.dataAsOf ?? summary.value?.dataAsOf
+  const lastResult = firstTeam?.lastCompletedMatchDate ?? summary.value?.lastCompletedMatchDate
+
+  return [
+    dataAsOf ? `DATA AS OF ${dataAsOf}` : null,
+    lastResult ? `LAST RESULT ${lastResult}` : null,
+  ].filter(Boolean).join(' · ')
+})
 
 const groupSimulationLabel = computed(() => {
   const simulationCount = groupSimulation.value[0]?.simulationCount
@@ -541,8 +565,11 @@ onMounted(async () => {
             <div>
               <p class="section-kicker">CHAMPIONSHIP ODDS</p>
               <h2>토너먼트 진출 및 우승 확률 Top 10</h2>
+              <span v-if="tournamentDataStatus" class="section-meta">
+                {{ tournamentDataStatus }}
+              </span>
             </div>
-            <span class="count-badge">SIMULATION RANKING</span>
+            <span class="count-badge">{{ tournamentSimulationLabel }}</span>
           </div>
 
           <div class="ranking-list">

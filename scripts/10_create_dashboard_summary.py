@@ -29,6 +29,12 @@ def main():
     diagnostics_by_team = {
         item["team"]: item for item in diagnostics
     }
+    tournament_metadata = tournament[0] if tournament else {}
+    active_tournament = [
+        team
+        for team in tournament
+        if not team.get("isEliminated", False) and team.get("winnerProb", 0) > 0
+    ]
 
     winner_top10 = [
         {
@@ -62,8 +68,18 @@ def main():
                 team["team"],
                 {},
             ).get("pathDifficultyScore"),
+            "currentTournamentStage": team.get("currentTournamentStage"),
+            "isEliminated": team.get("isEliminated", False),
+            "isActive": team.get("isActive", False),
+            "remainingTournamentMatches": team.get("remainingTournamentMatches"),
+            "remainingChampionshipMatches": team.get("remainingChampionshipMatches"),
+            "remainingMatchesScope": team.get("remainingMatchesScope"),
+            "simulationCount": team.get("simulationCount"),
+            "dataAsOf": team.get("dataAsOf"),
+            "lastCompletedMatchDate": team.get("lastCompletedMatchDate"),
+            "latestScheduledMatchDate": team.get("latestScheduledMatchDate"),
         }
-        for idx, team in enumerate(tournament[:10])
+        for idx, team in enumerate(active_tournament[:10])
     ]
 
     korea = next(
@@ -155,7 +171,26 @@ def main():
     summary = {
         "projectTitle": "2026 World Cup Predictor",
         "description": "국가대표 경기 데이터를 기반으로 경기별 승/무/패 확률과 월드컵 토너먼트 진출 확률을 시뮬레이션한 대시보드 데이터입니다.",
-        "simulationCount": 10000,
+        "simulationCount": tournament_metadata.get("simulationCount", 10000),
+        "currentTournamentStage": tournament_metadata.get(
+            "currentTournamentStage"
+        ),
+        "remainingTournamentMatches": tournament_metadata.get(
+            "remainingTournamentMatches"
+        ),
+        "remainingChampionshipMatches": tournament_metadata.get(
+            "remainingChampionshipMatches"
+        ),
+        "remainingMatchesScope": tournament_metadata.get(
+            "remainingMatchesScope"
+        ),
+        "dataAsOf": tournament_metadata.get("dataAsOf"),
+        "lastCompletedMatchDate": tournament_metadata.get(
+            "lastCompletedMatchDate"
+        ),
+        "latestScheduledMatchDate": tournament_metadata.get(
+            "latestScheduledMatchDate"
+        ),
         "modelSummary": model_summary,
         "winnerTop10": winner_top10,
         "southKorea": korea_summary,

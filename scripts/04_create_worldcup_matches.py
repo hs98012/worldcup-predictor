@@ -9,6 +9,7 @@ from utils.worldcup_groups import WORLD_CUP_FIXTURES
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 TEAMS_PATH = PROJECT_ROOT / "data/processed/teams.json"
 UPCOMING_PATH = PROJECT_ROOT / "data/processed/upcoming_fixtures.csv"
+COMPLETED_RESULTS_PATH = PROJECT_ROOT / "data/processed/worldcup_completed_results.json"
 OUTPUT_PATH = PROJECT_ROOT / "data/processed/matches.json"
 WORLD_CUP_YEAR = 2026
 
@@ -39,12 +40,47 @@ def build_group_map():
     }
 
 
-def determine_stage(fixture, group):
+def stage_for_knockout_index(index):
+    if index < 16:
+        return "ROUND_OF_32"
+    if index < 24:
+        return "ROUND_OF_16"
+    if index < 28:
+        return "QUARTER_FINAL"
+    if index < 30:
+        return "SEMI_FINAL"
+    if index == 30:
+        return "FINAL"
+    return "KNOCKOUT"
+
+
+def completed_knockout_count(group_map):
+    if not COMPLETED_RESULTS_PATH.exists():
+        return 0
+
+    with COMPLETED_RESULTS_PATH.open("r", encoding="utf-8") as f:
+        completed_results = json.load(f)
+
+    count = 0
+    for match in completed_results:
+        key = fixture_key(
+            match["date"],
+            match["normalizedHomeTeam"],
+            match["normalizedAwayTeam"],
+        )
+        if key not in group_map:
+            count += 1
+    return count
+
+
+def determine_stage(fixture, group, knockout_index=None):
     if group:
         return "GROUP"
 
     if fixture.get("tournament") == "FIFA World Cup":
-        return "KNOCKOUT"
+        if knockout_index is None:
+            return "KNOCKOUT"
+        return stage_for_knockout_index(knockout_index)
 
     return "UNKNOWN"
 
@@ -74,6 +110,7 @@ def main():
         "%Y-%m-%d"
     )
     group_map = build_group_map()
+    completed_knockout_matches = completed_knockout_count(group_map)
 
     matches = []
     missing = []
@@ -87,7 +124,10 @@ def main():
         team_a = resolve_team_name(display_a, normalized_a, team_names)
         team_b = resolve_team_name(display_b, normalized_b, team_names)
         group = group_map.get(fixture_key(date, normalized_a, normalized_b))
-        stage = determine_stage(fixture, group)
+        knockout_index = None if group else completed_knockout_matches + len(
+            [match for match in matches if match["group"] is None]
+        )
+        stage = determine_stage(fixture, group, knockout_index)
 
         if team_a not in team_names:
             missing.append(display_a)

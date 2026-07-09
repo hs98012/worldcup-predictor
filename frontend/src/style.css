@@ -243,11 +243,17 @@ h2 {
 .korea-stages span,
 .stage-chance span,
 .winner-chance span,
-.ranking-team span {
+.ranking-team span,
+.section-meta {
   color: var(--muted);
   font-size: 0.7rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.section-meta {
+  display: block;
+  margin-top: 7px;
 }
 
 .metric-grid {
