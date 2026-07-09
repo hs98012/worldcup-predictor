@@ -13,7 +13,6 @@
         "goalsAgainst": 0,
         "goalDiff": 6,
         "points": 9,
-        "tieBreaker": 0,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -28,13 +27,12 @@
         "goalsAgainst": 3,
         "goalDiff": -1,
         "points": 4,
-        "tieBreaker": 0,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
       {
         "displayTeam": "South Korea",
-        "team": "Korea Republic",
+        "team": "South Korea",
         "played": 3,
         "wins": 1,
         "draws": 0,
@@ -43,7 +41,6 @@
         "goalsAgainst": 3,
         "goalDiff": -1,
         "points": 3,
-        "tieBreaker": 0,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
       },
@@ -58,7 +55,6 @@
         "goalsAgainst": 6,
         "goalDiff": -4,
         "points": 1,
-        "tieBreaker": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
       }
@@ -118,7 +114,8 @@
         "predictedResult": "HOME_WIN",
         "isCompleted": true
       }
-    ]
+    ],
+    "remainingGroupMatches": 0
   },
   {
     "group": "B",
@@ -134,7 +131,6 @@
         "goalsAgainst": 3,
         "goalDiff": 4,
         "points": 7,
-        "tieBreaker": 0,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -149,7 +145,6 @@
         "goalsAgainst": 3,
         "goalDiff": 5,
         "points": 4,
-        "tieBreaker": 0,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -164,7 +159,6 @@
         "goalsAgainst": 6,
         "goalDiff": -1,
         "points": 4,
-        "tieBreaker": 0,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
       },
@@ -179,7 +173,6 @@
         "goalsAgainst": 10,
         "goalDiff": -8,
         "points": 1,
-        "tieBreaker": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
       }
@@ -239,7 +232,8 @@
         "predictedResult": "HOME_WIN",
         "isCompleted": true
       }
-    ]
+    ],
+    "remainingGroupMatches": 0
   },
   {
     "group": "C",
@@ -255,7 +249,6 @@
         "goalsAgainst": 1,
         "goalDiff": 6,
         "points": 7,
-        "tieBreaker": 0,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -270,7 +263,6 @@
         "goalsAgainst": 3,
         "goalDiff": 3,
         "points": 7,
-        "tieBreaker": 0,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -285,7 +277,6 @@
         "goalsAgainst": 4,
         "goalDiff": -3,
         "points": 3,
-        "tieBreaker": 0,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
       },
@@ -300,7 +291,6 @@
         "goalsAgainst": 8,
         "goalDiff": -6,
         "points": 0,
-        "tieBreaker": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
       }
@@ -326,20 +316,20 @@
       },
       {
         "date": "2026-06-19",
-        "displayTeamA": "Brazil",
-        "displayTeamB": "Haiti",
-        "predictedScoreA": 3,
-        "predictedScoreB": 0,
-        "predictedResult": "HOME_WIN",
-        "isCompleted": true
-      },
-      {
-        "date": "2026-06-19",
         "displayTeamA": "Scotland",
         "displayTeamB": "Morocco",
         "predictedScoreA": 0,
         "predictedScoreB": 1,
         "predictedResult": "AWAY_WIN",
+        "isCompleted": true
+      },
+      {
+        "date": "2026-06-19",
+        "displayTeamA": "Brazil",
+        "displayTeamB": "Haiti",
+        "predictedScoreA": 3,
+        "predictedScoreB": 0,
+        "predictedResult": "HOME_WIN",
         "isCompleted": true
       },
       {
@@ -360,7 +350,8 @@
         "predictedResult": "HOME_WIN",
         "isCompleted": true
       }
-    ]
+    ],
+    "remainingGroupMatches": 0
   },
   {
     "group": "D",
@@ -376,7 +367,6 @@
         "goalsAgainst": 4,
         "goalDiff": 4,
         "points": 6,
-        "tieBreaker": 0,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -391,7 +381,6 @@
         "goalsAgainst": 2,
         "goalDiff": 0,
         "points": 4,
-        "tieBreaker": 0,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -406,7 +395,6 @@
         "goalsAgainst": 4,
         "goalDiff": -2,
         "points": 4,
-        "tieBreaker": 0,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
       },
@@ -421,7 +409,6 @@
         "goalsAgainst": 5,
         "goalDiff": -2,
         "points": 3,
-        "tieBreaker": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
       }
@@ -481,7 +468,8 @@
         "predictedResult": "DRAW",
         "isCompleted": true
       }
-    ]
+    ],
+    "remainingGroupMatches": 0
   },
   {
     "group": "E",
@@ -497,7 +485,6 @@
         "goalsAgainst": 4,
         "goalDiff": 6,
         "points": 6,
-        "tieBreaker": 0,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -512,7 +499,6 @@
         "goalsAgainst": 2,
         "goalDiff": 2,
         "points": 6,
-        "tieBreaker": 0,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -527,7 +513,6 @@
         "goalsAgainst": 2,
         "goalDiff": 0,
         "points": 4,
-        "tieBreaker": 0,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
       },
@@ -542,7 +527,6 @@
         "goalsAgainst": 9,
         "goalDiff": -8,
         "points": 1,
-        "tieBreaker": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
       }
@@ -568,15 +552,6 @@
       },
       {
         "date": "2026-06-20",
-        "displayTeamA": "Germany",
-        "displayTeamB": "Ivory Coast",
-        "predictedScoreA": 2,
-        "predictedScoreB": 1,
-        "predictedResult": "HOME_WIN",
-        "isCompleted": true
-      },
-      {
-        "date": "2026-06-20",
         "displayTeamA": "Ecuador",
         "displayTeamB": "Curaçao",
         "predictedScoreA": 0,
@@ -585,12 +560,12 @@
         "isCompleted": true
       },
       {
-        "date": "2026-06-25",
-        "displayTeamA": "Curaçao",
+        "date": "2026-06-20",
+        "displayTeamA": "Germany",
         "displayTeamB": "Ivory Coast",
-        "predictedScoreA": 0,
-        "predictedScoreB": 2,
-        "predictedResult": "AWAY_WIN",
+        "predictedScoreA": 2,
+        "predictedScoreB": 1,
+        "predictedResult": "HOME_WIN",
         "isCompleted": true
       },
       {
@@ -601,8 +576,18 @@
         "predictedScoreB": 1,
         "predictedResult": "HOME_WIN",
         "isCompleted": true
+      },
+      {
+        "date": "2026-06-25",
+        "displayTeamA": "Curaçao",
+        "displayTeamB": "Ivory Coast",
+        "predictedScoreA": 0,
+        "predictedScoreB": 2,
+        "predictedResult": "AWAY_WIN",
+        "isCompleted": true
       }
-    ]
+    ],
+    "remainingGroupMatches": 0
   },
   {
     "group": "F",
@@ -618,7 +603,6 @@
         "goalsAgainst": 4,
         "goalDiff": 6,
         "points": 7,
-        "tieBreaker": 0,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -633,7 +617,6 @@
         "goalsAgainst": 3,
         "goalDiff": 4,
         "points": 5,
-        "tieBreaker": 0,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -648,7 +631,6 @@
         "goalsAgainst": 7,
         "goalDiff": 0,
         "points": 4,
-        "tieBreaker": 0,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
       },
@@ -663,21 +645,11 @@
         "goalsAgainst": 12,
         "goalDiff": -10,
         "points": 0,
-        "tieBreaker": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
       }
     ],
     "matches": [
-      {
-        "date": "2026-06-14",
-        "displayTeamA": "Netherlands",
-        "displayTeamB": "Japan",
-        "predictedScoreA": 2,
-        "predictedScoreB": 2,
-        "predictedResult": "DRAW",
-        "isCompleted": true
-      },
       {
         "date": "2026-06-14",
         "displayTeamA": "Sweden",
@@ -688,12 +660,12 @@
         "isCompleted": true
       },
       {
-        "date": "2026-06-20",
+        "date": "2026-06-14",
         "displayTeamA": "Netherlands",
-        "displayTeamB": "Sweden",
-        "predictedScoreA": 5,
-        "predictedScoreB": 1,
-        "predictedResult": "HOME_WIN",
+        "displayTeamB": "Japan",
+        "predictedScoreA": 2,
+        "predictedScoreB": 2,
+        "predictedResult": "DRAW",
         "isCompleted": true
       },
       {
@@ -706,12 +678,12 @@
         "isCompleted": true
       },
       {
-        "date": "2026-06-25",
-        "displayTeamA": "Japan",
+        "date": "2026-06-20",
+        "displayTeamA": "Netherlands",
         "displayTeamB": "Sweden",
-        "predictedScoreA": 1,
+        "predictedScoreA": 5,
         "predictedScoreB": 1,
-        "predictedResult": "DRAW",
+        "predictedResult": "HOME_WIN",
         "isCompleted": true
       },
       {
@@ -722,8 +694,18 @@
         "predictedScoreB": 3,
         "predictedResult": "AWAY_WIN",
         "isCompleted": true
+      },
+      {
+        "date": "2026-06-25",
+        "displayTeamA": "Japan",
+        "displayTeamB": "Sweden",
+        "predictedScoreA": 1,
+        "predictedScoreB": 1,
+        "predictedResult": "DRAW",
+        "isCompleted": true
       }
-    ]
+    ],
+    "remainingGroupMatches": 0
   },
   {
     "group": "G",
@@ -735,27 +717,11 @@
         "wins": 1,
         "draws": 2,
         "losses": 0,
-        "goalsFor": 4,
-        "goalsAgainst": 1,
-        "goalDiff": 3,
+        "goalsFor": 6,
+        "goalsAgainst": 2,
+        "goalDiff": 4,
         "points": 5,
-        "tieBreaker": 0,
         "rank": 1,
-        "qualifiedStatus": "DIRECT_ADVANCE"
-      },
-      {
-        "displayTeam": "Iran",
-        "team": "Iran",
-        "played": 3,
-        "wins": 1,
-        "draws": 2,
-        "losses": 0,
-        "goalsFor": 4,
-        "goalsAgainst": 3,
-        "goalDiff": 1,
-        "points": 5,
-        "tieBreaker": 0,
-        "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
       {
@@ -763,13 +729,26 @@
         "team": "Egypt",
         "played": 3,
         "wins": 1,
-        "draws": 1,
-        "losses": 1,
+        "draws": 2,
+        "losses": 0,
         "goalsFor": 5,
-        "goalsAgainst": 4,
-        "goalDiff": 1,
-        "points": 4,
-        "tieBreaker": 0,
+        "goalsAgainst": 3,
+        "goalDiff": 2,
+        "points": 5,
+        "rank": 2,
+        "qualifiedStatus": "DIRECT_ADVANCE"
+      },
+      {
+        "displayTeam": "Iran",
+        "team": "Iran",
+        "played": 3,
+        "wins": 0,
+        "draws": 3,
+        "losses": 0,
+        "goalsFor": 3,
+        "goalsAgainst": 3,
+        "goalDiff": 0,
+        "points": 3,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
       },
@@ -780,11 +759,10 @@
         "wins": 0,
         "draws": 1,
         "losses": 2,
-        "goalsFor": 3,
-        "goalsAgainst": 8,
-        "goalDiff": -5,
+        "goalsFor": 4,
+        "goalsAgainst": 10,
+        "goalDiff": -6,
         "points": 1,
-        "tieBreaker": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
       }
@@ -827,32 +805,25 @@
         "isCompleted": true
       },
       {
-        "matchId": 1,
         "date": "2026-06-26",
         "displayTeamA": "Egypt",
         "displayTeamB": "Iran",
         "predictedScoreA": 1,
-        "predictedScoreB": 2,
-        "teamAWinProb": 0.3114,
-        "drawProb": 0.2928,
-        "teamBWinProb": 0.3958,
-        "predictedResult": "B_WIN",
-        "isCompleted": false
+        "predictedScoreB": 1,
+        "predictedResult": "DRAW",
+        "isCompleted": true
       },
       {
-        "matchId": 2,
         "date": "2026-06-26",
         "displayTeamA": "New Zealand",
         "displayTeamB": "Belgium",
-        "predictedScoreA": 0,
-        "predictedScoreB": 3,
-        "teamAWinProb": 0.1298,
-        "drawProb": 0.1951,
-        "teamBWinProb": 0.6751,
-        "predictedResult": "B_WIN",
-        "isCompleted": false
+        "predictedScoreA": 1,
+        "predictedScoreB": 5,
+        "predictedResult": "AWAY_WIN",
+        "isCompleted": true
       }
-    ]
+    ],
+    "remainingGroupMatches": 0
   },
   {
     "group": "H",
@@ -864,27 +835,11 @@
         "wins": 2,
         "draws": 1,
         "losses": 0,
-        "goalsFor": 7,
+        "goalsFor": 5,
         "goalsAgainst": 0,
-        "goalDiff": 7,
+        "goalDiff": 5,
         "points": 7,
-        "tieBreaker": 0,
         "rank": 1,
-        "qualifiedStatus": "DIRECT_ADVANCE"
-      },
-      {
-        "displayTeam": "Saudi Arabia",
-        "team": "Saudi Arabia",
-        "played": 3,
-        "wins": 1,
-        "draws": 1,
-        "losses": 1,
-        "goalsFor": 3,
-        "goalsAgainst": 6,
-        "goalDiff": -3,
-        "points": 4,
-        "tieBreaker": 0,
-        "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
       {
@@ -892,15 +847,14 @@
         "team": "Cape Verde",
         "played": 3,
         "wins": 0,
-        "draws": 2,
-        "losses": 1,
-        "goalsFor": 3,
-        "goalsAgainst": 4,
-        "goalDiff": -1,
-        "points": 2,
-        "tieBreaker": 0,
-        "rank": 3,
-        "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+        "draws": 3,
+        "losses": 0,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
+        "goalDiff": 0,
+        "points": 3,
+        "rank": 2,
+        "qualifiedStatus": "DIRECT_ADVANCE"
       },
       {
         "displayTeam": "Uruguay",
@@ -910,15 +864,37 @@
         "draws": 2,
         "losses": 1,
         "goalsFor": 3,
-        "goalsAgainst": 6,
-        "goalDiff": -3,
+        "goalsAgainst": 4,
+        "goalDiff": -1,
         "points": 2,
-        "tieBreaker": 0,
+        "rank": 3,
+        "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
+      },
+      {
+        "displayTeam": "Saudi Arabia",
+        "team": "Saudi Arabia",
+        "played": 3,
+        "wins": 0,
+        "draws": 2,
+        "losses": 1,
+        "goalsFor": 1,
+        "goalsAgainst": 5,
+        "goalDiff": -4,
+        "points": 2,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
       }
     ],
     "matches": [
+      {
+        "date": "2026-06-15",
+        "displayTeamA": "Spain",
+        "displayTeamB": "Cape Verde",
+        "predictedScoreA": 0,
+        "predictedScoreB": 0,
+        "predictedResult": "DRAW",
+        "isCompleted": true
+      },
       {
         "date": "2026-06-15",
         "displayTeamA": "Saudi Arabia",
@@ -929,11 +905,11 @@
         "isCompleted": true
       },
       {
-        "date": "2026-06-15",
-        "displayTeamA": "Spain",
+        "date": "2026-06-21",
+        "displayTeamA": "Uruguay",
         "displayTeamB": "Cape Verde",
-        "predictedScoreA": 0,
-        "predictedScoreB": 0,
+        "predictedScoreA": 2,
+        "predictedScoreB": 2,
         "predictedResult": "DRAW",
         "isCompleted": true
       },
@@ -947,41 +923,25 @@
         "isCompleted": true
       },
       {
-        "date": "2026-06-21",
-        "displayTeamA": "Uruguay",
-        "displayTeamB": "Cape Verde",
-        "predictedScoreA": 2,
-        "predictedScoreB": 2,
+        "date": "2026-06-26",
+        "displayTeamA": "Cape Verde",
+        "displayTeamB": "Saudi Arabia",
+        "predictedScoreA": 0,
+        "predictedScoreB": 0,
         "predictedResult": "DRAW",
         "isCompleted": true
       },
       {
-        "matchId": 3,
-        "date": "2026-06-26",
-        "displayTeamA": "Cape Verde",
-        "displayTeamB": "Saudi Arabia",
-        "predictedScoreA": 1,
-        "predictedScoreB": 2,
-        "teamAWinProb": 0.3532,
-        "drawProb": 0.2858,
-        "teamBWinProb": 0.3609,
-        "predictedResult": "B_WIN",
-        "isCompleted": false
-      },
-      {
-        "matchId": 4,
         "date": "2026-06-26",
         "displayTeamA": "Uruguay",
         "displayTeamB": "Spain",
         "predictedScoreA": 0,
-        "predictedScoreB": 3,
-        "teamAWinProb": 0.1801,
-        "drawProb": 0.2325,
-        "teamBWinProb": 0.5874,
-        "predictedResult": "B_WIN",
-        "isCompleted": false
+        "predictedScoreB": 1,
+        "predictedResult": "AWAY_WIN",
+        "isCompleted": true
       }
-    ]
+    ],
+    "remainingGroupMatches": 0
   },
   {
     "group": "I",
@@ -993,11 +953,10 @@
         "wins": 3,
         "draws": 0,
         "losses": 0,
-        "goalsFor": 8,
-        "goalsAgainst": 1,
-        "goalDiff": 7,
+        "goalsFor": 10,
+        "goalsAgainst": 2,
+        "goalDiff": 8,
         "points": 9,
-        "tieBreaker": 0,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -1008,11 +967,10 @@
         "wins": 2,
         "draws": 0,
         "losses": 1,
-        "goalsFor": 7,
-        "goalsAgainst": 5,
-        "goalDiff": 2,
+        "goalsFor": 8,
+        "goalsAgainst": 7,
+        "goalDiff": 1,
         "points": 6,
-        "tieBreaker": 0,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -1023,11 +981,10 @@
         "wins": 1,
         "draws": 0,
         "losses": 2,
-        "goalsFor": 6,
+        "goalsFor": 8,
         "goalsAgainst": 6,
-        "goalDiff": 0,
+        "goalDiff": 2,
         "points": 3,
-        "tieBreaker": 0,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
       },
@@ -1039,10 +996,9 @@
         "draws": 0,
         "losses": 3,
         "goalsFor": 1,
-        "goalsAgainst": 10,
-        "goalDiff": -9,
+        "goalsAgainst": 12,
+        "goalDiff": -11,
         "points": 0,
-        "tieBreaker": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
       }
@@ -1085,32 +1041,25 @@
         "isCompleted": true
       },
       {
-        "matchId": 5,
         "date": "2026-06-26",
         "displayTeamA": "Norway",
         "displayTeamB": "France",
-        "predictedScoreA": 0,
-        "predictedScoreB": 2,
-        "teamAWinProb": 0.1865,
-        "drawProb": 0.2749,
-        "teamBWinProb": 0.5386,
-        "predictedResult": "B_WIN",
-        "isCompleted": false
+        "predictedScoreA": 1,
+        "predictedScoreB": 4,
+        "predictedResult": "AWAY_WIN",
+        "isCompleted": true
       },
       {
-        "matchId": 6,
         "date": "2026-06-26",
         "displayTeamA": "Senegal",
         "displayTeamB": "Iraq",
-        "predictedScoreA": 3,
+        "predictedScoreA": 5,
         "predictedScoreB": 0,
-        "teamAWinProb": 0.6973,
-        "drawProb": 0.2272,
-        "teamBWinProb": 0.0755,
-        "predictedResult": "A_WIN",
-        "isCompleted": false
+        "predictedResult": "HOME_WIN",
+        "isCompleted": true
       }
-    ]
+    ],
+    "remainingGroupMatches": 0
   },
   {
     "group": "J",
@@ -1123,26 +1072,10 @@
         "draws": 0,
         "losses": 0,
         "goalsFor": 8,
-        "goalsAgainst": 0,
-        "goalDiff": 8,
+        "goalsAgainst": 1,
+        "goalDiff": 7,
         "points": 9,
-        "tieBreaker": 0,
         "rank": 1,
-        "qualifiedStatus": "DIRECT_ADVANCE"
-      },
-      {
-        "displayTeam": "Algeria",
-        "team": "Algeria",
-        "played": 3,
-        "wins": 2,
-        "draws": 0,
-        "losses": 1,
-        "goalsFor": 4,
-        "goalsAgainst": 5,
-        "goalDiff": -1,
-        "points": 6,
-        "tieBreaker": 0,
-        "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
       {
@@ -1150,13 +1083,26 @@
         "team": "Austria",
         "played": 3,
         "wins": 1,
-        "draws": 0,
-        "losses": 2,
-        "goalsFor": 4,
-        "goalsAgainst": 5,
-        "goalDiff": -1,
-        "points": 3,
-        "tieBreaker": 0,
+        "draws": 1,
+        "losses": 1,
+        "goalsFor": 6,
+        "goalsAgainst": 6,
+        "goalDiff": 0,
+        "points": 4,
+        "rank": 2,
+        "qualifiedStatus": "DIRECT_ADVANCE"
+      },
+      {
+        "displayTeam": "Algeria",
+        "team": "Algeria",
+        "played": 3,
+        "wins": 1,
+        "draws": 1,
+        "losses": 1,
+        "goalsFor": 5,
+        "goalsAgainst": 7,
+        "goalDiff": -2,
+        "points": 4,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
       },
@@ -1167,11 +1113,10 @@
         "wins": 0,
         "draws": 0,
         "losses": 3,
-        "goalsFor": 2,
+        "goalsFor": 3,
         "goalsAgainst": 8,
-        "goalDiff": -6,
+        "goalDiff": -5,
         "points": 0,
-        "tieBreaker": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
       }
@@ -1179,19 +1124,19 @@
     "matches": [
       {
         "date": "2026-06-16",
-        "displayTeamA": "Argentina",
-        "displayTeamB": "Algeria",
+        "displayTeamA": "Austria",
+        "displayTeamB": "Jordan",
         "predictedScoreA": 3,
-        "predictedScoreB": 0,
+        "predictedScoreB": 1,
         "predictedResult": "HOME_WIN",
         "isCompleted": true
       },
       {
         "date": "2026-06-16",
-        "displayTeamA": "Austria",
-        "displayTeamB": "Jordan",
+        "displayTeamA": "Argentina",
+        "displayTeamB": "Algeria",
         "predictedScoreA": 3,
-        "predictedScoreB": 1,
+        "predictedScoreB": 0,
         "predictedResult": "HOME_WIN",
         "isCompleted": true
       },
@@ -1214,63 +1159,54 @@
         "isCompleted": true
       },
       {
-        "matchId": 7,
-        "date": "2026-06-27",
-        "displayTeamA": "Algeria",
-        "displayTeamB": "Austria",
-        "predictedScoreA": 2,
-        "predictedScoreB": 1,
-        "teamAWinProb": 0.4614,
-        "drawProb": 0.2682,
-        "teamBWinProb": 0.2703,
-        "predictedResult": "A_WIN",
-        "isCompleted": false
-      },
-      {
-        "matchId": 8,
         "date": "2026-06-27",
         "displayTeamA": "Jordan",
         "displayTeamB": "Argentina",
-        "predictedScoreA": 0,
+        "predictedScoreA": 1,
         "predictedScoreB": 3,
-        "teamAWinProb": 0.1528,
-        "drawProb": 0.1958,
-        "teamBWinProb": 0.6514,
-        "predictedResult": "B_WIN",
-        "isCompleted": false
+        "predictedResult": "AWAY_WIN",
+        "isCompleted": true
+      },
+      {
+        "date": "2026-06-27",
+        "displayTeamA": "Algeria",
+        "displayTeamB": "Austria",
+        "predictedScoreA": 3,
+        "predictedScoreB": 3,
+        "predictedResult": "DRAW",
+        "isCompleted": true
       }
-    ]
+    ],
+    "remainingGroupMatches": 0
   },
   {
     "group": "K",
     "standings": [
       {
-        "displayTeam": "Portugal",
-        "team": "Portugal",
-        "played": 3,
-        "wins": 2,
-        "draws": 1,
-        "losses": 0,
-        "goalsFor": 8,
-        "goalsAgainst": 2,
-        "goalDiff": 6,
-        "points": 7,
-        "tieBreaker": 0,
-        "rank": 1,
-        "qualifiedStatus": "DIRECT_ADVANCE"
-      },
-      {
         "displayTeam": "Colombia",
         "team": "Colombia",
         "played": 3,
         "wins": 2,
-        "draws": 0,
-        "losses": 1,
-        "goalsFor": 5,
-        "goalsAgainst": 3,
-        "goalDiff": 2,
-        "points": 6,
-        "tieBreaker": 0,
+        "draws": 1,
+        "losses": 0,
+        "goalsFor": 4,
+        "goalsAgainst": 1,
+        "goalDiff": 3,
+        "points": 7,
+        "rank": 1,
+        "qualifiedStatus": "DIRECT_ADVANCE"
+      },
+      {
+        "displayTeam": "Portugal",
+        "team": "Portugal",
+        "played": 3,
+        "wins": 1,
+        "draws": 2,
+        "losses": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 1,
+        "goalDiff": 5,
+        "points": 5,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -1281,11 +1217,10 @@
         "wins": 1,
         "draws": 1,
         "losses": 1,
-        "goalsFor": 3,
+        "goalsFor": 4,
         "goalsAgainst": 3,
-        "goalDiff": 0,
+        "goalDiff": 1,
         "points": 4,
-        "tieBreaker": 0,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
       },
@@ -1297,10 +1232,9 @@
         "draws": 0,
         "losses": 3,
         "goalsFor": 2,
-        "goalsAgainst": 10,
-        "goalDiff": -8,
+        "goalsAgainst": 11,
+        "goalDiff": -9,
         "points": 0,
-        "tieBreaker": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
       }
@@ -1326,15 +1260,6 @@
       },
       {
         "date": "2026-06-23",
-        "displayTeamA": "Colombia",
-        "displayTeamB": "DR Congo",
-        "predictedScoreA": 1,
-        "predictedScoreB": 0,
-        "predictedResult": "HOME_WIN",
-        "isCompleted": true
-      },
-      {
-        "date": "2026-06-23",
         "displayTeamA": "Portugal",
         "displayTeamB": "Uzbekistan",
         "predictedScoreA": 5,
@@ -1343,32 +1268,34 @@
         "isCompleted": true
       },
       {
-        "matchId": 9,
-        "date": "2026-06-27",
+        "date": "2026-06-23",
         "displayTeamA": "Colombia",
-        "displayTeamB": "Portugal",
+        "displayTeamB": "DR Congo",
         "predictedScoreA": 1,
-        "predictedScoreB": 2,
-        "teamAWinProb": 0.1892,
-        "drawProb": 0.3069,
-        "teamBWinProb": 0.5039,
-        "predictedResult": "B_WIN",
-        "isCompleted": false
+        "predictedScoreB": 0,
+        "predictedResult": "HOME_WIN",
+        "isCompleted": true
       },
       {
-        "matchId": 10,
         "date": "2026-06-27",
         "displayTeamA": "DR Congo",
         "displayTeamB": "Uzbekistan",
-        "predictedScoreA": 2,
+        "predictedScoreA": 3,
         "predictedScoreB": 1,
-        "teamAWinProb": 0.3805,
-        "drawProb": 0.2733,
-        "teamBWinProb": 0.3462,
-        "predictedResult": "A_WIN",
-        "isCompleted": false
+        "predictedResult": "HOME_WIN",
+        "isCompleted": true
+      },
+      {
+        "date": "2026-06-27",
+        "displayTeamA": "Colombia",
+        "displayTeamB": "Portugal",
+        "predictedScoreA": 0,
+        "predictedScoreB": 0,
+        "predictedResult": "DRAW",
+        "isCompleted": true
       }
-    ]
+    ],
+    "remainingGroupMatches": 0
   },
   {
     "group": "L",
@@ -1380,11 +1307,10 @@
         "wins": 2,
         "draws": 1,
         "losses": 0,
-        "goalsFor": 7,
+        "goalsFor": 6,
         "goalsAgainst": 2,
-        "goalDiff": 5,
+        "goalDiff": 4,
         "points": 7,
-        "tieBreaker": 0,
         "rank": 1,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -1396,10 +1322,9 @@
         "draws": 0,
         "losses": 1,
         "goalsFor": 5,
-        "goalsAgainst": 4,
-        "goalDiff": 1,
+        "goalsAgainst": 5,
+        "goalDiff": 0,
         "points": 6,
-        "tieBreaker": 0,
         "rank": 2,
         "qualifiedStatus": "DIRECT_ADVANCE"
       },
@@ -1410,11 +1335,10 @@
         "wins": 1,
         "draws": 1,
         "losses": 1,
-        "goalsFor": 1,
+        "goalsFor": 2,
         "goalsAgainst": 2,
-        "goalDiff": -1,
+        "goalDiff": 0,
         "points": 4,
-        "tieBreaker": 0,
         "rank": 3,
         "qualifiedStatus": "THIRD_PLACE_CANDIDATE"
       },
@@ -1426,24 +1350,14 @@
         "draws": 0,
         "losses": 3,
         "goalsFor": 0,
-        "goalsAgainst": 5,
-        "goalDiff": -5,
+        "goalsAgainst": 4,
+        "goalDiff": -4,
         "points": 0,
-        "tieBreaker": 0,
         "rank": 4,
         "qualifiedStatus": "ELIMINATED"
       }
     ],
     "matches": [
-      {
-        "date": "2026-06-17",
-        "displayTeamA": "England",
-        "displayTeamB": "Croatia",
-        "predictedScoreA": 4,
-        "predictedScoreB": 2,
-        "predictedResult": "HOME_WIN",
-        "isCompleted": true
-      },
       {
         "date": "2026-06-17",
         "displayTeamA": "Ghana",
@@ -1454,12 +1368,12 @@
         "isCompleted": true
       },
       {
-        "date": "2026-06-23",
-        "displayTeamA": "Panama",
+        "date": "2026-06-17",
+        "displayTeamA": "England",
         "displayTeamB": "Croatia",
-        "predictedScoreA": 0,
-        "predictedScoreB": 1,
-        "predictedResult": "AWAY_WIN",
+        "predictedScoreA": 4,
+        "predictedScoreB": 2,
+        "predictedResult": "HOME_WIN",
         "isCompleted": true
       },
       {
@@ -1472,31 +1386,33 @@
         "isCompleted": true
       },
       {
-        "matchId": 11,
-        "date": "2026-06-27",
+        "date": "2026-06-23",
         "displayTeamA": "Panama",
-        "displayTeamB": "England",
+        "displayTeamB": "Croatia",
         "predictedScoreA": 0,
-        "predictedScoreB": 3,
-        "teamAWinProb": 0.1131,
-        "drawProb": 0.1597,
-        "teamBWinProb": 0.7272,
-        "predictedResult": "B_WIN",
-        "isCompleted": false
+        "predictedScoreB": 1,
+        "predictedResult": "AWAY_WIN",
+        "isCompleted": true
       },
       {
-        "matchId": 12,
         "date": "2026-06-27",
         "displayTeamA": "Croatia",
         "displayTeamB": "Ghana",
         "predictedScoreA": 2,
-        "predictedScoreB": 0,
-        "teamAWinProb": 0.5714,
-        "drawProb": 0.2639,
-        "teamBWinProb": 0.1647,
-        "predictedResult": "A_WIN",
-        "isCompleted": false
+        "predictedScoreB": 1,
+        "predictedResult": "HOME_WIN",
+        "isCompleted": true
+      },
+      {
+        "date": "2026-06-27",
+        "displayTeamA": "Panama",
+        "displayTeamB": "England",
+        "predictedScoreA": 0,
+        "predictedScoreB": 2,
+        "predictedResult": "AWAY_WIN",
+        "isCompleted": true
       }
-    ]
+    ],
+    "remainingGroupMatches": 0
   }
 ]

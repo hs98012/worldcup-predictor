@@ -49464,3 +49464,39 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-06-25,Ecuador,Germany,2.0,1.0,FIFA World Cup,East Rutherford,United States,True,Ecuador,Germany
 2026-06-25,Japan,Sweden,1.0,1.0,FIFA World Cup,Arlington,United States,True,Japan,Sweden
 2026-06-25,Tunisia,Netherlands,1.0,3.0,FIFA World Cup,Kansas City,United States,True,Tunisia,Netherlands
+2026-06-26,Egypt,Iran,1.0,1.0,FIFA World Cup,Seattle,United States,True,Egypt,Iran
+2026-06-26,New Zealand,Belgium,1.0,5.0,FIFA World Cup,Vancouver,Canada,True,New Zealand,Belgium
+2026-06-26,Cape Verde,Saudi Arabia,0.0,0.0,FIFA World Cup,Houston,United States,True,Cape Verde,Saudi Arabia
+2026-06-26,Uruguay,Spain,0.0,1.0,FIFA World Cup,Zapopan,Mexico,True,Uruguay,Spain
+2026-06-26,Norway,France,1.0,4.0,FIFA World Cup,Foxborough,United States,True,Norway,France
+2026-06-26,Senegal,Iraq,5.0,0.0,FIFA World Cup,Toronto,Canada,True,Senegal,Iraq
+2026-06-27,Algeria,Austria,3.0,3.0,FIFA World Cup,Kansas City,United States,True,Algeria,Austria
+2026-06-27,Jordan,Argentina,1.0,3.0,FIFA World Cup,Arlington,United States,True,Jordan,Argentina
+2026-06-27,Colombia,Portugal,0.0,0.0,FIFA World Cup,Miami Gardens,United States,True,Colombia,Portugal
+2026-06-27,DR Congo,Uzbekistan,3.0,1.0,FIFA World Cup,Atlanta,United States,True,DR Congo,Uzbekistan
+2026-06-27,Panama,England,0.0,2.0,FIFA World Cup,East Rutherford,United States,True,Panama,England
+2026-06-27,Croatia,Ghana,2.0,1.0,FIFA World Cup,Philadelphia,United States,True,Croatia,Ghana
+2026-06-28,South Africa,Canada,0.0,1.0,FIFA World Cup,Inglewood,United States,True,South Africa,Canada
+2026-06-29,Brazil,Japan,2.0,1.0,FIFA World Cup,Houston,United States,True,Brazil,Japan
+2026-06-29,Germany,Paraguay,1.0,1.0,FIFA World Cup,Foxborough,United States,True,Germany,Paraguay
+2026-06-29,Netherlands,Morocco,1.0,1.0,FIFA World Cup,Guadalupe,Mexico,True,Netherlands,Morocco
+2026-06-30,Ivory Coast,Norway,1.0,2.0,FIFA World Cup,Arlington,United States,True,Ivory Coast,Norway
+2026-06-30,France,Sweden,3.0,0.0,FIFA World Cup,East Rutherford,United States,True,France,Sweden
+2026-06-30,Mexico,Ecuador,2.0,0.0,FIFA World Cup,Mexico City,Mexico,False,Mexico,Ecuador
+2026-07-01,England,DR Congo,2.0,1.0,FIFA World Cup,Atlanta,United States,True,England,DR Congo
+2026-07-01,Belgium,Senegal,3.0,2.0,FIFA World Cup,Seattle,United States,True,Belgium,Senegal
+2026-07-01,United States,Bosnia and Herzegovina,2.0,0.0,FIFA World Cup,Santa Clara,United States,False,United States,Bosnia and Herzegovina
+2026-07-02,Spain,Austria,3.0,0.0,FIFA World Cup,Inglewood,United States,True,Spain,Austria
+2026-07-02,Portugal,Croatia,2.0,1.0,FIFA World Cup,Toronto,Canada,True,Portugal,Croatia
+2026-07-02,Switzerland,Algeria,2.0,0.0,FIFA World Cup,Vancouver,Canada,True,Switzerland,Algeria
+2026-07-03,Australia,Egypt,1.0,1.0,FIFA World Cup,Arlington,United States,True,Australia,Egypt
+2026-07-03,Argentina,Cape Verde,3.0,2.0,FIFA World Cup,Miami Gardens,United States,True,Argentina,Cape Verde
+2026-07-03,Colombia,Ghana,1.0,0.0,FIFA World Cup,Kansas City,United States,True,Colombia,Ghana
+2026-07-04,Canada,Morocco,0.0,3.0,FIFA World Cup,Houston,United States,True,Canada,Morocco
+2026-07-04,Paraguay,France,0.0,1.0,FIFA World Cup,Philadelphia,United States,True,Paraguay,France
+2026-07-05,Brazil,Norway,1.0,2.0,FIFA World Cup,East Rutherford,United States,True,Brazil,Norway
+2026-07-05,Mexico,England,2.0,3.0,FIFA World Cup,Mexico City,Mexico,False,Mexico,England
+2026-07-06,Portugal,Spain,0.0,1.0,FIFA World Cup,Dallas,United States,True,Portugal,Spain
+2026-07-06,United States,Belgium,1.0,4.0,FIFA World Cup,Seattle,United States,False,United States,Belgium
+2026-07-07,Argentina,Egypt,3.0,2.0,FIFA World Cup,Atlanta,United States,True,Argentina,Egypt
+2026-07-07,Switzerland,Colombia,0.0,0.0,FIFA World Cup,Vancouver,Canada,True,Switzerland,Colombia

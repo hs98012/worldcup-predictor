@@ -1,122 +1,42 @@
 [
   {
     "matchId": 1,
-    "stage": "GROUP",
-    "group": "G",
-    "date": "2026-06-26",
-    "displayTeamA": "Egypt",
-    "displayTeamB": "Iran",
-    "teamA": "Egypt",
-    "teamB": "Iran"
+    "stage": "KNOCKOUT",
+    "group": null,
+    "date": "2026-07-09",
+    "displayTeamA": "France",
+    "displayTeamB": "Morocco",
+    "teamA": "France",
+    "teamB": "Morocco"
   },
   {
     "matchId": 2,
-    "stage": "GROUP",
-    "group": "G",
-    "date": "2026-06-26",
-    "displayTeamA": "New Zealand",
+    "stage": "KNOCKOUT",
+    "group": null,
+    "date": "2026-07-10",
+    "displayTeamA": "Spain",
     "displayTeamB": "Belgium",
-    "teamA": "New Zealand",
+    "teamA": "Spain",
     "teamB": "Belgium"
   },
   {
     "matchId": 3,
-    "stage": "GROUP",
-    "group": "H",
-    "date": "2026-06-26",
-    "displayTeamA": "Cape Verde",
-    "displayTeamB": "Saudi Arabia",
-    "teamA": "Cape Verde",
-    "teamB": "Saudi Arabia"
-  },
-  {
-    "matchId": 4,
-    "stage": "GROUP",
-    "group": "H",
-    "date": "2026-06-26",
-    "displayTeamA": "Uruguay",
-    "displayTeamB": "Spain",
-    "teamA": "Uruguay",
-    "teamB": "Spain"
-  },
-  {
-    "matchId": 5,
-    "stage": "GROUP",
-    "group": "I",
-    "date": "2026-06-26",
+    "stage": "KNOCKOUT",
+    "group": null,
+    "date": "2026-07-11",
     "displayTeamA": "Norway",
-    "displayTeamB": "France",
-    "teamA": "Norway",
-    "teamB": "France"
-  },
-  {
-    "matchId": 6,
-    "stage": "GROUP",
-    "group": "I",
-    "date": "2026-06-26",
-    "displayTeamA": "Senegal",
-    "displayTeamB": "Iraq",
-    "teamA": "Senegal",
-    "teamB": "Iraq"
-  },
-  {
-    "matchId": 7,
-    "stage": "GROUP",
-    "group": "J",
-    "date": "2026-06-27",
-    "displayTeamA": "Algeria",
-    "displayTeamB": "Austria",
-    "teamA": "Algeria",
-    "teamB": "Austria"
-  },
-  {
-    "matchId": 8,
-    "stage": "GROUP",
-    "group": "J",
-    "date": "2026-06-27",
-    "displayTeamA": "Jordan",
-    "displayTeamB": "Argentina",
-    "teamA": "Jordan",
-    "teamB": "Argentina"
-  },
-  {
-    "matchId": 9,
-    "stage": "GROUP",
-    "group": "K",
-    "date": "2026-06-27",
-    "displayTeamA": "Colombia",
-    "displayTeamB": "Portugal",
-    "teamA": "Colombia",
-    "teamB": "Portugal"
-  },
-  {
-    "matchId": 10,
-    "stage": "GROUP",
-    "group": "K",
-    "date": "2026-06-27",
-    "displayTeamA": "DR Congo",
-    "displayTeamB": "Uzbekistan",
-    "teamA": "DR Congo",
-    "teamB": "Uzbekistan"
-  },
-  {
-    "matchId": 11,
-    "stage": "GROUP",
-    "group": "L",
-    "date": "2026-06-27",
-    "displayTeamA": "Panama",
     "displayTeamB": "England",
-    "teamA": "Panama",
+    "teamA": "Norway",
     "teamB": "England"
   },
   {
-    "matchId": 12,
-    "stage": "GROUP",
-    "group": "L",
-    "date": "2026-06-27",
-    "displayTeamA": "Croatia",
-    "displayTeamB": "Ghana",
-    "teamA": "Croatia",
-    "teamB": "Ghana"
+    "matchId": 4,
+    "stage": "KNOCKOUT",
+    "group": null,
+    "date": "2026-07-11",
+    "displayTeamA": "Argentina",
+    "displayTeamB": "Switzerland",
+    "teamA": "Argentina",
+    "teamB": "Switzerland"
   }
 ]
