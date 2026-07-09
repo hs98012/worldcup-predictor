@@ -39,6 +39,16 @@ def build_group_map():
     }
 
 
+def determine_stage(fixture, group):
+    if group:
+        return "GROUP"
+
+    if fixture.get("tournament") == "FIFA World Cup":
+        return "KNOCKOUT"
+
+    return "UNKNOWN"
+
+
 def resolve_team_name(display_name, normalized_name, team_names):
     if normalized_name in team_names:
         return normalized_name
@@ -77,6 +87,7 @@ def main():
         team_a = resolve_team_name(display_a, normalized_a, team_names)
         team_b = resolve_team_name(display_b, normalized_b, team_names)
         group = group_map.get(fixture_key(date, normalized_a, normalized_b))
+        stage = determine_stage(fixture, group)
 
         if team_a not in team_names:
             missing.append(display_a)
@@ -87,7 +98,7 @@ def main():
         matches.append(
             {
                 "matchId": idx + 1,
-                "stage": "GROUP",
+                "stage": stage,
                 "group": group,
                 "date": date,
                 "displayTeamA": display_a,
@@ -121,11 +132,12 @@ def main():
 
     if missing_groups:
         print()
-        print("조 정보를 찾지 못한 예정 경기:")
+        print("토너먼트 경기로 분류된 예정 경기:")
         for match in missing_groups:
             print(
                 f"- {match['date']} "
-                f"{match['displayTeamA']} vs {match['displayTeamB']}"
+                f"{match['displayTeamA']} vs {match['displayTeamB']} "
+                f"| stage={match['stage']}"
             )
 
 

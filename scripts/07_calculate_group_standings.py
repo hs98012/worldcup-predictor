@@ -5,13 +5,16 @@ from pathlib import Path
 from utils.worldcup_simulation import (
     build_initial_group_state,
     completed_fixture_keys,
+    excluded_group_match_label,
     fixture_group_map,
+    is_valid_group_match,
     is_completed_prediction,
     load_completed_results,
 )
 
 INPUT_PATH = Path("data/processed/predictions_adjusted.json")
 OUTPUT_PATH = Path("data/processed/group_predictions.json")
+ACTUAL_STANDINGS_PATH = Path("data/processed/worldcup_group_standings.json")
 
 
 def init_team(display_name, team_name):
@@ -96,9 +99,69 @@ def apply_match_result(team_a_stats, team_b_stats, score_a, score_b):
     team_b_stats["goalDiff"] = team_b_stats["goalsFor"] - team_b_stats["goalsAgainst"]
 
 
+def load_json(path):
+    if not path.exists():
+        raise FileNotFoundError(f"필수 입력 파일을 찾을 수 없습니다: {path}")
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError as error:
+        raise ValueError(
+            f"JSON 파일을 읽을 수 없습니다: {path} "
+            f"(line {error.lineno}, column {error.colno})"
+        ) from error
+
+
+def convert_actual_standings(actual_standings, match_results_by_group):
+    output = []
+
+    for group_data in actual_standings:
+        group = group_data["group"]
+        standings = []
+
+        for team in group_data["teams"]:
+            rank = team["rank"]
+            standings.append(
+                {
+                    "displayTeam": team["team"],
+                    "team": team["team"],
+                    "played": team["played"],
+                    "wins": team["wins"],
+                    "draws": team["draws"],
+                    "losses": team["losses"],
+                    "goalsFor": team["goalsFor"],
+                    "goalsAgainst": team["goalsAgainst"],
+                    "goalDiff": team["goalDifference"],
+                    "points": team["points"],
+                    "rank": rank,
+                    "qualifiedStatus": get_qualified_status(rank),
+                }
+            )
+
+        output.append(
+            {
+                "group": group,
+                "standings": standings,
+                "matches": match_results_by_group[group],
+                "remainingGroupMatches": 0,
+            }
+        )
+
+    return output
+
+
+def log_excluded_group_matches(excluded_matches):
+    if not excluded_matches:
+        return
+
+    print("조별리그 순위 계산에서 제외된 경기:")
+    for match in excluded_matches:
+        print(excluded_group_match_label(match))
+
+
 def main():
-    with open(INPUT_PATH, "r", encoding="utf-8") as f:
-        predictions = json.load(f)
+    predictions = load_json(INPUT_PATH)
 
     completed_results = load_completed_results()
     completed_keys = completed_fixture_keys(completed_results)
@@ -115,6 +178,8 @@ def main():
     )
     groups_by_fixture = fixture_group_map()
     match_results_by_group = defaultdict(list)
+    valid_pending_predictions = []
+    excluded_predictions = []
 
     for match in completed_results:
         group = groups_by_fixture.get(
@@ -147,6 +212,32 @@ def main():
         if is_completed_prediction(prediction, completed_keys):
             continue
 
+        if not is_valid_group_match(prediction, groups):
+            excluded_predictions.append(prediction)
+            continue
+
+        valid_pending_predictions.append(prediction)
+
+    log_excluded_group_matches(excluded_predictions)
+
+    if not valid_pending_predictions:
+        actual_standings = load_json(ACTUAL_STANDINGS_PATH)
+        output = convert_actual_standings(
+            actual_standings,
+            match_results_by_group,
+        )
+
+        with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+            json.dump(output, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+
+        print(f"조별리그 예상 순위 생성 완료: {OUTPUT_PATH}")
+        print(f"초기 standings에 반영한 완료 경기 수: {applied_completed_count}")
+        print("시뮬레이션 대상 남은 조별리그 경기 수: 0")
+        print("확정 조별리그 순위를 기반으로 출력했습니다.")
+        return
+
+    for prediction in valid_pending_predictions:
         group = prediction["group"]
 
         display_a = prediction["displayTeamA"]
@@ -204,6 +295,12 @@ def main():
                 "group": group,
                 "standings": standings,
                 "matches": match_results_by_group[group],
+                "remainingGroupMatches": len(match_results_by_group[group])
+                - sum(
+                    1
+                    for match in match_results_by_group[group]
+                    if match.get("isCompleted")
+                ),
             }
         )
 
@@ -212,6 +309,10 @@ def main():
 
     print(f"조별리그 예상 순위 생성 완료: {OUTPUT_PATH}")
     print(f"초기 standings에 반영한 완료 경기 수: {applied_completed_count}")
+    print(
+        "시뮬레이션 대상 남은 조별리그 경기 수: "
+        f"{len(valid_pending_predictions)}"
+    )
     print()
 
     for group_data in output:

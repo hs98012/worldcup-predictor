@@ -67,6 +67,16 @@ const korea = computed(
 
 const maxWinnerProbability = computed(() => topTeams.value[0]?.winnerProb ?? 0)
 
+const groupSimulationLabel = computed(() => {
+  const simulationCount = groupSimulation.value[0]?.simulationCount
+  const remainingGroupMatches = groupSimulation.value[0]?.remainingGroupMatches
+
+  if (remainingGroupMatches === 0) return 'FINAL GROUP TABLES'
+  if (simulationCount === 0) return 'FINAL GROUP TABLES'
+  if (simulationCount) return `${formatNumber(simulationCount)} SIMULATIONS`
+  return 'GROUP SIMULATION'
+})
+
 const is2026WorldCupMatch = (match) =>
   match.tournament === 'FIFA World Cup' &&
   new Date(`${match.date}T00:00:00`).getFullYear() === worldCupYear
@@ -494,7 +504,7 @@ onMounted(async () => {
               <p class="section-kicker">GROUP ADVANCEMENT</p>
               <h2>조별리그 통과 확률</h2>
             </div>
-            <span class="count-badge">10,000 SIMULATIONS</span>
+            <span class="count-badge">{{ groupSimulationLabel }}</span>
           </div>
 
           <div class="group-grid probability-grid">

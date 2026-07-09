@@ -11,6 +11,8 @@ import pandas as pd
 from utils.worldcup_simulation import (
     build_initial_group_state,
     completed_fixture_keys,
+    excluded_group_match_label,
+    is_valid_group_match,
     is_completed_prediction,
     load_completed_results,
 )
@@ -782,6 +784,15 @@ def add_count(stats, team, key):
     stats[team_key][key] += 1
 
 
+def log_excluded_group_matches(excluded_matches):
+    if not excluded_matches:
+        return
+
+    print("토너먼트 시뮬레이션 조별리그 입력에서 제외된 경기:")
+    for match in excluded_matches:
+        print(excluded_group_match_label(match))
+
+
 def run_tournament_once(
     predictions_by_group,
     initial_groups,
@@ -886,11 +897,17 @@ def main():
     )
 
     predictions_by_group = defaultdict(list)
+    excluded_predictions = []
 
     for prediction in predictions:
         if is_completed_prediction(prediction, completed_keys):
             continue
+        if not is_valid_group_match(prediction, initial_groups):
+            excluded_predictions.append(prediction)
+            continue
         predictions_by_group[prediction["group"]].append(prediction)
+
+    log_excluded_group_matches(excluded_predictions)
 
     group_difficulty = calculate_group_difficulty(initial_groups, teams_map)
     knockout_path_stats = defaultdict(

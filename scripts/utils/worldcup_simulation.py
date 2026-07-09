@@ -236,3 +236,22 @@ def is_completed_prediction(prediction, completed_keys):
         )
         in completed_keys
     )
+
+
+def is_valid_group_match(match, groups):
+    group = match.get("group")
+    if not group or group not in groups:
+        return False
+
+    team_a = match.get("teamA")
+    team_b = match.get("teamB")
+    if not team_a or not team_b:
+        return False
+
+    return team_a in groups[group] and team_b in groups[group]
+
+
+def excluded_group_match_label(match):
+    team_a = match.get("displayTeamA") or match.get("teamA") or "?"
+    team_b = match.get("displayTeamB") or match.get("teamB") or "?"
+    return f"- {team_a} vs {team_b} | group={match.get('group')!r}"

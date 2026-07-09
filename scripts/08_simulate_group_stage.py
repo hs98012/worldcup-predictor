@@ -8,12 +8,15 @@ from utils.worldcup_simulation import (
     apply_match_result,
     build_initial_group_state,
     completed_fixture_keys,
+    excluded_group_match_label,
+    is_valid_group_match,
     is_completed_prediction,
     load_completed_results,
 )
 
 INPUT_PATH = Path("data/processed/predictions_adjusted.json")
 OUTPUT_PATH = Path("data/processed/group_simulation.json")
+ACTUAL_STANDINGS_PATH = Path("data/processed/worldcup_group_standings.json")
 
 SIMULATION_COUNT = 10000
 RANDOM_SEED = 42
@@ -114,6 +117,82 @@ def sort_standings(standings):
     )
 
 
+def load_json(path):
+    if not path.exists():
+        raise FileNotFoundError(f"필수 입력 파일을 찾을 수 없습니다: {path}")
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError as error:
+        raise ValueError(
+            f"JSON 파일을 읽을 수 없습니다: {path} "
+            f"(line {error.lineno}, column {error.colno})"
+        ) from error
+
+
+def log_excluded_group_matches(excluded_matches):
+    if not excluded_matches:
+        return
+
+    print("조별리그 시뮬레이션에서 제외된 경기:")
+    for match in excluded_matches:
+        print(excluded_group_match_label(match))
+
+
+def create_final_group_simulation(actual_standings):
+    third_place_teams = [
+        group_data["teams"][2]
+        for group_data in actual_standings
+        if len(group_data.get("teams", [])) >= 3
+    ]
+    best_third_teams = sorted(
+        third_place_teams,
+        key=lambda team: (
+            team["points"],
+            team["goalDifference"],
+            team["goalsFor"],
+            team["wins"],
+        ),
+        reverse=True,
+    )[:8]
+    best_third_team_names = {team["team"] for team in best_third_teams}
+
+    output = []
+    for group_data in actual_standings:
+        teams = []
+        for team in group_data["teams"]:
+            rank = team["rank"]
+            is_direct = rank <= 2
+            is_best_third = rank == 3 and team["team"] in best_third_team_names
+            teams.append(
+                {
+                    "displayTeam": team["team"],
+                    "team": team["team"],
+                    "group": group_data["group"],
+                    "rank1Prob": 1.0 if rank == 1 else 0.0,
+                    "rank2Prob": 1.0 if rank == 2 else 0.0,
+                    "rank3Prob": 1.0 if rank == 3 else 0.0,
+                    "rank4Prob": 1.0 if rank == 4 else 0.0,
+                    "directAdvanceProb": 1.0 if is_direct else 0.0,
+                    "thirdPlaceAdvanceProb": 1.0 if is_best_third else 0.0,
+                    "roundOf32Prob": 1.0 if is_direct or is_best_third else 0.0,
+                    "averageRank": float(rank),
+                }
+            )
+
+        output.append(
+            {
+                "group": group_data["group"],
+                "simulationCount": 0,
+                "remainingGroupMatches": 0,
+                "teams": teams,
+            }
+        )
+
+    return output
+
+
 def run_one_simulation(predictions_by_group, initial_groups):
     group_results = {}
     third_place_teams = []
@@ -157,8 +236,7 @@ def run_one_simulation(predictions_by_group, initial_groups):
 def main():
     random.seed(RANDOM_SEED)
 
-    with open(INPUT_PATH, "r", encoding="utf-8") as f:
-        predictions = json.load(f)
+    predictions = load_json(INPUT_PATH)
 
     completed_results = load_completed_results()
     completed_keys = completed_fixture_keys(completed_results)
@@ -175,11 +253,37 @@ def main():
     )
 
     predictions_by_group = defaultdict(list)
+    excluded_predictions = []
 
     for prediction in predictions:
         if is_completed_prediction(prediction, completed_keys):
             continue
+        if not is_valid_group_match(prediction, initial_groups):
+            excluded_predictions.append(prediction)
+            continue
         predictions_by_group[prediction["group"]].append(prediction)
+
+    log_excluded_group_matches(excluded_predictions)
+
+    remaining_group_matches = sum(
+        len(items) for items in predictions_by_group.values()
+    )
+
+    if remaining_group_matches == 0:
+        final_output = create_final_group_simulation(
+            load_json(ACTUAL_STANDINGS_PATH)
+        )
+
+        with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+            json.dump(final_output, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+
+        print(f"조별리그 시뮬레이션 완료: {OUTPUT_PATH}")
+        print("반복 횟수: 0")
+        print(f"초기 standings에 반영한 완료 경기 수: {applied_completed_count}")
+        print("시뮬레이션 대상 남은 조별리그 경기 수: 0")
+        print("확정 조별리그 순위를 기반으로 출력했습니다.")
+        return
 
     stats = defaultdict(
         lambda: {
@@ -281,7 +385,7 @@ def main():
     print(f"초기 standings에 반영한 완료 경기 수: {applied_completed_count}")
     print(
         "시뮬레이션 대상 남은 경기 수: "
-        f"{sum(len(items) for items in predictions_by_group.values())}"
+        f"{remaining_group_matches}"
     )
     print()
 
