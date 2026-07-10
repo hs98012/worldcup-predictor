@@ -1,7 +1,7 @@
 [
   {
     "matchId": 1,
-    "stage": "KNOCKOUT",
+    "stage": "QUARTER_FINAL",
     "group": null,
     "date": "2026-07-09",
     "teamA": "France",
@@ -25,7 +25,7 @@
   },
   {
     "matchId": 2,
-    "stage": "KNOCKOUT",
+    "stage": "QUARTER_FINAL",
     "group": null,
     "date": "2026-07-10",
     "teamA": "Spain",
@@ -49,7 +49,7 @@
   },
   {
     "matchId": 3,
-    "stage": "KNOCKOUT",
+    "stage": "QUARTER_FINAL",
     "group": null,
     "date": "2026-07-11",
     "teamA": "Norway",
@@ -73,7 +73,7 @@
   },
   {
     "matchId": 4,
-    "stage": "KNOCKOUT",
+    "stage": "QUARTER_FINAL",
     "group": null,
     "date": "2026-07-11",
     "teamA": "Argentina",
