@@ -1,9 +1,24 @@
 {
-  "evaluated_matches": 28,
-  "correct_predictions": 17,
-  "accuracy": 0.6071,
+  "evaluated_matches": 29,
+  "correct_predictions": 18,
+  "accuracy": 0.6207,
   "wrong_predictions": 11,
   "latest_evaluated_matches": [
+    {
+      "date": "2026-07-09",
+      "tournament": "FIFA World Cup",
+      "home_team": "France",
+      "away_team": "Morocco",
+      "home_score": 2,
+      "away_score": 0,
+      "predicted_result": "home_win",
+      "actual_result": "home_win",
+      "correct": true,
+      "predicted_probability": 0.4901,
+      "home_win_probability": 0.4901,
+      "draw_probability": 0.2331,
+      "away_win_probability": 0.2768
+    },
     {
       "date": "2026-06-27",
       "tournament": "FIFA World Cup",
@@ -138,28 +153,13 @@
       "home_win_probability": 0.33,
       "draw_probability": 0.2889,
       "away_win_probability": 0.3811
-    },
-    {
-      "date": "2026-06-26",
-      "tournament": "FIFA World Cup",
-      "home_team": "New Zealand",
-      "away_team": "Belgium",
-      "home_score": 1,
-      "away_score": 5,
-      "predicted_result": "away_win",
-      "actual_result": "away_win",
-      "correct": true,
-      "predicted_probability": 0.6113,
-      "home_win_probability": 0.1959,
-      "draw_probability": 0.1927,
-      "away_win_probability": 0.6113
     }
   ],
   "result_breakdown": {
     "home_win": {
-      "predictions": 14,
-      "correct_predictions": 8,
-      "accuracy": 0.5714
+      "predictions": 15,
+      "correct_predictions": 9,
+      "accuracy": 0.6
     },
     "draw": {
       "predictions": 0,
@@ -172,5 +172,5 @@
       "accuracy": 0.6429
     }
   },
-  "last_updated": "2026-07-10T03:28:21.167763Z"
+  "last_updated": "2026-07-11T02:46:13.238128Z"
 }

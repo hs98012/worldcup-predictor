@@ -3,30 +3,6 @@
     "matchId": 1,
     "stage": "QUARTER_FINAL",
     "group": null,
-    "date": "2026-07-09",
-    "teamA": "France",
-    "teamB": "Morocco",
-    "teamAElo": 1837.07,
-    "teamBElo": 1820.97,
-    "teamARecentForm": "W-W-W-W-W",
-    "teamBRecentForm": "D-W-W-D-W",
-    "teamAWinProb": 0.4205,
-    "drawProb": 0.2726,
-    "teamBWinProb": 0.3069,
-    "expectedGoalsA": 1.38,
-    "expectedGoalsB": 1.12,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "France의 Elo 점수가 더 높음",
-      "France의 최근 5경기 승점이 더 높음",
-      "France 최근 5경기: W-W-W-W-W",
-      "Morocco 최근 5경기: D-W-W-D-W"
-    ]
-  },
-  {
-    "matchId": 2,
-    "stage": "QUARTER_FINAL",
-    "group": null,
     "date": "2026-07-10",
     "teamA": "Spain",
     "teamB": "Belgium",
@@ -48,7 +24,7 @@
     ]
   },
   {
-    "matchId": 3,
+    "matchId": 2,
     "stage": "QUARTER_FINAL",
     "group": null,
     "date": "2026-07-11",
@@ -72,7 +48,7 @@
     ]
   },
   {
-    "matchId": 4,
+    "matchId": 3,
     "stage": "QUARTER_FINAL",
     "group": null,
     "date": "2026-07-11",

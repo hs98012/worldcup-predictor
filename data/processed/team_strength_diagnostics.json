@@ -1,50 +1,26 @@
 [
   {
-    "team": "Argentina",
-    "group": "J",
-    "elo": 1843.89,
-    "simulationStrength": 1863.89,
-    "strengthScore": 1863.89,
+    "team": "France",
+    "group": "I",
+    "elo": 1855.99,
+    "simulationStrength": 1875.99,
+    "strengthScore": 1875.99,
     "strengthRank": 2,
-    "winnerProb": 0.2358,
+    "winnerProb": 0.3288,
     "winnerProbRank": 1,
     "rankGap": 1,
     "recent_points5": 15,
-    "adjusted_points5": 13.625,
-    "avg_opponent_elo5": 1647.67,
-    "recent_goal_diff5": 9,
-    "adjusted_goal_diff5": 8.2538,
-    "recentFormContribution": 36.5,
-    "cappedRecentFormContribution": 20.0,
-    "scheduleStrengthPenalty": 0.0,
-    "groupStageDifficulty": 1624.28,
-    "expectedKnockoutPathDifficulty": 1703.85,
-    "pathDifficultyScore": 1676.0,
-    "medianPathDifficulty": 1719.22,
-    "note": "전력 및 경로 진단 범위 내"
-  },
-  {
-    "team": "France",
-    "group": "I",
-    "elo": 1837.07,
-    "simulationStrength": 1857.07,
-    "strengthScore": 1857.07,
-    "strengthRank": 3,
-    "winnerProb": 0.232,
-    "winnerProbRank": 2,
-    "rankGap": 1,
-    "recent_points5": 15,
-    "adjusted_points5": 13.6718,
-    "avg_opponent_elo5": 1644.48,
+    "adjusted_points5": 13.7187,
+    "avg_opponent_elo5": 1662.17,
     "recent_goal_diff5": 12,
-    "adjusted_goal_diff5": 10.9739,
-    "recentFormContribution": 36.6872,
+    "adjusted_goal_diff5": 11.0052,
+    "recentFormContribution": 36.8748,
     "cappedRecentFormContribution": 20.0,
     "scheduleStrengthPenalty": 0.0,
     "groupStageDifficulty": 1661.41,
-    "expectedKnockoutPathDifficulty": 1707.25,
-    "pathDifficultyScore": 1691.2,
-    "medianPathDifficulty": 1719.22,
+    "expectedKnockoutPathDifficulty": 1715.05,
+    "pathDifficultyScore": 1696.27,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -54,9 +30,9 @@
     "simulationStrength": 1881.6,
     "strengthScore": 1881.6,
     "strengthRank": 1,
-    "winnerProb": 0.2048,
-    "winnerProbRank": 3,
-    "rankGap": -2,
+    "winnerProb": 0.225,
+    "winnerProbRank": 2,
+    "rankGap": -1,
     "recent_points5": 13,
     "adjusted_points5": 11.7335,
     "avg_opponent_elo5": 1641.95,
@@ -66,9 +42,33 @@
     "cappedRecentFormContribution": 20.0,
     "scheduleStrengthPenalty": 0.0,
     "groupStageDifficulty": 1581.85,
-    "expectedKnockoutPathDifficulty": 1748.49,
-    "pathDifficultyScore": 1690.17,
-    "medianPathDifficulty": 1719.22,
+    "expectedKnockoutPathDifficulty": 1755.08,
+    "pathDifficultyScore": 1694.45,
+    "medianPathDifficulty": 1718.83,
+    "note": "전력 및 경로 진단 범위 내"
+  },
+  {
+    "team": "Argentina",
+    "group": "J",
+    "elo": 1843.89,
+    "simulationStrength": 1863.89,
+    "strengthScore": 1863.89,
+    "strengthRank": 3,
+    "winnerProb": 0.1937,
+    "winnerProbRank": 3,
+    "rankGap": 0,
+    "recent_points5": 15,
+    "adjusted_points5": 13.625,
+    "avg_opponent_elo5": 1647.67,
+    "recent_goal_diff5": 9,
+    "adjusted_goal_diff5": 8.2538,
+    "recentFormContribution": 36.5,
+    "cappedRecentFormContribution": 20.0,
+    "scheduleStrengthPenalty": 0.0,
+    "groupStageDifficulty": 1624.28,
+    "expectedKnockoutPathDifficulty": 1703.6,
+    "pathDifficultyScore": 1675.84,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -77,10 +77,10 @@
     "elo": 1814.27,
     "simulationStrength": 1834.27,
     "strengthScore": 1834.27,
-    "strengthRank": 5,
-    "winnerProb": 0.1556,
+    "strengthRank": 4,
+    "winnerProb": 0.1525,
     "winnerProbRank": 4,
-    "rankGap": 1,
+    "rankGap": 0,
     "recent_points5": 13,
     "adjusted_points5": 12.1564,
     "avg_opponent_elo5": 1656.85,
@@ -90,33 +90,9 @@
     "cappedRecentFormContribution": 20.0,
     "scheduleStrengthPenalty": 0.0,
     "groupStageDifficulty": 1606.81,
-    "expectedKnockoutPathDifficulty": 1743.75,
-    "pathDifficultyScore": 1695.82,
-    "medianPathDifficulty": 1719.22,
-    "note": "전력 및 경로 진단 범위 내"
-  },
-  {
-    "team": "Morocco",
-    "group": "C",
-    "elo": 1820.97,
-    "simulationStrength": 1839.02,
-    "strengthScore": 1839.02,
-    "strengthRank": 4,
-    "winnerProb": 0.0586,
-    "winnerProbRank": 5,
-    "rankGap": -1,
-    "recent_points5": 11,
-    "adjusted_points5": 9.9893,
-    "avg_opponent_elo5": 1666.34,
-    "recent_goal_diff5": 6,
-    "adjusted_goal_diff5": 5.3908,
-    "recentFormContribution": 18.0434,
-    "cappedRecentFormContribution": 18.0434,
-    "scheduleStrengthPenalty": 0.0,
-    "groupStageDifficulty": 1633.23,
-    "expectedKnockoutPathDifficulty": 1774.03,
-    "pathDifficultyScore": 1724.75,
-    "medianPathDifficulty": 1719.22,
+    "expectedKnockoutPathDifficulty": 1744.44,
+    "pathDifficultyScore": 1696.27,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -126,9 +102,9 @@
     "simulationStrength": 1764.23,
     "strengthScore": 1764.23,
     "strengthRank": 9,
-    "winnerProb": 0.0569,
-    "winnerProbRank": 6,
-    "rankGap": 3,
+    "winnerProb": 0.0391,
+    "winnerProbRank": 5,
+    "rankGap": 4,
     "recent_points5": 11,
     "adjusted_points5": 10.7958,
     "avg_opponent_elo5": 1679.47,
@@ -138,9 +114,9 @@
     "cappedRecentFormContribution": 20.0,
     "scheduleStrengthPenalty": 0.0,
     "groupStageDifficulty": 1648.56,
-    "expectedKnockoutPathDifficulty": 1764.85,
-    "pathDifficultyScore": 1724.15,
-    "medianPathDifficulty": 1719.22,
+    "expectedKnockoutPathDifficulty": 1763.73,
+    "pathDifficultyScore": 1723.42,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -150,9 +126,9 @@
     "simulationStrength": 1739.41,
     "strengthScore": 1739.41,
     "strengthRank": 14,
-    "winnerProb": 0.0364,
-    "winnerProbRank": 7,
-    "rankGap": 7,
+    "winnerProb": 0.0389,
+    "winnerProbRank": 6,
+    "rankGap": 8,
     "recent_points5": 12,
     "adjusted_points5": 12.2249,
     "avg_opponent_elo5": 1728.07,
@@ -161,10 +137,10 @@
     "recentFormContribution": 23.1813,
     "cappedRecentFormContribution": 20.0,
     "scheduleStrengthPenalty": 0.0,
-    "groupStageDifficulty": 1700.63,
-    "expectedKnockoutPathDifficulty": 1777.36,
-    "pathDifficultyScore": 1750.5,
-    "medianPathDifficulty": 1719.22,
+    "groupStageDifficulty": 1706.93,
+    "expectedKnockoutPathDifficulty": 1778.69,
+    "pathDifficultyScore": 1753.57,
+    "medianPathDifficulty": 1718.83,
     "note": "우승 확률 순위가 전력 순위보다 크게 높음"
   },
   {
@@ -174,9 +150,9 @@
     "simulationStrength": 1730.24,
     "strengthScore": 1730.24,
     "strengthRank": 15,
-    "winnerProb": 0.0199,
-    "winnerProbRank": 8,
-    "rankGap": 7,
+    "winnerProb": 0.022,
+    "winnerProbRank": 7,
+    "rankGap": 8,
     "recent_points5": 11,
     "adjusted_points5": 10.725,
     "avg_opponent_elo5": 1637.59,
@@ -186,10 +162,34 @@
     "cappedRecentFormContribution": 20.0,
     "scheduleStrengthPenalty": 0.0,
     "groupStageDifficulty": 1554.88,
-    "expectedKnockoutPathDifficulty": 1767.54,
-    "pathDifficultyScore": 1693.11,
-    "medianPathDifficulty": 1719.22,
+    "expectedKnockoutPathDifficulty": 1768.03,
+    "pathDifficultyScore": 1693.42,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 순위 대비 유리한 대진 경로 가능성; 우승 확률 순위가 전력 순위보다 크게 높음"
+  },
+  {
+    "team": "Morocco",
+    "group": "C",
+    "elo": 1802.06,
+    "simulationStrength": 1813.19,
+    "strengthScore": 1813.19,
+    "strengthRank": 5,
+    "winnerProb": 0.0,
+    "winnerProbRank": 8,
+    "rankGap": -3,
+    "recent_points5": 10,
+    "adjusted_points5": 9.02,
+    "avg_opponent_elo5": 1685.68,
+    "recent_goal_diff5": 4,
+    "adjusted_goal_diff5": 3.3731,
+    "recentFormContribution": 11.1396,
+    "cappedRecentFormContribution": 11.1396,
+    "scheduleStrengthPenalty": 0.0,
+    "groupStageDifficulty": 1633.23,
+    "expectedKnockoutPathDifficulty": 1771.92,
+    "pathDifficultyScore": 1723.38,
+    "medianPathDifficulty": 1718.83,
+    "note": "전력 및 경로 진단 범위 내"
   },
   {
     "team": "South Africa",
@@ -212,7 +212,7 @@
     "groupStageDifficulty": 1677.65,
     "expectedKnockoutPathDifficulty": 1655.39,
     "pathDifficultyScore": 1663.18,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 순위 대비 유리한 대진 경로 가능성; 우승 확률 순위가 전력 순위보다 크게 높음"
   },
   {
@@ -234,9 +234,9 @@
     "cappedRecentFormContribution": 0.5771,
     "scheduleStrengthPenalty": 0.0,
     "groupStageDifficulty": 1579.83,
-    "expectedKnockoutPathDifficulty": 1720.9,
-    "pathDifficultyScore": 1671.53,
-    "medianPathDifficulty": 1719.22,
+    "expectedKnockoutPathDifficulty": 1707.99,
+    "pathDifficultyScore": 1663.13,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 순위 대비 유리한 대진 경로 가능성; 우승 확률 순위가 전력 순위보다 크게 높음"
   },
   {
@@ -260,7 +260,7 @@
     "groupStageDifficulty": 1603.87,
     "expectedKnockoutPathDifficulty": 1556.48,
     "pathDifficultyScore": 1573.07,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -282,9 +282,9 @@
     "cappedRecentFormContribution": -13.4103,
     "scheduleStrengthPenalty": 0.0,
     "groupStageDifficulty": 1674.55,
-    "expectedKnockoutPathDifficulty": 1805.3,
-    "pathDifficultyScore": 1759.54,
-    "medianPathDifficulty": 1719.22,
+    "expectedKnockoutPathDifficulty": 1814.76,
+    "pathDifficultyScore": 1765.69,
+    "medianPathDifficulty": 1718.83,
     "note": "우승 확률 순위가 전력 순위보다 크게 높음"
   },
   {
@@ -306,9 +306,9 @@
     "cappedRecentFormContribution": 20.0,
     "scheduleStrengthPenalty": 0.0,
     "groupStageDifficulty": 1628.02,
-    "expectedKnockoutPathDifficulty": 1839.02,
-    "pathDifficultyScore": 1765.17,
-    "medianPathDifficulty": 1719.22,
+    "expectedKnockoutPathDifficulty": 1813.19,
+    "pathDifficultyScore": 1748.38,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -329,10 +329,10 @@
     "recentFormContribution": 16.0008,
     "cappedRecentFormContribution": 16.0008,
     "scheduleStrengthPenalty": 0.0,
-    "groupStageDifficulty": 1653.12,
+    "groupStageDifficulty": 1644.51,
     "expectedKnockoutPathDifficulty": 1744.17,
-    "pathDifficultyScore": 1712.3,
-    "medianPathDifficulty": 1719.22,
+    "pathDifficultyScore": 1709.28,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -356,7 +356,7 @@
     "groupStageDifficulty": 1639.85,
     "expectedKnockoutPathDifficulty": 1779.37,
     "pathDifficultyScore": 1730.54,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -378,9 +378,9 @@
     "cappedRecentFormContribution": -14.6735,
     "scheduleStrengthPenalty": 0.0,
     "groupStageDifficulty": 1695.7,
-    "expectedKnockoutPathDifficulty": 1857.07,
-    "pathDifficultyScore": 1800.59,
-    "medianPathDifficulty": 1719.22,
+    "expectedKnockoutPathDifficulty": 1875.99,
+    "pathDifficultyScore": 1812.89,
+    "medianPathDifficulty": 1718.83,
     "note": "우승 확률 순위가 전력 순위보다 크게 높음"
   },
   {
@@ -404,7 +404,7 @@
     "groupStageDifficulty": 1624.51,
     "expectedKnockoutPathDifficulty": 1739.41,
     "pathDifficultyScore": 1699.2,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -428,7 +428,7 @@
     "groupStageDifficulty": 1617.79,
     "expectedKnockoutPathDifficulty": 1725.71,
     "pathDifficultyScore": 1687.94,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -452,7 +452,7 @@
     "groupStageDifficulty": 1649.34,
     "expectedKnockoutPathDifficulty": 1782.36,
     "pathDifficultyScore": 1735.8,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "우승 확률 순위가 전력 순위보다 크게 높음"
   },
   {
@@ -476,7 +476,7 @@
     "groupStageDifficulty": 1695.98,
     "expectedKnockoutPathDifficulty": 1834.27,
     "pathDifficultyScore": 1785.87,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "우승 확률 순위가 전력 순위보다 크게 높음"
   },
   {
@@ -500,7 +500,7 @@
     "groupStageDifficulty": 1629.67,
     "expectedKnockoutPathDifficulty": 1630.01,
     "pathDifficultyScore": 1629.89,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -524,7 +524,7 @@
     "groupStageDifficulty": 1633.03,
     "expectedKnockoutPathDifficulty": 1691.12,
     "pathDifficultyScore": 1670.79,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 순위 대비 유리한 대진 경로 가능성; 우승 확률 순위가 전력 순위보다 크게 높음"
   },
   {
@@ -545,10 +545,10 @@
     "recentFormContribution": -13.9314,
     "cappedRecentFormContribution": -13.9314,
     "scheduleStrengthPenalty": 0.0,
-    "groupStageDifficulty": 1719.36,
+    "groupStageDifficulty": 1725.67,
     "expectedKnockoutPathDifficulty": 1764.23,
-    "pathDifficultyScore": 1748.53,
-    "medianPathDifficulty": 1719.22,
+    "pathDifficultyScore": 1750.73,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -572,7 +572,7 @@
     "groupStageDifficulty": 1644.47,
     "expectedKnockoutPathDifficulty": 1784.54,
     "pathDifficultyScore": 1735.51,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -596,7 +596,7 @@
     "groupStageDifficulty": 1655.74,
     "expectedKnockoutPathDifficulty": 1761.33,
     "pathDifficultyScore": 1724.37,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -620,7 +620,7 @@
     "groupStageDifficulty": 1704.19,
     "expectedKnockoutPathDifficulty": 1881.6,
     "pathDifficultyScore": 1819.51,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -644,7 +644,7 @@
     "groupStageDifficulty": 1684.64,
     "expectedKnockoutPathDifficulty": 1730.24,
     "pathDifficultyScore": 1714.28,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -668,7 +668,7 @@
     "groupStageDifficulty": 1692.45,
     "expectedKnockoutPathDifficulty": 1863.89,
     "pathDifficultyScore": 1803.88,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -692,7 +692,7 @@
     "groupStageDifficulty": 1650.97,
     "expectedKnockoutPathDifficulty": 1644.02,
     "pathDifficultyScore": 1646.45,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -716,7 +716,7 @@
     "groupStageDifficulty": 1698.96,
     "expectedKnockoutPathDifficulty": 1741.84,
     "pathDifficultyScore": 1726.83,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -740,7 +740,7 @@
     "groupStageDifficulty": 1630.87,
     "expectedKnockoutPathDifficulty": 1683.81,
     "pathDifficultyScore": 1665.28,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   },
   {
@@ -764,7 +764,7 @@
     "groupStageDifficulty": 1675.37,
     "expectedKnockoutPathDifficulty": 1775.71,
     "pathDifficultyScore": 1740.59,
-    "medianPathDifficulty": 1719.22,
+    "medianPathDifficulty": 1718.83,
     "note": "전력 및 경로 진단 범위 내"
   }
 ]

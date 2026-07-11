@@ -418,5 +418,20 @@
     "home_win_probability": 0.1999,
     "draw_probability": 0.1712,
     "away_win_probability": 0.6289
+  },
+  {
+    "date": "2026-07-09",
+    "tournament": "FIFA World Cup",
+    "home_team": "France",
+    "away_team": "Morocco",
+    "home_score": 2,
+    "away_score": 0,
+    "predicted_result": "home_win",
+    "actual_result": "home_win",
+    "correct": true,
+    "predicted_probability": 0.4901,
+    "home_win_probability": 0.4901,
+    "draw_probability": 0.2331,
+    "away_win_probability": 0.2768
   }
 ]
