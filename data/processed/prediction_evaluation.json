@@ -433,5 +433,20 @@
     "home_win_probability": 0.4901,
     "draw_probability": 0.2331,
     "away_win_probability": 0.2768
+  },
+  {
+    "date": "2026-07-10",
+    "tournament": "FIFA World Cup",
+    "home_team": "Spain",
+    "away_team": "Belgium",
+    "home_score": 2,
+    "away_score": 1,
+    "predicted_result": "home_win",
+    "actual_result": "home_win",
+    "correct": true,
+    "predicted_probability": 0.4185,
+    "home_win_probability": 0.4185,
+    "draw_probability": 0.2693,
+    "away_win_probability": 0.3122
   }
 ]

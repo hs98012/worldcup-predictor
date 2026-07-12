@@ -3,30 +3,6 @@
     "matchId": 1,
     "stage": "QUARTER_FINAL",
     "group": null,
-    "date": "2026-07-10",
-    "teamA": "Spain",
-    "teamB": "Belgium",
-    "teamAElo": 1861.6,
-    "teamBElo": 1744.23,
-    "teamARecentForm": "D-W-W-W-W",
-    "teamBRecentForm": "D-D-W-W-W",
-    "teamAWinProb": 0.5302,
-    "drawProb": 0.2303,
-    "teamBWinProb": 0.2396,
-    "expectedGoalsA": 1.41,
-    "expectedGoalsB": 1.09,
-    "confidence": "MEDIUM",
-    "reasons": [
-      "Spain의 Elo 점수가 더 높음",
-      "Spain의 최근 5경기 승점이 더 높음",
-      "Spain 최근 5경기: D-W-W-W-W",
-      "Belgium 최근 5경기: D-D-W-W-W"
-    ]
-  },
-  {
-    "matchId": 2,
-    "stage": "QUARTER_FINAL",
-    "group": null,
     "date": "2026-07-11",
     "teamA": "Norway",
     "teamB": "England",
@@ -48,7 +24,7 @@
     ]
   },
   {
-    "matchId": 3,
+    "matchId": 2,
     "stage": "QUARTER_FINAL",
     "group": null,
     "date": "2026-07-11",

@@ -3,16 +3,6 @@
     "matchId": 1,
     "stage": "QUARTER_FINAL",
     "group": null,
-    "date": "2026-07-10",
-    "displayTeamA": "Spain",
-    "displayTeamB": "Belgium",
-    "teamA": "Spain",
-    "teamB": "Belgium"
-  },
-  {
-    "matchId": 2,
-    "stage": "QUARTER_FINAL",
-    "group": null,
     "date": "2026-07-11",
     "displayTeamA": "Norway",
     "displayTeamB": "England",
@@ -20,7 +10,7 @@
     "teamB": "England"
   },
   {
-    "matchId": 3,
+    "matchId": 2,
     "stage": "QUARTER_FINAL",
     "group": null,
     "date": "2026-07-11",
