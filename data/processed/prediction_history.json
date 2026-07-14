@@ -382,5 +382,53 @@
     "away_win_probability": 0.1751,
     "predicted_probability": 0.6224,
     "archived_at": "2026-07-09T11:31:34.436228Z"
+  },
+  {
+    "date": "2026-07-14",
+    "tournament": "FIFA World Cup",
+    "home_team": "France",
+    "away_team": "Spain",
+    "predicted_result": "draw",
+    "home_win_probability": 0.2902,
+    "draw_probability": 0.3704,
+    "away_win_probability": 0.3394,
+    "predicted_probability": 0.3704,
+    "archived_at": "2026-07-14T02:36:32.634079Z"
+  },
+  {
+    "date": "2026-07-15",
+    "tournament": "FIFA World Cup",
+    "home_team": "England",
+    "away_team": "Argentina",
+    "predicted_result": "away_win",
+    "home_win_probability": 0.2955,
+    "draw_probability": 0.2649,
+    "away_win_probability": 0.4396,
+    "predicted_probability": 0.4396,
+    "archived_at": "2026-07-14T02:36:32.634079Z"
+  },
+  {
+    "date": "2026-07-18",
+    "tournament": "FIFA World Cup",
+    "home_team": NaN,
+    "away_team": NaN,
+    "predicted_result": "home_win",
+    "home_win_probability": 0.4328,
+    "draw_probability": 0.279,
+    "away_win_probability": 0.2882,
+    "predicted_probability": 0.4328,
+    "archived_at": "2026-07-14T02:36:32.634079Z"
+  },
+  {
+    "date": "2026-07-19",
+    "tournament": "FIFA World Cup",
+    "home_team": NaN,
+    "away_team": NaN,
+    "predicted_result": "home_win",
+    "home_win_probability": 0.4328,
+    "draw_probability": 0.279,
+    "away_win_probability": 0.2882,
+    "predicted_probability": 0.4328,
+    "archived_at": "2026-07-14T02:36:32.634079Z"
   }
 ]

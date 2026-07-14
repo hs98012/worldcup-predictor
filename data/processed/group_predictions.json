@@ -98,18 +98,18 @@
       },
       {
         "date": "2026-06-24",
-        "displayTeamA": "Mexico",
-        "displayTeamB": "Czech Republic",
-        "predictedScoreA": 3,
+        "displayTeamA": "South Africa",
+        "displayTeamB": "South Korea",
+        "predictedScoreA": 1,
         "predictedScoreB": 0,
         "predictedResult": "HOME_WIN",
         "isCompleted": true
       },
       {
         "date": "2026-06-24",
-        "displayTeamA": "South Africa",
-        "displayTeamB": "South Korea",
-        "predictedScoreA": 1,
+        "displayTeamA": "Mexico",
+        "displayTeamB": "Czech Republic",
+        "predictedScoreA": 3,
         "predictedScoreB": 0,
         "predictedResult": "HOME_WIN",
         "isCompleted": true

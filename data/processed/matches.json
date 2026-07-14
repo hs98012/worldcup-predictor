@@ -1,22 +1,42 @@
 [
   {
     "matchId": 1,
-    "stage": "QUARTER_FINAL",
+    "stage": "SEMI_FINAL",
     "group": null,
-    "date": "2026-07-11",
-    "displayTeamA": "Norway",
-    "displayTeamB": "England",
-    "teamA": "Norway",
-    "teamB": "England"
+    "date": "2026-07-14",
+    "displayTeamA": "France",
+    "displayTeamB": "Spain",
+    "teamA": "France",
+    "teamB": "Spain"
   },
   {
     "matchId": 2,
-    "stage": "QUARTER_FINAL",
+    "stage": "SEMI_FINAL",
     "group": null,
-    "date": "2026-07-11",
-    "displayTeamA": "Argentina",
-    "displayTeamB": "Switzerland",
-    "teamA": "Argentina",
-    "teamB": "Switzerland"
+    "date": "2026-07-15",
+    "displayTeamA": "England",
+    "displayTeamB": "Argentina",
+    "teamA": "England",
+    "teamB": "Argentina"
+  },
+  {
+    "matchId": 3,
+    "stage": "FINAL",
+    "group": null,
+    "date": "2026-07-18",
+    "displayTeamA": NaN,
+    "displayTeamB": NaN,
+    "teamA": "nan",
+    "teamB": "nan"
+  },
+  {
+    "matchId": 4,
+    "stage": "KNOCKOUT",
+    "group": null,
+    "date": "2026-07-19",
+    "displayTeamA": NaN,
+    "displayTeamB": NaN,
+    "teamA": "nan",
+    "teamB": "nan"
   }
 ]

@@ -1,3 +1,5 @@
 date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,normalized_home_team,normalized_away_team
-2026-07-11,Norway,England,,,FIFA World Cup,Miami Gardens,United States,True,Norway,England
-2026-07-11,Argentina,Switzerland,,,FIFA World Cup,Kansas City,United States,True,Argentina,Switzerland
+2026-07-14,France,Spain,,,FIFA World Cup,Arlington,United States,True,France,Spain
+2026-07-15,England,Argentina,,,FIFA World Cup,Atlanta,United States,True,England,Argentina
+2026-07-18,,,,,FIFA World Cup,Miami Gardens,United States,True,nan,nan
+2026-07-19,,,,,FIFA World Cup,East Rutherford,United States,True,nan,nan
