@@ -6,7 +6,7 @@
   "remainingTournamentMatches": 3,
   "remainingChampionshipMatches": 3,
   "remainingMatchesScope": "CHAMPIONSHIP_PATH",
-  "dataAsOf": "2026-07-14",
+  "dataAsOf": "2026-07-15",
   "lastCompletedMatchDate": "2026-07-11",
   "latestScheduledMatchDate": "2026-07-19",
   "modelSummary": {
@@ -108,7 +108,7 @@
       "remainingChampionshipMatches": 3,
       "remainingMatchesScope": "CHAMPIONSHIP_PATH",
       "simulationCount": 10000,
-      "dataAsOf": "2026-07-14",
+      "dataAsOf": "2026-07-15",
       "lastCompletedMatchDate": "2026-07-11",
       "latestScheduledMatchDate": "2026-07-19"
     },
@@ -135,7 +135,7 @@
       "remainingChampionshipMatches": 3,
       "remainingMatchesScope": "CHAMPIONSHIP_PATH",
       "simulationCount": 10000,
-      "dataAsOf": "2026-07-14",
+      "dataAsOf": "2026-07-15",
       "lastCompletedMatchDate": "2026-07-11",
       "latestScheduledMatchDate": "2026-07-19"
     },
@@ -162,7 +162,7 @@
       "remainingChampionshipMatches": 3,
       "remainingMatchesScope": "CHAMPIONSHIP_PATH",
       "simulationCount": 10000,
-      "dataAsOf": "2026-07-14",
+      "dataAsOf": "2026-07-15",
       "lastCompletedMatchDate": "2026-07-11",
       "latestScheduledMatchDate": "2026-07-19"
     },
@@ -189,7 +189,7 @@
       "remainingChampionshipMatches": 3,
       "remainingMatchesScope": "CHAMPIONSHIP_PATH",
       "simulationCount": 10000,
-      "dataAsOf": "2026-07-14",
+      "dataAsOf": "2026-07-15",
       "lastCompletedMatchDate": "2026-07-11",
       "latestScheduledMatchDate": "2026-07-19"
     }
