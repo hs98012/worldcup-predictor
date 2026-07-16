@@ -1,9 +1,39 @@
 {
-  "evaluated_matches": 32,
-  "correct_predictions": 21,
-  "accuracy": 0.6562,
-  "wrong_predictions": 11,
+  "evaluated_matches": 34,
+  "correct_predictions": 22,
+  "accuracy": 0.6471,
+  "wrong_predictions": 12,
   "latest_evaluated_matches": [
+    {
+      "date": "2026-07-15",
+      "tournament": "FIFA World Cup",
+      "home_team": "England",
+      "away_team": "Argentina",
+      "home_score": 1,
+      "away_score": 2,
+      "predicted_result": "away_win",
+      "actual_result": "away_win",
+      "correct": true,
+      "predicted_probability": 0.4396,
+      "home_win_probability": 0.2955,
+      "draw_probability": 0.2649,
+      "away_win_probability": 0.4396
+    },
+    {
+      "date": "2026-07-14",
+      "tournament": "FIFA World Cup",
+      "home_team": "France",
+      "away_team": "Spain",
+      "home_score": 0,
+      "away_score": 2,
+      "predicted_result": "draw",
+      "actual_result": "away_win",
+      "correct": false,
+      "predicted_probability": 0.3704,
+      "home_win_probability": 0.2902,
+      "draw_probability": 0.3704,
+      "away_win_probability": 0.3394
+    },
     {
       "date": "2026-07-11",
       "tournament": "FIFA World Cup",
@@ -123,36 +153,6 @@
       "home_win_probability": 0.6576,
       "draw_probability": 0.2375,
       "away_win_probability": 0.105
-    },
-    {
-      "date": "2026-06-27",
-      "tournament": "FIFA World Cup",
-      "home_team": "Colombia",
-      "away_team": "Portugal",
-      "home_score": 0,
-      "away_score": 0,
-      "predicted_result": "away_win",
-      "actual_result": "draw",
-      "correct": false,
-      "predicted_probability": 0.4131,
-      "home_win_probability": 0.3259,
-      "draw_probability": 0.261,
-      "away_win_probability": 0.4131
-    },
-    {
-      "date": "2026-06-27",
-      "tournament": "FIFA World Cup",
-      "home_team": "Algeria",
-      "away_team": "Austria",
-      "home_score": 3,
-      "away_score": 3,
-      "predicted_result": "home_win",
-      "actual_result": "draw",
-      "correct": false,
-      "predicted_probability": 0.5123,
-      "home_win_probability": 0.5123,
-      "draw_probability": 0.2075,
-      "away_win_probability": 0.2802
     }
   ],
   "result_breakdown": {
@@ -162,15 +162,15 @@
       "accuracy": 0.6471
     },
     "draw": {
-      "predictions": 0,
+      "predictions": 1,
       "correct_predictions": 0,
       "accuracy": 0.0
     },
     "away_win": {
-      "predictions": 15,
-      "correct_predictions": 10,
-      "accuracy": 0.6667
+      "predictions": 16,
+      "correct_predictions": 11,
+      "accuracy": 0.6875
     }
   },
-  "last_updated": "2026-07-15T02:35:53.940390Z"
+  "last_updated": "2026-07-16T02:43:16.377784Z"
 }

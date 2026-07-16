@@ -29608,6 +29608,9 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2005-10-26,Mexico,Uruguay,3.0,1.0,Friendly,Guadalajara,Mexico,False,Mexico,Uruguay
 2005-10-27,Bahrain,Panama,5.0,0.0,Friendly,Riffa,Bahrain,False,Bahrain,Panama
 2005-10-30,Puerto Rico,Guadeloupe,1.0,3.0,Friendly,Bayamón,Puerto Rico,False,Puerto Rico,Guadeloupe
+2005-11-02,Northern Cyprus,Kosovo,1.0,0.0,KTFF 50th Anniversary Cup,North Nicosia,Northern Cyprus,False,Northern Cyprus,Kosovo
+2005-11-03,Sápmi,Kosovo,1.0,4.0,KTFF 50th Anniversary Cup,Girne,Northern Cyprus,True,Sápmi,Kosovo
+2005-11-04,Northern Cyprus,Sápmi,6.0,2.0,KTFF 50th Anniversary Cup,North Nicosia,Northern Cyprus,False,Northern Cyprus,Sápmi
 2005-11-06,Zanzibar,Tanzania,0.0,1.0,Friendly,Zanzibar City,Zanzibar,False,Zanzibar,Tanzania
 2005-11-09,France,Costa Rica,3.0,2.0,Friendly,Fort-de-France,Martinique,True,France,Costa Rica
 2005-11-09,Tajikistan,Afghanistan,4.0,0.0,Friendly,Dushanbe,Tajikistan,False,Tajikistan,Afghanistan
@@ -46111,7 +46114,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2023-06-17,Luxembourg,Liechtenstein,2.0,0.0,UEFA Euro qualification,Luxembourg,Luxembourg,False,Luxembourg,Liechtenstein
 2023-06-17,Iceland,Slovakia,1.0,2.0,UEFA Euro qualification,Reykjavík,Iceland,False,Iceland,Slovakia
 2023-06-17,Portugal,Bosnia and Herzegovina,3.0,0.0,UEFA Euro qualification,Lisbon,Portugal,False,Portugal,Bosnia and Herzegovina
-2023-06-17,Ticino,Raetia,1.0,8.0,CONIFA World Football Cup qualification,Tenero-Contra,Switzerland,False,Ticino,Raetia
+2023-06-17,Canton Ticino,Raetia,1.0,8.0,CONIFA World Football Cup qualification,Tenero-Contra,Switzerland,False,Canton Ticino,Raetia
 2023-06-17,Turkmenistan,Oman,0.0,2.0,CAFA Nations Cup,Tashkent,Uzbekistan,True,Turkmenistan,Oman
 2023-06-17,Uzbekistan,Tajikistan,5.0,1.0,CAFA Nations Cup,Tashkent,Uzbekistan,False,Uzbekistan,Tajikistan
 2023-06-17,Djibouti,Pakistan,3.0,1.0,Mauritius Four Nations Cup,Saint Pierre,Mauritius,True,Djibouti,Pakistan
@@ -46294,7 +46297,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2023-08-04,Tamil Eelam,Hmong,3.0,0.0,CONIFA Asia Cup,Alcochete,Portugal,True,Tamil Eelam,Hmong
 2023-08-05,Hmong,Tibet,5.0,4.0,CONIFA Asia Cup,Alcochete,Portugal,True,Hmong,Tibet
 2023-08-06,Tibet,Tamil Eelam,1.0,3.0,CONIFA Asia Cup,Alcochete,Portugal,True,Tibet,Tamil Eelam
-2023-08-06,Raetia,Ticino,5.0,1.0,Friendly,Domat/Ems,Switzerland,False,Raetia,Ticino
+2023-08-06,Raetia,Canton Ticino,5.0,1.0,Friendly,Domat/Ems,Switzerland,False,Raetia,Canton Ticino
 2023-08-08,Tamil Eelam,Hmong,3.0,1.0,CONIFA Asia Cup,Alcochete,Portugal,True,Tamil Eelam,Hmong
 2023-08-24,Comoros,Mayotte,0.0,0.0,Indian Ocean Island Games,Antananarivo,Madagascar,True,Comoros,Mayotte
 2023-08-24,Madagascar,Seychelles,1.0,0.0,Indian Ocean Island Games,Antananarivo,Madagascar,False,Madagascar,Seychelles
@@ -49297,6 +49300,10 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-06-02,Haiti,New Zealand,4.0,0.0,Friendly,Fort Lauderdale,United States,True,Haiti,New Zealand
 2026-06-02,Morocco,Madagascar,4.0,0.0,Friendly,Rabat,Morocco,False,Morocco,Madagascar
 2026-06-02,Wales,Ghana,1.0,1.0,Friendly,Cardiff,Wales,False,Wales,Ghana
+2026-06-02,Padania,Raetia,4.0,1.0,CONIFA European Football Cup,Carate Brianza,Italy,False,Padania,Raetia
+2026-06-02,Rouet-Provence,Canton Ticino,0.0,1.0,CONIFA European Football Cup,Carate Brianza,Italy,True,Rouet-Provence,Canton Ticino
+2026-06-03,Padania,Greenland,3.0,1.0,CONIFA European Football Cup,Carate Brianza,Italy,False,Padania,Greenland
+2026-06-03,Canton Ticino,Northern Cyprus,1.0,5.0,CONIFA European Football Cup,Carate Brianza,Italy,True,Canton Ticino,Northern Cyprus
 2026-06-03,Albania,Israel,0.0,1.0,Friendly,Tirana,Albania,False,Albania,Israel
 2026-06-03,DR Congo,Denmark,0.0,0.0,Friendly,Liège,Belgium,True,DR Congo,Denmark
 2026-06-03,Gibraltar,British Virgin Islands,4.0,0.0,Friendly,Europa Point,Gibraltar,False,Gibraltar,British Virgin Islands
@@ -49306,7 +49313,9 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-06-03,Panama,Dominican Republic,4.0,2.0,Friendly,Panama City,Panama,False,Panama,Dominican Republic
 2026-06-03,Poland,Nigeria,2.0,2.0,Friendly,Warsaw,Poland,False,Poland,Nigeria
 2026-06-03,Philippines,Guam,5.0,1.0,Friendly,Manila,Philippines,False,Philippines,Guam
-2026-06-01,Maldives,Pakistan,0.0,3.0,Diamond Jubilee International Football Tournament,Malé,Maldives,False,Maldives,Pakistan
+2026-06-04,Raetia,Greenland,1.0,4.0,CONIFA European Football Cup,Carate Brianza,Italy,True,Raetia,Greenland
+2026-06-04,Rouet-Provence,Northern Cyprus,0.0,4.0,CONIFA European Football Cup,Carate Brianza,Italy,True,Rouet-Provence,Northern Cyprus
+2026-06-04,Maldives,Pakistan,0.0,3.0,Diamond Jubilee International Football Tournament,Malé,Maldives,False,Maldives,Pakistan
 2026-06-04,Andorra,Liechtenstein,2.0,0.0,Friendly,Encamp,Andorra,False,Andorra,Liechtenstein
 2026-06-04,Cambodia,Bhutan,4.0,0.0,Friendly,Phnom Penh,Cambodia,False,Cambodia,Bhutan
 2026-06-04,France,Ivory Coast,1.0,2.0,Friendly,Nantes,France,False,France,Ivory Coast
@@ -49338,6 +49347,9 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-06-05,Benin,Niger,1.0,1.0,Friendly,Casablanca,Morocco,True,Benin,Niger
 2026-06-05,Central African Republic,Togo,1.0,1.0,Friendly,Mohammedia,Morocco,True,Central African Republic,Togo
 2026-06-05,Puerto Rico,Saudi Arabia,0.0,3.0,Friendly,Austin,United States,True,Puerto Rico,Saudi Arabia
+2026-06-06,Raetia,Rouet-Provence,3.0,3.0,CONIFA European Football Cup,Carate Brianza,Italy,True,Raetia,Rouet-Provence
+2026-06-06,Greenland,Canton Ticino,3.0,2.0,CONIFA European Football Cup,Carate Brianza,Italy,True,Greenland,Canton Ticino
+2026-06-06,Padania,Northern Cyprus,1.0,6.0,CONIFA European Football Cup,Carate Brianza,Italy,False,Padania,Northern Cyprus
 2026-06-06,Vanuatu,Fiji,2.0,1.0,Friendly,Port Vila,Vanuatu,False,Vanuatu,Fiji
 2026-06-06,Albania,Luxembourg,0.0,1.0,Friendly,Tirana,Albania,False,Albania,Luxembourg
 2026-06-06,Argentina,Honduras,2.0,0.0,Friendly,College Station,United States,True,Argentina,Honduras
@@ -49351,7 +49363,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-06-06,England,New Zealand,1.0,0.0,Friendly,Tampa,United States,True,England,New Zealand
 2026-06-06,Sierra Leone,Liberia,1.0,0.0,Friendly,Bo,Sierra Leone,False,Sierra Leone,Liberia
 2026-06-06,Ethiopia,Malawi,1.0,0.0,Friendly,Dire Dawa,Ethiopia,False,Ethiopia,Malawi
-2026-06-06,Gibraltar,Cayman Islands,4.0,1.0,Friendly,Gibraltar,Gibraltar,False,Gibraltar,Cayman Islands
 2026-06-06,Jamaica,South Africa,0.0,1.0,Friendly,Pachuca,Mexico,True,Jamaica,South Africa
 2026-06-06,Kyrgyzstan,Palestine,0.0,0.0,Friendly,Bishkek,Kyrgyzstan,False,Kyrgyzstan,Palestine
 2026-06-06,Panama,Bosnia and Herzegovina,1.0,1.0,Friendly,St. Louis,United States,True,Panama,Bosnia and Herzegovina
@@ -49504,3 +49515,5 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-07-10,Spain,Belgium,2.0,1.0,FIFA World Cup,Inglewood,United States,True,Spain,Belgium
 2026-07-11,Norway,England,1.0,2.0,FIFA World Cup,Miami Gardens,United States,True,Norway,England
 2026-07-11,Argentina,Switzerland,3.0,1.0,FIFA World Cup,Kansas City,United States,True,Argentina,Switzerland
+2026-07-14,France,Spain,0.0,2.0,FIFA World Cup,Arlington,United States,True,France,Spain
+2026-07-15,England,Argentina,1.0,2.0,FIFA World Cup,Atlanta,United States,True,England,Argentina

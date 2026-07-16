@@ -1,42 +1,22 @@
 [
   {
     "matchId": 1,
-    "stage": "SEMI_FINAL",
-    "group": null,
-    "date": "2026-07-14",
-    "displayTeamA": "France",
-    "displayTeamB": "Spain",
-    "teamA": "France",
-    "teamB": "Spain"
-  },
-  {
-    "matchId": 2,
-    "stage": "SEMI_FINAL",
-    "group": null,
-    "date": "2026-07-15",
-    "displayTeamA": "England",
-    "displayTeamB": "Argentina",
-    "teamA": "England",
-    "teamB": "Argentina"
-  },
-  {
-    "matchId": 3,
     "stage": "FINAL",
     "group": null,
     "date": "2026-07-18",
-    "displayTeamA": NaN,
-    "displayTeamB": NaN,
-    "teamA": "nan",
-    "teamB": "nan"
+    "displayTeamA": "France",
+    "displayTeamB": "England",
+    "teamA": "France",
+    "teamB": "England"
   },
   {
-    "matchId": 4,
+    "matchId": 2,
     "stage": "KNOCKOUT",
     "group": null,
     "date": "2026-07-19",
-    "displayTeamA": NaN,
-    "displayTeamB": NaN,
-    "teamA": "nan",
-    "teamB": "nan"
+    "displayTeamA": "Spain",
+    "displayTeamB": "Argentina",
+    "teamA": "Spain",
+    "teamB": "Argentina"
   }
 ]
