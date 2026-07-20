@@ -80,20 +80,20 @@
       },
       {
         "date": "2026-06-18",
-        "displayTeamA": "Mexico",
-        "displayTeamB": "South Korea",
-        "predictedScoreA": 1,
-        "predictedScoreB": 0,
-        "predictedResult": "HOME_WIN",
-        "isCompleted": true
-      },
-      {
-        "date": "2026-06-18",
         "displayTeamA": "Czech Republic",
         "displayTeamB": "South Africa",
         "predictedScoreA": 1,
         "predictedScoreB": 1,
         "predictedResult": "DRAW",
+        "isCompleted": true
+      },
+      {
+        "date": "2026-06-18",
+        "displayTeamA": "Mexico",
+        "displayTeamB": "South Korea",
+        "predictedScoreA": 1,
+        "predictedScoreB": 0,
+        "predictedResult": "HOME_WIN",
         "isCompleted": true
       },
       {
@@ -334,20 +334,20 @@
       },
       {
         "date": "2026-06-24",
-        "displayTeamA": "Scotland",
-        "displayTeamB": "Brazil",
-        "predictedScoreA": 0,
-        "predictedScoreB": 3,
-        "predictedResult": "AWAY_WIN",
-        "isCompleted": true
-      },
-      {
-        "date": "2026-06-24",
         "displayTeamA": "Morocco",
         "displayTeamB": "Haiti",
         "predictedScoreA": 4,
         "predictedScoreB": 2,
         "predictedResult": "HOME_WIN",
+        "isCompleted": true
+      },
+      {
+        "date": "2026-06-24",
+        "displayTeamA": "Scotland",
+        "displayTeamB": "Brazil",
+        "predictedScoreA": 0,
+        "predictedScoreB": 3,
+        "predictedResult": "AWAY_WIN",
         "isCompleted": true
       }
     ],
@@ -788,20 +788,20 @@
       },
       {
         "date": "2026-06-21",
-        "displayTeamA": "Belgium",
-        "displayTeamB": "Iran",
-        "predictedScoreA": 0,
-        "predictedScoreB": 0,
-        "predictedResult": "DRAW",
-        "isCompleted": true
-      },
-      {
-        "date": "2026-06-21",
         "displayTeamA": "New Zealand",
         "displayTeamB": "Egypt",
         "predictedScoreA": 1,
         "predictedScoreB": 3,
         "predictedResult": "AWAY_WIN",
+        "isCompleted": true
+      },
+      {
+        "date": "2026-06-21",
+        "displayTeamA": "Belgium",
+        "displayTeamB": "Iran",
+        "predictedScoreA": 0,
+        "predictedScoreB": 0,
+        "predictedResult": "DRAW",
         "isCompleted": true
       },
       {
@@ -906,20 +906,20 @@
       },
       {
         "date": "2026-06-21",
-        "displayTeamA": "Uruguay",
-        "displayTeamB": "Cape Verde",
-        "predictedScoreA": 2,
-        "predictedScoreB": 2,
-        "predictedResult": "DRAW",
-        "isCompleted": true
-      },
-      {
-        "date": "2026-06-21",
         "displayTeamA": "Spain",
         "displayTeamB": "Saudi Arabia",
         "predictedScoreA": 4,
         "predictedScoreB": 0,
         "predictedResult": "HOME_WIN",
+        "isCompleted": true
+      },
+      {
+        "date": "2026-06-21",
+        "displayTeamA": "Uruguay",
+        "displayTeamB": "Cape Verde",
+        "predictedScoreA": 2,
+        "predictedScoreB": 2,
+        "predictedResult": "DRAW",
         "isCompleted": true
       },
       {

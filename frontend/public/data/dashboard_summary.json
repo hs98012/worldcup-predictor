@@ -1,88 +1,81 @@
 {
   "projectTitle": "2026 World Cup Predictor",
   "description": "국가대표 경기 데이터를 기반으로 경기별 승/무/패 확률과 월드컵 토너먼트 진출 확률을 시뮬레이션한 대시보드 데이터입니다.",
-  "simulationCount": 10000,
-  "currentTournamentStage": "FINAL",
-  "remainingTournamentMatches": 1,
-  "remainingChampionshipMatches": 1,
+  "simulationCount": 0,
+  "currentTournamentStage": "COMPLETED",
+  "remainingTournamentMatches": 0,
+  "remainingChampionshipMatches": 0,
   "remainingMatchesScope": "CHAMPIONSHIP_PATH",
-  "dataAsOf": "2026-07-19",
-  "lastCompletedMatchDate": "2026-07-15",
-  "latestScheduledMatchDate": "2026-07-19",
+  "dataAsOf": "2026-07-20",
+  "lastCompletedMatchDate": "2026-07-19",
+  "latestScheduledMatchDate": null,
   "modelSummary": {
     "modelName": "scikit-learn HistGradientBoostingClassifier_calibrated",
     "task": "A_WIN / DRAW / B_WIN multiclass classification",
-    "accuracy": 58.9,
-    "logLoss": 0.9175,
+    "accuracy": 58.96,
+    "logLoss": 0.9163,
     "testStartDate": "2021-09-07",
-    "testEndDate": "2026-07-15",
-    "trainSize": 20364,
+    "testEndDate": "2026-07-19",
+    "trainSize": 20366,
     "testSize": 5092,
-    "drawRecall": 0.0026,
-    "drawCalibrationEnabled": true,
-    "drawCalibrationLabel": "무승부 보정 적용",
+    "drawRecall": 0.0009,
+    "drawCalibrationEnabled": false,
+    "drawCalibrationLabel": "무승부 보정 미적용",
     "drawCalibrationSummary": {
-      "selectionReason": "DRAW recall이 0.0026에서 0.0034로 개선되었고, Accuracy 하락 -0.0002, Log Loss 변화 -0.0003로 허용 범위 이내여서 적용",
+      "selectionReason": "DRAW recall 개선, Accuracy 하락 0.01 이하, Log Loss 상승 0.02 이하 조건을 모두 만족한 후보가 없음",
       "baseMetrics": {
         "model": "draw_calibration_base",
-        "accuracy": 0.589,
-        "logLoss": 0.9175,
+        "accuracy": 0.5896,
+        "logLoss": 0.9163,
         "confusionMatrix": [
           [
-            1979,
-            444,
+            1984,
+            440,
             1
           ],
           [
-            489,
+            488,
             1017,
             2
           ],
           [
-            687,
-            470,
-            3
+            692,
+            467,
+            1
           ]
         ],
-        "drawRecall": 0.0026,
-        "drawPrecision": 0.5,
-        "macroF1": 0.4353
+        "drawRecall": 0.0009,
+        "drawPrecision": 0.25,
+        "macroF1": 0.4348
       },
       "calibratedMetrics": {
-        "accuracy": 0.5892,
-        "logLoss": 0.9172,
-        "drawRecall": 0.0034,
-        "drawPrecision": 0.5714,
-        "macroF1": 0.436,
+        "model": "draw_calibration_base",
+        "accuracy": 0.5896,
+        "logLoss": 0.9163,
         "confusionMatrix": [
           [
-            1979,
-            444,
+            1984,
+            440,
             1
           ],
           [
-            489,
+            488,
             1017,
             2
           ],
           [
-            686,
-            470,
-            4
+            692,
+            467,
+            1
           ]
-        ]
+        ],
+        "drawRecall": 0.0009,
+        "drawPrecision": 0.25,
+        "macroF1": 0.4348
       },
-      "selectedParams": {
-        "eloThreshold": 100,
-        "drawBoost": 0.04,
-        "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.5,
-        "avgGoalsAgainstThreshold": 0.5,
-        "recentGoalDiffThreshold": 3,
-        "requireNeutral": true
-      }
+      "selectedParams": null
     },
-    "note": "최고 모델 accuracy 0.5896와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4925 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 +0.0042, Log Loss 변화 -0.0063로 보호 기준 이내여서 사용"
+    "note": "최고 모델 accuracy 0.5903와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4923 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 +0.0054, Log Loss 변화 -0.0074로 보호 기준 이내여서 사용"
   },
   "winnerTop10": [],
   "southKorea": null,
@@ -168,20 +161,20 @@
         },
         {
           "date": "2026-06-18",
-          "displayTeamA": "Mexico",
-          "displayTeamB": "South Korea",
-          "predictedScoreA": 1,
-          "predictedScoreB": 0,
-          "predictedResult": "HOME_WIN",
-          "isCompleted": true
-        },
-        {
-          "date": "2026-06-18",
           "displayTeamA": "Czech Republic",
           "displayTeamB": "South Africa",
           "predictedScoreA": 1,
           "predictedScoreB": 1,
           "predictedResult": "DRAW",
+          "isCompleted": true
+        },
+        {
+          "date": "2026-06-18",
+          "displayTeamA": "Mexico",
+          "displayTeamB": "South Korea",
+          "predictedScoreA": 1,
+          "predictedScoreB": 0,
+          "predictedResult": "HOME_WIN",
           "isCompleted": true
         },
         {
@@ -422,20 +415,20 @@
         },
         {
           "date": "2026-06-24",
-          "displayTeamA": "Scotland",
-          "displayTeamB": "Brazil",
-          "predictedScoreA": 0,
-          "predictedScoreB": 3,
-          "predictedResult": "AWAY_WIN",
-          "isCompleted": true
-        },
-        {
-          "date": "2026-06-24",
           "displayTeamA": "Morocco",
           "displayTeamB": "Haiti",
           "predictedScoreA": 4,
           "predictedScoreB": 2,
           "predictedResult": "HOME_WIN",
+          "isCompleted": true
+        },
+        {
+          "date": "2026-06-24",
+          "displayTeamA": "Scotland",
+          "displayTeamB": "Brazil",
+          "predictedScoreA": 0,
+          "predictedScoreB": 3,
+          "predictedResult": "AWAY_WIN",
           "isCompleted": true
         }
       ],
@@ -876,20 +869,20 @@
         },
         {
           "date": "2026-06-21",
-          "displayTeamA": "Belgium",
-          "displayTeamB": "Iran",
-          "predictedScoreA": 0,
-          "predictedScoreB": 0,
-          "predictedResult": "DRAW",
-          "isCompleted": true
-        },
-        {
-          "date": "2026-06-21",
           "displayTeamA": "New Zealand",
           "displayTeamB": "Egypt",
           "predictedScoreA": 1,
           "predictedScoreB": 3,
           "predictedResult": "AWAY_WIN",
+          "isCompleted": true
+        },
+        {
+          "date": "2026-06-21",
+          "displayTeamA": "Belgium",
+          "displayTeamB": "Iran",
+          "predictedScoreA": 0,
+          "predictedScoreB": 0,
+          "predictedResult": "DRAW",
           "isCompleted": true
         },
         {
@@ -994,20 +987,20 @@
         },
         {
           "date": "2026-06-21",
-          "displayTeamA": "Uruguay",
-          "displayTeamB": "Cape Verde",
-          "predictedScoreA": 2,
-          "predictedScoreB": 2,
-          "predictedResult": "DRAW",
-          "isCompleted": true
-        },
-        {
-          "date": "2026-06-21",
           "displayTeamA": "Spain",
           "displayTeamB": "Saudi Arabia",
           "predictedScoreA": 4,
           "predictedScoreB": 0,
           "predictedResult": "HOME_WIN",
+          "isCompleted": true
+        },
+        {
+          "date": "2026-06-21",
+          "displayTeamA": "Uruguay",
+          "displayTeamB": "Cape Verde",
+          "predictedScoreA": 2,
+          "predictedScoreB": 2,
+          "predictedResult": "DRAW",
           "isCompleted": true
         },
         {
@@ -2046,125 +2039,102 @@
       ]
     }
   ],
-  "upcomingMatchCards": [
-    {
-      "matchId": 1,
-      "group": null,
-      "date": "2026-07-18",
-      "displayTeamA": "France",
-      "displayTeamB": "England",
-      "teamAWinProb": 54.05,
-      "drawProb": 28.72,
-      "teamBWinProb": 17.23,
-      "predictedResult": "A_WIN"
-    },
-    {
-      "matchId": 2,
-      "group": null,
-      "date": "2026-07-19",
-      "displayTeamA": "Spain",
-      "displayTeamB": "Argentina",
-      "teamAWinProb": 52.62,
-      "drawProb": 28.58,
-      "teamBWinProb": 18.8,
-      "predictedResult": "A_WIN"
-    }
-  ],
+  "upcomingMatchCards": [],
   "teamStrengthDiagnostics": [
-    {
-      "team": "France",
-      "group": "I",
-      "elo": 1837.14,
-      "simulationStrength": 1857.14,
-      "strengthScore": 1857.14,
-      "strengthRank": 3,
-      "winnerProb": 0.6926,
-      "winnerProbRank": 1,
-      "rankGap": 2,
-      "recent_points5": 12,
-      "adjusted_points5": 11.0215,
-      "avg_opponent_elo5": 1714.38,
-      "recent_goal_diff5": 7,
-      "adjusted_goal_diff5": 6.2894,
-      "recentFormContribution": 23.5201,
-      "cappedRecentFormContribution": 20.0,
-      "scheduleStrengthPenalty": 0.0,
-      "groupStageDifficulty": 1652.29,
-      "expectedKnockoutPathDifficulty": 1738.86,
-      "pathDifficultyScore": 1708.56,
-      "medianPathDifficulty": 1716.13,
-      "note": "전력 및 경로 진단 범위 내"
-    },
     {
       "team": "England",
       "group": "L",
-      "elo": 1811.14,
-      "simulationStrength": 1831.14,
-      "strengthScore": 1831.14,
-      "strengthRank": 4,
-      "winnerProb": 0.3074,
-      "winnerProbRank": 2,
+      "elo": 1832.46,
+      "simulationStrength": 1852.46,
+      "strengthScore": 1852.46,
+      "strengthRank": 3,
+      "winnerProb": 1.0,
+      "winnerProbRank": 1,
       "rankGap": 2,
       "recent_points5": 12,
-      "adjusted_points5": 11.2575,
-      "avg_opponent_elo5": 1718.2,
+      "adjusted_points5": 11.5921,
+      "avg_opponent_elo5": 1764.72,
       "recent_goal_diff5": 4,
-      "adjusted_goal_diff5": 3.6392,
-      "recentFormContribution": 20.4888,
+      "adjusted_goal_diff5": 3.8622,
+      "recentFormContribution": 22.1617,
       "cappedRecentFormContribution": 20.0,
       "scheduleStrengthPenalty": 0.0,
       "groupStageDifficulty": 1606.81,
-      "expectedKnockoutPathDifficulty": 1770.12,
-      "pathDifficultyScore": 1712.96,
-      "medianPathDifficulty": 1716.13,
+      "expectedKnockoutPathDifficulty": 1759.59,
+      "pathDifficultyScore": 1706.11,
+      "medianPathDifficulty": 1712.44,
+      "note": "전력 및 경로 진단 범위 내"
+    },
+    {
+      "team": "France",
+      "group": "I",
+      "elo": 1815.82,
+      "simulationStrength": 1820.88,
+      "strengthScore": 1820.88,
+      "strengthRank": 4,
+      "winnerProb": 0.0,
+      "winnerProbRank": 2,
+      "rankGap": 2,
+      "recent_points5": 9,
+      "adjusted_points5": 8.2039,
+      "avg_opponent_elo5": 1737.58,
+      "recent_goal_diff5": 2,
+      "adjusted_goal_diff5": 1.5002,
+      "recentFormContribution": 5.0659,
+      "cappedRecentFormContribution": 5.0659,
+      "scheduleStrengthPenalty": 0.0,
+      "groupStageDifficulty": 1652.29,
+      "expectedKnockoutPathDifficulty": 1746.38,
+      "pathDifficultyScore": 1713.45,
+      "medianPathDifficulty": 1712.44,
       "note": "전력 및 경로 진단 범위 내"
     },
     {
       "team": "Spain",
       "group": "H",
-      "elo": 1892.09,
-      "simulationStrength": 1912.09,
-      "strengthScore": 1912.09,
+      "elo": 1908.36,
+      "simulationStrength": 1928.36,
+      "strengthScore": 1928.36,
       "strengthRank": 1,
       "winnerProb": 0.0,
       "winnerProbRank": 3,
       "rankGap": -2,
       "recent_points5": 15,
-      "adjusted_points5": 14.0104,
-      "avg_opponent_elo5": 1728.39,
+      "adjusted_points5": 14.2985,
+      "avg_opponent_elo5": 1776.02,
       "recent_goal_diff5": 8,
-      "adjusted_goal_diff5": 7.4468,
-      "recentFormContribution": 37.2118,
+      "adjusted_goal_diff5": 7.5428,
+      "recentFormContribution": 38.5082,
       "cappedRecentFormContribution": 20.0,
       "scheduleStrengthPenalty": 0.0,
       "groupStageDifficulty": 1581.85,
-      "expectedKnockoutPathDifficulty": 1748.59,
-      "pathDifficultyScore": 1690.23,
-      "medianPathDifficulty": 1716.13,
+      "expectedKnockoutPathDifficulty": 1739.53,
+      "pathDifficultyScore": 1684.34,
+      "medianPathDifficulty": 1712.44,
       "note": "전력 및 경로 진단 범위 내"
     },
     {
       "team": "Argentina",
       "group": "J",
-      "elo": 1872.24,
-      "simulationStrength": 1892.24,
-      "strengthScore": 1892.24,
+      "elo": 1855.97,
+      "simulationStrength": 1875.83,
+      "strengthScore": 1875.83,
       "strengthRank": 2,
       "winnerProb": 0.0,
       "winnerProbRank": 4,
       "rankGap": -2,
-      "recent_points5": 15,
-      "adjusted_points5": 13.7387,
-      "avg_opponent_elo5": 1681.66,
-      "recent_goal_diff5": 7,
-      "adjusted_goal_diff5": 6.3843,
-      "recentFormContribution": 34.5312,
-      "cappedRecentFormContribution": 20.0,
+      "recent_points5": 12,
+      "adjusted_points5": 11.1072,
+      "avg_opponent_elo5": 1741.19,
+      "recent_goal_diff5": 4,
+      "adjusted_goal_diff5": 3.6193,
+      "recentFormContribution": 19.8578,
+      "cappedRecentFormContribution": 19.8578,
       "scheduleStrengthPenalty": 0.0,
       "groupStageDifficulty": 1624.29,
-      "expectedKnockoutPathDifficulty": 1694.24,
-      "pathDifficultyScore": 1669.76,
-      "medianPathDifficulty": 1716.13,
+      "expectedKnockoutPathDifficulty": 1699.57,
+      "pathDifficultyScore": 1673.22,
+      "medianPathDifficulty": 1712.44,
       "note": "전력 및 경로 진단 범위 내"
     },
     {
@@ -2186,9 +2156,9 @@
       "cappedRecentFormContribution": 11.1396,
       "scheduleStrengthPenalty": 0.0,
       "groupStageDifficulty": 1633.24,
-      "expectedKnockoutPathDifficulty": 1765.64,
-      "pathDifficultyScore": 1719.3,
-      "medianPathDifficulty": 1716.13,
+      "expectedKnockoutPathDifficulty": 1753.55,
+      "pathDifficultyScore": 1711.44,
+      "medianPathDifficulty": 1712.44,
       "note": "전력 및 경로 진단 범위 내"
     },
     {
@@ -2209,10 +2179,10 @@
       "recentFormContribution": 5.3143,
       "cappedRecentFormContribution": 5.3143,
       "scheduleStrengthPenalty": 0.0,
-      "groupStageDifficulty": 1700.65,
-      "expectedKnockoutPathDifficulty": 1767.38,
-      "pathDifficultyScore": 1744.02,
-      "medianPathDifficulty": 1716.13,
+      "groupStageDifficulty": 1688.56,
+      "expectedKnockoutPathDifficulty": 1774.49,
+      "pathDifficultyScore": 1744.41,
+      "medianPathDifficulty": 1712.44,
       "note": "우승 확률 순위가 전력 순위보다 크게 높음"
     },
     {
@@ -2234,9 +2204,9 @@
       "cappedRecentFormContribution": 19.1285,
       "scheduleStrengthPenalty": 0.0,
       "groupStageDifficulty": 1648.56,
-      "expectedKnockoutPathDifficulty": 1762.14,
-      "pathDifficultyScore": 1722.39,
-      "medianPathDifficulty": 1716.13,
+      "expectedKnockoutPathDifficulty": 1767.56,
+      "pathDifficultyScore": 1725.91,
+      "medianPathDifficulty": 1712.44,
       "note": "전력 및 경로 진단 범위 내"
     },
     {
@@ -2258,9 +2228,9 @@
       "cappedRecentFormContribution": 14.5177,
       "scheduleStrengthPenalty": 0.0,
       "groupStageDifficulty": 1554.88,
-      "expectedKnockoutPathDifficulty": 1772.3,
-      "pathDifficultyScore": 1696.2,
-      "medianPathDifficulty": 1716.13,
+      "expectedKnockoutPathDifficulty": 1766.83,
+      "pathDifficultyScore": 1692.65,
+      "medianPathDifficulty": 1712.44,
       "note": "전력 순위 대비 유리한 대진 경로 가능성; 우승 확률 순위가 전력 순위보다 크게 높음"
     },
     {
@@ -2284,7 +2254,7 @@
       "groupStageDifficulty": 1677.65,
       "expectedKnockoutPathDifficulty": 1655.39,
       "pathDifficultyScore": 1663.18,
-      "medianPathDifficulty": 1716.13,
+      "medianPathDifficulty": 1712.44,
       "note": "전력 순위 대비 유리한 대진 경로 가능성; 우승 확률 순위가 전력 순위보다 크게 높음"
     },
     {
@@ -2308,7 +2278,7 @@
       "groupStageDifficulty": 1573.82,
       "expectedKnockoutPathDifficulty": 1707.99,
       "pathDifficultyScore": 1661.03,
-      "medianPathDifficulty": 1716.13,
+      "medianPathDifficulty": 1712.44,
       "note": "전력 순위 대비 유리한 대진 경로 가능성; 우승 확률 순위가 전력 순위보다 크게 높음"
     }
   ]
