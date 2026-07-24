@@ -6,7 +6,7 @@
   "remainingTournamentMatches": 0,
   "remainingChampionshipMatches": 0,
   "remainingMatchesScope": "CHAMPIONSHIP_PATH",
-  "dataAsOf": "2026-07-23",
+  "dataAsOf": "2026-07-24",
   "lastCompletedMatchDate": "2026-07-19",
   "latestScheduledMatchDate": null,
   "modelSummary": {
@@ -75,7 +75,7 @@
       },
       "selectedParams": null
     },
-    "note": "최고 모델 accuracy 0.5899와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4923 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 +0.0054, Log Loss 변화 -0.0074로 보호 기준 이내여서 사용"
+    "note": "최고 모델 accuracy 0.5903와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4923 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 +0.0054, Log Loss 변화 -0.0074로 보호 기준 이내여서 사용"
   },
   "winnerTop10": [],
   "southKorea": null,
