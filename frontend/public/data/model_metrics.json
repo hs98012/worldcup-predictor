@@ -1,6 +1,6 @@
 {
   "selectedModel": "HistGradientBoostingClassifier_calibrated",
-  "selectionReason": "최고 모델 accuracy 0.5903와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4923 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 +0.0054, Log Loss 변화 -0.0074로 보호 기준 이내여서 사용",
+  "selectionReason": "최고 모델 accuracy 0.5899와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4923 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 +0.0054, Log Loss 변화 -0.0074로 보호 기준 이내여서 사용",
   "trainSize": 20366,
   "testSize": 5092,
   "testStartDate": "2021-09-07",
@@ -66,27 +66,27 @@
     {
       "model": "LogisticRegression",
       "accuracy": 0.5589,
-      "logLoss": 0.978,
+      "logLoss": 0.9782,
       "confusionMatrix": [
         [
-          1615,
+          1614,
           472,
-          338
+          339
         ],
         [
-          268,
+          267,
           1035,
-          204
+          205
         ],
         [
-          475,
-          489,
-          196
+          473,
+          490,
+          197
         ]
       ],
-      "drawRecall": 0.169,
-      "drawPrecision": 0.2656,
-      "macroF1": 0.4909,
+      "drawRecall": 0.1698,
+      "drawPrecision": 0.2659,
+      "macroF1": 0.4912,
       "trainSize": 20366,
       "testSize": 5092,
       "classDistribution": {
@@ -225,17 +225,17 @@
     },
     {
       "model": "GradientBoostingClassifier_calibrated",
-      "accuracy": 0.5903,
-      "logLoss": 0.9259,
+      "accuracy": 0.5899,
+      "logLoss": 0.9262,
       "confusionMatrix": [
         [
-          2007,
-          418,
+          2006,
+          419,
           0
         ],
         [
-          512,
-          995,
+          513,
+          994,
           0
         ],
         [
@@ -246,7 +246,7 @@
       ],
       "drawRecall": 0.0034,
       "drawPrecision": 1.0,
-      "macroF1": 0.4359,
+      "macroF1": 0.4356,
       "trainSize": 20366,
       "testSize": 5092,
       "classDistribution": {
@@ -622,7 +622,7 @@
     },
     "opponentAdjusted": {
       "selectedModel": "HistGradientBoostingClassifier_calibrated",
-      "selectionReason": "최고 모델 accuracy 0.5903와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4923 이상이어서 선택",
+      "selectionReason": "최고 모델 accuracy 0.5899와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4923 이상이어서 선택",
       "accuracy": 0.5896,
       "logLoss": 0.9163,
       "accuracyDropVsBase": -0.0054,
@@ -672,27 +672,27 @@
         {
           "model": "LogisticRegression",
           "accuracy": 0.5589,
-          "logLoss": 0.978,
+          "logLoss": 0.9782,
           "confusionMatrix": [
             [
-              1615,
+              1614,
               472,
-              338
+              339
             ],
             [
-              268,
+              267,
               1035,
-              204
+              205
             ],
             [
-              475,
-              489,
-              196
+              473,
+              490,
+              197
             ]
           ],
-          "drawRecall": 0.169,
-          "drawPrecision": 0.2656,
-          "macroF1": 0.4909,
+          "drawRecall": 0.1698,
+          "drawPrecision": 0.2659,
+          "macroF1": 0.4912,
           "trainSize": 20366,
           "testSize": 5092,
           "classDistribution": {
@@ -831,17 +831,17 @@
         },
         {
           "model": "GradientBoostingClassifier_calibrated",
-          "accuracy": 0.5903,
-          "logLoss": 0.9259,
+          "accuracy": 0.5899,
+          "logLoss": 0.9262,
           "confusionMatrix": [
             [
-              2007,
-              418,
+              2006,
+              419,
               0
             ],
             [
-              512,
-              995,
+              513,
+              994,
               0
             ],
             [
@@ -852,7 +852,7 @@
           ],
           "drawRecall": 0.0034,
           "drawPrecision": 1.0,
-          "macroF1": 0.4359,
+          "macroF1": 0.4356,
           "trainSize": 20366,
           "testSize": 5092,
           "classDistribution": {
