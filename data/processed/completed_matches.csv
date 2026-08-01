@@ -41319,7 +41319,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2018-03-17,Iran,Sierra Leone,4,0,Friendly,Tehran,Iran,False,Iran,Sierra Leone
 2018-03-21,Andorra,Liechtenstein,1,0,Friendly,La Línea de la Concepción,Spain,True,Andorra,Liechtenstein
 2018-03-21,Antigua and Barbuda,Bermuda,3,2,Friendly,St. John's,Antigua and Barbuda,False,Antigua and Barbuda,Bermuda
-2018-03-21,Iraq,Qatar,2,3,Friendly,Basra,Iraq,False,Iraq,Qatar
+2018-03-21,Iraq,Qatar,2,3,International Friendship Championship,Basra,Iraq,False,Iraq,Qatar
 2018-03-21,Jordan,Kuwait,1,0,Friendly,Amman,Jordan,False,Jordan,Kuwait
 2018-03-21,Laos,Cambodia,0,1,Friendly,Vientiane,Laos,False,Laos,Cambodia
 2018-03-21,Madagascar,Togo,0,0,Friendly,Saint-Leu-la-Forêt,France,True,Madagascar,Togo
@@ -41382,7 +41382,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2018-03-24,Kosovo,Madagascar,1,0,Friendly,Franconville,France,True,Kosovo,Madagascar
 2018-03-24,Mauritania,Guinea,2,0,Friendly,Nouakchott,Mauritania,False,Mauritania,Guinea
 2018-03-24,Northern Ireland,South Korea,2,1,Friendly,Belfast,Northern Ireland,False,Northern Ireland,Korea Republic
-2018-03-24,Qatar,Syria,2,2,Friendly,Basra,Iraq,True,Qatar,Syria
+2018-03-24,Qatar,Syria,2,2,International Friendship Championship,Basra,Iraq,True,Qatar,Syria
 2018-03-24,Sweden,Chile,1,2,Friendly,Solna,Sweden,False,Sweden,Chile
 2018-03-24,Tahiti,New Caledonia,4,3,Friendly,Pirae,Tahiti,False,Tahiti,New Caledonia
 2018-03-24,Uganda,São Tomé and Príncipe,3,1,Friendly,Kampala,Uganda,False,Uganda,São Tomé and Príncipe
@@ -41421,7 +41421,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2018-03-27,Germany,Brazil,0,1,Friendly,Berlin,Germany,False,Germany,Brazil
 2018-03-27,Greece,Egypt,1,0,Friendly,Zürich,Switzerland,True,Greece,Egypt
 2018-03-27,Hungary,Scotland,0,1,Friendly,Budapest,Hungary,False,Hungary,Scotland
-2018-03-27,Iraq,Syria,1,1,Friendly,Basra,Iraq,False,Iraq,Syria
+2018-03-27,Iraq,Syria,1,1,International Friendship Championship,Basra,Iraq,False,Iraq,Syria
 2018-03-27,Jordan,Vietnam,1,1,AFC Asian Cup qualification,Amman,Jordan,False,Jordan,Vietnam
 2018-03-27,North Korea,Hong Kong,2,0,AFC Asian Cup qualification,Pyongyang,North Korea,False,North Korea,Hong Kong
 2018-03-27,Kosovo,Burkina Faso,2,0,Friendly,Franconville,France,True,Kosovo,Burkina Faso

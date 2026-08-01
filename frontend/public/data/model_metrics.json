@@ -42,9 +42,9 @@
       "logLoss": 0.9734,
       "confusionMatrix": [
         [
-          1235,
+          1234,
           215,
-          975
+          976
         ],
         [
           163,
@@ -53,40 +53,40 @@
         ],
         [
           326,
-          289,
-          545
+          288,
+          546
         ]
       ],
-      "drawRecall": 0.4698,
-      "drawPrecision": 0.255,
+      "drawRecall": 0.4707,
+      "drawPrecision": 0.2553,
       "macroF1": 0.4857
     }
   ],
   "modelComparisons": [
     {
       "model": "LogisticRegression",
-      "accuracy": 0.5589,
-      "logLoss": 0.978,
+      "accuracy": 0.5597,
+      "logLoss": 0.9782,
       "confusionMatrix": [
         [
-          1615,
-          472,
-          338
+          1617,
+          471,
+          337
         ],
         [
-          268,
+          266,
           1035,
-          204
+          206
         ],
         [
-          475,
+          473,
           489,
-          196
+          198
         ]
       ],
-      "drawRecall": 0.169,
-      "drawPrecision": 0.2656,
-      "macroF1": 0.4909,
+      "drawRecall": 0.1707,
+      "drawPrecision": 0.2672,
+      "macroF1": 0.4919,
       "trainSize": 20366,
       "testSize": 5092,
       "classDistribution": {
@@ -97,28 +97,28 @@
     },
     {
       "model": "RandomForestClassifier",
-      "accuracy": 0.5801,
-      "logLoss": 0.9256,
+      "accuracy": 0.578,
+      "logLoss": 0.9251,
       "confusionMatrix": [
         [
-          1836,
-          447,
-          142
+          1826,
+          471,
+          128
         ],
         [
-          397,
-          1027,
-          83
+          398,
+          1033,
+          76
         ],
         [
-          595,
-          474,
-          91
+          599,
+          477,
+          84
         ]
       ],
-      "drawRecall": 0.0784,
-      "drawPrecision": 0.288,
-      "macroF1": 0.4723,
+      "drawRecall": 0.0724,
+      "drawPrecision": 0.2917,
+      "macroF1": 0.4681,
       "trainSize": 20366,
       "testSize": 5092,
       "classDistribution": {
@@ -129,28 +129,28 @@
     },
     {
       "model": "GradientBoostingClassifier",
-      "accuracy": 0.5738,
-      "logLoss": 0.9365,
+      "accuracy": 0.5713,
+      "logLoss": 0.9332,
       "confusionMatrix": [
         [
-          1865,
-          394,
-          166
+          1854,
+          397,
+          174
         ],
         [
-          427,
-          961,
-          119
+          424,
+          963,
+          120
         ],
         [
-          625,
-          439,
-          96
+          623,
+          445,
+          92
         ]
       ],
-      "drawRecall": 0.0828,
-      "drawPrecision": 0.252,
-      "macroF1": 0.4684,
+      "drawRecall": 0.0793,
+      "drawPrecision": 0.2383,
+      "macroF1": 0.4656,
       "trainSize": 20366,
       "testSize": 5092,
       "classDistribution": {
@@ -161,28 +161,28 @@
     },
     {
       "model": "HistGradientBoostingClassifier",
-      "accuracy": 0.5835,
-      "logLoss": 0.9203,
+      "accuracy": 0.5858,
+      "logLoss": 0.92,
       "confusionMatrix": [
         [
-          1936,
-          406,
-          83
+          1954,
+          400,
+          71
         ],
         [
-          461,
-          980,
-          66
+          468,
+          987,
+          52
         ],
         [
-          654,
-          451,
-          55
+          671,
+          447,
+          42
         ]
       ],
-      "drawRecall": 0.0474,
-      "drawPrecision": 0.2696,
-      "macroF1": 0.458,
+      "drawRecall": 0.0362,
+      "drawPrecision": 0.2545,
+      "macroF1": 0.4542,
       "trainSize": 20366,
       "testSize": 5092,
       "classDistribution": {
@@ -207,8 +207,8 @@
           9
         ],
         [
-          707,
-          445,
+          708,
+          444,
           8
         ]
       ],
@@ -396,7 +396,7 @@
       "modelComparisons": [
         {
           "model": "LogisticRegression",
-          "accuracy": 0.566,
+          "accuracy": 0.5662,
           "logLoss": 0.9761,
           "confusionMatrix": [
             [
@@ -411,13 +411,13 @@
             ],
             [
               497,
-              493,
-              170
+              492,
+              171
             ]
           ],
-          "drawRecall": 0.1466,
-          "drawPrecision": 0.2838,
-          "macroF1": 0.4886,
+          "drawRecall": 0.1474,
+          "drawPrecision": 0.285,
+          "macroF1": 0.489,
           "trainSize": 20366,
           "testSize": 5092,
           "classDistribution": {
@@ -428,28 +428,28 @@
         },
         {
           "model": "RandomForestClassifier",
-          "accuracy": 0.5731,
-          "logLoss": 0.934,
+          "accuracy": 0.5742,
+          "logLoss": 0.9336,
           "confusionMatrix": [
             [
-              1794,
-              465,
-              166
+              1793,
+              463,
+              169
             ],
             [
-              381,
-              1025,
-              101
+              379,
+              1023,
+              105
             ],
             [
-              578,
-              483,
-              99
+              577,
+              475,
+              108
             ]
           ],
-          "drawRecall": 0.0853,
-          "drawPrecision": 0.2705,
-          "macroF1": 0.4706,
+          "drawRecall": 0.0931,
+          "drawPrecision": 0.2827,
+          "macroF1": 0.4744,
           "trainSize": 20366,
           "testSize": 5092,
           "classDistribution": {
@@ -460,28 +460,28 @@
         },
         {
           "model": "GradientBoostingClassifier",
-          "accuracy": 0.5715,
-          "logLoss": 0.9499,
+          "accuracy": 0.5705,
+          "logLoss": 0.9507,
           "confusionMatrix": [
             [
-              1856,
-              412,
-              157
+              1840,
+              424,
+              161
             ],
             [
-              421,
-              965,
-              121
+              422,
+              975,
+              110
             ],
             [
-              634,
-              437,
-              89
+              630,
+              440,
+              90
             ]
           ],
-          "drawRecall": 0.0767,
-          "drawPrecision": 0.2425,
-          "macroF1": 0.4645,
+          "drawRecall": 0.0776,
+          "drawPrecision": 0.2493,
+          "macroF1": 0.4644,
           "trainSize": 20366,
           "testSize": 5092,
           "classDistribution": {
@@ -492,28 +492,28 @@
         },
         {
           "model": "HistGradientBoostingClassifier",
-          "accuracy": 0.5829,
-          "logLoss": 0.9268,
+          "accuracy": 0.5819,
+          "logLoss": 0.9305,
           "confusionMatrix": [
             [
-              1949,
-              427,
-              49
+              1933,
+              432,
+              60
             ],
             [
-              465,
-              993,
-              49
+              455,
+              990,
+              62
             ],
             [
-              662,
-              472,
-              26
+              657,
+              463,
+              40
             ]
           ],
-          "drawRecall": 0.0224,
-          "drawPrecision": 0.2097,
-          "macroF1": 0.4445,
+          "drawRecall": 0.0345,
+          "drawPrecision": 0.2469,
+          "macroF1": 0.4503,
           "trainSize": 20366,
           "testSize": 5092,
           "classDistribution": {
@@ -524,17 +524,17 @@
         },
         {
           "model": "RandomForestClassifier_calibrated",
-          "accuracy": 0.5825,
+          "accuracy": 0.5821,
           "logLoss": 0.9242,
           "confusionMatrix": [
             [
-              1993,
-              425,
+              1992,
+              426,
               7
             ],
             [
-              537,
-              962,
+              538,
+              961,
               8
             ],
             [
@@ -545,7 +545,7 @@
           ],
           "drawRecall": 0.0095,
           "drawPrecision": 0.4231,
-          "macroF1": 0.4332,
+          "macroF1": 0.4329,
           "trainSize": 20366,
           "testSize": 5092,
           "classDistribution": {
@@ -557,7 +557,7 @@
         {
           "model": "GradientBoostingClassifier_calibrated",
           "accuracy": 0.5846,
-          "logLoss": 0.9314,
+          "logLoss": 0.9313,
           "confusionMatrix": [
             [
               1997,
@@ -671,28 +671,28 @@
       "modelComparisons": [
         {
           "model": "LogisticRegression",
-          "accuracy": 0.5589,
-          "logLoss": 0.978,
+          "accuracy": 0.5597,
+          "logLoss": 0.9782,
           "confusionMatrix": [
             [
-              1615,
-              472,
-              338
+              1617,
+              471,
+              337
             ],
             [
-              268,
+              266,
               1035,
-              204
+              206
             ],
             [
-              475,
+              473,
               489,
-              196
+              198
             ]
           ],
-          "drawRecall": 0.169,
-          "drawPrecision": 0.2656,
-          "macroF1": 0.4909,
+          "drawRecall": 0.1707,
+          "drawPrecision": 0.2672,
+          "macroF1": 0.4919,
           "trainSize": 20366,
           "testSize": 5092,
           "classDistribution": {
@@ -703,28 +703,28 @@
         },
         {
           "model": "RandomForestClassifier",
-          "accuracy": 0.5801,
-          "logLoss": 0.9256,
+          "accuracy": 0.578,
+          "logLoss": 0.9251,
           "confusionMatrix": [
             [
-              1836,
-              447,
-              142
+              1826,
+              471,
+              128
             ],
             [
-              397,
-              1027,
-              83
+              398,
+              1033,
+              76
             ],
             [
-              595,
-              474,
-              91
+              599,
+              477,
+              84
             ]
           ],
-          "drawRecall": 0.0784,
-          "drawPrecision": 0.288,
-          "macroF1": 0.4723,
+          "drawRecall": 0.0724,
+          "drawPrecision": 0.2917,
+          "macroF1": 0.4681,
           "trainSize": 20366,
           "testSize": 5092,
           "classDistribution": {
@@ -735,28 +735,28 @@
         },
         {
           "model": "GradientBoostingClassifier",
-          "accuracy": 0.5738,
-          "logLoss": 0.9365,
+          "accuracy": 0.5713,
+          "logLoss": 0.9332,
           "confusionMatrix": [
             [
-              1865,
-              394,
-              166
+              1854,
+              397,
+              174
             ],
             [
-              427,
-              961,
-              119
+              424,
+              963,
+              120
             ],
             [
-              625,
-              439,
-              96
+              623,
+              445,
+              92
             ]
           ],
-          "drawRecall": 0.0828,
-          "drawPrecision": 0.252,
-          "macroF1": 0.4684,
+          "drawRecall": 0.0793,
+          "drawPrecision": 0.2383,
+          "macroF1": 0.4656,
           "trainSize": 20366,
           "testSize": 5092,
           "classDistribution": {
@@ -767,28 +767,28 @@
         },
         {
           "model": "HistGradientBoostingClassifier",
-          "accuracy": 0.5835,
-          "logLoss": 0.9203,
+          "accuracy": 0.5858,
+          "logLoss": 0.92,
           "confusionMatrix": [
             [
-              1936,
-              406,
-              83
+              1954,
+              400,
+              71
             ],
             [
-              461,
-              980,
-              66
+              468,
+              987,
+              52
             ],
             [
-              654,
-              451,
-              55
+              671,
+              447,
+              42
             ]
           ],
-          "drawRecall": 0.0474,
-          "drawPrecision": 0.2696,
-          "macroF1": 0.458,
+          "drawRecall": 0.0362,
+          "drawPrecision": 0.2545,
+          "macroF1": 0.4542,
           "trainSize": 20366,
           "testSize": 5092,
           "classDistribution": {
@@ -813,8 +813,8 @@
               9
             ],
             [
-              707,
-              445,
+              708,
+              444,
               8
             ]
           ],
