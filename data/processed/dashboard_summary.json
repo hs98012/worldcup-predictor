@@ -6,76 +6,83 @@
   "remainingTournamentMatches": 0,
   "remainingChampionshipMatches": 0,
   "remainingMatchesScope": "CHAMPIONSHIP_PATH",
-  "dataAsOf": "2026-08-26",
+  "dataAsOf": "2026-08-27",
   "lastCompletedMatchDate": "2026-07-19",
   "latestScheduledMatchDate": null,
   "modelSummary": {
     "modelName": "scikit-learn HistGradientBoostingClassifier_calibrated",
     "task": "A_WIN / DRAW / B_WIN multiclass classification",
-    "accuracy": 58.96,
-    "logLoss": 0.9163,
-    "testStartDate": "2021-09-07",
-    "testEndDate": "2026-07-19",
-    "trainSize": 20366,
-    "testSize": 5092,
-    "drawRecall": 0.0009,
-    "drawCalibrationEnabled": false,
-    "drawCalibrationLabel": "무승부 보정 미적용",
+    "accuracy": 59.17,
+    "logLoss": 0.9167,
+    "testStartDate": "2021-09-08",
+    "testEndDate": "2026-08-26",
+    "trainSize": 20388,
+    "testSize": 5097,
+    "drawRecall": 0.0043,
+    "drawCalibrationEnabled": true,
+    "drawCalibrationLabel": "무승부 보정 적용",
     "drawCalibrationSummary": {
-      "selectionReason": "DRAW recall 개선, Accuracy 하락 0.01 이하, Log Loss 상승 0.02 이하 조건을 모두 만족한 후보가 없음",
+      "selectionReason": "DRAW recall이 0.0043에서 0.0052로 개선되었고, Accuracy 하락 -0.0002, Log Loss 변화 -0.0003로 허용 범위 이내여서 적용",
       "baseMetrics": {
         "model": "draw_calibration_base",
-        "accuracy": 0.5896,
-        "logLoss": 0.9163,
+        "accuracy": 0.5917,
+        "logLoss": 0.9167,
         "confusionMatrix": [
           [
-            1984,
+            1982,
             440,
-            1
+            3
           ],
           [
-            488,
-            1017,
-            2
+            484,
+            1029,
+            3
           ],
           [
-            692,
-            467,
-            1
+            680,
+            471,
+            5
           ]
         ],
-        "drawRecall": 0.0009,
-        "drawPrecision": 0.25,
-        "macroF1": 0.4348
+        "drawRecall": 0.0043,
+        "drawPrecision": 0.4545,
+        "macroF1": 0.4385
       },
       "calibratedMetrics": {
-        "model": "draw_calibration_base",
-        "accuracy": 0.5896,
-        "logLoss": 0.9163,
+        "accuracy": 0.5919,
+        "logLoss": 0.9164,
+        "drawRecall": 0.0052,
+        "drawPrecision": 0.5,
+        "macroF1": 0.4392,
         "confusionMatrix": [
           [
-            1984,
+            1982,
             440,
-            1
+            3
           ],
           [
-            488,
-            1017,
-            2
+            484,
+            1029,
+            3
           ],
           [
-            692,
-            467,
-            1
+            680,
+            470,
+            6
           ]
-        ],
-        "drawRecall": 0.0009,
-        "drawPrecision": 0.25,
-        "macroF1": 0.4348
+        ]
       },
-      "selectedParams": null
+      "selectedParams": {
+        "eloThreshold": 100,
+        "drawBoost": 0.06,
+        "winRateThreshold": 0.25,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
+        "recentGoalDiffThreshold": 3,
+        "requireNeutral": true
+      }
     },
-    "note": "최고 모델 accuracy 0.5903와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4923 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 +0.0054, Log Loss 변화 -0.0074로 보호 기준 이내여서 사용"
+    "note": "최고 모델 accuracy 0.5917와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4932 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 +0.0072, Log Loss 변화 -0.0054로 보호 기준 이내여서 사용"
   },
   "winnerTop10": [],
   "southKorea": null,
@@ -2164,7 +2171,7 @@
     {
       "team": "Norway",
       "group": "I",
-      "elo": 1706.75,
+      "elo": 1706.74,
       "simulationStrength": 1712.06,
       "strengthScore": 1712.06,
       "strengthRank": 15,

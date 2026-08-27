@@ -123,7 +123,7 @@
     {
       "team": "Norway",
       "group": "I",
-      "elo": 1706.75,
+      "elo": 1706.74,
       "simulationStrength": 1712.06,
       "strengthScore": 1712.06,
       "strengthRank": 15,
@@ -607,7 +607,7 @@
     {
       "team": "Norway",
       "group": "I",
-      "elo": 1706.75,
+      "elo": 1706.74,
       "simulationStrength": 1712.06,
       "strengthScore": 1712.06,
       "strengthRank": 15,
@@ -981,7 +981,7 @@
       "SCORE": 27,
       "NEXT_ROUND_INFERENCE": 4
     },
-    "dataAsOf": "2026-08-26",
+    "dataAsOf": "2026-08-27",
     "lastCompletedMatchDate": "2026-07-19",
     "latestScheduledMatchDate": null,
     "warnings": []
