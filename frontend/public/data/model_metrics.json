@@ -65,18 +65,18 @@
   "modelComparisons": [
     {
       "model": "LogisticRegression",
-      "accuracy": 0.5595,
-      "logLoss": 0.9767,
+      "accuracy": 0.5597,
+      "logLoss": 0.9769,
       "confusionMatrix": [
         [
-          1616,
+          1617,
           469,
-          340
+          339
         ],
         [
-          266,
+          267,
           1036,
-          214
+          213
         ],
         [
           469,
@@ -85,8 +85,8 @@
         ]
       ],
       "drawRecall": 0.173,
-      "drawPrecision": 0.2653,
-      "macroF1": 0.4923,
+      "drawPrecision": 0.266,
+      "macroF1": 0.4924,
       "trainSize": 20388,
       "testSize": 5097,
       "classDistribution": {
@@ -671,18 +671,18 @@
       "modelComparisons": [
         {
           "model": "LogisticRegression",
-          "accuracy": 0.5595,
-          "logLoss": 0.9767,
+          "accuracy": 0.5597,
+          "logLoss": 0.9769,
           "confusionMatrix": [
             [
-              1616,
+              1617,
               469,
-              340
+              339
             ],
             [
-              266,
+              267,
               1036,
-              214
+              213
             ],
             [
               469,
@@ -691,8 +691,8 @@
             ]
           ],
           "drawRecall": 0.173,
-          "drawPrecision": 0.2653,
-          "macroF1": 0.4923,
+          "drawPrecision": 0.266,
+          "macroF1": 0.4924,
           "trainSize": 20388,
           "testSize": 5097,
           "classDistribution": {
