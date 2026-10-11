@@ -24127,9 +24127,9 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2000-02-01,Egypt,Burkina Faso,4,2,African Cup of Nations,Kano,Nigeria,True,Egypt,Burkina Faso
 2000-02-01,Zambia,Senegal,2,2,African Cup of Nations,Lagos,Nigeria,True,Zambia,Senegal
 2000-02-02,Cyprus,Lithuania,2,1,Cyprus International Tournament,Limassol,Cyprus,False,Cyprus,Lithuania
-2000-02-02,Armenia,Moldova,2,1,Cyprus International Tournament,Larnaka,Cyprus,True,Armenia,Moldova
+2000-02-02,Armenia,Moldova,2,1,Cyprus International Tournament,Larnaca,Cyprus,True,Armenia,Moldova
 2000-02-02,Romania,Latvia,2,0,Cyprus International Tournament,Paphos,Cyprus,True,Romania,Latvia
-2000-02-02,Slovakia,Georgia,0,2,Cyprus International Tournament,Larnaka,Cyprus,True,Slovakia,Georgia
+2000-02-02,Slovakia,Georgia,0,2,Cyprus International Tournament,Larnaca,Cyprus,True,Slovakia,Georgia
 2000-02-02,DR Congo,Gabon,0,0,African Cup of Nations,Accra,Ghana,True,DR Congo,Gabon
 2000-02-02,Costa Rica,Chile,1,0,Friendly,San José,Costa Rica,False,Costa Rica,Chile
 2000-02-02,Finland,Iceland,0,1,Nordic Championship,Cartagena,Spain,True,Finland,Iceland
@@ -24139,7 +24139,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2000-02-03,Tunisia,Congo,1,0,African Cup of Nations,Kano,Nigeria,True,Tunisia,Congo
 2000-02-04,Cyprus,Armenia,3,2,Cyprus International Tournament,Nicosia,Cyprus,False,Cyprus,Armenia
 2000-02-04,Romania,Georgia,1,1,Cyprus International Tournament,Nicosia,Cyprus,True,Romania,Georgia
-2000-02-04,Moldova,Lithuania,2,1,Cyprus International Tournament,Larnaka,Cyprus,True,Moldova,Lithuania
+2000-02-04,Moldova,Lithuania,2,1,Cyprus International Tournament,Larnaca,Cyprus,True,Moldova,Lithuania
 2000-02-04,Slovakia,Latvia,3,1,Cyprus International Tournament,Paphos,Cyprus,True,Slovakia,Latvia
 2000-02-04,Faroe Islands,Iceland,2,3,Nordic Championship,Cartagena,Spain,True,Faroe Islands,Iceland
 2000-02-04,Kuwait,Iran,1,1,Friendly,Kuwait City,Kuwait,False,Kuwait,Iran
@@ -24148,7 +24148,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2000-02-05,Japan,Mexico,0,1,Lunar New Year Cup,So Kon Po,Hong Kong,True,Japan,Mexico
 2000-02-06,Georgia,Armenia,2,1,Cyprus International Tournament,Limassol,Cyprus,True,Georgia,Armenia
 2000-02-06,Cyprus,Romania,3,2,Cyprus International Tournament,Nicosia,Cyprus,False,Cyprus,Romania
-2000-02-06,Lithuania,Latvia,2,1,Cyprus International Tournament,Larnaka,Cyprus,True,Lithuania,Latvia
+2000-02-06,Lithuania,Latvia,2,1,Cyprus International Tournament,Larnaca,Cyprus,True,Lithuania,Latvia
 2000-02-06,Moldova,Slovakia,2,0,Cyprus International Tournament,Nicosia,Cyprus,True,Moldova,Slovakia
 2000-02-06,Albania,Andorra,3,0,Malta International Tournament,Attard,Malta,True,Albania,Andorra
 2000-02-06,Cameroon,Algeria,2,1,African Cup of Nations,Accra,Ghana,True,Cameroon,Algeria
@@ -49652,7 +49652,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-09-25,Australia,Brazil,1,1,Friendly,Townsville,Australia,False,Australia,Brazil
 2026-09-25,India,Panama,1,1,Friendly,Bengaluru,India,False,India,Panama
 2026-09-25,Italy,Belgium,0,2,UEFA Nations League,Rome,Italy,False,Italy,Belgium
-2026-09-25,Turkey,France,0,1,UEFA Nations League,Izmit,Turkey,False,Turkey,France
+2026-09-25,Turkey,France,0,1,UEFA Nations League,İzmit,Turkey,False,Turkey,France
 2026-09-25,Georgia,Northern Ireland,0,1,UEFA Nations League,Tbilisi,Georgia,False,Georgia,Northern Ireland
 2026-09-25,Hungary,Ukraine,0,1,UEFA Nations League,Budapest,Hungary,False,Hungary,Ukraine
 2026-09-25,Poland,Bosnia and Herzegovina,0,0,UEFA Nations League,Warsaw,Poland,False,Poland,Bosnia and Herzegovina
@@ -49693,7 +49693,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-09-26,San Marino,Finland,0,7,UEFA Nations League,Serravalle,San Marino,False,San Marino,Finland
 2026-09-26,Albania,Belarus,2,0,UEFA Nations League,Tirana,Albania,False,Albania,Belarus
 2026-09-26,Faroe Islands,Kazakhstan,1,1,UEFA Nations League,Tórshavn,Faroe Islands,False,Faroe Islands,Kazakhstan
-2026-09-26,Slovakia,Moldova,2,0,UEFA Nations League,Presov,Slovakia,False,Slovakia,Moldova
+2026-09-26,Slovakia,Moldova,2,0,UEFA Nations League,Prešov,Slovakia,False,Slovakia,Moldova
 2026-09-26,Iceland,Estonia,1,1,UEFA Nations League,Reykjavík,Iceland,False,Iceland,Estonia
 2026-09-26,Bulgaria,Luxembourg,1,2,UEFA Nations League,Plovdiv,Bulgaria,False,Bulgaria,Luxembourg
 2026-09-26,South Africa,Guinea,2,1,African Cup of Nations qualification,Johannesburg,South Africa,False,South Africa,Guinea
@@ -49707,7 +49707,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-09-26,Vietnam,Philippines,1,0,FIFA ASEAN Cup,Bandung,Indonesia,True,Vietnam,Philippines
 2026-09-26,Kuwait,Iraq,2,3,Gulf Cup,Jeddah,Saudi Arabia,True,Kuwait,Iraq
 2026-09-26,Saudi Arabia,Oman,3,0,Gulf Cup,Jeddah,Saudi Arabia,False,Saudi Arabia,Oman
-2026-09-27,Bolivia,Paraguay,0,2,Friendly,Washington DC,United States,True,Bolivia,Paraguay
+2026-09-27,Bolivia,Paraguay,0,2,Friendly,"Washington, D.C.",United States,True,Bolivia,Paraguay
 2026-09-27,China,New Zealand,0,3,Friendly,Chongqing,China,False,China,New Zealand
 2026-09-27,Jordan,Syria,1,1,Friendly,Amman,Jordan,False,Jordan,Syria
 2026-09-27,Malta,Liechtenstein,2,0,Friendly,Ta' Qali,Malta,False,Malta,Liechtenstein
@@ -49761,7 +49761,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-09-29,Mexico,Peru,1,1,Friendly,Harrison,United States,True,Mexico,Peru
 2026-09-29,United States,Chile,4,2,Friendly,St. Louis,United States,False,United States,Chile
 2026-09-29,Czech Republic,England,0,2,UEFA Nations League,Prague,Czech Republic,False,Czech Republic,England
-2026-09-29,Spain,Croatia,4,1,UEFA Nations League,Sevilla,Spain,False,Spain,Croatia
+2026-09-29,Spain,Croatia,4,1,UEFA Nations League,Seville,Spain,False,Spain,Croatia
 2026-09-29,Scotland,Switzerland,0,3,UEFA Nations League,Glasgow,Scotland,False,Scotland,Switzerland
 2026-09-29,Slovenia,North Macedonia,2,0,UEFA Nations League,Ljubljana,Slovenia,False,Slovenia,North Macedonia
 2026-09-29,Finland,Belarus,0,0,UEFA Nations League,Helsinki,Finland,False,Finland,Belarus
@@ -49791,7 +49791,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-09-29,Belize,Saint Vincent and the Grenadines,0,1,CONCACAF Nations League,Belmopan,Belize,False,Belize,Saint Vincent and the Grenadines
 2026-09-29,Turks and Caicos Islands,British Virgin Islands,3,0,CONCACAF Nations League,Providenciales,Turks and Caicos Islands,False,Turks and Caicos Islands,British Virgin Islands
 2026-09-29,Anguilla,Aruba,0,2,CONCACAF Nations League,North Sound,Antigua and Barbuda,True,Anguilla,Aruba
-2026-09-29,United States Virgin Islands,Bahamas,3,1,CONCACAF Nations League,St Croix,United States Virgin Islands,False,United States Virgin Islands,Bahamas
+2026-09-29,United States Virgin Islands,Bahamas,3,1,CONCACAF Nations League,Saint Croix,United States Virgin Islands,False,United States Virgin Islands,Bahamas
 2026-09-29,Philippines,Pakistan,2,2,FIFA ASEAN Cup,Bandung,Indonesia,True,Philippines,Pakistan
 2026-09-29,Thailand,Vietnam,2,0,FIFA ASEAN Cup,Bandung,Indonesia,True,Thailand,Vietnam
 2026-09-29,Saudi Arabia,Iraq,2,0,Gulf Cup,Jeddah,Saudi Arabia,False,Saudi Arabia,Iraq
@@ -49828,7 +49828,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-10-01,Puerto Rico,Cayman Islands,3,0,CONCACAF Nations League,Mayagüez,Puerto Rico,False,Puerto Rico,Cayman Islands
 2026-10-01,British Virgin Islands,Montserrat,0,2,CONCACAF Nations League,Providenciales,Turks and Caicos Islands,True,British Virgin Islands,Montserrat
 2026-10-01,Antigua and Barbuda,Anguilla,3,0,CONCACAF Nations League,North Sound,Antigua and Barbuda,False,Antigua and Barbuda,Anguilla
-2026-10-01,United States Virgin Islands,Saint Martin,0,5,CONCACAF Nations League,St Croix,United States Virgin Islands,False,United States Virgin Islands,Saint Martin
+2026-10-01,United States Virgin Islands,Saint Martin,0,5,CONCACAF Nations League,Saint Croix,United States Virgin Islands,False,United States Virgin Islands,Saint Martin
 2026-10-01,Indonesia,Bangladesh,9,2,FIFA ASEAN Cup,Jakarta,Indonesia,False,Indonesia,Bangladesh
 2026-10-01,Malaysia,Singapore,6,0,FIFA ASEAN Cup,Bandung,Indonesia,True,Malaysia,Singapore
 2026-10-02,China,Palestine,0,5,Friendly,Chongqing,China,False,China,Palestine
@@ -49856,8 +49856,8 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-10-02,Vietnam,Pakistan,4,2,FIFA ASEAN Cup,Jakarta,Indonesia,True,Vietnam,Pakistan
 2026-10-02,Thailand,Philippines,1,2,FIFA ASEAN Cup,Bandung,Indonesia,True,Thailand,Philippines
 2026-10-03,Argentina,Burkina Faso,7,0,Friendly,Buenos Aires,Argentina,False,Argentina,Burkina Faso
-2026-10-03,Canada,Peru,2,0,Friendly,Montréal,Canada,False,Canada,Peru
-2026-10-03,India,Brazil,0,4,Friendly,Kolkota,India,False,India,Brazil
+2026-10-03,Canada,Peru,2,0,Friendly,Montreal,Canada,False,Canada,Peru
+2026-10-03,India,Brazil,0,4,Friendly,Calcutta,India,False,India,Brazil
 2026-10-03,Russia,Namibia,6,0,Friendly,Ekaterinburg,Russia,False,Russia,Namibia
 2026-10-03,Ivory Coast,Cameroon,0,1,Friendly,Ebimpé,Ivory Coast,False,Ivory Coast,Cameroon
 2026-10-03,United States,Mexico,3,0,Friendly,Glendale,United States,False,United States,Mexico
@@ -49920,9 +49920,9 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-10-06,Algeria,Niger,2,1,Friendly,Tizi Ouzou,Algeria,False,Algeria,Niger
 2026-10-06,Argentina,Benin,3,0,Friendly,Buenos Aires,Argentina,False,Argentina,Benin
 2026-10-06,China,Tajikistan,0,1,Friendly,Chongqing,China,False,China,Tajikistan
-2026-10-06,Russia,Nigeria,3,3,Friendly,Nizhniy Novgorod,Russia,False,Russia,Nigeria
+2026-10-06,Russia,Nigeria,3,3,Friendly,Nizhny Novgorod,Russia,False,Russia,Nigeria
 2026-10-06,Colombia,Peru,2,0,Friendly,Miami Gardens,United States,True,Colombia,Peru
-2026-10-06,India,Uruguay,1,6,Friendly,Kolkota,India,False,India,Uruguay
+2026-10-06,India,Uruguay,1,6,Friendly,Calcutta,India,False,India,Uruguay
 2026-10-06,Jordan,Venezuela,0,0,Friendly,Amman,Jordan,False,Jordan,Venezuela
 2026-10-06,South Korea,Uzbekistan,2,0,Friendly,Yongin,South Korea,False,Korea Republic,Uzbekistan
 2026-10-06,Mexico,Chile,0,2,Friendly,Los Angeles,United States,True,Mexico,Chile
@@ -49942,5 +49942,5 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2026-10-06,Belize,French Guiana,0,1,CONCACAF Nations League,Belmopan,Belize,False,Belize,French Guiana
 2026-10-06,Turks and Caicos Islands,Montserrat,1,4,CONCACAF Nations League,Providenciales,Turks and Caicos Islands,False,Turks and Caicos Islands,Montserrat
 2026-10-06,Antigua and Barbuda,Aruba,3,2,CONCACAF Nations League,North Sound,Antigua and Barbuda,False,Antigua and Barbuda,Aruba
-2026-10-06,Saint Martin,Bahamas,6,0,CONCACAF Nations League,St Croix,United States Virgin Islands,True,Saint Martin,Bahamas
+2026-10-06,Saint Martin,Bahamas,6,0,CONCACAF Nations League,Saint Croix,United States Virgin Islands,True,Saint Martin,Bahamas
 2026-10-06,Saudi Arabia,United Arab Emirates,2,0,Gulf Cup,Jeddah,Saudi Arabia,False,Saudi Arabia,United Arab Emirates
