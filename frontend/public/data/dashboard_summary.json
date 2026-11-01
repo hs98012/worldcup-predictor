@@ -6,83 +6,83 @@
   "remainingTournamentMatches": 0,
   "remainingChampionshipMatches": 0,
   "remainingMatchesScope": "CHAMPIONSHIP_PATH",
-  "dataAsOf": "2026-10-31",
+  "dataAsOf": "2026-11-01",
   "lastCompletedMatchDate": "2026-07-19",
   "latestScheduledMatchDate": null,
   "modelSummary": {
-    "modelName": "scikit-learn RandomForestClassifier_calibrated",
+    "modelName": "scikit-learn HistGradientBoostingClassifier_calibrated",
     "task": "A_WIN / DRAW / B_WIN multiclass classification",
-    "accuracy": 58.66,
-    "logLoss": 0.9192,
+    "accuracy": 58.67,
+    "logLoss": 0.9193,
     "testStartDate": "2021-11-15",
     "testEndDate": "2026-10-06",
     "trainSize": 20703,
     "testSize": 5176,
-    "drawRecall": 0.0043,
+    "drawRecall": 0.0034,
     "drawCalibrationEnabled": true,
     "drawCalibrationLabel": "무승부 보정 적용",
     "drawCalibrationSummary": {
-      "selectionReason": "DRAW recall이 0.0043에서 0.0068로 개선되었고, Accuracy 하락 -0.0005, Log Loss 변화 -0.0001로 허용 범위 이내여서 적용",
+      "selectionReason": "DRAW recall이 0.0034에서 0.0043로 개선되었고, Accuracy 하락 0.0001, Log Loss 변화 -0.0003로 허용 범위 이내여서 적용",
       "baseMetrics": {
         "model": "draw_calibration_base",
-        "accuracy": 0.5866,
-        "logLoss": 0.9192,
+        "accuracy": 0.5867,
+        "logLoss": 0.9193,
         "confusionMatrix": [
           [
-            2037,
-            422,
-            7
+            2015,
+            450,
+            1
           ],
           [
-            536,
-            994,
+            513,
+            1018,
+            3
+          ],
+          [
+            699,
+            473,
             4
-          ],
-          [
-            720,
-            451,
-            5
           ]
         ],
-        "drawRecall": 0.0043,
-        "drawPrecision": 0.3125,
-        "macroF1": 0.4334
+        "drawRecall": 0.0034,
+        "drawPrecision": 0.5,
+        "macroF1": 0.4335
       },
       "calibratedMetrics": {
-        "accuracy": 0.5871,
-        "logLoss": 0.9191,
-        "drawRecall": 0.0068,
-        "drawPrecision": 0.4211,
-        "macroF1": 0.4353,
+        "accuracy": 0.5866,
+        "logLoss": 0.919,
+        "drawRecall": 0.0043,
+        "drawPrecision": 0.3846,
+        "macroF1": 0.434,
         "confusionMatrix": [
           [
-            2037,
-            422,
-            7
-          ],
-          [
-            536,
-            994,
-            4
-          ],
-          [
-            720,
+            2015,
             448,
-            8
+            3
+          ],
+          [
+            513,
+            1016,
+            5
+          ],
+          [
+            699,
+            472,
+            5
           ]
         ]
       },
       "selectedParams": {
-        "eloThreshold": 50,
+        "eloThreshold": 100,
         "drawBoost": 0.08,
         "winRateThreshold": 0.25,
-        "avgGoalsForThreshold": 0.35,
-        "avgGoalsAgainstThreshold": 0.35,
+        "avgGoalsForThreshold": 0.5,
+        "avgGoalsAgainstThreshold": 0.5,
         "recentGoalDiffThreshold": 3,
         "requireNeutral": true
       }
     },
-    "note": "최고 모델 accuracy 0.5900와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4929 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 -0.0011, Log Loss 변화 -0.0069로 보호 기준 이내여서 사용"
+    "note": "최고 모델 accuracy 0.5900와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4929 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 -0.0010, Log Loss 변화 -0.0068로 보호 기준 이내여서 사용"
   },
   "winnerTop10": [],
   "southKorea": null,
@@ -2099,9 +2099,9 @@
     {
       "team": "Spain",
       "group": "H",
-      "elo": 1929.27,
-      "simulationStrength": 1949.27,
-      "strengthScore": 1949.27,
+      "elo": 1929.28,
+      "simulationStrength": 1949.28,
+      "strengthScore": 1949.28,
       "strengthRank": 1,
       "winnerProb": 0.0,
       "winnerProbRank": 3,
@@ -2163,8 +2163,8 @@
       "cappedRecentFormContribution": 10.1195,
       "scheduleStrengthPenalty": 0.0,
       "groupStageDifficulty": 1637.85,
-      "expectedKnockoutPathDifficulty": 1760.82,
-      "pathDifficultyScore": 1717.78,
+      "expectedKnockoutPathDifficulty": 1760.83,
+      "pathDifficultyScore": 1717.79,
       "medianPathDifficulty": 1713.16,
       "note": "전력 및 경로 진단 범위 내"
     },
@@ -2188,7 +2188,7 @@
       "scheduleStrengthPenalty": 0.0,
       "groupStageDifficulty": 1701.88,
       "expectedKnockoutPathDifficulty": 1779.83,
-      "pathDifficultyScore": 1752.55,
+      "pathDifficultyScore": 1752.54,
       "medianPathDifficulty": 1713.16,
       "note": "우승 확률 순위가 전력 순위보다 크게 높음"
     },
@@ -2234,7 +2234,7 @@
       "recentFormContribution": 22.9787,
       "cappedRecentFormContribution": 10.0,
       "scheduleStrengthPenalty": -10.0,
-      "groupStageDifficulty": 1584.83,
+      "groupStageDifficulty": 1584.82,
       "expectedKnockoutPathDifficulty": 1761.8,
       "pathDifficultyScore": 1699.86,
       "medianPathDifficulty": 1713.16,
@@ -2258,7 +2258,7 @@
       "recentFormContribution": 27.5337,
       "cappedRecentFormContribution": 20.0,
       "scheduleStrengthPenalty": 0.0,
-      "groupStageDifficulty": 1643.07,
+      "groupStageDifficulty": 1643.06,
       "expectedKnockoutPathDifficulty": 1659.75,
       "pathDifficultyScore": 1653.91,
       "medianPathDifficulty": 1713.16,

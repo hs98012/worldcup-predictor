@@ -674,7 +674,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1921-05-21,Belgium,England,0,2,Friendly,Brussels,Belgium,False,Belgium,England
 1921-05-25,Norway,Finland,3,2,Friendly,Kristiania,Norway,False,Norway,Finland
 1921-05-29,Sweden,Finland,0,3,Friendly,Stockholm,Sweden,False,Sweden,Finland
-1921-05-30,Japan,Philippines,0,3,Friendly,Shanghai,China,True,Japan,Philippines
 1921-05-30,Philippines,Japan,3,1,Far Eastern Championship Games,Shanghai,China,True,Philippines,Japan
 1921-05-31,China,Philippines,1,0,Far Eastern Championship Games,Shanghai,China,False,China,Philippines
 1921-06-01,China,Japan,4,0,Far Eastern Championship Games,Shanghai,China,False,China,Japan
@@ -1010,7 +1009,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1925-05-05,Austria,Hungary,3,1,Friendly,Vienna,Austria,False,Austria,Hungary
 1925-05-15,Turkey,Russia,1,2,Friendly,Ankara,Turkey,False,Turkey,Russia
 1925-05-18,Philippines,Japan,4,0,Far Eastern Championship Games,Manila,Philippines,False,Philippines,Japan
-1925-05-20,China,Japan,2,0,Friendly,Manila,Philippines,True,China,Japan
 1925-05-20,Japan,China,0,2,Far Eastern Championship Games,Manila,Philippines,True,Japan,China
 1925-05-21,France,England,2,3,Friendly,Colombes,France,False,France,England
 1925-05-21,Hungary,Belgium,1,3,Friendly,Budapest,Hungary,False,Hungary,Belgium
@@ -1835,7 +1833,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1934-02-02,Catalonia,Spain,0,2,Friendly,Barcelona,Spain,False,Catalonia,Spain
 1934-02-04,Haiti,Cuba,0,6,FIFA World Cup qualification,Port-au-Prince,Haiti,False,Haiti,Cuba
 1934-02-11,Italy,Austria,2,4,Central European International Cup,Turin,Italy,False,Italy,Austria
-1934-02-25,Republic of Ireland,Belgium,4,4,FIFA World Cup qualification,Dublin,Irish Free State,True,Republic of Ireland,Belgium
+1934-02-25,Republic of Ireland,Belgium,4,4,FIFA World Cup qualification,Dublin,Irish Free State,False,Republic of Ireland,Belgium
 1934-03-04,Mexico,Cuba,3,2,FIFA World Cup qualification,Mexico City,Mexico,False,Mexico,Cuba
 1934-03-11,France,Switzerland,0,1,Friendly,Paris,France,False,France,Switzerland
 1934-03-11,Luxembourg,Germany,1,9,FIFA World Cup qualification,Luxembourg,Luxembourg,False,Luxembourg,Germany
@@ -3450,7 +3448,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1950-10-26,Iran,Afghanistan,4,0,Friendly,Tehran,Iran,False,Iran,Afghanistan
 1950-10-28,Israel,Turkey,5,1,Friendly,Tel Aviv,Israel,False,Israel,Turkey
 1950-10-28,Turkey,Egypt,3,1,Mediterranean Cup,Ankara,Turkey,False,Turkey,Egypt
-1950-10-28,Egypt,Turkey,3,0,Mediterranean Cup,Cairo,Egypt,False,Egypt,Turkey
 1950-10-29,Hungary,Austria,4,3,Friendly,Budapest,Hungary,False,Hungary,Austria
 1950-10-30,Bulgaria,Poland,0,1,Friendly,Sofia,Bulgaria,False,Bulgaria,Poland
 1950-11-01,France,Belgium,3,3,Friendly,Colombes,France,False,France,Belgium
@@ -3472,6 +3469,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1950-12-02,Trinidad and Tobago,Curaçao,5,1,Friendly,Port of Spain,Trinidad and Tobago,False,Trinidad and Tobago,Curaçao
 1950-12-03,Turkey,Israel,3,2,Friendly,Istanbul,Turkey,False,Turkey,Israel
 1950-12-05,Guadeloupe,Trinidad and Tobago,0,1,Friendly,Basse-Terre,Guadeloupe,False,Guadeloupe,Trinidad and Tobago
+1950-12-08,Egypt,Turkey,3,0,Mediterranean Cup,Cairo,Egypt,False,Egypt,Turkey
 1950-12-10,France,Netherlands,5,2,Friendly,Colombes,France,False,France,Netherlands
 1950-12-13,Scotland,Austria,0,1,Friendly,Glasgow,Scotland,False,Scotland,Austria
 1951-02-06,France,Yugoslavia,2,1,Friendly,Paris,France,False,France,Yugoslavia
@@ -4244,7 +4242,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1956-03-15,Chile,Peru,2,2,Pan American Championship,Mexico City,Mexico,True,Chile,Peru
 1956-03-16,Haiti,Venezuela,3,0,Friendly,Port-au-Prince,Haiti,False,Haiti,Venezuela
 1956-03-17,Costa Rica,Peru,4,2,Pan American Championship,Mexico City,Mexico,True,Costa Rica,Peru
-1956-03-17,Malaysia,Cambodia,9,2,AFC Asian Cup qualification,Kuala Lumpur,Malaya,True,Malaysia,Cambodia
+1956-03-17,Malaysia,Cambodia,9,2,AFC Asian Cup qualification,Kuala Lumpur,Malaya,False,Malaysia,Cambodia
 1956-03-18,Argentina,Brazil,2,2,Pan American Championship,Mexico City,Mexico,True,Argentina,Brazil
 1956-03-22,Guernsey,Alderney,4,0,Muratti Vase,Guernsey,Guernsey,False,Guernsey,Alderney
 1956-03-25,France,Austria,3,1,Friendly,Colombes,France,False,France,Austria
@@ -4277,7 +4275,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1956-05-20,Guadeloupe,Martinique,2,2,Friendly,Basse-Terre,Guadeloupe,False,Guadeloupe,Martinique
 1956-05-20,Hungary,Czechoslovakia,2,4,Central European International Cup,Budapest,Hungary,False,Hungary,Czechoslovakia
 1956-05-23,Russia,Denmark,5,1,Friendly,Moscow,Soviet Union,False,Russia,Denmark
-1956-05-24,Malaysia,Vietnam Republic,3,3,AFC Asian Cup qualification,Kuala Lumpur,Malaya,True,Malaysia,Vietnam Republic
+1956-05-24,Malaysia,Vietnam Republic,3,3,AFC Asian Cup qualification,Kuala Lumpur,Malaya,False,Malaysia,Vietnam Republic
 1956-05-26,Germany,England,1,3,Friendly,Berlin,Germany,False,Germany,England
 1956-05-30,Norway,Poland,0,0,Friendly,Oslo,Norway,False,Norway,Poland
 1956-06-03,Belgium,Hungary,5,4,Friendly,Brussels,Belgium,False,Belgium,Hungary
@@ -4504,7 +4502,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1957-06-23,China,Indonesia,0,0,FIFA World Cup qualification,Yangon,Burma,True,China,Indonesia
 1957-06-23,Colombia,Paraguay,1,2,Friendly,Medellín,Colombia,False,Colombia,Paraguay
 1957-06-23,Hungary,Bulgaria,4,1,FIFA World Cup qualification,Budapest,Hungary,False,Hungary,Bulgaria
-1957-06-23,Russia,Poland,3,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Poland
+1957-06-23,Russia,Poland,3,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Poland
 1957-06-27,Myanmar,China,2,1,Friendly,Yangon,Burma,False,Myanmar,China
 1957-06-30,Denmark,Sweden,1,2,Nordic Championship,Copenhagen,Denmark,False,Denmark,Sweden
 1957-06-30,Mexico,Canada,3,0,FIFA World Cup qualification,Mexico City,Mexico,False,Mexico,Canada
@@ -4521,7 +4519,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1957-07-14,Paraguay,Uruguay,5,0,FIFA World Cup qualification,Asunción,Paraguay,False,Paraguay,Uruguay
 1957-07-21,Bulgaria,Russia,0,4,Friendly,Sofia,Bulgaria,False,Bulgaria,Russia
 1957-07-21,China,Sudan,4,1,Friendly,Beijing,China,False,China,Sudan
-1957-07-27,Russia,Finland,2,1,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Finland
+1957-07-27,Russia,Finland,2,1,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Finland
 1957-07-28,Uruguay,Paraguay,2,0,FIFA World Cup qualification,Montevideo,Uruguay,False,Uruguay,Paraguay
 1957-08-04,Curaçao,Costa Rica,1,2,FIFA World Cup qualification,Willemstad,Curaçao,False,Curaçao,Costa Rica
 1957-08-13,Curaçao,Haiti,1,3,CCCF Championship,Willemstad,Curaçao,False,Curaçao,Haiti
@@ -4751,7 +4749,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1958-08-31,Indonesia,Singapore,2,0,Merdeka Tournament,Kuala Lumpur,Malaya,True,Indonesia,Singapore
 1958-08-31,New Caledonia,New Zealand,1,2,Friendly,Nouméa,New Caledonia,False,New Caledonia,New Zealand
 1958-09-02,Indonesia,Vietnam Republic,4,1,Merdeka Tournament,Kuala Lumpur,Malaya,True,Indonesia,Vietnam Republic
-1958-09-02,Malaysia,Singapore,0,0,Merdeka Tournament,Kuala Lumpur,Malaya,True,Malaysia,Singapore
+1958-09-02,Malaysia,Singapore,0,0,Merdeka Tournament,Kuala Lumpur,Malaya,False,Malaysia,Singapore
 1958-09-04,Malaysia,Vietnam Republic,2,0,Merdeka Tournament,Kuala Lumpur,Malaya,False,Malaysia,Vietnam Republic
 1958-09-07,New Caledonia,New Zealand,1,5,Friendly,Nouméa,New Caledonia,False,New Caledonia,New Zealand
 1958-09-09,Zimbabwe,Zambia,4,2,Friendly,Salisbury,Southern Rhodesia,False,Zimbabwe,Zambia
@@ -4805,9 +4803,9 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1958-12-18,Turkey,Czechoslovakia,1,0,Friendly,Istanbul,Turkey,False,Turkey,Czechoslovakia
 1958-12-21,Germany,Bulgaria,3,0,Friendly,Augsburg,Germany,False,Germany,Bulgaria
 1958-12-25,Hong Kong,Japan,5,2,Friendly,So Kon Po,Hong Kong,False,Hong Kong,Japan
-1958-12-28,Egypt,Germany,2,1,Friendly,Cairo,United Arab Republic,True,Egypt,Germany
+1958-12-28,Egypt,Germany,2,1,Friendly,Cairo,United Arab Republic,False,Egypt,Germany
 1958-12-28,Malaysia,Japan,6,2,Friendly,Kuala Lumpur,Malaya,False,Malaysia,Japan
-1959-01-04,Malaysia,Japan,1,3,Friendly,George Town,Malaya,True,Malaysia,Japan
+1959-01-04,Malaysia,Japan,1,3,Friendly,George Town,Malaya,False,Malaysia,Japan
 1959-01-10,Singapore,Japan,3,4,Friendly,Kallang,Singapore,False,Singapore,Japan
 1959-01-11,Singapore,Japan,3,2,Friendly,Kallang,Singapore,False,Singapore,Japan
 1959-02-11,Indonesia,German DR,2,2,Friendly,Jakarta,Indonesia,False,Indonesia,German DR
@@ -4873,13 +4871,13 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1959-05-20,Norway,Austria,0,1,UEFA Euro qualification,Oslo,Norway,False,Norway,Austria
 1959-05-21,Martinique,Guadeloupe,1,2,Friendly,Fort-de-France,Martinique,False,Martinique,Guadeloupe
 1959-05-21,Sweden,Portugal,2,0,Friendly,Gothenburg,Sweden,False,Sweden,Portugal
-1959-05-22,Egypt,Ethiopia,4,0,African Cup of Nations,Cairo,United Arab Republic,True,Egypt,Ethiopia
+1959-05-22,Egypt,Ethiopia,4,0,African Cup of Nations,Cairo,United Arab Republic,False,Egypt,Ethiopia
 1959-05-24,Belgium,Austria,0,2,Friendly,Brussels,Belgium,False,Belgium,Austria
 1959-05-24,Mexico,England,2,1,Friendly,Mexico City,Mexico,False,Mexico,England
 1959-05-25,Ethiopia,Sudan,0,1,African Cup of Nations,Cairo,United Arab Republic,True,Ethiopia,Sudan
 1959-05-27,Netherlands,Scotland,1,2,Friendly,Amsterdam,Netherlands,False,Netherlands,Scotland
 1959-05-28,United States,England,1,8,Friendly,Los Angeles,United States,False,United States,England
-1959-05-29,Egypt,Sudan,2,1,African Cup of Nations,Cairo,United Arab Republic,True,Egypt,Sudan
+1959-05-29,Egypt,Sudan,2,1,African Cup of Nations,Cairo,United Arab Republic,False,Egypt,Sudan
 1959-05-30,Martinique,Suriname,3,1,Friendly,Fort-de-France,Martinique,False,Martinique,Suriname
 1959-05-31,Martinique,Suriname,3,0,Friendly,Fort-de-France,Martinique,False,Martinique,Suriname
 1959-05-31,Yugoslavia,Bulgaria,2,0,UEFA Euro qualification,Belgrade,Yugoslavia,False,Yugoslavia,Bulgaria
@@ -4997,7 +4995,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1960-01-01,Morocco,Yugoslavia,0,5,Friendly,Casablanca,Morocco,False,Morocco,Yugoslavia
 1960-01-03,Tunisia,Yugoslavia,1,5,Friendly,Tunis,Tunisia,False,Tunisia,Yugoslavia
 1960-01-06,Italy,Switzerland,3,0,Central European International Cup,Naples,Italy,False,Italy,Switzerland
-1960-01-08,Egypt,Yugoslavia,0,1,Friendly,Cairo,United Arab Republic,True,Egypt,Yugoslavia
+1960-01-08,Egypt,Yugoslavia,0,1,Friendly,Cairo,United Arab Republic,False,Egypt,Yugoslavia
 1960-01-27,Guinea-Bissau,Gambia,3,2,Friendly,Bissau,Portuguese Guinea,False,Guinea-Bissau,Gambia
 1960-01-31,Guinea-Bissau,Sierra Leone,3,4,Friendly,Kumasi,Ghana,True,Guinea-Bissau,Sierra Leone
 1960-02-07,Ghana,Sierra Leone,6,2,Friendly,Accra,Ghana,False,Ghana,Sierra Leone
@@ -5045,14 +5043,14 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1960-04-24,Togo,Nigeria,1,1,Friendly,Lomé,Togo,False,Togo,Nigeria
 1960-04-26,Cameroon,Nigeria,0,0,Friendly,Lomé,Togo,True,Cameroon,Nigeria
 1960-04-27,Germany,Portugal,2,1,Friendly,Ludwigshafen,Germany,False,Germany,Portugal
-1960-04-29,Egypt,Brazil,0,5,Friendly,Cairo,United Arab Republic,True,Egypt,Brazil
+1960-04-29,Egypt,Brazil,0,5,Friendly,Cairo,United Arab Republic,False,Egypt,Brazil
 1960-05-01,Czechoslovakia,Austria,4,0,Friendly,Prague,Czechoslovakia,False,Czechoslovakia,Austria
-1960-05-01,Egypt,Brazil,1,3,Friendly,Alexandria,United Arab Republic,True,Egypt,Brazil
+1960-05-01,Egypt,Brazil,1,3,Friendly,Alexandria,United Arab Republic,False,Egypt,Brazil
 1960-05-01,Togo,Ghana,2,3,Friendly,Lomé,Togo,False,Togo,Ghana
 1960-05-04,Scotland,Poland,2,3,Friendly,Glasgow,Scotland,False,Scotland,Poland
 1960-05-05,Singapore,India,3,0,Friendly,Kallang,Singapore,False,Singapore,India
 1960-05-05,Jersey,Guernsey,5,1,Muratti Vase,Jersey,Jersey,False,Jersey,Guernsey
-1960-05-06,Egypt,Brazil,0,3,Friendly,Cairo,United Arab Republic,True,Egypt,Brazil
+1960-05-06,Egypt,Brazil,0,3,Friendly,Cairo,United Arab Republic,False,Egypt,Brazil
 1960-05-06,Malaysia,India,0,0,Friendly,Kuala Lumpur,Malaya,False,Malaysia,India
 1960-05-08,Portugal,Yugoslavia,2,1,UEFA Euro qualification,Oeiras,Portugal,False,Portugal,Yugoslavia
 1960-05-10,Denmark,Brazil,3,4,Friendly,Esbjerg,Denmark,False,Denmark,Brazil
@@ -5305,7 +5303,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1961-06-15,Italy,Argentina,4,1,Friendly,Florence,Italy,False,Italy,Argentina
 1961-06-16,Finland,Bulgaria,0,2,FIFA World Cup qualification,Helsinki,Finland,False,Finland,Bulgaria
 1961-06-18,Denmark,Sweden,1,2,Nordic Championship,Copenhagen,Denmark,False,Denmark,Sweden
-1961-06-18,Russia,Turkey,1,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Turkey
+1961-06-18,Russia,Turkey,1,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Turkey
 1961-06-18,Yugoslavia,Morocco,3,2,Friendly,Belgrade,Yugoslavia,False,Yugoslavia,Morocco
 1961-06-19,Czechoslovakia,Argentina,3,3,Friendly,Brno,Czechoslovakia,False,Czechoslovakia,Argentina
 1961-06-21,German DR,Morocco,1,2,Friendly,Erfurt,German DR,False,German DR,Morocco
@@ -5313,7 +5311,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1961-06-25,Poland,Yugoslavia,1,1,FIFA World Cup qualification,Chorzów,Poland,False,Poland,Yugoslavia
 1961-06-27,Finland,Norway,4,1,Nordic Championship,Helsinki,Finland,False,Finland,Norway
 1961-06-29,Brazil,Paraguay,3,2,Friendly,Rio de Janeiro,Brazil,False,Brazil,Paraguay
-1961-07-01,Russia,Norway,5,2,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Norway
+1961-07-01,Russia,Norway,5,2,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Norway
 1961-07-15,Bolivia,Uruguay,1,1,FIFA World Cup qualification,La Paz,Bolivia,False,Bolivia,Uruguay
 1961-07-30,Uruguay,Bolivia,2,1,FIFA World Cup qualification,Montevideo,Uruguay,False,Uruguay,Bolivia
 1961-08-02,Indonesia,Singapore,1,0,Merdeka Tournament,Kuala Lumpur,Malaya,True,Indonesia,Singapore
@@ -6319,7 +6317,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1965-05-23,German DR,Hungary,1,1,FIFA World Cup qualification,Leipzig,German DR,False,German DR,Hungary
 1965-05-23,Mali,Guinea,2,1,African Cup of Nations qualification,Bamako,Mali,False,Mali,Guinea
 1965-05-23,Poland,Scotland,1,1,FIFA World Cup qualification,Chorzów,Poland,False,Poland,Scotland
-1965-05-23,Russia,Greece,3,1,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Greece
+1965-05-23,Russia,Greece,3,1,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Greece
 1965-05-23,Uruguay,Venezuela,5,0,FIFA World Cup qualification,Montevideo,Uruguay,False,Uruguay,Venezuela
 1965-05-24,Iran,Turkey,2,1,Friendly,Tehran,Iran,False,Iran,Turkey
 1965-05-26,Switzerland,Germany,0,1,Friendly,Basel,Switzerland,False,Switzerland,Germany
@@ -6327,7 +6325,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1965-05-27,Norway,Luxembourg,4,2,FIFA World Cup qualification,Trondheim,Norway,False,Norway,Luxembourg
 1965-05-29,Liberia,Ivory Coast,0,1,African Cup of Nations qualification,Monrovia,Liberia,False,Liberia,Ivory Coast
 1965-05-30,Romania,Czechoslovakia,1,0,FIFA World Cup qualification,Bucharest,Romania,False,Romania,Czechoslovakia
-1965-05-30,Russia,Wales,2,1,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Wales
+1965-05-30,Russia,Wales,2,1,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Wales
 1965-05-30,Venezuela,Uruguay,1,3,FIFA World Cup qualification,Caracas,Venezuela,False,Venezuela,Uruguay
 1965-06-02,Brazil,Belgium,5,0,Friendly,Rio de Janeiro,Brazil,False,Brazil,Belgium
 1965-06-02,Venezuela,Peru,3,6,FIFA World Cup qualification,Caracas,Venezuela,False,Venezuela,Peru
@@ -6349,7 +6347,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1965-06-24,Portugal,Brazil,0,0,Friendly,Porto,Portugal,False,Portugal,Brazil
 1965-06-27,Congo,Benin,1,6,Friendly,Brazzaville,Congo,False,Congo,Benin
 1965-06-27,Hungary,Italy,2,1,Friendly,Budapest,Hungary,False,Hungary,Italy
-1965-06-27,Russia,Denmark,6,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Denmark
+1965-06-27,Russia,Denmark,6,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Denmark
 1965-06-30,Sweden,Brazil,1,2,Friendly,Solna,Sweden,False,Sweden,Brazil
 1965-07-04,Russia,Brazil,0,3,Friendly,Moscow,Soviet Union,False,Russia,Brazil
 1965-07-05,Iceland,Denmark,1,3,Friendly,Reykjavík,Iceland,False,Iceland,Denmark
@@ -6362,9 +6360,9 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1965-07-20,Colombia,Ecuador,0,1,FIFA World Cup qualification,Barranquilla,Colombia,False,Colombia,Ecuador
 1965-07-20,Congo,Togo,7,2,All-African Games,Brazzaville,Congo,False,Congo,Togo
 1965-07-20,Mali,Uganda,5,1,All-African Games,Brazzaville,Congo,True,Mali,Uganda
-1965-07-20,Togo,Uganda,1,1,All-African Games,Brazzaville,Congo,True,Togo,Uganda
 1965-07-20,Ivory Coast,Madagascar,5,0,All-African Games,Brazzaville,Congo,True,Ivory Coast,Madagascar
 1965-07-20,Algeria,DR Congo,4,1,All-African Games,Brazzaville,Congo,True,Algeria,DR Congo
+1965-07-21,Togo,Uganda,1,1,All-African Games,Brazzaville,Congo,True,Togo,Uganda
 1965-07-21,Chile,Argentina,1,1,Copa Carlos Dittborn,Santiago,Chile,False,Chile,Argentina
 1965-07-21,Pakistan,Turkey,1,3,Friendly,Tehran,Iran,True,Pakistan,Turkey
 1965-07-21,Congo,Mali,1,2,All-African Games,Brazzaville,Congo,False,Congo,Mali
@@ -6747,10 +6745,10 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1966-08-17,Myanmar,Thailand,3,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,Thailand
 1966-08-17,Taiwan,Vietnam Republic,0,3,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Taiwan,Vietnam Republic
 1966-08-17,India,Japan,3,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,India,Japan
+1966-08-17,Singapore,Taiwan,4,1,Merdeka Tournament,Ipoh,Malaysia,True,Singapore,Taiwan
 1966-08-18,Togo,Ghana,1,1,Friendly,Lomé,Togo,False,Togo,Ghana
 1966-08-19,Hong Kong,South Korea,0,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Hong Kong,Korea Republic
 1966-08-19,Malaysia,Thailand,0,0,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Thailand
-1966-08-20,Singapore,Taiwan,4,1,Merdeka Tournament,Ipoh,Malaysia,True,Singapore,Taiwan
 1966-08-20,Japan,Taiwan,5,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Japan,Taiwan
 1966-08-20,Singapore,Vietnam Republic,1,2,Merdeka Tournament,Ipoh,Malaysia,True,Singapore,Vietnam Republic
 1966-08-21,Ghana,Togo,6,2,Friendly,Accra,Ghana,False,Ghana,Togo
@@ -6918,14 +6916,14 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1967-01-16,Haiti,Trinidad and Tobago,4,2,CONCACAF Championship qualification,Kingston,Jamaica,True,Haiti,Trinidad and Tobago
 1967-01-17,Uruguay,Bolivia,4,0,Copa América,Montevideo,Uruguay,False,Uruguay,Bolivia
 1967-01-17,Curaçao,Cuba,2,2,CONCACAF Championship qualification,Kingston,Jamaica,True,Curaçao,Cuba
-1967-01-17,Egypt,German DR,1,2,Friendly,Cairo,United Arab Republic,True,Egypt,German DR
+1967-01-17,Egypt,German DR,1,2,Friendly,Cairo,United Arab Republic,False,Egypt,German DR
 1967-01-18,Argentina,Paraguay,4,1,Copa América,Montevideo,Uruguay,True,Argentina,Paraguay
 1967-01-18,Chile,Venezuela,2,0,Copa América,Montevideo,Uruguay,True,Chile,Venezuela
 1967-01-18,Guatemala,Honduras,3,1,Friendly,Guatemala City,Guatemala,False,Guatemala,Honduras
 1967-01-18,Jamaica,Trinidad and Tobago,1,1,CONCACAF Championship qualification,Kingston,Jamaica,False,Jamaica,Trinidad and Tobago
 1967-01-19,Curaçao,Haiti,0,1,CONCACAF Championship qualification,Kingston,Jamaica,True,Curaçao,Haiti
 1967-01-20,Cuba,Trinidad and Tobago,1,2,CONCACAF Championship qualification,Kingston,Jamaica,True,Cuba,Trinidad and Tobago
-1967-01-20,Egypt,German DR,0,3,Friendly,Cairo,United Arab Republic,True,Egypt,German DR
+1967-01-20,Egypt,German DR,0,3,Friendly,Cairo,United Arab Republic,False,Egypt,German DR
 1967-01-21,Jamaica,Haiti,0,1,CONCACAF Championship qualification,Kingston,Jamaica,False,Jamaica,Haiti
 1967-01-21,Martinique,Guadeloupe,2,1,Friendly,Fort-de-France,Martinique,False,Martinique,Guadeloupe
 1967-01-21,Uruguay,Venezuela,4,0,Copa América,Montevideo,Uruguay,False,Uruguay,Venezuela
@@ -6935,7 +6933,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1967-01-22,Honduras,Guatemala,1,1,Friendly,Tegucigalpa,Honduras,False,Honduras,Guatemala
 1967-01-22,Tunisia,Turkey,0,0,Friendly,Tunis,Tunisia,False,Tunisia,Turkey
 1967-01-23,Martinique,French Guiana,2,1,Friendly,Fort-de-France,Martinique,False,Martinique,French Guiana
-1967-01-24,Egypt,German DR,2,2,Friendly,Alexandria,United Arab Republic,True,Egypt,German DR
+1967-01-24,Egypt,German DR,2,2,Friendly,Alexandria,United Arab Republic,False,Egypt,German DR
 1967-01-25,Argentina,Venezuela,5,1,Copa América,Montevideo,Uruguay,True,Argentina,Venezuela
 1967-01-25,Paraguay,Bolivia,1,0,Copa América,Montevideo,Uruguay,True,Paraguay,Bolivia
 1967-01-26,Uruguay,Chile,2,2,Copa América,Montevideo,Uruguay,False,Uruguay,Chile
@@ -7609,7 +7607,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1969-02-01,Malawi,Zimbabwe,2,2,Friendly,Zomba,Malawi,False,Malawi,Zimbabwe
 1969-02-02,Guinea,Sierra Leone,1,1,Friendly,Conakry,Guinea,False,Guinea,Sierra Leone
 1969-02-02,Uganda,Cameroon,2,1,African Cup of Nations qualification,Kampala,Uganda,False,Uganda,Cameroon
-1969-02-02,Cameroon,Uganda,2,0,African Cup of Nations qualification,Yaoundé,Cameroon,False,Cameroon,Uganda
 1969-02-04,Mexico,Colombia,1,0,Friendly,León,Mexico,False,Mexico,Colombia
 1969-02-06,Haiti,Jamaica,1,2,Friendly,Port-au-Prince,Haiti,False,Haiti,Jamaica
 1969-02-08,Haiti,Jamaica,3,0,Friendly,Port-au-Prince,Haiti,False,Haiti,Jamaica
@@ -7625,6 +7622,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1969-02-23,Guatemala,Haiti,1,1,FIFA World Cup qualification,Guatemala City,Guatemala,False,Guatemala,Haiti
 1969-02-26,Yugoslavia,Sweden,2,1,Friendly,Split,Yugoslavia,False,Yugoslavia,Sweden
 1969-03-01,Tanzania,Kenya,1,1,African Cup of Nations qualification,Dar es Salaam,Tanzania,False,Tanzania,Kenya
+1969-03-02,Cameroon,Uganda,2,0,African Cup of Nations qualification,Yaoundé,Cameroon,False,Cameroon,Uganda
 1969-03-07,Iran,Iraq,2,1,Friendly,Tehran,Iran,False,Iran,Iraq
 1969-03-09,Algeria,Morocco,2,0,African Cup of Nations qualification,Algiers,Algeria,False,Algeria,Morocco
 1969-03-10,Iraq,Pakistan,1,2,Friendly,Tehran,Iran,True,Iraq,Pakistan
@@ -7723,7 +7721,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1969-06-27,Honduras,El Salvador,2,3,FIFA World Cup qualification,Mexico City,Mexico,True,Honduras,El Salvador
 1969-06-27,Peru,Uruguay,1,0,Friendly,Lima,Peru,False,Peru,Uruguay
 1969-06-29,Zambia,Cameroon,2,2,African Cup of Nations qualification,Ndola,Zambia,False,Zambia,Cameroon
-1969-06-29,Cameroon,Zambia,2,1,African Cup of Nations qualification,Yaoundé,Cameroon,False,Cameroon,Zambia
 1969-07-01,Denmark,Bermuda,6,0,Friendly,Aalborg,Denmark,False,Denmark,Bermuda
 1969-07-01,Madagascar,Malawi,3,0,Friendly,Antananarivo,Madagascar,False,Madagascar,Malawi
 1969-07-02,Colombia,Uruguay,0,1,Friendly,Cali,Colombia,False,Colombia,Uruguay
@@ -7748,6 +7745,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1969-07-27,New Caledonia,New Zealand,2,0,Friendly,Nouméa,New Caledonia,False,New Caledonia,New Zealand
 1969-07-29,New Caledonia,New Zealand,3,2,Friendly,Nouméa,New Caledonia,False,New Caledonia,New Zealand
 1969-08-02,Venezuela,Colombia,1,1,FIFA World Cup qualification,Caracas,Venezuela,False,Venezuela,Colombia
+1969-08-03,Cameroon,Zambia,2,1,African Cup of Nations qualification,Yaoundé,Cameroon,False,Cameroon,Zambia
 1969-08-03,Ecuador,Chile,1,1,FIFA World Cup qualification,Guayaquil,Ecuador,False,Ecuador,Chile
 1969-08-03,Peru,Argentina,1,0,FIFA World Cup qualification,Lima,Peru,False,Peru,Argentina
 1969-08-06,Colombia,Brazil,0,2,FIFA World Cup qualification,Bogotá,Colombia,False,Colombia,Brazil
@@ -7842,7 +7840,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1969-10-14,South Korea,Australia,1,2,FIFA World Cup qualification,Seoul,South Korea,False,Korea Republic,Australia
 1969-10-15,Greece,Switzerland,4,1,FIFA World Cup qualification,Salonica,Greece,False,Greece,Switzerland
 1969-10-15,Republic of Ireland,Denmark,1,1,FIFA World Cup qualification,Dublin,Republic of Ireland,False,Republic of Ireland,Denmark
-1969-10-15,Russia,Turkey,3,0,FIFA World Cup qualification,Kyiv,Soviet Union,True,Russia,Turkey
+1969-10-15,Russia,Turkey,3,0,FIFA World Cup qualification,Kyiv,Soviet Union,False,Russia,Turkey
 1969-10-15,Spain,Finland,6,0,FIFA World Cup qualification,La Línea de la Concepción,Spain,False,Spain,Finland
 1969-10-15,Sweden,France,2,0,FIFA World Cup qualification,Solna,Sweden,False,Sweden,France
 1969-10-15,Tunisia,Palestine,1,1,Friendly,Tunis,Tunisia,False,Tunisia,Palestine
@@ -7855,7 +7853,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1969-10-22,Germany,Scotland,3,2,FIFA World Cup qualification,Hamburg,Germany,False,Germany,Scotland
 1969-10-22,Hungary,Denmark,3,0,FIFA World Cup qualification,Budapest,Hungary,False,Hungary,Denmark
 1969-10-22,Netherlands,Bulgaria,1,1,FIFA World Cup qualification,Rotterdam,Netherlands,False,Netherlands,Bulgaria
-1969-10-22,Russia,Northern Ireland,2,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Northern Ireland
+1969-10-22,Russia,Northern Ireland,2,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Northern Ireland
 1969-10-22,Wales,German DR,1,3,FIFA World Cup qualification,Cardiff,Wales,False,Wales,German DR
 1969-10-23,Algeria,Palestine,2,0,Friendly,Algiers,Algeria,False,Algeria,Palestine
 1969-10-23,French Guiana,Martinique,0,0,Friendly,Cayenne,French Guiana,False,French Guiana,Martinique
@@ -8495,10 +8493,9 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1971-08-04,Malaysia,Vietnam Republic,2,0,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Vietnam Republic
 1971-08-05,Hong Kong,Singapore,1,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Hong Kong,Singapore
 1971-08-05,India,Philippines,5,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,India,Philippines
+1971-08-06,Malaysia,Taiwan,0,0,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Taiwan
 1971-08-07,Myanmar,Singapore,0,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,Singapore
 1971-08-07,India,Indonesia,1,3,Merdeka Tournament,Kuala Lumpur,Malaysia,True,India,Indonesia
-1971-08-07,Malaysia,Taiwan,0,0,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Taiwan
-1971-08-07,Malaysia,Thailand,0,2,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Thailand
 1971-08-08,Paraguay,Chile,2,0,Friendly,Asunción,Paraguay,False,Paraguay,Chile
 1971-08-08,Sweden,Norway,3,0,Nordic Championship,Malmö,Sweden,False,Sweden,Norway
 1971-08-09,Myanmar,Indonesia,2,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,Indonesia
@@ -8514,6 +8511,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1971-08-13,Hong Kong,India,2,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Hong Kong,India
 1971-08-13,Iceland,Japan,0,2,Friendly,Reykjavík,Iceland,False,Iceland,Japan
 1971-08-13,Indonesia,Singapore,4,0,Merdeka Tournament,Ipoh,Malaysia,True,Indonesia,Singapore
+1971-08-14,Malaysia,Thailand,0,2,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Thailand
 1971-08-15,Bolivia,Chile,3,4,Friendly,La Paz,Bolivia,False,Bolivia,Chile
 1971-08-15,Myanmar,India,9,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,India
 1971-08-15,Hong Kong,Indonesia,0,3,Merdeka Tournament,Ipoh,Malaysia,True,Hong Kong,Indonesia
@@ -8580,9 +8578,8 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1971-10-01,Jamaica,Cuba,0,1,CONCACAF Championship qualification,Kingston,Jamaica,False,Jamaica,Cuba
 1971-10-02,Tanzania,Zanzibar,1,1,Friendly,Nairobi,Kenya,True,Tanzania,Zanzibar
 1971-10-03,Kenya,Uganda,2,0,Friendly,Nairobi,Kenya,False,Kenya,Uganda
+1971-10-03,Bermuda,Mexico,0,2,CONCACAF Championship qualification,Hamilton,Bermuda,False,Bermuda,Mexico
 1971-10-04,Cuba,Jamaica,0,0,CONCACAF Championship qualification,Havana,Cuba,False,Cuba,Jamaica
-1971-10-06,Bermuda,Mexico,0,2,CONCACAF Championship qualification,Hamilton,Bermuda,False,Bermuda,Mexico
-1971-10-06,Mexico,Bermuda,4,0,CONCACAF Championship qualification,Mexico City,Mexico,False,Mexico,Bermuda
 1971-10-08,Lesotho,Malawi,0,0,Friendly,Maseru,Lesotho,False,Lesotho,Malawi
 1971-10-09,France,Hungary,0,2,UEFA Euro qualification,Colombes,France,False,France,Hungary
 1971-10-09,Italy,Sweden,3,0,UEFA Euro qualification,Milan,Italy,False,Italy,Sweden
@@ -8590,6 +8587,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1971-10-10,Lesotho,Malawi,0,2,Friendly,Maseru,Lesotho,False,Lesotho,Malawi
 1971-10-10,Netherlands,German DR,3,2,UEFA Euro qualification,Rotterdam,Netherlands,False,Netherlands,German DR
 1971-10-10,Poland,Germany,1,3,UEFA Euro qualification,Warsaw,Poland,False,Poland,Germany
+1971-10-13,Mexico,Bermuda,4,0,CONCACAF Championship qualification,Mexico City,Mexico,False,Mexico,Bermuda
 1971-10-13,Morocco,Egypt,3,0,African Cup of Nations qualification,Casablanca,Morocco,False,Morocco,Egypt
 1971-10-13,Zambia,DR Congo,2,1,African Cup of Nations qualification,Ndola,Zambia,False,Zambia,DR Congo
 1971-10-13,Togo,Ghana,0,0,African Cup of Nations qualification,Lomé,Togo,False,Togo,Ghana
@@ -8698,8 +8696,8 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1971-12-14,Kuwait,Lebanon,1,0,AFC Asian Cup qualification,Kuwait City,Kuwait,False,Kuwait,Lebanon
 1971-12-14,Laos,Cambodia,0,2,Southeast Asian Peninsular Games,Kuala Lumpur,Malaysia,True,Laos,Cambodia
 1971-12-14,Malaysia,Thailand,4,2,Southeast Asian Peninsular Games,Kuala Lumpur,Malaysia,False,Malaysia,Thailand
-1971-12-14,Malaysia,Cambodia,3,0,Southeast Asian Peninsular Games,Kuala Lumpur,Malaysia,False,Malaysia,Cambodia
 1971-12-14,Vietnam Republic,Singapore,3,1,Southeast Asian Peninsular Games,Kuala Lumpur,Malaysia,True,Vietnam Republic,Singapore
+1971-12-15,Malaysia,Cambodia,3,0,Southeast Asian Peninsular Games,Kuala Lumpur,Malaysia,False,Malaysia,Cambodia
 1971-12-15,Iraq,Bahrain,1,0,AFC Asian Cup qualification,Kuwait City,Kuwait,True,Iraq,Bahrain
 1971-12-15,Thailand,Laos,3,0,Southeast Asian Peninsular Games,Kuala Lumpur,Malaysia,True,Thailand,Laos
 1971-12-15,Myanmar,Singapore,8,1,Southeast Asian Peninsular Games,Kuala Lumpur,Malaysia,True,Myanmar,Singapore
@@ -8902,7 +8900,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1972-06-17,Indonesia,Cambodia,4,0,Jakarta Anniversary Tournament,Jakarta,Indonesia,True,Indonesia,Cambodia
 1972-06-17,Belgium,Hungary,2,1,UEFA Euro,Liège,Belgium,False,Belgium,Hungary
 1972-06-17,Romania,Italy,3,3,Friendly,Bucharest,Romania,False,Romania,Italy
-1972-06-18,Benin,Ghana,0,5,FIFA World Cup qualification,Cotonou,Dahomey,True,Benin,Ghana
+1972-06-18,Benin,Ghana,0,5,FIFA World Cup qualification,Cotonou,Dahomey,False,Benin,Ghana
 1972-06-18,Bolivia,Yugoslavia,1,1,Brazil Independence Cup,Campo Grande,Brazil,True,Bolivia,Yugoslavia
 1972-06-18,Chile,Portugal,1,4,Brazil Independence Cup,Recife,Brazil,True,Chile,Portugal
 1972-06-18,Colombia,France,2,3,Brazil Independence Cup,Salvador,Brazil,True,Colombia,France
@@ -9247,7 +9245,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1973-04-08,Ghana,Senegal,3,2,African Cup of Nations qualification,Accra,Ghana,False,Ghana,Senegal
 1973-04-08,Lesotho,Mauritius,0,0,African Cup of Nations qualification,Maseru,Lesotho,False,Lesotho,Mauritius
 1973-04-08,Ethiopia,Tanzania,2,1,African Cup of Nations qualification,Addis Ababa,Ethiopia,False,Ethiopia,Tanzania
-1973-04-08,Tanzania,Ethiopia,3,0,African Cup of Nations qualification,Dar es Salaam,Tanzania,False,Tanzania,Ethiopia
 1973-04-12,Kuwait,Qatar,9,0,Friendly,Kuwait City,Kuwait,False,Kuwait,Qatar
 1973-04-13,Sudan,Nigeria,1,1,African Cup of Nations qualification,Khartoum,Sudan,False,Sudan,Nigeria
 1973-04-14,Haiti,Chile,1,1,Friendly,Port-au-Prince,Haiti,False,Haiti,Chile
@@ -9260,8 +9257,10 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1973-04-18,Turkey,Bulgaria,5,2,Balkan Cup,İzmir,Turkey,False,Turkey,Bulgaria
 1973-04-21,Nigeria,Sudan,2,1,African Cup of Nations qualification,Lagos,Nigeria,False,Nigeria,Sudan
 1973-04-21,Senegal,Ghana,1,0,African Cup of Nations qualification,Dakar,Senegal,False,Senegal,Ghana
+1973-04-22,Tanzania,Ethiopia,3,0,African Cup of Nations qualification,Dar es Salaam,Tanzania,False,Tanzania,Ethiopia
 1973-04-22,Mauritius,Lesotho,5,1,African Cup of Nations qualification,Port Louis,Mauritius,False,Mauritius,Lesotho
 1973-04-22,DR Congo,Burkina Faso,4,1,African Cup of Nations qualification,Kinshasa,Zaïre,False,DR Congo,Burkina Faso
+1973-04-22,Zambia,Madagascar,3,1,African Cup of Nations qualification,Ndola,Zambia,False,Zambia,Madagascar
 1973-04-23,Peru,Panama,4,0,Friendly,Lima,Peru,False,Peru,Panama
 1973-04-24,Ecuador,Chile,1,1,Friendly,Guayaquil,Ecuador,False,Ecuador,Chile
 1973-04-26,Denmark,Sweden,1,2,Friendly,Copenhagen,Denmark,False,Denmark,Sweden
@@ -9295,7 +9294,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1973-05-13,Iran,Kuwait,2,0,FIFA World Cup qualification,Tehran,Iran,False,Iran,Kuwait
 1973-05-13,North Korea,Syria,3,0,FIFA World Cup qualification,Tehran,Iran,True,North Korea,Syria
 1973-05-13,Poland,Yugoslavia,2,2,Friendly,Warsaw,Poland,False,Poland,Yugoslavia
-1973-05-13,Russia,Republic of Ireland,1,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Republic of Ireland
+1973-05-13,Russia,Republic of Ireland,1,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Republic of Ireland
 1973-05-15,England,Wales,3,0,British Home Championship,London,England,False,England,Wales
 1973-05-15,Haiti,Ecuador,1,0,Friendly,Port-au-Prince,Haiti,False,Haiti,Ecuador
 1973-05-15,Iran,Syria,0,1,FIFA World Cup qualification,Tehran,Iran,False,Iran,Syria
@@ -9324,7 +9323,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1973-05-24,Hong Kong,Vietnam Republic,1,0,FIFA World Cup qualification,Seoul,South Korea,True,Hong Kong,Vietnam Republic
 1973-05-26,Israel,Japan,1,0,FIFA World Cup qualification,Seoul,South Korea,True,Israel,Japan
 1973-05-26,South Korea,Hong Kong,3,1,FIFA World Cup qualification,Seoul,South Korea,False,Korea Republic,Hong Kong
-1973-05-26,Russia,France,2,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,France
+1973-05-26,Russia,France,2,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,France
 1973-05-27,Brazil,Bolivia,5,0,Friendly,Rio de Janeiro,Brazil,False,Brazil,Bolivia
 1973-05-27,Cameroon,DR Congo,2,1,African Cup of Nations qualification,Yaoundé,Cameroon,False,Cameroon,DR Congo
 1973-05-27,Mali,Guinea,2,2,African Cup of Nations qualification,Bamako,Mali,False,Mali,Guinea
@@ -9338,7 +9337,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1973-06-02,Czechoslovakia,Denmark,6,0,FIFA World Cup qualification,Prague,Czechoslovakia,False,Czechoslovakia,Denmark
 1973-06-03,Algeria,Brazil,0,2,Friendly,Algiers,Algeria,False,Algeria,Brazil
 1973-06-03,Morocco,Ivory Coast,4,1,FIFA World Cup qualification,Tétouan,Morocco,False,Morocco,Ivory Coast
-1973-06-05,Zambia,Madagascar,3,1,African Cup of Nations qualification,Ndola,Zambia,False,Zambia,Madagascar
 1973-06-05,Madagascar,Zambia,2,1,African Cup of Nations qualification,Antananarivo,Madagascar,False,Madagascar,Zambia
 1973-06-06,Finland,German DR,1,5,FIFA World Cup qualification,Tampere,Finland,False,Finland,German DR
 1973-06-06,Haiti,Uruguay,0,0,Friendly,Port-au-Prince,Haiti,False,Haiti,Uruguay
@@ -9385,7 +9383,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1973-07-15,Ghana,Ivory Coast,0,3,African Cup of Nations qualification,Accra,Ghana,False,Ghana,Ivory Coast
 1973-07-15,Zambia,Nigeria,5,1,African Cup of Nations qualification,Lusaka,Zambia,False,Zambia,Nigeria
 1973-07-15,Mauritius,Réunion,1,1,Friendly,Curepipe,Mauritius,False,Mauritius,Réunion
-1973-07-15,Nigeria,Zambia,3,2,African Cup of Nations qualification,Lagos,Nigeria,False,Nigeria,Zambia
 1973-07-16,Egypt,Tanzania,10,1,Friendly,Tunis,Tunisia,True,Egypt,Tanzania
 1973-07-17,Iceland,German DR,1,2,Friendly,Reykjavík,Iceland,False,Iceland,German DR
 1973-07-18,Chile,Argentina,3,1,Copa Carlos Dittborn,Santiago,Chile,False,Chile,Argentina
@@ -9401,27 +9398,27 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1973-07-27,India,Vietnam Republic,2,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,India,Vietnam Republic
 1973-07-28,Myanmar,South Korea,0,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,Korea Republic
 1973-07-28,Kuwait,Singapore,2,0,Merdeka Tournament,Ipoh,Malaysia,True,Kuwait,Singapore
+1973-07-28,Malaysia,Cambodia,1,0,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Cambodia
+1973-07-29,Nigeria,Zambia,3,2,African Cup of Nations qualification,Lagos,Nigeria,False,Nigeria,Zambia
 1973-07-29,Ivory Coast,Central African Republic,5,1,African Cup of Nations qualification,Lagos,Nigeria,True,Ivory Coast,Central African Republic
 1973-07-29,Bangladesh,Vietnam Republic,1,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Bangladesh,Vietnam Republic
 1973-07-29,India,Thailand,2,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,India,Thailand
-1973-07-29,Ivory Coast,Ghana,1,0,African Cup of Nations qualification,Abidjan,Ivory Coast,False,Ivory Coast,Ghana
 1973-07-30,Malaysia,South Korea,1,2,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Korea Republic
 1973-07-30,Myanmar,Singapore,1,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,Singapore
 1973-07-31,Bangladesh,Kuwait,1,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Bangladesh,Kuwait
+1973-07-31,India,Cambodia,3,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,India,Cambodia
 1973-08-01,Canada,Poland,1,3,Friendly,Toronto,Canada,False,Canada,Poland
-1973-08-01,South Korea,Thailand,0,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Korea Republic,Thailand
+1973-08-01,Malaysia,Thailand,2,2,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Thailand
 1973-08-02,Bangladesh,Singapore,1,1,Merdeka Tournament,Ipoh,Malaysia,True,Bangladesh,Singapore
 1973-08-02,Myanmar,Vietnam Republic,2,1,Merdeka Tournament,Ipoh,Malaysia,True,Myanmar,Vietnam Republic
 1973-08-02,Iceland,Norway,0,4,FIFA World Cup qualification,Reykjavík,Iceland,False,Iceland,Norway
+1973-08-02,India,South Korea,0,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,India,Korea Republic
 1973-08-03,China,Guinea,5,2,Friendly,Beijing,China,False,China,Guinea
 1973-08-03,Cambodia,South Korea,0,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Cambodia,Korea Republic
 1973-08-03,United States,Poland,0,1,Friendly,Chicago,United States,False,United States,Poland
-1973-08-03,Malaysia,Thailand,2,2,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Thailand
-1973-08-03,Malaysia,Cambodia,1,0,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Cambodia
-1973-08-03,Malaysia,India,4,0,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,India
-1973-08-05,India,Cambodia,3,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,India,Cambodia
+1973-08-04,South Korea,Thailand,0,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Korea Republic,Thailand
+1973-08-04,Malaysia,India,4,0,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,India
 1973-08-05,Myanmar,Kuwait,2,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,Kuwait
-1973-08-05,India,South Korea,0,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,India,Korea Republic
 1973-08-05,Canada,United States,0,2,Friendly,Windsor,Canada,False,Canada,United States
 1973-08-05,Chile,Peru,2,1,FIFA World Cup qualification,Montevideo,Uruguay,True,Chile,Peru
 1973-08-05,Ghana,DR Congo,1,0,FIFA World Cup qualification,Accra,Ghana,False,Ghana,DR Congo
@@ -9434,11 +9431,11 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1973-08-08,Kuwait,Vietnam Republic,2,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Kuwait,Vietnam Republic
 1973-08-08,Mexico,Poland,1,2,Friendly,Monterrey,Mexico,False,Mexico,Poland
 1973-08-09,India,Vietnam Republic,1,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,India,Vietnam Republic
+1973-08-09,South Korea,Kuwait,0,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Korea Republic,Kuwait
 1973-08-10,Cambodia,Singapore,0,3,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Cambodia,Singapore
 1973-08-10,Malaysia,Myanmar,2,1,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Myanmar
 1973-08-10,United States,Poland,0,4,Friendly,San Francisco,United States,False,United States,Poland
 1973-08-11,Libya,United Arab Emirates,2,2,Palestine Cup,Benghazi,Libya,False,Libya,United Arab Emirates
-1973-08-11,South Korea,Kuwait,0,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Korea Republic,Kuwait
 1973-08-11,South Korea,Myanmar,1,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Korea Republic,Myanmar
 1973-08-12,Bangladesh,Thailand,0,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Bangladesh,Thailand
 1973-08-12,Egypt,Yemen DPR,6,1,Palestine Cup,Tripoli,Libya,True,Egypt,Yemen DPR
@@ -9499,6 +9496,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1973-09-22,Myanmar,Thailand,2,2,Korea Cup,Seoul,South Korea,True,Myanmar,Thailand
 1973-09-22,South Korea,Cambodia,6,0,Korea Cup,Seoul,South Korea,False,Korea Republic,Cambodia
 1973-09-22,Uganda,Somalia,6,1,CECAFA Cup,Kampala,Uganda,False,Uganda,Somalia
+1973-09-23,Ivory Coast,Ghana,1,0,African Cup of Nations qualification,Abidjan,Ivory Coast,False,Ivory Coast,Ghana
 1973-09-23,Bolivia,Argentina,0,1,FIFA World Cup qualification,La Paz,Bolivia,False,Bolivia,Argentina
 1973-09-23,Kenya,Zanzibar,2,0,CECAFA Cup,Kampala,Uganda,True,Kenya,Zanzibar
 1973-09-23,Norway,Denmark,0,1,Nordic Championship,Trondheim,Norway,False,Norway,Denmark
@@ -9512,7 +9510,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1973-09-26,Indonesia,Cambodia,2,3,Korea Cup,Seoul,South Korea,True,Indonesia,Cambodia
 1973-09-26,Northern Ireland,Bulgaria,0,0,FIFA World Cup qualification,Sheffield,England,True,Northern Ireland,Bulgaria
 1973-09-26,Poland,Wales,3,0,FIFA World Cup qualification,Chorzów,Poland,False,Poland,Wales
-1973-09-26,Russia,Chile,0,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Chile
+1973-09-26,Russia,Chile,0,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Chile
 1973-09-26,Scotland,Czechoslovakia,2,1,FIFA World Cup qualification,Glasgow,Scotland,False,Scotland,Czechoslovakia
 1973-09-26,Switzerland,Luxembourg,1,0,FIFA World Cup qualification,Lucerne,Switzerland,False,Switzerland,Luxembourg
 1973-09-26,Uganda,Zambia,1,1,CECAFA Cup,Kampala,Uganda,False,Uganda,Zambia
@@ -10059,14 +10057,12 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1975-03-21,Thailand,Vietnam Republic,4,0,AFC Asian Cup qualification,Bangkok,Thailand,False,Thailand,Vietnam Republic
 1975-03-22,South Korea,Indonesia,1,0,AFC Asian Cup qualification,Bangkok,Thailand,True,Korea Republic,Indonesia
 1975-03-22,Morocco,Senegal,4,0,African Cup of Nations qualification,Fez,Morocco,False,Morocco,Senegal
-1975-03-22,Senegal,Morocco,2,1,African Cup of Nations qualification,Kaolack,Senegal,False,Senegal,Morocco
 1975-03-23,Tunisia,Algeria,1,1,African Cup of Nations qualification,Tunis,Tunisia,False,Tunisia,Algeria
 1975-03-23,Sudan,Kenya,1,0,African Cup of Nations qualification,Khartoum,Sudan,False,Sudan,Kenya
 1975-03-23,Niger,Guinea,2,4,African Cup of Nations qualification,Niamey,Niger,False,Niger,Guinea
 1975-03-23,Uganda,Mauritius,4,0,African Cup of Nations qualification,Kampala,Uganda,False,Uganda,Mauritius
 1975-03-23,Ghana,Burkina Faso,3,1,Friendly,Accra,Ghana,False,Ghana,Burkina Faso
 1975-03-23,Malaysia,Vietnam Republic,3,0,AFC Asian Cup qualification,Bangkok,Thailand,True,Malaysia,Vietnam Republic
-1975-03-23,Kenya,Sudan,0,2,African Cup of Nations qualification,Nairobi,Kenya,False,Kenya,Sudan
 1975-03-24,Burundi,Egypt,0,3,African Cup of Nations qualification,Bujumbura,Burundi,False,Burundi,Egypt
 1975-03-24,Thailand,South Korea,1,0,AFC Asian Cup qualification,Bangkok,Thailand,False,Thailand,Korea Republic
 1975-03-26,France,Hungary,2,0,Friendly,Paris,France,False,France,Hungary
@@ -10087,6 +10083,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1975-04-04,Iraq,Afghanistan,4,0,AFC Asian Cup qualification,Baghdad,Iraq,False,Iraq,Afghanistan
 1975-04-04,Macau,Panama,2,1,Friendly,Macau,Macau,False,Macau,Panama
 1975-04-04,Saudi Arabia,Qatar,2,1,AFC Asian Cup qualification,Baghdad,Iraq,True,Saudi Arabia,Qatar
+1975-04-06,Kenya,Sudan,0,2,African Cup of Nations qualification,Nairobi,Kenya,False,Kenya,Sudan
 1975-04-06,Mauritius,Uganda,1,1,African Cup of Nations qualification,Port Louis,Mauritius,False,Mauritius,Uganda
 1975-04-06,Guinea,Niger,3,0,African Cup of Nations qualification,Conakry,Guinea,False,Guinea,Niger
 1975-04-06,Algeria,Tunisia,1,2,African Cup of Nations qualification,Oran,Algeria,False,Algeria,Tunisia
@@ -10096,6 +10093,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1975-04-10,Saudi Arabia,Afghanistan,6,0,AFC Asian Cup qualification,Baghdad,Iraq,True,Saudi Arabia,Afghanistan
 1975-04-12,Iraq,Saudi Arabia,2,1,AFC Asian Cup qualification,Baghdad,Iraq,False,Iraq,Saudi Arabia
 1975-04-12,Qatar,Afghanistan,1,1,AFC Asian Cup qualification,Baghdad,Iraq,True,Qatar,Afghanistan
+1975-04-13,Senegal,Morocco,2,1,African Cup of Nations qualification,Kaolack,Senegal,False,Senegal,Morocco
 1975-04-13,Ivory Coast,Congo,2,1,African Cup of Nations qualification,Abidjan,Ivory Coast,False,Ivory Coast,Congo
 1975-04-13,Mali,Ghana,3,1,African Cup of Nations qualification,Bamako,Mali,False,Mali,Ghana
 1975-04-13,Cameroon,Togo,3,0,African Cup of Nations qualification,Douala,Cameroon,False,Cameroon,Togo
@@ -10467,7 +10465,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1976-03-10,Uruguay,Paraguay,2,2,Atlantic Cup,Montevideo,Uruguay,False,Uruguay,Paraguay
 1976-03-11,Egypt,Guinea,2,4,African Cup of Nations,Addis Ababa,Ethiopia,True,Egypt,Guinea
 1976-03-11,Morocco,Nigeria,2,1,African Cup of Nations,Addis Ababa,Ethiopia,True,Morocco,Nigeria
-1976-03-13,Burkina Faso,Mauritania,1,1,FIFA World Cup qualification,Ouagadougou,Upper Volta,True,Burkina Faso,Mauritania
+1976-03-13,Burkina Faso,Mauritania,1,1,FIFA World Cup qualification,Ouagadougou,Upper Volta,False,Burkina Faso,Mauritania
 1976-03-14,Egypt,Nigeria,2,3,African Cup of Nations,Addis Ababa,Ethiopia,True,Egypt,Nigeria
 1976-03-14,Guinea,Morocco,1,1,African Cup of Nations,Addis Ababa,Ethiopia,True,Guinea,Morocco
 1976-03-20,Russia,Argentina,0,1,Friendly,Kyiv,Soviet Union,False,Russia,Argentina
@@ -10618,22 +10616,22 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1976-08-08,India,Japan,1,5,Merdeka Tournament,Kuala Lumpur,Malaysia,True,India,Japan
 1976-08-08,São Tomé and Príncipe,Congo,2,3,Friendly,São Tomé,São Tomé and Príncipe,False,São Tomé and Príncipe,Congo
 1976-08-09,Malaysia,Thailand,0,0,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Thailand
-1976-08-10,Malaysia,India,5,1,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,India
 1976-08-10,India,South Korea,0,8,Merdeka Tournament,Kuala Lumpur,Malaysia,True,India,Korea Republic
 1976-08-10,Indonesia,Japan,0,6,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Indonesia,Japan
 1976-08-11,Australia,Hong Kong,0,1,Friendly,Canberra,Australia,False,Australia,Hong Kong
 1976-08-11,Myanmar,Thailand,1,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,Thailand
 1976-08-11,El Salvador,Panama,4,1,CONCACAF Championship qualification,San Salvador,El Salvador,False,El Salvador,Panama
 1976-08-11,Sweden,Finland,6,0,Nordic Championship,Malmö,Sweden,False,Sweden,Finland
+1976-08-12,Malaysia,India,5,1,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,India
 1976-08-12,Indonesia,South Korea,0,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Indonesia,Korea Republic
 1976-08-13,Myanmar,Japan,2,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,Japan
 1976-08-14,Malaysia,Indonesia,7,1,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Indonesia
 1976-08-14,Haiti,Curaçao,7,0,CONCACAF Championship qualification,Port-au-Prince,Haiti,False,Haiti,Curaçao
 1976-08-14,India,Thailand,2,6,Merdeka Tournament,Kuala Lumpur,Malaysia,True,India,Thailand
-1976-08-14,Indonesia,India,1,3,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Indonesia,India
 1976-08-15,Barbados,Trinidad and Tobago,2,1,CONCACAF Championship qualification,Bridgetown,Barbados,False,Barbados,Trinidad and Tobago
 1976-08-15,Myanmar,South Korea,2,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,Korea Republic
 1976-08-15,Jamaica,Cuba,1,3,CONCACAF Championship qualification,Kingston,Jamaica,False,Jamaica,Cuba
+1976-08-16,Indonesia,India,1,3,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Indonesia,India
 1976-08-16,Japan,Thailand,2,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Japan,Thailand
 1976-08-17,Malaysia,Myanmar,3,1,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Myanmar
 1976-08-17,Switzerland,Bulgaria,2,2,Friendly,Lucerne,Switzerland,False,Switzerland,Bulgaria
@@ -10651,7 +10649,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1976-08-29,Suriname,Guyana,3,0,CONCACAF Championship qualification,Paramaribo,Suriname,False,Suriname,Guyana
 1976-08-31,Trinidad and Tobago,Barbados,1,0,CONCACAF Championship qualification,Port of Spain,Trinidad and Tobago,False,Trinidad and Tobago,Barbados
 1976-09-01,Denmark,France,1,1,Friendly,Copenhagen,Denmark,False,Denmark,France
-1976-09-04,Burkina Faso,Ivory Coast,1,1,FIFA World Cup qualification,Ouagadougou,Upper Volta,True,Burkina Faso,Ivory Coast
+1976-09-04,Burkina Faso,Ivory Coast,1,1,FIFA World Cup qualification,Ouagadougou,Upper Volta,False,Burkina Faso,Ivory Coast
 1976-09-04,Malawi,Uganda,1,1,Friendly,Blantyre,Malawi,False,Malawi,Uganda
 1976-09-05,Iceland,Belgium,0,1,FIFA World Cup qualification,Reykjavík,Iceland,False,Iceland,Belgium
 1976-09-05,Saudi Arabia,Iraq,0,0,Friendly,Riyadh,Saudi Arabia,False,Saudi Arabia,Iraq
@@ -10966,7 +10964,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1977-04-22,Iran,Saudi Arabia,2,0,FIFA World Cup qualification,Shiraz,Iran,False,Iran,Saudi Arabia
 1977-04-23,Switzerland,France,0,4,Friendly,Geneva,Switzerland,False,Switzerland,France
 1977-04-24,Republic of Ireland,Poland,0,0,Friendly,Dublin,Republic of Ireland,False,Republic of Ireland,Poland
-1977-04-24,Russia,Greece,2,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Greece
+1977-04-24,Russia,Greece,2,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Greece
 1977-04-27,Tunisia,Egypt,3,2,African Cup of Nations qualification,Tunis,Tunisia,False,Tunisia,Egypt
 1977-04-27,Germany,Northern Ireland,5,0,Friendly,Cologne,Germany,False,Germany,Northern Ireland
 1977-04-27,Romania,German DR,1,1,Friendly,Bucharest,Romania,False,Romania,German DR
@@ -10982,7 +10980,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1977-05-10,Greece,Russia,1,0,FIFA World Cup qualification,Salonica,Greece,False,Greece,Russia
 1977-05-15,Cyprus,Poland,1,3,FIFA World Cup qualification,Limassol,Cyprus,False,Cyprus,Poland
 1977-05-17,Mexico,Peru,1,1,Friendly,Mexico City,Mexico,False,Mexico,Peru
-1977-05-18,Russia,Hungary,2,0,FIFA World Cup qualification,Tbilisi,Soviet Union,True,Russia,Hungary
+1977-05-18,Russia,Hungary,2,0,FIFA World Cup qualification,Tbilisi,Soviet Union,False,Russia,Hungary
 1977-05-24,Mexico,Peru,2,1,Friendly,Monterrey,Mexico,False,Mexico,Peru
 1977-05-24,Switzerland,Czechoslovakia,1,0,Friendly,Basel,Switzerland,False,Switzerland,Czechoslovakia
 1977-05-26,Haiti,Peru,1,2,Friendly,Port-au-Prince,Haiti,False,Haiti,Peru
@@ -11458,7 +11456,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1978-07-15,Iraq,Syria,2,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Iraq,Syria
 1978-07-16,Malaysia,Thailand,2,0,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Thailand
 1978-07-16,South Korea,Singapore,2,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Korea Republic,Singapore
-1978-07-16,Malaysia,Indonesia,1,0,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Indonesia
 1978-07-17,Indonesia,Iraq,0,4,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Indonesia,Iraq
 1978-07-17,Japan,Syria,3,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Japan,Syria
 1978-07-17,Nigeria,Cameroon,0,0,All-African Games,Algiers,Algeria,True,Nigeria,Cameroon
@@ -11467,6 +11464,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1978-07-18,Singapore,Thailand,1,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Singapore,Thailand
 1978-07-18,Algeria,Libya,2,1,All-African Games,Algiers,Algeria,False,Algeria,Libya
 1978-07-18,Egypt,Malawi,4,1,All-African Games,Algiers,Algeria,True,Egypt,Malawi
+1978-07-19,Malaysia,Indonesia,1,0,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Indonesia
 1978-07-19,Japan,South Korea,0,4,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Japan,Korea Republic
 1978-07-20,Iraq,Singapore,3,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Iraq,Singapore
 1978-07-20,Syria,Thailand,1,3,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Syria,Thailand
@@ -11824,8 +11822,8 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1979-06-24,Morocco,Togo,7,0,African Cup of Nations qualification,Mohammedia,Morocco,False,Morocco,Togo
 1979-06-26,Malawi,Lesotho,1,2,Friendly,Blantyre,Malawi,False,Malawi,Lesotho
 1979-06-27,Denmark,Russia,1,2,Friendly,Copenhagen,Denmark,False,Denmark,Russia
+1979-06-27,Malaysia,Japan,1,1,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Japan
 1979-06-28,Sweden,Norway,2,0,Nordic Championship,Gothenburg,Sweden,False,Sweden,Norway
-1979-06-29,Malaysia,Japan,1,1,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Japan
 1979-06-29,Fiji,New Zealand,0,6,Friendly,Suva,Fiji,False,Fiji,New Zealand
 1979-06-29,Japan,Thailand,2,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Japan,Thailand
 1979-06-29,Malaysia,Myanmar,4,1,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Myanmar
@@ -11995,6 +11993,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1979-09-29,Sierra Leone,Gambia,2,0,Friendly,Freetown,Sierra Leone,False,Sierra Leone,Gambia
 1979-09-29,Indonesia,Thailand,0,0,Southeast Asian Games,Jakarta,Indonesia,False,Indonesia,Thailand
 1979-09-30,Indonesia,Malaysia,0,1,Southeast Asian Games,Jakarta,Indonesia,False,Indonesia,Malaysia
+1979-09-30,Saint Vincent and the Grenadines,Guadeloupe,1,1,CFU Caribbean Cup qualification,Kingstown,Saint Vincent and the Grenadines,False,Saint Vincent and the Grenadines,Guadeloupe
 1979-10-03,Bahrain,New Zealand,0,2,Friendly,Isa Town,Bahrain,False,Bahrain,New Zealand
 1979-10-07,Bermuda,United States,1,3,Friendly,Hamilton,Bermuda,False,Bermuda,United States
 1979-10-08,Bahrain,New Zealand,1,2,Friendly,Isa Town,Bahrain,False,Bahrain,New Zealand
@@ -12006,6 +12005,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1979-10-13,German DR,Switzerland,5,2,UEFA Euro qualification,Berlin,German DR,False,German DR,Switzerland
 1979-10-14,Benin,Nigeria,1,1,Friendly,Cotonou,Benin,False,Benin,Nigeria
 1979-10-14,Russia,Romania,3,1,Friendly,Moscow,Soviet Union,False,Russia,Romania
+1979-10-14,Guadeloupe,Saint Vincent and the Grenadines,1,3,CFU Caribbean Cup qualification,Basse-Terre,Guadeloupe,False,Guadeloupe,Saint Vincent and the Grenadines
 1979-10-15,Antigua and Barbuda,Haiti,1,2,CFU Caribbean Cup qualification,St. John's,Antigua and Barbuda,False,Antigua and Barbuda,Haiti
 1979-10-17,Belgium,Portugal,2,0,UEFA Euro qualification,Brussels,Belgium,False,Belgium,Portugal
 1979-10-17,Germany,Wales,5,1,UEFA Euro qualification,Cologne,Germany,False,Germany,Wales
@@ -12018,8 +12018,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1979-10-21,Benin,Burkina Faso,3,2,Friendly,Abidjan,Ivory Coast,True,Benin,Burkina Faso
 1979-10-21,Ivory Coast,Togo,3,0,Friendly,Abidjan,Ivory Coast,False,Ivory Coast,Togo
 1979-10-21,United Arab Emirates,India,0,0,Friendly,Abu Dhabi,United Arab Emirates,False,United Arab Emirates,India
-1979-10-22,Guadeloupe,Saint Vincent and the Grenadines,1,3,CFU Caribbean Cup qualification,Basse-Terre,Guadeloupe,False,Guadeloupe,Saint Vincent and the Grenadines
-1979-10-22,Saint Vincent and the Grenadines,Guadeloupe,0,0,CFU Caribbean Cup qualification,Kingstown,Saint Vincent and the Grenadines,False,Saint Vincent and the Grenadines,Guadeloupe
 1979-10-23,Luxembourg,Sweden,1,1,UEFA Euro qualification,Esch-sur-Alzette,Luxembourg,False,Luxembourg,Sweden
 1979-10-23,Togo,Burkina Faso,5,3,Friendly,Abidjan,Ivory Coast,True,Togo,Burkina Faso
 1979-10-24,Chile,Peru,0,0,Copa América,Santiago,Chile,False,Chile,Peru
@@ -12449,25 +12447,25 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1980-10-15,Republic of Ireland,Belgium,1,1,FIFA World Cup qualification,Dublin,Republic of Ireland,False,Republic of Ireland,Belgium
 1980-10-15,Northern Ireland,Sweden,3,0,FIFA World Cup qualification,Belfast,Northern Ireland,False,Northern Ireland,Sweden
 1980-10-15,Romania,England,2,1,FIFA World Cup qualification,Bucharest,Romania,False,Romania,England
-1980-10-15,Russia,Iceland,5,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Iceland
+1980-10-15,Russia,Iceland,5,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Iceland
 1980-10-15,Scotland,Portugal,0,0,FIFA World Cup qualification,Glasgow,Scotland,False,Scotland,Portugal
 1980-10-15,Wales,Turkey,4,0,FIFA World Cup qualification,Cardiff,Wales,False,Wales,Turkey
-1980-10-15,South Korea,New Zealand,1,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Korea Republic,New Zealand
+1980-10-15,Kuwait,New Zealand,1,5,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Kuwait,New Zealand
+1980-10-15,Myanmar,Morocco,2,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,Morocco
 1980-10-16,South Korea,Indonesia,1,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Korea Republic,Indonesia
 1980-10-17,Malaysia,Myanmar,3,2,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Myanmar
 1980-10-17,Morocco,Thailand,2,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Morocco,Thailand
 1980-10-18,South Korea,Kuwait,3,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Korea Republic,Kuwait
 1980-10-18,Canada,Mexico,1,1,CONCACAF Championship qualification,Toronto,Canada,False,Canada,Mexico
+1980-10-19,South Korea,New Zealand,1,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Korea Republic,New Zealand
 1980-10-19,Bulgaria,Albania,2,1,FIFA World Cup qualification,Sofia,Bulgaria,False,Bulgaria,Albania
-1980-10-19,Kuwait,New Zealand,1,5,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Kuwait,New Zealand
-1980-10-20,Myanmar,Morocco,2,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,Morocco
 1980-10-20,Malaysia,Thailand,2,2,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Thailand
 1980-10-20,South Korea,Morocco,1,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Korea Republic,Morocco
 1980-10-21,Indonesia,New Zealand,0,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Indonesia,New Zealand
 1980-10-22,Myanmar,Thailand,1,2,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,Thailand
 1980-10-22,Trinidad and Tobago,Guyana,1,1,Friendly,Port of Spain,Trinidad and Tobago,False,Trinidad and Tobago,Guyana
 1980-10-22,Malaysia,South Korea,1,1,Merdeka Tournament,Kuala Lumpur,Malaysia,False,Malaysia,Korea Republic
-1980-10-22,Kuwait,Myanmar,3,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Kuwait,Myanmar
+1980-10-23,Kuwait,Myanmar,3,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Kuwait,Myanmar
 1980-10-23,South Korea,Thailand,0,0,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Korea Republic,Thailand
 1980-10-24,Myanmar,New Zealand,1,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Myanmar,New Zealand
 1980-10-24,Kuwait,Thailand,0,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Kuwait,Thailand
@@ -12977,7 +12975,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1981-09-23,Italy,Bulgaria,3,2,Friendly,Bologna,Italy,False,Italy,Bulgaria
 1981-09-23,Portugal,Poland,2,0,Friendly,Lisbon,Portugal,False,Portugal,Poland
 1981-09-23,Romania,Hungary,0,0,FIFA World Cup qualification,Bucharest,Romania,False,Romania,Hungary
-1981-09-23,Russia,Turkey,4,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Turkey
+1981-09-23,Russia,Turkey,4,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Turkey
 1981-09-24,China,New Zealand,0,0,FIFA World Cup qualification,Beijing,China,False,China,New Zealand
 1981-09-26,Uganda,Nigeria,1,0,Friendly,Kampala,Uganda,False,Uganda,Nigeria
 1981-09-27,Morocco,Tunisia,2,2,Friendly,Kenitra,Morocco,False,Morocco,Tunisia
@@ -13017,7 +13015,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1981-10-28,Argentina,Poland,1,2,Friendly,Buenos Aires,Argentina,False,Argentina,Poland
 1981-10-28,Brazil,Bulgaria,3,0,Friendly,Porto Alegre,Brazil,False,Brazil,Bulgaria
 1981-10-28,Israel,Portugal,4,1,FIFA World Cup qualification,Ramat Gan,Israel,False,Israel,Portugal
-1981-10-28,Russia,Czechoslovakia,2,0,FIFA World Cup qualification,Tbilisi,Soviet Union,True,Russia,Czechoslovakia
+1981-10-28,Russia,Czechoslovakia,2,0,FIFA World Cup qualification,Tbilisi,Soviet Union,False,Russia,Czechoslovakia
 1981-10-28,Saudi Arabia,Sweden,1,2,Friendly,Riyadh,Saudi Arabia,False,Saudi Arabia,Sweden
 1981-10-28,United Arab Emirates,India,3,1,Friendly,Sharjah,United Arab Emirates,False,United Arab Emirates,India
 1981-10-30,Algeria,Nigeria,2,1,FIFA World Cup qualification,Constantine,Algeria,False,Algeria,Nigeria
@@ -13068,7 +13066,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1981-11-18,Northern Ireland,Israel,1,0,FIFA World Cup qualification,Belfast,Northern Ireland,False,Northern Ireland,Israel
 1981-11-18,Poland,Spain,2,3,Friendly,Łódź,Poland,False,Poland,Spain
 1981-11-18,Portugal,Scotland,2,1,FIFA World Cup qualification,Lisbon,Portugal,False,Portugal,Scotland
-1981-11-18,Russia,Wales,3,0,FIFA World Cup qualification,Tbilisi,Soviet Union,True,Russia,Wales
+1981-11-18,Russia,Wales,3,0,FIFA World Cup qualification,Tbilisi,Soviet Union,False,Russia,Wales
 1981-11-19,China,Saudi Arabia,2,0,FIFA World Cup qualification,Kuala Lumpur,Malaysia,True,China,Saudi Arabia
 1981-11-19,El Salvador,Haiti,1,0,CONCACAF Championship,Tegucigalpa,Honduras,True,El Salvador,Haiti
 1981-11-19,Zambia,Zimbabwe,1,1,CECAFA Cup,Dar es Salaam,Tanzania,True,Zambia,Zimbabwe
@@ -13143,7 +13141,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1982-02-15,Senegal,Sierra Leone,2,0,Amílcar Cabral Cup,Praia,Cape Verde,True,Senegal,Sierra Leone
 1982-02-16,Pakistan,Iran,0,1,Quaid-e-Azam International Tournament,Karachi,Pakistan,False,Pakistan,Iran
 1982-02-16,Nepal,Bangladesh,1,1,Quaid-e-Azam International Tournament,Karachi,Pakistan,True,Nepal,Bangladesh
-1982-02-16,Bangladesh,Nepal,1,1,Friendly,Karachi,Pakistan,True,Bangladesh,Nepal
 1982-02-16,India,China,1,1,Nehru Cup,Calcutta,India,False,India,China
 1982-02-17,Oman,Nepal,1,0,Quaid-e-Azam International Tournament,Karachi,Pakistan,True,Oman,Nepal
 1982-02-17,Benin,Ivory Coast,3,3,West African Cup,Cotonou,Benin,False,Benin,Ivory Coast
@@ -13151,14 +13148,12 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1982-02-17,Germany,Portugal,3,1,Friendly,Hanover,Germany,False,Germany,Portugal
 1982-02-17,Ghana,Niger,2,2,West African Cup,Cotonou,Benin,True,Ghana,Niger
 1982-02-17,Mali,Senegal,0,1,Amílcar Cabral Cup,Praia,Cape Verde,True,Mali,Senegal
-1982-02-17,Nepal,Oman,0,1,Friendly,Karachi,Pakistan,True,Nepal,Oman
 1982-02-17,Togo,Burkina Faso,2,1,West African Cup,Cotonou,Benin,True,Togo,Burkina Faso
 1982-02-18,Pakistan,Bangladesh,2,1,Quaid-e-Azam International Tournament,Karachi,Pakistan,False,Pakistan,Bangladesh
 1982-02-18,Ethiopia,Uganda,1,0,Friendly,Asmara,Ethiopia,False,Ethiopia,Uganda
 1982-02-18,India,South Korea,2,2,Nehru Cup,Calcutta,India,False,India,Korea Republic
 1982-02-18,Zambia,Botswana,2,0,Friendly,Lusaka,Zambia,False,Zambia,Botswana
 1982-02-19,Oman,Bangladesh,3,1,Quaid-e-Azam International Tournament,Karachi,Pakistan,True,Oman,Bangladesh
-1982-02-19,Bangladesh,Oman,1,3,Friendly,Karachi,Pakistan,True,Bangladesh,Oman
 1982-02-19,Cape Verde,Mali,1,2,Amílcar Cabral Cup,Praia,Cape Verde,False,Cape Verde,Mali
 1982-02-19,Ghana,Burkina Faso,1,0,West African Cup,Cotonou,Benin,True,Ghana,Burkina Faso
 1982-02-19,Guinea,Senegal,3,0,Amílcar Cabral Cup,Praia,Cape Verde,True,Guinea,Senegal
@@ -13820,21 +13815,29 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1983-08-20,Niue,Tahiti,0,14,South Pacific Games,Apia,Western Samoa,True,Niue,Tahiti
 1983-08-20,Tonga,Wallis Islands and Futuna,0,3,South Pacific Games,Apia,Western Samoa,True,Tonga,Wallis Islands and Futuna
 1983-08-20,Samoa,American Samoa,3,1,South Pacific Games,Apia,Western Samoa,False,Samoa,American Samoa
+1983-08-20,New Caledonia,Vanuatu,6,2,South Pacific Games,Apia,Western Samoa,True,New Caledonia,Vanuatu
+1983-08-20,Fiji,New Caledonia,5,1,South Pacific Games,Apia,Western Samoa,True,Fiji,New Caledonia
 1983-08-21,Bolivia,Peru,1,1,Copa América,La Paz,Bolivia,False,Bolivia,Peru
 1983-08-22,American Samoa,Wallis Islands and Futuna,3,0,South Pacific Games,Apia,Western Samoa,True,American Samoa,Wallis Islands and Futuna
 1983-08-22,Niue,Papua New Guinea,0,19,South Pacific Games,Apia,Western Samoa,True,Niue,Papua New Guinea
 1983-08-22,Samoa,Tonga,3,3,South Pacific Games,Apia,Western Samoa,False,Samoa,Tonga
-1983-08-22,Fiji,Solomon Islands,10,0,South Pacific Games,Apia,Western Samoa,True,Fiji,Solomon Islands
+1983-08-22,New Caledonia,Solomon Islands,1,0,South Pacific Games,Apia,Western Samoa,True,New Caledonia,Solomon Islands
+1983-08-24,Fiji,Solomon Islands,10,0,South Pacific Games,Apia,Western Samoa,True,Fiji,Solomon Islands
 1983-08-24,American Samoa,Tonga,2,3,South Pacific Games,Apia,Western Samoa,True,American Samoa,Tonga
 1983-08-24,Argentina,Brazil,1,0,Copa América,Buenos Aires,Argentina,False,Argentina,Brazil
 1983-08-24,Chile,Bolivia,4,2,Friendly,Arica,Chile,False,Chile,Bolivia
 1983-08-24,Romania,German DR,1,0,Friendly,Bucharest,Romania,False,Romania,German DR
-1983-08-24,Samoa,Wallis Islands and Futuna,1,2,South Pacific Games,Apia,Western Samoa,True,Samoa,Wallis Islands and Futuna
+1983-08-24,Samoa,Wallis Islands and Futuna,1,2,South Pacific Games,Apia,Western Samoa,False,Samoa,Wallis Islands and Futuna
 1983-08-24,Turkey,Libya,0,0,Friendly,Istanbul,Turkey,False,Turkey,Libya
 1983-08-24,Papua New Guinea,Tahiti,1,2,South Pacific Games,Apia,Western Samoa,True,Papua New Guinea,Tahiti
 1983-08-25,Algeria,Ivory Coast,3,0,Friendly,Algiers,Algeria,False,Algeria,Ivory Coast
 1983-08-25,Uruguay,Paraguay,0,0,Friendly,Montevideo,Uruguay,False,Uruguay,Paraguay
 1983-08-26,Fiji,Vanuatu,6,0,South Pacific Games,Apia,Western Samoa,True,Fiji,Vanuatu
+1983-08-26,New Caledonia,Wallis Islands and Futuna,4,0,South Pacific Games,Apia,Western Samoa,True,New Caledonia,Wallis Islands and Futuna
+1983-08-26,Samoa,Tahiti,0,2,South Pacific Games,Apia,Western Samoa,False,Samoa,Tahiti
+1983-08-27,Fiji,Papua New Guinea,2,0,South Pacific Games,Apia,Western Samoa,True,Fiji,Papua New Guinea
+1983-08-28,Fiji,New Caledonia,3,2,South Pacific Games,Apia,Western Samoa,True,Fiji,New Caledonia
+1983-08-28,Papua New Guinea,Tahiti,1,6,South Pacific Games,Apia,Western Samoa,True,Papua New Guinea,Tahiti
 1983-08-28,Algeria,Senegal,2,0,African Cup of Nations qualification,Algiers,Algeria,False,Algeria,Senegal
 1983-08-28,Colombia,Peru,2,2,Copa América,Bogotá,Colombia,False,Colombia,Peru
 1983-08-28,Malawi,Madagascar,1,1,African Cup of Nations qualification,Blantyre,Malawi,False,Malawi,Madagascar
@@ -13843,6 +13846,8 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1983-08-28,Togo,Ethiopia,3,0,African Cup of Nations qualification,Lomé,Togo,False,Togo,Ethiopia
 1983-08-28,Tunisia,Egypt,0,0,African Cup of Nations qualification,Tunis,Tunisia,False,Tunisia,Egypt
 1983-08-29,Libya,Zimbabwe,3,1,Friendly,Tripoli,Libya,False,Libya,Zimbabwe
+1983-08-30,Fiji,Tahiti,0,1,South Pacific Games,Apia,Western Samoa,True,Fiji,Tahiti
+1983-08-30,New Caledonia,Papua New Guinea,2,1,South Pacific Games,Apia,Western Samoa,True,New Caledonia,Papua New Guinea
 1983-08-31,Colombia,Bolivia,2,2,Copa América,Bogotá,Colombia,False,Colombia,Bolivia
 1983-08-31,Greece,Bulgaria,2,3,Friendly,Athens,Greece,False,Greece,Bulgaria
 1983-08-31,Thailand,Nepal,2,1,Bangladesh President's Gold Cup,Dhaka,Bangladesh,True,Thailand,Nepal
@@ -13862,17 +13867,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1983-09-08,Chile,Venezuela,5,0,Copa América,Santiago,Chile,False,Chile,Venezuela
 1983-09-10,Singapore,Malaysia,0,1,Friendly,Kallang,Singapore,False,Singapore,Malaysia
 1983-09-11,Chile,Uruguay,2,0,Copa América,Santiago,Chile,False,Chile,Uruguay
-1983-09-11,New Caledonia,Vanuatu,6,2,South Pacific Games,Apia,Western Samoa,True,New Caledonia,Vanuatu
-1983-09-11,New Caledonia,Solomon Islands,1,0,South Pacific Games,Apia,Western Samoa,True,New Caledonia,Solomon Islands
-1983-09-13,Fiji,New Caledonia,5,1,South Pacific Games,Apia,Western Samoa,True,Fiji,New Caledonia
 1983-09-14,Brazil,Argentina,0,0,Copa América,Rio de Janeiro,Brazil,False,Brazil,Argentina
-1983-09-14,Fiji,New Caledonia,3,2,South Pacific Games,Apia,Western Samoa,True,Fiji,New Caledonia
-1983-09-14,Fiji,Papua New Guinea,2,0,South Pacific Games,Apia,Western Samoa,True,Fiji,Papua New Guinea
-1983-09-14,New Caledonia,Wallis Islands and Futuna,4,0,South Pacific Games,Apia,Western Samoa,True,New Caledonia,Wallis Islands and Futuna
-1983-09-14,Papua New Guinea,Tahiti,1,6,South Pacific Games,Apia,Western Samoa,True,Papua New Guinea,Tahiti
-1983-09-14,Samoa,Tahiti,0,2,South Pacific Games,Apia,Western Samoa,False,Samoa,Tahiti
-1983-09-15,Fiji,Tahiti,0,1,South Pacific Games,Apia,Western Samoa,True,Fiji,Tahiti
-1983-09-15,New Caledonia,Papua New Guinea,2,1,South Pacific Games,Apia,Western Samoa,True,New Caledonia,Papua New Guinea
 1983-09-18,Venezuela,Uruguay,1,2,Copa América,Caracas,Venezuela,False,Venezuela,Uruguay
 1983-09-19,Ghana,Thailand,2,1,Merdeka Tournament,Kuala Lumpur,Malaysia,True,Ghana,Thailand
 1983-09-19,Malaysia,Nepal,7,0,Merdeka Tournament,Kota Bharu,Malaysia,False,Malaysia,Nepal
@@ -14809,7 +14804,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1985-05-02,Pakistan,Bangladesh,1,3,Quaid-e-Azam International Tournament,Peshawar,Pakistan,False,Pakistan,Bangladesh
 1985-05-02,Brazil,Uruguay,2,0,Friendly,Recife,Brazil,False,Brazil,Uruguay
 1985-05-02,Bulgaria,France,2,0,FIFA World Cup qualification,Sofia,Bulgaria,False,Bulgaria,France
-1985-05-02,Russia,Switzerland,4,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Switzerland
+1985-05-02,Russia,Switzerland,4,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Switzerland
 1985-05-02,Zimbabwe,Malawi,1,3,Friendly,Harare,Zimbabwe,False,Zimbabwe,Malawi
 1985-05-04,Hong Kong,Macau,2,0,FIFA World Cup qualification,Siu Sai Wan,Hong Kong,False,Hong Kong,Macau
 1985-05-05,Brazil,Argentina,2,1,Friendly,Salvador,Brazil,False,Brazil,Argentina
@@ -15000,7 +14995,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1985-09-25,Finland,Turkey,1,0,FIFA World Cup qualification,Tampere,Finland,False,Finland,Turkey
 1985-09-25,Italy,Norway,1,2,Friendly,Lecce,Italy,False,Italy,Norway
 1985-09-25,Luxembourg,Bulgaria,1,3,FIFA World Cup qualification,Luxembourg,Luxembourg,False,Luxembourg,Bulgaria
-1985-09-25,Russia,Denmark,1,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Denmark
+1985-09-25,Russia,Denmark,1,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Denmark
 1985-09-25,Spain,Iceland,2,1,FIFA World Cup qualification,Seville,Spain,False,Spain,Iceland
 1985-09-25,Sweden,Germany,2,2,FIFA World Cup qualification,Solna,Sweden,False,Sweden,Germany
 1985-09-27,Australia,China,3,0,Friendly,Brisbane,Australia,False,Australia,China
@@ -15037,7 +15032,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1985-10-16,Norway,Denmark,1,5,FIFA World Cup qualification,Oslo,Norway,False,Norway,Denmark
 1985-10-16,Peru,Paraguay,0,1,Friendly,Lima,Peru,False,Peru,Paraguay
 1985-10-16,Romania,Northern Ireland,0,1,FIFA World Cup qualification,Bucharest,Romania,False,Romania,Northern Ireland
-1985-10-16,Russia,Republic of Ireland,2,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Republic of Ireland
+1985-10-16,Russia,Republic of Ireland,2,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Republic of Ireland
 1985-10-16,Scotland,German DR,0,0,Friendly,Glasgow,Scotland,False,Scotland,German DR
 1985-10-16,Singapore,Brunei,2,1,Merlion Cup,Kallang,Singapore,False,Singapore,Brunei
 1985-10-16,Wales,Hungary,0,3,Friendly,Cardiff,Wales,False,Wales,Hungary
@@ -15058,7 +15053,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1985-10-27,Paraguay,Colombia,3,0,FIFA World Cup qualification,Asunción,Paraguay,False,Paraguay,Colombia
 1985-10-30,Albania,Greece,1,1,FIFA World Cup qualification,Tirana,Albania,False,Albania,Greece
 1985-10-30,France,Luxembourg,6,0,FIFA World Cup qualification,Paris,France,False,France,Luxembourg
-1985-10-30,Russia,Norway,1,0,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Norway
+1985-10-30,Russia,Norway,1,0,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Norway
 1985-11-03,Australia,New Zealand,2,0,FIFA World Cup qualification,Sydney,Australia,False,Australia,New Zealand
 1985-11-03,Colombia,Paraguay,2,1,FIFA World Cup qualification,Cali,Colombia,False,Colombia,Paraguay
 1985-11-03,South Korea,Japan,1,0,FIFA World Cup qualification,Seoul,South Korea,False,Korea Republic,Japan
@@ -16366,7 +16361,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1988-10-19,Republic of Ireland,Tunisia,4,0,Friendly,Dublin,Republic of Ireland,False,Republic of Ireland,Tunisia
 1988-10-19,Italy,Norway,2,1,Friendly,Pescara,Italy,False,Italy,Norway
 1988-10-19,Poland,Albania,1,0,FIFA World Cup qualification,Chorzów,Poland,False,Poland,Albania
-1988-10-19,Russia,Austria,2,0,FIFA World Cup qualification,Kyiv,Soviet Union,True,Russia,Austria
+1988-10-19,Russia,Austria,2,0,FIFA World Cup qualification,Kyiv,Soviet Union,False,Russia,Austria
 1988-10-19,Scotland,Yugoslavia,1,1,FIFA World Cup qualification,Glasgow,Scotland,False,Scotland,Yugoslavia
 1988-10-19,Wales,Finland,2,2,FIFA World Cup qualification,Swansea,Wales,False,Wales,Finland
 1988-10-21,Solomon Islands,Fiji,1,1,Melanesia Cup,Honiara,Solomon Islands,False,Solomon Islands,Fiji
@@ -16684,7 +16679,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1989-04-26,Malta,Northern Ireland,0,2,FIFA World Cup qualification,Attard,Malta,False,Malta,Northern Ireland
 1989-04-26,Netherlands,Germany,1,1,FIFA World Cup qualification,Rotterdam,Netherlands,False,Netherlands,Germany
 1989-04-26,Portugal,Switzerland,3,1,FIFA World Cup qualification,Lisbon,Portugal,False,Portugal,Switzerland
-1989-04-26,Russia,German DR,3,0,FIFA World Cup qualification,Kyiv,Soviet Union,True,Russia,German DR
+1989-04-26,Russia,German DR,3,0,FIFA World Cup qualification,Kyiv,Soviet Union,False,Russia,German DR
 1989-04-26,Scotland,Cyprus,2,1,FIFA World Cup qualification,Glasgow,Scotland,False,Scotland,Cyprus
 1989-04-26,Wales,Sweden,0,2,Friendly,Wrexham,Wales,False,Wales,Sweden
 1989-04-29,Belgium,Czechoslovakia,2,1,FIFA World Cup qualification,Brussels,Belgium,False,Belgium,Czechoslovakia
@@ -16757,7 +16752,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1989-05-30,Scotland,Chile,2,0,Rous Cup,Glasgow,Scotland,False,Scotland,Chile
 1989-05-31,Finland,Netherlands,0,1,FIFA World Cup qualification,Helsinki,Finland,False,Finland,Netherlands
 1989-05-31,Norway,Austria,4,1,Friendly,Oslo,Norway,False,Norway,Austria
-1989-05-31,Russia,Iceland,1,1,FIFA World Cup qualification,Moscow,Soviet Union,True,Russia,Iceland
+1989-05-31,Russia,Iceland,1,1,FIFA World Cup qualification,Moscow,Soviet Union,False,Russia,Iceland
 1989-05-31,Sweden,Algeria,2,0,Friendly,Örebro,Sweden,False,Sweden,Algeria
 1989-05-31,Wales,Germany,0,0,FIFA World Cup qualification,Cardiff,Wales,False,Wales,Germany
 1989-06-01,Ivory Coast,DR Congo,1,1,Friendly,Abidjan,Ivory Coast,False,Ivory Coast,DR Congo
@@ -17081,7 +17076,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1989-11-15,Netherlands,Finland,3,0,FIFA World Cup qualification,Rotterdam,Netherlands,False,Netherlands,Finland
 1989-11-15,Portugal,Czechoslovakia,0,0,FIFA World Cup qualification,Lisbon,Portugal,False,Portugal,Czechoslovakia
 1989-11-15,Romania,Denmark,3,1,FIFA World Cup qualification,Bucharest,Romania,False,Romania,Denmark
-1989-11-15,Russia,Turkey,2,0,FIFA World Cup qualification,Simferopol,Soviet Union,True,Russia,Turkey
+1989-11-15,Russia,Turkey,2,0,FIFA World Cup qualification,Simferopol,Soviet Union,False,Russia,Turkey
 1989-11-15,Scotland,Norway,1,1,FIFA World Cup qualification,Glasgow,Scotland,False,Scotland,Norway
 1989-11-15,Spain,Hungary,4,0,FIFA World Cup qualification,Seville,Spain,False,Spain,Hungary
 1989-11-15,Switzerland,Luxembourg,2,1,FIFA World Cup qualification,St. Gallen,Switzerland,False,Switzerland,Luxembourg
@@ -48345,7 +48340,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2025-05-09,Dominica,Barbados,0,0,Friendly,Roseau,Dominica,False,Dominica,Barbados
 2025-05-11,Dominica,Barbados,0,0,Friendly,Roseau,Dominica,False,Dominica,Barbados
 2025-05-21,Saint Kitts and Nevis,Saint Vincent and the Grenadines,1,3,Friendly,Old Road Town,Saint Kitts and Nevis,False,Saint Kitts and Nevis,Saint Vincent and the Grenadines
-2025-05-25,Anguilla,Saint Kitts and Nevis,2,4,Friendly,Quartier-d'Orleans,Saint Martin,True,Anguilla,Saint Kitts and Nevis
+2025-05-25,Anguilla,Saint Kitts and Nevis,2,4,Friendly,The Valley,Anguilla,False,Anguilla,Saint Kitts and Nevis
 2025-05-25,Saint Vincent and the Grenadines,Saint Kitts and Nevis,3,0,Friendly,Georgetown,Saint Vincent and the Grenadines,False,Saint Vincent and the Grenadines,Saint Kitts and Nevis
 2025-05-27,Jamaica,Trinidad and Tobago,3,2,Unity Cup,London,England,True,Jamaica,Trinidad and Tobago
 2025-05-28,Nigeria,Ghana,2,1,Unity Cup,London,England,True,Nigeria,Ghana

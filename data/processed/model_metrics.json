@@ -1,6 +1,6 @@
 {
-  "selectedModel": "RandomForestClassifier_calibrated",
-  "selectionReason": "최고 모델 accuracy 0.5900와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4929 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 -0.0011, Log Loss 변화 -0.0069로 보호 기준 이내여서 사용",
+  "selectedModel": "HistGradientBoostingClassifier_calibrated",
+  "selectionReason": "최고 모델 accuracy 0.5900와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4929 이상이어서 선택. 상대 강도 보정 피처가 기존 대비 Accuracy 변화 -0.0010, Log Loss 변화 -0.0068로 보호 기준 이내여서 사용",
   "trainSize": 20703,
   "testSize": 5176,
   "testStartDate": "2021-11-15",
@@ -194,7 +194,7 @@
     {
       "model": "RandomForestClassifier_calibrated",
       "accuracy": 0.5866,
-      "logLoss": 0.9192,
+      "logLoss": 0.9193,
       "confusionMatrix": [
         [
           2037,
@@ -288,23 +288,23 @@
       }
     }
   ],
-  "accuracy": 0.5866,
-  "logLoss": 0.9192,
+  "accuracy": 0.5867,
+  "logLoss": 0.9193,
   "confusionMatrix": [
     [
-      2037,
-      422,
-      7
+      2015,
+      450,
+      1
     ],
     [
-      536,
-      994,
+      513,
+      1018,
+      3
+    ],
+    [
+      699,
+      473,
       4
-    ],
-    [
-      720,
-      451,
-      5
     ]
   ],
   "classes": [
@@ -397,7 +397,7 @@
         {
           "model": "LogisticRegression",
           "accuracy": 0.5651,
-          "logLoss": 0.9771,
+          "logLoss": 0.9772,
           "confusionMatrix": [
             [
               1699,
@@ -621,12 +621,12 @@
       ]
     },
     "opponentAdjusted": {
-      "selectedModel": "RandomForestClassifier_calibrated",
+      "selectedModel": "HistGradientBoostingClassifier_calibrated",
       "selectionReason": "최고 모델 accuracy 0.5900와 0.01 이내인 후보 중 logLoss가 가장 낮고, 최고 baseline accuracy 0.4929 이상이어서 선택",
-      "accuracy": 0.5866,
-      "logLoss": 0.9192,
-      "accuracyDropVsBase": 0.0011,
-      "logLossIncreaseVsBase": -0.0069,
+      "accuracy": 0.5867,
+      "logLoss": 0.9193,
+      "accuracyDropVsBase": 0.001,
+      "logLossIncreaseVsBase": -0.0068,
       "featureColumns": [
         "team_a_elo",
         "team_b_elo",
@@ -800,7 +800,7 @@
         {
           "model": "RandomForestClassifier_calibrated",
           "accuracy": 0.5866,
-          "logLoss": 0.9192,
+          "logLoss": 0.9193,
           "confusionMatrix": [
             [
               2037,
@@ -898,95 +898,95 @@
   },
   "classificationReport": {
     "A_WIN": {
-      "precision": 0.6185848770118433,
-      "recall": 0.8260340632603407,
-      "f1-score": 0.7074144816808474,
+      "precision": 0.6244189649829563,
+      "recall": 0.8171127331711273,
+      "f1-score": 0.7078868786228701,
       "support": 2466.0
     },
     "B_WIN": {
-      "precision": 0.5324049276914836,
-      "recall": 0.6479791395045632,
-      "f1-score": 0.5845339605998235,
+      "precision": 0.5244719216898506,
+      "recall": 0.6636245110821382,
+      "f1-score": 0.5858992805755395,
       "support": 1534.0
     },
     "DRAW": {
-      "precision": 0.3125,
-      "recall": 0.004251700680272109,
-      "f1-score": 0.008389261744966443,
+      "precision": 0.5,
+      "recall": 0.003401360544217687,
+      "f1-score": 0.006756756756756757,
       "support": 1176.0
     },
-    "accuracy": 0.5865533230293664,
+    "accuracy": 0.5867465224111282,
     "macro avg": {
-      "precision": 0.487829934901109,
-      "recall": 0.4927549678150586,
-      "f1-score": 0.43344590134187905,
+      "precision": 0.5496302955576023,
+      "recall": 0.4947128682658277,
+      "f1-score": 0.4335143053183888,
       "support": 5176.0
     },
     "weighted avg": {
-      "precision": 0.523500669588474,
-      "recall": 0.5865533230293664,
-      "f1-score": 0.5121763870164565,
+      "precision": 0.5665295779598534,
+      "recall": 0.5867465224111282,
+      "f1-score": 0.5124351787157692,
       "support": 5176.0
     }
   },
   "drawCalibrationEnabled": true,
   "drawCalibrationSummary": {
-    "selectionReason": "DRAW recall이 0.0043에서 0.0068로 개선되었고, Accuracy 하락 -0.0005, Log Loss 변화 -0.0001로 허용 범위 이내여서 적용",
+    "selectionReason": "DRAW recall이 0.0034에서 0.0043로 개선되었고, Accuracy 하락 0.0001, Log Loss 변화 -0.0003로 허용 범위 이내여서 적용",
     "baseMetrics": {
       "model": "draw_calibration_base",
-      "accuracy": 0.5866,
-      "logLoss": 0.9192,
+      "accuracy": 0.5867,
+      "logLoss": 0.9193,
       "confusionMatrix": [
         [
-          2037,
-          422,
-          7
+          2015,
+          450,
+          1
         ],
         [
-          536,
-          994,
+          513,
+          1018,
+          3
+        ],
+        [
+          699,
+          473,
           4
-        ],
-        [
-          720,
-          451,
-          5
         ]
       ],
-      "drawRecall": 0.0043,
-      "drawPrecision": 0.3125,
-      "macroF1": 0.4334
+      "drawRecall": 0.0034,
+      "drawPrecision": 0.5,
+      "macroF1": 0.4335
     },
     "calibratedMetrics": {
-      "accuracy": 0.5871,
-      "logLoss": 0.9191,
-      "drawRecall": 0.0068,
-      "drawPrecision": 0.4211,
-      "macroF1": 0.4353,
+      "accuracy": 0.5866,
+      "logLoss": 0.919,
+      "drawRecall": 0.0043,
+      "drawPrecision": 0.3846,
+      "macroF1": 0.434,
       "confusionMatrix": [
         [
-          2037,
-          422,
-          7
-        ],
-        [
-          536,
-          994,
-          4
-        ],
-        [
-          720,
+          2015,
           448,
-          8
+          3
+        ],
+        [
+          513,
+          1016,
+          5
+        ],
+        [
+          699,
+          472,
+          5
         ]
       ]
     },
     "selectedParams": {
-      "eloThreshold": 50,
+      "eloThreshold": 100,
       "drawBoost": 0.08,
       "winRateThreshold": 0.25,
-      "avgGoalsForThreshold": 0.35,
-      "avgGoalsAgainstThreshold": 0.35,
+      "avgGoalsForThreshold": 0.5,
+      "avgGoalsAgainstThreshold": 0.5,
       "recentGoalDiffThreshold": 3,
       "requireNeutral": true
     }
