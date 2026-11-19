@@ -1,13 +1,13 @@
 {
   "teamA": "South Korea",
   "teamB": "Portugal",
-  "teamAElo": 1679.81,
-  "teamBElo": 1784.54,
-  "teamARecentForm": "L-W-L-D-W",
-  "teamBRecentForm": "L-W-W-W-W",
+  "teamAElo": 1677.16,
+  "teamBElo": 1770.64,
+  "teamARecentForm": "L-D-W-L-W",
+  "teamBRecentForm": "W-W-W-L-W",
   "teamARecentPoints5": 7,
   "teamBRecentPoints5": 12,
-  "teamAWinProb": 0.2205,
-  "drawProb": 0.2352,
-  "teamBWinProb": 0.5443
+  "teamAWinProb": 0.2303,
+  "drawProb": 0.2396,
+  "teamBWinProb": 0.5301
 }
