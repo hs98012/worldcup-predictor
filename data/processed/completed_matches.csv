@@ -1810,7 +1810,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1933-10-24,Trinidad and Tobago,Guyana,2,0,Friendly,Port of Spain,Trinidad and Tobago,False,Trinidad and Tobago,Guyana
 1933-10-25,Barbados,Guyana,0,2,Friendly,Port of Spain,Trinidad and Tobago,True,Barbados,Guyana
 1933-10-27,Trinidad and Tobago,Guyana,1,1,Friendly,Port of Spain,Trinidad and Tobago,False,Trinidad and Tobago,Guyana
-1933-10-29,Switzerland,Romania,2,2,FIFA World Cup qualification,Bern,Switzerland,False,Switzerland,Romania
+1933-10-29,Switzerland,Romania,2,0,FIFA World Cup qualification,Bern,Switzerland,False,Switzerland,Romania
 1933-10-30,Trinidad and Tobago,Barbados,3,1,Friendly,Port of Spain,Trinidad and Tobago,False,Trinidad and Tobago,Barbados
 1933-11-02,Trinidad and Tobago,Guyana,1,0,Friendly,Port of Spain,Trinidad and Tobago,False,Trinidad and Tobago,Guyana
 1933-11-03,Barbados,Guyana,2,5,Friendly,Port of Spain,Trinidad and Tobago,True,Barbados,Guyana
@@ -17587,7 +17587,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1990-12-15,Congo,Gabon,1,0,UDEAC Cup,Brazzaville,Congo,False,Congo,Gabon
 1990-12-17,Central African Republic,Equatorial Guinea,3,3,UDEAC Cup,Brazzaville,Congo,True,Central African Republic,Equatorial Guinea
 1990-12-17,Chad,Gabon,2,1,UDEAC Cup,Brazzaville,Congo,True,Chad,Gabon
-1990-12-17,Tanzania,Uganda,1,1,Friendly,Zanzibar City,Zanzibar,True,Tanzania,Uganda
+1990-12-17,Tanzania,Uganda,1,1,CECAFA Cup,Zanzibar City,Zanzibar,True,Tanzania,Uganda
 1990-12-17,Zanzibar,Sudan,0,1,CECAFA Cup,Zanzibar City,Zanzibar,False,Zanzibar,Sudan
 1990-12-18,Algeria,Senegal,1,0,Friendly,Constantine,Algeria,False,Algeria,Senegal
 1990-12-18,Congo,Cameroon,2,1,UDEAC Cup,Brazzaville,Congo,False,Congo,Cameroon
@@ -18658,7 +18658,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1992-11-24,Malawi,Zanzibar,3,1,CECAFA Cup,Mwanza,Tanzania,True,Malawi,Zanzibar
 1992-11-24,Peru,Ecuador,1,1,Friendly,Lima,Peru,False,Peru,Ecuador
 1992-11-25,Brazil,Uruguay,1,2,Friendly,Campina Grande,Brazil,False,Brazil,Uruguay
-1992-11-25,Uganda,Zambia,0,0,Friendly,Mwanza,Tanzania,True,Uganda,Zambia
+1992-11-25,Uganda,Zambia,0,0,CECAFA Cup,Mwanza,Tanzania,True,Uganda,Zambia
 1992-11-26,Argentina,Poland,2,0,Friendly,Buenos Aires,Argentina,False,Argentina,Poland
 1992-11-27,Qatar,Oman,2,0,Gulf Cup,Doha,Qatar,False,Qatar,Oman
 1992-11-28,Honduras,Saint Vincent and the Grenadines,4,0,FIFA World Cup qualification,Tegucigalpa,Honduras,False,Honduras,Saint Vincent and the Grenadines
@@ -19010,29 +19010,23 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1993-05-09,Canada,Mexico,1,2,FIFA World Cup qualification,Toronto,Canada,False,Canada,Mexico
 1993-05-09,El Salvador,Honduras,2,1,FIFA World Cup qualification,San Salvador,El Salvador,False,El Salvador,Honduras
 1993-05-09,Lebanon,Hong Kong,2,2,FIFA World Cup qualification,Beirut,Lebanon,False,Lebanon,Hong Kong
-1993-05-10,China,Mongolia,6,1,East Asian Games,Shanghai,China,False,China,Mongolia
 1993-05-11,India,Hong Kong,1,2,FIFA World Cup qualification,Beirut,Lebanon,True,India,Hong Kong
 1993-05-11,Lebanon,South Korea,0,1,FIFA World Cup qualification,Beirut,Lebanon,False,Lebanon,Korea Republic
 1993-05-12,Bulgaria,Israel,2,2,FIFA World Cup qualification,Sofia,Bulgaria,False,Bulgaria,Israel
 1993-05-12,Estonia,Malta,0,1,FIFA World Cup qualification,Tallinn,Estonia,False,Estonia,Malta
-1993-05-12,North Korea,Mongolia,7,0,East Asian Games,Shanghai,China,True,North Korea,Mongolia
-1993-05-12,China,Macau,11,0,East Asian Games,Shanghai,China,False,China,Macau
 1993-05-13,Finland,Austria,3,1,FIFA World Cup qualification,Turku,Finland,False,Finland,Austria
 1993-05-13,India,South Korea,0,3,FIFA World Cup qualification,Beirut,Lebanon,True,India,Korea Republic
 1993-05-13,Lebanon,Bahrain,0,0,FIFA World Cup qualification,Beirut,Lebanon,False,Lebanon,Bahrain
 1993-05-14,Kuwait,Malaysia,2,0,FIFA World Cup qualification,Taif,Saudi Arabia,True,Kuwait,Malaysia
 1993-05-14,Saudi Arabia,Macau,8,0,FIFA World Cup qualification,Taif,Saudi Arabia,False,Saudi Arabia,Macau
-1993-05-14,China,North Korea,1,1,East Asian Games,Shanghai,China,False,China,North Korea
 1993-05-15,Bahrain,India,2,1,FIFA World Cup qualification,Beirut,Lebanon,True,Bahrain,India
 1993-05-15,Hong Kong,South Korea,0,3,FIFA World Cup qualification,Beirut,Lebanon,True,Hong Kong,Korea Republic
 1993-05-15,Latvia,Albania,0,0,FIFA World Cup qualification,Riga,Latvia,False,Latvia,Albania
 1993-05-16,Kuwait,Macau,8,0,FIFA World Cup qualification,Taif,Saudi Arabia,True,Kuwait,Macau
 1993-05-16,Saudi Arabia,Malaysia,3,0,FIFA World Cup qualification,Taif,Saudi Arabia,False,Saudi Arabia,Malaysia
-1993-05-16,North Korea,Macau,6,0,East Asian Games,Shanghai,China,True,North Korea,Macau
 1993-05-18,Lithuania,Ukraine,1,2,Friendly,Vilnius,Lithuania,False,Lithuania,Ukraine
 1993-05-18,Macau,Malaysia,0,5,FIFA World Cup qualification,Taif,Saudi Arabia,True,Macau,Malaysia
 1993-05-18,Saudi Arabia,Kuwait,2,0,FIFA World Cup qualification,Taif,Saudi Arabia,False,Saudi Arabia,Kuwait
-1993-05-18,Mongolia,Macau,4,3,East Asian Games,Shanghai,China,True,Mongolia,Macau
 1993-05-19,Estonia,Scotland,0,3,FIFA World Cup qualification,Tallinn,Estonia,False,Estonia,Scotland
 1993-05-19,San Marino,Poland,0,3,FIFA World Cup qualification,Serravalle,San Marino,False,San Marino,Poland
 1993-05-19,Sweden,Austria,1,0,FIFA World Cup qualification,Solna,Sweden,False,Sweden,Austria
@@ -20083,7 +20077,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1994-12-05,Tanzania,Eritrea,1,0,CECAFA Cup,Nairobi,Kenya,True,Tanzania,Eritrea
 1994-12-08,Kenya,Eritrea,1,0,CECAFA Cup,Nairobi,Kenya,False,Kenya,Eritrea
 1994-12-08,Saudi Arabia,Poland,0,2,Friendly,Riyadh,Saudi Arabia,False,Saudi Arabia,Poland
-1994-12-08,Tanzania,Uganda,2,2,Friendly,Nairobi,Kenya,True,Tanzania,Uganda
+1994-12-10,Tanzania,Uganda,2,2,CECAFA Cup,Nairobi,Kenya,True,Tanzania,Uganda
 1994-12-10,Namibia,Ivory Coast,2,1,Friendly,Windhoek,Namibia,False,Namibia,Ivory Coast
 1994-12-10,Saudi Arabia,Poland,1,2,Friendly,Riyadh,Saudi Arabia,False,Saudi Arabia,Poland
 1994-12-11,United States,Honduras,1,1,Friendly,Fullerton,United States,False,United States,Honduras
@@ -21552,7 +21546,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1996-11-27,Uganda,Kenya,2,0,CECAFA Cup,Khartoum,Sudan,True,Uganda,Kenya
 1996-11-28,United Arab Emirates,Syria,1,0,Friendly,Abu Dhabi,United Arab Emirates,False,United Arab Emirates,Syria
 1996-11-29,Saudi Arabia,Indonesia,4,1,Friendly,Dammam,Saudi Arabia,False,Saudi Arabia,Indonesia
-1996-11-29,Sudan,Kenya,1,1,Friendly,Khartoum,Sudan,False,Sudan,Kenya
+1996-11-29,Sudan,Kenya,1,1,CECAFA Cup,Khartoum,Sudan,False,Sudan,Kenya
 1996-12-01,Costa Rica,United States,2,1,FIFA World Cup qualification,San José,Costa Rica,False,Costa Rica,United States
 1996-12-01,El Salvador,Cuba,3,0,FIFA World Cup qualification,San Salvador,El Salvador,False,El Salvador,Cuba
 1996-12-04,Indonesia,Kuwait,2,2,AFC Asian Cup,Abu Dhabi,United Arab Emirates,True,Indonesia,Kuwait
@@ -21953,19 +21947,9 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1997-05-11,Kazakhstan,Pakistan,3,0,FIFA World Cup qualification,Almaty,Kazakhstan,False,Kazakhstan,Pakistan
 1997-05-11,Tajikistan,China,0,1,FIFA World Cup qualification,Dushanbe,Tajikistan,False,Tajikistan,China
 1997-05-11,Turkmenistan,Vietnam,2,1,FIFA World Cup qualification,Ashgabat,Turkmenistan,False,Turkmenistan,Vietnam
-1997-05-11,Mongolia,China,0,6,East Asian Games,Busan,South Korea,True,Mongolia,China
-1997-05-11,Guam,Japan,0,12,East Asian Games,Busan,South Korea,True,Guam,Japan
-1997-05-13,Kazakhstan,Guam,20,1,East Asian Games,Busan,South Korea,True,Kazakhstan,Guam
-1997-05-13,Japan,Mongolia,5,0,East Asian Games,Busan,South Korea,True,Japan,Mongolia
-1997-05-15,Guam,China,0,7,East Asian Games,Busan,South Korea,True,Guam,China
-1997-05-15,Kazakhstan,Japan,2,2,East Asian Games,Busan,South Korea,True,Kazakhstan,Japan
 1997-05-16,Yemen,Cambodia,7,0,FIFA World Cup qualification,Sana'a,Yemen,False,Yemen,Cambodia
-1997-05-17,Mongolia,Kazakhstan,3,11,East Asian Games,Busan,South Korea,True,Mongolia,Kazakhstan
-1997-05-17,China,Japan,2,0,East Asian Games,Busan,South Korea,True,China,Japan
 1997-05-18,Estonia,Latvia,1,3,FIFA World Cup qualification,Tallinn,Estonia,False,Estonia,Latvia
 1997-05-18,Jamaica,El Salvador,1,0,FIFA World Cup qualification,Kingston,Jamaica,False,Jamaica,El Salvador
-1997-05-19,Guam,Mongolia,0,4,East Asian Games,Busan,South Korea,True,Guam,Mongolia
-1997-05-19,China,Kazakhstan,0,0,East Asian Games,Busan,South Korea,True,China,Kazakhstan
 1997-05-21,Republic of Ireland,Liechtenstein,5,0,FIFA World Cup qualification,Dublin,Republic of Ireland,False,Republic of Ireland,Liechtenstein
 1997-05-21,Japan,South Korea,1,1,Friendly,Tokyo,Japan,False,Japan,Korea Republic
 1997-05-21,Thailand,Northern Ireland,0,0,Friendly,Bangkok,Thailand,False,Thailand,Northern Ireland
@@ -23776,7 +23760,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1999-08-02,Indonesia,Malaysia,6,0,Southeast Asian Games,Bandar Seri Begawan,Brunei,True,Indonesia,Malaysia
 1999-08-02,Brunei,Cambodia,3,3,Southeast Asian Games,Bandar Seri Begawan,Brunei,False,Brunei,Cambodia
 1999-08-03,Oman,Kyrgyzstan,3,0,AFC Asian Cup qualification,Dushanbe,Tajikistan,True,Oman,Kyrgyzstan
-1999-08-03,Rwanda,Kenya,0,0,Friendly,Kigali,Rwanda,False,Rwanda,Kenya
+1999-08-03,Rwanda,Kenya,0,0,CECAFA Cup,Kigali,Rwanda,False,Rwanda,Kenya
 1999-08-03,Tajikistan,Iraq,1,2,AFC Asian Cup qualification,Dushanbe,Tajikistan,False,Tajikistan,Iraq
 1999-08-03,United States,Saudi Arabia,2,0,Confederations Cup,Guadalajara,Mexico,True,United States,Saudi Arabia
 1999-08-03,Myanmar,Vietnam,0,2,Southeast Asian Games,Bandar Seri Begawan,Brunei,True,Myanmar,Vietnam
@@ -23792,7 +23776,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 1999-08-06,Indonesia,Singapore,1,1,Southeast Asian Games,Bandar Seri Begawan,Brunei,True,Indonesia,Singapore
 1999-08-07,Ghana,Jamaica,2,1,Friendly,Accra,Ghana,False,Ghana,Jamaica
 1999-08-07,Iraq,Kyrgyzstan,5,1,AFC Asian Cup qualification,Dushanbe,Tajikistan,True,Iraq,Kyrgyzstan
-1999-08-07,Rwanda,Burundi,0,0,Friendly,Kigali,Rwanda,False,Rwanda,Burundi
+1999-08-07,Rwanda,Burundi,0,0,CECAFA Cup,Kigali,Rwanda,False,Rwanda,Burundi
 1999-08-07,Tajikistan,Oman,2,1,AFC Asian Cup qualification,Dushanbe,Tajikistan,False,Tajikistan,Oman
 1999-08-07,Zambia,Mozambique,1,1,COSAFA Cup,Lusaka,Zambia,False,Zambia,Mozambique
 1999-08-08,Senegal,Zimbabwe,2,0,African Cup of Nations qualification,Dakar,Senegal,False,Senegal,Zimbabwe
@@ -25097,7 +25081,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2000-11-27,Uganda,Djibouti,7,0,CECAFA Cup,Kampala,Uganda,False,Uganda,Djibouti
 2000-11-28,Iran,Tajikistan,2,0,FIFA World Cup qualification,Tabriz,Iran,False,Iran,Tajikistan
 2000-11-29,Uganda,Rwanda,3,1,CECAFA Cup,Kampala,Uganda,False,Uganda,Rwanda
-2000-12-02,Ethiopia,Rwanda,1,1,Friendly,Kampala,Uganda,True,Ethiopia,Rwanda
+2000-12-02,Ethiopia,Rwanda,1,1,CECAFA Cup,Kampala,Uganda,True,Ethiopia,Rwanda
 2000-12-05,Algeria,Romania,3,2,Friendly,Annaba,Algeria,False,Algeria,Romania
 2000-12-08,Algeria,Romania,2,3,Friendly,Annaba,Algeria,False,Algeria,Romania
 2000-12-10,Hong Kong,Estonia,1,2,Friendly,So Kon Po,Hong Kong,False,Hong Kong,Estonia
@@ -30506,26 +30490,26 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2006-11-19,Găgăuzia,Greenland,0,2,ELF Cup,Kyrenia,Northern Cyprus,True,Găgăuzia,Greenland
 2006-11-19,Kyrgyzstan,Zanzibar,0,1,ELF Cup,Kyrenia,Northern Cyprus,True,Kyrgyzstan,Zanzibar
 2006-11-19,Tibet,Tajikistan,0,3,ELF Cup,Güzelyurt,Northern Cyprus,True,Tibet,Tajikistan
-2006-11-19,Northern Cyprus,Crimea,5,0,ELF Cup,Lefkoşa,Northern Cyprus,False,Northern Cyprus,Crimea
+2006-11-19,Northern Cyprus,Crimean Tatars,5,0,ELF Cup,Lefkoşa,Northern Cyprus,False,Northern Cyprus,Crimean Tatars
 2006-11-20,Cambodia,Timor-Leste,4,1,AFF Championship qualification,Bacolod,Philippines,True,Cambodia,Timor-Leste
 2006-11-20,Philippines,Brunei,4,1,AFF Championship qualification,Bacolod,Philippines,False,Philippines,Brunei
 2006-11-20,Monaco,Ambazonia,3,0,Viva World Cup,Costebelle,France,True,Monaco,Ambazonia
 2006-11-20,Occitania,Sápmi,0,7,Viva World Cup,Costebelle,France,False,Occitania,Sápmi
 2006-11-20,Găgăuzia,Kyrgyzstan,1,6,ELF Cup,Gazimağusa,Northern Cyprus,True,Găgăuzia,Kyrgyzstan
 2006-11-20,Greenland,Zanzibar,1,1,ELF Cup,Gazimağusa,Northern Cyprus,True,Greenland,Zanzibar
-2006-11-20,Tibet,Crimea,0,1,ELF Cup,Güzelyurt,Northern Cyprus,True,Tibet,Crimea
+2006-11-20,Tibet,Crimean Tatars,0,1,ELF Cup,Güzelyurt,Northern Cyprus,True,Tibet,Crimean Tatars
 2006-11-20,Northern Cyprus,Tajikistan,5,1,ELF Cup,Güzelyurt,Northern Cyprus,False,Northern Cyprus,Tajikistan
 2006-11-21,Bahamas,Bermuda,0,4,CFU Caribbean Cup qualification,Bridgetown,Barbados,True,Bahamas,Bermuda
 2006-11-21,Sápmi,Ambazonia,3,0,Viva World Cup,Costebelle,France,True,Sápmi,Ambazonia
 2006-11-21,Occitania,Monaco,2,3,Viva World Cup,Hyères,France,False,Occitania,Monaco
 2006-11-21,Greenland,Kyrgyzstan,0,1,ELF Cup,Kyrenia,Northern Cyprus,True,Greenland,Kyrgyzstan
 2006-11-21,Găgăuzia,Zanzibar,1,1,ELF Cup,Kyrenia,Northern Cyprus,True,Găgăuzia,Zanzibar
-2006-11-21,Tajikistan,Crimea,1,2,ELF Cup,Gazimağusa,Northern Cyprus,True,Tajikistan,Crimea
+2006-11-21,Tajikistan,Crimean Tatars,1,2,ELF Cup,Gazimağusa,Northern Cyprus,True,Tajikistan,Crimean Tatars
 2006-11-21,Northern Cyprus,Tibet,10,0,ELF Cup,Gazimağusa,Northern Cyprus,False,Northern Cyprus,Tibet
 2006-11-23,Barbados,Bermuda,1,1,CFU Caribbean Cup qualification,Bridgetown,Barbados,False,Barbados,Bermuda
 2006-11-23,Occitania,Ambazonia,3,0,Viva World Cup,Hyères,France,True,Occitania,Ambazonia
 2006-11-23,Sápmi,Monaco,14,0,Viva World Cup,Hyères,France,True,Sápmi,Monaco
-2006-11-23,Kyrgyzstan,Crimea,2,3,ELF Cup,Lefkoşa,Northern Cyprus,True,Kyrgyzstan,Crimea
+2006-11-23,Kyrgyzstan,Crimean Tatars,2,3,ELF Cup,Lefkoşa,Northern Cyprus,True,Kyrgyzstan,Crimean Tatars
 2006-11-23,Northern Cyprus,Zanzibar,5,0,ELF Cup,Lefkoşa,Northern Cyprus,False,Northern Cyprus,Zanzibar
 2006-11-24,Dominican Republic,Guadeloupe,0,3,CFU Caribbean Cup qualification,Georgetown,Guyana,True,Dominican Republic,Guadeloupe
 2006-11-24,Guyana,Antigua and Barbuda,6,0,CFU Caribbean Cup qualification,Georgetown,Guyana,False,Guyana,Antigua and Barbuda
@@ -30533,7 +30517,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2006-11-24,Sápmi,Monaco,21,1,Viva World Cup,Hyères,France,True,Sápmi,Monaco
 2006-11-25,Ethiopia,Tanzania,1,2,CECAFA Cup,Addis Ababa,Ethiopia,False,Ethiopia,Tanzania
 2006-11-25,Kyrgyzstan,Zanzibar,2,2,ELF Cup,Lefkoşa,Northern Cyprus,True,Kyrgyzstan,Zanzibar
-2006-11-25,Northern Cyprus,Crimea,3,1,ELF Cup,Lefkoşa,Northern Cyprus,False,Northern Cyprus,Crimea
+2006-11-25,Northern Cyprus,Crimean Tatars,3,1,ELF Cup,Lefkoşa,Northern Cyprus,False,Northern Cyprus,Crimean Tatars
 2006-11-26,Burundi,Zambia,3,2,CECAFA Cup,Addis Ababa,Ethiopia,True,Burundi,Zambia
 2006-11-26,Djibouti,Malawi,0,3,CECAFA Cup,Addis Ababa,Ethiopia,True,Djibouti,Malawi
 2006-11-26,Dominican Republic,Antigua and Barbuda,2,0,CFU Caribbean Cup qualification,Georgetown,Guyana,True,Dominican Republic,Antigua and Barbuda
@@ -35246,11 +35230,9 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2011-09-09,New Caledonia,Solomon Islands,2,0,Pacific Games,Nouméa,New Caledonia,False,New Caledonia,Solomon Islands
 2011-09-09,Tahiti,Fiji,2,1,Pacific Games,Boulari,New Caledonia,True,Tahiti,Fiji
 2011-09-11,Saint Vincent and the Grenadines,Dominica,1,0,Friendly,Kingstown,Saint Vincent and the Grenadines,False,Saint Vincent and the Grenadines,Dominica
-2011-09-14,Argentina,Brazil,0,0,Superclásico de las Américas,Córdoba,Argentina,False,Argentina,Brazil
 2011-09-18,Saint Vincent and the Grenadines,Grenada,2,1,FIFA World Cup qualification,Kingstown,Saint Vincent and the Grenadines,False,Saint Vincent and the Grenadines,Grenada
 2011-09-23,Suriname,Curaçao,2,0,Friendly,Paramaribo,Suriname,False,Suriname,Curaçao
 2011-09-25,Suriname,Curaçao,2,2,Friendly,Paramaribo,Suriname,False,Suriname,Curaçao
-2011-09-28,Brazil,Argentina,2,0,Superclásico de las Américas,Belém,Brazil,False,Brazil,Argentina
 2011-09-30,Antigua and Barbuda,Martinique,1,0,Friendly,Osbourn,Antigua and Barbuda,False,Antigua and Barbuda,Martinique
 2011-09-30,Hong Kong,Philippines,3,3,Dragon Cup,Kaohsiung,Taiwan,True,Hong Kong,Philippines
 2011-09-30,Taiwan,Macau,3,0,Dragon Cup,Kaohsiung,Taiwan,False,Taiwan,Macau
@@ -36256,7 +36238,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2012-09-11,Uzbekistan,South Korea,2,2,FIFA World Cup qualification,Tashkent,Uzbekistan,False,Uzbekistan,Korea Republic
 2012-09-12,Thailand,Laos,2,1,Friendly,Bangkok,Thailand,False,Thailand,Laos
 2012-09-16,French Guiana,Haiti,1,2,Friendly,Cayenne,French Guiana,False,French Guiana,Haiti
-2012-09-19,Brazil,Argentina,2,1,Superclásico de las Américas,Goiânia,Brazil,False,Brazil,Argentina
 2012-09-20,Nepal,Bangladesh,1,1,Friendly,Kathmandu,Nepal,False,Nepal,Bangladesh
 2012-09-22,Guadeloupe,Saint Pierre and Miquelon,13,0,Coupe de l'Outre-Mer,Versailles,France,True,Guadeloupe,Saint Pierre and Miquelon
 2012-09-22,Réunion,French Guiana,2,0,Coupe de l'Outre-Mer,Versailles,France,True,Réunion,French Guiana
@@ -36500,7 +36481,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2012-11-19,Singapore,Pakistan,4,0,Friendly,Jurong,Singapore,False,Singapore,Pakistan
 2012-11-20,Malaysia,Bangladesh,1,1,Friendly,Kuala Lumpur,Malaysia,False,Malaysia,Bangladesh
 2012-11-20,Palestine,Syria,2,1,Friendly,Zarqa,Jordan,True,Palestine,Syria
-2012-11-21,Argentina,Brazil,2,1,Superclásico de las Américas,Buenos Aires,Argentina,False,Argentina,Brazil
 2012-11-24,Ethiopia,South Sudan,1,0,CECAFA Cup,Kampala,Uganda,True,Ethiopia,South Sudan
 2012-11-24,Guam,Northern Mariana Islands,8,0,Friendly,Yona,Guam,False,Guam,Northern Mariana Islands
 2012-11-24,Thailand,Philippines,2,1,AFF Championship,Bangkok,Thailand,False,Thailand,Philippines
@@ -37552,7 +37532,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2013-12-07,Kenya,Rwanda,1,0,CECAFA Cup,Mombasa,Kenya,False,Kenya,Rwanda
 2013-12-07,Uganda,Tanzania,2,2,CECAFA Cup,Mombasa,Kenya,True,Uganda,Tanzania
 2013-12-08,Ethiopia,Sudan,0,2,CECAFA Cup,Mombasa,Kenya,True,Ethiopia,Sudan
-2013-12-08,Zambia,Burundi,4,3,CECAFA Cup,Mombasa,Kenya,True,Zambia,Burundi
+2013-12-08,Zambia,Burundi,0,0,CECAFA Cup,Mombasa,Kenya,True,Zambia,Burundi
 2013-12-10,Kenya,Tanzania,1,0,CECAFA Cup,Nairobi,Kenya,False,Kenya,Tanzania
 2013-12-10,Zambia,Sudan,1,2,CECAFA Cup,Mombasa,Kenya,True,Zambia,Sudan
 2013-12-12,Kenya,Sudan,2,0,CECAFA Cup,Nairobi,Kenya,False,Kenya,Sudan
@@ -45165,7 +45145,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2022-04-27,Mexico,Guatemala,0,0,Friendly,Orlando,United States,True,Mexico,Guatemala
 2022-05-12,Bahamas,Turks and Caicos Islands,4,2,Friendly,Nassau,Bahamas,False,Bahamas,Turks and Caicos Islands
 2022-05-12,Dominica,Saint Vincent and the Grenadines,2,1,Friendly,Roseau,Dominica,False,Dominica,Saint Vincent and the Grenadines
-2022-05-13,Guernsey,Jersey,1,2,Muratti Vase,Guernsey,Guernsey,False,Guernsey,Jersey
 2022-05-14,Bahamas,Turks and Caicos Islands,1,2,Friendly,Nassau,Bahamas,False,Bahamas,Turks and Caicos Islands
 2022-05-15,Dominica,Saint Vincent and the Grenadines,3,1,Friendly,Roseau,Dominica,False,Dominica,Saint Vincent and the Grenadines
 2022-05-21,Yoruba Nation,Matabeleland,1,1,CONIFA Africa Football Cup,Johannesburg,South Africa,True,Yoruba Nation,Matabeleland
@@ -46067,6 +46046,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,n
 2023-03-29,Rwanda,Benin,1,1,African Cup of Nations qualification,Kigali,Rwanda,False,Rwanda,Benin
 2023-03-31,Nepal,Laos,2,1,Tri Nation Tournament,Kathmandu,Nepal,False,Nepal,Laos
 2023-04-19,United States,Mexico,1,1,Friendly,Glendale,United States,False,United States,Mexico
+2023-05-13,Guernsey,Jersey,1,2,Muratti Vase,Guernsey,Guernsey,False,Guernsey,Jersey
 2023-06-07,Mexico,Guatemala,2,0,Friendly,Mazatlán,Mexico,False,Mexico,Guatemala
 2023-06-09,Lebanon,Vanuatu,3,1,Intercontinental Cup,Bhubaneswar,India,True,Lebanon,Vanuatu
 2023-06-09,India,Mongolia,2,0,Intercontinental Cup,Bhubaneswar,India,False,India,Mongolia
